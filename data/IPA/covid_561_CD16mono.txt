@@ -1,0 +1,189 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Type I Diabetes Mellitus Signaling	5.14E00	4.5E-02	NaN	HLA-DQA1,HLA-E,IRF1,SOCS3,STAT1	
+Th1 Pathway	4.95E00	4.13E-02	0.000	HLA-DQA1,HLA-DQA2,IRF1,SOCS3,STAT1	
+Th1 and Th2 Activation Pathway	4.23E00	2.92E-02	NaN	HLA-DQA1,HLA-DQA2,IRF1,SOCS3,STAT1	
+B Cell Development	4.04E00	8.33E-02	NaN	HLA-DQA1,PTPRC,SPN	
+Interferon Signaling	4.04E00	8.33E-02	NaN	IFITM3,IRF1,STAT1	
+Antigen Presentation Pathway	3.94E00	7.69E-02	NaN	HLA-DQA1,HLA-DQA2,HLA-E	
+Role of IL-17A in Psoriasis	3.35E00	1.54E-01	NaN	S100A8,S100A9	
+Cdc42 Signaling	3.14E00	2.4E-02	NaN	CFL1,HLA-DQA1,HLA-DQA2,HLA-E	
+T Cell Exhaustion Signaling Pathway	3.07E00	2.29E-02	NaN	HLA-DQA1,HLA-DQA2,HLA-E,STAT1	
+Prolactin Signaling	3E00	3.7E-02	NaN	IRF1,SOCS3,STAT1	
+Allograft Rejection Signaling	2.92E00	3.49E-02	NaN	HLA-DQA1,HLA-DQA2,HLA-E	
+OX40 Signaling Pathway	2.87E00	3.33E-02	NaN	HLA-DQA1,HLA-DQA2,HLA-E	
+IL-22 Signaling	2.81E00	8.33E-02	NaN	SOCS3,STAT1	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	2.78E00	8E-02	NaN	SOCS3,STAT1	
+PD-1, PD-L1 cancer immunotherapy pathway	2.66E00	2.83E-02	NaN	HLA-DQA1,HLA-DQA2,HLA-E	
+Role of PKR in Interferon Induction and Antiviral Response	2.54E00	2.56E-02	NaN	HSP90AB1,IRF1,STAT1	
+IL-9 Signaling	2.54E00	6.06E-02	NaN	SOCS3,STAT1	
+Role of JAK2 in Hormone-like Cytokine Signaling	2.51E00	5.88E-02	NaN	SOCS3,STAT1	
+IL-12 Signaling and Production in Macrophages	2.39E00	2.27E-02	NaN	IRF1,S100A8,STAT1	
+Th2 Pathway	2.36E00	2.21E-02	NaN	HLA-DQA1,HLA-DQA2,SOCS3	
+iNOS Signaling	2.27E00	4.44E-02	NaN	IRF1,STAT1	
+Graft-versus-Host Disease Signaling	2.22E00	4.17E-02	NaN	HLA-DQA1,HLA-E	
+Autoimmune Thyroid Disease Signaling	2.2E00	4.08E-02	NaN	HLA-DQA1,HLA-E	
+Necroptosis Signaling Pathway	2.18E00	1.91E-02	NaN	SLC25A6,STAT1,TNFSF10	
+Retinoic acid Mediated Apoptosis Signaling	2.03E00	3.33E-02	NaN	IRF1,TNFSF10	
+Dendritic Cell Maturation	2E00	1.64E-02	NaN	HLA-DQA1,HLA-E,STAT1	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	1.97E00	1.6E-02	NaN	IRF1,S100A8,STAT1	
+Natural Killer Cell Signaling	1.92E00	1.52E-02	NaN	CFL1,HLA-E,TNFSF10	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.91E00	2.9E-02	NaN	SOCS3,STAT1	
+GM-CSF Signaling	1.9E00	2.86E-02	NaN	PIM1,STAT1	
+Growth Hormone Signaling	1.89E00	2.82E-02	NaN	SOCS3,STAT1	
+T Helper Cell Differentiation	1.87E00	2.74E-02	NaN	HLA-DQA1,STAT1	
+JAK/Stat Signaling	1.79E00	2.5E-02	NaN	SOCS3,STAT1	
+Systemic Lupus Erythematosus Signaling	1.74E00	1.31E-02	NaN	HLA-E,HNRNPA2B1,PTPRC	
+Salvage Pathways of Pyrimidine Deoxyribonucleotides	1.72E00	1.25E-01	NaN	TYMP	
+Crosstalk between Dendritic Cells and Natural Killer Cells	1.71E00	2.25E-02	NaN	HLA-E,TNFSF10	
+Th17 Activation Pathway	1.69E00	2.2E-02	NaN	HSP90AB1,SOCS3	
+Calcium Transport I	1.62E00	1E-01	NaN	ATP2B1	
+Protein Ubiquitination Pathway	1.55E00	1.1E-02	NaN	HLA-E,HSP90AB1,PSME2	
+Glycogen Degradation II	1.54E00	8.33E-02	NaN	TYMP	
+iCOS-iCOSL Signaling in T Helper Cells	1.53E00	1.8E-02	NaN	HLA-DQA1,PTPRC	
+Leukotriene Biosynthesis	1.51E00	7.69E-02	NaN	LTA4H	
+Glycogen Degradation III	1.48E00	7.14E-02	NaN	TYMP	
+CD28 Signaling in T Helper Cells	1.46E00	1.67E-02	NaN	HLA-DQA1,PTPRC	
+IL-15 Production	1.46E00	1.65E-02	NaN	IRF1,STAT1	
+Inhibition of ARE-Mediated mRNA Degradation Pathway	1.45E00	1.64E-02	NaN	PSME2,TNFSF10	
+Telomere Extension by Telomerase	1.45E00	6.67E-02	NaN	HNRNPA2B1	
+Neuroinflammation Signaling Pathway	1.44E00	1E-02	NaN	HLA-DQA1,HLA-E,STAT1	
+STAT3 Pathway	1.37E00	1.48E-02	NaN	PIM1,SOCS3	
+FAT10 Signaling Pathway	1.37E00	5.56E-02	NaN	PSME2	
+Iron homeostasis signaling pathway	1.36E00	1.46E-02	NaN	FTL,SLC11A1	
+GADD45 Signaling	1.35E00	5.26E-02	NaN	GADD45B	
+Estrogen Receptor Signaling	1.34E00	9.15E-03	NaN	CFL1,DDX5,HSP90AB1	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	1.34E00	1.42E-02	NaN	PTPRC,SOCS3	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	1.34E00	1.42E-02	NaN	PTPRC,SOCS3	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	1.33E00	9.01E-03	NaN	HLA-DQA1,HLA-DQA2,HLA-E	
+Polyamine Regulation in Colon Cancer	1.28E00	4.55E-02	NaN	PSME2	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	1.27E00	1.3E-02	NaN	C5AR1,TNFSF10	
+3-phosphoinositide Degradation	1.27E00	1.29E-02	NaN	PTPRC,SOCS3	
+D-myo-inositol-5-phosphate Metabolism	1.26E00	1.28E-02	NaN	PTPRC,SOCS3	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	1.25E00	4.17E-02	NaN	STAT1	
+Tec Kinase Signaling	1.22E00	1.22E-02	NaN	STAT1,TNFSF10	
+3-phosphoinositide Biosynthesis	1.22E00	1.21E-02	NaN	PTPRC,SOCS3	
+Acute Phase Response Signaling	1.16E00	1.12E-02	NaN	FTL,SOCS3	
+B Cell Receptor Signaling	1.13E00	1.08E-02	NaN	CFL1,PTPRC	
+ILK Signaling	1.11E00	1.05E-02	NaN	CFL1,TMSB10/TMSB4X	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	1.1E00	2.94E-02	NaN	HLA-E	
+Superpathway of Inositol Phosphate Compounds	1.08E00	1.01E-02	NaN	PTPRC,SOCS3	
+Complement System	1.07E00	2.7E-02	NaN	C5AR1	
+Antiproliferative Role of TOB in T Cell Signaling	1.04E00	2.56E-02	NaN	PABPC1	
+tRNA Charging	1.04E00	2.56E-02	NaN	WARS1	
+Osteoarthritis Pathway	1.03E00	9.48E-03	NaN	S100A8,S100A9	
+Actin Cytoskeleton Signaling	1.01E00	9.17E-03	NaN	CFL1,TMSB10/TMSB4X	
+Oncostatin M Signaling	1E00	2.33E-02	NaN	STAT1	
+BAG2 Signaling Pathway	1E00	2.33E-02	NaN	PSME2	
+IL-23 Signaling Pathway	9.96E-01	2.27E-02	NaN	SOCS3	
+EIF2 Signaling	9.91E-01	8.93E-03	NaN	PABPC1,WARS1	
+Ephrin A Signaling	9.67E-01	2.13E-02	NaN	CFL1	
+Primary Immunodeficiency Signaling	9.43E-01	2E-02	NaN	PTPRC	
+EGF Signaling	9.03E-01	1.82E-02	NaN	STAT1	
+CNTF Signaling	8.89E-01	1.75E-02	NaN	STAT1	
+Nur77 Signaling in T Lymphocytes	8.76E-01	1.69E-02	NaN	HLA-DQA1	
+Semaphorin Signaling in Neurons	8.66E-01	1.67E-02	NaN	CFL1	
+Induction of Apoptosis by HIV1	8.6E-01	1.64E-02	NaN	SLC25A6	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	8.48E-01	1.59E-02	NaN	STAT1	
+Thrombopoietin Signaling	8.48E-01	1.59E-02	NaN	STAT1	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	8.45E-01	7.27E-03	NaN	STAT1,TNFSF10	
+Role of PI3K/AKT Signaling in the Pathogenesis of Influenza	8.42E-01	1.56E-02	NaN	PLAC8	
+Pyridoxal 5'-phosphate Salvage Pathway	8.36E-01	1.54E-02	NaN	PIM1	
+Calcium-induced T Lymphocyte Apoptosis	8.3E-01	1.52E-02	NaN	HLA-DQA1	
+Mitotic Roles of Polo-Like Kinase	8.3E-01	1.52E-02	NaN	HSP90AB1	
+Eicosanoid Signaling	8.3E-01	1.52E-02	NaN	LTA4H	
+Xenobiotic Metabolism Signaling	8.15E-01	6.97E-03	NaN	FTL,HSP90AB1	
+IL-10 Signaling	8.12E-01	1.45E-02	NaN	SOCS3	
+Sirtuin Signaling Pathway	8.04E-01	6.87E-03	NaN	GADD45B,SLC25A6	
+Ephrin B Signaling	7.96E-01	1.39E-02	NaN	CFL1	
+Caveolar-mediated Endocytosis Signaling	7.9E-01	1.37E-02	NaN	HLA-E	
+Leptin Signaling in Obesity	7.83E-01	1.35E-02	NaN	SOCS3	
+Hypoxia Signaling in the Cardiovascular System	7.83E-01	1.35E-02	NaN	HSP90AB1	
+Erythropoietin Signaling	7.72E-01	1.32E-02	NaN	SOCS3	
+IL-7 Signaling Pathway	7.62E-01	1.28E-02	NaN	STAT1	
+IL-3 Signaling	7.57E-01	1.27E-02	NaN	STAT1	
+Agrin Interactions at Neuromuscular Junction	7.57E-01	1.27E-02	NaN	UTRN	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	7.57E-01	6.41E-03	NaN	C5AR1,SOCS3	
+Synaptogenesis Signaling Pathway	7.57E-01	6.41E-03	NaN	CFL1,NAP1L1	
+Role of BRCA1 in DNA Damage Response	7.52E-01	1.25E-02	NaN	STAT1	
+FLT3 Signaling in Hematopoietic Progenitor Cells	7.52E-01	1.25E-02	NaN	STAT1	
+Chemokine Signaling	7.52E-01	1.25E-02	NaN	CFL1	
+IL-4 Signaling	7.28E-01	1.18E-02	NaN	HLA-DQA1	
+PDGF Signaling	7.24E-01	1.16E-02	NaN	STAT1	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	7.12E-01	1.12E-02	NaN	HLA-E	
+Acute Myeloid Leukemia Signaling	7.12E-01	1.12E-02	NaN	PIM1	
+Glucocorticoid Receptor Signaling	7.08E-01	5.95E-03	NaN	HSP90AB1,STAT1	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	7.08E-01	1.11E-02	NaN	HLA-DQA1	
+Prostate Cancer Signaling	7.03E-01	1.1E-02	NaN	HSP90AB1	
+Death Receptor Signaling	7.03E-01	1.1E-02	NaN	TNFSF10	
+Regulation of Actin-based Motility by Rho	6.9E-01	1.06E-02	NaN	CFL1	
+Neuregulin Signaling	6.82E-01	1.04E-02	NaN	HSP90AB1	
+Communication between Innate and Adaptive Immune Cells	6.82E-01	1.04E-02	NaN	HLA-E	
+ATM Signaling	6.78E-01	1.03E-02	NaN	GADD45B	
+PAK Signaling	6.78E-01	1.03E-02	NaN	CFL1	
+Salvage Pathways of Pyrimidine Ribonucleotides	6.78E-01	1.03E-02	NaN	PIM1	
+p53 Signaling	6.74E-01	1.02E-02	NaN	GADD45B	
+UVA-Induced MAPK Signaling	6.74E-01	1.02E-02	NaN	STAT1	
+Nitric Oxide Signaling in the Cardiovascular System	6.7E-01	1.01E-02	NaN	HSP90AB1	
+Sumoylation Pathway	6.56E-01	9.71E-03	NaN	ZNF217	
+PPAR Signaling	6.52E-01	9.62E-03	NaN	HSP90AB1	
+IGF-1 Signaling	6.52E-01	9.62E-03	NaN	SOCS3	
+T Cell Receptor Signaling	6.48E-01	9.52E-03	NaN	PTPRC	
+Virus Entry via Endocytic Pathways	6.4E-01	9.35E-03	NaN	HLA-E	
+Telomerase Signaling	6.4E-01	9.35E-03	NaN	HSP90AB1	
+Pancreatic Adenocarcinoma Signaling	6.33E-01	9.17E-03	NaN	STAT1	
+Rac Signaling	6.23E-01	8.93E-03	NaN	CFL1	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	6.06E-01	8.55E-03	NaN	HLA-E	
+Role of Tissue Factor in Cancer	6.06E-01	8.55E-03	NaN	CFL1	
+Renin-Angiotensin Signaling	6.04E-01	8.47E-03	NaN	STAT1	
+p38 MAPK Signaling	6.04E-01	8.47E-03	NaN	STAT1	
+Protein Kinase A Signaling	6E-01	5.03E-03	NaN	AKAP13,PTPRC	
+LXR/RXR Activation	5.93E-01	8.26E-03	NaN	S100A8	
+RhoA Signaling	5.88E-01	8.13E-03	NaN	CFL1	
+CCR3 Signaling in Eosinophils	5.85E-01	8.06E-03	NaN	CFL1	
+IL-6 Signaling	5.82E-01	8E-03	NaN	SOCS3	
+Phagosome Formation	5.82E-01	8E-03	NaN	C5AR1	
+Atherosclerosis Signaling	5.78E-01	7.94E-03	NaN	S100A8	
+Reelin Signaling in Neurons	5.7E-01	7.75E-03	NaN	CFL1	
+PI3K Signaling in B Lymphocytes	5.45E-01	7.25E-03	NaN	PTPRC	
+Hereditary Breast Cancer Signaling	5.39E-01	7.14E-03	NaN	GADD45B	
+Insulin Receptor Signaling	5.39E-01	7.14E-03	NaN	SOCS3	
+Cardiac β-adrenergic Signaling	5.38E-01	7.09E-03	NaN	AKAP13	
+Type II Diabetes Mellitus Signaling	5.35E-01	7.04E-03	NaN	SOCS3	
+Aryl Hydrocarbon Receptor Signaling	5.32E-01	6.99E-03	NaN	HSP90AB1	
+Xenobiotic Metabolism General Signaling Pathway	5.32E-01	6.99E-03	NaN	FTL	
+Phagosome Maturation	5.13E-01	6.62E-03	NaN	HLA-E	
+PKCθ Signaling in T Lymphocytes	5.03E-01	6.45E-03	NaN	HLA-DQA1	
+Regulation of eIF4 and p70S6K Signaling	4.98E-01	6.37E-03	NaN	PABPC1	
+Aldosterone Signaling in Epithelial Cells	4.96E-01	6.33E-03	NaN	HSP90AB1	
+eNOS Signaling	4.93E-01	6.29E-03	NaN	HSP90AB1	
+HOTAIR Regulatory Pathway	4.91E-01	6.25E-03	NaN	IRF1	
+Axonal Guidance Signaling	4.84E-01	4.13E-03	NaN	CFL1,ERAP2	
+HMGB1 Signaling	4.8E-01	6.06E-03	NaN	TNFSF10	
+Cardiac Hypertrophy Signaling (Enhanced)	4.8E-01	4.11E-03	NaN	AKAP13,TNFSF10	
+Germ Cell-Sertoli Cell Junction Signaling	4.69E-01	5.85E-03	NaN	CFL1	
+PI3K/AKT Signaling	4.6E-01	5.71E-03	NaN	HSP90AB1	
+RhoGDI Signaling	4.5E-01	5.56E-03	NaN	CFL1	
+Granulocyte Adhesion and Diapedesis	4.5E-01	5.56E-03	NaN	C5AR1	
+Ephrin Receptor Signaling	4.5E-01	5.56E-03	NaN	CFL1	
+Role of NFAT in Regulation of the Immune Response	4.49E-01	5.52E-03	NaN	HLA-DQA1	
+Hepatic Cholestasis	4.4E-01	5.41E-03	NaN	TNFSF10	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.39E-01	5.38E-03	NaN	STAT1	
+NRF2-mediated Oxidative Stress Response	4.33E-01	5.29E-03	NaN	FTL	
+Xenobiotic Metabolism CAR Signaling Pathway	4.33E-01	5.29E-03	NaN	HSP90AB1	
+PPARα/RXRα Activation	4.32E-01	5.26E-03	NaN	HSP90AB1	
+Xenobiotic Metabolism PXR Signaling Pathway	4.28E-01	5.21E-03	NaN	HSP90AB1	
+Clathrin-mediated Endocytosis Signaling	4.26E-01	5.18E-03	NaN	S100A8	
+Agranulocyte Adhesion and Diapedesis	4.26E-01	5.18E-03	NaN	C5AR1	
+ERK/MAPK Signaling	4.26E-01	5.18E-03	NaN	STAT1	
+Leukocyte Extravasation Signaling	4.19E-01	5.08E-03	NaN	SPN	
+Calcium Signaling	4.03E-01	4.85E-03	NaN	ATP2B1	
+cAMP-mediated signaling	3.71E-01	4.39E-03	NaN	AKAP13	
+Huntington's Disease Signaling	3.58E-01	4.22E-03	NaN	PSME2	
+Signaling by Rho Family GTPases	3.49E-01	4.1E-03	NaN	CFL1	
+Colorectal Cancer Metastasis Signaling	3.37E-01	3.95E-03	NaN	STAT1	
+Phospholipase C Signaling	3.32E-01	3.89E-03	NaN	AHNAK	
+Senescence Pathway	3.11E-01	3.64E-03	NaN	GADD45B	
+Hepatic Fibrosis Signaling Pathway	2.27E-01	2.72E-03	NaN	FTL	
+Breast Cancer Regulation by Stathmin1	-0E00	1.69E-03	NaN	C5AR1	

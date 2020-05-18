@@ -1,0 +1,716 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Flags	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+CSF3	 	cytokine	 	0.816	 	4.59E-08	CCL5,CD44,ERAP2,ETS1,GNLY,GZMH,TNFRSF1B	9 (5)
+alefacept	 	biologic drug	Activated	2.228	bias	7.13E-08	CCL5,FCGR3A/FCGR3B,GNLY,PRF1,STAT1	 
+IL12 (family)	 	group	 	-1.153	bias	1.98E-07	CCL5,CD44,FCGR3A/FCGR3B,GZMH,PRF1,STAT1	15 (10)
+IL15	 	cytokine	 	-1.504	bias	1.93E-06	CCL5,CD44,ETS1,FCGR3A/FCGR3B,FYN,GNLY,PRF1,SPN	13 (6)
+TNFSF11	 	cytokine	Inhibited	-2.190	bias	1.32E-05	AKAP13,CCL5,CD44,ETS1,STAT1,TNFRSF1B	15 (9)
+IFNG	 	cytokine	 	-1.297	bias	1.37E-05	BTN3A1,BTN3A2,CCL5,CD44,DDX5,ERAP2,FCGR3A/FCGR3B,HLA-E,RUNX3,STAT1,TNFRSF1B,TXNIP	20 (7)
+ST1926	 	chemical drug	 	1.109	bias	1.54E-05	EEF2,EIF4B,PABPC1,TMSB10/TMSB4X,TPT1	 
+IL2	 	cytokine	 	-1.311	bias	2.67E-05	ARHGAP25,CCL5,CD44,ETS1,FCGR3A/FCGR3B,FYN,PRF1,TNFRSF1B	11 (7)
+IL18	 	cytokine	 	-1.000	bias	2.69E-05	CCL5,CD44,FCGR3A/FCGR3B,GZMH,PRF1	14 (6)
+CALCA	 	other	 	1.000	bias	3.35E-05	AHNAK,AKAP13,CD44,EIF4B	 
+CXCL12	 	cytokine	 	-1.172	bias	4.32E-05	CCL5,CD44,FYN,RUNX3,TNFRSF1B	 
+CD 437	 	chemical drug	 	1.342	bias	4.75E-05	CCL5,EEF2,EIF4B,PABPC1,TMSB10/TMSB4X	 
+PIK3CG	 	kinase	 	1.000	 	5.36E-05	FCGR3A/FCGR3B,GZMH,PRF1,STAT1	 
+CSF1	 	cytokine	 	-1.446	bias	6.36E-05	CCL5,FCGR3A/FCGR3B,STAT1,TNFRSF1B,TPT1	14 (5)
+lipopolysaccharide	 	chemical drug	 	-1.121	bias	6.53E-05	AKAP13,CCL5,CD44,EEF2,FYN,GZMH,RESF1,RUNX3,STAT1,TMSB10/TMSB4X,TNFRSF1B,TPT1,TXNIP	18 (5)
+ETS1	-0.326	transcription regulator	 	-1.067	bias	6.93E-05	CCL5,CD44,ETS1,PRF1,RUNX3	 
+U0126	 	chemical - kinase inhibitor	 	1.342	bias	7.14E-05	CCL5,CD44,EEF2,ETS1,MACF1,PABPC1,STAT1	11 (7)
+TCR	 	complex	 	-1.964	bias	8.15E-05	CCL5,CD44,FYN,PRF1,STAT1,TNFRSF1B	15 (10)
+IL12A	 	cytokine	 	 	 	9.85E-05	CCL5,PRF1,STAT1	4 (3)
+FBXO42	 	other	 	 	 	1.32E-04	CCL5,STAT1	 
+decitabine	 	chemical drug	 	0.267	bias	1.43E-04	CCL5,CD44,EIF4B,HLA-E,PABPC1,RUNX3,STAT1,TMSB10/TMSB4X	 
+TGFB1	 	growth factor	 	-1.728	 	1.50E-04	AHNAK,CCL5,CD44,DDX5,ETS1,FCGR3A/FCGR3B,FYN,MALAT1,MYBL1,RUNX3,STAT1,TXNIP	17 (7)
+SAFB	 	other	 	 	 	1.59E-04	CCL5,EIF4B,HLA-E	 
+IL27	 	cytokine	 	 	 	1.85E-04	CCL5,HLA-E,SPTBN1,STAT1	5 (3)
+IKBKB	 	kinase	 	0.715	bias	2.38E-04	CCL5,CD44,ETS1,FYN,TNFRSF1B	16 (9)
+TWIST1	 	transcription regulator	 	-0.577	bias	2.96E-04	CD44,ETS1,RUNX3,SPOCK2	 
+5-azacytidine	 	chemical drug	 	-1.969	bias	3.31E-04	CD44,FYN,PRF1,RUNX3	 
+SPHK2	 	kinase	 	 	 	3.32E-04	CCL5,FYN	 
+ADAM15	 	peptidase	 	 	 	3.32E-04	CCL5,CD44	 
+DDX58	 	enzyme	 	 	 	3.59E-04	AHNAK,CCL5,STAT1	5 (6)
+FGF7	 	growth factor	 	 	 	3.74E-04	CD44,DDX5,STAT1	 
+DDX3X	 	enzyme	 	 	 	3.83E-04	CCL5,STAT1	4 (3)
+KLF2	 	transcription regulator	 	 	 	4.29E-04	CCL5,CD44,PRF1,STAT1	 
+IL1B	 	cytokine	 	-1.207	bias	4.36E-04	CCL5,CD44,DDX5,HLA-E,STAT1,TNFRSF1B,TPT1,TXNIP	15 (6)
+DPH5	 	enzyme	 	 	 	4.37E-04	EEF2,STAT1	 
+BCL10	 	transcription regulator	 	 	 	4.37E-04	CCL5,CD44	8 (6)
+S1PR3	 	G-protein coupled receptor	 	 	 	4.37E-04	CD44,ETS1	8 (6)
+MYC	 	transcription regulator	 	-1.559	bias	4.56E-04	ARHGAP25,CD44,DDX5,EEF2,HLA-E,SPN,STAT1,TMSB10/TMSB4X,TXNIP	 
+CCL5	-0.416	cytokine	 	 	 	4.73E-04	CCL5,CD44,STAT1	14 (9)
+fenretinide	 	chemical drug	 	 	 	4.91E-04	FYN,PRF1,STAT1	 
+FZD9	 	G-protein coupled receptor	 	 	 	4.95E-04	CCL5,STAT1	 
+LAMA5	 	other	 	 	 	4.95E-04	STAT1,TNFRSF1B	 
+PARP9	 	enzyme	 	 	 	5.56E-04	HLA-E,STAT1	4 (3)
+IL4	 	cytokine	 	-0.691	bias	6.20E-04	AHNAK,AKAP13,CCL5,CD44,FCGR3A/FCGR3B,PRF1,SPTBN1,STAT1	10 (4)
+LYN	 	kinase	 	 	 	6.29E-04	CCL5,ETS1,FYN	9 (5)
+curcumin	 	chemical drug	 	1.715	bias	6.57E-04	CCL5,CD44,ETS1,FYN,TPT1	14 (9)
+triamcinolone acetonide	 	chemical drug	 	0.000	 	7.21E-04	AKAP13,CD44,PRF1,TXNIP	 
+sphingosine-1-phosphate	 	chemical - endogenous mammalian	 	 	 	7.66E-04	CCL5,CD44,ETS1	10 (8)
+IL10	 	cytokine	 	-1.130	 	7.70E-04	CCL5,CD44,FCGR3A/FCGR3B,STAT1,TNFRSF1B	21 (11)
+dexamethasone	 	chemical drug	 	0.277	 	7.74E-04	AKAP13,ARHGAP25,BTN3A2,CCL5,CD44,IQGAP1,PABPC1,SPOCK2,SPTBN1,STAT1,TPT1,TXNIP	 
+Ifnar	 	group	 	 	 	8.15E-04	CCL5,HLA-E,STAT1	13 (5)
+IL15RA	 	transmembrane receptor	 	 	 	8.35E-04	CD44,SPN	 
+allopurinol	 	chemical drug	 	 	 	8.93E-04	CD44,TMSB10/TMSB4X,TXNIP	 
+SAFB2	 	other	 	 	 	9.95E-04	EIF4B,HLA-E	 
+poly dA-dT	 	chemical reagent	 	 	 	9.95E-04	CCL5,STAT1	5 (4)
+CD40LG	 	cytokine	 	 	 	1.04E-03	AKAP13,CCL5,CD44,RUNX3,STAT1	12 (7)
+EGFR	 	kinase	 	0.391	bias	1.23E-03	CCL5,MACF1,PABPC1,PRF1,TXNIP	 
+SLC9A3	 	ion channel	 	 	 	1.26E-03	CCL5,STAT1	 
+ASAH1	 	enzyme	 	 	 	1.26E-03	CCL5,ETS1	 
+NCF1	 	enzyme	 	 	 	1.36E-03	CCL5,CD44	8 (5)
+LIN28B	 	other	 	 	 	1.36E-03	CD44,EEF2	 
+RC3H1	 	enzyme	 	 	 	1.36E-03	CCL5,TNFRSF1B	 
+black raspberry extract	 	chemical drug	 	 	 	1.39E-03	AHNAK,CD44,DDX5	 
+CD3	 	complex	 	-1.118	bias	1.41E-03	CCL5,CD44,ETS1,FYN,PRF1,STAT1	13 (10)
+ROCK1	 	kinase	 	 	 	1.46E-03	CD44,ETS1	 
+FCGR2A	 	transmembrane receptor	 	 	 	1.46E-03	CCL5,FCGR3A/FCGR3B	 
+BTK	 	kinase	 	 	 	1.50E-03	ETS1,SPN,STAT1	 
+RPSA	 	translation regulator	 	 	 	1.56E-03	CCL5,STAT1	8 (5)
+PTP4A1	 	phosphatase	 	 	 	1.61E-03	CCL5,DDX5,EEF2	 
+interferon beta-1a	 	biologic drug	 	 	 	1.73E-03	GNLY,STAT1,TNFRSF1B	 
+cyclosporin A	 	biologic drug	 	1.512	 	1.75E-03	CCL5,CD44,FYN,PRF1,TMSB10/TMSB4X	12 (6)
+Cdk	 	group	 	 	 	1.88E-03	CCL5,TXNIP	 
+reactive oxygen species	 	chemical toxicant	 	 	 	1.90E-03	CCL5,ETS1,PRF1	 
+2'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	1.95E-03	TXNIP	 
+bovine testicular hyaluronidase	 	biologic drug	 	 	 	1.95E-03	CD44	 
+DNAJC24	 	other	 	 	 	1.95E-03	EEF2	 
+MLLT11	 	other	 	 	 	1.95E-03	CD44	 
+DSC2	 	other	 	 	 	1.95E-03	CD44	 
+DPH2	 	enzyme	 	 	 	1.95E-03	EEF2	 
+RAB27A	 	enzyme	 	 	 	1.95E-03	CD44	 
+PJA1	 	enzyme	 	 	 	1.95E-03	SPTBN1	 
+PRPF4	 	other	 	 	 	1.95E-03	CCL5	 
+miR-125a-3p (miRNAs w/seed CAGGUGA)	 	mature microRNA	 	 	 	1.95E-03	FYN	 
+TONSL	 	transcription regulator	 	 	 	1.95E-03	CCL5	 
+ANK2	 	other	 	 	 	1.95E-03	SPTBN1	 
+PDPN	 	other	 	 	 	1.95E-03	CD44	 
+ETS1-AS1	 	other	 	 	 	1.95E-03	ETS1	 
+CDKL2	 	kinase	 	 	 	1.95E-03	CD44	 
+SRRM1	 	other	 	 	 	1.95E-03	CD44	 
+oligomycin A	 	chemical - endogenous non-mammalian	 	 	 	1.95E-03	TXNIP	 
+anthraquinone	 	chemical toxicant	 	 	 	1.95E-03	CCL5	 
+2-nitrophenyl EGTA	 	chemical reagent	 	 	 	1.95E-03	AHNAK	 
+3'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	1.95E-03	TXNIP	 
+allose	 	chemical - endogenous mammalian	 	 	 	1.95E-03	TXNIP	 
+ZBED6	 	transcription regulator	 	 	 	2.00E-03	MYBL1,SPTBN1	 
+bryostatin 1	 	chemical drug	 	 	 	2.00E-03	CCL5,CD44	 
+beta-estradiol	 	chemical - endogenous mammalian	 	-0.760	 	2.03E-03	CCL5,CD44,ETS1,HLA-E,IQGAP1,MYBL1,SPN,SPOCK2,SYNE1,TNFRSF1B,TXNIP	12 (4)
+IL1RN	 	cytokine	 	 	 	2.07E-03	BTN3A1,CD44,ERAP2	 
+ING1	 	transcription regulator	 	 	 	2.12E-03	CCL5,TPT1	 
+PRDM16	 	transcription regulator	 	 	 	2.24E-03	CCL5,STAT1	4 (3)
+IGFBP3	 	other	 	 	 	2.24E-03	CCL5,STAT1	10 (8)
+GAPDH	 	enzyme	 	 	 	2.24E-03	STAT1,TXNIP	 
+AGT	 	growth factor	Inhibited	-2.189	bias	2.26E-03	CCL5,CD44,ETS1,TNFRSF1B,TXNIP	16 (9)
+IKZF2	 	transcription regulator	 	 	 	2.36E-03	HLA-E,RUNX3	 
+IL27RA	 	transmembrane receptor	 	 	 	2.36E-03	CD44,STAT1	 
+CASR	 	G-protein coupled receptor	 	 	 	2.41E-03	CD44,IQGAP1,TXNIP	 
+n-nitrosomethylbenzylamine	 	chemical toxicant	 	 	 	2.41E-03	AHNAK,CD44,DDX5	 
+IGF1	 	growth factor	 	-1.546	bias	2.43E-03	CCL5,CD44,DDX5,EIF4B,TXNIP	 
+steroid	 	chemical - endogenous mammalian	 	 	 	2.49E-03	CCL5,SPEN	 
+GATA1	 	transcription regulator	 	 	 	2.53E-03	CCL5,ETS1,RUNX3,SPOCK2	 
+CDKN2A	 	transcription regulator	 	 	 	2.59E-03	CCL5,CNOT6L,DDX5,TNFRSF1B	 
+SP110	 	transcription regulator	 	 	 	2.61E-03	ETS1,STAT1,TXNIP	 
+ethionine	 	chemical toxicant	 	 	 	2.62E-03	CD44,TMSB10/TMSB4X	 
+DICER1	 	enzyme	 	1.154	 	2.65E-03	CD44,PRF1,SPN,STAT1	 
+forskolin	 	chemical toxicant	 	-1.172	bias	2.66E-03	AKAP13,CCL5,CD44,GNLY,STAT1,TXNIP	11 (5)
+TNF	 	cytokine	Inhibited	-2.123	bias	2.67E-03	CCL5,CD44,DDX5,ETS1,FYN,HLA-E,STAT1,TNFRSF1B,TPT1,TXNIP	19 (10)
+phytohemagglutinin	 	chemical drug	 	-1.091	bias	2.85E-03	CCL5,CD44,PRF1,STAT1	10 (5)
+CD2	 	transmembrane receptor	 	 	 	3.04E-03	CD44,STAT1	 
+IRAK1	 	kinase	 	 	 	3.04E-03	CCL5,STAT1	11 (9)
+CCR5	 	G-protein coupled receptor	 	 	 	3.04E-03	CCL5,TNFRSF1B	 
+phenacetin	 	chemical drug	 	 	 	3.04E-03	CD44,TMSB10/TMSB4X	 
+GFI1	 	transcription regulator	 	 	 	3.05E-03	ETS1,RUNX3,STAT1	 
+RBPJ	 	transcription regulator	 	 	 	3.11E-03	CD44,ETS1,RUNX3	 
+ACKR2	 	G-protein coupled receptor	 	 	 	3.18E-03	CCL5,STAT1	 
+S-nitrosoglutathione	 	chemical toxicant	 	 	 	3.18E-03	CCL5,DDX5	 
+26s Proteasome	 	complex	 	 	 	3.23E-03	RUNX3,STAT1,TXNIP	 
+ETV6-RUNX1	 	fusion gene/product	 	0.283	bias	3.31E-03	ARHGAP25,CCL5,CD44,STAT1	 
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	 	3.41E-03	AKAP13,CCL5,STAT1	6 (4)
+tretinoin	 	chemical - endogenous mammalian	 	0.484	bias	3.44E-03	AHNAK,CD44,ETS1,RUNX3,SPEN,STAT1,TMSB10/TMSB4X,TNFRSF1B,TPT1	 
+LY294002	 	chemical - kinase inhibitor	 	1.308	bias	3.49E-03	CCL5,CD44,ETS1,SPN,TNFRSF1B	12 (8)
+medroxyprogesterone acetate	 	chemical drug	 	 	 	3.60E-03	CCL5,CD44,ETS1	5 (3)
+APOE	 	transporter	 	 	 	3.78E-03	CCL5,CD44,DIP2A,TXNIP	 
+imatinib	 	chemical drug	 	 	 	3.78E-03	EIF4B,PPP2R5C,SF3B1,STAT1	 
+gentamicin C1	 	chemical drug	 	 	 	3.89E-03	CD44	 
+Tap	 	complex	 	 	 	3.89E-03	HLA-E	 
+SLC4A5	 	transporter	 	 	 	3.89E-03	SPTBN1	 
+MBNL3	 	other	 	 	 	3.89E-03	CD44	 
+ARL16	 	other	 	 	 	3.89E-03	CCL5	 
+MLXIP	 	transcription regulator	 	 	 	3.89E-03	TXNIP	 
+miR-411-5p (and other miRNAs w/seed AGUAGAC)	 	mature microRNA	 	 	 	3.89E-03	TXNIP	 
+miR-532-5p (and other miRNAs w/seed AUGCCUU)	 	mature microRNA	 	 	 	3.89E-03	RUNX3	 
+mir-139	 	microRNA	 	 	 	3.89E-03	PRF1	 
+DCTN4	 	other	 	 	 	3.89E-03	CCL5	 
+cobimetinib	 	chemical drug	 	 	 	3.89E-03	CD44	 
+poly-L-glutamic acid-peptoid 1 conjugate QM56	 	chemical reagent	 	 	 	3.89E-03	CCL5	 
+RBM3	 	other	 	 	 	3.89E-03	CD44	 
+USP13	 	peptidase	 	 	 	3.89E-03	STAT1	 
+KHDRBS2	 	other	 	 	 	3.89E-03	STAT1	 
+DPH1	 	other	 	 	 	3.89E-03	EEF2	 
+BTN3A2	-0.317	other	 	 	 	3.89E-03	BTN3A1	 
+3-O-methylglucose	 	chemical reagent	 	 	 	3.89E-03	TXNIP	 
+PDGF BB	 	complex	 	-1.195	bias	3.95E-03	CD44,ETS1,HLA-E,SYNE1	 
+aldesleukin	 	biologic drug	 	 	 	3.95E-03	FCGR3A/FCGR3B,STAT1	 
+CCND1	 	transcription regulator	 	 	 	3.99E-03	AHNAK,CD44,MACF1,MYBL1	 
+IL6	 	cytokine	 	 	 	4.03E-03	AHNAK,CCL5,CD44,PRF1,STAT1,TNFRSF1B	14 (10)
+cisplatin	 	chemical drug	 	-0.964	bias	4.06E-03	CCL5,CD44,FYN,TMSB10/TMSB4X,TNFRSF1B,TXNIP	11 (3)
+Ap1	 	complex	 	 	 	4.06E-03	CCL5,CD44,ETS1	11 (5)
+2-bromoethylamine	 	chemical reagent	 	 	 	4.11E-03	CD44,TMSB10/TMSB4X	 
+PNPT1	 	enzyme	 	 	 	4.28E-03	CCL5,STAT1	 
+androgen	 	chemical drug	 	 	 	4.34E-03	CD44,ETS1,TPT1	 
+IFN type 1	 	group	 	 	 	4.45E-03	CCL5,STAT1	4 (4)
+mir-182	 	microRNA	 	 	 	4.45E-03	MALAT1,PRF1	 
+fluticasone propionate	 	chemical drug	 	 	 	4.64E-03	ARHGAP25,CCL5,STAT1	 
+PD98059	 	chemical - kinase inhibitor	 	1.429	bias	4.79E-03	CCL5,CD44,ETS1,PABPC1,TXNIP	12 (8)
+CD5	 	transmembrane receptor	 	 	 	4.79E-03	RUNX3,STAT1	 
+2,3,4,7,8-pentachlorodibenzofuran	 	chemical toxicant	 	 	 	4.79E-03	CD44,TMSB10/TMSB4X	 
+SP1	 	transcription regulator	 	 	 	4.90E-03	CCL5,FYN,MYBL1,SPN,STAT1	 
+MTOR	 	kinase	 	 	 	5.05E-03	AKAP13,PRF1,STAT1,TXNIP	 
+MOG	 	other	 	 	 	5.15E-03	CCL5,CD44	 
+Ccl2	 	cytokine	 	 	 	5.15E-03	CCL5,ETS1	8 (6)
+ESR1	 	ligand-dependent nuclear receptor	 	-0.707	 	5.21E-03	AHNAK,AKAP13,HLA-E,IQGAP1,PPP2R5C,SPTBN1,STAT1,TXNIP	 
+PTPN6	 	phosphatase	 	 	 	5.34E-03	CD44,ETS1	8 (6)
+glucagon	 	biologic drug	 	 	 	5.34E-03	AHNAK,EIF4B	 
+2-(4-amino-1-isopropyl-1H-pyrazolo[3,4-d]pyrimidin-3-yl)-1H-indol-5-ol	 	chemical reagent	 	 	 	5.34E-03	AKAP13,CD44,TXNIP	 
+STAT1	0.414	transcription regulator	 	-0.831	bias	5.51E-03	CCL5,HLA-E,PRF1,STAT1	4 (2)
+CLEC4G	 	other	 	 	 	5.53E-03	PRF1,RUNX3	 
+hexachlorobenzene	 	chemical toxicant	 	 	 	5.53E-03	CD44,TMSB10/TMSB4X	 
+Immunoglobulin	 	complex	 	-0.362	 	5.62E-03	CCL5,CD44,FCGR3A/FCGR3B,PRF1,TNFRSF1B	15 (9)
+MAP2K4	 	kinase	 	 	 	5.72E-03	CCL5,CD44	8 (6)
+ionomycin	 	chemical reagent	 	 	 	5.75E-03	AHNAK,ETS1,PRF1	 
+phosphatidylethanolamine	 	chemical - endogenous mammalian	 	 	 	5.83E-03	STAT1	 
+CpG 10101	 	chemical drug	 	 	 	5.83E-03	STAT1	 
+ITGBL1	 	other	 	 	 	5.83E-03	CD44	 
+CNDP2	 	peptidase	 	 	 	5.83E-03	CD44	 
+PAG1	 	other	 	 	 	5.83E-03	FYN	 
+GNLY	-0.537	other	 	 	 	5.83E-03	CCL5	 
+miR-27a-5p (miRNAs w/seed GGGCUUA)	 	mature microRNA	 	 	 	5.83E-03	PRF1	 
+miR-139-3p (miRNAs w/seed GGAGACG)	 	mature microRNA	 	 	 	5.83E-03	PRF1	 
+GCNT1	 	enzyme	 	 	 	5.83E-03	SPN	 
+SIGLEC10	 	other	 	 	 	5.83E-03	ETS1	 
+IGF2BP3	 	translation regulator	 	 	 	5.83E-03	CD44	 
+Ank2	 	other	 	 	 	5.83E-03	SPTBN1	 
+RNH1	 	other	 	 	 	5.83E-03	FYN	 
+HERC5	 	enzyme	 	 	 	5.83E-03	CCL5	 
+umbralisib	 	chemical drug	 	 	 	5.83E-03	EIF4B	 
+4-ethylsulfanylphenylmethylene hydantoin	 	chemical reagent	 	 	 	5.83E-03	CD44	 
+4-hydroxyphenylmethylene hydantoin	 	chemical reagent	 	 	 	5.83E-03	CD44	 
+fomepizole	 	chemical drug	 	 	 	5.83E-03	CCL5	 
+GKT137831	 	chemical drug	 	 	 	5.83E-03	CD44	 
+phloretin	 	chemical - endogenous non-mammalian	 	 	 	5.83E-03	TXNIP	 
+EGR1	 	transcription regulator	 	 	 	5.84E-03	CD44,FYN,MYBL1	 
+IL12B	 	cytokine	 	 	 	5.91E-03	CCL5,STAT1	10 (8)
+P38 MAPK	 	group	 	 	 	6.05E-03	CCL5,CD44,ETS1,STAT1	13 (7)
+FAS	 	transmembrane receptor	 	 	 	6.05E-03	CCL5,CD44,SPTBN1,TNFRSF1B	8 (3)
+adenosine	 	chemical - endogenous mammalian	 	 	 	6.11E-03	CCL5,TXNIP	 
+STAT2	 	transcription regulator	 	 	 	6.11E-03	CCL5,STAT1	4 (3)
+phenylbutazone	 	chemical drug	 	 	 	6.11E-03	CD44,TMSB10/TMSB4X	 
+miR-1-3p (and other miRNAs w/seed GGAAUGU)	 	mature microRNA	 	 	 	6.19E-03	DDX5,SYNE1,TMSB10/TMSB4X	 
+TNFRSF8	 	transmembrane receptor	 	 	 	6.30E-03	AHNAK,PRF1	 
+MAPT	 	other	 	 	 	6.46E-03	EEF2,FYN,SYNE1,TPT1	 
+MAPK1	 	kinase	 	0.762	 	6.69E-03	CCL5,HLA-E,STAT1,TNFRSF1B	7 (4)
+Fcer1	 	complex	 	 	 	6.71E-03	CCL5,FYN	3 (3)
+IL6ST	 	transmembrane receptor	 	 	 	6.71E-03	CD44,TNFRSF1B	 
+gentamicin C	 	chemical drug	 	 	 	6.92E-03	CD44,TMSB10/TMSB4X	 
+lomustine	 	chemical drug	 	 	 	6.92E-03	CD44,TMSB10/TMSB4X	 
+NRAS	 	enzyme	 	 	 	6.93E-03	CCL5,ETS1,STAT1	 
+IRF3	 	transcription regulator	 	 	 	7.02E-03	AHNAK,CCL5,STAT1	7 (5)
+tributyrin	 	chemical drug	 	 	 	7.13E-03	ETS1,MYBL1	 
+BCL2L1	 	other	 	 	 	7.13E-03	CD44,SPN	 
+PDCD1	 	phosphatase	 	 	 	7.13E-03	GNLY,STAT1	 
+oxaliplatin	 	chemical drug	 	 	 	7.13E-03	STAT1,TMSB10/TMSB4X	 
+Go 6976	 	chemical - kinase inhibitor	 	 	 	7.13E-03	CCL5,ETS1	8 (6)
+infliximab	 	biologic drug	 	 	 	7.34E-03	GNLY,PRF1	 
+triamterene	 	chemical drug	 	 	 	7.34E-03	CD44,TMSB10/TMSB4X	 
+ethanol	 	chemical - endogenous mammalian	 	-0.911	 	7.38E-03	CCL5,PRF1,SPTBN1,STAT1	10 (9)
+trichostatin A	 	chemical drug	 	0.156	 	7.43E-03	CD44,EIF4B,RUNX3,SPN,TMSB10/TMSB4X,TXNIP	 
+TRIM28	 	transcription regulator	 	 	 	7.56E-03	CCL5,ETS1	 
+cytarabine	 	chemical drug	 	 	 	7.56E-03	CCL5,PRF1	 
+IL12 (complex)	 	complex	 	 	 	7.71E-03	CCL5,CD44,PRF1	16 (9)
+ERG	 	transcription regulator	 	 	 	7.71E-03	DIP2A,ETS1,FYN	 
+chitinase	 	group	 	 	 	7.77E-03	CCL5	 
+CACTIN	 	other	 	 	 	7.77E-03	CCL5	 
+IRF3-IRF7	 	complex	 	 	 	7.77E-03	CCL5	 
+DNAJB4	 	other	 	 	 	7.77E-03	STAT1	 
+Meg3	 	other	 	 	 	7.77E-03	IQGAP1	 
+CRTAM	 	other	 	 	 	7.77E-03	PRF1	 
+TRIL	 	other	 	 	 	7.77E-03	CCL5	 
+CCDC134	 	other	 	 	 	7.77E-03	PRF1	 
+tyrosine kinase	 	group	 	 	 	7.77E-03	CD44	 
+NXF1	 	other	 	 	 	7.77E-03	CD44	 
+LARP1	 	translation regulator	 	 	 	7.77E-03	PABPC1	 
+CTSD	 	peptidase	 	 	 	7.77E-03	EEF2	 
+UFD1	 	peptidase	 	 	 	7.77E-03	CCL5	 
+miR-328-3p (and other miRNAs w/seed UGGCCCU)	 	mature microRNA	 	 	 	7.77E-03	CD44	 
+miR-330-5p (and other miRNAs w/seed CUCUGGG)	 	mature microRNA	 	 	 	7.77E-03	ETS1	 
+TPP2	 	peptidase	 	 	 	7.77E-03	PRF1	 
+NPLOC4	 	other	 	 	 	7.77E-03	CCL5	 
+KPNA1	 	transporter	 	 	 	7.77E-03	STAT1	 
+PDIA3	 	peptidase	 	 	 	7.77E-03	FCGR3A/FCGR3B	 
+BICD2	 	other	 	 	 	7.77E-03	STAT1	 
+unsaturated guluronate oligosaccharide	 	chemical reagent	 	 	 	7.77E-03	FCGR3A/FCGR3B	 
+(-)-isoproterenol	 	chemical drug	 	 	 	7.77E-03	CD44	 
+sodium alum	 	chemical drug	 	 	 	7.77E-03	TPT1	 
+D-Pen-2,5-enkephalin	 	chemical reagent	 	 	 	7.77E-03	PRF1	 
+zymosan	 	chemical - endogenous non-mammalian	 	 	 	7.78E-03	CCL5,SPN	 
+tetradecanoylphorbol acetate	 	chemical drug	 	-0.372	bias	7.86E-03	CCL5,CD44,ETS1,PRF1,SPN,STAT1,TNFRSF1B	16 (11)
+TBX21	 	transcription regulator	 	 	 	8.00E-03	PRF1,RUNX3	 
+ZBTB7B	 	transcription regulator	 	 	 	8.00E-03	PRF1,RUNX3	 
+ANXA7	 	ion channel	 	 	 	8.00E-03	FYN,TNFRSF1B	 
+fenamic acid	 	chemical reagent	 	 	 	8.00E-03	CD44,TMSB10/TMSB4X	 
+NFkB (complex)	 	complex	 	 	 	8.07E-03	CCL5,CD44,ERAP2,ETS1,MYBL1	6 (4)
+MAVS	 	other	 	 	 	8.23E-03	CCL5,STAT1	5 (5)
+2-deoxyglucose	 	chemical drug	 	 	 	8.23E-03	CCL5,TXNIP	 
+ANGPT2	 	growth factor	 	 	 	8.33E-03	CCL5,ETS1,TXNIP	 
+CDK4/6	 	group	 	 	 	8.46E-03	AHNAK,MACF1	 
+Jnk	 	group	 	 	 	8.55E-03	CCL5,CD44,ETS1	10 (8)
+TLR7	 	transmembrane receptor	 	 	 	8.66E-03	CCL5,CD44,STAT1	14 (8)
+GNA14	 	enzyme	 	 	 	8.69E-03	FCGR3A/FCGR3B,STAT1	 
+MDM2	 	transcription regulator	 	 	 	9.16E-03	DDX5,ETS1	 
+STAT6	 	transcription regulator	 	1.000	 	9.32E-03	AHNAK,AKAP13,CCL5,FCGR3A/FCGR3B	 
+TFAP2C	 	transcription regulator	 	 	 	9.40E-03	CD44,GZMH	 
+isotretinoin	 	biologic drug	 	 	 	9.40E-03	RUNX3,SPN	 
+STAT4	 	transcription regulator	 	 	 	9.55E-03	AHNAK,SF3B1,STAT1	 
+Bay 11-7082	 	chemical - kinase inhibitor	 	 	 	9.64E-03	CCL5,CD44	8 (6)
+HIF1A	 	transcription regulator	 	-1.969	bias	9.70E-03	CCL5,CD44,ETS1,FYN	6 (2)
+teniposide	 	chemical drug	 	 	 	9.70E-03	CCL5	 
+globotriaosylceramide	 	chemical - endogenous mammalian	 	 	 	9.70E-03	CD44	 
+Erm	 	group	 	 	 	9.70E-03	CD44	 
+edratide	 	biologic drug	 	 	 	9.70E-03	CD44	 
+TRIM29	 	transcription regulator	 	 	 	9.70E-03	CD44	 
+CC2D1A	 	transcription regulator	 	 	 	9.70E-03	CCL5	 
+ZMIZ2	 	transcription regulator	 	 	 	9.70E-03	CD44	 
+MCOLN2	 	ion channel	 	 	 	9.70E-03	CCL5	 
+propolis	 	biologic drug	 	 	 	9.70E-03	CCL5	 
+RAP1B	 	enzyme	 	 	 	9.70E-03	CCL5	 
+FZD7	 	G-protein coupled receptor	 	 	 	9.70E-03	CD44	 
+miR-615-5p (and other miRNAs w/seed GGGGUCC)	 	mature microRNA	 	 	 	9.70E-03	PRF1	 
+miR-873-5p (and other miRNAs w/seed CAGGAAC)	 	mature microRNA	 	 	 	9.70E-03	CD44	 
+LAMP1	 	other	 	 	 	9.70E-03	PRF1	 
+ADAM8	 	peptidase	 	 	 	9.70E-03	CCL5	 
+AQP3	 	transporter	 	 	 	9.70E-03	CCL5	 
+VCAM1	 	transmembrane receptor	 	 	 	9.70E-03	CD44	 
+FRK	 	kinase	 	 	 	9.70E-03	FYN	 
+talazoparib	 	chemical drug	 	 	 	9.70E-03	CCL5	 
+fluticasone	 	chemical drug	 	 	 	9.70E-03	CCL5	 
+sodium azide	 	chemical toxicant	 	 	 	9.70E-03	TXNIP	 
+retinaldehyde	 	chemical - endogenous mammalian	 	 	 	9.70E-03	CD44	 
+PRNP	 	other	 	 	 	1.01E-02	CCL5,CD44	 
+1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine	 	chemical toxicant	 	 	 	1.01E-02	CCL5,TNFRSF1B	 
+captopril	 	chemical drug	 	 	 	1.01E-02	CD44,TMSB10/TMSB4X	 
+PRDM1	 	transcription regulator	 	 	 	1.01E-02	CD44,GNLY,PRF1	 
+budesonide	 	chemical drug	 	 	 	1.04E-02	CCL5,FYN	 
+MAP3K14	 	kinase	 	 	 	1.04E-02	CCL5,CD44	 
+MAP3K7	 	kinase	 	 	 	1.04E-02	CCL5,SPTBN1	 
+NFKBIA	 	transcription regulator	 	-1.103	 	1.06E-02	CCL5,ERAP2,SPTBN1,TNFRSF1B	 
+filgrastim	 	biologic drug	 	-0.152	 	1.06E-02	ARHGAP25,CCL5,CD44,STAT1	 
+IFN alpha/beta	 	group	 	 	 	1.09E-02	CCL5,STAT1	 
+TP53	 	transcription regulator	 	-0.790	 	1.09E-02	CCL5,CD44,DDX5,FYN,MYBL1,SPN,STAT1,TMSB10/TMSB4X,TNFRSF1B	 
+VDR	 	transcription regulator	 	 	 	1.11E-02	CD44,IQGAP1,TXNIP	 
+MITF	 	transcription regulator	 	 	 	1.11E-02	CD44,PRF1,TXNIP	 
+TGFA	 	growth factor	 	 	 	1.12E-02	CCL5,DDX5	 
+Fcgr2	 	group	 	 	 	1.16E-02	CCL5	 
+5R-hydroxytriptolide	 	chemical drug	 	 	 	1.16E-02	STAT1	 
+CSRP3	 	other	 	 	 	1.16E-02	TXNIP	 
+PPP4C	 	phosphatase	 	 	 	1.16E-02	CCL5	 
+HAS1	 	enzyme	 	 	 	1.16E-02	CD44	 
+miR-219a-5p (and other miRNAs w/seed GAUUGUC)	 	mature microRNA	 	 	 	1.16E-02	TNFRSF1B	 
+AMBN	 	growth factor	 	 	 	1.16E-02	TNFRSF1B	 
+OPRD1	 	G-protein coupled receptor	 	 	 	1.16E-02	PRF1	 
+WIF1	 	other	 	 	 	1.16E-02	MALAT1	 
+palmitoylethanolamide	 	chemical drug	 	 	 	1.16E-02	TNFRSF1B	 
+CFTR	 	ion channel	 	 	 	1.17E-02	CCL5,STAT1	 
+Interferon alpha	 	group	 	-0.517	bias	1.17E-02	CCL5,GZMH,PRF1,STAT1	 
+IFNA2	 	cytokine	 	 	 	1.18E-02	CCL5,HLA-E,STAT1	 
+TLR9	 	transmembrane receptor	 	 	 	1.19E-02	CCL5,STAT1,TNFRSF1B	 
+ALKBH5	 	enzyme	 	 	 	1.19E-02	AKAP13,FYN	 
+ITK	 	kinase	 	 	 	1.19E-02	CCL5,CD44	 
+mycophenolic acid	 	chemical drug	 	 	 	1.19E-02	ETS1,MYBL1	 
+GATA3	 	transcription regulator	 	 	 	1.20E-02	CCL5,ETS1,RUNX3	 
+ERK	 	group	 	 	 	1.21E-02	ETS1,SPTBN1,STAT1	 
+maslinic acid	 	chemical - endogenous non-mammalian	 	 	 	1.22E-02	CD44,ETS1	 
+PIK3R1	 	kinase	 	 	 	1.22E-02	CD44,TXNIP	 
+3,4,5,3',4'-pentachlorobiphenyl	 	chemical toxicant	 	 	 	1.22E-02	CD44,TMSB10/TMSB4X	 
+MYOD1	 	transcription regulator	 	 	 	1.26E-02	FYN,SPTBN1,STAT1	 
+tacrolimus	 	chemical drug	 	 	 	1.27E-02	CCL5,PRF1,TNFRSF1B	 
+IKBKE	 	kinase	 	 	 	1.28E-02	CCL5,STAT1	 
+IRF5	 	transcription regulator	 	 	 	1.28E-02	CCL5,STAT1	 
+NEDD9	 	other	 	 	 	1.28E-02	CD44,TXNIP	 
+vancomycin	 	biologic drug	 	 	 	1.28E-02	CD44,TMSB10/TMSB4X	 
+Lh	 	complex	 	 	 	1.28E-02	GNLY,PPP2R5C,STAT1	 
+COL18A1	 	other	 	 	 	1.30E-02	ETS1,STAT1	 
+rosiglitazone	 	chemical drug	 	0.069	 	1.34E-02	CCL5,ETS1,SPN,STAT1	 
+poly(dG-dC)	 	chemical reagent	 	 	 	1.36E-02	STAT1	 
+EGR4	 	transcription regulator	 	 	 	1.36E-02	MYBL1	 
+KHDRBS1	 	transcription regulator	 	 	 	1.36E-02	CD44	 
+TRIM8	 	other	 	 	 	1.36E-02	CCL5	 
+CLIC4	 	ion channel	 	 	 	1.36E-02	CCL5	 
+PLA2G2A	 	enzyme	 	 	 	1.36E-02	CD44	 
+Ptgs2os2	 	other	 	 	 	1.36E-02	CCL5	 
+MRC1	 	transmembrane receptor	 	 	 	1.36E-02	CCL5	 
+KLRB1	 	transmembrane receptor	 	 	 	1.36E-02	CCL5	 
+Klrk1	 	transmembrane receptor	 	 	 	1.36E-02	CCL5	 
+CLEC2A	 	other	 	 	 	1.36E-02	CCL5	 
+10-hydroxy-cis-12-octadecenoic acid	 	chemical reagent	 	 	 	1.36E-02	TNFRSF1B	 
+dacarbazine	 	chemical drug	 	 	 	1.36E-02	CCL5	 
+AR-A014418	 	chemical reagent	 	 	 	1.36E-02	CD44	 
+vinorelbine	 	chemical drug	 	 	 	1.36E-02	CCL5	 
+CCL2	 	cytokine	 	 	 	1.36E-02	CCL5,STAT1	 
+miR-291a-3p (and other miRNAs w/seed AAGUGCU)	 	mature microRNA	 	 	 	1.36E-02	CD44,MYBL1	 
+R5020	 	chemical reagent	 	 	 	1.36E-02	STAT1,TXNIP	 
+TCF	 	group	 	 	 	1.36E-02	AKAP13,CD44	 
+erlotinib	 	chemical drug	 	 	 	1.42E-02	CCL5,TNFRSF1B	 
+desmopressin	 	biologic drug	 	 	 	1.42E-02	AHNAK,EIF4B	 
+AG490	 	chemical - kinase inhibitor	 	 	 	1.42E-02	CCL5,STAT1	 
+PDLIM2	 	other	 	 	 	1.45E-02	STAT1,TXNIP	 
+trinitrobenzenesulfonic acid	 	chemical reagent	 	 	 	1.45E-02	CCL5,CD44	 
+CpG ODN 2006	 	chemical reagent	 	 	 	1.45E-02	CCL5,STAT1	 
+TLR3	 	transmembrane receptor	 	 	 	1.45E-02	CCL5,STAT1,TNFRSF1B	 
+tocilizumab	 	biologic drug	 	 	 	1.55E-02	CCL5	 
+CYTOR	 	other	 	 	 	1.55E-02	STAT1	 
+ARID3B	 	transcription regulator	 	 	 	1.55E-02	TNFRSF1B	 
+cyanidin 3-O-glucoside	 	chemical - endogenous non-mammalian	 	 	 	1.55E-02	CCL5	 
+DEPTOR	 	other	 	 	 	1.55E-02	CCL5	 
+Lefty	 	group	 	 	 	1.55E-02	ETS1	 
+ATXN2	 	other	 	 	 	1.55E-02	PABPC1	 
+LITAF	 	transcription regulator	 	 	 	1.55E-02	CCL5	 
+HDAC10	 	transcription regulator	 	 	 	1.55E-02	TXNIP	 
+U1 snRNP	 	complex	 	 	 	1.55E-02	CCL5	 
+CD5L	 	transmembrane receptor	 	 	 	1.55E-02	CCL5	 
+mir-326	 	microRNA	 	 	 	1.55E-02	ETS1	 
+TAPBP	 	transporter	 	 	 	1.55E-02	HLA-E	 
+CCX771	 	chemical reagent	 	 	 	1.55E-02	CD44	 
+NCR3	 	transmembrane receptor	 	 	 	1.55E-02	CCL5	 
+PCBP1	 	translation regulator	 	 	 	1.55E-02	CD44	 
+vadimezan	 	chemical drug	 	 	 	1.55E-02	CCL5	 
+myxothiazol	 	chemical toxicant	 	 	 	1.55E-02	TXNIP	 
+ETV6-NTRK3	 	fusion gene/product	 	 	 	1.55E-02	STAT1	 
+tosyllysine chloromethyl ketone	 	chemical - protease inhibitor	 	 	 	1.55E-02	SPN	 
+miR-146a-5p (and other miRNAs w/seed GAGAACU)	 	mature microRNA	 	 	 	1.56E-02	PRF1,STAT1	 
+EIF2AK2	 	kinase	 	 	 	1.56E-02	ERAP2,STAT1	 
+eicosapentenoic acid	 	chemical drug	 	 	 	1.56E-02	CD44,TNFRSF1B	 
+Ifn gamma	 	complex	 	 	 	1.60E-02	CCL5,STAT1	 
+HGF	 	growth factor	 	-0.668	bias	1.60E-02	AKAP13,CCL5,CD44,ETS1	 
+ERBB2	 	kinase	 	 	 	1.62E-02	AHNAK,CCL5,GZMH,MACF1,MYBL1	 
+MKNK1	 	kinase	 	 	 	1.66E-02	ETS1,TXNIP	 
+INSIG1	 	other	 	 	 	1.72E-02	CCL5,PRF1	 
+8,9-epoxyeicosatrienoic acid	 	chemical - endogenous mammalian	 	 	 	1.74E-02	CD44	 
+16,16-dimethylprostaglandin E2	 	chemical - endogenous mammalian	 	 	 	1.74E-02	CD44	 
+TEAD	 	group	 	 	 	1.74E-02	CD44	 
+TGFBR	 	group	 	 	 	1.74E-02	CD44	 
+Bcl9-Cbp/p300-Ctnnb1-Lef/Tcf	 	complex	 	 	 	1.74E-02	CD44	 
+IRF3 dimer	 	complex	 	 	 	1.74E-02	CCL5	 
+ESRP1	 	other	 	 	 	1.74E-02	CD44	 
+salmonella typhimurium lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	1.74E-02	CCL5	 
+Ferritin	 	complex	 	 	 	1.74E-02	CCL5	 
+AZD8055	 	chemical drug	 	 	 	1.74E-02	CCL5	 
+CD244	 	transmembrane receptor	 	 	 	1.74E-02	CCL5	 
+HAS2	 	enzyme	 	 	 	1.74E-02	CD44	 
+DDB1	 	other	 	 	 	1.74E-02	STAT1	 
+sapanisertib	 	chemical drug	 	 	 	1.74E-02	PABPC1	 
+HA900	 	chemical reagent	 	 	 	1.74E-02	CCL5	 
+raltitrexed	 	chemical drug	 	 	 	1.74E-02	TMSB10/TMSB4X	 
+PD 168393	 	chemical - kinase inhibitor	 	 	 	1.74E-02	CCL5	 
+RP 73401	 	chemical toxicant	 	 	 	1.74E-02	STAT1	 
+puromycin aminonucleoside	 	chemical reagent	 	 	 	1.75E-02	CD44,TMSB10/TMSB4X	 
+PGR	 	ligand-dependent nuclear receptor	 	 	 	1.76E-02	AKAP13,CD44,STAT1	 
+E. coli B4 lipopolysaccharide	 	chemical toxicant	 	 	 	1.78E-02	CCL5,TNFRSF1B,TXNIP	 
+resiquimod	 	chemical drug	 	 	 	1.80E-02	CCL5,CD44,STAT1	 
+MMP3	 	peptidase	 	 	 	1.81E-02	CNOT6L,SF3B1	 
+geldanamycin	 	chemical - endogenous non-mammalian	 	 	 	1.83E-02	FYN,SPN,STAT1	 
+phenethyl isothiocyanate	 	chemical drug	 	 	 	1.85E-02	DDX5,EEF2	 
+Mapk	 	group	 	 	 	1.88E-02	PRF1,STAT1	 
+VIP	 	other	 	 	 	1.88E-02	CCL5,PRF1	 
+STAT5A	 	transcription regulator	 	 	 	1.88E-02	ERAP2,PRF1,TXNIP	 
+uranyl nitrate	 	chemical toxicant	 	 	 	1.91E-02	EEF2,TPT1	 
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	 	1.91E-02	CCL5,PRF1	 
+RNASEH2B	 	enzyme	 	 	 	1.93E-02	CCL5	 
+PARP14	 	enzyme	 	 	 	1.93E-02	CCL5	 
+B4GALT6	 	enzyme	 	 	 	1.93E-02	CCL5	 
+Sox2ot	 	other	 	 	 	1.93E-02	CD44	 
+SARM1	 	transmembrane receptor	 	 	 	1.93E-02	CCL5	 
+RSPO1	 	other	 	 	 	1.93E-02	CD44	 
+ANG	 	enzyme	 	 	 	1.93E-02	CCL5	 
+KCNN4	 	ion channel	 	 	 	1.93E-02	CCL5	 
+LGALS8	 	other	 	 	 	1.93E-02	CCL5	 
+CNBP	 	transcription regulator	 	 	 	1.93E-02	PABPC1	 
+DAB2IP	 	other	 	 	 	1.93E-02	CD44	 
+PDE4B	 	enzyme	 	 	 	1.93E-02	CCL5	 
+NCR1	 	transmembrane receptor	 	 	 	1.93E-02	CCL5	 
+ARF6	 	transporter	 	 	 	1.93E-02	CCL5	 
+IFNL4	 	cytokine	 	 	 	1.93E-02	STAT1	 
+SLC6A1	 	transporter	 	 	 	1.93E-02	STAT1	 
+PCBP2	 	other	 	 	 	1.93E-02	STAT1	 
+ATF5	 	transcription regulator	 	 	 	1.93E-02	TXNIP	 
+NF 449	 	chemical reagent	 	 	 	1.93E-02	PRF1	 
+IC87114	 	chemical - kinase inhibitor	 	 	 	1.93E-02	CCL5	 
+SU1498	 	chemical - kinase inhibitor	 	 	 	1.93E-02	ETS1	 
+FOXO4	 	transcription regulator	 	 	 	1.94E-02	FYN,TXNIP	 
+TRIM24	 	transcription regulator	 	 	 	1.94E-02	CCL5,STAT1	 
+IFNB1	 	cytokine	 	 	 	1.95E-02	CCL5,GZMH,STAT1	 
+peptidoglycan	 	chemical - endogenous non-mammalian	 	 	 	1.98E-02	CCL5,TMSB10/TMSB4X	 
+SYK	 	kinase	 	 	 	2.01E-02	CCL5,CD44	 
+glucocorticoid	 	chemical drug	 	 	 	2.04E-02	CCL5,CD44,TXNIP	 
+PI3K (complex)	 	complex	 	 	 	2.04E-02	CD44,ETS1,TXNIP	 
+ATP	 	chemical - endogenous mammalian	 	 	 	2.05E-02	TNFRSF1B,TXNIP	 
+PSMB11	 	peptidase	 	 	 	2.05E-02	CCL5,TNFRSF1B	 
+KIT	 	transmembrane receptor	 	 	 	2.05E-02	CD44,STAT1	 
+GNA15	 	enzyme	 	 	 	2.05E-02	HLA-E,SYNE1	 
+poly rI:rC-RNA	 	biologic drug	 	-0.783	bias	2.06E-02	CCL5,CD44,HLA-E,STAT1	 
+EGF	 	growth factor	 	-1.253	bias	2.07E-02	CD44,DDX5,ETS1,STAT1	 
+hyaluronic acid	 	chemical - endogenous mammalian	 	 	 	2.08E-02	CCL5,CD44	 
+Adaptor protein 1	 	complex	 	 	 	2.12E-02	CD44	 
+Traj18	 	other	 	 	 	2.12E-02	CCL5	 
+TXK	 	kinase	 	 	 	2.12E-02	CD44	 
+MCL1	 	transporter	 	 	 	2.12E-02	TPT1	 
+VASP	 	other	 	 	 	2.12E-02	STAT1	 
+miR-208a-3p (and other miRNAs w/seed UAAGACG)	 	mature microRNA	 	 	 	2.12E-02	ETS1	 
+miR-193a-3p (and other miRNAs w/seed ACUGGCC)	 	mature microRNA	 	 	 	2.12E-02	ETS1	 
+WWP2	 	enzyme	 	 	 	2.12E-02	CCL5	 
+TNNI3	 	transporter	 	 	 	2.12E-02	CCL5	 
+CHRNA3	 	transmembrane receptor	 	 	 	2.12E-02	STAT1	 
+emactuzumab	 	biologic drug	 	 	 	2.12E-02	STAT1	 
+zileuton	 	chemical drug	 	 	 	2.12E-02	CCL5	 
+phospholipid	 	chemical - endogenous mammalian	 	 	 	2.12E-02	CCL5	 
+ERK1/2	 	group	 	 	 	2.18E-02	CCL5,CD44,ETS1	 
+Tlr	 	group	 	 	 	2.18E-02	CCL5,STAT1	 
+DDIT3	 	transcription regulator	 	 	 	2.18E-02	RUNX3,TXNIP	 
+CBX5	 	transcription regulator	 	 	 	2.22E-02	ERAP2,TXNIP	 
+cholecalciferol	 	chemical - endogenous mammalian	 	 	 	2.22E-02	CCL5,RUNX3	 
+mir-155	 	microRNA	 	 	 	2.25E-02	CCL5,STAT1	 
+SOX2-OT	 	other	 	 	 	2.31E-02	CD44	 
+TCIRG1	 	enzyme	 	 	 	2.31E-02	CD44	 
+PTGDR2	 	G-protein coupled receptor	 	 	 	2.31E-02	CCL5	 
+PELI1	 	enzyme	 	 	 	2.31E-02	CCL5	 
+STAR	 	transporter	 	 	 	2.31E-02	CCL5	 
+MALT1	 	peptidase	 	 	 	2.31E-02	CD44	 
+mir-379	 	microRNA	 	 	 	2.31E-02	TXNIP	 
+CSK	 	kinase	 	 	 	2.31E-02	FYN	 
+RB1CC1	 	other	 	 	 	2.31E-02	CCL5	 
+1,10-phenanthroline	 	chemical toxicant	 	 	 	2.31E-02	SPN	 
+NAD+	 	chemical - endogenous mammalian	 	 	 	2.31E-02	TXNIP	 
+diaminopimelic acid	 	chemical - endogenous non-mammalian	 	 	 	2.31E-02	CCL5	 
+buthionine sulfoximine	 	chemical drug	 	 	 	2.31E-02	EEF2	 
+salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	 	 	 	2.32E-02	ARHGAP25,CCL5	 
+Ifn	 	group	 	 	 	2.32E-02	CD44,STAT1	 
+prostaglandin E2	 	chemical - endogenous mammalian	 	 	 	2.33E-02	CCL5,CD44,ETS1	 
+ARNT	 	transcription regulator	 	 	 	2.36E-02	GZMH,PRF1	 
+3M-002	 	chemical reagent	 	 	 	2.43E-02	CCL5,TXNIP	 
+PARP1	 	enzyme	 	 	 	2.43E-02	CCL5,STAT1	 
+GNAQ	 	enzyme	 	 	 	2.43E-02	CD44,STAT1	 
+BDNF	 	growth factor	 	 	 	2.47E-02	EEF2,MALAT1,TXNIP	 
+tributyltin	 	chemical reagent	 	 	 	2.47E-02	SPN,STAT1	 
+TRIM38	 	other	 	 	 	2.50E-02	CCL5	 
+mir-373	 	microRNA	 	 	 	2.50E-02	CD44	 
+FRS2	 	other	 	 	 	2.50E-02	CD44	 
+PLA2G2E	 	enzyme	 	 	 	2.50E-02	CCL5	 
+CXCL3	 	cytokine	 	 	 	2.50E-02	CCL5	 
+OPRM1	 	G-protein coupled receptor	 	 	 	2.50E-02	PRF1	 
+ANGPTL4	 	other	 	 	 	2.50E-02	STAT1	 
+CCL3L3	 	cytokine	 	 	 	2.50E-02	CCL5	 
+SIRPA	 	phosphatase	 	 	 	2.50E-02	CCL5	 
+[D-Ala2,N-Me-Phe4,Gly5-ol]-Enkephalin	 	chemical reagent	 	 	 	2.50E-02	CCL5	 
+Ige	 	complex	 	 	 	2.67E-02	CCL5,FYN,TNFRSF1B	 
+Ginkgo biloba	 	chemical drug	 	 	 	2.69E-02	CCL5	 
+Actin	 	group	 	 	 	2.69E-02	CD44	 
+carfilzomib	 	biologic drug	 	 	 	2.69E-02	EIF4B	 
+N(2)-(gamma-D-glutamyl)-meso-2,2'-diaminopimelic acid	 	chemical reagent	 	 	 	2.69E-02	CCL5	 
+PECAM1	 	other	 	 	 	2.69E-02	CD44	 
+SCAVENGER receptor CLASS A	 	group	 	 	 	2.69E-02	CCL5	 
+PTBP1	 	enzyme	 	 	 	2.69E-02	CD44	 
+SRSF3	 	other	 	 	 	2.69E-02	CD44	 
+TRAF4	 	other	 	 	 	2.69E-02	CCL5	 
+IQGAP2	 	other	 	 	 	2.69E-02	IQGAP1	 
+BMX	 	kinase	 	 	 	2.69E-02	TNFRSF1B	 
+VCP	 	enzyme	 	 	 	2.69E-02	CCL5	 
+DMH1	 	chemical reagent	 	 	 	2.69E-02	CCL5	 
+2'3'-cyclic guanosine monophosphate-adenosine monophosphate	 	chemical - endogenous mammalian	 	 	 	2.69E-02	CCL5	 
+selenite	 	chemical toxicant	 	 	 	2.69E-02	HLA-E	 
+polyamines	 	chemical - other	 	 	 	2.69E-02	CD44	 
+spermine nitric oxide complex	 	chemical toxicant	 	 	 	2.69E-02	DDX5	 
+albuterol	 	chemical drug	 	 	 	2.69E-02	CCL5	 
+5-fluorouracil	 	chemical drug	 	 	 	2.73E-02	EEF2,TMSB10/TMSB4X,TXNIP	 
+Z-LLL-CHO	 	chemical - protease inhibitor	 	 	 	2.80E-02	CCL5,ETS1,STAT1	 
+RARB	 	ligand-dependent nuclear receptor	 	 	 	2.81E-02	ETS1,STAT1	 
+EBF1	 	transcription regulator	 	 	 	2.81E-02	CCL5,STAT1	 
+FOXO3	 	transcription regulator	 	 	 	2.82E-02	FYN,TNFRSF1B,TXNIP	 
+salubrinal	 	chemical reagent	 	 	 	2.88E-02	CCL5	 
+THRAP3	 	transcription regulator	 	 	 	2.88E-02	TXNIP	 
+TIFA	 	other	 	 	 	2.88E-02	CCL5	 
+Betacatenin/TCF	 	complex	 	 	 	2.88E-02	CD44	 
+AIMP1	 	cytokine	 	 	 	2.88E-02	CCL5	 
+miR-128-3p (and other miRNAs w/seed CACAGUG)	 	mature microRNA	 	 	 	2.88E-02	TXNIP	 
+CAPN3	 	peptidase	 	 	 	2.88E-02	CCL5	 
+BDKRB2	 	G-protein coupled receptor	 	 	 	2.88E-02	CD44	 
+IL18R1	 	transmembrane receptor	 	 	 	2.88E-02	STAT1	 
+isopentenyl diphosphate	 	chemical - endogenous mammalian	 	 	 	2.88E-02	FCGR3A/FCGR3B	 
+STAT3	 	transcription regulator	 	-0.497	bias	2.92E-02	CCL5,PRF1,STAT1,TNFRSF1B	 
+ADORA2A	 	G-protein coupled receptor	 	 	 	2.92E-02	EEF2,SPTBN1	 
+IKBKG	 	kinase	 	 	 	2.96E-02	CCL5,TNFRSF1B	 
+SRF	 	transcription regulator	 	 	 	3.01E-02	CCL5,ETS1,MALAT1	 
+SOX11	 	transcription regulator	 	 	 	3.04E-02	CCL5,STAT1	 
+camptothecin	 	chemical drug	 	 	 	3.04E-02	HLA-E,SPTBN1,SYNE1,TNFRSF1B	 
+14,15-epoxyeicosatrienoic acid	 	chemical - endogenous mammalian	 	 	 	3.07E-02	CD44	 
+PURA	 	transcription regulator	 	 	 	3.07E-02	SPN	 
+ZNF148	 	transcription regulator	 	 	 	3.07E-02	STAT1	 
+PRF1	-0.267	transporter	 	 	 	3.07E-02	CD44	 
+LY96	 	transmembrane receptor	 	 	 	3.07E-02	CCL5	 
+IGHE	 	other	 	 	 	3.07E-02	CCL5	 
+MAPK10	 	kinase	 	 	 	3.07E-02	CD44	 
+TNFRSF12A	 	transmembrane receptor	 	 	 	3.07E-02	CCL5	 
+IL2RB	 	transmembrane receptor	 	 	 	3.07E-02	ETS1	 
+VIPR1	 	G-protein coupled receptor	 	 	 	3.07E-02	CCL5	 
+GFAP	 	other	 	 	 	3.07E-02	CD44	 
+Cux1	 	transcription regulator	 	 	 	3.07E-02	CCL5	 
+tranylcypromine	 	chemical drug	 	 	 	3.07E-02	CCL5	 
+phenytoin	 	chemical drug	 	 	 	3.07E-02	CCL5	 
+IRF8	 	transcription regulator	 	 	 	3.08E-02	CCL5,STAT1	 
+mibolerone	 	chemical drug	 	 	 	3.08E-02	AHNAK,HLA-E	 
+SOCS1	 	other	 	 	 	3.12E-02	CD44,STAT1	 
+ZBTB16	 	transcription regulator	 	 	 	3.16E-02	CD44,RUNX3	 
+IFN Beta	 	group	 	 	 	3.25E-02	CCL5,STAT1	 
+shikonin	 	chemical drug	 	 	 	3.26E-02	CCL5	 
+PPP1R1B	 	phosphatase	 	 	 	3.26E-02	CD44	 
+IL-17f dimer	 	complex	 	 	 	3.26E-02	CCL5	 
+mir-515	 	microRNA	 	 	 	3.26E-02	CD44	 
+CD70	 	cytokine	 	 	 	3.26E-02	CD44	 
+NCAM1	 	other	 	 	 	3.26E-02	MALAT1	 
+THY1	 	other	 	 	 	3.26E-02	ETS1	 
+aphidicolin	 	chemical toxicant	 	 	 	3.26E-02	STAT1	 
+cerulenin	 	chemical drug	 	 	 	3.26E-02	CCL5	 
+iloprost	 	chemical drug	 	 	 	3.26E-02	CCL5	 
+Tnf (family)	 	group	 	 	 	3.41E-02	CCL5,TNFRSF1B	 
+PADI2	 	enzyme	 	 	 	3.45E-02	TNFRSF1B	 
+miR-9-5p (and other miRNAs w/seed CUUUGGU)	 	mature microRNA	 	 	 	3.45E-02	CD44	 
+ITGB4	 	transmembrane receptor	 	 	 	3.45E-02	CCL5	 
+CD22	 	transmembrane receptor	 	 	 	3.45E-02	ETS1	 
+S1PR2	 	G-protein coupled receptor	 	 	 	3.45E-02	CCL5	 
+PAEP	 	other	 	 	 	3.45E-02	CCL5	 
+SH3BP2	 	other	 	 	 	3.45E-02	CD44	 
+GAB1	 	other	 	 	 	3.45E-02	CCL5	 
+KLRC4-KLRK1/KLRK1	 	transmembrane receptor	 	 	 	3.45E-02	CD44	 
+antimycin A	 	chemical - endogenous non-mammalian	 	 	 	3.45E-02	TXNIP	 
+TGAL copolymer	 	biologic drug	 	 	 	3.45E-02	CCL5	 
+JAK2	 	kinase	 	 	 	3.50E-02	CCL5,STAT1	 
+IFNAR1	 	transmembrane receptor	 	 	 	3.54E-02	CCL5,STAT1	 
+APP	 	other	 	 	 	3.61E-02	CCL5,CD44,FYN,HLA-E,TPT1	 
+Nr1h	 	group	 	 	 	3.62E-02	CCL5,RUNX3	 
+cytokine	 	group	 	 	 	3.62E-02	CCL5,TNFRSF1B	 
+IL17R	 	complex	 	 	 	3.64E-02	CCL5	 
+NOD1	 	other	 	 	 	3.64E-02	CCL5	 
+CXCL2	 	cytokine	 	 	 	3.64E-02	CCL5	 
+MNT	 	transcription regulator	 	 	 	3.64E-02	TXNIP	 
+TBXT	 	transcription regulator	 	 	 	3.64E-02	CD44	 
+RARRES2	 	transmembrane receptor	 	 	 	3.64E-02	CCL5	 
+EMD	 	other	 	 	 	3.64E-02	STAT1	 
+KLF13	 	transcription regulator	 	 	 	3.64E-02	CCL5	 
+cuprizone	 	chemical toxicant	 	 	 	3.64E-02	CCL5	 
+CEP-1347	 	chemical drug	 	 	 	3.64E-02	CCL5	 
+PS-1145	 	chemical - kinase inhibitor	 	 	 	3.64E-02	CCL5	 
+naltrexone	 	chemical drug	 	 	 	3.64E-02	PRF1	 
+17-alpha-ethinylestradiol	 	chemical drug	 	 	 	3.71E-02	CCL5,SPOCK2	 
+11,12-epoxyeicosatrienoic acid	 	chemical - endogenous mammalian	 	 	 	3.83E-02	CD44	 
+ERVW-1	 	other	 	 	 	3.83E-02	CCL5	 
+MSR1	 	transmembrane receptor	 	 	 	3.83E-02	CCL5	 
+MLX	 	transcription regulator	 	 	 	3.83E-02	TXNIP	 
+SMARCD3	 	transcription regulator	 	 	 	3.83E-02	CD44	 
+DHX9	 	enzyme	 	 	 	3.83E-02	CCL5	 
+Usp17la (includes others)	 	peptidase	 	 	 	3.83E-02	CD44	 
+HNRNPA1	 	enzyme	 	 	 	3.83E-02	CD44	 
+Klra7 (includes others)	 	transmembrane receptor	 	 	 	3.83E-02	CCL5	 
+LGALS9	 	other	 	 	 	3.83E-02	FCGR3A/FCGR3B	 
+HRG	 	other	 	 	 	3.83E-02	FCGR3A/FCGR3B	 
+S-(2,3-bispalmitoyloxypropyl)-cysteine-GDPKHPKSF	 	chemical reagent	 	 	 	3.83E-02	CCL5	 
+arecoline	 	chemical drug	 	 	 	3.83E-02	TNFRSF1B	 
+chitin	 	chemical - endogenous non-mammalian	 	 	 	3.83E-02	CCL5	 
+cardiotoxin	 	chemical - other	 	 	 	3.93E-02	CCL5,TNFRSF1B	 
+HRAS	 	enzyme	 	 	 	3.97E-02	CCL5,CD44,ETS1,TMSB10/TMSB4X	 
+TNFRSF1A	 	transmembrane receptor	 	 	 	3.97E-02	CCL5,CD44	 
+TLR4	 	transmembrane receptor	 	 	 	3.99E-02	CCL5,CD44,STAT1	 
+Fibrinogen	 	complex	 	 	 	4.01E-02	FCGR3A/FCGR3B	 
+DOT1L	 	phosphatase	 	 	 	4.01E-02	PABPC1	 
+Lymphotoxin	 	complex	 	 	 	4.01E-02	CCL5	 
+XRCC6	 	enzyme	 	 	 	4.01E-02	CCL5	 
+SPZ1	 	transcription regulator	 	 	 	4.01E-02	CD44	 
+miR-293-5p (and other miRNAs w/seed CUCAAAC)	 	mature microRNA	 	 	 	4.01E-02	SYNE1	 
+HDAC7	 	transcription regulator	 	 	 	4.01E-02	CD44	 
+GNAI3	 	enzyme	 	 	 	4.01E-02	CCL5	 
+TNFRSF11A	 	transmembrane receptor	 	 	 	4.01E-02	AKAP13	 
+RNASE1	 	enzyme	 	 	 	4.01E-02	CCL5	 
+SIN3B	 	transcription regulator	 	 	 	4.01E-02	TXNIP	 
+NLRC5	 	transcription regulator	 	 	 	4.01E-02	HLA-E	 
+CDK8	 	kinase	 	 	 	4.01E-02	CD44	 
+CYP2J2	 	enzyme	 	 	 	4.01E-02	CD44	 
+ADORA3	 	G-protein coupled receptor	 	 	 	4.01E-02	CCL5	 
+PCDH11Y	 	other	 	 	 	4.01E-02	CD44	 
+tranilast	 	chemical drug	 	 	 	4.01E-02	TXNIP	 
+KRAS	 	enzyme	 	 	 	4.10E-02	AHNAK,CD44,PABPC1,STAT1	 
+miR-155-5p (miRNAs w/seed UAAUGCU)	 	mature microRNA	 	 	 	4.11E-02	ETS1,SYNE2	 
+CREBBP	 	transcription regulator	 	 	 	4.12E-02	CCL5,CD44,PRF1	 
+PSEN1	 	peptidase	 	 	 	4.17E-02	CCL5,HLA-E,TPT1	 
+lactosylceramide	 	chemical - endogenous mammalian	 	 	 	4.20E-02	CCL5	 
+CaMKII	 	complex	 	 	 	4.20E-02	CD44	 
+IKK (complex)	 	complex	 	 	 	4.20E-02	CCL5	 
+SALL4	 	transcription regulator	 	 	 	4.20E-02	CD44	 
+SLC9A3R1	 	other	 	 	 	4.20E-02	CCL5	 
+IL2RA	 	transmembrane receptor	 	 	 	4.20E-02	PRF1	 
+miR-7a-5p (and other miRNAs w/seed GGAAGAC)	 	mature microRNA	 	 	 	4.20E-02	SYNE1	 
+miR-218-5p (and other miRNAs w/seed UGUGCUU)	 	mature microRNA	 	 	 	4.20E-02	FCGR3A/FCGR3B	 
+miR-199a-3p (and other miRNAs w/seed CAGUAGU)	 	mature microRNA	 	 	 	4.20E-02	CD44	 
+TLR6	 	transmembrane receptor	 	 	 	4.20E-02	CCL5	 
+CISH	 	other	 	 	 	4.20E-02	PRF1	 
+2-mercaptoacetate	 	chemical drug	 	 	 	4.20E-02	TPT1	 
+IRF7	 	transcription regulator	 	 	 	4.38E-02	CCL5,STAT1	 
+PTH	 	other	 	 	 	4.38E-02	AHNAK,EIF4B	 
+raloxifene	 	chemical drug	 	 	 	4.38E-02	CCL5,MYBL1	 
+FSH	 	complex	 	 	 	4.38E-02	GNLY,PPP2R5C,STAT1	 
+zidovudine	 	chemical drug	 	 	 	4.39E-02	STAT1	 
+NfkB-RelA	 	complex	 	 	 	4.39E-02	CCL5	 
+IL17a dimer	 	complex	 	 	 	4.39E-02	CCL5	 
+CGAS	 	enzyme	 	 	 	4.39E-02	CCL5	 
+TF	 	transporter	 	 	 	4.39E-02	CCL5	 
+IFNK	 	cytokine	 	 	 	4.39E-02	STAT1	 
+ibrutinib	 	chemical drug	 	 	 	4.39E-02	CD44	 
+lipoarabinomannan	 	chemical - endogenous non-mammalian	 	 	 	4.39E-02	STAT1	 
+ilomastat	 	chemical drug	 	 	 	4.39E-02	CCL5	 
+DL-fructose	 	chemical - endogenous mammalian	 	 	 	4.39E-02	TXNIP	 
+MAPK8	 	kinase	 	 	 	4.42E-02	CCL5,ETS1	 
+CX3CR1	 	G-protein coupled receptor	 	 	 	4.47E-02	PRF1,SYNE2	 
+docosahexaenoic acid	 	chemical drug	 	 	 	4.52E-02	CD44,TNFRSF1B	 
+Ciap	 	group	 	 	 	4.57E-02	CCL5	 
+PLD1	 	enzyme	 	 	 	4.57E-02	CD44	 
+UCN	 	other	 	 	 	4.57E-02	CCL5	 
+RACK1	 	enzyme	 	 	 	4.57E-02	CCL5	 
+DNMT3B	 	enzyme	 	 	 	4.61E-02	CCL5,STAT1	 
+IL21	 	cytokine	 	 	 	4.66E-02	CCL5,PRF1	 
+GATA2	 	transcription regulator	 	 	 	4.71E-02	CCL5,ETS1,SPN	 
+calpain	 	complex	 	 	 	4.76E-02	CCL5	 
+CCL3	 	cytokine	 	 	 	4.76E-02	STAT1	 
+NODAL	 	growth factor	 	 	 	4.76E-02	CCL5	 
+SLPI	 	other	 	 	 	4.76E-02	CCL5	 
+BCL2L11	 	other	 	 	 	4.76E-02	CCL5	 
+mir-9	 	microRNA	 	 	 	4.76E-02	ETS1	 
+mir-124	 	microRNA	 	 	 	4.76E-02	IQGAP1	 
+Saa3	 	other	 	 	 	4.76E-02	CCL5	 
+COMMD1	 	transporter	 	 	 	4.76E-02	STAT1	 
+TRPV4	 	ion channel	 	 	 	4.76E-02	CCL5	 
+PCYT1A	 	enzyme	 	 	 	4.76E-02	RUNX3	 
+tosylphenylalanyl chloromethyl ketone	 	chemical - protease inhibitor	 	 	 	4.76E-02	PRF1	 
+BRCA1	 	transcription regulator	 	 	 	4.80E-02	CCL5,STAT1	 
+trans-hydroxytamoxifen	 	chemical drug	 	 	 	4.85E-02	MYBL1,STAT1	 
+OGA	 	enzyme	 	 	 	4.85E-02	CD44,PRF1,STAT1	 
+MRTFA	 	transcription regulator	 	 	 	4.90E-02	CCL5,STAT1	 
+NfkB1-RelA	 	complex	 	 	 	4.95E-02	CCL5	 
+DCAF1	 	kinase	 	 	 	4.95E-02	TXNIP	 
+CDC73	 	other	 	 	 	4.95E-02	STAT1	 
+vemurafenib	 	chemical drug	 	 	 	4.95E-02	PRF1	 
+CXCL10	 	cytokine	 	 	 	4.95E-02	CCL5	 
+mir-148	 	microRNA	 	 	 	4.95E-02	RUNX3	 
+AKT3	 	kinase	 	 	 	4.95E-02	ETS1	 
+CCNE1	 	transcription regulator	 	 	 	4.95E-02	CD44	 
+arotinoid acid	 	chemical toxicant	 	 	 	4.95E-02	RUNX3	 
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	4.99E-02	CCL5,STAT1	 
+SPP1	 	cytokine	 	 	 	4.99E-02	CCL5,CD44	 

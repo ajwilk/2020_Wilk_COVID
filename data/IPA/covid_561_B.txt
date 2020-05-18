@@ -1,0 +1,153 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Communication between Innate and Adaptive Immune Cells	1.97E01	1.35E-01	NaN	CD79A,CD79B,HLA-A,HLA-B,HLA-C,HLA-DRB1,HLA-E,HLA-F,IGHA1,IGHG1,IGHG2,IGHG3,IGHM	
+Autoimmune Thyroid Disease Signaling	1.71E01	2.04E-01	NaN	HLA-A,HLA-B,HLA-C,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,IGHG1,IGHG2,IGHG3	
+Allograft Rejection Signaling	1.64E01	1.28E-01	NaN	HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,IGHG1,IGHG2,IGHG3	
+Antigen Presentation Pathway	1.59E01	2.31E-01	NaN	CD74,HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F	
+Systemic Lupus Erythematosus Signaling	1.47E01	5.68E-02	NaN	CD79A,CD79B,HLA-A,HLA-B,HLA-C,HLA-E,HLA-F,HNRNPA2B1,IGHG1,IGHG2,IGHG3,IGHM,PTPRC	
+B Cell Development	1.41E01	2.22E-01	NaN	CD79A,CD79B,HLA-A,HLA-B,HLA-DQB1,HLA-DRB1,IGHM,PTPRC	
+Dendritic Cell Maturation	1.27E01	6.01E-02	-1.000	HLA-A,HLA-B,HLA-C,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,IGHG1,IGHG2,IGHG3,LTB	
+PD-1, PD-L1 cancer immunotherapy pathway	1.18E01	8.49E-02	2.828	HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,JAK1	
+Type I Diabetes Mellitus Signaling	1.16E01	8.11E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,IRF1,JAK1	
+B Cell Receptor Signaling	1.11E01	5.41E-02	-1.000	CD79A,CD79B,CFL1,ETS1,IGHA1,IGHG1,IGHG2,IGHG3,IGHM,PTPRC	
+Graft-versus-Host Disease Signaling	1.1E01	1.46E-01	NaN	HLA-A,HLA-B,HLA-C,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F	
+Primary Immunodeficiency Signaling	1.08E01	1.4E-01	NaN	CD79A,IGHA1,IGHG1,IGHG2,IGHG3,IGHM,PTPRC	
+OX40 Signaling Pathway	1.07E01	8.89E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F	
+Cdc42 Signaling	1E01	5.39E-02	NaN	CFL1,HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F	
+T Cell Exhaustion Signaling Pathway	9.83E00	5.14E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,JAK1	
+Crosstalk between Dendritic Cells and Natural Killer Cells	9.01E00	7.87E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-DRB1,HLA-E,HLA-F,LTB	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	8.98E00	7.78E-02	NaN	CD79A,CD79B,HLA-A,HLA-B,HLA-DQB1,HLA-DRB1,LTB	
+Th1 Pathway	8.07E00	5.79E-02	-2.449	HLA-A,HLA-B,HLA-DPB1,HLA-DQB1,HLA-DRB1,IRF1,JAK1	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	7.95E00	1.47E-01	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+Hematopoiesis from Pluripotent Stem Cells	7.13E00	1.02E-01	NaN	IGHA1,IGHG1,IGHG2,IGHG3,IGHM	
+Th1 and Th2 Activation Pathway	7.03E00	4.09E-02	NaN	HLA-A,HLA-B,HLA-DPB1,HLA-DQB1,HLA-DRB1,IRF1,JAK1	
+Neuroinflammation Signaling Pathway	6.55E00	2.67E-02	-2.449	HLA-A,HLA-B,HLA-C,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F,JAK1	
+Th2 Pathway	6.28E00	4.41E-02	NaN	HLA-A,HLA-B,HLA-DPB1,HLA-DQB1,HLA-DRB1,JAK1	
+Caveolar-mediated Endocytosis Signaling	6.25E00	6.85E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	6.21E00	2.4E-02	-2.828	HLA-A,HLA-B,HLA-C,HLA-DPB1,HLA-DQB1,HLA-DRB1,HLA-E,HLA-F	
+Phagosome Maturation	6.01E00	3.97E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-DRB1,HLA-E,HLA-F	
+IL-4 Signaling	5.92E00	5.88E-02	NaN	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1,JAK1	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	5.82E00	5.62E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	5.65E00	2.55E-02	-1.890	CD79A,CD79B,IGHA1,IGHG1,IGHM,JAK1,LTB	
+Role of NFAT in Regulation of the Immune Response	5.55E00	3.31E-02	-2.449	CD79A,CD79B,HLA-A,HLA-B,HLA-DQB1,HLA-DRB1	
+Virus Entry via Endocytic Pathways	5.42E00	4.67E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+iCOS-iCOSL Signaling in T Helper Cells	5.34E00	4.5E-02	-2.000	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1,PTPRC	
+Natural Killer Cell Signaling	5.34E00	3.05E-02	2.449	CFL1,HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	5.23E00	4.27E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+CD28 Signaling in T Helper Cells	5.18E00	4.17E-02	NaN	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1,PTPRC	
+Nur77 Signaling in T Lymphocytes	5.06E00	6.78E-02	NaN	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1	
+Calcium-induced T Lymphocyte Apoptosis	4.87E00	6.06E-02	-2.000	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1	
+T Helper Cell Differentiation	4.69E00	5.48E-02	NaN	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1	
+Phospholipase C Signaling	4.68E00	2.33E-02	0.000	AHNAK,CD79A,CD79B,IGHG1,IGHG2,IGHG3	
+Protein Ubiquitination Pathway	3.48E00	1.83E-02	NaN	HLA-A,HLA-B,HLA-C,HLA-E,HLA-F	
+Role of IL-17A in Psoriasis	3.44E00	1.54E-01	NaN	S100A8,S100A9	
+PKCθ Signaling in T Lymphocytes	3.42E00	2.58E-02	-2.000	HLA-A,HLA-B,HLA-DQB1,HLA-DRB1	
+IL-7 Signaling Pathway	3.17E00	3.85E-02	NaN	IGHG1,IGHM,JAK1	
+Phagosome Formation	2.58E00	2.4E-02	NaN	IGHG1,IGHG2,IGHG3	
+Interferon Signaling	2.55E00	5.56E-02	NaN	IRF1,JAK1	
+p70S6K Signaling	2.54E00	2.33E-02	NaN	CD79A,CD79B,JAK1	
+PI3K Signaling in B Lymphocytes	2.46E00	2.17E-02	NaN	CD79A,CD79B,PTPRC	
+iNOS Signaling	2.35E00	4.44E-02	NaN	IRF1,JAK1	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	2.31E00	1.28E-02	NaN	IGHG1,IGHG2,IGHG3,LTB	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	2.08E00	1.6E-02	NaN	IRF1,JAK1,S100A8	
+GM-CSF Signaling	1.98E00	2.86E-02	NaN	ETS1,RACK1	
+FcγRIIB Signaling in B Lymphocytes	1.92E00	2.67E-02	NaN	CD79A,CD79B	
+Role of PKR in Interferon Induction and Antiviral Response	1.56E00	1.71E-02	NaN	IRF1,JAK1	
+IL-15 Production	1.53E00	1.65E-02	NaN	IRF1,JAK1	
+Telomere Extension by Telomerase	1.49E00	6.67E-02	NaN	HNRNPA2B1	
+IL-12 Signaling and Production in Macrophages	1.46E00	1.52E-02	NaN	IRF1,S100A8	
+Estrogen Receptor Signaling	1.45E00	9.15E-03	NaN	CFL1,DDX5,JAK1	
+IL-22 Signaling	1.29E00	4.17E-02	NaN	JAK1	
+Tumoricidal Function of Hepatic Natural Killer Cells	1.29E00	4.17E-02	NaN	SRGN	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	1.29E00	4.17E-02	NaN	JAK1	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	1.27E00	4E-02	NaN	JAK1	
+ILK Signaling	1.18E00	1.05E-02	NaN	CFL1,TMSB10/TMSB4X	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	1.17E00	1.04E-02	NaN	ETS1,JAK1	
+IL-9 Signaling	1.15E00	3.03E-02	NaN	JAK1	
+MIF-mediated Glucocorticoid Regulation	1.14E00	2.94E-02	NaN	CD74	
+Role of JAK2 in Hormone-like Cytokine Signaling	1.14E00	2.94E-02	NaN	JAK1	
+Osteoarthritis Pathway	1.1E00	9.48E-03	NaN	S100A8,S100A9	
+Actin Cytoskeleton Signaling	1.08E00	9.17E-03	NaN	CFL1,TMSB10/TMSB4X	
+MIF Regulation of Innate Immunity	1.05E00	2.38E-02	NaN	CD74	
+Oncostatin M Signaling	1.04E00	2.33E-02	NaN	JAK1	
+Ephrin A Signaling	1.01E00	2.13E-02	NaN	CFL1	
+Lymphotoxin β Receptor Signaling	9.59E-01	1.89E-02	NaN	LTB	
+EGF Signaling	9.43E-01	1.82E-02	NaN	JAK1	
+CNTF Signaling	9.28E-01	1.75E-02	NaN	JAK1	
+Glutamate Receptor Signaling	9.28E-01	1.75E-02	NaN	SLC38A1	
+Semaphorin Signaling in Neurons	9.07E-01	1.67E-02	NaN	CFL1	
+Retinoic acid Mediated Apoptosis Signaling	9.07E-01	1.67E-02	NaN	IRF1	
+IL-2 Signaling	9E-01	1.64E-02	NaN	JAK1	
+IL-17A Signaling in Airway Cells	8.73E-01	1.54E-02	NaN	JAK1	
+IL-10 Signaling	8.51E-01	1.45E-02	NaN	JAK1	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	8.51E-01	1.45E-02	NaN	JAK1	
+SPINK1 General Cancer Pathway	8.51E-01	1.45E-02	NaN	JAK1	
+Ephrin B Signaling	8.33E-01	1.39E-02	NaN	CFL1	
+Non-Small Cell Lung Cancer Signaling	8.27E-01	1.37E-02	NaN	STK4	
+IL-15 Signaling	8.15E-01	1.33E-02	NaN	JAK1	
+IL-3 Signaling	7.96E-01	1.27E-02	NaN	JAK1	
+Agrin Interactions at Neuromuscular Junction	7.96E-01	1.27E-02	NaN	UTRN	
+BEX2 Signaling Pathway	7.96E-01	1.27E-02	NaN	SWAP70	
+IL-17 Signaling	7.9E-01	1.25E-02	NaN	JAK1	
+Renal Cell Carcinoma Signaling	7.9E-01	1.25E-02	NaN	ETS1	
+JAK/Stat Signaling	7.9E-01	1.25E-02	NaN	JAK1	
+Chemokine Signaling	7.9E-01	1.25E-02	NaN	CFL1	
+Prolactin Signaling	7.85E-01	1.23E-02	NaN	IRF1	
+HIPPO signaling	7.67E-01	1.18E-02	NaN	STK4	
+PDGF Signaling	7.62E-01	1.16E-02	NaN	JAK1	
+Th17 Activation Pathway	7.4E-01	1.1E-02	NaN	JAK1	
+Regulation of Actin-based Motility by Rho	7.28E-01	1.06E-02	NaN	CFL1	
+PAK Signaling	7.14E-01	1.03E-02	NaN	CFL1	
+Mouse Embryonic Stem Cell Pluripotency	6.9E-01	9.71E-03	NaN	JAK1	
+Sumoylation Pathway	6.9E-01	9.71E-03	NaN	ETS1	
+IGF-1 Signaling	6.88E-01	9.62E-03	NaN	JAK1	
+T Cell Receptor Signaling	6.84E-01	9.52E-03	NaN	PTPRC	
+Telomerase Signaling	6.76E-01	9.35E-03	NaN	ETS1	
+Pancreatic Adenocarcinoma Signaling	6.7E-01	9.17E-03	NaN	JAK1	
+HGF Signaling	6.64E-01	9.01E-03	NaN	ETS1	
+Protein Kinase A Signaling	6.62E-01	5.03E-03	NaN	AKAP13,PTPRC	
+Rac Signaling	6.6E-01	8.93E-03	NaN	CFL1	
+Role of Tissue Factor in Cancer	6.42E-01	8.55E-03	NaN	CFL1	
+Role of NANOG in Mammalian Embryonic Stem Cell Pluripotency	6.36E-01	8.4E-03	NaN	JAK1	
+LXR/RXR Activation	6.29E-01	8.26E-03	NaN	S100A8	
+Inhibition of ARE-Mediated mRNA Degradation Pathway	6.27E-01	8.2E-03	NaN	LTB	
+RhoA Signaling	6.23E-01	8.13E-03	NaN	CFL1	
+CCR3 Signaling in Eosinophils	6.2E-01	8.06E-03	NaN	CFL1	
+Atherosclerosis Signaling	6.14E-01	7.94E-03	NaN	S100A8	
+Reelin Signaling in Neurons	6.06E-01	7.75E-03	NaN	CFL1	
+Adipogenesis pathway	5.92E-01	7.46E-03	NaN	TXNIP	
+Iron homeostasis signaling pathway	5.83E-01	7.3E-03	NaN	JAK1	
+Insulin Receptor Signaling	5.75E-01	7.14E-03	NaN	JAK1	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	5.72E-01	7.09E-03	NaN	PTPRC	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	5.72E-01	7.09E-03	NaN	PTPRC	
+Cardiac β-adrenergic Signaling	5.72E-01	7.09E-03	NaN	AKAP13	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	5.39E-01	6.49E-03	NaN	LTB	
+Gustation Pathway	5.39E-01	6.49E-03	NaN	P2RX5	
+3-phosphoinositide Degradation	5.38E-01	6.45E-03	NaN	PTPRC	
+Cardiac Hypertrophy Signaling (Enhanced)	5.36E-01	4.11E-03	NaN	AKAP13,LTB	
+D-myo-inositol-5-phosphate Metabolism	5.35E-01	6.41E-03	NaN	PTPRC	
+Necroptosis Signaling Pathway	5.33E-01	6.37E-03	NaN	JAK1	
+HOTAIR Regulatory Pathway	5.26E-01	6.25E-03	NaN	IRF1	
+Tec Kinase Signaling	5.17E-01	6.1E-03	NaN	JAK1	
+HMGB1 Signaling	5.14E-01	6.06E-03	NaN	LTB	
+3-phosphoinositide Biosynthesis	5.14E-01	6.06E-03	NaN	PTPRC	
+Germ Cell-Sertoli Cell Junction Signaling	5.02E-01	5.85E-03	NaN	CFL1	
+PI3K/AKT Signaling	4.93E-01	5.71E-03	NaN	JAK1	
+RhoGDI Signaling	4.83E-01	5.56E-03	NaN	CFL1	
+Ephrin Receptor Signaling	4.83E-01	5.56E-03	NaN	CFL1	
+Hepatic Cholestasis	4.74E-01	5.41E-03	NaN	LTB	
+Xenobiotic Metabolism CAR Signaling Pathway	4.66E-01	5.29E-03	NaN	RACK1	
+Clathrin-mediated Endocytosis Signaling	4.58E-01	5.18E-03	NaN	S100A8	
+ERK/MAPK Signaling	4.58E-01	5.18E-03	NaN	ETS1	
+Superpathway of Inositol Phosphate Compounds	4.5E-01	5.05E-03	NaN	PTPRC	
+Sperm Motility	4.09E-01	4.48E-03	NaN	JAK1	
+cAMP-mediated signaling	4.01E-01	4.39E-03	NaN	AKAP13	
+Signaling by Rho Family GTPases	3.79E-01	4.1E-03	NaN	CFL1	
+Colorectal Cancer Metastasis Signaling	3.68E-01	3.95E-03	NaN	JAK1	
+Senescence Pathway	3.4E-01	3.64E-03	NaN	ETS1	
+Synaptogenesis Signaling Pathway	3.01E-01	3.21E-03	NaN	CFL1	
+Glucocorticoid Receptor Signaling	2.79E-01	2.98E-03	NaN	JAK1	
+Hepatic Fibrosis Signaling Pathway	2.53E-01	2.72E-03	NaN	JAK1	
+Molecular Mechanisms of Cancer	2.36E-01	2.56E-03	NaN	JAK1	
+Axonal Guidance Signaling	-0E00	2.07E-03	NaN	CFL1	

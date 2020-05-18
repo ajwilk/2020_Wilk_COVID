@@ -1,0 +1,328 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Glucocorticoid Receptor Signaling	6.48E00	3.87E-02	NaN	ACTB,ANXA1,BCL2L1,DUSP1,EP300,FOS,HSPA5,HSPA8,JUN,NCOR1,NFKBIA,PBRM1,STAT1	
+Toll-like Receptor Signaling	6.19E00	9.21E-02	1.342	FOS,IRAK1,JUN,NFKBIA,SIGIRR,TNFAIP3,UBA52	
+Leukocyte Extravasation Signaling	6.16E00	5.08E-02	-2.333	ACTB,ARHGAP35,CXCR4,EZR,ICAM3,ITGA4,ITGB2,PRKCB,RASSF5,SPN	
+RAR Activation	5.27E00	4.64E-02	NaN	ACTB,DUSP1,EP300,FOS,JUN,NCOR1,PBRM1,PNRC1,PRKCB	
+Caveolar-mediated Endocytosis Signaling	5.09E00	8.22E-02	NaN	ACTB,CD48,HLA-C,HLA-E,ITGA4,ITGB2	
+iNOS Signaling	4.96E00	1.11E-01	2.236	FOS,IRAK1,JUN,NFKBIA,STAT1	
+Crosstalk between Dendritic Cells and Natural Killer Cells	4.59E00	6.74E-02	-1.000	ACTB,CD69,HLA-C,HLA-E,ICAM3,PRF1	
+TNFR2 Signaling	4.38E00	1.33E-01	NaN	FOS,JUN,NFKBIA,TNFAIP3	
+Virus Entry via Endocytic Pathways	4.14E00	5.61E-02	NaN	ACTB,HLA-C,HLA-E,ITGA4,ITGB2,PRKCB	
+Type I Diabetes Mellitus Signaling	4.05E00	5.41E-02	NaN	HLA-C,HLA-E,IRAK1,NFKBIA,PRF1,STAT1	
+Role of PKR in Interferon Induction and Antiviral Response	3.92E00	5.13E-02	0.816	FOS,HSPA5,HSPA8,JUN,NFKBIA,STAT1	
+Huntington's Disease Signaling	3.77E00	3.38E-02	0.000	BCL2L1,EP300,HSPA5,HSPA8,JUN,NCOR1,PRKCB,UBA52	
+NF-κB Signaling	3.75E00	3.91E-02	-1.890	EP300,IGF2R,IRAK1,NFKBIA,PRKCB,SIGIRR,TNFAIP3	
+Renal Cell Carcinoma Signaling	3.75E00	6.25E-02	NaN	EP300,ETS1,FOS,JUN,UBA52	
+Prolactin Signaling	3.72E00	6.17E-02	1.000	EP300,FOS,JUN,PRKCB,STAT1	
+B Cell Receptor Signaling	3.67E00	3.78E-02	0.816	BCL2L1,ETS1,JUN,NFKBIA,PRKCB,PTPRC,RASSF5	
+Granzyme A Signaling	3.61E00	1.58E-01	NaN	EP300,PRF1,SET	
+ERK/MAPK Signaling	3.55E00	3.63E-02	-1.134	DUSP1,DUSP2,ETS1,FOS,ITGA4,PRKCB,STAT1	
+OX40 Signaling Pathway	3.51E00	5.56E-02	NaN	BCL2L1,HLA-C,HLA-E,JUN,NFKBIA	
+TNFR1 Signaling	3.5E00	8E-02	NaN	FOS,JUN,NFKBIA,TNFAIP3	
+CD27 Signaling in Lymphocytes	3.4E00	7.55E-02	NaN	BCL2L1,FOS,JUN,NFKBIA	
+Protein Ubiquitination Pathway	3.36E00	2.93E-02	NaN	HLA-C,HLA-E,HSPA5,HSPA8,PSMD3,UBA52,UBE2G2,USP7	
+UVA-Induced MAPK Signaling	3.34E00	5.1E-02	NaN	BCL2L1,FOS,JUN,PARP9,STAT1	
+Unfolded protein response	3.31E00	7.14E-02	-1.000	CANX,HSPA5,HSPA8,UBXN4	
+Sumoylation Pathway	3.24E00	4.85E-02	2.000	EP300,ETS1,FOS,JUN,NFKBIA	
+PPAR Signaling	3.22E00	4.81E-02	-1.342	EP300,FOS,JUN,NCOR1,NFKBIA	
+T Cell Receptor Signaling	3.2E00	4.76E-02	NaN	CD8A,FOS,JUN,NFKBIA,PTPRC	
+Induction of Apoptosis by HIV1	3.17E00	6.56E-02	-1.000	BCL2L1,CXCR4,NFKBIA,SLC25A6	
+Thrombopoietin Signaling	3.12E00	6.35E-02	1.000	FOS,JUN,PRKCB,STAT1	
+Systemic Lupus Erythematosus Signaling	3.11E00	3.06E-02	NaN	FOS,HLA-C,HLA-E,HNRNPA2B1,JUN,PTPRC,SNRNP70	
+HGF Signaling	3.09E00	4.5E-02	0.000	ETS1,FOS,ITGA4,JUN,PRKCB	
+CD40 Signaling	3.06E00	6.15E-02	0.000	FOS,JUN,NFKBIA,TNFAIP3	
+GM-CSF Signaling	2.94E00	5.71E-02	1.000	BCL2L1,ETS1,PRKCB,STAT1	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	2.85E00	8.82E-02	NaN	HLA-C,HLA-E,PRF1	
+Hypoxia Signaling in the Cardiovascular System	2.85E00	5.41E-02	NaN	EP300,JUN,NFKBIA,UBE2G2	
+Estrogen Receptor Signaling	2.84E00	2.44E-02	-0.707	DDX5,EP300,FOS,IGF2R,JUN,NCOR1,PRKCB,THRAP3	
+IL-17A Signaling in Fibroblasts	2.82E00	8.57E-02	NaN	FOS,JUN,NFKBIA	
+Erythropoietin Signaling	2.81E00	5.26E-02	NaN	FOS,JUN,NFKBIA,PRKCB	
+B Cell Development	2.78E00	8.33E-02	NaN	IL7R,PTPRC,SPN	
+Agranulocyte Adhesion and Diapedesis	2.77E00	3.11E-02	NaN	ACTB,CXCR4,EZR,ITGA4,ITGB2,SELL	
+IL-12 Signaling and Production in Macrophages	2.76E00	3.79E-02	NaN	EP300,FOS,JUN,PRKCB,STAT1	
+IL-3 Signaling	2.75E00	5.06E-02	1.000	FOS,JUN,PRKCB,STAT1	
+Agrin Interactions at Neuromuscular Junction	2.75E00	5.06E-02	-1.000	ACTB,ITGA4,ITGB2,JUN	
+JAK/Stat Signaling	2.73E00	5E-02	2.000	BCL2L1,FOS,JUN,STAT1	
+Chemokine Signaling	2.73E00	5E-02	1.000	CXCR4,FOS,JUN,PRKCB	
+Natural Killer Cell Signaling	2.73E00	3.05E-02	0.000	CD48,HLA-C,HLA-E,HSPA5,HSPA8,RASSF5	
+IL-8 Signaling	2.69E00	3E-02	0.816	BCL2L1,FOS,IRAK1,ITGB2,JUN,PRKCB	
+LPS-stimulated MAPK Signaling	2.69E00	4.88E-02	1.000	FOS,JUN,NFKBIA,PRKCB	
+NF-κB Activation by Viruses	2.69E00	4.88E-02	-1.000	ITGA4,ITGB2,NFKBIA,PRKCB	
+April Mediated Signaling	2.68E00	7.69E-02	NaN	FOS,JUN,NFKBIA	
+Antigen Presentation Pathway	2.68E00	7.69E-02	NaN	CANX,HLA-C,HLA-E	
+PI3K Signaling in B Lymphocytes	2.67E00	3.62E-02	0.447	FOS,JUN,NFKBIA,PRKCB,PTPRC	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	2.65E00	2.55E-02	1.890	BCL2L1,CD5,FOS,IRAK1,JUN,PRKCB,STAT1	
+B Cell Activating Factor Signaling	2.62E00	7.32E-02	NaN	FOS,JUN,NFKBIA	
+PDGF Signaling	2.61E00	4.65E-02	1.000	FOS,JUN,PRKCB,STAT1	
+MIF Regulation of Innate Immunity	2.59E00	7.14E-02	NaN	FOS,JUN,NFKBIA	
+IL-1 Signaling	2.53E00	4.4E-02	2.000	FOS,IRAK1,JUN,NFKBIA	
+Assembly of RNA Polymerase III Complex	2.5E00	1.54E-01	NaN	BDP1,GTF3A	
+Phagosome Maturation	2.5E00	3.31E-02	NaN	ATP6V0A2,CANX,CTSS,HLA-C,HLA-E	
+FAT10 Cancer Signaling Pathway	2.47E00	6.52E-02	NaN	CXCR4,EEF1A1,NFKBIA	
+3-phosphoinositide Degradation	2.45E00	3.23E-02	-0.447	DUSP1,DUSP2,INPP4A,PTPRC,SET	
+EIF2 Signaling	2.45E00	2.68E-02	NaN	ACTB,EIF3C,EIF3E,EIF5B,HSPA5,UBA52	
+Neuroinflammation Signaling Pathway	2.44E00	2.33E-02	0.816	FOS,HLA-C,HLA-E,IRAK1,JUN,S100B,STAT1	
+D-myo-inositol-5-phosphate Metabolism	2.44E00	3.21E-02	-0.447	DUSP1,DUSP2,PIP4K2A,PTPRC,SET	
+Graft-versus-Host Disease Signaling	2.42E00	6.25E-02	NaN	HLA-C,HLA-E,PRF1	
+Autoimmune Thyroid Disease Signaling	2.4E00	6.12E-02	NaN	HLA-C,HLA-E,PRF1	
+Primary Immunodeficiency Signaling	2.37E00	6E-02	NaN	CD8A,IL7R,PTPRC	
+Tec Kinase Signaling	2.35E00	3.05E-02	-0.447	ACTB,FOS,ITGA4,PRKCB,STAT1	
+UVC-Induced MAPK Signaling	2.35E00	5.88E-02	NaN	FOS,JUN,PRKCB	
+Protein Kinase A Signaling	2.33E00	2.01E-02	-0.816	ADD3,AKAP9,DUSP1,DUSP2,NFKBIA,PDE3B,PRKCB,PTPRC	
+UVB-Induced MAPK Signaling	2.32E00	5.77E-02	NaN	FOS,JUN,PRKCB	
+Cdc42 Signaling	2.32E00	2.99E-02	NaN	FOS,HLA-C,HLA-E,ITGA4,JUN	
+Lymphotoxin β Receptor Signaling	2.3E00	5.66E-02	NaN	BCL2L1,EP300,NFKBIA	
+Th1 and Th2 Activation Pathway	2.27E00	2.92E-02	NaN	CD8A,CXCR4,ITGB2,JUN,STAT1	
+Signaling by Rho Family GTPases	2.27E00	2.46E-02	-0.816	ACTB,EZR,FOS,ITGA4,JUN,SEPTIN7	
+EGF Signaling	2.26E00	5.45E-02	NaN	FOS,JUN,STAT1	
+T Cell Exhaustion Signaling Pathway	2.23E00	2.86E-02	NaN	FOS,HLA-C,HLA-E,JUN,STAT1	
+RhoGDI Signaling	2.18E00	2.78E-02	0.447	ACTB,ARHGAP35,EP300,EZR,ITGA4	
+Granulocyte Adhesion and Diapedesis	2.18E00	2.78E-02	NaN	CXCR4,EZR,ITGA4,ITGB2,SELL	
+Renin-Angiotensin Signaling	2.13E00	3.39E-02	NaN	FOS,JUN,PRKCB,STAT1	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	2.1E00	2.66E-02	1.342	FOS,JUN,NFKBIA,PRKCB,STAT1	
+CD28 Signaling in T Helper Cells	2.1E00	3.33E-02	NaN	FOS,JUN,NFKBIA,PTPRC	
+NRF2-mediated Oxidative Stress Response	2.09E00	2.65E-02	-1.000	ACTB,EP300,FOS,JUN,PRKCB	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	2.09E00	4.76E-02	NaN	JUN,NFKBIA,STAT1	
+PPARα/RXRα Activation	2.09E00	2.63E-02	0.000	EP300,JUN,NCOR1,NFKBIA,PRKCB	
+ILK Signaling	2.09E00	2.63E-02	-0.447	ACTB,FOS,ITGB2,JUN,TMSB10/TMSB4X	
+RhoA Signaling	2.06E00	3.25E-02	-2.000	ACTB,ARHGAP35,EZR,SEPTIN7	
+Regulation of Cellular Mechanics by Calpain Protease	2.05E00	4.62E-02	NaN	CAST,EZR,ITGA4	
+Superpathway of Inositol Phosphate Compounds	2.01E00	2.53E-02	-0.447	DUSP1,DUSP2,PIP4K2A,PTPRC,SET	
+IL-10 Signaling	1.98E00	4.35E-02	NaN	FOS,JUN,NFKBIA	
+Growth Hormone Signaling	1.95E00	4.23E-02	NaN	FOS,PRKCB,STAT1	
+IL-17A Signaling in Gastric Cells	1.94E00	8E-02	NaN	FOS,JUN	
+Hereditary Breast Cancer Signaling	1.87E00	2.86E-02	NaN	ACTB,EP300,PBRM1,UBA52	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	1.86E00	2.84E-02	0.000	DUSP1,DUSP2,PTPRC,SET	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	1.86E00	2.84E-02	0.000	DUSP1,DUSP2,PTPRC,SET	
+Actin Cytoskeleton Signaling	1.85E00	2.29E-02	-2.236	ACTB,ARHGAP35,EZR,ITGA4,TMSB10/TMSB4X	
+Molecular Mechanisms of Cancer	1.84E00	1.79E-02	NaN	BCL2L1,EP300,FOS,ITGA4,JUN,NFKBIA,PRKCB	
+VDR/RXR Activation	1.84E00	3.85E-02	NaN	EP300,NCOR1,PRKCB	
+IL-7 Signaling Pathway	1.84E00	3.85E-02	NaN	IL7R,JUN,STAT1	
+Thyroid Cancer Signaling	1.82E00	3.8E-02	NaN	CXCR4,FOS,JUN	
+Role of BRCA1 in DNA Damage Response	1.81E00	3.75E-02	NaN	ACTB,PBRM1,STAT1	
+Relaxin Signaling	1.77E00	2.67E-02	NaN	FOS,JUN,NFKBIA,PDE3B	
+TR/RXR Activation	1.75E00	3.57E-02	NaN	EP300,NCOR1,PDE3B	
+4-1BB Signaling in T Lymphocytes	1.74E00	6.25E-02	NaN	JUN,NFKBIA	
+Allograft Rejection Signaling	1.73E00	3.49E-02	NaN	HLA-C,HLA-E,PRF1	
+RANK Signaling in Osteoclasts	1.7E00	3.41E-02	NaN	FOS,JUN,NFKBIA	
+Aldosterone Signaling in Epithelial Cells	1.7E00	2.53E-02	NaN	DUSP1,HSPA5,HSPA8,PRKCB	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	1.69E00	3.37E-02	NaN	CD8A,HLA-C,HLA-E	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	1.69E00	3.37E-02	NaN	FOS,JUN,NFKBIA	
+Death Receptor Signaling	1.66E00	3.3E-02	NaN	ACTB,NFKBIA,PARP9	
+3-phosphoinositide Biosynthesis	1.64E00	2.42E-02	0.000	DUSP1,DUSP2,PTPRC,SET	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	1.63E00	3.19E-02	NaN	ACTB,EZR,PRKCB	
+CCR5 Signaling in Macrophages	1.63E00	3.19E-02	NaN	FOS,JUN,PRKCB	
+ErbB Signaling	1.63E00	3.19E-02	NaN	FOS,JUN,PRKCB	
+CXCR4 Signaling	1.62E00	2.4E-02	NaN	CXCR4,FOS,JUN,PRKCB	
+Tight Junction Signaling	1.61E00	2.38E-02	NaN	ACTB,EPB41,FOS,JUN	
+Communication between Innate and Adaptive Immune Cells	1.6E00	3.12E-02	NaN	CD8A,HLA-C,HLA-E	
+TGF-β Signaling	1.6E00	3.12E-02	NaN	EP300,FOS,JUN	
+ATM Signaling	1.59E00	3.09E-02	NaN	JUN,NFKBIA,USP7	
+p53 Signaling	1.58E00	3.06E-02	NaN	BCL2L1,EP300,JUN	
+VEGF Signaling	1.57E00	3.03E-02	NaN	ACTB,BCL2L1,PRKCB	
+PI3K/AKT Signaling	1.56E00	2.29E-02	NaN	BCL2L1,IL7R,ITGA4,NFKBIA	
+Mechanisms of Viral Exit from Host Cells	1.53E00	4.88E-02	NaN	ACTB,PRKCB	
+Acute Phase Response Signaling	1.52E00	2.23E-02	2.000	FOS,IRAK1,JUN,NFKBIA	
+Dendritic Cell Maturation	1.49E00	2.19E-02	NaN	HLA-C,HLA-E,NFKBIA,STAT1	
+BAG2 Signaling Pathway	1.49E00	4.65E-02	NaN	HSPA5,HSPA8	
+PD-1, PD-L1 cancer immunotherapy pathway	1.49E00	2.83E-02	NaN	BCL2L1,HLA-C,HLA-E	
+Hepatic Cholestasis	1.48E00	2.16E-02	NaN	IRAK1,JUN,NFKBIA,PRKCB	
+Sertoli Cell-Sertoli Cell Junction Signaling	1.48E00	2.16E-02	NaN	ACTB,EPB41,ITGA4,JUN	
+Role of RIG1-like Receptors in Antiviral Innate Immunity	1.48E00	4.55E-02	NaN	EP300,NFKBIA	
+Paxillin Signaling	1.47E00	2.78E-02	NaN	ACTB,ITGA4,ITGB2	
+Hepatic Fibrosis Signaling Pathway	1.47E00	1.63E-02	0.000	FOS,IRAK1,ITGA4,JUN,NFKBIA,PRKCB	
+Clathrin-mediated Endocytosis Signaling	1.42E00	2.07E-02	NaN	ACTB,HSPA8,ITGB2,UBA52	
+HIF1α Signaling	1.42E00	2.65E-02	NaN	EP300,JUN,LDHB	
+Pyruvate Fermentation to Lactate	1.41E00	1.67E-01	NaN	LDHB	
+Apelin Endothelial Signaling Pathway	1.4E00	2.61E-02	NaN	FOS,JUN,PRKCB	
+p38 MAPK Signaling	1.38E00	2.54E-02	NaN	DUSP1,IRAK1,STAT1	
+Sirtuin Signaling Pathway	1.37E00	1.72E-02	NaN	CPT1A,JUN,LDHB,NDUFA4,SLC25A6	
+Cholecystokinin/Gastrin-mediated Signaling	1.37E00	2.52E-02	NaN	FOS,JUN,PRKCB	
+Th1 Pathway	1.35E00	2.48E-02	NaN	CD8A,ITGB2,STAT1	
+IL-6 Signaling	1.31E00	2.4E-02	NaN	FOS,JUN,NFKBIA	
+Phagosome Formation	1.31E00	2.4E-02	NaN	ITGA4,ITGB2,PRKCB	
+Atherosclerosis Signaling	1.31E00	2.38E-02	NaN	CXCR4,ITGA4,ITGB2	
+PTEN Signaling	1.31E00	2.38E-02	NaN	BCL2L1,IGF2R,ITGA4	
+14-3-3-mediated Signaling	1.3E00	2.36E-02	NaN	FOS,JUN,PRKCB	
+P2Y Purigenic Receptor Signaling Pathway	1.3E00	2.36E-02	NaN	FOS,JUN,PRKCB	
+AMPK Signaling	1.29E00	1.87E-02	NaN	ACTB,CPT1A,EP300,PBRM1	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	1.27E00	1.6E-02	NaN	FOS,IRAK1,JUN,NFKBIA,PRKCB	
+MSP-RON Signaling Pathway	1.26E00	3.45E-02	NaN	ACTB,ITGB2	
+Androgen Signaling	1.23E00	2.21E-02	NaN	EP300,JUN,PRKCB	
+Th2 Pathway	1.23E00	2.21E-02	NaN	CXCR4,ITGB2,JUN	
+IL-2 Signaling	1.22E00	3.28E-02	NaN	FOS,JUN	
+Aryl Hydrocarbon Receptor Signaling	1.17E00	2.1E-02	NaN	EP300,FOS,JUN	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	1.17E00	1.5E-02	-2.236	EZR,FOS,HLA-C,HLA-E,JUN	
+Calcium-induced T Lymphocyte Apoptosis	1.16E00	3.03E-02	NaN	EP300,PRKCB	
+Mitotic Roles of Polo-Like Kinase	1.16E00	3.03E-02	NaN	RAD21,SLK	
+Corticotropin Releasing Hormone Signaling	1.16E00	2.07E-02	NaN	FOS,JUN,PRKCB	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.13E00	2.9E-02	NaN	IL7R,STAT1	
+Assembly of RNA Polymerase I Complex	1.12E00	8.33E-02	NaN	UBTF	
+Small Cell Lung Cancer Signaling	1.11E00	2.82E-02	NaN	BCL2L1,NFKBIA	
+Opioid Signaling Pathway	1.11E00	1.62E-02	-1.000	EP300,FOS,NFKBIA,PRKCB	
+PKCθ Signaling in T Lymphocytes	1.09E00	1.94E-02	NaN	FOS,JUN,NFKBIA	
+Regulation of eIF4 and p70S6K Signaling	1.08E00	1.91E-02	NaN	EIF3C,EIF3E,ITGA4	
+Colorectal Cancer Metastasis Signaling	1.08E00	1.58E-02	2.000	BCL2L1,FOS,JUN,STAT1	
+Estrogen-Dependent Breast Cancer Signaling	1.08E00	2.7E-02	NaN	FOS,JUN	
+eNOS Signaling	1.07E00	1.89E-02	NaN	HSPA5,HSPA8,PRKCB	
+TREM1 Signaling	1.06E00	2.67E-02	NaN	IRAK1,SIGIRR	
+HOTAIR Regulatory Pathway	1.06E00	1.87E-02	NaN	EP300,KMT2A,NFKBIA	
+Phospholipase C Signaling	1.06E00	1.56E-02	-2.000	AHNAK,EP300,ITGA4,PRKCB	
+GDNF Family Ligand-Receptor Interactions	1.06E00	2.63E-02	NaN	FOS,JUN	
+Neurotrophin/TRK Signaling	1.06E00	2.63E-02	NaN	FOS,JUN	
+Macropinocytosis Signaling	1.06E00	2.63E-02	NaN	ITGB2,PRKCB	
+Telomere Extension by Telomerase	1.03E00	6.67E-02	NaN	HNRNPA2B1	
+BEX2 Signaling Pathway	1.03E00	2.53E-02	NaN	JUN,NFKBIA	
+Granzyme B Signaling	1E00	6.25E-02	NaN	PRF1	
+Cardiac Hypertrophy Signaling (Enhanced)	1E00	1.23E-02	-1.342	EP300,IL7R,ITGA4,JUN,PDE3B,PRKCB	
+PEDF Signaling	1E00	2.44E-02	NaN	BCL2L1,NFKBIA	
+G-Protein Coupled Receptor Signaling	9.87E-01	1.47E-02	NaN	DUSP1,NFKBIA,PDE3B,PRKCB	
+GNRH Signaling	9.83E-01	1.73E-02	NaN	FOS,JUN,PRKCB	
+HER-2 Signaling in Breast Cancer	9.83E-01	2.38E-02	NaN	ITGB2,PRKCB	
+VEGF Family Ligand-Receptor Interactions	9.83E-01	2.38E-02	NaN	FOS,PRKCB	
+Wnt/β-catenin Signaling	9.83E-01	1.73E-02	NaN	EP300,JUN,UBA52	
+Mitochondrial L-carnitine Shuttle Pathway	9.79E-01	5.88E-02	NaN	CPT1A	
+Senescence Pathway	9.75E-01	1.45E-02	-1.000	EP300,ETS1,JUN,RASSF5	
+Ceramide Signaling	9.47E-01	2.27E-02	NaN	FOS,JUN	
+Role of NFAT in Regulation of the Immune Response	9.39E-01	1.66E-02	NaN	FOS,JUN,NFKBIA	
+Inflammasome pathway	9.1E-01	5E-02	NaN	NLRP1	
+Regulation of Actin-based Motility by Rho	9.03E-01	2.13E-02	NaN	ACTB,ITGA4	
+Endothelin-1 Signaling	9.03E-01	1.6E-02	NaN	FOS,JUN,PRKCB	
+FAK Signaling	8.93E-01	2.11E-02	NaN	ACTB,ITGA4	
+Endoplasmic Reticulum Stress Pathway	8.93E-01	4.76E-02	NaN	HSPA5	
+Neuregulin Signaling	8.86E-01	2.08E-02	NaN	ITGA4,PRKCB	
+Xenobiotic Metabolism PXR Signaling Pathway	8.83E-01	1.56E-02	NaN	EP300,NCOR1,PRKCB	
+Nitric Oxide Signaling in the Cardiovascular System	8.66E-01	2.02E-02	NaN	PDE3B,PRKCB	
+Apoptosis Signaling	8.66E-01	2.02E-02	NaN	BCL2L1,NFKBIA	
+Neuropathic Pain Signaling In Dorsal Horn Neurons	8.51E-01	1.98E-02	NaN	FOS,PRKCB	
+IL-22 Signaling	8.39E-01	4.17E-02	NaN	STAT1	
+Tumoricidal Function of Hepatic Natural Killer Cells	8.39E-01	4.17E-02	NaN	PRF1	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	8.39E-01	4.17E-02	NaN	STAT1	
+NER Pathway	8.39E-01	1.94E-02	NaN	EP300,USP7	
+IGF-1 Signaling	8.33E-01	1.92E-02	NaN	FOS,JUN	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	8.21E-01	4E-02	NaN	STAT1	
+D-myo-inositol (1,4,5)-Trisphosphate Biosynthesis	8.21E-01	4E-02	NaN	PIP4K2A	
+Lipid Antigen Presentation by CD1	8.07E-01	3.85E-02	NaN	CANX	
+mTOR Signaling	8.01E-01	1.43E-02	NaN	EIF3C,EIF3E,PRKCB	
+Pancreatic Adenocarcinoma Signaling	7.99E-01	1.83E-02	NaN	BCL2L1,STAT1	
+Glioma Signaling	7.93E-01	1.82E-02	NaN	IGF2R,PRKCB	
+Integrin Signaling	7.9E-01	1.41E-02	NaN	ACTB,ITGA4,ITGB2	
+iCOS-iCOSL Signaling in T Helper Cells	7.88E-01	1.8E-02	NaN	NFKBIA,PTPRC	
+Rac Signaling	7.8E-01	1.79E-02	NaN	ITGA4,JUN	
+Role of p14/p19ARF in Tumor Suppression	7.62E-01	3.45E-02	NaN	UBTF	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	7.59E-01	1.36E-02	NaN	FOS,JUN,NFKBIA	
+fMLP Signaling in Neutrophils	7.57E-01	1.72E-02	NaN	NFKBIA,PRKCB	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	7.52E-01	1.71E-02	NaN	HLA-C,HLA-E	
+LPS/IL-1 Mediated Inhibition of RXR Function	7.45E-01	1.34E-02	NaN	CPT1A,IRAK1,JUN	
+cAMP-mediated signaling	7.28E-01	1.32E-02	NaN	AKAP9,DUSP1,PDE3B	
+IL-9 Signaling	7.12E-01	3.03E-02	NaN	STAT1	
+Inhibition of Angiogenesis by TSP1	7.01E-01	2.94E-02	NaN	JUN	
+MIF-mediated Glucocorticoid Regulation	7.01E-01	2.94E-02	NaN	NFKBIA	
+Role of JAK2 in Hormone-like Cytokine Signaling	7.01E-01	2.94E-02	NaN	STAT1	
+TWEAK Signaling	6.88E-01	2.86E-02	NaN	NFKBIA	
+Synaptic Long Term Potentiation	6.86E-01	1.55E-02	NaN	EP300,PRKCB	
+Reelin Signaling in Neurons	6.86E-01	1.55E-02	NaN	ITGA4,ITGB2	
+Gα12/13 Signaling	6.82E-01	1.54E-02	NaN	JUN,NFKBIA	
+Axonal Guidance Signaling	6.8E-01	1.03E-02	NaN	CXCR4,ERAP2,ITGA4,PRKCB,RASSF5	
+Cellular Effects of Sildenafil (Viagra)	6.78E-01	1.53E-02	NaN	ACTB,PDE3B	
+Interferon Signaling	6.78E-01	2.78E-02	NaN	STAT1	
+Complement System	6.68E-01	2.7E-02	NaN	ITGB2	
+Docosahexaenoic Acid (DHA) Signaling	6.58E-01	2.63E-02	NaN	BCL2L1	
+STAT3 Pathway	6.58E-01	1.48E-02	NaN	IGF2R,IL7R	
+Cardiac β-adrenergic Signaling	6.31E-01	1.42E-02	NaN	AKAP9,PDE3B	
+Pyrimidine Ribonucleotides Interconversion	6.29E-01	2.44E-02	NaN	DDX3X	
+Type II Diabetes Mellitus Signaling	6.25E-01	1.41E-02	NaN	NFKBIA,PRKCB	
+Xenobiotic Metabolism General Signaling Pathway	6.22E-01	1.4E-02	NaN	EP300,PRKCB	
+Oncostatin M Signaling	6.11E-01	2.33E-02	NaN	STAT1	
+Pyrimidine Ribonucleotides De Novo Biosynthesis	6.11E-01	2.33E-02	NaN	DDX3X	
+tRNA Splicing	6.11E-01	2.33E-02	NaN	PDE3B	
+Apelin Pancreas Signaling Pathway	6.02E-01	2.27E-02	NaN	PDE3B	
+IL-23 Signaling Pathway	6.02E-01	2.27E-02	NaN	NFKBIA	
+nNOS Signaling in Neurons	5.77E-01	2.13E-02	NaN	PRKCB	
+Gustation Pathway	5.75E-01	1.3E-02	NaN	P2RY8,PDE3B	
+Necroptosis Signaling Pathway	5.64E-01	1.27E-02	NaN	SLC25A6,STAT1	
+Hematopoiesis from Pluripotent Stem Cells	5.62E-01	2.04E-02	NaN	CD8A	
+Cell Cycle: G2/M DNA Damage Checkpoint Regulation	5.62E-01	2.04E-02	NaN	EP300	
+Gαq Signaling	5.61E-01	1.27E-02	NaN	NFKBIA,PRKCB	
+Myc Mediated Apoptosis Signaling	5.54E-01	2E-02	NaN	BCL2L1	
+HMGB1 Signaling	5.35E-01	1.21E-02	NaN	FOS,JUN	
+Transcriptional Regulatory Network in Embryonic Stem Cells	5.26E-01	1.85E-02	NaN	SET	
+Role of IL-17A in Arthritis	5.2E-01	1.82E-02	NaN	NFKBIA	
+Mitochondrial Dysfunction	5.13E-01	1.17E-02	NaN	CPT1A,NDUFA4	
+CNTF Signaling	5.07E-01	1.75E-02	NaN	STAT1	
+Nur77 Signaling in T Lymphocytes	4.95E-01	1.69E-02	NaN	EP300	
+Retinoic acid Mediated Apoptosis Signaling	4.88E-01	1.67E-02	NaN	PARP9	
+PCP pathway	4.88E-01	1.67E-02	NaN	JUN	
+Ephrin Receptor Signaling	4.84E-01	1.11E-02	NaN	CXCR4,ITGA4	
+Autophagy	4.83E-01	1.64E-02	NaN	CTSS	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.66E-01	1.08E-02	NaN	KLF6,STAT1	
+Role of PI3K/AKT Signaling in the Pathogenesis of Influenza	4.66E-01	1.56E-02	NaN	NFKBIA	
+PXR/RXR Activation	4.6E-01	1.54E-02	NaN	CPT1A	
+IL-17A Signaling in Airway Cells	4.6E-01	1.54E-02	NaN	NFKBIA	
+ErbB2-ErbB3 Signaling	4.6E-01	1.54E-02	NaN	JUN	
+Pyridoxal 5'-phosphate Salvage Pathway	4.6E-01	1.54E-02	NaN	IRAK1	
+Xenobiotic Metabolism CAR Signaling Pathway	4.57E-01	1.06E-02	NaN	EP300,PRKCB	
+ErbB4 Signaling	4.5E-01	1.49E-02	NaN	PRKCB	
+Remodeling of Epithelial Adherens Junctions	4.45E-01	1.47E-02	NaN	ACTB	
+Gap Junction Signaling	4.31E-01	1.01E-02	NaN	ACTB,PRKCB	
+Melatonin Signaling	4.25E-01	1.39E-02	NaN	PRKCB	
+ERK5 Signaling	4.25E-01	1.39E-02	NaN	FOS	
+Actin Nucleation by ARP-WASP Complex	4.25E-01	1.39E-02	NaN	ITGA4	
+Ephrin B Signaling	4.25E-01	1.39E-02	NaN	CXCR4	
+T Helper Cell Differentiation	4.2E-01	1.37E-02	NaN	STAT1	
+Non-Small Cell Lung Cancer Signaling	4.2E-01	1.37E-02	NaN	RASSF5	
+Leptin Signaling in Obesity	4.16E-01	1.35E-02	NaN	PDE3B	
+IL-15 Signaling	4.11E-01	1.33E-02	NaN	BCL2L1	
+Angiopoietin Signaling	4.11E-01	1.33E-02	NaN	NFKBIA	
+CREB Signaling in Neurons	4.08E-01	9.66E-03	NaN	EP300,PRKCB	
+Role of NFAT in Cardiac Hypertrophy	3.9E-01	9.35E-03	NaN	EP300,PRKCB	
+IL-17 Signaling	3.89E-01	1.25E-02	NaN	JUN	
+FLT3 Signaling in Hematopoietic Progenitor Cells	3.89E-01	1.25E-02	NaN	STAT1	
+BMP signaling pathway	3.7E-01	1.18E-02	NaN	JUN	
+Prostate Cancer Signaling	3.48E-01	1.1E-02	NaN	NFKBIA	
+Th17 Activation Pathway	3.48E-01	1.1E-02	NaN	IRAK1	
+Melanocyte Development and Pigmentation Signaling	3.37E-01	1.06E-02	NaN	EP300	
+GABA Receptor Signaling	3.34E-01	1.05E-02	NaN	UBA52	
+Cardiac Hypertrophy Signaling	3.33E-01	8.33E-03	NaN	EP300,JUN	
+α-Adrenergic Signaling	3.31E-01	1.04E-02	NaN	PRKCB	
+Amyotrophic Lateral Sclerosis Signaling	3.28E-01	1.03E-02	NaN	BCL2L1	
+PAK Signaling	3.28E-01	1.03E-02	NaN	ITGA4	
+Salvage Pathways of Pyrimidine Ribonucleotides	3.28E-01	1.03E-02	NaN	IRAK1	
+Apelin Cardiomyocyte Signaling Pathway	3.21E-01	1.01E-02	NaN	PRKCB	
+SAPK/JNK Signaling	3.12E-01	9.8E-03	NaN	JUN	
+Chronic Myeloid Leukemia Signaling	3.09E-01	9.71E-03	NaN	BCL2L1	
+Telomerase Signaling	2.98E-01	9.35E-03	NaN	ETS1	
+Gαs Signaling	2.98E-01	9.35E-03	NaN	ADD3	
+Antioxidant Action of Vitamin C	2.92E-01	9.17E-03	NaN	NFKBIA	
+Oxidative Phosphorylation	2.92E-01	9.17E-03	NaN	NDUFA4	
+GPCR-Mediated Nutrient Sensing in Enteroendocrine Cells	2.84E-01	8.93E-03	NaN	PRKCB	
+Fc Epsilon RI Signaling	2.71E-01	8.55E-03	NaN	PRKCB	
+Role of Tissue Factor in Cancer	2.71E-01	8.55E-03	NaN	BCL2L1	
+GP6 Signaling Pathway	2.66E-01	8.4E-03	NaN	PRKCB	
+LXR/RXR Activation	2.61E-01	8.26E-03	NaN	NCOR1	
+IL-15 Production	2.61E-01	8.26E-03	NaN	STAT1	
+G Beta Gamma Signaling	2.59E-01	8.2E-03	NaN	PRKCB	
+Inhibition of ARE-Mediated mRNA Degradation Pathway	2.59E-01	8.2E-03	NaN	ZFP36L2	
+CCR3 Signaling in Eosinophils	2.55E-01	8.06E-03	NaN	PRKCB	
+Xenobiotic Metabolism Signaling	2.52E-01	6.97E-03	NaN	EP300,PRKCB	
+p70S6K Signaling	2.43E-01	7.75E-03	NaN	PRKCB	
+White Adipose Tissue Browning Pathway	2.43E-01	7.75E-03	NaN	LDHB	
+Adipogenesis pathway	2.33E-01	7.46E-03	NaN	TXNIP	
+Iron homeostasis signaling pathway	2.27E-01	7.3E-03	NaN	ATP6V0A2	
+Insulin Receptor Signaling	2.21E-01	7.14E-03	NaN	PDE3B	
+Factors Promoting Cardiogenesis in Vertebrates	2.03E-01	6.67E-03	NaN	PRKCB	
+Epithelial Adherens Junction Signaling	2E-01	6.58E-03	NaN	ACTB	
+Synaptic Long Term Depression	-0E00	5.29E-03	NaN	PRKCB	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	-0E00	6.49E-03	NaN	PRKCB	
+Thrombin Signaling	-0E00	4.81E-03	NaN	PRKCB	
+Germ Cell-Sertoli Cell Junction Signaling	-0E00	5.85E-03	NaN	ACTB	
+Breast Cancer Regulation by Stathmin1	-0E00	3.38E-03	NaN	JUN,PRKCB	
+Dopamine-DARPP32 Feedback in cAMP Signaling	-0E00	6.13E-03	NaN	PRKCB	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	-0E00	5.21E-03	NaN	ETS1	
+Sperm Motility	-0E00	4.48E-03	NaN	PRKCB	
+Osteoarthritis Pathway	-0E00	4.74E-03	NaN	ITGA4	
+Adrenomedullin signaling pathway	-0E00	5.08E-03	NaN	FOS	
+Synaptogenesis Signaling Pathway	-0E00	3.21E-03	NaN	HSPA8	
+Calcium Signaling	-0E00	4.85E-03	NaN	EP300	

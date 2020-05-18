@@ -1,0 +1,16 @@
+﻿orig.ident,Donor.orig,Donor.full,Donor,Status,DPS,DTF,Admission,Ventilated
+covid_555_1,555,C1 A,C1,COVID,9,9,ICU,NonVent
+covid_555_2,555,C1 B,C1,COVID,11,11,ICU,ARDS
+covid_556,556,C2,C2,COVID,16,16,ICU,NonVent
+covid_557,557,C3,C3,COVID,9,9,ICU,ARDS
+covid_558,558,C4,C4,COVID,9,9,ICU,ARDS
+covid_559,559,C5,C5,COVID,15,1,ICU,NonVent
+covid_560,560,C6,C6,COVID,2,0,ICU,ARDS
+covid_561,561,C7,C7,COVID,12,0,Floor,NonVent
+HIP002,HIP002,H1,H1,Healthy,0,0,N/A,N/A
+HIP015,HIP015,H2,H2,Healthy,0,0,N/A,N/A
+HIP023,HIP023,H3,H3,Healthy,0,0,N/A,N/A
+HIP043,HIP043,H4,H4,Healthy,0,0,N/A,N/A
+HIP044,HIP044,H5,H5,Healthy,0,0,N/A,N/A
+HIP045,HIP045,H6,H6,Healthy,0,0,N/A,N/A
+,,,,,,,,

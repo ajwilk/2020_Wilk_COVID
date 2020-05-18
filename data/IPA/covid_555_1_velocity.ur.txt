@@ -1,0 +1,872 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Flags	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+IL2	 	cytokine	Activated	2.900	bias	3.43E-20	BCL2,BIRC3,CCR7,CD247,CD28,CD38,CD5,DUSP6,ETS1,ICOS,IKZF2,IL18RAP,IL24,IL7R,IRF4,ITK,JAML,KLRD1,NCR1,PAX5,PDE3B,PIM2,PRF1,RGS2,RUFY1,SLAMF1,STAT4,TBX21,TGFBR3,TNFRSF13B	58 (16)
+TCR	 	complex	 	1.748	bias	4.64E-18	BACH2,BCL2,BIRC3,BTLA,CBLB,CCR7,CD28,CD38,CD5,CD8B,ELL2,ICOS,IL24,IL7R,IRF4,NFATC2,PDE3B,PRF1,RASGRP1,SLAMF1,STAT4,TBX21,TXK	60 (16)
+IL7	 	cytokine	 	1.667	bias	5.83E-14	BCL2,BLNK,BTLA,CBLB,CD247,CD8B,ICOS,IL18RAP,IL24,IL7R,LEF1,PAX5,PIM2,TNFSF8	47 (9)
+lipopolysaccharide	 	chemical drug	Activated	3.235	bias	2.97E-13	ACSL1,AFF3,BACH2,BCL2,BIRC3,BLNK,C5AR1,CCR7,CD22,CD28,CD38,ELL2,EMB,GCA,GLCCI1,HERPUD1,HIVEP2,IL18RAP,IL24,IL32,IL7R,IRF4,IRF8,MTSS1,PAX5,PDE3B,PIM2,POU2AF1,RGS2,RUNX3,SLAMF1,SP140,STAT4,TBX21,TENT5C,TNFRSF13B,TNFSF8,TXNDC11,VCAN	64 (16)
+IL12 (complex)	 	complex	Activated	3.401	bias	4.31E-13	CCR7,CD226,CD28,ICOS,IL18RAP,IL32,IL7R,IRF4,IRF8,KLRD1,NCR1,PRF1,STAT4,TBX21,TXK	50 (16)
+Immunoglobulin	 	complex	 	-0.663	 	7.96E-13	ACSL1,BCL2,BIRC3,CCR7,CD28,DYSF,ICOS,IKZF2,IL24,IL32,IL7R,IRF4,KLRD1,PAX5,PDE3B,PRF1,RAB31,RGS2,TBX21,TGFBR3,TNFSF8,VCAN	59 (17)
+TBX21	0.680	transcription regulator	Activated	2.189	 	3.67E-12	CD38,ICOS,IL18RAP,IL7R,ITK,KLRD1,PRF1,RUNX3,STAT4,TBX21	53 (10)
+tetradecanoylphorbol acetate	 	chemical drug	Activated	3.251	bias	5.31E-12	BCL2,BIRC3,C5AR1,CCR7,CD226,CD28,CLEC2D,DUSP6,ETS1,ICOS,IL24,IL32,IL7R,IRF4,IRF8,NCR1,PAX5,PDE3B,POU2AF1,PRF1,PRKCH,PRKCQ,RASGRP1,RGS2,RHOH,SLAMF1,TBX21,TNFRSF13B,VCAN	61 (17)
+IL21	 	cytokine	 	1.608	bias	1.35E-11	BCL2,CCR7,CD28,CD38,IL18RAP,IL7R,IRF4,KLRD1,NCR1,PAX5,PRF1,STAT4,TBX21	55 (17)
+alefacept	 	biologic drug	Inhibited	-3.000	bias	1.46E-11	ADGRG1,CBLB,IL18RAP,IL7R,KLRD1,NCR1,PRF1,STAT4,TGFBR3	 
+IL15	 	cytokine	 	1.344	bias	2.84E-11	BCL2,CD226,CD28,CD38,CD5,CD8B,ETS1,ICOS,IL18RAP,IL24,IL32,IL7R,KLRD1,LEF1,NCR1,PRF1,TBX21,TCF7	64 (20)
+IL4	 	cytokine	 	-0.755	bias	1.13E-10	ACSL1,BCL11A,BCL2,C5AR1,CCR7,CD38,CD5,ICOS,IL18RAP,IL24,IL7R,IRF4,IRF8,KLRD1,LEF1,NFATC2,PAX5,PIM2,POU2AF1,PRF1,STAT4,TBX21,TCF7,TNFSF8,TXK	51 (15)
+IL12 (family)	 	group	Activated	3.245	bias	1.28E-10	BCL2,ICOS,IL18RAP,IRF4,IRF8,NCR1,NFATC2,PIM2,PRF1,STAT4,TBX21	50 (14)
+CD3	 	complex	 	1.888	bias	2.14E-10	BCL2,BIRC3,CD226,CD247,CD28,CD5,CD8B,ETS1,ICOS,IL32,IL7R,IRF4,IRF8,LEF1,NFATC2,PRF1,RHOH,SH2D2A,TBX21,TCF7	54 (15)
+ionomycin	 	chemical reagent	Activated	2.275	bias	4.12E-10	B3GAT1,BCL2,ETS1,ICOS,IL24,IRF4,PAX5,POU2AF1,PRF1,RGS2,SLAMF1,TBX21	53 (11)
+cyclosporin A	 	biologic drug	 	-1.461	bias	2.68E-09	A2M,BCL2,BIRC3,CBLB,CCR7,CD8B,ELL2,HERPUD1,ICOS,IRF4,KLRD1,PDE3B,PRF1,PRKCH,SLAMF1,TBX21	59 (17)
+CD40	 	transmembrane receptor	 	0.761	bias	2.93E-09	BCL2,BIRC3,CD22,CD38,CLEC2D,DUSP6,IL24,IRF4,POU2AF1,SLAMF1,TBX21,TNFRSF13B	46 (12)
+PRDM1	 	transcription regulator	Inhibited	-2.897	 	4.36E-09	ADGRG1,CCR7,CD22,IL18RAP,IL24,IL7R,IRF4,IRF8,PAX5,PRF1,TBX21,TNFRSF13B	50 (11)
+FOXP3	 	transcription regulator	 	0.518	bias	5.51E-09	BCL2,DUSP6,ICOS,IKZF2,IL7R,IRF4,PDE3B,PIM2,TBX21	55 (16)
+GATA3	 	transcription regulator	 	-0.188	 	8.86E-09	BCL11A,BCL2,ETS1,ICOS,IL18RAP,IL24,IL7R,ITK,PAX5,RUNX3,STAT4,TBX21	42 (7)
+CSF2	 	cytokine	Activated	3.510	bias	8.97E-09	BCL2,BIRC3,C5AR1,CCR7,CD28,CD38,CD5,DUSP6,ICOS,IL24,IL32,IRF4,NFATC2,PIM2,RHOH,TNFSF8	53 (15)
+ID3	 	transcription regulator	 	0.083	 	1.09E-08	ADGRG1,BCL2,CCR7,IKZF2,IL7R,IRF4,IRF8,SLAMF1,STAT4,TGFBR3,TNFSF8	41 (7)
+IRF4	5.550	transcription regulator	 	-1.964	bias	1.44E-08	ELL2,IKZF2,IL18RAP,IL7R,IRF4,PAX5,PIM2,PRKCQ,TBX21,TCF7	47 (11)
+Interferon alpha	 	group	Activated	3.623	bias	2.46E-08	BCL2,CCR7,CD38,DUSP6,IL18RAP,IL32,IL7R,IRF4,IRF8,NCR1,PIM2,PRF1,PYHIN1,STAT4,TBX21	52 (15)
+BCL6	 	transcription regulator	 	0.000	bias	2.67E-08	A2M,BACH2,BCL2,BLNK,CCR7,DUSP6,IL24,IL7R,IRF4,IRF8,TBX21	50 (12)
+TCF3	 	transcription regulator	Activated	2.345	bias	3.42E-08	BACH2,BLNK,CD5,CD8B,ICOS,IL7R,LEF1,NIBAN3,PAX5,POU2AF1,SEC11C,TENT5C,TXNDC11	13 (2)
+BCR (complex)	 	complex	Activated	2.959	bias	5.01E-08	BCL2,CCR7,CD5,CLEC2D,IL24,IRF4,POU2AF1,TBX21,TNFSF8	43 (12)
+CD28	3.560	transmembrane receptor	 	1.132	bias	6.72E-08	BCL2,CBLB,CD226,CD247,CD28,ICOS,IL7R,IRF4,IRF8,NFATC2,SH2D2A,TBX21,TCF7	53 (14)
+STAT6	 	transcription regulator	 	-0.853	 	7.52E-08	ACSL1,BCL2,CCR7,CD38,ICOS,IL24,IRF4,NFATC2,PIM2,POU2AF1,STAT4,TBX21,TCF7,TXK	57 (17)
+tacrolimus	 	chemical drug	 	-1.480	bias	1.13E-07	BCL2,CD8B,ELL2,ICOS,IKZF2,IRF4,KLRD1,PDE3B,PRF1,SLAMF1,TGFBR3	47 (8)
+prostaglandin E2	 	chemical - endogenous mammalian	 	1.052	bias	1.40E-07	BCL2,BIRC3,C5AR1,CCR7,CD226,ETS1,IL7R,IRF4,NCR1,RGS2,TBX21,TGFBR3	61 (19)
+IFNG	 	cytokine	Activated	2.963	bias	1.75E-07	A2M,ADGRG1,BACH2,BCL2,BIRC3,BLNK,BTN3A1,C5AR1,CAMK4,CD38,CLEC2D,IL18RAP,IL32,IL7R,IRF4,IRF8,MTSS1,PIM2,PRKCQ,RUNX3,SLAMF1,STAT4,TBX21,TGFBR3,TXK	54 (17)
+FOXO1	 	transcription regulator	 	1.656	bias	1.82E-07	A2M,AFF3,BACH2,BANK1,BCL2,BIRC3,BLNK,CAMK4,CCR7,IKZF2,IL7R,PAX5,PRF1,TBX21	39 (7)
+CREBBP	 	transcription regulator	 	 	 	2.16E-07	BANK1,BCL2,CAMK4,CCR7,GLCCI1,HVCN1,IL18RAP,IL7R,PDE3B,PRF1,RGS2,SLAMF1,STAT4	21 (3)
+ID2	 	transcription regulator	 	1.732	 	2.52E-07	BCL2,CCR7,IKZF2,IL7R,IRF4,IRF8,SLAMF1,STAT4,TGFBR3,TNFSF8	 
+CD40LG	 	cytokine	Activated	2.949	bias	2.57E-07	BCL2,BIRC3,CCR7,CD38,IL24,IL7R,IRF4,RGS2,RUNX3,SLAMF1,STAT4,TNFRSF13B,TNFSF8	51 (14)
+ETS1	7.890	transcription regulator	 	1.559	bias	3.53E-07	BCL11A,ETS1,IKZF2,IL24,IL7R,ITK,NCR1,PRF1,RUNX3,TBX21	 
+NFkB (complex)	 	complex	Activated	2.418	bias	3.87E-07	A2M,BCL11A,BCL2,BIRC3,CCR7,ELL2,ETS1,ICOS,IL24,IL32,IL7R,IRF4,MTSS1,MYBL1,PIM2,STAT4	57 (17)
+BACH2	7.360	transcription regulator	 	-0.059	bias	5.05E-07	BCL2,IRF4,LEF1,PDE3B,STAT4,TBX21	 
+XBP1	 	transcription regulator	Activated	2.156	bias	5.09E-07	BCL2,ETS1,HERPUD1,IL24,IRF4,MAN1A1,POU2AF1,SEC11C,SLC38A1,TXNDC11	 
+GATA1	 	transcription regulator	Activated	2.828	bias	5.71E-07	AFF3,BACH2,BCL2,ETS1,IL7R,IRF8,PIM2,RUNX3,SP140,SPOCK2,STAT4	 
+IL18	 	cytokine	Activated	2.789	bias	6.41E-07	BCL2,CCR7,CD226,IL18RAP,IL32,NCR1,PRF1,TBX21,TXK	45 (15)
+IKZF2	9.320	transcription regulator	Inhibited	-2.236	bias	1.59E-06	CD28,ICOS,IRF4,RUNX3,STAT4	 
+Igm	 	complex	 	 	 	1.80E-06	BCL2,CD22,CD5,IRF4,PAX5,TNFRSF13B	33 (8)
+TNF	 	cytokine	Activated	2.002	bias	1.81E-06	A2M,ACSL1,ANK3,BCL2,BIRC3,C5AR1,CCR7,CD247,CD28,CD38,CD5,CLEC2D,DUSP6,ETS1,ICOS,IL24,IL32,IL7R,IRF4,IRF8,NFATC2,PIM2,POU2AF1,RGS2,STAT4,TBX21,TNFSF8	53 (14)
+SATB1	 	transcription regulator	 	-0.230	 	3.49E-06	BCL2,BLNK,BTLA,ETS1,HVCN1,IL18RAP,IL7R,IRF8	 
+STAT5A	 	transcription regulator	 	 	 	3.95E-06	A2M,BCL11A,BCL2,BIRC3,IL24,IL7R,LEF1,PRF1,SYTL2,TBX21	48 (11)
+CBFB	 	transcription regulator	 	-0.816	 	4.36E-06	IKZF2,PDE3B,RUNX3,STAT4,TBX21,TGFBR3	25 (5)
+STAT3	 	transcription regulator	 	0.769	bias	4.60E-06	A2M,BCL2,C5AR1,CD226,ICOS,IKZF2,IRF4,NFATC2,PAX5,PIM2,PRF1,SLAMF1,TBX21,VCAN	49 (13)
+IL7R	5.130	transmembrane receptor	 	1.944	bias	7.64E-06	BCL2,CCR7,CD5,IRF4,PAX5,SKAP1	 
+IL2RG	 	transmembrane receptor	 	0.651	 	1.17E-05	BCL2,ETS1,IL7R,RHOH,TXK	 
+ZBTB16	 	transcription regulator	 	0.730	 	1.26E-05	BACH2,EMB,ICOS,IL18RAP,IL7R,RUNX3,TNFSF8	 
+PTPN6	 	phosphatase	 	-0.689	bias	1.28E-05	BCL2,CCR7,CD5,ETS1,TBX21	59 (20)
+PAX5	1.440	transcription regulator	 	 	 	1.40E-05	BCL2,BLNK,CD22,GPRIN3,POU2AF1	 
+SPI1	 	transcription regulator	 	 	 	1.47E-05	BCL11A,BLNK,CCR7,DUSP6,IL24,IL7R,IRF4,LEF1,RUNX3	41 (7)
+GFI1	 	transcription regulator	 	-1.264	bias	1.65E-05	BTLA,CCR7,ETS1,IL7R,RASGRP1,RUNX3,STAT4	28 (5)
+HGF	 	growth factor	Activated	2.540	bias	1.69E-05	A2M,ADGRG1,ANK3,BCL2,BIRC3,CD28,CDC14A,DUSP6,ETS1,IRF8,PIM2,RGS2	52 (15)
+beta-estradiol	 	chemical - endogenous mammalian	Activated	2.579	bias	1.91E-05	A2M,ACSL1,BCL2,BIRC3,BLNK,CAMK4,DUSP6,ETS1,GPRIN3,HERPUD1,IL24,IL7R,INPP4B,IRF4,MYBL1,NCR1,PDE3B,PIM2,PRKCH,RAB31,RASGRP1,RGS2,SIK1/SIK1B,SPOCK2,TGFBR3,TNFSF8,VCAN	56 (11)
+NFATC1	 	transcription regulator	 	1.387	bias	2.25E-05	B3GAT1,BCL2,ICOS,POU2AF1,SLAMF1,TBX21	28 (4)
+BCL11B	 	transcription regulator	 	0.847	bias	2.47E-05	BCL2,IL7R,LEF1,NCR1,TBX21	 
+IKBKB	 	kinase	 	-0.726	bias	2.74E-05	BCL2,BIRC3,CBLB,CCR7,DUSP6,ETS1,POU2AF1,TNFSF8,VCAN	46 (16)
+filgrastim	 	biologic drug	 	-1.554	 	2.77E-05	ACSL1,BIRC3,EMILIN2,GIMAP5,IL18RAP,IL32,KLRD1,KLRF1,LEF1,PIM2,SPON2	 
+IL5	 	cytokine	Activated	2.086	bias	2.82E-05	A2M,BCL2,CCR7,CD5,DUSP6,ELL2,PAX5,RHOH,TNFSF8	47 (13)
+LY294002	 	chemical - kinase inhibitor	Inhibited	-3.379	bias	2.88E-05	BCL2,BIRC3,CD38,DUSP6,ETS1,HERPUD1,IL32,INPP4B,RGS2,SIK1/SIK1B,TNFSF8,VCAN	53 (15)
+SYK	 	kinase	 	-0.438	 	3.25E-05	BCL2,BIRC3,CCR7,CD247,NFATC2,PRKCQ	37 (7)
+IL10	 	cytokine	 	0.322	 	3.57E-05	BCL2,CCR7,CD28,IL24,IL7R,KLRD1,SLAMF1,STAT4,TNFRSF13B,VCAN	56 (17)
+dexamethasone	 	chemical drug	 	1.168	 	3.71E-05	ACSL1,BCL2,BIRC3,C5AR1,CD38,CD8B,CPEB4,EMILIN2,GIMAP5,HERPUD1,IL18RAP,IL32,IL7R,IRF8,KLRD1,KLRF1,LEF1,PIM2,POU2AF1,PRKCQ,RGS2,SPOCK2,SPON2,TBX21,TGFBR3,TXK,VCAN	59 (14)
+Salmonella enterica serotype abortus equi lipopolysaccharide	 	chemical toxicant	Activated	2.588	bias	3.71E-05	BIRC3,CCR7,IL32,IL7R,PIM2,RHOH,SLAMF1	 
+DNMT3A	 	enzyme	 	-1.134	 	3.85E-05	ACSL1,BLNK,CD38,IRF8,NFATC2,PAX5,POU2AF1	 
+CDKN1B	 	kinase	Inhibited	-2.442	bias	4.35E-05	BCL11A,BCL2,BLNK,LEF1,NFATC2,PAX5	40 (7)
+CD80	 	transmembrane receptor	 	0.130	 	4.62E-05	CBLB,CD28,ICOS,TBX21	32 (6)
+diacylglycerol	 	chemical - endogenous mammalian	 	 	 	5.32E-05	PRKCH,PRKCQ,RASGRP1	 
+RELB	 	transcription regulator	Activated	2.177	bias	5.34E-05	BCL2,BIRC3,IRF4,STAT4,TBX21	24 (6)
+Tcf7	 	transcription regulator	 	-1.154	bias	6.31E-05	BCL2,IL7R,LEF1,TBX21	 
+Ap1 gamma	 	group	 	 	 	8.61E-05	CD28,CD8B	 
+PP2/AG1879 tyrosine kinase inhibitor	 	chemical - kinase inhibitor	 	-1.172	bias	8.68E-05	BCL2,BIRC3,CD38,ICOS,IL32	42 (12)
+ITK	23.610	kinase	Activated	2.156	bias	9.72E-05	IL18RAP,KLRD1,NCR1,STAT4,TBX21	45 (9)
+IL23	 	complex	 	0.882	bias	1.10E-04	BCL2,ICOS,IRF4,TBX21	45 (13)
+IL12A	 	cytokine	 	1.964	bias	1.10E-04	BCL2,ICOS,PRF1,STAT4	27 (4)
+stallimycin	 	biologic drug	Activated	2.000	bias	1.10E-04	IL24,IL7R,IRF4,PYHIN1	 
+RELA	 	transcription regulator	 	1.387	bias	1.35E-04	A2M,BACH2,BCL2,BIRC3,CCR7,IL32,IL7R,IRF4,POU2AF1,TBX21	57 (15)
+NFATC2	12.630	transcription regulator	 	0.293	bias	1.37E-04	CCR7,ICOS,IRF4,RGS2,SLAMF1,TBX21,TNFSF8	59 (17)
+IL24	0.100	cytokine	 	0.000	bias	1.41E-04	BCL2,IL24,IRF4,PAX5	41 (9)
+TPP2	 	peptidase	 	 	 	1.72E-04	PRF1,TBX21	 
+Akt	 	group	 	0.462	bias	1.83E-04	A2M,BCL2,CCR7,ETS1,IL32,IL7R,LEF1,VCAN	41 (12)
+bromodeoxyuridine	 	chemical drug	Activated	2.000	bias	1.92E-04	IL24,IL7R,IRF4,PYHIN1	 
+CD5	23.050	transmembrane receptor	Activated	2.000	bias	1.92E-04	BCL2,CCR7,PIM2,RUNX3	 
+PARPBP	 	other	 	 	 	2.18E-04	CPEB4,EMB,SPON2	 
+IKK (complex)	 	complex	 	 	 	2.18E-04	BCL2,BIRC3,TBX21	30 (8)
+CISH	 	other	 	 	 	2.18E-04	BACH2,PRF1,TBX21	 
+IL15RA	 	transmembrane receptor	 	 	 	2.18E-04	BCL2,CD226,NCR1	22 (3)
+Nfat (family)	 	group	 	1.000	bias	2.40E-04	BCL2,ELL2,IRF4,PDE3B,TCF7	 
+EGR2	 	transcription regulator	Activated	2.213	bias	2.49E-04	BCL2,CAMK4,CBLB,IL7R,TBX21,TGFBR3	35 (5)
+EFNA2	 	kinase	 	0.000	 	2.54E-04	BACH2,CD247,DUSP6,USP9Y	 
+ELL2	33.310	transcription regulator	 	 	 	2.72E-04	IRF4,POU2AF1,TENT5C,TXNDC11	 
+TWIST1	 	transcription regulator	 	0.816	bias	2.75E-04	BCL2,ETS1,RUNX3,SPOCK2,TBX21,VCAN	 
+MAP4K1	 	kinase	 	 	 	2.85E-04	BCL2,BIRC3	21 (6)
+LAMP1	 	other	 	 	 	2.85E-04	PRF1,TBX21	 
+tosylphenylalanyl chloromethyl ketone	 	chemical - protease inhibitor	 	 	 	3.22E-04	BCL2,BIRC3,PRF1	 
+actinomycin D	 	biologic drug	 	-0.721	bias	3.28E-04	BCL2,BIRC3,CD28,CD38,ETS1,IL7R,RGS2	54 (17)
+TNFRSF8	 	transmembrane receptor	 	0.000	 	3.30E-04	CCR7,IRF4,PIM2,PRF1	20 (5)
+IL6	 	cytokine	 	1.344	bias	3.36E-04	A2M,BCL2,C5AR1,CCR7,CD38,DUSP6,ICOS,IL7R,IRF4,KLRD1,PRF1,STAT4,TBX21	50 (16)
+MAPK8	 	kinase	 	0.447	bias	3.44E-04	BCL2,BIRC3,DUSP6,ETS1,SH2D2A,TBX21	40 (8)
+TLR9	 	transmembrane receptor	Activated	2.335	bias	3.62E-04	BCL2,CCR7,CD38,CD5,IRF4,TBX21,TNFRSF13B	53 (17)
+PSMB11	 	peptidase	Inhibited	-2.236	bias	3.69E-04	CCR7,CD28,CD5,CREB5,VCAN	 
+TGFB3	 	growth factor	 	0.447	bias	3.84E-04	BCL2,ETS1,LEF1,STAT4,TGFBR3	 
+CSF3	 	cytokine	 	0.927	bias	3.89E-04	BCL2,BIRC3,CCR7,DUSP6,ETS1,PYHIN1	46 (15)
+MYB	 	transcription regulator	 	1.458	bias	4.01E-04	BANK1,BCL2,BIRC3,BLNK,IL7R,MTSS1	28 (5)
+NR3C1	 	ligand-dependent nuclear receptor	 	1.725	 	4.09E-04	A2M,BCL2,BIRC3,CD38,CPEB4,GLCCI1,HERPUD1,IL24,IL7R,IRF8,RGS2,SLC38A1	46 (11)
+BTK	 	kinase	 	-1.038	 	4.16E-04	CCR7,CD38,ETS1,ICOS,IRF4	59 (17)
+tributyrin	 	chemical drug	 	1.980	bias	4.22E-04	BIRC3,ETS1,IL24,MYBL1	 
+PDCD1	 	phosphatase	 	0.000	bias	4.22E-04	BCL2,CBLB,KLRF1,NCR1	 
+Vegf	 	group	Activated	3.087	bias	4.25E-04	A2M,ADGRG1,BCL2,CDC14A,DUSP6,ETS1,HERPUD1,LEF1,PIM2,RGS2	38 (11)
+IKZF1	 	transcription regulator	 	-0.392	bias	4.40E-04	BLNK,CD38,IL7R,IRF4,PAX5,PRKCQ,TBX21	38 (7)
+Ige	 	complex	Activated	2.630	bias	4.44E-04	BCL2,DUSP6,IL7R,IRF4,ITK,PIM2,RASGRP1,TNFRSF13B	56 (14)
+CD3E	 	transmembrane receptor	 	 	 	4.47E-04	CBLB,CD8B,ICOS,ITK	 
+JQ1	 	chemical reagent	Inhibited	-2.219	bias	4.86E-04	BCL2,BIRC3,IL24,IRF4,RUNX3	 
+TNFSF13B	 	cytokine	 	 	 	5.01E-04	BCL2,CCR7,PIM2,POU2AF1	41 (11)
+CTLA4	 	transmembrane receptor	 	 	 	5.29E-04	CBLB,ICOS,NFATC2,TENT5C	33 (6)
+E. coli B5 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	1.913	bias	5.42E-04	BIRC3,CCR7,IL18RAP,IL32,IL7R,PAX5,TGFBR3	48 (16)
+IER3	 	other	 	 	 	5.94E-04	BCL2,BIRC3	31 (9)
+gliotoxin	 	chemical toxicant	 	 	 	5.94E-04	BCL2,BIRC3	 
+MAPK14	 	kinase	 	-1.387	bias	5.99E-04	BCL2,CCR7,DUSP6,LEF1,SH2D2A,TBX21	49 (17)
+NOTCH1	 	transcription regulator	 	1.017	 	6.20E-04	BCL2,BIRC3,IL7R,IRF8,LEF1,RUNX3,TGFBR3	25 (7)
+EP300	 	transcription regulator	 	 	 	6.20E-04	BANK1,CAMK4,CCR7,GLCCI1,HVCN1,IL18RAP,IL7R,SLAMF1,STAT4	21 (3)
+Calcineurin protein(s)	 	complex	 	1.980	bias	6.56E-04	BCL2,CBLB,NFATC2,RGS2	 
+bucladesine	 	chemical toxicant	Activated	2.414	bias	6.89E-04	BCL2,C5AR1,CD38,DUSP6,POU2AF1,RGS2,TC2N,TGFBR3	48 (10)
+WNT5A	 	cytokine	 	1.387	 	7.00E-04	BCL2,CAMK4,CD38,IRF8,NFATC2	 
+PDPK1	 	kinase	 	 	 	7.40E-04	A2M,BCL2,CCR7	44 (15)
+CEBPA	 	transcription regulator	 	0.761	bias	7.75E-04	A2M,ACSL1,BCL2,NFATC2,PAX5,RAB31,RGS2,RUNX3,VCAN	26 (3)
+MEF2C	 	transcription regulator	Activated	2.219	bias	7.76E-04	BACH2,IRF4,MYOM2,NFATC2,SIK1/SIK1B	6 (2)
+Calcineurin B	 	group	 	 	 	7.90E-04	B3GAT1,ICOS	 
+CYSLTR1	 	G-protein coupled receptor	 	 	 	7.90E-04	BCL2,NFATC2	 
+bryostatin 1	 	chemical drug	 	 	 	8.09E-04	BIRC3,CD22,TBX21	 
+CG	 	complex	 	1.498	bias	8.25E-04	ACSL1,BCL2,CAMK4,DUSP6,EMB,RGS2,TGFBR3,VCAN	35 (3)
+PGR	 	ligand-dependent nuclear receptor	Activated	2.579	bias	8.72E-04	ACSL1,BIRC3,ELL2,MTSS1,PIM2,PRKCH,VCAN	25 (4)
+PRKCQ	4.320	kinase	 	 	 	8.81E-04	IL24,PRKCH,TBX21	 
+PD173074	 	chemical reagent	 	1.000	bias	8.83E-04	ADGRG1,CCR7,DUSP6,PRKCH	 
+NFKB2	 	transcription regulator	Activated	2.000	bias	8.83E-04	BCL2,BIRC3,CCR7,IRF4	49 (12)
+resiquimod	 	chemical drug	 	 	 	9.08E-04	BCL2,CCR7,CREB5,HERPUD1,HIVEP2,IL18RAP,TBX21	47 (13)
+triamcinolone acetonide	 	chemical drug	 	0.478	 	9.57E-04	ACSL1,BCL2,CD22,PRF1,RGS2,SLAMF1	23 (4)
+PPP3CA	 	phosphatase	 	 	 	9.70E-04	B3GAT1,BCL2,CD5,POU2AF1	17 (3)
+EFNB1	 	other	 	 	 	1.01E-03	BCL2,IL7R	 
+DEK	 	transcription regulator	 	 	 	1.01E-03	BIRC3,LEF1	 
+BMP4	 	growth factor	 	1.154	bias	1.03E-03	ADGRG1,BCL2,CCR7,LEF1,PRKCH,RUNX3	12 (2)
+BRD4	 	kinase	 	 	 	1.04E-03	BCL2,IL7R,IRF4,IRF8,PIM2	 
+CYLD	 	transcription regulator	 	 	 	1.12E-03	ICOS,IL7R,SLAMF1	 
+NQO1	 	enzyme	 	 	 	1.12E-03	BCL2,BIRC3,C5AR1	 
+5-O-mycolyl-beta-araf-(1->2)-5-O-mycolyl-alpha-araf-(1->1')-glycerol	 	chemical - endogenous non-mammalian	Activated	2.000	bias	1.16E-03	ACSL1,CCR7,IL18RAP,STAT4	35 (7)
+TLR7	 	transmembrane receptor	Activated	2.169	bias	1.16E-03	BANK1,BCL2,CCR7,CD38,CREB5,HIVEP2	 
+TNFRSF9	 	transmembrane receptor	 	 	 	1.21E-03	BCL2,CD28,PRF1	 
+MAFB	 	transcription regulator	 	 	 	1.21E-03	CD28,CD38,IL7R,MTSS1	 
+LYN	 	kinase	 	 	 	1.21E-03	BCL2,C5AR1,CD22,ETS1	 
+amphetamine	 	chemical drug	 	 	 	1.21E-03	BCL2,MYBL1,RGS2,STAT4	 
+PDK2	 	kinase	 	 	 	1.26E-03	IRF4,IRF8	 
+PIM3	 	kinase	 	 	 	1.26E-03	STAT4,TBX21	 
+SLC6A1	 	transporter	 	 	 	1.26E-03	BCL2,TBX21	 
+PRDM5	 	transcription regulator	 	 	 	1.27E-03	COL19A1,MYOM2,PAX5,SIK1/SIK1B	 
+phytohemagglutinin	 	chemical drug	 	1.411	bias	1.32E-03	CCR7,IL24,IL7R,PAX5,PRF1,STAT4,TBX21	57 (15)
+RBPJ	 	transcription regulator	 	 	 	1.33E-03	ETS1,IL7R,IRF8,LEF1,RUNX3	25 (7)
+MAP3K8	 	kinase	 	1.446	 	1.37E-03	BIRC3,DUSP6,GCA,STAT4,TBX21	22 (6)
+H89	 	chemical - kinase inhibitor	Inhibited	-2.213	bias	1.41E-03	BCL2,NFATC2,PDE3B,POU2AF1,SH2D2A	 
+cytokine	 	group	 	 	 	1.49E-03	BCL2,C5AR1,CCR7,IL24,NCR1	 
+POU2F2	 	transcription regulator	 	1.982	bias	1.49E-03	BANK1,BTLA,CD22,ELL2	 
+CD2	 	transmembrane receptor	 	 	 	1.50E-03	BCL2,CCR7,STAT4	48 (12)
+TCF4	 	transcription regulator	 	1.633	bias	1.53E-03	BACH2,CD38,LEF1,NIBAN3,SEC11C,TENT5C,TXNDC11,VCAN	 
+LNX2	 	other	 	 	 	1.54E-03	BCL2,POU2AF1	 
+CREM	 	transcription regulator	 	-0.849	 	1.54E-03	BCL2,CAMK4,CD247,CD8B,SIK1/SIK1B	 
+FGF8	 	growth factor	 	0.152	bias	1.56E-03	CCDC50,ELL2,PAX5,RUNX3	 
+AG490	 	chemical - kinase inhibitor	 	-1.154	bias	1.62E-03	A2M,BCL2,BIRC3,ICOS	54 (14)
+MED1	 	transcription regulator	 	 	 	1.72E-03	BCL11A,IRF4,IRF8,LEF1,TBX21	 
+daidzein	 	chemical drug	 	1.000	bias	1.82E-03	A2M,BCL2,KLRD1,RASGRP1	38 (7)
+highly active antiretroviral therapy	 	chemical drug	 	 	 	1.84E-03	BCL2,IL7R	 
+TIGIT	 	other	 	 	 	1.84E-03	IRF4,TBX21	 
+DOK1	 	kinase	 	 	 	1.84E-03	STAT4,TBX21	15 (3)
+Collagen(s)	 	complex	 	 	 	1.84E-03	C5AR1,HERPUD1,PRF1	 
+RBM5	 	other	 	 	 	1.84E-03	BCL2,BIRC3,IL32	 
+IL1B	 	cytokine	Activated	2.857	bias	1.86E-03	A2M,BCL2,BIRC3,CCR7,IL18RAP,IL24,IL32,IRF4,NFATC2,SLAMF1,STAT4,TBX21,VCAN	54 (15)
+TNFRSF1A	 	transmembrane receptor	Activated	2.219	 	1.86E-03	BIRC3,CD38,IL24,POU2AF1,TBX21	39 (11)
+RUNX1-RUNX1T1	 	fusion gene/product	 	 	 	1.89E-03	AFF3,C5AR1,DUSP6,MTSS1	 
+GATA2	 	transcription regulator	 	1.000	bias	1.89E-03	ADGRG1,CD226,CD96,ETS1,ICOS,SYTL3,TGFBR3,TXK	 
+estrogen receptor	 	group	 	-0.640	 	1.98E-03	BCL2,CD5,ETS1,MAN1A1,RGS2,TGFBR3	27 (4)
+RPTOR	 	other	 	1.154	bias	2.04E-03	CCR7,DUSP6,ICOS,IRF8	 
+APOE	 	transporter	 	 	 	2.07E-03	ACSL1,ADGRG1,ANK3,C5AR1,HERPUD1,PRKCQ,STAT4	 
+TCF7L2	 	transcription regulator	Activated	2.433	bias	2.10E-03	ACSL1,ADGRG1,CREB5,LEF1,MAN1A1,RAB31,SYTL2	 
+PPP3CB	 	phosphatase	 	 	 	2.16E-03	B3GAT1,KLRD1	 
+pimozide	 	chemical drug	 	 	 	2.16E-03	BCL2,IRF8	 
+gambogic acid	 	chemical - endogenous non-mammalian	 	 	 	2.16E-03	BCL2,BIRC3	23 (8)
+INSIG1	 	other	Inhibited	-2.000	bias	2.35E-03	CCR7,IRF8,PRF1,STAT4	 
+NDUFA13	 	enzyme	 	 	 	2.51E-03	A2M,BCL2	12 (3)
+muromonab-CD3	 	biologic drug	 	 	 	2.51E-03	ICOS,TBX21	10 (3)
+noscapine	 	chemical drug	 	 	 	2.51E-03	BCL2,BIRC3	31 (10)
+growth factor	 	group	 	 	 	2.51E-03	BCL2,IL7R	33 (10)
+poly rI:rC-RNA	 	biologic drug	 	1.847	bias	2.63E-03	BCL2,BIRC3,CCR7,CDC14A,IL32,POU2AF1,PRKCQ,RGS2,SLAMF1	49 (15)
+BRD2	 	kinase	 	 	 	2.63E-03	BCL2,IL7R,STAT4	 
+butyric acid	 	chemical - endogenous mammalian	 	-1.406	 	2.86E-03	A2M,ADGRG1,BCL2,IL24,IL32,NFATC2,PAX5,TXK	 
+lonafarnib	 	chemical drug	 	 	 	2.89E-03	BCL2,BIRC3	25 (6)
+1'-acetoxychavicol acetate	 	chemical reagent	 	 	 	2.89E-03	BCL2,BIRC3	23 (8)
+HRAS	 	enzyme	 	1.953	bias	3.19E-03	A2M,BCL2,BIRC3,CD96,DUSP6,ETS1,IL24,IL7R,RASGRP1,VCAN	42 (15)
+PIM1	 	kinase	 	 	 	3.27E-03	BCL2,STAT4,TBX21	33 (6)
+mir-205	 	microRNA	 	 	 	3.29E-03	IL24,IL32	 
+PIM2	11.210	kinase	 	 	 	3.29E-03	STAT4,TBX21	 
+pomalidomide	 	chemical drug	 	 	 	3.29E-03	BCL11A,IRF4	 
+trichostatin A	 	chemical drug	 	-0.511	bias	3.29E-03	BCL11A,BCL2,CCR7,CD28,IL24,IRF4,IRF8,LEF1,PAX5,RUNX3,SLC38A1,VCAN	41 (14)
+CLEC4G	 	other	 	 	 	3.61E-03	PRF1,RUNX3,TBX21	 
+MYD88	 	other	Activated	2.411	bias	3.67E-03	ACSL1,CD38,IL32,IRF8,TBX21,TNFRSF13B	44 (10)
+GIP	 	other	 	 	 	3.72E-03	BCL2,RGS2	27 (5)
+PPP2R5C	 	other	 	 	 	3.72E-03	BCL2,BIRC3	13 (4)
+cholecalciferol	 	chemical - endogenous mammalian	 	1.982	bias	3.84E-03	ADGRG1,BCL2,CD38,RUNX3	 
+TCF12	 	transcription regulator	 	 	 	3.99E-03	BLNK,IL7R,PAX5	13 (2)
+MAP2K1	 	kinase	 	 	 	4.05E-03	ADGRG1,BCL2,BIRC3,DUSP6,LEF1	40 (12)
+ARHGDIG	 	other	 	 	 	4.17E-03	DUSP6,RGS2	 
+CD22	7.950	transmembrane receptor	 	 	 	4.17E-03	CD5,ETS1	12 (3)
+PDK4	 	kinase	 	 	 	4.17E-03	IRF4,IRF8	 
+KLRC4-KLRK1/KLRK1	 	transmembrane receptor	 	 	 	4.17E-03	LEF1,TCF7	 
+indirubin	 	chemical drug	 	 	 	4.17E-03	BCL2,BIRC3	23 (8)
+mir-181	 	microRNA	 	 	 	4.18E-03	BCL2,DUSP6,IRF8	 
+staurosporine	 	chemical - kinase inhibitor	 	 	 	4.32E-03	BCL2,CD28,STAT4,TGFBR3	18 (4)
+mir-21	 	microRNA	Inhibited	-2.449	bias	4.52E-03	BCL2,CD226,GLCCI1,ITK,SLAMF1,TBX21	 
+TYROBP	 	transmembrane receptor	 	 	 	4.58E-03	CCR7,IRF8,KLRD1	 
+FLT3LG	 	cytokine	 	 	 	4.58E-03	CCR7,IL7R,PAX5	 
+TREM2	 	transmembrane receptor	 	 	 	4.64E-03	CCR7,IRF8	 
+TGFB1	 	growth factor	 	1.994	bias	4.65E-03	BCL2,C5AR1,CCR7,CD226,CD28,CLEC2D,ETS1,IL32,KLRD1,LEF1,MYBL1,NFATC2,RAB31,RASGRP1,RUNX3,SLAMF1,TBX21,TGFBR3,VCAN	53 (15)
+IL6ST	 	transmembrane receptor	 	 	 	4.79E-03	A2M,ICOS,PIM2	26 (4)
+deferoxamine	 	chemical drug	 	0.447	bias	5.01E-03	ADGRG1,BCL2,CCR7,IL32,NFATC2	23 (6)
+WNT3A	 	cytokine	Activated	2.383	bias	5.07E-03	BCL2,CAMK4,IKZF2,LEF1,SYTL3,TCF7	7 (2)
+KLF10	 	transcription regulator	 	 	 	5.14E-03	BCL2,TBX21	 
+finasteride	 	chemical drug	 	 	 	5.14E-03	BCL2,IL24	 
+sodium thiosulfate	 	chemical drug	 	 	 	5.39E-03	BCL2	 
+TOX2	 	transcription regulator	 	 	 	5.39E-03	TBX21	 
+RGN	 	enzyme	 	 	 	5.39E-03	BCL2	 
+TLR2/3/4	 	group	 	 	 	5.39E-03	STAT4	 
+CCDC22	 	other	 	 	 	5.39E-03	BIRC3	 
+METAP2	 	peptidase	 	 	 	5.39E-03	BCL2	 
+voxtalisib	 	chemical drug	 	 	 	5.39E-03	BCL2	 
+NAPA	 	transporter	 	 	 	5.39E-03	BCL2	 
+ADAMTS9-AS2	 	other	 	 	 	5.39E-03	TGFBR3	 
+mir-219	 	microRNA	 	 	 	5.39E-03	ICOS	 
+DYNLT3	 	other	 	 	 	5.39E-03	BCL2	 
+CAMK2	 	group	 	 	 	5.39E-03	BIRC3	 
+DOK3	 	other	 	 	 	5.39E-03	NFATC2	 
+EBF1-FOXO1-TCF3	 	complex	 	 	 	5.39E-03	PAX5	 
+SLC1A5	 	transporter	 	 	 	5.39E-03	SLC38A1	 
+B3GAT2	 	enzyme	 	 	 	5.39E-03	B3GAT1	 
+RIT1	 	enzyme	 	 	 	5.39E-03	BCL2	 
+ETS1-AS1	 	other	 	 	 	5.39E-03	ETS1	 
+TPD52	 	other	 	 	 	5.39E-03	BCL2	 
+CWP232228	 	chemical reagent	 	 	 	5.39E-03	LEF1	 
+melarsoprol	 	chemical drug	 	 	 	5.39E-03	BCL2	 
+ZBTB16-RARA	 	fusion gene/product	 	 	 	5.39E-03	DUSP6	 
+AuNP@PEG@e14a2	 	chemical reagent	 	 	 	5.39E-03	BCL2	 
+6alpha-fluorotestosterone	 	chemical toxicant	 	 	 	5.39E-03	BCL2	 
+CDKN2A	 	transcription regulator	 	 	 	5.42E-03	A2M,BCL2,CCR7,CNOT6L,LEF1,POU2AF1	27 (10)
+ERG	 	transcription regulator	 	 	 	5.43E-03	ADGRG1,BIRC3,ETS1,HERPUD1,LEF1	 
+LEF1	12.230	transcription regulator	 	 	 	5.46E-03	BCL2,IL7R,LEF1	 
+EFNA1	 	other	 	 	 	5.46E-03	BACH2,DUSP6,USP9Y	 
+BMP2	 	growth factor	 	0.246	bias	5.54E-03	BCL2,CAMK4,ETS1,RUNX3,VCAN	40 (10)
+DICER1	 	enzyme	 	-1.400	 	5.59E-03	CD226,IL7R,IRF8,PRF1,PRKCQ,RASGRP1	 
+Pkg	 	group	 	 	 	5.66E-03	BCL2,LEF1	25 (7)
+salinosporamide A	 	chemical drug	 	 	 	5.66E-03	BCL2,BIRC3	21 (6)
+BCOR	 	transcription regulator	 	 	 	5.66E-03	BANK1,IRF4	 
+SMARCC1	 	transcription regulator	 	 	 	5.66E-03	IL7R,PAX5	 
+butaprost	 	chemical drug	 	 	 	5.66E-03	CCR7,TGFBR3	 
+PI3K (complex)	 	complex	 	-0.152	bias	5.68E-03	BCL2,BIRC3,ETS1,IL7R,LEF1,RGS2	50 (14)
+ATP-gamma-S	 	chemical reagent	 	 	 	5.69E-03	CCR7,IL7R,IRF4	26 (4)
+EZH2	 	transcription regulator	 	0.277	 	5.70E-03	BCL2,BIRC3,IL18RAP,IL24,PIM2,SPOCK2,TBX21	15 (2)
+KCNE3	 	ion channel	 	 	 	5.93E-03	DUSP6,IRF4,STAT4	 
+EBF1	 	transcription regulator	 	 	 	6.02E-03	CBLB,LEF1,PAX5,PDE3B	 
+ZBTB7B	 	transcription regulator	 	 	 	6.18E-03	CD8B,PRF1,RUNX3	 
+STK4	 	kinase	 	 	 	6.20E-03	BCL2,IL7R	25 (7)
+LILRB1	 	transmembrane receptor	 	 	 	6.20E-03	BCL2,TENT5C	 
+FSH	 	complex	 	 	 	6.34E-03	ADGRG1,BCL11A,CAMK4,CYFIP2,ELL2,RAB31,TGFBR3	 
+Jnk	 	group	 	1.786	bias	6.35E-03	A2M,BIRC3,CCR7,ETS1,VCAN	44 (17)
+IKZF3	 	transcription regulator	 	 	 	6.69E-03	BCL2,BLNK,CD38	 
+CTR9	 	other	 	 	 	6.77E-03	RAB31,RASGRP1	 
+evodiamine	 	chemical - endogenous non-mammalian	 	 	 	6.77E-03	BCL2,BIRC3	13 (4)
+TET2	 	enzyme	 	1.000	bias	6.84E-03	AFF3,C5AR1,JAML,MTSS1	 
+PTHLH	 	other	 	 	 	6.95E-03	BCL2,LEF1,RGS2	 
+IRF8	19.410	transcription regulator	 	 	 	7.18E-03	BANK1,CCR7,IRF4,IRF8	27 (4)
+SP110	 	transcription regulator	 	1.000	 	7.18E-03	ETS1,NFATC2,TCF7,TGFBR3	 
+E. coli lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	7.22E-03	BCL2,CCR7,IL32	40 (13)
+mir-34	 	microRNA	 	 	 	7.22E-03	BCL2,BIRC3,LEF1	 
+SMARCA4	 	transcription regulator	 	1.342	bias	7.33E-03	A2M,ADGRG1,BCL2,DUSP6,DYSF,IL7R,LEF1,RGS2,TBX21	 
+risperidone	 	chemical drug	 	 	 	7.36E-03	BCL2,TBX21	 
+zerumbone	 	chemical - endogenous non-mammalian	 	 	 	7.36E-03	BCL2,BIRC3	23 (8)
+vasoactive intestinal peptide	 	biologic drug	 	 	 	7.36E-03	BCL2,TBX21	 
+MAP3K3	 	kinase	 	 	 	7.36E-03	BCL2,TGFBR3	 
+TAL1	 	transcription regulator	 	 	 	7.38E-03	ADGRG1,BCL2,ETS1,SLAMF1,TCF7	 
+Brd4	 	kinase	 	 	 	7.50E-03	BLNK,SPON2,TNFSF8	 
+Pka	 	complex	 	 	 	7.54E-03	CAMK4,CCR7,POU2AF1,RGS2	22 (4)
+isotretinoin	 	biologic drug	 	 	 	7.78E-03	BCL2,CD38,RUNX3	 
+IFN Beta	 	group	 	 	 	7.91E-03	BCL2,CCR7,CD247,IL24	49 (12)
+plumbagin	 	chemical toxicant	 	 	 	7.97E-03	BCL2,BIRC3	23 (8)
+kaempferol	 	chemical toxicant	 	 	 	7.97E-03	BCL2,IL32	25 (7)
+UCN-01	 	chemical drug	 	 	 	7.97E-03	BCL2,PRKCQ	 
+methylprednisolone	 	chemical drug	 	-0.562	 	8.49E-03	A2M,ACSL1,CBLB,CD38,DUSP6,PDE3B,RGS2,TC2N	 
+vemurafenib	 	chemical drug	 	 	 	8.60E-03	DUSP6,PRF1	 
+mir-148	 	microRNA	 	 	 	8.60E-03	BCL2,RUNX3	 
+LTBP1	 	other	 	 	 	8.60E-03	PIM2,TBX21	 
+HSPD1	 	enzyme	 	 	 	8.60E-03	NFATC2,TBX21	 
+arsenic	 	chemical toxicant	 	 	 	8.60E-03	BIRC3,CCR7	20 (4)
+PRKCE	 	kinase	 	 	 	8.66E-03	BCL2,BIRC3,RGS2	24 (5)
+rottlerin	 	chemical toxicant	 	 	 	8.66E-03	BIRC3,IL32,RGS2	 
+RUNX1	 	transcription regulator	 	0.577	bias	8.97E-03	ADGRG1,IL7R,PIM2,PRKCQ,SLAMF1	 
+TBX5	 	transcription regulator	 	 	 	8.97E-03	NFATC2,SIK1/SIK1B,TCF7	6 (2)
+MAP3K14	 	kinase	 	 	 	8.97E-03	BIRC3,IL7R,PDE3B	28 (5)
+MAP3K7	 	kinase	 	 	 	8.97E-03	BIRC3,CCR7,RGS2	21 (4)
+ICOSLG/LOC102723996	 	other	 	 	 	9.26E-03	CD28,ICOS	 
+nilvadipine	 	chemical drug	 	 	 	9.26E-03	CD38,TNFSF8	 
+REL	 	transcription regulator	 	 	 	9.28E-03	BACH2,BCL2,IRF4,IRF8,TNFRSF13B	31 (5)
+ADCYAP1	 	other	Activated	2.219	 	9.28E-03	BCL2,CAMK4,EMB,MAN1A1,NFATC2	 
+fingolimod	 	chemical drug	 	 	 	9.28E-03	BCL2,CCR7,TBX21	17 (3)
+MITF	 	transcription regulator	Activated	2.000	bias	9.44E-03	ACSL1,BCL2,INPP4B,IRF4,PRF1	 
+JUND	 	transcription regulator	 	 	 	9.60E-03	C5AR1,IKZF2,TBX21	 
+GAST	 	other	 	 	 	9.60E-03	HERPUD1,RUNX3,SIK1/SIK1B	 
+Nr1h	 	group	 	-1.951	bias	9.73E-03	BCL2,CCR7,PRKCQ,RUNX3	 
+Firre	 	other	 	 	 	9.93E-03	BTLA,ICOS,TENT5C	 
+CpG ODN 2216	 	chemical reagent	 	 	 	9.94E-03	CD38,NCR1	 
+LIN28B	 	other	 	 	 	9.94E-03	BCL11A,TGFBR3	 
+BATF	 	transcription regulator	 	 	 	9.94E-03	IKZF2,TCF7	17 (3)
+RC3H1	 	enzyme	 	 	 	9.94E-03	CCR7,ICOS	 
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	 	9.95E-03	CCR7,IL32,IRF4,RGS2	46 (13)
+SPIB	 	transcription regulator	 	 	 	1.06E-02	BLNK,IRF4,TENT5C	 
+prednisolone	 	chemical drug	 	-0.447	bias	1.06E-02	BCL2,BIRC3,PIM2,SIK1/SIK1B,SPON2	 
+medroxyprogesterone acetate	 	chemical drug	 	-0.911	 	1.06E-02	BCL2,CAMK4,ETS1,VCAN	 
+L-arginine	 	chemical - endogenous mammalian	 	 	 	1.06E-02	BCL2,CD247	 
+CRTC2	 	other	 	 	 	1.06E-02	BACH2,BCL2	 
+NPC2	 	transporter	 	 	 	1.06E-02	CREB5,STAT4	 
+HOXA7	 	transcription regulator	 	 	 	1.06E-02	ADGRG1,IL7R	 
+IL3	 	cytokine	Activated	2.164	bias	1.06E-02	BCL2,BIRC3,CD247,PIM2,STAT4,TNFSF8	 
+minoxidil	 	chemical drug	 	 	 	1.08E-02	LEF1	 
+amikacin	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+MICU1	 	other	 	 	 	1.08E-02	BCL2	 
+ipilimumab	 	biologic drug	 	 	 	1.08E-02	ICOS	 
+AEOL-10150	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+thymol	 	chemical reagent	 	 	 	1.08E-02	BCL2	 
+STAT4 dimer	 	complex	 	 	 	1.08E-02	TBX21	 
+PCDH9	 	other	 	 	 	1.08E-02	BCL2	 
+SEMA4A	 	other	 	 	 	1.08E-02	TBX21	 
+STAT3/5	 	group	 	 	 	1.08E-02	PIM2	 
+BCL6 peptide inhibitor	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+bucillamine	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+CACYBP	 	other	 	 	 	1.08E-02	BCL2	 
+safflor yellow B	 	chemical - endogenous non-mammalian	 	 	 	1.08E-02	BCL2	 
+NOSIP	 	other	 	 	 	1.08E-02	BCL2	 
+SYCP3	 	other	 	 	 	1.08E-02	BCL2	 
+mir-153	 	microRNA	 	 	 	1.08E-02	BCL2	 
+miR-532-5p (and other miRNAs w/seed AUGCCUU)	 	mature microRNA	 	 	 	1.08E-02	RUNX3	 
+miR-489-3p (miRNAs w/seed UGACAUC)	 	mature microRNA	 	 	 	1.08E-02	GCA	 
+mir-139	 	microRNA	 	 	 	1.08E-02	PRF1	 
+HIF1A-AS1	 	other	 	 	 	1.08E-02	BCL2	 
+PIM	 	group	 	 	 	1.08E-02	BCL2	 
+PLIN3	 	other	 	 	 	1.08E-02	BCL2	 
+cyclo(iso-Asp-GR)-LLIIKLAKLAKKLAKLAK	 	chemical reagent	 	 	 	1.08E-02	BCL2	 
+Hnrpfl	 	other	 	 	 	1.08E-02	ELL2	 
+NTSR2	 	G-protein coupled receptor	 	 	 	1.08E-02	BCL2	 
+ADAMTS5	 	peptidase	 	 	 	1.08E-02	VCAN	 
+NEU2	 	enzyme	 	 	 	1.08E-02	BCL2	 
+UBE2V1	 	transcription regulator	 	 	 	1.08E-02	BCL2	 
+Gm4836 (includes others)	 	other	 	 	 	1.08E-02	BCL2	 
+BTN3A2	 	other	 	 	 	1.08E-02	BTN3A1	 
+VNN1	 	enzyme	 	 	 	1.08E-02	BCL2	 
+3830403N18Rik/Xlr	 	other	 	 	 	1.08E-02	BCL2	 
+S7	 	chemical - kinase inhibitor	 	 	 	1.08E-02	BCL2	 
+SI163	 	chemical - kinase inhibitor	 	 	 	1.08E-02	BCL2	 
+S29	 	chemical - kinase inhibitor	 	 	 	1.08E-02	BCL2	 
+oxygen radical	 	chemical toxicant	 	 	 	1.08E-02	CD247	 
+daphnoretin	 	chemical - endogenous non-mammalian	 	 	 	1.08E-02	BCL2	 
+palytoxin	 	chemical toxicant	 	 	 	1.08E-02	DUSP6	 
+XK469	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+talipexole	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+AN-207	 	chemical toxicant	 	 	 	1.08E-02	BCL2	 
+SSR180575	 	chemical drug	 	 	 	1.08E-02	BCL2	 
+chalcone-24	 	chemical reagent	 	 	 	1.08E-02	BIRC3	 
+all-trans-4-Oxo-retinoic acid	 	chemical - endogenous mammalian	 	 	 	1.08E-02	CD38	 
+isoalantolactone	 	chemical - endogenous non-mammalian	 	 	 	1.08E-02	BCL2	 
+swainsonine	 	chemical - endogenous non-mammalian	 	 	 	1.08E-02	BCL2	 
+N(omega)-hydroxyarginine	 	chemical - endogenous mammalian	 	 	 	1.08E-02	CD247	 
+lenalidomide	 	chemical drug	 	0.784	 	1.08E-02	BLNK,CD226,CD38,IRF4,LEF1	 
+SMO	 	G-protein coupled receptor	 	 	 	1.09E-02	BCL2,LEF1,VCAN	 
+mycophenolic acid	 	chemical drug	 	 	 	1.09E-02	BIRC3,ETS1,MYBL1	 
+lithium	 	chemical drug	 	 	 	1.13E-02	ANK3,BCL2,CAMK4	 
+CASP3	 	peptidase	 	 	 	1.14E-02	BCL2,CAMK4	 
+ARRB1	 	other	 	 	 	1.14E-02	BCL2,LEF1	 
+bardoxolone methyl	 	chemical drug	 	 	 	1.14E-02	BCL2,BIRC3	 
+SRF	 	transcription regulator	 	 	 	1.15E-02	A2M,BCL2,ETS1,NFATC2,TCF7,VCAN	 
+VCAN	8.110	other	 	-0.577	 	1.18E-02	CD247,IRF8,RGS2,VCAN	 
+methylselenic acid	 	chemical reagent	 	 	 	1.19E-02	BIRC3,CAMK4,INPP4B,RAB31,TGFBR3	 
+decitabine	 	chemical drug	 	1.458	bias	1.20E-02	BCL11A,BIRC3,CCR7,CD226,IL7R,LEF1,RUNX3,SLC38A1,STAT4,VCAN	 
+Hsp90	 	group	 	 	 	1.20E-02	CD28,KLRD1,NCR1	 
+MAPK9	 	kinase	 	0.000	bias	1.20E-02	BCL2,BIRC3,TBX21,TNFSF8	 
+caspase	 	group	 	 	 	1.21E-02	BCL2,HERPUD1	 
+HISTONE	 	group	 	 	 	1.21E-02	BCL2,NFATC2	 
+MAPK11	 	kinase	 	 	 	1.21E-02	BCL2,TBX21	 
+ACKR3	 	G-protein coupled receptor	 	 	 	1.21E-02	BCL2,IL24	 
+TNFSF15	 	cytokine	 	 	 	1.21E-02	BIRC3,CCR7	 
+TAB1	 	enzyme	 	 	 	1.21E-02	BIRC3,RGS2	 
+bufalin	 	chemical reagent	 	 	 	1.21E-02	BCL2,CBLB	 
+CREB1	 	transcription regulator	 	1.050	bias	1.25E-02	BCL2,CAMK4,CYFIP2,HERPUD1,MTSS1,OXNAD1,PDE3B,RGS2	 
+MYOCD	 	transcription regulator	 	 	 	1.28E-02	NFATC2,SIK1/SIK1B,VCAN	 
+mir-22	 	microRNA	 	 	 	1.29E-02	LEF1,RGS2	 
+PRKCZ	 	kinase	 	 	 	1.29E-02	BCL2,ETS1	 
+MTOR	 	kinase	 	-0.179	bias	1.29E-02	BCL2,CCR7,IRF8,PIM2,PRF1,TBX21	 
+R5020	 	chemical reagent	 	 	 	1.32E-02	BIRC3,PIM2,RGS2	 
+tretinoin	 	chemical - endogenous mammalian	 	1.659	bias	1.32E-02	A2M,ACSL1,BCL2,BIRC3,C5AR1,CAMK4,CD38,ETS1,GCA,IL24,IRF4,JAML,PRKCH,RUNX3,STAT4,TGFBR3	 
+IGF2BP1	 	translation regulator	 	 	 	1.36E-02	BCL11A,CYFIP2	 
+ALOX15	 	enzyme	 	 	 	1.36E-02	BCL2,RGS2	 
+PTH	 	other	 	 	 	1.39E-02	ANK3,BCL2,LEF1,RGS2	 
+raloxifene	 	chemical drug	 	0.000	 	1.39E-02	BCL2,BLNK,MYBL1,PAX5	 
+testosterone	 	chemical - endogenous mammalian	 	1.346	bias	1.43E-02	A2M,ACSL1,BCL2,CAMK4,PDE3B,VCAN	 
+CpG ODN 2006	 	chemical reagent	 	 	 	1.43E-02	BIRC3,CLEC2D,TNFRSF13B	 
+rosiglitazone	 	chemical drug	 	0.878	bias	1.44E-02	ACSL1,BCL2,ETS1,IL7R,RGS2,SPON2,TBX21	 
+arginine	 	chemical - endogenous mammalian	 	 	 	1.44E-02	BCL2,CD247	 
+ZBED6	 	transcription regulator	 	 	 	1.44E-02	MYBL1,TCF7	 
+ELF4	 	transcription regulator	 	 	 	1.44E-02	CCR7,PRF1	 
+lactic acid	 	chemical - endogenous mammalian	 	 	 	1.44E-02	NCR1,PRF1	 
+fisetin	 	chemical toxicant	 	 	 	1.44E-02	BCL2,BIRC3	 
+AGT	 	growth factor	 	1.353	bias	1.49E-02	ANK3,BCL2,CCR7,CREB5,ETS1,GLCCI1,RGS2	 
+alvocidib	 	chemical drug	 	 	 	1.53E-02	BCL2,BIRC3	 
+indole-3-carbinol	 	chemical drug	 	 	 	1.53E-02	BCL2,TBX21	 
+JUN	 	transcription regulator	 	0.473	bias	1.53E-02	A2M,BIRC3,C5AR1,CD247,DUSP6,IL24,IL7R	 
+F2	 	peptidase	Activated	2.177	bias	1.54E-02	BIRC3,ELL2,ETS1,IL32,MTSS1	 
+TNFSF11	 	cytokine	 	0.128	bias	1.56E-02	BCL2,ETS1,IRF4,IRF8,NFATC2	 
+olanzapine	 	chemical drug	 	 	 	1.56E-02	BCL2,RGS2,SLC38A1	 
+HOXA9	 	transcription regulator	 	 	 	1.58E-02	ADGRG1,BCL2,IL7R,RAB31	 
+LGALS3	 	other	 	 	 	1.60E-02	BCL2,DUSP6,NFATC2	 
+L-tyrosine	 	chemical - endogenous mammalian	 	 	 	1.61E-02	BCL2	 
+galactosylceramide	 	chemical - endogenous mammalian	 	 	 	1.61E-02	PAX5	 
+GDP	 	chemical - endogenous mammalian	 	 	 	1.61E-02	TGFBR3	 
+L-kynurenine	 	chemical - endogenous mammalian	 	 	 	1.61E-02	NCR1	 
+FKHR	 	group	 	 	 	1.61E-02	A2M	 
+lipoxygenase	 	group	 	 	 	1.61E-02	RGS2	 
+Stat1-Stat3	 	complex	 	 	 	1.61E-02	A2M	 
+sethoxydim	 	chemical toxicant	 	 	 	1.61E-02	BCL2	 
+NSD3	 	enzyme	 	 	 	1.61E-02	PIM2	 
+GLDN	 	other	 	 	 	1.61E-02	ANK3	 
+PRMT7	 	enzyme	 	 	 	1.61E-02	IRF4	 
+hyperoside	 	chemical - endogenous non-mammalian	 	 	 	1.61E-02	BCL2	 
+LAPTM4B	 	other	 	 	 	1.61E-02	BCL2	 
+Integrin alpha 4 beta 1	 	complex	 	 	 	1.61E-02	BCL2	 
+CKLF	 	cytokine	 	 	 	1.61E-02	BCL2	 
+Trk Receptor	 	group	 	 	 	1.61E-02	DUSP6	 
+xenon	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+GEM231	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+cerebrolysin	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+SIT1	 	other	 	 	 	1.61E-02	CD5	 
+NRCAM	 	other	 	 	 	1.61E-02	ANK3	 
+miR-136-5p (miRNAs w/seed CUCCAUU)	 	mature microRNA	 	 	 	1.61E-02	BCL2	 
+miR-27a-5p (miRNAs w/seed GGGCUUA)	 	mature microRNA	 	 	 	1.61E-02	PRF1	 
+mir-431	 	microRNA	 	 	 	1.61E-02	VCAN	 
+miR-153-3p (miRNAs w/seed UGCAUAG)	 	mature microRNA	 	 	 	1.61E-02	BCL2	 
+miR-139-3p (miRNAs w/seed GGAGACG)	 	mature microRNA	 	 	 	1.61E-02	PRF1	 
+PBK	 	kinase	 	 	 	1.61E-02	BIRC3	 
+NRP2	 	kinase	 	 	 	1.61E-02	BCL2	 
+ANKRD1	 	transcription regulator	 	 	 	1.61E-02	BCL2	 
+SIGLEC10	 	other	 	 	 	1.61E-02	ETS1	 
+CCNL2	 	other	 	 	 	1.61E-02	BCL2	 
+MAP1S	 	enzyme	 	 	 	1.61E-02	BCL2	 
+AP2A2	 	transporter	 	 	 	1.61E-02	BCL2	 
+ITGAD	 	other	 	 	 	1.61E-02	CD28	 
+PDCD5	 	other	 	 	 	1.61E-02	NFATC2	 
+MT3	 	other	 	 	 	1.61E-02	BCL2	 
+RPL10	 	translation regulator	 	 	 	1.61E-02	LEF1	 
+AZ-960	 	chemical reagent	 	 	 	1.61E-02	PIM2	 
+pramipexole	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+lead nitrate	 	chemical toxicant	 	 	 	1.61E-02	BCL2	 
+imisopasem manganese	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+5R,11R-diethyl-5,6,11,12-tetrahydrochrysene-2,8-diol	 	chemical reagent	 	 	 	1.61E-02	TGFBR3	 
+10-hydroxycamptothecin	 	chemical - endogenous mammalian	 	 	 	1.61E-02	BCL2	 
+L-alpha-hydroxyglutarate	 	chemical - endogenous mammalian	 	 	 	1.61E-02	IL7R	 
+asoprisnil	 	chemical drug	 	 	 	1.61E-02	BCL2,PRF1	 
+PLP1	 	other	 	 	 	1.61E-02	ICOS,PRKCQ	 
+IGFBP3	 	other	 	 	 	1.61E-02	BCL2,CD38	 
+P38 MAPK	 	group	Activated	2.433	bias	1.63E-02	BCL2,CCR7,ETS1,IL32,NFATC2,TBX21	 
+CAMK4	16.420	kinase	 	 	 	1.70E-02	BCL2,CAMK4	 
+CD4	 	transmembrane receptor	 	 	 	1.70E-02	BCL2,TBX21	 
+NFKB1	 	transcription regulator	 	1.067	bias	1.70E-02	A2M,BCL2,BIRC3,IRF4,TBX21	 
+KLF2	 	transcription regulator	Activated	2.000	 	1.70E-02	CCR7,IL7R,PRF1,TBX21	 
+CAMP	 	other	 	 	 	1.74E-02	BCL2,C5AR1,CCR7	 
+let-7a-5p (and other miRNAs w/seed GAGGUAG)	 	mature microRNA	 	-1.964	bias	1.77E-02	ADGRG1,SLC38A1,TGFBR3,VCAN	 
+tetrachlorodibenzodioxin	 	chemical toxicant	 	-1.000	 	1.77E-02	BACH2,BCL2,BLNK,PAX5,SPOCK2,TNFSF8	 
+N-cor	 	group	 	 	 	1.78E-02	ACSL1,HIVEP2,INPP4B	 
+TWIST2	 	transcription regulator	 	 	 	1.78E-02	BCL11A,DUSP6	 
+IGHM	 	transmembrane receptor	 	 	 	1.78E-02	CD22,SLAMF1	 
+IL9	 	cytokine	 	 	 	1.78E-02	PIM2,PRF1	 
+ethylene glycol tetraacetic acid	 	chemical reagent	 	 	 	1.78E-02	BCL2,BIRC3	 
+parthenolide	 	chemical drug	 	 	 	1.78E-02	BCL2,LEF1	 
+TNFSF13	 	cytokine	 	 	 	1.87E-02	BCL2,IRF4	 
+TLR4	 	transmembrane receptor	 	1.732	bias	1.89E-02	BCL2,CCR7,CD38,IRF8,TNFRSF13B,TNFSF8	 
+E. coli B4 lipopolysaccharide	 	chemical toxicant	 	0.000	bias	1.90E-02	BCL2,CCR7,CD38,EMB,TNFSF8	 
+STAT5B	 	transcription regulator	 	1.964	 	1.95E-02	A2M,BCL2,BIRC3,IL24,PAX5	 
+PRKCD	 	kinase	 	1.951	bias	1.96E-02	BCL2,BIRC3,DUSP6,IL32	 
+histone deacetylase	 	complex	 	 	 	1.97E-02	BCL2,IL24	 
+NUPR1	 	transcription regulator	 	1.134	bias	1.97E-02	ADGRG1,ANK3,CREB5,ELL2,ETS1,SIK1/SIK1B,SYTL2	 
+PIK3CG	 	kinase	 	 	 	1.97E-02	BCL2,ITK,PRF1	 
+T3-TR-RXR	 	complex	 	 	 	2.06E-02	CAMK4,PDE3B	 
+BCL2	5.690	transporter	 	 	 	2.07E-02	BCL2,CD5,PRF1	 
+progesterone	 	chemical - endogenous mammalian	 	1.300	 	2.12E-02	ACSL1,BCL2,BIRC3,C5AR1,ELL2,MTSS1,PIM2,TGFBR3	 
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	 	2.12E-02	BCL2,BIRC3,PRF1	 
+hydrogen peroxide	 	chemical - endogenous mammalian	 	0.208	bias	2.12E-02	BCL2,BIRC3,CD247,ETS1,IL32,RUNX3,TGFBR3	 
+Tgf beta	 	group	 	-0.692	bias	2.14E-02	BCL2,CCR7,IL32,RUNX3,TBX21	 
+Il12 receptor	 	complex	 	 	 	2.14E-02	TBX21	 
+OSGIN1	 	growth factor	 	 	 	2.14E-02	BCL2	 
+CCDC134	 	other	 	 	 	2.14E-02	PRF1	 
+ROBO3	 	transmembrane receptor	 	 	 	2.14E-02	IRF8	 
+CRTAM	 	other	 	 	 	2.14E-02	PRF1	 
+SP6	 	transcription regulator	 	 	 	2.14E-02	LEF1	 
+enecadin	 	chemical drug	 	 	 	2.14E-02	BCL2	 
+C1GALT1	 	enzyme	 	 	 	2.14E-02	BCL2	 
+ANKRD13C	 	other	 	 	 	2.14E-02	PTGDR	 
+MITF-p300/CBP	 	complex	 	 	 	2.14E-02	BCL2	 
+HHIP	 	other	 	 	 	2.14E-02	PAX5	 
+ARTN	 	growth factor	 	 	 	2.14E-02	BCL2	 
+MS4A2	 	transmembrane receptor	 	 	 	2.14E-02	BCL2	 
+miR-202-3p (and other miRNAs w/seed GAGGUAU)	 	mature microRNA	 	 	 	2.14E-02	CPEB4	 
+miR-330-5p (and other miRNAs w/seed CUCUGGG)	 	mature microRNA	 	 	 	2.14E-02	ETS1	 
+TIAM1	 	other	 	 	 	2.14E-02	LEF1	 
+HSPB6	 	other	 	 	 	2.14E-02	BCL2	 
+GIPC1	 	other	 	 	 	2.14E-02	TGFBR3	 
+CANX	 	other	 	 	 	2.14E-02	BCL2	 
+SIGMAR1	 	transmembrane receptor	 	 	 	2.14E-02	BCL2	 
+CELF2	 	other	 	 	 	2.14E-02	BCL2	 
+ATRX	 	transcription regulator	 	 	 	2.14E-02	AFF3	 
+LGALS2	 	other	 	 	 	2.14E-02	BCL2	 
+TSN	 	other	 	 	 	2.14E-02	BCL2	 
+WTAP	 	other	 	 	 	2.14E-02	BCL2	 
+abrocitinib	 	chemical drug	 	 	 	2.14E-02	BCL2	 
+TAS-103	 	chemical drug	 	 	 	2.14E-02	BCL2	 
+pyridoxal phosphate	 	chemical - endogenous mammalian	 	 	 	2.14E-02	BCL2	 
+diamide	 	chemical reagent	 	 	 	2.14E-02	CD247	 
+chlorophyll a	 	chemical - endogenous non-mammalian	 	 	 	2.14E-02	BCL2	 
+CCI-007	 	chemical reagent	 	 	 	2.14E-02	BCL2	 
+D-Pen-2,5-enkephalin	 	chemical reagent	 	 	 	2.14E-02	PRF1	 
+medicarpin	 	chemical - endogenous non-mammalian	 	 	 	2.14E-02	CD28	 
+galanthamine	 	chemical drug	 	 	 	2.14E-02	BCL2	 
+ATF1	 	transcription regulator	 	 	 	2.16E-02	BCL2,PDE3B	 
+FASLG	 	cytokine	 	 	 	2.16E-02	BCL2,STAT4	 
+phenacetin	 	chemical drug	 	 	 	2.16E-02	A2M,BIRC3	 
+PAX5-ELN	 	fusion gene/product	 	 	 	2.16E-02	CD38,TGFBR3	 
+TRIM24	 	transcription regulator	 	 	 	2.17E-02	BLNK,EMB,PRKCQ	 
+NR5A2	 	ligand-dependent nuclear receptor	 	 	 	2.17E-02	BCL2,C5AR1,IL24	 
+berberine	 	chemical drug	 	 	 	2.17E-02	BCL2,BIRC3,TBX21	 
+PAX3	 	transcription regulator	 	 	 	2.21E-02	IL7R,RAB31,RUNX3,VCAN	 
+thapsigargin	 	chemical toxicant	 	1.962	bias	2.21E-02	BIRC3,C5AR1,ETS1,HERPUD1	 
+AKT1	 	kinase	 	1.183	bias	2.25E-02	BCL2,BIRC3,NFATC2,TGFBR3,VCAN	 
+NRAS	 	enzyme	 	 	 	2.32E-02	BCL2,DUSP6,ETS1,KLRD1	 
+COMMD3-BMI1	 	transcription regulator	 	 	 	2.35E-02	LEF1,POU2AF1	 
+RAC2	 	enzyme	 	 	 	2.35E-02	BCL2,STAT4	 
+ILK	 	kinase	 	 	 	2.35E-02	BCL2,LEF1	 
+TXN	 	enzyme	 	 	 	2.35E-02	BCL2,CD38	 
+VEGFA	 	growth factor	Activated	2.152	bias	2.43E-02	ACSL1,BCL2,BTLA,ETS1,NFATC2	 
+TGFB2	 	growth factor	 	 	 	2.44E-02	NFATC2,TGFBR3,VCAN	 
+IFNGR1	 	transmembrane receptor	 	 	 	2.45E-02	CD38,TBX21	 
+zVAD-FMK	 	chemical - protease inhibitor	 	 	 	2.45E-02	BIRC3,CAMK4	 
+Ro31-8220	 	chemical - kinase inhibitor	 	 	 	2.45E-02	BCL2,PRKCQ	 
+GATA4	 	transcription regulator	 	1.934	bias	2.47E-02	BCL2,IRF8,NFATC2,SIK1/SIK1B	 
+DUSP1	 	phosphatase	 	 	 	2.49E-02	BCL2,DUSP6,SH2D2A	 
+Tlr	 	group	 	 	 	2.55E-02	CCR7,IRF4,PAX5	 
+ERK1/2	 	group	Activated	2.216	bias	2.55E-02	BCL2,BIRC3,CCR7,ETS1,VCAN	 
+mir-145	 	microRNA	 	 	 	2.56E-02	CD28,PDE3B	 
+IFNA4	 	cytokine	 	 	 	2.56E-02	JAML,STAT4	 
+ICOS	2.000	transmembrane receptor	 	 	 	2.56E-02	ICOS,TBX21	 
+N-acetylsphingosine	 	chemical reagent	 	 	 	2.56E-02	BCL2,PDE3B	 
+U0126	 	chemical - kinase inhibitor	Inhibited	-2.400	bias	2.59E-02	BCL2,BIRC3,DUSP6,ETS1,HERPUD1,ICOS,IL24	 
+CBX5	 	transcription regulator	 	 	 	2.60E-02	BCL11A,LEF1,SYTL2	 
+CD44	 	other	 	1.964	bias	2.63E-02	BCL2,BIRC3,CCR7,CD8B	 
+TNFAIP3	 	enzyme	 	 	 	2.66E-02	BCL2,BIRC3	 
+FYN	 	kinase	 	 	 	2.66E-02	CD5,IRF4	 
+MTA1	 	transcription regulator	 	 	 	2.66E-02	GPRIN3,PAX5	 
+NOTCH2	 	transcription regulator	 	 	 	2.66E-02	BCL2,IL7R	 
+KDR	 	kinase	 	 	 	2.66E-02	A2M,CD38	 
+C11orf95-RELA	 	fusion gene/product	 	 	 	2.66E-02	BCL2,BIRC3	 
+mir-155	 	microRNA	 	 	 	2.66E-02	BCL2,IRF4,IRF8	 
+OGA	 	enzyme	 	-0.447	 	2.66E-02	BCL2,CREB5,CYFIP2,HIVEP2,PRF1,TGFBR3	 
+ILX-23-7553	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+Alp	 	group	 	 	 	2.67E-02	BCL2	 
+(-)-gossypol	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+acyline	 	biologic drug	 	 	 	2.67E-02	BCL2	 
+CpG ODN 1555	 	chemical reagent	 	 	 	2.67E-02	TNFRSF13B	 
+FOXK2	 	transcription regulator	 	 	 	2.67E-02	CDC14A	 
+UTP18	 	other	 	 	 	2.67E-02	BCL2	 
+RSF1	 	transcription regulator	 	 	 	2.67E-02	BCL2	 
+GPR68	 	G-protein coupled receptor	 	 	 	2.67E-02	CCR7	 
+Vla-4	 	complex	 	 	 	2.67E-02	BCL2	 
+carvacrol	 	chemical - endogenous non-mammalian	 	 	 	2.67E-02	BCL2	 
+FGR	 	kinase	 	 	 	2.67E-02	IL32	 
+LUCAT1	 	other	 	 	 	2.67E-02	BCL2	 
+RNF34	 	enzyme	 	 	 	2.67E-02	BCL2	 
+TLN1	 	other	 	 	 	2.67E-02	BCL2	 
+miR-615-5p (and other miRNAs w/seed GGGGUCC)	 	mature microRNA	 	 	 	2.67E-02	PRF1	 
+miR-431-3p (miRNAs w/seed AGGUCGU)	 	mature microRNA	 	 	 	2.67E-02	CD5	 
+miR-292b-5p (and other miRNAs w/seed CUCAAAA)	 	mature microRNA	 	 	 	2.67E-02	BCL11A	 
+APAF1	 	other	 	 	 	2.67E-02	BCL2	 
+TIMP4	 	other	 	 	 	2.67E-02	BCL2	 
+ARG2	 	enzyme	 	 	 	2.67E-02	BCL2	 
+PSAP	 	enzyme	 	 	 	2.67E-02	BIRC3	 
+VGLL4	 	other	 	 	 	2.67E-02	LEF1	 
+CD59	 	other	 	 	 	2.67E-02	BCL2	 
+NAA10	 	enzyme	 	 	 	2.67E-02	TGFBR3	 
+SMARCC2	 	transcription regulator	 	 	 	2.67E-02	TBX21	 
+PLAA	 	other	 	 	 	2.67E-02	IL32	 
+TWSG1	 	other	 	 	 	2.67E-02	PAX5	 
+STK17B	 	kinase	 	 	 	2.67E-02	BCL2	 
+scoparone	 	chemical - endogenous non-mammalian	 	 	 	2.67E-02	BCL2	 
+U 50488H	 	chemical reagent	 	 	 	2.67E-02	IL7R	 
+lindane	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+atrasentan	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+IMTPPE	 	chemical reagent	 	 	 	2.67E-02	ELL2	 
+CB-PIC	 	chemical reagent	 	 	 	2.67E-02	BCL2	 
+ampelopsin	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+azelaic acid	 	chemical - endogenous mammalian	 	 	 	2.67E-02	BCL2	 
+phloroglucinol	 	chemical drug	 	 	 	2.67E-02	BCL2	 
+5-hydroxytryptophan	 	chemical - endogenous mammalian	 	 	 	2.67E-02	BCL2	 
+MYBL2	 	transcription regulator	 	 	 	2.77E-02	BCL2,BIRC3	 
+JAK3	 	kinase	 	 	 	2.77E-02	BCL2,IL7R	 
+salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	 	 	 	2.78E-02	ACSL1,CD38,IRF8	 
+ARNT	 	transcription regulator	 	 	 	2.84E-02	BCL2,CCR7,PRF1	 
+lithium chloride	 	chemical drug	 	 	 	2.84E-02	BCL2,LEF1,VCAN	 
+CEBPB	 	transcription regulator	Activated	2.176	bias	2.86E-02	BCL2,BLNK,IL24,IRF4,NFATC2,VCAN	 
+ETV6-RUNX1	 	fusion gene/product	 	-1.231	bias	2.87E-02	BCL11A,CYFIP2,IRF4,IRF8,PTGDR	 
+CD86	 	transmembrane receptor	 	 	 	2.87E-02	CD28,ICOS	 
+AIP	 	transcription regulator	 	 	 	2.87E-02	RASGRP1,RGS2	 
+KRAS	 	enzyme	Activated	2.196	 	2.89E-02	BCL2,BIRC3,DUSP6,IL24,LEF1,SEC11C,TBX21,VCAN	 
+HIF1A	 	transcription regulator	 	0.453	bias	2.94E-02	BACH2,BCL2,CCR7,ETS1,NCR1,PIM2	 
+CD274	 	enzyme	 	 	 	2.98E-02	CD226,ICOS	 
+RUNX2	 	transcription regulator	 	 	 	3.02E-02	BCL2,LEF1,TCF7	 
+HSF1	 	transcription regulator	 	 	 	3.05E-02	BCL2,IL7R,NFATC2,VCAN	 
+STAT5a/b	 	group	 	 	 	3.08E-02	BCL2,PAX5,PIM2	 
+reactive oxygen species	 	chemical toxicant	 	 	 	3.08E-02	BCL2,ETS1,PRF1	 
+8-chlorophenylthio-adenosine 3',5'-cyclic monophosphate	 	chemical - kinase inhibitor	 	 	 	3.09E-02	BIRC3,SH2D2A	 
+ROCK2	 	kinase	 	 	 	3.09E-02	ICOS,IRF4	 
+mir-182	 	microRNA	 	 	 	3.09E-02	MTSS1,PRF1	 
+Creb	 	group	 	 	 	3.18E-02	ANK3,BCL2,PDE3B,POU2AF1,RGS2	 
+Iberiotoxin	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+GTP	 	chemical - endogenous mammalian	 	 	 	3.19E-02	TGFBR3	 
+P110	 	group	 	 	 	3.19E-02	BCL2	 
+givinostat	 	chemical drug	 	 	 	3.19E-02	BCL2	 
+benzyladenine	 	chemical - endogenous non-mammalian	 	 	 	3.19E-02	TBX21	 
+CCAR1	 	transcription regulator	 	 	 	3.19E-02	RGS2	 
+PIK3AP1	 	other	 	 	 	3.19E-02	IRF8	 
+RASSF3	 	other	 	 	 	3.19E-02	BCL2	 
+ZNRF3	 	enzyme	 	 	 	3.19E-02	LEF1	 
+EN2	 	transcription regulator	 	 	 	3.19E-02	PAX5	 
+Ap2 alpha	 	group	 	 	 	3.19E-02	BCL2	 
+necrostatin-1	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+BAD	 	other	 	 	 	3.19E-02	BCL2	 
+BCL11A	10.950	transcription regulator	 	 	 	3.19E-02	BCL2	 
+PROK2	 	other	 	 	 	3.19E-02	BCL2	 
+(-)-arctigenin	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+mir-28	 	microRNA	 	 	 	3.19E-02	BTLA	 
+SOX18	 	transcription regulator	 	 	 	3.19E-02	BCL2	 
+OPRD1	 	G-protein coupled receptor	 	 	 	3.19E-02	PRF1	 
+ATP2B2	 	transporter	 	 	 	3.19E-02	BCL2	 
+TRAT1	 	kinase	 	 	 	3.19E-02	CD5	 
+LRIG1	 	other	 	 	 	3.19E-02	BCL2	 
+DNAJA3	 	other	 	 	 	3.19E-02	BCL2	 
+ADCY5	 	enzyme	 	 	 	3.19E-02	BCL2	 
+CARD14	 	other	 	 	 	3.19E-02	CCR7	 
+COL4A1	 	other	 	 	 	3.19E-02	BCL2	 
+LHX6	 	transcription regulator	 	 	 	3.19E-02	LEF1	 
+PSMD4	 	other	 	 	 	3.19E-02	A2M	 
+TNFRSF14	 	transmembrane receptor	 	 	 	3.19E-02	BTLA	 
+DVL2	 	other	 	 	 	3.19E-02	LEF1	 
+LGK-974	 	chemical drug	 	 	 	3.19E-02	LEF1	 
+BCL2A1	 	other	 	 	 	3.19E-02	BCL2	 
+fenebrutinib	 	chemical drug	 	 	 	3.19E-02	BCL2	 
+MIA-459	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+MIA-313	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+CIMO	 	chemical reagent	 	 	 	3.19E-02	BCL2	 
+sparfosic acid	 	chemical drug	 	 	 	3.19E-02	BCL2	 
+nitroprusside	 	chemical drug	 	 	 	3.21E-02	BCL2,DUSP6	 
+APP	 	other	 	0.104	bias	3.23E-02	BCL2,CDC14A,CYFIP2,HERPUD1,IRF4,LEF1,PAX5,POU2AF1,SLAMF1,VCAN	 
+NFKBIA	 	transcription regulator	 	1.410	bias	3.27E-02	A2M,BCL11A,BCL2,BIRC3,DUSP6,IL7R	 
+let-7	 	microRNA	 	0.218	bias	3.27E-02	BCL11A,CCR7,DUSP6,LEF1	 
+metribolone	 	chemical reagent	 	0.692	bias	3.30E-02	BCL2,ELL2,INPP4B,SPON2,SYTL2,VCAN	 
+CD3 group	 	group	 	 	 	3.32E-02	CBLB,TBX21	 
+NOG	 	growth factor	 	 	 	3.32E-02	LEF1,VCAN	 
+STAT4	14.150	transcription regulator	 	 	 	3.37E-02	BCL2,IL18RAP,IRF4,TBX21	 
+AGN194204	 	chemical drug	Activated	2.000	bias	3.41E-02	CD5,ICOS,IL7R,MAN1A1	 
+AKT2	 	kinase	 	 	 	3.44E-02	BCL2,MTSS1	 
+DETA-NONOate	 	chemical reagent	 	 	 	3.44E-02	BIRC3,PDE3B	 
+KLF3	 	transcription regulator	 	-1.400	bias	3.44E-02	BCL2,BTLA,KLF12,SP140,STAT4	 
+SP1	 	transcription regulator	 	 	 	3.54E-02	ACSL1,BCL2,CD28,IRF4,MYBL1,TCF7,TGFBR3	 
+leukotriene D4	 	chemical - endogenous mammalian	 	 	 	3.55E-02	RGS2,SIK1/SIK1B	 
+oblimersen	 	biologic drug	 	 	 	3.55E-02	BCL2,IL24	 
+CLEC11A	 	growth factor	 	 	 	3.55E-02	BCL2,STAT4	 
+TGM2	 	enzyme	Activated	2.000	bias	3.56E-02	BIRC3,C5AR1,GCA,JAML	 
+NGF	 	growth factor	 	 	 	3.65E-02	A2M,BCL2,CCR7,DUSP6	 
+palmitic acid	 	chemical - endogenous mammalian	 	 	 	3.65E-02	ACSL1,BCL2,BIRC3,CD28	 
+HDAC4	 	transcription regulator	 	 	 	3.67E-02	CYFIP2,MYOM2,RGS2	 
+telmisartan	 	chemical drug	 	 	 	3.67E-02	ACSL1,BCL2	 
+Stat1 dimer	 	complex	 	 	 	3.71E-02	TBX21	 
+Glucocorticoid-GCR	 	complex	 	 	 	3.71E-02	A2M	 
+RDH10	 	enzyme	 	 	 	3.71E-02	LEF1	 
+PTK	 	group	 	 	 	3.71E-02	A2M	 
+SLC5A8	 	transporter	 	 	 	3.71E-02	BCL2	 
+ARID5A	 	transcription regulator	 	 	 	3.71E-02	TBX21	 
+QRFP	 	other	 	 	 	3.71E-02	ACSL1	 
+ganetespib	 	chemical drug	 	 	 	3.71E-02	BCL2	 
+DVL1	 	other	 	 	 	3.71E-02	LEF1	 
+COMT	 	enzyme	 	 	 	3.71E-02	CAMK4	 
+STIM2	 	transporter	 	 	 	3.71E-02	NFATC2	 
+miR-184 (and other miRNAs w/seed GGACGGA)	 	mature microRNA	 	 	 	3.71E-02	NFATC2	 
+SWAP70	 	other	 	 	 	3.71E-02	IRF4	 
+RBX1	 	enzyme	 	 	 	3.71E-02	BCL2	 
+EGR4	 	transcription regulator	 	 	 	3.71E-02	MYBL1	 
+SPTBN4	 	other	 	 	 	3.71E-02	ANK3	 
+FERMT1	 	other	 	 	 	3.71E-02	LEF1	 
+G3BP1	 	enzyme	 	 	 	3.71E-02	LEF1	 
+SH3RF1	 	enzyme	 	 	 	3.71E-02	TBX21	 
+RAD9A	 	enzyme	 	 	 	3.71E-02	KLF12	 
+IL18RAP	0.860	transmembrane receptor	 	 	 	3.71E-02	IL32	 
+casticin	 	chemical - endogenous non-mammalian	 	 	 	3.71E-02	BCL2	 
+PTGDS	 	enzyme	 	 	 	3.71E-02	PTGDR	 
+TSPO	 	transmembrane receptor	 	 	 	3.71E-02	BCL2	 
+MFAP2	 	other	 	 	 	3.71E-02	VCAN	 
+FOXN3	 	transcription regulator	 	 	 	3.71E-02	PIM2	 
+TNIK	 	kinase	 	 	 	3.71E-02	TCF7	 
+nicorandil	 	chemical drug	 	 	 	3.71E-02	BCL2	 
+thenoyltrifluoroacetone	 	chemical reagent	 	 	 	3.71E-02	BIRC3	 
+selegiline	 	chemical drug	 	 	 	3.71E-02	BCL2	 
+2-mercaptoethanol	 	chemical - endogenous mammalian	 	 	 	3.71E-02	HERPUD1	 
+diacerein	 	chemical drug	 	 	 	3.71E-02	BCL2	 
+miR-124 mimic	 	chemical reagent	 	 	 	3.71E-02	BCL2	 
+N-Ac-leucyl-leucyl-methioninal	 	chemical - protease inhibitor	 	 	 	3.71E-02	CAMK4	 
+rutin	 	chemical toxicant	 	 	 	3.71E-02	BCL2	 
+citric acid	 	chemical - endogenous mammalian	 	 	 	3.71E-02	BCL2	 
+Muscarinic cholinergic receptor	 	group	 	 	 	3.71E-02	RGS2	 
+WBP2	 	transcription regulator	 	 	 	3.73E-02	GLCCI1,LEF1,SYTL3	 
+KDM5B	 	transcription regulator	 	 	 	3.73E-02	CDC14A,GCA,PDE3B	 
+PPARD	 	ligand-dependent nuclear receptor	 	1.103	bias	3.75E-02	BCL2,MYOM2,RASGRP1,TBX21	 
+NCOR2	 	transcription regulator	 	 	 	3.79E-02	BCL2,BIRC3	 
+IL32	2.910	cytokine	 	 	 	3.79E-02	BCL2,IL32	 
+glucosamine	 	chemical - endogenous mammalian	 	 	 	3.79E-02	BCL2,IL24	 
+NR3C2	 	ligand-dependent nuclear receptor	 	 	 	3.80E-02	BCL2,CYFIP2,RGS2	 
+IKBKG	 	kinase	 	 	 	3.87E-02	BIRC3,CD247,DUSP6	 
+L-triiodothyronine	 	chemical - endogenous mammalian	 	0.600	bias	3.88E-02	A2M,ACSL1,CAMK4,PRKCQ,RASGRP1,RGS2	 
+MAP2K4	 	kinase	 	 	 	3.92E-02	BCL2,BIRC3	 
+POU2AF1	6.330	transcription regulator	 	 	 	3.92E-02	BTLA,PAX5	 
+IL1	 	group	 	1.406	bias	4.04E-02	BCL2,CCR7,IRF4,NFATC2,VCAN	 
+IL11	 	cytokine	 	 	 	4.04E-02	A2M,BCL2	 
+emodin	 	chemical drug	 	 	 	4.04E-02	BCL2,IRF4	 
+triptolide	 	chemical drug	 	 	 	4.09E-02	BCL2,CD38,LEF1	 
+SOCS1	 	other	 	 	 	4.16E-02	A2M,BCL2,CCR7	 
+NOTCH3	 	transcription regulator	 	 	 	4.16E-02	BCL2,PRKCQ	 
+BNIP3L	 	other	 	 	 	4.16E-02	BLNK,CD22	 
+CXCR4	 	G-protein coupled receptor	 	 	 	4.16E-02	BCL2,IL24	 
+GPS2	 	transcription regulator	 	 	 	4.16E-02	BLNK,HIVEP2	 
+CHD4	 	enzyme	 	 	 	4.16E-02	BCL11A,TBX21	 
+chloroquine	 	chemical drug	 	 	 	4.16E-02	BCL2,STAT4	 
+IL1A	 	cytokine	 	0.849	bias	4.21E-02	BCL2,BIRC3,CLEC2D,IL32	 
+indomethacin	 	chemical drug	 	 	 	4.21E-02	A2M,ACSL1,BIRC3,VCAN	 
+rhodamine 6G	 	chemical toxicant	 	 	 	4.23E-02	BCL2	 
+CpG ODN 1585	 	chemical reagent	 	 	 	4.23E-02	SPON2	 
+RC3H2	 	enzyme	 	 	 	4.23E-02	ICOS	 
+PON2	 	enzyme	 	 	 	4.23E-02	C5AR1	 
+SULT2B1	 	enzyme	 	 	 	4.23E-02	BCL2	 
+Lefty	 	group	 	 	 	4.23E-02	ETS1	 
+ATXN2	 	other	 	 	 	4.23E-02	MTSS1	 
+ABCC1	 	transporter	 	 	 	4.23E-02	BCL2	 
+CD8A	 	other	 	 	 	4.23E-02	CD8B	 
+HINT1	 	enzyme	 	 	 	4.23E-02	BCL2	 
+SLC25A4	 	transporter	 	 	 	4.23E-02	BIRC3	 
+GRK5	 	kinase	 	 	 	4.23E-02	BCL2	 
+CXCR1	 	G-protein coupled receptor	 	 	 	4.23E-02	BCL2	 
+mir-326	 	microRNA	 	 	 	4.23E-02	ETS1	 
+miR-138-5p (miRNAs w/seed GCUGGUG)	 	mature microRNA	 	 	 	4.23E-02	VCAN	 
+DKK2	 	other	 	 	 	4.23E-02	BCL2	 
+GSN	 	other	 	 	 	4.23E-02	BCL2	 
+FALEC	 	other	 	 	 	4.23E-02	CYFIP2	 
+MAOA	 	enzyme	 	 	 	4.23E-02	BCL2	 
+FYB1	 	other	 	 	 	4.23E-02	SKAP1	 
+SDC2	 	other	 	 	 	4.23E-02	TGFBR3	 
+MAD2L1	 	other	 	 	 	4.23E-02	BCL2	 
+MLANA	 	other	 	 	 	4.23E-02	KLRD1	 
+NEU3	 	enzyme	 	 	 	4.23E-02	BCL2	 
+CXCL16	 	cytokine	 	 	 	4.23E-02	CD38	 
+DIABLO	 	other	 	 	 	4.23E-02	BIRC3	 
+MM-401	 	chemical reagent	 	 	 	4.23E-02	BCL2	 
+pranlukast	 	chemical drug	 	 	 	4.23E-02	BCL2	 
+GABP	 	complex	 	 	 	4.23E-02	IL7R	 
+astragaloside IV	 	chemical - endogenous non-mammalian	 	 	 	4.23E-02	TBX21	 
+alpha-tocopherol succinate	 	chemical drug	 	 	 	4.23E-02	BCL2	 
+N,N-dimethylarginine	 	chemical - endogenous mammalian	 	 	 	4.23E-02	BCL2	 
+forskolin	 	chemical toxicant	 	1.938	bias	4.25E-02	ADGRG1,BCL2,CYFIP2,DUSP6,ELL2,RAB31,RGS2,VCAN	 
+IFNA2	 	cytokine	 	1.000	bias	4.27E-02	BCL2,CD28,STAT4,TBX21	 
+Smad2/3	 	group	 	 	 	4.29E-02	RUNX3,TBX21	 
+PTF1A	 	transcription regulator	 	 	 	4.29E-02	KLHL14,PRKCQ	 
+HES1	 	transcription regulator	 	 	 	4.29E-02	BCL2,PAX5	 
+SCD	 	enzyme	 	 	 	4.29E-02	BCL2,HERPUD1	 
+vitamin D	 	chemical drug	 	 	 	4.29E-02	BCL2,IRF4	 
+C5AR1	14.680	G-protein coupled receptor	 	 	 	4.42E-02	C5AR1,CD28	 
+carbon monoxide	 	chemical - endogenous mammalian	 	 	 	4.42E-02	BCL2,IRF8	 
+seocalcitol	 	chemical drug	 	 	 	4.42E-02	BCL2,IL24	 
+ERK	 	group	 	1.969	bias	4.43E-02	BCL2,ETS1,TBX21,VCAN	 
+IL33	 	cytokine	Activated	2.000	bias	4.43E-02	BIRC3,PIM2,RASGRP1,TNFRSF13B	 
+IL27	 	cytokine	 	 	 	4.45E-02	CD38,ICOS,TBX21	 
+Fcer1	 	complex	 	 	 	4.55E-02	DUSP6,NFATC2	 
+OSMR	 	transmembrane receptor	 	 	 	4.55E-02	BCL2,BIRC3	 
+Histone h4	 	group	 	 	 	4.61E-02	CD247,LEF1,RASGRP1	 
+PRKAA1	 	kinase	 	 	 	4.61E-02	BCL2,BIRC3,RGS2	 
+PTGER4	 	G-protein coupled receptor	 	 	 	4.61E-02	CCR7,HERPUD1,SLAMF1	 
+CDX2	 	transcription regulator	 	 	 	4.61E-02	BCL2,ETS1,LEF1	 
+F2RL1	 	G-protein coupled receptor	 	 	 	4.68E-02	DUSP6,IRF8	 
+gentamicin C	 	chemical drug	 	 	 	4.68E-02	A2M,BIRC3	 
+lomustine	 	chemical drug	 	 	 	4.68E-02	A2M,BIRC3	 
+Sn50 peptide	 	chemical toxicant	 	 	 	4.68E-02	BCL2,BIRC3	 
+CpG oligonucleotide	 	chemical drug	 	 	 	4.68E-02	BCL2,POU2AF1,TNFRSF13B	 
+sphingosylphosphocholine	 	chemical - endogenous mammalian	 	 	 	4.75E-02	DUSP6	 
+phosphatidylcholine	 	chemical - endogenous mammalian	 	 	 	4.75E-02	BCL2	 
+tannic acid	 	chemical toxicant	 	 	 	4.75E-02	BCL2	 
+abatacept	 	biologic drug	 	 	 	4.75E-02	ICOS	 
+bazedoxifene	 	chemical drug	 	 	 	4.75E-02	BCL2	 
+Mir218	 	microRNA	 	 	 	4.75E-02	LEF1	 
+cytidylyl-3'-5'-guanosine	 	chemical reagent	 	 	 	4.75E-02	BCL2	 
+CRTC3	 	other	 	 	 	4.75E-02	RGS2	 
+propargylamine	 	chemical reagent	 	 	 	4.75E-02	BCL2	 
+INPP4B	4.240	phosphatase	 	 	 	4.75E-02	SYTL2	 
+NAALADL2	 	other	 	 	 	4.75E-02	SPON2	 
+JMJD6	 	transmembrane receptor	 	 	 	4.75E-02	PIM2	 
+SERPINB2	 	other	 	 	 	4.75E-02	BCL2	 
+DUSP16	 	phosphatase	 	 	 	4.75E-02	TBX21	 
+TNFRSF17	 	transmembrane receptor	 	 	 	4.75E-02	BCL2	 
+MIRLET7	 	group	 	 	 	4.75E-02	BCL11A	 
+salinomycin	 	chemical - endogenous non-mammalian	 	 	 	4.75E-02	LEF1	 
+WNT5B	 	other	 	 	 	4.75E-02	VCAN	 
+IL4I1	 	enzyme	 	 	 	4.75E-02	CD247	 
+CDKN2B	 	transcription regulator	 	 	 	4.75E-02	BCL2	 
+RPS6KB2	 	kinase	 	 	 	4.75E-02	BCL2	 
+NACC1	 	transcription regulator	 	 	 	4.75E-02	BCL2	 
+PANDAR	 	other	 	 	 	4.75E-02	BCL2	 
+GPR183	 	G-protein coupled receptor	 	 	 	4.75E-02	BCL2	 
+ST6GAL1	 	enzyme	 	 	 	4.75E-02	BIRC3	 
+MNX1	 	transcription regulator	 	 	 	4.75E-02	CBLB	 
+IL22RA1	 	transmembrane receptor	 	 	 	4.75E-02	IL24	 
+RTKN	 	other	 	 	 	4.75E-02	BIRC3	 
+di-spiropyrrolizidino oxindole andrographolide derivative CY2	 	chemical reagent	 	 	 	4.75E-02	BCL2	 
+TMP778	 	chemical reagent	 	 	 	4.75E-02	TBX21	 
+1,1-bis(3'-indolyl)-1-(4-hydroxyphenyl)methane	 	chemical reagent	 	 	 	4.75E-02	BCL2	 
+UCA1	 	other	 	 	 	4.75E-02	BCL2	 
+dantrolene	 	chemical drug	 	 	 	4.75E-02	BCL2	 
+benazepril	 	chemical drug	 	 	 	4.75E-02	BCL2	 
+sulindac sulfone	 	chemical - endogenous mammalian	 	 	 	4.75E-02	IL24	 
+ammonium trichloro(dioxoethylene-O,O'-)tellurate	 	chemical drug	 	 	 	4.75E-02	BCL2	 
+brimonidine	 	chemical drug	 	 	 	4.75E-02	BCL2	 
+flufenamic acid	 	chemical drug	 	 	 	4.75E-02	IL24	 
+PD 168393	 	chemical - kinase inhibitor	 	 	 	4.75E-02	BCL2	 
+racemic flurbiprofen	 	chemical drug	 	 	 	4.75E-02	IL24	 
+prodigiosin	 	chemical toxicant	 	 	 	4.75E-02	BCL2	 
+rhodioloside	 	chemical - endogenous non-mammalian	 	 	 	4.75E-02	BCL2	 
+NPM1-ALK	 	fusion gene/product	 	 	 	4.75E-02	ICOS	 
+miR-182 inhibitor	 	chemical reagent	 	 	 	4.75E-02	BCL2	 
+BQ 123	 	biologic drug	 	 	 	4.75E-02	CCR7	 
+iodine	 	chemical - endogenous mammalian	 	 	 	4.75E-02	BCL2	 
+tyrphostin AG 127	 	chemical - kinase inhibitor	 	 	 	4.75E-02	BCL2	 
+12-(3-adamantan-1-yl-ureido) dodecanoic acid	 	chemical reagent	 	 	 	4.81E-02	BCL2,BIRC3	 
+BSCL2	 	other	 	 	 	4.81E-02	ACSL1,CYFIP2	 
+FOXL2	 	transcription regulator	 	 	 	4.81E-02	NFATC2,RGS2	 
+BMI1	 	transcription regulator	 	 	 	4.81E-02	CDC14A,CYFIP2	 
+BCL2L1	 	other	 	 	 	4.81E-02	BCL2,TNFSF8	 
+gemcitabine	 	chemical drug	 	 	 	4.81E-02	BCL2,IL32	 
+SREBF1	 	transcription regulator	 	 	 	4.82E-02	ACSL1,ADGRG1,BCL2,C5AR1	 
+STAT1	 	transcription regulator	 	1.949	bias	4.83E-02	A2M,CCR7,IRF8,PRF1,TBX21	 
+JAK2	 	kinase	 	 	 	4.84E-02	BLNK,PAX5,POU2AF1	 
+infliximab	 	biologic drug	 	 	 	4.94E-02	PRF1,SLAMF1	 
+triamterene	 	chemical drug	 	 	 	4.94E-02	A2M,BIRC3	 
+IL10RA	 	transmembrane receptor	Inhibited	-2.000	 	8.86E-02	ACSL1,BCL2,CCR7,CYFIP2	 
+MAPK1	 	kinase	 	1.964	 	1.57E-01	BCL11A,BCL2,RGS2,TBX21	 
+calcitriol	 	chemical drug	Inhibited	-2.000	 	3.74E-01	ACSL1,BCL2,IRF4,TBX21	 

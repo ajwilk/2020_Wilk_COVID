@@ -1,0 +1,142 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+BEX2 Signaling Pathway	4.29E00	3.8E-02	NaN	BCL2,LGALS1,NFKBIA	
+Death Receptor Signaling	4.1E00	3.3E-02	NaN	ACTB,BCL2,NFKBIA	
+ILK Signaling	3.16E00	1.58E-02	NaN	ACTB,TMSB10/TMSB4X,VIM	
+FAT10 Cancer Signaling Pathway	3.08E00	4.35E-02	NaN	EEF1A1,NFKBIA	
+Actin Cytoskeleton Signaling	2.99E00	1.38E-02	NaN	ACTB,IQGAP1,TMSB10/TMSB4X	
+Signaling by Rho Family GTPases	2.85E00	1.23E-02	NaN	ACTB,IQGAP1,VIM	
+Induction of Apoptosis by HIV1	2.84E00	3.28E-02	NaN	BCL2,NFKBIA	
+Remodeling of Epithelial Adherens Junctions	2.75E00	2.94E-02	NaN	ACTB,IQGAP1	
+Small Cell Lung Cancer Signaling	2.71E00	2.82E-02	NaN	BCL2,NFKBIA	
+PEDF Signaling	2.59E00	2.44E-02	NaN	BCL2,NFKBIA	
+OX40 Signaling Pathway	2.51E00	2.22E-02	NaN	BCL2,NFKBIA	
+Prostate Cancer Signaling	2.5E00	2.2E-02	NaN	BCL2,NFKBIA	
+Glucocorticoid Receptor Signaling	2.46E00	8.93E-03	NaN	ACTB,BCL2,NFKBIA	
+Apoptosis Signaling	2.43E00	2.02E-02	NaN	BCL2,NFKBIA	
+VEGF Signaling	2.43E00	2.02E-02	NaN	ACTB,BCL2	
+Type I Diabetes Mellitus Signaling	2.33E00	1.8E-02	NaN	BCL2,NFKBIA	
+Epithelial Adherens Junction Signaling	2.07E00	1.32E-02	NaN	ACTB,IQGAP1	
+HOTAIR Regulatory Pathway	2.02E00	1.25E-02	NaN	NFKBIA,VIM	
+Germ Cell-Sertoli Cell Junction Signaling	1.97E00	1.17E-02	NaN	ACTB,IQGAP1	
+PI3K/AKT Signaling	1.95E00	1.14E-02	NaN	BCL2,NFKBIA	
+IL-8 Signaling	1.84E00	1E-02	NaN	BCL2,IQGAP1	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	1.76E00	9.09E-03	NaN	BCL2,NFKBIA	
+EIF2 Signaling	1.74E00	8.93E-03	NaN	ACTB,BCL2	
+TNFR2 Signaling	1.56E00	3.33E-02	NaN	NFKBIA	
+4-1BB Signaling in T Lymphocytes	1.53E00	3.12E-02	NaN	NFKBIA	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	1.51E00	2.94E-02	NaN	BCL2	
+MIF-mediated Glucocorticoid Regulation	1.51E00	2.94E-02	NaN	NFKBIA	
+TWEAK Signaling	1.5E00	2.86E-02	NaN	NFKBIA	
+IL-17A Signaling in Fibroblasts	1.5E00	2.86E-02	NaN	NFKBIA	
+Interferon Signaling	1.48E00	2.78E-02	NaN	BCL2	
+Docosahexaenoic Acid (DHA) Signaling	1.46E00	2.63E-02	NaN	BCL2	
+April Mediated Signaling	1.45E00	2.56E-02	NaN	NFKBIA	
+B Cell Activating Factor Signaling	1.43E00	2.44E-02	NaN	NFKBIA	
+Mechanisms of Viral Exit from Host Cells	1.43E00	2.44E-02	NaN	ACTB	
+MIF Regulation of Innate Immunity	1.42E00	2.38E-02	NaN	NFKBIA	
+Role of RIG1-like Receptors in Antiviral Innate Immunity	1.4E00	2.27E-02	NaN	NFKBIA	
+IL-23 Signaling Pathway	1.4E00	2.27E-02	NaN	NFKBIA	
+iNOS Signaling	1.39E00	2.22E-02	NaN	NFKBIA	
+Hepatic Fibrosis Signaling Pathway	1.35E00	5.43E-03	NaN	BCL2,NFKBIA	
+Myc Mediated Apoptosis Signaling	1.34E00	2E-02	NaN	BCL2	
+TNFR1 Signaling	1.34E00	2E-02	NaN	NFKBIA	
+CD27 Signaling in Lymphocytes	1.32E00	1.89E-02	NaN	NFKBIA	
+Lymphotoxin β Receptor Signaling	1.32E00	1.89E-02	NaN	NFKBIA	
+Role of IL-17A in Arthritis	1.3E00	1.82E-02	NaN	NFKBIA	
+Molecular Mechanisms of Cancer	1.3E00	5.12E-03	NaN	BCL2,NFKBIA	
+Unfolded protein response	1.3E00	1.79E-02	NaN	BCL2	
+MSP-RON Signaling Pathway	1.28E00	1.72E-02	NaN	ACTB	
+Nur77 Signaling in T Lymphocytes	1.27E00	1.69E-02	NaN	BCL2	
+Autophagy	1.26E00	1.64E-02	NaN	BCL2	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	1.25E00	1.59E-02	NaN	NFKBIA	
+Role of PI3K/AKT Signaling in the Pathogenesis of Influenza	1.24E00	1.56E-02	NaN	NFKBIA	
+CD40 Signaling	1.23E00	1.54E-02	NaN	NFKBIA	
+IL-17A Signaling in Airway Cells	1.23E00	1.54E-02	NaN	NFKBIA	
+IL-10 Signaling	1.21E00	1.45E-02	NaN	NFKBIA	
+GM-CSF Signaling	1.2E00	1.43E-02	NaN	RACK1	
+Caveolar-mediated Endocytosis Signaling	1.18E00	1.37E-02	NaN	ACTB	
+Hypoxia Signaling in the Cardiovascular System	1.18E00	1.35E-02	NaN	NFKBIA	
+Angiopoietin Signaling	1.17E00	1.33E-02	NaN	NFKBIA	
+Erythropoietin Signaling	1.17E00	1.32E-02	NaN	NFKBIA	
+Toll-like Receptor Signaling	1.17E00	1.32E-02	NaN	NFKBIA	
+IL-7 Signaling Pathway	1.16E00	1.28E-02	NaN	BCL2	
+Agrin Interactions at Neuromuscular Junction	1.15E00	1.27E-02	NaN	ACTB	
+Role of BRCA1 in DNA Damage Response	1.15E00	1.25E-02	NaN	ACTB	
+Role of MAPK Signaling in the Pathogenesis of Influenza	1.15E00	1.25E-02	NaN	BCL2	
+LPS-stimulated MAPK Signaling	1.14E00	1.22E-02	NaN	NFKBIA	
+NF-κB Activation by Viruses	1.14E00	1.22E-02	NaN	NFKBIA	
+Ceramide Signaling	1.11E00	1.14E-02	NaN	BCL2	
+RANK Signaling in Osteoclasts	1.11E00	1.14E-02	NaN	NFKBIA	
+Crosstalk between Dendritic Cells and Natural Killer Cells	1.1E00	1.12E-02	NaN	ACTB	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	1.1E00	1.12E-02	NaN	NFKBIA	
+IL-1 Signaling	1.09E00	1.1E-02	NaN	NFKBIA	
+Regulation of Actin-based Motility by Rho	1.08E00	1.06E-02	NaN	ACTB	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	1.08E00	1.06E-02	NaN	ACTB	
+Melanocyte Development and Pigmentation Signaling	1.08E00	1.06E-02	NaN	BCL2	
+FAK Signaling	1.07E00	1.05E-02	NaN	ACTB	
+TGF-β Signaling	1.07E00	1.04E-02	NaN	BCL2	
+Amyotrophic Lateral Sclerosis Signaling	1.07E00	1.03E-02	NaN	BCL2	
+ATM Signaling	1.07E00	1.03E-02	NaN	NFKBIA	
+p53 Signaling	1.06E00	1.02E-02	NaN	BCL2	
+Sumoylation Pathway	1.04E00	9.71E-03	NaN	NFKBIA	
+PPAR Signaling	1.04E00	9.62E-03	NaN	NFKBIA	
+T Cell Receptor Signaling	1.03E00	9.52E-03	NaN	NFKBIA	
+Virus Entry via Endocytic Pathways	1.02E00	9.35E-03	NaN	ACTB	
+Paxillin Signaling	1.02E00	9.26E-03	NaN	ACTB	
+Pancreatic Adenocarcinoma Signaling	1.02E00	9.17E-03	NaN	BCL2	
+Antioxidant Action of Vitamin C	1.02E00	9.17E-03	NaN	NFKBIA	
+iCOS-iCOSL Signaling in T Helper Cells	1.01E00	9.01E-03	NaN	NFKBIA	
+Rac Signaling	1.01E00	8.93E-03	NaN	IQGAP1	
+fMLP Signaling in Neutrophils	9.91E-01	8.62E-03	NaN	NFKBIA	
+Role of PKR in Interferon Induction and Antiviral Response	9.87E-01	8.55E-03	NaN	NFKBIA	
+CD28 Signaling in T Helper Cells	9.79E-01	8.33E-03	NaN	NFKBIA	
+RhoA Signaling	9.67E-01	8.13E-03	NaN	ACTB	
+IL-6 Signaling	9.63E-01	8E-03	NaN	NFKBIA	
+PTEN Signaling	9.59E-01	7.94E-03	NaN	BCL2	
+14-3-3-mediated Signaling	9.55E-01	7.87E-03	NaN	VIM	
+Cellular Effects of Sildenafil (Viagra)	9.43E-01	7.63E-03	NaN	ACTB	
+Gα12/13 Signaling	9.43E-01	7.69E-03	NaN	NFKBIA	
+STAT3 Pathway	9.28E-01	7.41E-03	NaN	BCL2	
+PI3K Signaling in B Lymphocytes	9.21E-01	7.25E-03	NaN	NFKBIA	
+Ovarian Cancer Signaling	9.17E-01	7.19E-03	NaN	BCL2	
+Hereditary Breast Cancer Signaling	9.14E-01	7.14E-03	NaN	ACTB	
+Type II Diabetes Mellitus Signaling	9.1E-01	7.04E-03	NaN	NFKBIA	
+Endocannabinoid Cancer Inhibition Pathway	9.07E-01	6.99E-03	NaN	VIM	
+Relaxin Signaling	8.86E-01	6.67E-03	NaN	NFKBIA	
+Gustation Pathway	8.76E-01	6.49E-03	NaN	P2RY8	
+PKCθ Signaling in T Lymphocytes	8.73E-01	6.45E-03	NaN	NFKBIA	
+Gαq Signaling	8.66E-01	6.33E-03	NaN	NFKBIA	
+Tec Kinase Signaling	8.51E-01	6.1E-03	NaN	ACTB	
+Tight Junction Signaling	8.42E-01	5.95E-03	NaN	ACTB	
+Cdc42 Signaling	8.42E-01	5.99E-03	NaN	IQGAP1	
+Mitochondrial Dysfunction	8.33E-01	5.85E-03	NaN	BCL2	
+Acute Phase Response Signaling	8.15E-01	5.59E-03	NaN	NFKBIA	
+NF-κB Signaling	8.15E-01	5.59E-03	NaN	NFKBIA	
+RhoGDI Signaling	8.12E-01	5.56E-03	NaN	ACTB	
+Role of NFAT in Regulation of the Immune Response	8.1E-01	5.52E-03	NaN	NFKBIA	
+Dendritic Cell Maturation	8.07E-01	5.46E-03	NaN	NFKBIA	
+Hepatic Cholestasis	8.01E-01	5.41E-03	NaN	NFKBIA	
+Sertoli Cell-Sertoli Cell Junction Signaling	8.01E-01	5.41E-03	NaN	ACTB	
+B Cell Receptor Signaling	8.01E-01	5.41E-03	NaN	NFKBIA	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	7.99E-01	5.38E-03	NaN	BCL2	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	7.96E-01	5.32E-03	NaN	NFKBIA	
+NRF2-mediated Oxidative Stress Response	7.93E-01	5.29E-03	NaN	ACTB	
+Xenobiotic Metabolism CAR Signaling Pathway	7.93E-01	5.29E-03	NaN	RACK1	
+PPARα/RXRα Activation	7.9E-01	5.26E-03	NaN	NFKBIA	
+Clathrin-mediated Endocytosis Signaling	7.85E-01	5.18E-03	NaN	ACTB	
+Agranulocyte Adhesion and Diapedesis	7.85E-01	5.18E-03	NaN	ACTB	
+RAR Activation	7.83E-01	5.15E-03	NaN	ACTB	
+Leukocyte Extravasation Signaling	7.77E-01	5.08E-03	NaN	ACTB	
+Adrenomedullin signaling pathway	7.77E-01	5.08E-03	NaN	BCL2	
+Gap Junction Signaling	7.75E-01	5.05E-03	NaN	ACTB	
+AMPK Signaling	7.45E-01	4.67E-03	NaN	ACTB	
+Integrin Signaling	7.45E-01	4.69E-03	NaN	ACTB	
+Opioid Signaling Pathway	6.88E-01	4.05E-03	NaN	NFKBIA	
+G-Protein Coupled Receptor Signaling	6.5E-01	3.68E-03	NaN	NFKBIA	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	6.46E-01	3.64E-03	NaN	BCL2	
+Neuroinflammation Signaling Pathway	6.13E-01	3.33E-03	NaN	BCL2	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	5.99E-01	3.21E-03	NaN	NFKBIA	
+Estrogen Receptor Signaling	5.8E-01	3.05E-03	NaN	BCL2	
+Protein Kinase A Signaling	5.09E-01	2.51E-03	NaN	NFKBIA	

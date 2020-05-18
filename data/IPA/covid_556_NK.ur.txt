@@ -1,0 +1,421 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+POLR2A	 	enzyme	 	 	7.48E-06	ACTB,HNRNPH1,NFKBIA	 
+TBP	 	transcription regulator	 	 	7.48E-06	ACTB,CD3E,NFKBIA	 
+SPI1	 	transcription regulator	 	 	1.37E-05	ACTB,CD3E,HSPA8,RACK1	 
+CD3	 	complex	 	-0.152	2.12E-05	CD3E,ETS1,HSPA8,IL32,NFKBIA	 
+TGFB1	 	growth factor	 	0.836	3.11E-05	CD300A,ETS1,HNRNPH1,IL32,MALAT1,NFKBIA,RACK1	 
+Z-LLL-CHO	 	chemical - protease inhibitor	 	-0.756	3.46E-05	ACTB,ETS1,HSPA8,NFKBIA	 
+NCAM1	 	other	 	 	4.33E-05	MALAT1,NFKBIA	 
+PRKCA	 	kinase	 	 	4.63E-05	ARL4C,ETS1,NFKBIA	 
+dexamethasone	 	chemical drug	 	0.024	9.84E-05	ACTB,ARL4C,CD3E,HNRNPH1,HSPA8,IL32,NFKBIA	 
+IL15	 	cytokine	 	 	9.90E-05	ETS1,HSPA8,IL32,NFKBIA	 
+fluvoxamine	 	chemical drug	 	 	1.47E-04	ACTB,RACK1	 
+PRKCZ	 	kinase	 	 	1.57E-04	ETS1,NFKBIA	 
+NOS2	 	enzyme	 	 	1.68E-04	CD3E,IL32,NFKBIA	 
+GTF2B	 	transcription regulator	 	 	1.99E-04	ACTB,NFKBIA	 
+CP-55940	 	chemical reagent	 	 	2.22E-04	ACTB,NFKBIA	 
+ETS1	-0.408	transcription regulator	 	 	2.66E-04	ARL4C,ETS1,HSPA8	 
+ouabain	 	chemical drug	 	 	2.85E-04	ACTB,HSPA8	 
+hexamethylene bisacetamide	 	chemical reagent	 	 	3.26E-04	HSPA8,RACK1	 
+TNF	 	cytokine	 	0.325	3.75E-04	ACTB,CD3E,ETS1,HSPA8,IL32,NFKBIA	 
+progesterone	 	chemical - endogenous mammalian	 	 	3.87E-04	ACTB,HSPA8,NFKBIA,RACK1	 
+tetradecanoylphorbol acetate	 	chemical drug	 	0.832	4.15E-04	ACTB,ETS1,IL32,NFKBIA,RACK1	 
+HRAS	 	enzyme	 	 	4.67E-04	ACTB,ETS1,HSPA8,NFKBIA	 
+CDK9	 	kinase	 	 	4.67E-04	HNRNPH1,NFKBIA	 
+CDKN1A	 	kinase	 	 	4.67E-04	ACTB,IL32,NFKBIA	 
+F2	 	peptidase	 	 	4.67E-04	ETS1,IL32,NFKBIA	3 (3)
+RNA polymerase II	 	complex	 	 	4.93E-04	ACTB,CD3E,NFKBIA	 
+Pln	 	other	 	 	5.02E-04	ACTB,RACK1	 
+FLI1	 	transcription regulator	 	 	5.74E-04	HSPA8,RACK1	 
+N-acetylmuramyl-L-alanyl-D-isoglutamine	 	chemical - endogenous non-mammalian	 	 	5.74E-04	ETS1,NFKBIA	 
+Akt	 	group	 	 	5.88E-04	ETS1,IL32,NFKBIA	3 (2)
+FD & C Yellow no. 6	 	chemical toxicant	 	 	5.89E-04	CD3E	 
+MACROD1	 	enzyme	 	 	5.89E-04	NFKBIA	 
+EIF2B2	 	other	 	 	5.89E-04	ACTB	 
+EPSTI1	 	other	 	 	5.89E-04	NFKBIA	 
+ETS1-AS1	 	other	 	 	5.89E-04	ETS1	 
+PLN	 	transporter	 	 	6.32E-04	ACTB,RACK1	 
+Go 6976	 	chemical - kinase inhibitor	 	 	6.52E-04	ETS1,NFKBIA	 
+CD3E	0.407	transmembrane receptor	 	 	6.72E-04	CD3E,NFKBIA	 
+PRNP	 	other	 	 	9.37E-04	HSPA8,NFKBIA	 
+SRF	 	transcription regulator	 	 	9.88E-04	ACTB,ETS1,MALAT1	 
+IFNG	 	cytokine	 	0.564	9.91E-04	ACTB,HSPA8,IL32,NFKBIA,RACK1	 
+dehydroisoandrosterone	 	chemical - endogenous mammalian	 	 	1.01E-03	NFKBIA,RACK1	 
+CD28	 	transmembrane receptor	 	 	1.05E-03	CD3E,HSPA8,NFKBIA	 
+curcumin	 	chemical drug	 	 	1.10E-03	ETS1,HSPA8,NFKBIA	 
+LYN	 	kinase	 	 	1.14E-03	ETS1,NFKBIA	 
+Rps15a-ps4	 	other	 	 	1.18E-03	NFKBIA	 
+FAM168A	 	other	 	 	1.18E-03	NFKBIA	 
+ADRM1	 	other	 	 	1.18E-03	NFKBIA	 
+SETX	 	enzyme	 	 	1.18E-03	ACTB	 
+desmopressin	 	biologic drug	 	 	1.33E-03	ACTB,HSPA8	 
+EGFR	 	kinase	 	 	1.64E-03	ACTB,HNRNPH1,NFKBIA	 
+glutamine	 	chemical - endogenous mammalian	 	 	1.69E-03	ACTB,NFKBIA	 
+KLHL21	 	other	 	 	1.77E-03	NFKBIA	 
+SLA	 	other	 	 	1.77E-03	CD3E	 
+YARS1	 	enzyme	 	 	1.77E-03	NFKBIA	 
+SIGLEC10	 	other	 	 	1.77E-03	ETS1	 
+ERC1	 	other	 	 	1.77E-03	NFKBIA	 
+(S)-duloxetine	 	chemical drug	 	 	1.77E-03	ACTB	 
+salsalate	 	chemical drug	 	 	1.77E-03	NFKBIA	 
+uranyl nitrate	 	chemical toxicant	 	 	1.82E-03	HSPA8,RACK1	 
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	1.82E-03	NFKBIA,RACK1	 
+SOX12	 	transcription regulator	 	 	2.35E-03	CD3E	 
+MAF1	 	other	 	 	2.35E-03	ACTB	 
+XRN2	 	enzyme	 	 	2.35E-03	ACTB	 
+SLA2	 	other	 	 	2.35E-03	CD3E	 
+miR-330-5p (and other miRNAs w/seed CUCUGGG)	 	mature microRNA	 	 	2.35E-03	ETS1	 
+EGFL7	 	other	 	 	2.35E-03	NFKBIA	 
+apicularen A	 	chemical reagent	 	 	2.35E-03	NFKBIA	 
+1,1-diethyl-2-hydroxy-2-nitrosohydrazine	 	chemical toxicant	 	 	2.35E-03	NFKBIA	 
+sertindole	 	chemical drug	 	 	2.35E-03	ACTB	 
+Insulin	 	group	 	 	2.57E-03	ACTB,HSPA8,NFKBIA	 
+IKBKG	 	kinase	 	 	2.89E-03	CD3E,NFKBIA	 
+MARCHF3	 	other	 	 	2.94E-03	NFKBIA	 
+FGR	 	kinase	 	 	2.94E-03	IL32	 
+RPS3	 	enzyme	 	 	2.94E-03	NFKBIA	 
+PLAA	 	other	 	 	2.94E-03	IL32	 
+TERT	 	enzyme	 	 	3.02E-03	ETS1,NFKBIA	 
+SP110	 	transcription regulator	 	 	3.02E-03	CD3E,ETS1	 
+LY294002	 	chemical - kinase inhibitor	 	 	3.25E-03	ETS1,IL32,NFKBIA	3 (3)
+GFI1	 	transcription regulator	 	 	3.36E-03	ETS1,NFKBIA	 
+pervanadate	 	chemical reagent	 	 	3.53E-03	NFKBIA	 
+WIF1	 	other	 	 	3.53E-03	MALAT1	 
+TRAT1	 	kinase	 	 	3.53E-03	CD3E	 
+gelam honey	 	chemical reagent	 	 	3.53E-03	NFKBIA	 
+risedronic acid	 	chemical drug	 	 	3.53E-03	HSPA8	 
+saquinavir	 	chemical drug	 	 	3.53E-03	NFKBIA	 
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	3.63E-03	IL32,NFKBIA	 
+lipopolysaccharide	 	chemical drug	 	0.042	4.02E-03	ARL4C,CD3E,HSPA8,IL32,NFKBIA	 
+P glycoprotein	 	group	 	 	4.12E-03	CD3E	 
+ATE1	 	enzyme	 	 	4.12E-03	ACTB	 
+CD3G	 	transmembrane receptor	 	 	4.12E-03	CD3E	 
+IL18RAP	 	transmembrane receptor	 	 	4.12E-03	IL32	 
+teasaponin	 	chemical - endogenous non-mammalian	 	 	4.12E-03	NFKBIA	 
+dBET6	 	chemical reagent	 	 	4.12E-03	ARL4C	 
+nitrofurantoin	 	chemical drug	 	 	4.15E-03	ACTB,NFKBIA	 
+SATB1	 	transcription regulator	 	 	4.20E-03	ETS1,HSPA8	 
+androgen	 	chemical drug	 	 	4.30E-03	ETS1,NFKBIA	 
+CSF3	 	cytokine	 	 	4.65E-03	ETS1,FGFBP2	 
+Lefty	 	group	 	 	4.70E-03	ETS1	 
+mir-326	 	microRNA	 	 	4.70E-03	ETS1	 
+NCR3	 	transmembrane receptor	 	 	4.70E-03	CD3E	 
+magnesium sulfate	 	chemical drug	 	 	4.70E-03	NFKBIA	 
+tosyllysine chloromethyl ketone	 	chemical - protease inhibitor	 	 	4.70E-03	NFKBIA	 
+KLF2	 	transcription regulator	 	 	4.97E-03	NFKBIA,S1PR5	 
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	5.07E-03	NFKBIA,RACK1	 
+AFF4	 	transcription regulator	 	 	5.29E-03	HNRNPH1	 
+Ferritin	 	complex	 	 	5.29E-03	NFKBIA	 
+PSMB9	 	peptidase	 	 	5.29E-03	NFKBIA	 
+PI3	 	other	 	 	5.29E-03	NFKBIA	 
+ATG16L1	 	enzyme	 	 	5.29E-03	NFKBIA	 
+ING4	 	transcription regulator	 	 	5.29E-03	NFKBIA	 
+ACTG1	 	other	 	 	5.29E-03	ACTB	 
+DEK	 	transcription regulator	 	 	5.29E-03	NFKBIA	 
+ketorolac	 	chemical drug	 	 	5.29E-03	NFKBIA	 
+miR-182 inhibitor	 	chemical reagent	 	 	5.29E-03	NFKBIA	 
+PRKCD	 	kinase	 	 	5.40E-03	IL32,NFKBIA	 
+beta-estradiol	 	chemical - endogenous mammalian	 	-0.271	5.48E-03	ACTB,ETS1,HSPA8,NFKBIA,RACK1	 
+RORA	 	ligand-dependent nuclear receptor	 	 	5.62E-03	ACTB,NFKBIA	 
+NFkB (complex)	 	complex	 	 	5.70E-03	ETS1,IL32,NFKBIA	 
+thapsigargin	 	chemical toxicant	 	 	5.79E-03	ETS1,NFKBIA	 
+NEIL2	 	enzyme	 	 	5.87E-03	ACTB	 
+TAF5	 	transcription regulator	 	 	5.87E-03	ACTB	 
+NCR1	 	transmembrane receptor	 	 	5.87E-03	CD3E	 
+S100P	 	other	 	 	5.87E-03	ACTB	 
+SU1498	 	chemical - kinase inhibitor	 	 	5.87E-03	ETS1	 
+perilla alcohol	 	chemical drug	 	 	5.87E-03	NFKBIA	 
+lactacystin	 	chemical - protease inhibitor	 	 	5.91E-03	ACTB,NFKBIA	 
+EDN1	 	cytokine	 	 	5.96E-03	ACTB,HSPA8	 
+deferoxamine	 	chemical drug	 	 	6.20E-03	CD300A,IL32	 
+ELAVL1	 	other	 	 	6.26E-03	NFKBIA,RACK1	 
+CD 437	 	chemical drug	 	 	6.26E-03	HSPA8,NFKBIA	 
+G2535	 	chemical reagent	 	 	6.46E-03	NFKBIA	 
+miR-208a-3p (and other miRNAs w/seed UAAGACG)	 	mature microRNA	 	 	6.46E-03	ETS1	 
+miR-193a-3p (and other miRNAs w/seed ACUGGCC)	 	mature microRNA	 	 	6.46E-03	ETS1	 
+KLRD1	 	transmembrane receptor	 	 	6.46E-03	CD3E	 
+triamcinolone acetonide	 	chemical drug	 	 	6.50E-03	ARL4C,NFKBIA	 
+tunicamycin	 	chemical - endogenous non-mammalian	 	 	6.74E-03	ETS1,NFKBIA	 
+ANGPT2	 	growth factor	 	 	6.80E-03	ARL4C,ETS1	 
+TLR7	 	transmembrane receptor	 	 	6.98E-03	CD300A,NFKBIA	 
+CST3	 	other	 	 	7.05E-03	NFKBIA	 
+DDB2	 	other	 	 	7.05E-03	NFKBIA	 
+LY-2510924	 	biologic drug	 	 	7.05E-03	CD300A	 
+azetidyl-2-carboxylic acid	 	chemical reagent	 	 	7.05E-03	HSPA8	 
+SR 144528	 	chemical reagent	 	 	7.05E-03	NFKBIA	 
+NR1H3	 	ligand-dependent nuclear receptor	 	 	7.49E-03	ARL4C,NFKBIA	 
+AGN194204	 	chemical drug	 	 	7.55E-03	ARL4C,CD3E	 
+SAMHD1	 	enzyme	 	 	7.63E-03	NFKBIA	 
+iron dextran	 	chemical drug	 	 	7.63E-03	NFKBIA	 
+KT5720	 	chemical - kinase inhibitor	 	 	7.63E-03	NFKBIA	 
+forskolin	 	chemical toxicant	 	 	7.88E-03	ACTB,ARL4C,NFKBIA	 
+Growth hormone	 	group	 	 	8.01E-03	ACTB,NFKBIA	 
+brodalumab	 	biologic drug	 	 	8.21E-03	CD3E	 
+PSMB10	 	peptidase	 	 	8.21E-03	NFKBIA	 
+gamma-tocotrienol	 	chemical drug	 	 	8.21E-03	NFKBIA	 
+actinomycin D	 	biologic drug	 	 	8.48E-03	ACTB,ETS1	 
+IL1A	 	cytokine	 	 	8.62E-03	IL32,NFKBIA	 
+PPARα-RXRα	 	complex	 	 	8.80E-03	NFKBIA	 
+TIFA	 	other	 	 	8.80E-03	NFKBIA	 
+GATA3	 	transcription regulator	 	 	8.83E-03	CD3E,ETS1	 
+IL33	 	cytokine	 	 	8.90E-03	ACTB,NFKBIA	 
+Lh	 	complex	 	 	9.25E-03	ACTB,ARL4C	 
+GC-GCR dimer	 	complex	 	 	9.38E-03	NFKBIA	 
+DPH5	 	enzyme	 	 	9.38E-03	NFKBIA	 
+BMP10	 	growth factor	 	 	9.38E-03	NFKBIA	 
+H1-2	 	other	 	 	9.38E-03	ACTB	 
+mir-205	 	microRNA	 	 	9.38E-03	IL32	 
+IL2RB	 	transmembrane receptor	 	 	9.38E-03	ETS1	 
+S1PR3	 	G-protein coupled receptor	 	 	9.38E-03	ETS1	 
+concanamycin A	 	chemical drug	 	 	9.38E-03	NFKBIA	 
+KITLG	 	growth factor	 	 	9.60E-03	ACTB,NFKBIA	 
+IL17A	 	cytokine	 	 	9.75E-03	ACTB,IL32	 
+E. coli B5 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	9.97E-03	IL32,NFKBIA	 
+DDX25	 	enzyme	 	 	9.97E-03	NFKBIA	 
+PSMB8	 	peptidase	 	 	9.97E-03	NFKBIA	 
+THY1	 	other	 	 	9.97E-03	ETS1	 
+HNRNPU	 	transporter	 	 	9.97E-03	ACTB	 
+7-nitroindazole	 	chemical reagent	 	 	9.97E-03	NFKBIA	 
+TCF3-PBX1	 	fusion gene/product	 	 	9.97E-03	ARL4C	 
+SOD1	 	enzyme	 	 	1.00E-02	ACTB,HSPA8	 
+CD22	 	transmembrane receptor	 	 	1.06E-02	ETS1	 
+latrunculin B	 	chemical reagent	 	 	1.06E-02	ACTB	 
+helenalin	 	chemical - endogenous non-mammalian	 	 	1.06E-02	NFKBIA	 
+TNFSF11	 	cytokine	 	 	1.06E-02	ETS1,NFKBIA	 
+MYD88	 	other	 	 	1.09E-02	IL32,NFKBIA	 
+NFKB1	 	transcription regulator	 	 	1.11E-02	NFKBIA,RACK1	 
+ZBP1	 	other	 	 	1.11E-02	NFKBIA	 
+NOX1	 	enzyme	 	 	1.11E-02	NFKBIA	 
+TREM2	 	transmembrane receptor	 	 	1.11E-02	NFKBIA	 
+diethylmaleate	 	chemical toxicant	 	 	1.11E-02	NFKBIA	 
+PS-1145	 	chemical - kinase inhibitor	 	 	1.11E-02	NFKBIA	 
+11,12-epoxyeicosatrienoic acid	 	chemical - endogenous mammalian	 	 	1.17E-02	NFKBIA	 
+BIRC3	 	enzyme	 	 	1.17E-02	NFKBIA	 
+TIMP2	 	other	 	 	1.17E-02	NFKBIA	 
+LY6E	 	other	 	 	1.17E-02	NFKBIA	 
+sulfasalazine	 	chemical drug	 	 	1.17E-02	NFKBIA	 
+IKBKB	 	kinase	 	 	1.21E-02	ETS1,NFKBIA	 
+SP100	 	transcription regulator	 	 	1.23E-02	HSPA8	 
+NTN1	 	other	 	 	1.23E-02	ACTB	 
+CYP2J2	 	enzyme	 	 	1.23E-02	NFKBIA	 
+THZ1	 	chemical - kinase inhibitor	 	 	1.23E-02	ARL4C	 
+EPO	 	cytokine	 	 	1.26E-02	ACTB,NFKBIA	 
+resveratrol	 	chemical drug	 	 	1.28E-02	MALAT1,NFKBIA	 
+prostaglandin A1	 	chemical - endogenous non-mammalian	 	 	1.29E-02	NFKBIA	 
+IPMK	 	kinase	 	 	1.29E-02	ACTB	 
+EIF4G2	 	translation regulator	 	 	1.29E-02	ACTB	 
+IND S1	 	chemical - kinase inhibitor	 	 	1.29E-02	ACTB	 
+TERF2IP	 	other	 	 	1.29E-02	NFKBIA	 
+L-buthionine (SR)-sulfoximine	 	chemical drug	 	 	1.29E-02	NFKBIA	 
+PI3K (complex)	 	complex	 	 	1.29E-02	ETS1,NFKBIA	 
+NfkB-RelA	 	complex	 	 	1.35E-02	NFKBIA	 
+TF	 	transporter	 	 	1.35E-02	NFKBIA	 
+MBP	 	other	 	 	1.35E-02	CD300A	 
+dexamethasone phosphate	 	chemical drug	 	 	1.40E-02	NFKBIA	 
+Fus	 	transcription regulator	 	 	1.40E-02	HNRNPH1	 
+chelerythrine	 	chemical drug	 	 	1.40E-02	NFKBIA	 
+poly dA-dT	 	chemical reagent	 	 	1.40E-02	NFKBIA	 
+prostaglandin E2	 	chemical - endogenous mammalian	 	 	1.43E-02	ETS1,NFKBIA	 
+calpain	 	complex	 	 	1.46E-02	NFKBIA	 
+SLPI	 	other	 	 	1.46E-02	NFKBIA	 
+mir-9	 	microRNA	 	 	1.46E-02	ETS1	 
+HEXIM1	 	transcription regulator	 	 	1.46E-02	HNRNPH1	 
+COMMD1	 	transporter	 	 	1.46E-02	NFKBIA	 
+kaempferol	 	chemical toxicant	 	 	1.46E-02	IL32	 
+CHI3L1	 	enzyme	 	 	1.52E-02	ARL4C	 
+AKT3	 	kinase	 	 	1.52E-02	ETS1	 
+TAF4B	 	transcription regulator	 	 	1.52E-02	NFKBIA	 
+amino acids	 	chemical - endogenous mammalian	 	 	1.52E-02	ACTB	 
+linolenic acid	 	chemical - endogenous mammalian	 	 	1.52E-02	NFKBIA	 
+SGPP2	 	phosphatase	 	 	1.52E-02	HSPA8	 
+arsenic trioxide	 	chemical drug	 	 	1.57E-02	HSPA8,NFKBIA	 
+GnRH analog	 	biologic drug	 	 	1.58E-02	IL32,NFKBIA	 
+ASAH1	 	enzyme	 	 	1.58E-02	ETS1	 
+ECSIT	 	transcription regulator	 	 	1.58E-02	NFKBIA	 
+Mt1	 	other	 	 	1.58E-02	NFKBIA	 
+rifaximin	 	chemical drug	 	 	1.58E-02	RACK1	 
+progestin	 	chemical drug	 	 	1.58E-02	NFKBIA	 
+PDGF BB	 	complex	 	 	1.59E-02	ETS1,RACK1	 
+choline fenofibrate	 	chemical drug	 	 	1.64E-02	NFKBIA	 
+TRADD	 	other	 	 	1.64E-02	NFKBIA	 
+IND S7	 	chemical - kinase inhibitor	 	 	1.64E-02	ACTB	 
+RC3H1	 	enzyme	 	 	1.64E-02	ACTB	 
+POLG	 	enzyme	 	 	1.69E-02	RACK1	 
+ROCK1	 	kinase	 	 	1.69E-02	ETS1	 
+miR-133a-3p (and other miRNAs w/seed UUGGUCC)	 	mature microRNA	 	 	1.69E-02	MALAT1	 
+HOXB13	 	transcription regulator	 	 	1.69E-02	NFKBIA	 
+MEL S3	 	chemical - kinase inhibitor	 	 	1.69E-02	ACTB	 
+IRAK3	 	kinase	 	 	1.69E-02	NFKBIA	 
+stearic acid	 	chemical - endogenous mammalian	 	 	1.69E-02	NFKBIA	 
+SRSF1	 	other	 	 	1.81E-02	HNRNPH1	 
+CLU	 	other	 	 	1.81E-02	NFKBIA	 
+grape seed extract	 	chemical drug	 	 	1.87E-02	HSPA8	 
+deferasirox	 	chemical drug	 	 	1.87E-02	CD300A	 
+mir-221	 	microRNA	 	 	1.87E-02	ETS1	 
+UXT	 	transcription regulator	 	 	1.87E-02	NFKBIA	 
+KN 93	 	chemical - kinase inhibitor	 	 	1.87E-02	ETS1	 
+IL4	 	cytokine	 	 	1.90E-02	ACTB,CD300A,NFKBIA	 
+BMS-690514	 	chemical drug	 	 	1.93E-02	HSPA8	 
+IGF2BP1	 	translation regulator	 	 	1.93E-02	ACTB	 
+bafilomycin A1	 	chemical drug	 	 	1.93E-02	NFKBIA	 
+ZBED6	 	transcription regulator	 	 	1.98E-02	ARL4C	 
+bardoxolone	 	chemical drug	 	 	1.98E-02	NFKBIA	 
+P38 MAPK	 	group	 	 	1.99E-02	ETS1,IL32	 
+cycloheximide	 	chemical reagent	 	 	2.01E-02	ACTB,NFKBIA	 
+IL17F	 	cytokine	 	 	2.04E-02	IL32	 
+sodium orthovanadate	 	chemical reagent	 	 	2.04E-02	NFKBIA	 
+MAPT	 	other	 	 	2.06E-02	ACTB,HSPA8	 
+ACVRL1	 	kinase	 	 	2.10E-02	ACTB	 
+troglitazone	 	chemical drug	 	 	2.10E-02	ETS1,NFKBIA	 
+NORAD	 	other	 	 	2.16E-02	IL32	 
+KDM3A	 	transcription regulator	 	 	2.16E-02	ETS1	 
+RNASE2	 	enzyme	 	 	2.16E-02	CD300A	 
+TRH	 	other	 	 	2.16E-02	ACTB	 
+QKI	 	other	 	 	2.16E-02	HNRNPH1	 
+PSEN1	 	peptidase	 	 	2.20E-02	ACTB,HSPA8	 
+EZH2	 	transcription regulator	 	 	2.20E-02	ACTB,NFKBIA	 
+rasagiline	 	chemical drug	 	 	2.22E-02	RACK1	 
+MBTD1	 	other	 	 	2.22E-02	NFKBIA	 
+SUMO3	 	other	 	 	2.22E-02	HSPA8	 
+SPRY2	 	other	 	 	2.22E-02	ETS1	 
+miR-182-5p (and other miRNAs w/seed UUGGCAA)	 	mature microRNA	 	 	2.27E-02	MALAT1	 
+memantine	 	chemical drug	 	 	2.27E-02	NFKBIA	 
+FSH	 	complex	 	 	2.28E-02	ACTB,ARL4C	 
+RUVBL1	 	transcription regulator	 	 	2.33E-02	ETS1	 
+Tcf7	 	transcription regulator	 	 	2.33E-02	CD3E	 
+propranolol	 	chemical drug	 	 	2.33E-02	NFKBIA	 
+tetraethylammonium	 	chemical drug	 	 	2.33E-02	HSPA8	 
+RNASEH2A	 	enzyme	 	 	2.39E-02	NFKBIA	 
+TLR7/8	 	group	 	 	2.39E-02	NFKBIA	 
+pentoxifylline	 	chemical drug	 	 	2.39E-02	NFKBIA	 
+eflornithine	 	chemical drug	 	 	2.39E-02	IL32	 
+SUMO2	 	enzyme	 	 	2.45E-02	HSPA8	 
+SAHM1	 	chemical reagent	 	 	2.45E-02	CD300A	 
+H2AX	 	transcription regulator	 	 	2.50E-02	ACTB	 
+SRSF2	 	transcription regulator	 	 	2.50E-02	HNRNPH1	 
+S-nitrosoglutathione	 	chemical toxicant	 	 	2.50E-02	NFKBIA	 
+STAT6	 	transcription regulator	 	 	2.52E-02	ACTB,NFKBIA	 
+ILK	 	kinase	 	 	2.56E-02	HSPA8	 
+TXN	 	enzyme	 	 	2.56E-02	NFKBIA	 
+temozolomide	 	chemical drug	 	 	2.56E-02	NFKBIA	 
+Collagen(s)	 	complex	 	 	2.62E-02	ACTB	 
+RBM5	 	other	 	 	2.62E-02	IL32	 
+2-amino-1-methyl-6-phenylimidazo-4-5-b-pyridine	 	chemical toxicant	 	 	2.62E-02	HSPA8	 
+RELA	 	transcription regulator	 	 	2.66E-02	IL32,NFKBIA	 
+HOTAIR	 	other	 	 	2.68E-02	NFKBIA	 
+CYP1A2	 	enzyme	 	 	2.68E-02	CD3E	 
+IFIH1	 	enzyme	 	 	2.68E-02	NFKBIA	 
+NFKBIA	0.299	transcription regulator	 	 	2.70E-02	HSPA8,NFKBIA	 
+butyric acid	 	chemical - endogenous mammalian	 	 	2.73E-02	IL32,NFKBIA	 
+TNFAIP3	 	enzyme	 	 	2.73E-02	NFKBIA	 
+C11orf95-RELA	 	fusion gene/product	 	 	2.73E-02	NFKBIA	 
+MYBL2	 	transcription regulator	 	 	2.79E-02	HSPA8	 
+N-formyl-Met-Leu-Phe	 	chemical reagent	 	 	2.79E-02	NFKBIA	 
+Hsp70	 	group	 	 	2.85E-02	NFKBIA	 
+LTBR	 	transmembrane receptor	 	 	2.85E-02	NFKBIA	 
+CD86	 	transmembrane receptor	 	 	2.85E-02	NFKBIA	 
+Interferon alpha	 	group	 	 	2.86E-02	IL32,NFKBIA	 
+SQSTM1	 	transcription regulator	 	 	2.91E-02	NFKBIA	 
+NLRX1	 	other	 	 	2.91E-02	NFKBIA	 
+mir-182	 	microRNA	 	 	2.96E-02	MALAT1	 
+HSPA5	 	enzyme	 	 	2.96E-02	HSPA8	 
+BRD2	 	kinase	 	 	2.96E-02	CD300A	 
+ZBTB20	 	transcription regulator	 	 	3.02E-02	NFKBIA	 
+IGFBP2	 	other	 	 	3.02E-02	MALAT1	 
+carrageenan	 	chemical drug	 	 	3.02E-02	NFKBIA	 
+Rock	 	group	 	 	3.08E-02	ETS1	 
+PTPN1	 	phosphatase	 	 	3.08E-02	NFKBIA	 
+AGT	 	growth factor	 	 	3.10E-02	ETS1,NFKBIA	 
+MYC	 	transcription regulator	 	 	3.12E-02	ACTB,HNRNPH1,NFKBIA	 
+platelet activating factor	 	chemical - endogenous mammalian	 	 	3.13E-02	NFKBIA	 
+L-methionine	 	chemical - endogenous mammalian	 	 	3.13E-02	NFKBIA	 
+NKX3-1	 	transcription regulator	 	 	3.13E-02	ETS1	 
+NFKBIB	 	transcription regulator	 	 	3.13E-02	NFKBIA	 
+MMP1	 	peptidase	 	 	3.13E-02	NFKBIA	 
+RB1	 	transcription regulator	 	 	3.16E-02	ACTB,NFKBIA	 
+IL2RG	 	transmembrane receptor	 	 	3.19E-02	ETS1	 
+Ccl2	 	cytokine	 	 	3.19E-02	ETS1	 
+bicuculline	 	chemical - endogenous non-mammalian	 	 	3.19E-02	HSPA8	 
+PTPN6	 	phosphatase	 	 	3.25E-02	ETS1	 
+CBL	 	transcription regulator	 	 	3.25E-02	CD3E	 
+CYP1B1	 	enzyme	 	 	3.25E-02	CD3E	 
+CSF2	 	cytokine	 	 	3.26E-02	IL32,NFKBIA	 
+SERPINF1	 	other	 	 	3.31E-02	NFKBIA	 
+MAPKAPK2	 	kinase	 	 	3.31E-02	NFKBIA	 
+GPER1	 	G-protein coupled receptor	 	 	3.36E-02	NFKBIA	 
+E2F1	 	transcription regulator	 	 	3.41E-02	HSPA8,NFKBIA	 
+BNIP3L	 	other	 	 	3.48E-02	NFKBIA	 
+GPS2	 	transcription regulator	 	 	3.48E-02	NFKBIA	 
+dalfampridine	 	chemical drug	 	 	3.48E-02	HSPA8	 
+FBXW7	 	enzyme	 	 	3.53E-02	HSPA8	 
+vitamin D	 	chemical drug	 	 	3.53E-02	NFKBIA	 
+mitomycin C	 	chemical drug	 	 	3.53E-02	MALAT1	 
+hydrogen peroxide	 	chemical - endogenous mammalian	 	 	3.55E-02	ETS1,IL32	 
+ESR2	 	ligand-dependent nuclear receptor	 	 	3.64E-02	CD3E,NFKBIA	 
+BCL3	 	transcription regulator	 	 	3.65E-02	NFKBIA	 
+MMP12	 	peptidase	 	 	3.70E-02	NFKBIA	 
+CD247	 	transmembrane receptor	 	 	3.70E-02	CD3E	 
+napabucasin	 	chemical drug	 	 	3.70E-02	ACTB	 
+Sn50 peptide	 	chemical toxicant	 	 	3.70E-02	RACK1	 
+tributyrin	 	chemical drug	 	 	3.76E-02	ETS1	 
+PDCD1	 	phosphatase	 	 	3.76E-02	FGFBP2	 
+MUC1	 	other	 	 	3.76E-02	NFKBIA	 
+gemcitabine	 	chemical drug	 	 	3.76E-02	IL32	 
+25-hydroxycholesterol	 	chemical reagent	 	 	3.76E-02	NFKBIA	 
+infliximab	 	biologic drug	 	 	3.82E-02	NFKBIA	 
+MBD2	 	transcription regulator	 	 	3.82E-02	ACTB	 
+TRIM28	 	transcription regulator	 	 	3.88E-02	ETS1	 
+NR5A1	 	ligand-dependent nuclear receptor	 	 	3.88E-02	ETS1	 
+poly rI:rC-RNA	 	biologic drug	 	 	3.90E-02	IL32,NFKBIA	 
+miR-21-5p (and other miRNAs w/seed AGCUUAU)	 	mature microRNA	 	 	3.93E-02	IL32	 
+Map3k7	 	kinase	 	 	3.93E-02	NFKBIA	 
+silibinin	 	chemical drug	 	 	3.93E-02	NFKBIA	 
+calphostin C	 	chemical - kinase inhibitor	 	 	3.93E-02	ETS1	 
+trovafloxacin	 	chemical drug	 	 	3.93E-02	NFKBIA	 
+3,3'-diindolylmethane	 	chemical drug	 	 	3.93E-02	NFKBIA	 
+mir-133	 	microRNA	 	 	3.99E-02	MALAT1	 
+CTLA4	 	transmembrane receptor	 	 	3.99E-02	FGFBP2	 
+sirolimus	 	chemical drug	 	 	4.07E-02	ACTB,RACK1	 
+OSM	 	cytokine	 	 	4.10E-02	ARL4C,IL32	 
+ATM	 	kinase	 	 	4.10E-02	ACTB	 
+GDNF	 	growth factor	 	 	4.10E-02	ACTB	 
+gemfibrozil	 	chemical drug	 	 	4.10E-02	NFKBIA	 
+linoleic acid	 	chemical - endogenous mammalian	 	 	4.16E-02	NFKBIA	 
+E. coli lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	4.22E-02	IL32	 
+ATG7	 	enzyme	 	 	4.22E-02	NFKBIA	 
+MDM2	 	transcription regulator	 	 	4.27E-02	ETS1	 
+miR-199a-5p (and other miRNAs w/seed CCAGUGU)	 	mature microRNA	 	 	4.27E-02	ETS1	 
+NOD2	 	other	 	 	4.27E-02	NFKBIA	 
+Brd4	 	kinase	 	 	4.27E-02	HNRNPH1	 
+Bvht	 	other	 	 	4.33E-02	ETS1	 
+RELB	 	transcription regulator	 	 	4.33E-02	NFKBIA	 
+IFI16	 	transcription regulator	 	 	4.39E-02	NFKBIA	 
+Y 27632	 	chemical drug	 	 	4.39E-02	ACTB	 
+IRAK4	 	kinase	 	 	4.50E-02	NFKBIA	 
+rottlerin	 	chemical toxicant	 	 	4.50E-02	IL32	 
+estradiol benzoate	 	chemical drug	 	 	4.55E-02	HSPA8	 
+CBFB	 	transcription regulator	 	 	4.55E-02	ARL4C	 
+MAP3K14	 	kinase	 	 	4.55E-02	NFKBIA	 
+KLF6	 	transcription regulator	 	 	4.55E-02	NFKBIA	 
+(+)-MK-801	 	chemical drug	 	 	4.55E-02	NFKBIA	 
+PLX5622	 	chemical drug	 	 	4.55E-02	ACTB	 
+fenretinide	 	chemical drug	 	 	4.55E-02	NFKBIA	 
+Immunoglobulin	 	complex	 	 	4.59E-02	IL32,NFKBIA	 
+ciglitazone	 	chemical drug	 	 	4.61E-02	NFKBIA	 
+N-Ac-Leu-Leu-norleucinal	 	chemical - protease inhibitor	 	 	4.61E-02	NFKBIA	 
+dihydrotestosterone	 	chemical - endogenous mammalian	 	 	4.62E-02	ACTB,NFKBIA	 
+CXCL8	 	cytokine	 	 	4.67E-02	NFKBIA	 
+GAST	 	other	 	 	4.67E-02	NFKBIA	 
+MACROH2A1	 	other	 	 	4.72E-02	ETS1	 
+PP2/AG1879 tyrosine kinase inhibitor	 	chemical - kinase inhibitor	 	 	4.78E-02	IL32	 
+CNTF	 	cytokine	 	 	4.84E-02	ACTB	 
+CDH1	 	other	 	 	4.84E-02	ACTB	 
+CFTR	 	ion channel	 	 	4.84E-02	NFKBIA	 
+zinc	 	chemical drug	 	 	4.84E-02	NFKBIA	 
+ALKBH5	 	enzyme	 	 	4.89E-02	HSPA8	 
+mycophenolic acid	 	chemical drug	 	 	4.89E-02	ETS1	 
+maslinic acid	 	chemical - endogenous non-mammalian	 	 	4.95E-02	ETS1	 
+MAFB	 	transcription regulator	 	 	4.95E-02	ACTB	 
+amphetamine	 	chemical drug	 	 	4.95E-02	HSPA8	 

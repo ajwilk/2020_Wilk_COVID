@@ -1,0 +1,156 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Type I Diabetes Mellitus Signaling	5.43E00	3.6E-02	NaN	BCL2,HLA-E,HLA-F,SOCS3	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	5.33E00	8.82E-02	NaN	BCL2,HLA-E,HLA-F	
+Protein Ubiquitination Pathway	5.27E00	1.83E-02	NaN	HLA-E,HLA-F,HSP90AA1,HSP90AB1,HSPA5	
+STAT3 Pathway	5.09E00	2.96E-02	NaN	BCL2,MYC,PIM1,SOCS3	
+BAG2 Signaling Pathway	5.02E00	6.98E-02	NaN	HSP90AA1,HSPA5,MYC	
+Glucocorticoid Receptor Signaling	4.83E00	1.49E-02	NaN	BCL2,HSP90AA1,HSP90AB1,HSPA5,TSC22D3	
+OX40 Signaling Pathway	4.06E00	3.33E-02	NaN	BCL2,HLA-E,HLA-F	
+Prostate Cancer Signaling	4.04E00	3.3E-02	NaN	BCL2,HSP90AA1,HSP90AB1	
+Th17 Activation Pathway	4.04E00	3.3E-02	NaN	HSP90AA1,HSP90AB1,SOCS3	
+Neuregulin Signaling	3.97E00	3.12E-02	NaN	HSP90AA1,HSP90AB1,MYC	
+Telomerase Signaling	3.83E00	2.8E-02	NaN	HSP90AA1,HSP90AB1,MYC	
+Role of PKR in Interferon Induction and Antiviral Response	3.72E00	2.56E-02	NaN	HSP90AA1,HSP90AB1,HSPA5	
+Estrogen Receptor Signaling	3.6E00	1.22E-02	NaN	BCL2,HSP90AA1,HSP90AB1,MYC	
+Aryl Hydrocarbon Receptor Signaling	3.46E00	2.1E-02	NaN	HSP90AA1,HSP90AB1,MYC	
+Aldosterone Signaling in Epithelial Cells	3.34E00	1.9E-02	NaN	HSP90AA1,HSP90AB1,HSPA5	
+eNOS Signaling	3.33E00	1.89E-02	NaN	HSP90AA1,HSP90AB1,HSPA5	
+PI3K/AKT Signaling	3.21E00	1.71E-02	NaN	BCL2,HSP90AA1,HSP90AB1	
+Antigen Presentation Pathway	3.19E00	5.13E-02	NaN	HLA-E,HLA-F	
+Natural Killer Cell Signaling	3.06E00	1.52E-02	NaN	HLA-E,HLA-F,HSPA5	
+Graft-versus-Host Disease Signaling	3.01E00	4.17E-02	NaN	HLA-E,HLA-F	
+Autoimmune Thyroid Disease Signaling	2.99E00	4.08E-02	NaN	HLA-E,HLA-F	
+Myc Mediated Apoptosis Signaling	2.97E00	4E-02	NaN	BCL2,MYC	
+EIF2 Signaling	2.9E00	1.34E-02	NaN	BCL2,HSPA5,MYC	
+Unfolded protein response	2.87E00	3.57E-02	NaN	BCL2,HSPA5	
+Systemic Lupus Erythematosus Signaling	2.87E00	1.31E-02	NaN	HLA-E,HLA-F,PTPRC	
+Mitotic Roles of Polo-Like Kinase	2.73E00	3.03E-02	NaN	HSP90AA1,HSP90AB1	
+Small Cell Lung Cancer Signaling	2.67E00	2.82E-02	NaN	BCL2,MYC	
+Caveolar-mediated Endocytosis Signaling	2.65E00	2.74E-02	NaN	HLA-E,HLA-F	
+Hypoxia Signaling in the Cardiovascular System	2.63E00	2.7E-02	NaN	HSP90AA1,HSP90AB1	
+IL-7 Signaling Pathway	2.59E00	2.56E-02	NaN	BCL2,MYC	
+Prolactin Signaling	2.56E00	2.47E-02	NaN	MYC,SOCS3	
+Neuroinflammation Signaling Pathway	2.53E00	1E-02	NaN	BCL2,HLA-E,HLA-F	
+Allograft Rejection Signaling	2.51E00	2.33E-02	NaN	HLA-E,HLA-F	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	2.48E00	2.25E-02	NaN	HLA-E,HLA-F	
+Acute Myeloid Leukemia Signaling	2.48E00	2.25E-02	NaN	MYC,PIM1	
+Crosstalk between Dendritic Cells and Natural Killer Cells	2.48E00	2.25E-02	NaN	HLA-E,HLA-F	
+Communication between Innate and Adaptive Immune Cells	2.41E00	2.08E-02	NaN	HLA-E,HLA-F	
+Nitric Oxide Signaling in the Cardiovascular System	2.39E00	2.02E-02	NaN	HSP90AA1,HSP90AB1	
+PPAR Signaling	2.34E00	1.92E-02	NaN	HSP90AA1,HSP90AB1	
+PD-1, PD-L1 cancer immunotherapy pathway	2.33E00	1.89E-02	NaN	HLA-E,HLA-F	
+Virus Entry via Endocytic Pathways	2.32E00	1.87E-02	NaN	HLA-E,HLA-F	
+HIF1α Signaling	2.27E00	1.77E-02	NaN	HSP90AA1,SLC2A3	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	2.25E00	1.71E-02	NaN	HLA-E,HLA-F	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	2.09E00	1.42E-02	NaN	PTPRC,SOCS3	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	2.09E00	1.42E-02	NaN	PTPRC,SOCS3	
+Phagosome Maturation	2.03E00	1.32E-02	NaN	HLA-E,HLA-F	
+3-phosphoinositide Degradation	2.01E00	1.29E-02	NaN	PTPRC,SOCS3	
+D-myo-inositol-5-phosphate Metabolism	2E00	1.28E-02	NaN	PTPRC,SOCS3	
+3-phosphoinositide Biosynthesis	1.96E00	1.21E-02	NaN	PTPRC,SOCS3	
+Cdc42 Signaling	1.95E00	1.2E-02	NaN	HLA-E,HLA-F	
+T Cell Exhaustion Signaling Pathway	1.91E00	1.14E-02	NaN	HLA-E,HLA-F	
+Dendritic Cell Maturation	1.87E00	1.09E-02	NaN	HLA-E,HLA-F	
+Xenobiotic Metabolism CAR Signaling Pathway	1.84E00	1.06E-02	NaN	HSP90AA1,HSP90AB1	
+PPARα/RXRα Activation	1.84E00	1.05E-02	NaN	HSP90AA1,HSP90AB1	
+Xenobiotic Metabolism PXR Signaling Pathway	1.83E00	1.04E-02	NaN	HSP90AA1,HSP90AB1	
+Superpathway of Inositol Phosphate Compounds	1.81E00	1.01E-02	NaN	PTPRC,SOCS3	
+Endoplasmic Reticulum Stress Pathway	1.69E00	4.76E-02	NaN	HSPA5	
+Polyamine Regulation in Colon Cancer	1.68E00	4.55E-02	NaN	MYC	
+IL-22 Signaling	1.64E00	4.17E-02	NaN	SOCS3	
+Vitamin-C Transport	1.64E00	4.17E-02	NaN	SLC2A3	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	1.62E00	4E-02	NaN	SOCS3	
+Estrogen-mediated S-phase Entry	1.6E00	3.85E-02	NaN	MYC	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	1.54E00	7.27E-03	NaN	BCL2,MYC	
+Xenobiotic Metabolism Signaling	1.51E00	6.97E-03	NaN	HSP90AA1,HSP90AB1	
+IL-9 Signaling	1.5E00	3.03E-02	NaN	SOCS3	
+Role of JAK2 in Hormone-like Cytokine Signaling	1.49E00	2.94E-02	NaN	SOCS3	
+IL-17A Signaling in Fibroblasts	1.48E00	2.86E-02	NaN	NFKBIZ	
+B Cell Development	1.46E00	2.78E-02	NaN	PTPRC	
+Interferon Signaling	1.46E00	2.78E-02	NaN	BCL2	
+Docosahexaenoic Acid (DHA) Signaling	1.44E00	2.63E-02	NaN	BCL2	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	1.44E00	6.41E-03	NaN	MYC,SOCS3	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	1.39E00	6.01E-03	NaN	HLA-E,HLA-F	
+IL-23 Signaling Pathway	1.38E00	2.27E-02	NaN	SOCS3	
+Primary Immunodeficiency Signaling	1.32E00	2E-02	NaN	PTPRC	
+Hepatic Fibrosis Signaling Pathway	1.31E00	5.43E-03	NaN	BCL2,MYC	
+Molecular Mechanisms of Cancer	1.26E00	5.12E-03	NaN	BCL2,MYC	
+Nur77 Signaling in T Lymphocytes	1.25E00	1.69E-02	NaN	BCL2	
+Endometrial Cancer Signaling	1.25E00	1.67E-02	NaN	MYC	
+Induction of Apoptosis by HIV1	1.24E00	1.64E-02	NaN	BCL2	
+Autophagy	1.24E00	1.64E-02	NaN	BCL2	
+Thrombopoietin Signaling	1.23E00	1.59E-02	NaN	MYC	
+ErbB2-ErbB3 Signaling	1.21E00	1.54E-02	NaN	MYC	
+Pyridoxal 5'-phosphate Salvage Pathway	1.21E00	1.54E-02	NaN	PIM1	
+Cell Cycle: G1/S Checkpoint Regulation	1.2E00	1.49E-02	NaN	MYC	
+IL-10 Signaling	1.19E00	1.45E-02	NaN	SOCS3	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.19E00	1.45E-02	NaN	SOCS3	
+GM-CSF Signaling	1.18E00	1.43E-02	NaN	PIM1	
+Growth Hormone Signaling	1.18E00	1.41E-02	NaN	SOCS3	
+ERK5 Signaling	1.17E00	1.39E-02	NaN	MYC	
+Leptin Signaling in Obesity	1.16E00	1.35E-02	NaN	SOCS3	
+IL-15 Signaling	1.15E00	1.33E-02	NaN	MYC	
+Erythropoietin Signaling	1.15E00	1.32E-02	NaN	SOCS3	
+Thyroid Cancer Signaling	1.13E00	1.27E-02	NaN	MYC	
+BEX2 Signaling Pathway	1.13E00	1.27E-02	NaN	BCL2	
+Role of MAPK Signaling in the Pathogenesis of Influenza	1.13E00	1.25E-02	NaN	BCL2	
+JAK/Stat Signaling	1.13E00	1.25E-02	NaN	SOCS3	
+PEDF Signaling	1.12E00	1.22E-02	NaN	BCL2	
+PDGF Signaling	1.1E00	1.16E-02	NaN	MYC	
+Ceramide Signaling	1.09E00	1.14E-02	NaN	BCL2	
+Death Receptor Signaling	1.07E00	1.1E-02	NaN	BCL2	
+Melanocyte Development and Pigmentation Signaling	1.06E00	1.06E-02	NaN	BCL2	
+TGF-β Signaling	1.05E00	1.04E-02	NaN	BCL2	
+Amyotrophic Lateral Sclerosis Signaling	1.05E00	1.03E-02	NaN	BCL2	
+Bladder Cancer Signaling	1.05E00	1.03E-02	NaN	MYC	
+Salvage Pathways of Pyrimidine Ribonucleotides	1.05E00	1.03E-02	NaN	PIM1	
+p53 Signaling	1.04E00	1.02E-02	NaN	BCL2	
+Apoptosis Signaling	1.04E00	1.01E-02	NaN	BCL2	
+VEGF Signaling	1.04E00	1.01E-02	NaN	BCL2	
+Chronic Myeloid Leukemia Signaling	1.02E00	9.71E-03	NaN	MYC	
+Mouse Embryonic Stem Cell Pluripotency	1.02E00	9.71E-03	NaN	MYC	
+IGF-1 Signaling	1.02E00	9.62E-03	NaN	SOCS3	
+T Cell Receptor Signaling	1.01E00	9.52E-03	NaN	PTPRC	
+Pancreatic Adenocarcinoma Signaling	1E00	9.17E-03	NaN	BCL2	
+Antioxidant Action of Vitamin C	1E00	9.17E-03	NaN	SLC2A3	
+iCOS-iCOSL Signaling in T Helper Cells	9.91E-01	9.01E-03	NaN	PTPRC	
+p38 MAPK Signaling	9.67E-01	8.47E-03	NaN	MYC	
+CD28 Signaling in T Helper Cells	9.59E-01	8.33E-03	NaN	PTPRC	
+Th1 Pathway	9.55E-01	8.26E-03	NaN	SOCS3	
+Inhibition of ARE-Mediated mRNA Degradation Pathway	9.51E-01	8.2E-03	NaN	ZFP36L2	
+IL-6 Signaling	9.43E-01	8E-03	NaN	SOCS3	
+PTEN Signaling	9.39E-01	7.94E-03	NaN	BCL2	
+P2Y Purigenic Receptor Signaling Pathway	9.36E-01	7.87E-03	NaN	MYC	
+Adipogenesis pathway	9.14E-01	7.46E-03	NaN	TXNIP	
+Androgen Signaling	9.07E-01	7.35E-03	NaN	HSP90AA1	
+Th2 Pathway	9.07E-01	7.35E-03	NaN	SOCS3	
+Ovarian Cancer Signaling	9E-01	7.19E-03	NaN	BCL2	
+PI3K Signaling in B Lymphocytes	9E-01	7.25E-03	NaN	PTPRC	
+Insulin Receptor Signaling	8.96E-01	7.14E-03	NaN	SOCS3	
+Type II Diabetes Mellitus Signaling	8.89E-01	7.04E-03	NaN	SOCS3	
+Endocannabinoid Cancer Inhibition Pathway	8.86E-01	6.99E-03	NaN	MYC	
+Factors Promoting Cardiogenesis in Vertebrates	8.66E-01	6.67E-03	NaN	MYC	
+Necroptosis Signaling Pathway	8.48E-01	6.37E-03	NaN	CYLD	
+HOTAIR Regulatory Pathway	8.42E-01	6.25E-03	NaN	MYC	
+Glioblastoma Multiforme Signaling	8.3E-01	6.06E-03	NaN	MYC	
+Mitochondrial Dysfunction	8.15E-01	5.85E-03	NaN	BCL2	
+Th1 and Th2 Activation Pathway	8.15E-01	5.85E-03	NaN	SOCS3	
+Wnt/β-catenin Signaling	8.1E-01	5.78E-03	NaN	MYC	
+Acute Phase Response Signaling	7.96E-01	5.59E-03	NaN	SOCS3	
+B Cell Receptor Signaling	7.83E-01	5.41E-03	NaN	PTPRC	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	7.8E-01	5.38E-03	NaN	BCL2	
+Endothelin-1 Signaling	7.77E-01	5.32E-03	NaN	MYC	
+ILK Signaling	7.72E-01	5.26E-03	NaN	MYC	
+ERK/MAPK Signaling	7.67E-01	5.18E-03	NaN	MYC	
+Adrenomedullin signaling pathway	7.57E-01	5.08E-03	NaN	BCL2	
+IL-8 Signaling	7.52E-01	5E-03	NaN	BCL2	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	7.14E-01	4.55E-03	NaN	BCL2	
+Huntington's Disease Signaling	6.86E-01	4.22E-03	NaN	HSPA5	
+Opioid Signaling Pathway	6.7E-01	4.05E-03	NaN	MYC	
+Colorectal Cancer Metastasis Signaling	6.6E-01	3.95E-03	NaN	MYC	
+Phospholipase C Signaling	6.54E-01	3.89E-03	NaN	AHNAK	
+Sirtuin Signaling Pathway	6.07E-01	3.44E-03	NaN	MYC	
+Protein Kinase A Signaling	4.92E-01	2.51E-03	NaN	PTPRC	
+Cardiac Hypertrophy Signaling (Enhanced)	4.21E-01	2.05E-03	NaN	MYC	

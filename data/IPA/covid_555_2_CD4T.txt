@@ -1,0 +1,71 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+STAT3 Pathway	3.66E00	2.22E-02	NaN	IL7R,MYC,PIM1	
+IL-7 Signaling Pathway	2.67E00	2.56E-02	NaN	IL7R,MYC	
+Acute Myeloid Leukemia Signaling	2.56E00	2.25E-02	NaN	MYC,PIM1	
+Role of IL-17A in Psoriasis	1.94E00	7.69E-02	NaN	S100A8	
+EIF2 Signaling	1.79E00	8.93E-03	NaN	MYC,PABPC1	
+Polyamine Regulation in Colon Cancer	1.72E00	4.55E-02	NaN	MYC	
+Estrogen-mediated S-phase Entry	1.64E00	3.85E-02	NaN	MYC	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	1.52E00	6.41E-03	NaN	IL32,MYC	
+B Cell Development	1.51E00	2.78E-02	NaN	IL7R	
+Antiproliferative Role of TOB in T Cell Signaling	1.47E00	2.56E-02	NaN	PABPC1	
+BAG2 Signaling Pathway	1.43E00	2.33E-02	NaN	MYC	
+Hepatic Fibrosis Signaling Pathway	1.39E00	5.43E-03	NaN	MYC,TTN	
+Primary Immunodeficiency Signaling	1.37E00	2E-02	NaN	IL7R	
+Myc Mediated Apoptosis Signaling	1.37E00	2E-02	NaN	MYC	
+Role of Cytokines in Mediating Communication between Immune Cells	1.33E00	1.85E-02	NaN	IL32	
+Endometrial Cancer Signaling	1.29E00	1.67E-02	NaN	MYC	
+Thrombopoietin Signaling	1.27E00	1.59E-02	NaN	MYC	
+ErbB2-ErbB3 Signaling	1.25E00	1.54E-02	NaN	MYC	
+Pyridoxal 5'-phosphate Salvage Pathway	1.25E00	1.54E-02	NaN	PIM1	
+Cell Cycle: G1/S Checkpoint Regulation	1.24E00	1.49E-02	NaN	MYC	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.23E00	1.45E-02	NaN	IL7R	
+GM-CSF Signaling	1.22E00	1.43E-02	NaN	PIM1	
+Small Cell Lung Cancer Signaling	1.22E00	1.41E-02	NaN	MYC	
+ERK5 Signaling	1.21E00	1.39E-02	NaN	MYC	
+IL-15 Signaling	1.19E00	1.33E-02	NaN	MYC	
+Thyroid Cancer Signaling	1.17E00	1.27E-02	NaN	MYC	
+Cardiac Hypertrophy Signaling (Enhanced)	1.17E00	4.11E-03	NaN	IL7R,MYC	
+Prolactin Signaling	1.16E00	1.23E-02	NaN	MYC	
+PDGF Signaling	1.14E00	1.16E-02	NaN	MYC	
+Neuregulin Signaling	1.09E00	1.04E-02	NaN	MYC	
+Bladder Cancer Signaling	1.09E00	1.03E-02	NaN	MYC	
+Salvage Pathways of Pyrimidine Ribonucleotides	1.09E00	1.03E-02	NaN	PIM1	
+Chronic Myeloid Leukemia Signaling	1.06E00	9.71E-03	NaN	MYC	
+Mouse Embryonic Stem Cell Pluripotency	1.06E00	9.71E-03	NaN	MYC	
+Telomerase Signaling	1.04E00	9.35E-03	NaN	MYC	
+p38 MAPK Signaling	1E00	8.47E-03	NaN	MYC	
+LXR/RXR Activation	9.96E-01	8.26E-03	NaN	S100A8	
+RhoA Signaling	9.87E-01	8.13E-03	NaN	TTN	
+Atherosclerosis Signaling	9.79E-01	7.94E-03	NaN	S100A8	
+P2Y Purigenic Receptor Signaling Pathway	9.75E-01	7.87E-03	NaN	MYC	
+IL-12 Signaling and Production in Macrophages	9.59E-01	7.58E-03	NaN	S100A8	
+Aryl Hydrocarbon Receptor Signaling	9.24E-01	6.99E-03	NaN	MYC	
+Endocannabinoid Cancer Inhibition Pathway	9.24E-01	6.99E-03	NaN	MYC	
+Factors Promoting Cardiogenesis in Vertebrates	9.07E-01	6.67E-03	NaN	MYC	
+Regulation of eIF4 and p70S6K Signaling	8.86E-01	6.37E-03	NaN	PABPC1	
+HOTAIR Regulatory Pathway	8.79E-01	6.25E-03	NaN	MYC	
+Glioblastoma Multiforme Signaling	8.66E-01	6.06E-03	NaN	MYC	
+Wnt/β-catenin Signaling	8.48E-01	5.78E-03	NaN	MYC	
+PI3K/AKT Signaling	8.45E-01	5.71E-03	NaN	IL7R	
+Dendritic Cell Maturation	8.27E-01	5.46E-03	NaN	IL32	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	8.18E-01	5.38E-03	NaN	KLF6	
+Endothelin-1 Signaling	8.15E-01	5.32E-03	NaN	MYC	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	8.15E-01	5.32E-03	NaN	S100A8	
+ILK Signaling	8.1E-01	5.26E-03	NaN	MYC	
+Clathrin-mediated Endocytosis Signaling	8.04E-01	5.18E-03	NaN	S100A8	
+ERK/MAPK Signaling	8.04E-01	5.18E-03	NaN	MYC	
+Adrenomedullin signaling pathway	7.96E-01	5.08E-03	NaN	TTN	
+Osteoarthritis Pathway	7.7E-01	4.74E-03	NaN	S100A8	
+Integrin Signaling	7.64E-01	4.69E-03	NaN	TTN	
+Actin Cytoskeleton Signaling	7.54E-01	4.59E-03	NaN	TTN	
+Opioid Signaling Pathway	7.06E-01	4.05E-03	NaN	MYC	
+Colorectal Cancer Metastasis Signaling	6.97E-01	3.95E-03	NaN	MYC	
+Phospholipase C Signaling	6.9E-01	3.89E-03	NaN	AHNAK	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	6.66E-01	3.64E-03	NaN	MYC	
+Sirtuin Signaling Pathway	6.44E-01	3.44E-03	NaN	MYC	
+Estrogen Receptor Signaling	5.97E-01	3.05E-03	NaN	MYC	
+Molecular Mechanisms of Cancer	5.32E-01	2.56E-03	NaN	MYC	
+Protein Kinase A Signaling	5.26E-01	2.51E-03	NaN	TTN	

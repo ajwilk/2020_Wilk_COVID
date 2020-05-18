@@ -1,0 +1,2000 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Flags	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+IFNG	 	cytokine	 	0.279	 	4.85E-11	BCL2,CYLD,HLA-E,HLA-F,HSP90AA1,HSP90AB1,HSPA5,MYC,NFKBIZ,PIM1,SOCS3,TSC22D3,TXNIP	13 (4)
+TGFB1	 	growth factor	 	-0.178	 	1.02E-09	AHNAK,BCL2,HSP90AA1,HSPA5,MALAT1,MYC,PIM1,PTPRC,SLC2A3,SOCS3,TSC22D3,TXNIP,ZFP36L2	 
+TAL1	 	transcription regulator	 	0.378	 	1.04E-09	BCL2,CYLD,HLA-E,HLA-F,MYC,NFKBIZ,SLC2A3	8 (2)
+TCR	 	complex	Activated	2.254	 	1.06E-09	BCL2,HSPA5,MYC,PIM1,PTPRC,SLC2A3,SOCS3,TSC22D3	12 (13)
+TNF	 	cytokine	 	1.018	 	1.20E-09	BCL2,CYLD,HLA-E,HLA-F,HSP90AB1,HSPA5,MYC,NFKBIZ,PIM1,PTPRC,SOCS3,TSC22D3,TXNIP	13 (4)
+STAT5a/b	 	group	Activated	2.298	 	1.55E-09	BCL2,MYC,PIM1,SLC2A3,SOCS3,STK17B	 
+abrocitinib	 	chemical drug	 	 	 	2.97E-09	BCL2,MYC,SOCS3	8 (6)
+scoparone	 	chemical - endogenous non-mammalian	 	 	 	7.41E-09	BCL2,MYC,SOCS3	6 (4)
+IGF1	 	growth factor	 	1.942	 	8.11E-09	BCL2,HSPA5,MYC,PIM1,PTPRC,SOCS3,TXNIP,ZFP36L2	11 (13)
+PRKCE	 	kinase	Activated	2.166	bias	9.41E-09	BCL2,HSP90AB1,HSPA5,MYC,PIM1	7 (3)
+HOXA9	 	transcription regulator	 	 	 	1.24E-08	BCL2,MBNL1,MYC,PIM1,PTPRC,TSC22D3	 
+sirolimus	 	chemical drug	Inhibited	-2.103	 	2.25E-08	BCL2,HSP90AA1,HSP90AB1,HSPA5,MYC,PIM1,SLC2A3,SOCS3	10 (12)
+PD98059	 	chemical - kinase inhibitor	 	-1.658	 	2.81E-08	BCL2,HSPA5,MYC,PIM1,SOCS3,TSC22D3,TXNIP,ZFP36L2	10 (7)
+IL2	 	cytokine	Activated	2.756	 	6.55E-08	BCL2,HSPA5,MYC,PIM1,PTPRC,SLC2A3,SOCS3,STK17B	11 (11)
+IL1B	 	cytokine	 	1.494	 	9.06E-08	BCL2,HLA-E,HSPA5,MYC,NFKBIZ,PIM1,SOCS3,TSC22D3,TXNIP	11 (9)
+IL22	 	cytokine	 	0.128	 	1.14E-07	BCL2,HSP90AB1,HSPA5,MYC,SOCS3	14 (20)
+IL12 (family)	 	group	 	1.944	 	1.28E-07	BCL2,MYC,NFKBIZ,PIM1,SLC2A3	7 (5)
+MET	 	kinase	 	-0.096	 	1.28E-07	BCL2,MYC,NFKBIZ,PIM1,SOCS3	10 (12)
+STAT5A	 	transcription regulator	 	 	 	2.24E-07	BCL2,MYC,PIM1,SLC2A3,SOCS3,TXNIP	10 (10)
+EPO	 	cytokine	 	1.893	 	2.48E-07	BCL2,MYC,PIM1,SOCS3,TSC22D3,TXNIP	9 (8)
+48s	 	complex	 	 	 	3.35E-07	BCL2,HSPA5,MYC	 
+LY294002	 	chemical - kinase inhibitor	 	-1.829	bias	3.74E-07	BCL2,HSP90AB1,HSPA5,MYC,PIM1,SOCS3,ZFP36L2	12 (13)
+U0126	 	chemical - kinase inhibitor	Inhibited	-2.385	 	4.09E-07	BCL2,HSP90AB1,HSPA5,MYC,SLC2A3,SOCS3,TSC22D3	11 (14)
+CSF2RB	 	transmembrane receptor	 	 	 	4.12E-07	BCL2,MYC,PIM1	11 (15)
+poly rI:rC-RNA	 	biologic drug	 	0.378	 	4.35E-07	BCL2,HLA-E,HLA-F,HSPA5,MYC,PIM1,SOCS3	13 (15)
+arsenic trioxide	 	chemical drug	 	0.106	 	4.87E-07	BCL2,HSP90AB1,HSPA5,MYC,PIM1,PTPRC	9 (6)
+2-deoxyglucose	 	chemical drug	 	-0.842	 	5.32E-07	BCL2,HSPA5,MYC,TXNIP	7 (5)
+IL3	 	cytokine	Activated	2.404	 	5.90E-07	BCL2,HSPA5,MYC,PIM1,SLC2A3,SOCS3	11 (13)
+ionomycin	 	chemical reagent	 	1.466	 	7.53E-07	AHNAK,BCL2,HSPA5,MYC,PIM1	9 (12)
+NOSIP	 	other	 	 	 	8.62E-07	BCL2,MYC	 
+SMARCE1	 	transcription regulator	 	 	 	9.76E-07	BCL2,CYLD,MYC	 
+EPOR	 	transmembrane receptor	 	 	 	9.76E-07	MYC,PIM1,SOCS3	7 (5)
+TUG1	 	other	 	 	 	9.76E-07	BCL2,HSPA5,MYC	 
+PIK3R1	 	kinase	 	1.109	 	1.22E-06	BCL2,HSPA5,MYC,TXNIP	8 (4)
+LYN	 	kinase	 	 	 	1.22E-06	BCL2,MYC,NFKBIZ,SOCS3	11 (12)
+APP	 	other	 	 	 	1.39E-06	BCL2,HLA-E,HSP90AA1,HSP90AB1,HSPA5,MYC,PTPRC,SOCS3	 
+BCR-ABL1	 	fusion gene/product	 	1.941	 	1.53E-06	BCL2,MYC,PIM1,SLC2A3	8 (5)
+IgG	 	complex	 	0.000	 	1.57E-06	HLA-E,HSPA5,MYC,PIM1,SLC2A3	 
+AG490	 	chemical - kinase inhibitor	 	-1.961	bias	1.67E-06	BCL2,MYC,PIM1,SOCS3	11 (12)
+EGFR	 	kinase	 	0.597	 	1.82E-06	BCL2,HSPA5,MYC,SLC2A3,SOCS3,TXNIP	10 (14)
+STAT4	 	transcription regulator	 	1.195	bias	1.87E-06	AHNAK,BCL2,MYC,SLC2A3,SOCS3	8 (9)
+N-acetyl-L-cysteine	 	chemical drug	 	1.193	 	2.52E-06	BCL2,HSPA5,MYC,NFKBIZ,TXNIP	11 (12)
+sethoxydim	 	chemical toxicant	 	 	 	2.58E-06	BCL2,MYC	 
+MYBL1	 	transcription regulator	 	 	 	2.67E-06	BCL2,HSP90AA1,MYC	 
+vitamin K3	 	chemical drug	 	 	 	2.67E-06	BCL2,HSPA5,MYC	8 (7)
+prednisolone	 	chemical drug	Inhibited	-2.000	 	2.84E-06	BCL2,HSP90AA1,TSC22D3,TXNIP,ZFP36L2	 
+CEBPA	 	transcription regulator	 	0.598	 	2.98E-06	BCL2,HSPA5,MYC,PTPRC,SOCS3,TSC22D3	 
+Interferon alpha	 	group	 	1.595	 	3.13E-06	BCL2,HLA-F,MYC,PIM1,SLC2A3,SOCS3	8 (3)
+FOXO1	 	transcription regulator	 	-1.111	 	3.21E-06	BCL2,HSP90AB1,HSPA5,MYC,PTPRC,TXNIP	 
+Ubiquitin	 	group	 	 	 	3.28E-06	HSP90AA1,HSPA5,MYC	 
+PI3K (family)	 	group	 	1.969	 	3.51E-06	BCL2,HSPA5,MYC,TXNIP	6 (2)
+DDIT3	 	transcription regulator	 	0.440	 	4.18E-06	BCL2,HSPA5,TSC22D3,TXNIP	 
+arginine	 	chemical - endogenous mammalian	 	 	 	4.36E-06	BCL2,HSPA5,MYC	10 (12)
+TNFSF11	 	cytokine	 	1.491	bias	4.57E-06	BCL2,MYC,NFKBIZ,PIM1,SOCS3	12 (11)
+lipopolysaccharide	 	chemical drug	 	1.847	 	4.60E-06	BCL2,HSPA5,MYC,NFKBIZ,PIM1,PTPRC,SOCS3,TSC22D3,TXNIP,ZFP36L2	11 (6)
+MYD88	 	other	 	1.972	bias	4.82E-06	HSP90AB1,HSPA5,MYC,NFKBIZ,SOCS3	10 (10)
+CCI-007	 	chemical reagent	 	 	 	5.16E-06	BCL2,MYC	 
+IL6	 	cytokine	Activated	2.069	 	5.44E-06	AHNAK,BCL2,HSPA5,MYC,PIM1,PTPRC,SOCS3	10 (16)
+cisplatin	 	chemical drug	 	-0.223	 	5.48E-06	BCL2,HSPA5,MYC,SLC2A3,SOCS3,STK17B,TXNIP	10 (13)
+corticosterone	 	chemical - endogenous mammalian	 	 	 	5.62E-06	BCL2,HSPA5,MYC,TSC22D3	 
+tanespimycin	 	chemical drug	 	0.000	 	5.62E-06	BCL2,HSP90AB1,HSPA5,MYC	6 (3)
+histone deacetylase inhibitor	 	chemical drug	 	 	 	5.64E-06	BCL2,MYC,TXNIP	4 (4)
+E. coli B4 lipopolysaccharide	 	chemical toxicant	 	1.432	 	5.85E-06	BCL2,PIM1,PTPRC,SOCS3,TXNIP	 
+STAT5B	 	transcription regulator	 	1.964	 	6.05E-06	AHNAK,BCL2,MYC,PIM1,SOCS3	11 (11)
+geldanamycin	 	chemical - endogenous non-mammalian	 	0.845	 	6.15E-06	BCL2,HSP90AA1,HSP90AB1,HSPA5,MYC	7 (3)
+IL5	 	cytokine	 	1.130	bias	6.47E-06	BCL2,HSPA5,MYC,PIM1,PTPRC	7 (5)
+BCR (complex)	 	complex	 	 	 	7.38E-06	BCL2,HSPA5,MYC,PIM1	12 (13)
+glucocorticoid	 	chemical drug	Inhibited	-2.183	 	7.51E-06	BCL2,MYC,SOCS3,TSC22D3,TXNIP	10 (10)
+PI3K (complex)	 	complex	Activated	2.190	 	7.51E-06	BCL2,MYC,PIM1,SOCS3,TXNIP	11 (11)
+tetradecanoylphorbol acetate	 	chemical drug	Activated	2.485	 	7.87E-06	BCL2,HSP90AB1,HSPA5,MYC,PIM1,PTPRC,SOCS3,TSC22D3	11 (8)
+FLT3	 	kinase	 	 	 	8.31E-06	BCL2,MYC,PIM1	7 (6)
+UTP18	 	other	 	 	 	8.60E-06	BCL2,MYC	 
+APAF1	 	other	 	 	 	8.60E-06	BCL2,HSPA5	 
+ampelopsin	 	chemical drug	 	 	 	8.60E-06	BCL2,HSPA5	 
+beta-estradiol	 	chemical - endogenous mammalian	Activated	2.813	 	8.74E-06	BCL2,HLA-E,HSP90AB1,HSPA5,MYC,SLC2A3,SOCS3,TSC22D3,TXNIP,ZFP36L2	11 (5)
+mibolerone	 	chemical drug	 	1.000	 	8.77E-06	AHNAK,HLA-E,HSPA5,MYC	 
+ETV6-RUNX1	 	fusion gene/product	 	-0.492	 	9.96E-06	MYC,PIM1,PTPRC,STK17B,TSC22D3	 
+IL27	 	cytokine	 	 	 	1.01E-05	HLA-E,MYC,PIM1,SOCS3	7 (5)
+RBM5	 	other	 	 	 	1.03E-05	BCL2,HSP90AA1,PIM1	 
+2-amino-1-methyl-6-phenylimidazo-4-5-b-pyridine	 	chemical toxicant	 	 	 	1.03E-05	BCL2,HSP90AA1,HSPA5	 
+IL7	 	cytokine	 	0.501	 	1.03E-05	BCL2,MYC,PIM1,SOCS3	11 (12)
+tamoxifen	 	chemical drug	 	0.104	 	1.06E-05	AHNAK,BCL2,HSP90AB1,MYC,SLC2A3	 
+imatinib	 	chemical drug	 	-1.993	 	1.19E-05	BCL2,HSP90AB1,HSPA5,MYC,PIM1	9 (6)
+dexamethasone	 	chemical drug	 	-1.541	 	1.22E-05	BCL2,HSPA5,MYC,NFKBIZ,PIM1,SLC2A3,SOCS3,TSC22D3,TXNIP,ZFP36L2	11 (7)
+PDGF BB	 	complex	 	1.601	 	1.26E-05	HLA-E,MYC,PIM1,SLC2A3,SOCS3	5 (2)
+ATP2B2	 	transporter	 	 	 	1.29E-05	BCL2,HSPA5	 
+COL4A1	 	other	 	 	 	1.29E-05	BCL2,HSPA5	 
+fenebrutinib	 	chemical drug	 	 	 	1.29E-05	BCL2,MYC	 
+FOXO3	 	transcription regulator	 	-0.975	 	1.38E-05	BCL2,MBNL1,MYC,PTPRC,TXNIP	 
+nitric oxide	 	chemical - endogenous mammalian	 	 	 	1.44E-05	BCL2,HSP90AA1,HSP90AB1,MYC	7 (3)
+EGR2	 	transcription regulator	 	1.987	bias	1.52E-05	BCL2,HSPA5,MYC,SOCS3	7 (4)
+camptothecin	 	chemical drug	 	 	 	1.65E-05	BCL2,HLA-E,HLA-F,HSPA5,MYC,STK17B	 
+MTOR	 	kinase	 	0.765	 	1.77E-05	BCL2,HSP90AB1,MYC,SOCS3,TXNIP	11 (13)
+NKX3-1	 	transcription regulator	 	 	 	1.78E-05	MYC,PIM1,PTPRC	 
+androgen	 	chemical drug	 	 	 	1.79E-05	BCL2,MYC,PIM1,PTPRC	 
+ganetespib	 	chemical drug	 	 	 	1.80E-05	BCL2,MYC	 
+curcumin	 	chemical drug	 	-1.945	 	1.87E-05	BCL2,MYC,PIM1,SOCS3,TSC22D3	13 (12)
+PTH	 	other	 	 	 	1.88E-05	AHNAK,BCL2,HSPA5,SOCS3	7 (4)
+PIM1	0.468	kinase	 	 	 	1.88E-05	BCL2,MYC,PIM1	 
+SMARCA4	 	transcription regulator	 	-0.156	bias	2.04E-05	AHNAK,BCL2,HLA-E,HLA-F,MYC,NFKBIZ	 
+PAX5	 	transcription regulator	 	 	 	2.10E-05	BCL2,SLC2A3,TXNIP	 
+CSF3	 	cytokine	 	1.000	 	2.10E-05	BCL2,MYC,PIM1,SOCS3	12 (11)
+CD3	 	complex	 	1.489	 	2.15E-05	BCL2,HSP90AA1,HSPA5,MYC,PTPRC,SOCS3	10 (13)
+LEPR	 	transmembrane receptor	 	 	 	2.20E-05	BCL2,SOCS3,STK17B,TSC22D3	 
+THPO	 	cytokine	 	 	 	2.21E-05	MYC,PIM1,SOCS3	12 (13)
+NFkB (complex)	 	complex	 	1.889	bias	2.27E-05	BCL2,CYLD,HLA-F,MYC,NFKBIZ,SOCS3	 
+SULT2B1	 	enzyme	 	 	 	2.40E-05	BCL2,MYC	 
+MM-401	 	chemical reagent	 	 	 	2.40E-05	BCL2,MYC	2 (2)
+adenosine	 	chemical - endogenous mammalian	 	 	 	2.45E-05	HSPA5,SOCS3,TXNIP	 
+cadmium chloride	 	chemical toxicant	 	 	 	2.45E-05	HSP90AA1,HSPA5,MYC	 
+acetaminophen	 	chemical drug	 	 	 	2.50E-05	BCL2,HSPA5,MYC,SOCS3	11 (11)
+TLR4	 	transmembrane receptor	 	1.932	 	2.67E-05	BCL2,HSPA5,MYC,NFKBIZ,SOCS3	10 (14)
+SIN3A	 	transcription regulator	 	 	 	2.71E-05	BCL2,MYC,TXNIP	 
+KRAS	 	enzyme	 	 	 	2.83E-05	AHNAK,BCL2,HSPA5,MYC,PIM1,PTPRC	7 (4)
+OSMR	 	transmembrane receptor	 	 	 	2.84E-05	BCL2,PIM1,SOCS3	7 (5)
+IL6ST	 	transmembrane receptor	 	 	 	2.84E-05	MYC,PIM1,SOCS3	12 (13)
+ethanol	 	chemical - endogenous mammalian	 	-0.072	 	2.98E-05	BCL2,HSP90AB1,HSPA5,MYC,TSC22D3	8 (7)
+MAP2K1	 	kinase	 	 	 	3.08E-05	BCL2,HSPA5,MYC,PIM1	8 (7)
+bazedoxifene	 	chemical drug	 	 	 	3.09E-05	BCL2,MYC	 
+GPR183	 	G-protein coupled receptor	 	 	 	3.09E-05	BCL2,MYC	 
+dantrolene	 	chemical drug	 	 	 	3.09E-05	BCL2,HSPA5	 
+prodigiosin	 	chemical toxicant	 	 	 	3.09E-05	BCL2,HSPA5	 
+genistein	 	chemical drug	 	-1.516	 	3.24E-05	BCL2,HSPA5,MYC,PIM1,STK17B	8 (7)
+CRH	 	cytokine	 	 	 	3.27E-05	BCL2,SLC2A3,SOCS3	 
+EDN1	 	cytokine	 	 	 	3.47E-05	BCL2,HSPA5,MYC,SOCS3	9 (14)
+Igm	 	complex	 	 	 	3.57E-05	BCL2,MYC,PIM1	11 (13)
+calphostin C	 	chemical - kinase inhibitor	 	 	 	3.57E-05	BCL2,HSPA5,MYC	9 (15)
+NR3C1	 	ligand-dependent nuclear receptor	 	 	 	3.62E-05	BCL2,HSP90AB1,MYC,SLC2A3,STK17B,TSC22D3	 
+PTEN	 	phosphatase	 	-1.008	 	3.68E-05	BCL2,MYC,PIM1,PTPRC,SOCS3,TSC22D3	8 (4)
+Shc	 	group	 	 	 	3.86E-05	BCL2,MYC	2 (6)
+IL9R	 	transmembrane receptor	 	 	 	3.86E-05	MYC,PIM1	 
+acriflavine	 	chemical toxicant	 	 	 	3.86E-05	MYC,SOCS3	 
+premarin	 	chemical drug	 	 	 	3.86E-05	BCL2,MYC	 
+carmustine	 	chemical drug	 	 	 	3.86E-05	HSP90AA1,HSP90AB1	 
+bromobenzene	 	chemical toxicant	 	 	 	3.90E-05	HSP90AA1,HSPA5,MYC	 
+IKZF3	 	transcription regulator	 	 	 	4.07E-05	BCL2,MYC,NFKBIZ	 
+triamcinolone acetonide	 	chemical drug	 	-1.953	 	4.12E-05	BCL2,MYC,TSC22D3,TXNIP	 
+CEBPB	 	transcription regulator	 	1.452	 	4.21E-05	BCL2,HSP90AA1,MYC,NFKBIZ,SOCS3	9 (8)
+HIF1A	 	transcription regulator	 	0.105	 	4.36E-05	BCL2,HSPA5,MYC,SLC2A3,SOCS3	12 (16)
+ANGPT2	 	growth factor	 	1.964	 	4.51E-05	BCL2,HSP90AA1,HSPA5,TXNIP	 
+EP300	 	transcription regulator	 	 	 	4.70E-05	HSP90AB1,MYC,SOCS3,TXNIP,ZFP36L2	 
+RAF1	 	kinase	 	-1.412	bias	4.77E-05	BCL2,MYC,TXNIP,ZFP36L2	 
+LIF	 	cytokine	 	1.952	 	4.77E-05	AHNAK,MYC,PIM1,SOCS3	7 (5)
+CSF1	 	cytokine	 	1.958	bias	4.85E-05	BCL2,HSPA5,MYC,PTPRC	7 (4)
+NFKBIA	 	transcription regulator	 	1.114	 	4.91E-05	BCL2,HSPA5,MYC,PIM1,SOCS3	12 (16)
+Il3	 	cytokine	 	 	 	4.99E-05	BCL2,MYC,PIM1	10 (12)
+CD40	 	transmembrane receptor	 	 	 	5.21E-05	BCL2,HSPA5,MYC,PIM1	8 (10)
+PRNP	 	other	 	 	 	5.39E-05	BCL2,HSPA5,MYC	8 (13)
+embelin	 	chemical - endogenous non-mammalian	 	 	 	5.66E-05	BCL2,MYC	 
+JUP	 	other	 	 	 	5.66E-05	BCL2,MYC	2 (2)
+MAPKAPK3	 	kinase	 	 	 	5.66E-05	BCL2,HSPA5	 
+cucurbitacin B	 	chemical - endogenous non-mammalian	 	 	 	5.66E-05	BCL2,MYC	 
+Mt	 	group	 	 	 	5.66E-05	BCL2,HSPA5	 
+dehydroisoandrosterone	 	chemical - endogenous mammalian	 	 	 	6.03E-05	BCL2,HSP90AB1,MYC	7 (4)
+palmitic acid	 	chemical - endogenous mammalian	 	1.103	 	6.08E-05	BCL2,HSPA5,SOCS3,TXNIP	7 (8)
+Growth hormone	 	group	 	1.310	 	6.28E-05	BCL2,MYC,SOCS3,TXNIP	11 (17)
+SB203580	 	chemical - kinase inhibitor	Inhibited	-2.153	bias	6.44E-05	BCL2,HSPA5,MYC,SOCS3,STK17B	10 (15)
+Ppp2c	 	group	 	 	 	6.68E-05	BCL2,PIM1	 
+CSF2RA	 	transmembrane receptor	 	 	 	6.68E-05	MYC,PIM1	 
+pimozide	 	chemical drug	 	 	 	6.68E-05	BCL2,PIM1	 
+gambogic acid	 	chemical - endogenous non-mammalian	 	 	 	6.68E-05	BCL2,MYC	2 (4)
+VDR	 	transcription regulator	 	-1.000	 	6.82E-05	BCL2,MYC,SOCS3,TXNIP	9 (10)
+estrogen receptor	 	group	 	1.131	 	7.16E-05	BCL2,HSP90AA1,MYC,TSC22D3	7 (2)
+homocysteine	 	chemical - endogenous mammalian	 	 	 	7.22E-05	BCL2,HSPA5,SOCS3	8 (10)
+IFNA2	 	cytokine	 	-0.124	bias	7.40E-05	BCL2,HLA-E,MYC,SOCS3	7 (4)
+NFYA	 	transcription regulator	 	 	 	7.47E-05	BCL2,HSPA5,TXNIP	 
+TLR9	 	transmembrane receptor	 	1.901	bias	7.51E-05	BCL2,MYC,NFKBIZ,SOCS3	11 (12)
+Insulin	 	group	Activated	2.183	 	7.70E-05	BCL2,HSP90AA1,HSPA5,MYC,SLC2A3	10 (10)
+IKBKE	 	kinase	 	 	 	7.73E-05	BCL2,MYC,SLC2A3	 
+lenalidomide	 	chemical drug	 	-0.068	 	7.76E-05	HSPA5,MYC,NFKBIZ,PTPRC	 
+VCP	 	enzyme	 	 	 	7.79E-05	BCL2,HSPA5	 
+GTF2I	 	transcription regulator	 	 	 	7.79E-05	HSPA5,MYC	 
+pyruvic acid	 	chemical - endogenous mammalian	 	 	 	7.79E-05	BCL2,SLC2A3	 
+zeranol	 	chemical - endogenous mammalian	 	 	 	7.79E-05	BCL2,MYC	 
+pyrimidin-2-one beta-ribofuranoside	 	chemical reagent	 	 	 	7.79E-05	BCL2,HSPA5	 
+growth factor	 	group	 	 	 	7.79E-05	BCL2,MYC	2 (3)
+MAX	 	transcription regulator	 	 	 	7.99E-05	MYC,SLC2A3,TXNIP	 
+tert-butyl-hydroquinone	 	chemical reagent	 	 	 	7.99E-05	BCL2,HSPA5,ZFP36L2	 
+CSF2	 	cytokine	Activated	2.192	bias	8.00E-05	BCL2,MYC,PIM1,SLC2A3,SOCS3	11 (10)
+bortezomib	 	chemical drug	 	0.620	 	8.00E-05	BCL2,HSP90AA1,HSPA5,MYC	8 (4)
+IKZF1	 	transcription regulator	 	-1.958	 	8.51E-05	MYC,NFKBIZ,SLC2A3,TXNIP	 
+6-hydroxydopamine	 	chemical toxicant	 	 	 	8.54E-05	BCL2,HSP90AB1,HSPA5	 
+MYC	0.319	transcription regulator	 	1.277	 	8.69E-05	BCL2,HLA-E,HSP90AA1,MYC,PTPRC,SLC2A3,TXNIP	 
+1'-acetoxychavicol acetate	 	chemical reagent	 	 	 	8.98E-05	BCL2,MYC	2 (4)
+costunolide	 	chemical - endogenous non-mammalian	 	 	 	8.98E-05	BCL2,MYC	 
+KITLG	 	growth factor	 	 	 	9.05E-05	BCL2,PIM1,TSC22D3,TXNIP	 
+IL17A	 	cytokine	 	1.247	 	9.33E-05	BCL2,MYC,NFKBIZ,SOCS3	11 (12)
+hydrogen peroxide	 	chemical - endogenous mammalian	 	-0.183	 	9.93E-05	BCL2,HSPA5,MYC,PIM1,TXNIP	10 (14)
+Stat5 dimer	 	complex	 	 	 	1.03E-04	BCL2,MYC	 
+hydrogen sulfide	 	chemical - endogenous mammalian	 	 	 	1.03E-04	BCL2,HSPA5	 
+myricetin	 	chemical - endogenous non-mammalian	 	 	 	1.03E-04	BCL2,MYC	2 (2)
+tauroursodeoxycholic acid	 	chemical - endogenous mammalian	 	 	 	1.03E-04	BCL2,HSPA5	 
+cyclic AMP	 	chemical - endogenous mammalian	 	1.067	 	1.05E-04	BCL2,MYC,SOCS3,TXNIP	11 (17)
+LGALS3	 	other	 	 	 	1.06E-04	BCL2,MYC,SOCS3	14 (21)
+EIF2AK2	 	kinase	 	 	 	1.06E-04	BCL2,MYC,SOCS3	11 (17)
+CDKN1A	 	kinase	 	 	 	1.10E-04	BCL2,HSPA5,MYC,PTPRC	 
+NRG1	 	growth factor	 	 	 	1.11E-04	BCL2,MYC,SLC2A3,ZFP36L2	 
+vorinostat	 	chemical drug	 	-0.339	 	1.14E-04	BCL2,HSPA5,MYC,SOCS3	11 (15)
+Smad2/3-Smad4	 	complex	 	 	 	1.16E-04	BCL2,MYC	 
+Integrin	 	complex	 	 	 	1.16E-04	MYC,SOCS3	 
+PPP1R1B	 	phosphatase	 	 	 	1.16E-04	BCL2,MYC	2 (3)
+MDK	 	growth factor	 	 	 	1.16E-04	BCL2,PTPRC	 
+CCAT2	 	other	 	 	 	1.16E-04	BCL2,MYC	 
+mir-154	 	microRNA	 	 	 	1.31E-04	BCL2,MYC	 
+GFI1B	 	transcription regulator	 	 	 	1.31E-04	MYC,SOCS3	 
+antimycin A	 	chemical - endogenous non-mammalian	 	 	 	1.31E-04	BCL2,TXNIP	 
+indirubin	 	chemical drug	 	 	 	1.31E-04	BCL2,MYC	2 (4)
+IGF1R	 	transmembrane receptor	 	 	 	1.31E-04	BCL2,HSPA5,MYC,ZFP36L2	 
+PRL	 	cytokine	 	1.857	 	1.33E-04	BCL2,MYC,PIM1,SOCS3	11 (9)
+potassium chloride	 	chemical drug	 	 	 	1.34E-04	HSPA5,MYC,TXNIP	 
+resiquimod	 	chemical drug	 	 	 	1.37E-04	BCL2,HSPA5,NFKBIZ,PTPRC	 
+trichostatin A	 	chemical drug	 	-0.708	 	1.41E-04	BCL2,HSPA5,MBNL1,MYC,PIM1,TXNIP	8 (7)
+OSM	 	cytokine	 	1.244	 	1.44E-04	BCL2,HLA-F,HSPA5,MYC,SOCS3	13 (19)
+DPP-23	 	chemical reagent	 	 	 	1.46E-04	HSP90AA1,HSPA5	 
+EIF2AK3	 	kinase	 	 	 	1.46E-04	HSPA5,MYC,TXNIP	 
+SYK	 	kinase	 	 	 	1.58E-04	BCL2,PIM1,TSC22D3	 
+bisindolylmaleimide I	 	chemical - kinase inhibitor	 	 	 	1.58E-04	BCL2,HSP90AB1,HSPA5	6 (3)
+resveratrol	 	chemical drug	 	 	 	1.60E-04	BCL2,HSPA5,MALAT1,MYC	7 (8)
+dactolisib	 	chemical drug	 	 	 	1.62E-04	BCL2,MYC	2 (5)
+PTP4A3	 	phosphatase	 	 	 	1.62E-04	HSP90AA1,MYC	 
+STAU1	 	transporter	 	 	 	1.62E-04	MYC,SLC2A3	 
+KIT	 	transmembrane receptor	 	 	 	1.62E-04	BCL2,MYC,SOCS3	13 (20)
+SP1	 	transcription regulator	 	 	 	1.65E-04	BCL2,HSPA5,MYC,PIM1,SLC2A3	6 (4)
+hyaluronic acid	 	chemical - endogenous mammalian	 	 	 	1.67E-04	BCL2,PTPRC,SOCS3	 
+salinosporamide A	 	chemical drug	 	 	 	1.79E-04	BCL2,MYC	 
+YWHAZ	 	enzyme	 	 	 	1.79E-04	HSPA5,TSC22D3	 
+MGAT5	 	enzyme	 	 	 	1.79E-04	MYC,PTPRC	 
+SIN3B	 	transcription regulator	 	 	 	1.79E-04	MYC,TXNIP	 
+NLRC5	 	transcription regulator	 	 	 	1.79E-04	HLA-E,HLA-F	 
+epirubicin	 	chemical drug	 	 	 	1.79E-04	BCL2,MYC	 
+ERK1/2	 	group	 	 	 	1.82E-04	BCL2,HSPA5,MYC,SOCS3	12 (12)
+paclitaxel	 	chemical drug	 	 	 	1.82E-04	BCL2,HSP90AB1,MYC,SLC2A3	4 (2)
+CDKN1B	 	kinase	 	 	 	1.85E-04	BCL2,HSPA5,MYC	8 (7)
+JQ1	 	chemical reagent	 	 	 	1.94E-04	BCL2,HSPA5,MYC	8 (7)
+IKK (complex)	 	complex	 	 	 	1.97E-04	BCL2,MYC	2 (4)
+IL15RA	 	transmembrane receptor	 	 	 	1.97E-04	BCL2,PTPRC	 
+Alpha catenin	 	group	 	 	 	1.99E-04	MYC,NFKBIZ,SOCS3	 
+GSK3B	 	kinase	 	 	 	1.99E-04	BCL2,MYC,NFKBIZ	6 (4)
+prostaglandin E2	 	chemical - endogenous mammalian	 	 	 	2.01E-04	BCL2,MYC,SOCS3,TSC22D3	10 (9)
+ARNT	 	transcription regulator	 	 	 	2.04E-04	BCL2,SLC2A3,SOCS3	5 (2)
+staurosporine	 	chemical - kinase inhibitor	 	 	 	2.04E-04	BCL2,MYC,PIM1	8 (7)
+STAT3	 	transcription regulator	Activated	2.164	 	2.10E-04	BCL2,MYC,NFKBIZ,PIM1,SOCS3	12 (10)
+pregna-4,17-diene-3,16-dione	 	chemical - endogenous non-mammalian	 	 	 	2.15E-04	BCL2,MYC	 
+SGPL1	 	enzyme	 	 	 	2.15E-04	BCL2,HSPA5	 
+oxymatrine	 	chemical drug	 	 	 	2.15E-04	BCL2,PTPRC	 
+ibrutinib	 	chemical drug	 	 	 	2.15E-04	BCL2,MYC	 
+MBP	 	other	 	 	 	2.15E-04	MYC,PTPRC	 
+LOX	 	enzyme	 	 	 	2.15E-04	BCL2,MYC	2 (3)
+CRHR2	 	G-protein coupled receptor	 	 	 	2.15E-04	BCL2,SLC2A3	 
+PD184352	 	chemical drug	 	 	 	2.15E-04	BCL2,HSPA5	 
+evodiamine	 	chemical - endogenous non-mammalian	 	 	 	2.15E-04	BCL2,MYC	2 (4)
+BDNF	 	growth factor	 	1.103	 	2.18E-04	BCL2,HSPA5,MALAT1,TXNIP	 
+ESR1	 	ligand-dependent nuclear receptor	Activated	2.475	 	2.20E-04	AHNAK,BCL2,HLA-E,HSP90AA1,MYC,TSC22D3,TXNIP	10 (3)
+reactive oxygen species	 	chemical toxicant	 	 	 	2.24E-04	BCL2,HSPA5,MYC	9 (15)
+MECP2	 	transcription regulator	 	 	 	2.35E-04	HSPA5,MYC,SLC2A3	 
+zerumbone	 	chemical - endogenous non-mammalian	 	 	 	2.35E-04	BCL2,MYC	2 (4)
+Ikb	 	group	 	 	 	2.35E-04	BCL2,HSPA5	 
+Ciap	 	group	 	 	 	2.35E-04	BCL2,MYC	 
+GRHL2	 	transcription regulator	 	 	 	2.35E-04	BCL2,MYC	 
+PLD1	 	enzyme	 	 	 	2.35E-04	BCL2,MYC	 
+LCAT	 	enzyme	 	 	 	2.35E-04	HSPA5,MYC	 
+APOE	 	transporter	 	 	 	2.37E-04	HSP90AB1,HSPA5,SOCS3,TXNIP	 
+WNT5A	 	cytokine	 	 	 	2.46E-04	BCL2,MYC,SOCS3	11 (13)
+CCND1	 	transcription regulator	 	 	 	2.51E-04	AHNAK,BCL2,MYC,PTPRC	 
+5-fluorouracil	 	chemical drug	 	-1.414	 	2.54E-04	BCL2,HSP90AB1,MYC,TXNIP	 
+TRA	 	transmembrane receptor	 	 	 	2.55E-04	BCL2,SOCS3	 
+SOX6	 	transcription regulator	 	 	 	2.55E-04	MYC,SOCS3	 
+piceatannol	 	chemical - endogenous non-mammalian	 	 	 	2.55E-04	BCL2,MYC	2 (6)
+tosylphenylalanyl chloromethyl ketone	 	chemical - protease inhibitor	 	 	 	2.55E-04	BCL2,MYC	 
+Z-LLL-CHO	 	chemical - protease inhibitor	 	1.928	 	2.63E-04	BCL2,HSP90AA1,HSPA5,MYC	8 (4)
+DCAF1	 	kinase	 	 	 	2.76E-04	SOCS3,TXNIP	 
+diazoxide	 	chemical drug	 	 	 	2.76E-04	BCL2,MYC	2 (3)
+SGPP2	 	phosphatase	 	 	 	2.76E-04	HSP90AA1,HSPA5	 
+CASR	 	G-protein coupled receptor	 	 	 	2.86E-04	BCL2,SOCS3,TXNIP	 
+IL1	 	group	Activated	2.000	 	2.94E-04	BCL2,MYC,SLC2A3,SOCS3	11 (15)
+CPE	 	peptidase	 	 	 	2.98E-04	BCL2,MYC	 
+ceramide	 	chemical - endogenous mammalian	 	 	 	2.98E-04	BCL2,MYC	2 (7)
+SP110	 	transcription regulator	 	 	 	3.12E-04	CYLD,MYC,TXNIP	 
+triptolide	 	chemical drug	 	 	 	3.12E-04	BCL2,MYC,SOCS3	14 (20)
+quercetin	 	chemical drug	 	 	 	3.12E-04	BCL2,HSPA5,MYC	8 (14)
+BRD4	 	kinase	 	 	 	3.18E-04	BCL2,MYC,PIM1	 
+ZBTB16	 	transcription regulator	 	 	 	3.25E-04	MYC,NFKBIZ,TSC22D3	 
+sulforafan	 	chemical drug	 	 	 	3.32E-04	BCL2,PTPRC,SOCS3	 
+CRTC2	 	other	 	 	 	3.44E-04	BCL2,MYC	 
+letrozole	 	chemical drug	 	 	 	3.44E-04	BCL2,MYC	2 (5)
+AHR	 	ligand-dependent nuclear receptor	 	0.391	 	3.52E-04	HSP90AA1,HSPA5,MYC,SOCS3	5 (3)
+STAT1	 	transcription regulator	 	 	 	3.56E-04	HLA-E,MYC,PIM1,SOCS3	6 (3)
+PRKAA1	 	kinase	 	 	 	3.59E-04	BCL2,HSPA5,SOCS3	9 (11)
+Tnf (family)	 	group	 	 	 	3.67E-04	BCL2,MYC,SOCS3	12 (19)
+CpG oligonucleotide	 	chemical drug	 	 	 	3.67E-04	BCL2,MYC,NFKBIZ	9 (8)
+ARRB1	 	other	 	 	 	3.69E-04	BCL2,MYC	2 (3)
+dithiothreitol	 	chemical reagent	 	 	 	3.69E-04	HSPA5,MYC	 
+bardoxolone methyl	 	chemical drug	 	 	 	3.69E-04	BCL2,MYC	2 (6)
+MAP3K8	 	kinase	 	 	 	3.81E-04	SOCS3,STK17B,TXNIP	 
+26s Proteasome	 	complex	 	 	 	3.89E-04	MYC,SOCS3,TXNIP	6 (5)
+P38 MAPK	 	group	 	1.953	bias	3.94E-04	BCL2,HSPA5,MYC,SOCS3	10 (13)
+CLU	 	other	 	 	 	3.94E-04	BCL2,HSPA5	 
+bufalin	 	chemical reagent	 	 	 	3.94E-04	BCL2,HSPA5	 
+cytokine	 	group	 	 	 	4.04E-04	BCL2,MYC,SOCS3	12 (18)
+Stat3-Stat3	 	complex	 	 	 	4.20E-04	MYC,SOCS3	 
+PRKCZ	 	kinase	 	 	 	4.20E-04	BCL2,MYC	2 (5)
+PRLR	 	transmembrane receptor	 	 	 	4.20E-04	MYC,PIM1	 
+3M-011	 	chemical reagent	 	 	 	4.47E-04	BCL2,MYC	 
+Cdk	 	group	 	 	 	4.47E-04	MYC,TXNIP	 
+ZBTB7A	 	transcription regulator	 	 	 	4.47E-04	MYC,SLC2A3	 
+PDPK1	 	kinase	 	 	 	4.47E-04	BCL2,MYC	2 (3)
+cardiotoxin	 	chemical - other	 	 	 	4.60E-04	HSP90AA1,HSPA5,PTPRC	 
+CREBBP	 	transcription regulator	 	 	 	4.70E-04	BCL2,MYC,SOCS3,ZFP36L2	4 (3)
+PAK1	 	kinase	 	 	 	4.75E-04	BCL2,MYC	2 (3)
+fisetin	 	chemical toxicant	 	 	 	4.75E-04	BCL2,MYC	2 (7)
+PSEN1	 	peptidase	 	 	 	4.79E-04	HLA-E,HSP90AA1,HSPA5,MYC	 
+EIF4E	 	translation regulator	 	 	 	4.85E-04	BCL2,MYC,PIM1	 
+CD40LG	 	cytokine	 	 	 	4.98E-04	BCL2,HSP90AA1,MYC,PIM1	8 (4)
+INSR	 	kinase	 	 	 	5.02E-04	MYC,PIM1,SLC2A3,SOCS3	9 (6)
+SU6656	 	chemical toxicant	 	 	 	5.03E-04	MYC,SOCS3	 
+Hdac	 	group	 	 	 	5.11E-04	BCL2,MYC,TXNIP	4 (5)
+SATB1	 	transcription regulator	 	 	 	5.11E-04	BCL2,HSP90AA1,TSC22D3	 
+tretinoin	 	chemical - endogenous mammalian	 	-1.253	 	5.19E-04	AHNAK,BCL2,HSP90AA1,MYC,PIM1,PTPRC,TSC22D3	9 (4)
+Salmonella enterica serotype abortus equi lipopolysaccharide	 	chemical toxicant	 	 	 	5.30E-04	MBNL1,NFKBIZ,SOCS3	 
+EZR	 	other	 	 	 	5.32E-04	BCL2,MYC	2 (3)
+ARRB2	 	other	 	 	 	5.32E-04	MYC,NFKBIZ	 
+NLRP12	 	other	 	 	 	5.32E-04	HLA-E,HLA-F	 
+HSPG2	 	enzyme	 	 	 	5.32E-04	BCL2,HSP90AA1	 
+IGF2	 	growth factor	 	 	 	5.39E-04	MYC,PIM1,SOCS3	10 (9)
+NR1H4	 	ligand-dependent nuclear receptor	 	 	 	5.39E-04	HSPA5,MYC,TXNIP	 
+5-azacytidine	 	chemical drug	 	 	 	5.39E-04	HSPA5,MYC,SOCS3	 
+MAPK8	 	kinase	 	 	 	5.57E-04	BCL2,MYC,TSC22D3	 
+3M-001	 	chemical drug	 	 	 	5.63E-04	BCL2,MYC	 
+ALOX5	 	enzyme	 	 	 	5.63E-04	HSP90AA1,MYC	 
+bisphenol A	 	chemical - endogenous mammalian	 	 	 	5.77E-04	BCL2,HSP90AB1,STK17B	 
+docosahexaenoic acid	 	chemical drug	 	 	 	5.77E-04	BCL2,MYC,SOCS3	11 (18)
+ADIPOQ	 	other	 	 	 	5.86E-04	BCL2,SLC2A3,SOCS3	10 (7)
+3-methyladenine	 	chemical toxicant	 	 	 	5.93E-04	BCL2,HSPA5	 
+IL9	 	cytokine	 	 	 	5.93E-04	MYC,PIM1	 
+ethylene glycol tetraacetic acid	 	chemical reagent	 	 	 	5.93E-04	BCL2,HSPA5	 
+IL21	 	cytokine	 	 	 	6.06E-04	BCL2,PTPRC,SOCS3	 
+MYB	 	transcription regulator	 	 	 	6.06E-04	BCL2,HSPA5,MYC	6 (3)
+metformin	 	chemical drug	 	 	 	6.06E-04	BCL2,HSPA5,MYC	10 (18)
+TNFSF13	 	cytokine	 	 	 	6.25E-04	BCL2,MYC	2 (4)
+CARM1	 	transcription regulator	 	 	 	6.25E-04	HSP90AA1,MYC	 
+TNFRSF9	 	transmembrane receptor	 	 	 	6.25E-04	BCL2,PTPRC	 
+sorafenib	 	chemical drug	 	 	 	6.25E-04	HSPA5,PIM1	 
+memantine	 	chemical drug	 	 	 	6.25E-04	HSP90AB1,HSPA5	 
+SHH	 	peptidase	 	 	 	6.36E-04	BCL2,MYC,TSC22D3	 
+ERBB2	 	kinase	 	 	 	6.39E-04	AHNAK,BCL2,MYC,STK17B,ZFP36L2	 
+S100A8	 	other	 	 	 	6.47E-04	BCL2,SOCS3,TXNIP	 
+IL18	 	cytokine	 	 	 	6.57E-04	BCL2,NFKBIZ,SLC2A3	 
+TLR7/8	 	group	 	 	 	6.91E-04	BCL2,NFKBIZ	 
+benzyl isothiocyanate	 	chemical - endogenous non-mammalian	 	 	 	6.91E-04	BCL2,MYC	 
+H-7	 	chemical - kinase inhibitor	 	 	 	6.91E-04	MYC,PIM1	 
+NFE2L2	 	transcription regulator	 	1.951	 	6.94E-04	BCL2,HSP90AA1,HSP90AB1,SOCS3	 
+15-deoxy-delta-12,14 -PGJ 2	 	chemical - endogenous mammalian	 	 	 	7.00E-04	BCL2,MYC,SOCS3	11 (17)
+CD2	 	transmembrane receptor	 	 	 	7.25E-04	BCL2,PTPRC	 
+chloropromazine	 	chemical drug	 	 	 	7.25E-04	SLC2A3,TSC22D3	 
+cinnamaldehyde	 	chemical toxicant	 	 	 	7.25E-04	BCL2,TXNIP	 
+SAHM1	 	chemical reagent	 	 	 	7.25E-04	MYC,ZFP36L2	 
+IL15	 	cytokine	 	1.014	 	7.30E-04	BCL2,MYC,PIM1,PTPRC	 
+metribolone	 	chemical reagent	 	 	 	7.30E-04	BCL2,HSPA5,MYC,TXNIP	6 (8)
+PDX1	 	transcription regulator	 	 	 	7.33E-04	HSPA5,MYC,TXNIP	 
+pirinixic acid	 	chemical toxicant	 	 	 	7.49E-04	HLA-E,HSP90AA1,MYC,PTPRC	 
+KL	 	enzyme	 	 	 	7.60E-04	BCL2,MYC	 
+H2AX	 	transcription regulator	 	 	 	7.60E-04	MYC,SLC2A3	 
+D-galactosamine	 	chemical - endogenous mammalian	 	 	 	7.60E-04	BCL2,MYC	 
+cyclosporin A	 	biologic drug	 	-0.803	 	7.74E-04	BCL2,HSP90AA1,HSPA5,MYC	9 (10)
+bexarotene	 	chemical drug	 	 	 	7.79E-04	BCL2,MALAT1,TSC22D3	 
+TNC	 	other	 	 	 	7.96E-04	BCL2,MYC	2 (6)
+decitabine	 	chemical drug	 	-0.448	 	8.05E-04	HLA-E,HSPA5,MYC,SLC2A3,SOCS3	5 (2)
+bleomycin	 	chemical drug	 	 	 	8.15E-04	BCL2,MYC,STK17B	 
+sodium bisulfide	 	chemical reagent	 	 	 	8.32E-04	BCL2,HSP90AB1	 
+A2M	 	transporter	 	 	 	8.32E-04	BCL2,HSPA5	 
+HDAC6	 	transcription regulator	 	 	 	8.32E-04	BCL2,MYC	 
+LEP	 	growth factor	 	0.989	 	8.47E-04	BCL2,HSPA5,MYC,SOCS3	10 (15)
+ID3	 	transcription regulator	 	 	 	8.51E-04	BCL2,MYC,SOCS3	9 (7)
+TGFBR2	 	kinase	 	 	 	8.64E-04	SLC2A3,SOCS3,TXNIP	 
+IL23	 	complex	 	 	 	8.70E-04	BCL2,HSPA5	 
+EGR3	 	transcription regulator	 	 	 	8.70E-04	MYC,SOCS3	 
+IL12A	 	cytokine	 	 	 	8.70E-04	BCL2,SOCS3	 
+IFNA4	 	cytokine	 	 	 	8.70E-04	HLA-E,MYC	 
+PRKACA	 	kinase	 	 	 	8.70E-04	MYC,SOCS3	 
+CXCL12	 	cytokine	 	 	 	8.76E-04	BCL2,MYC,SOCS3	13 (18)
+LRP6	 	transmembrane receptor	 	 	 	9.08E-04	MYC,SLC2A3	 
+TNFAIP3	 	enzyme	 	 	 	9.08E-04	BCL2,SOCS3	 
+quinolinic acid	 	chemical - endogenous mammalian	 	 	 	9.08E-04	BCL2,MYC	 
+vincristine	 	chemical drug	 	 	 	9.08E-04	BCL2,HSP90AB1	 
+GATA4	 	transcription regulator	 	 	 	9.15E-04	BCL2,HSPA5,MYC	 
+deferoxamine	 	chemical drug	 	 	 	9.15E-04	BCL2,MYC,SLC2A3	5 (3)
+wortmannin	 	chemical - kinase inhibitor	 	 	 	9.15E-04	BCL2,MYC,SOCS3	11 (17)
+etoposide	 	chemical drug	 	 	 	9.28E-04	BCL2,MYC,SLC2A3	4 (2)
+ELAVL1	 	other	 	 	 	9.28E-04	MYC,PTPRC,TSC22D3	 
+MYBL2	 	transcription regulator	 	 	 	9.47E-04	BCL2,MYC	 
+JAK3	 	kinase	 	 	 	9.47E-04	BCL2,SOCS3	 
+aldesleukin	 	biologic drug	 	 	 	9.47E-04	BCL2,HLA-F	 
+N(6)-methyl-2'-deoxyadenosine	 	chemical reagent	 	 	 	9.51E-04	SOCS3	 
+2'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	9.51E-04	TXNIP	 
+Ahr-aryl hydrocarbon-RelA	 	complex	 	 	 	9.51E-04	MYC	 
+sodium thiosulfate	 	chemical drug	 	 	 	9.51E-04	BCL2	 
+RGN	 	enzyme	 	 	 	9.51E-04	BCL2	 
+Ctf2	 	cytokine	 	 	 	9.51E-04	SOCS3	 
+HNRNPLL	 	other	 	 	 	9.51E-04	PTPRC	 
+METAP2	 	peptidase	 	 	 	9.51E-04	BCL2	 
+TCF4-CTNNβ	 	complex	 	 	 	9.51E-04	MYC	 
+RAB7	 	group	 	 	 	9.51E-04	MYC	 
+GLIPR1	 	other	 	 	 	9.51E-04	MYC	 
+NSMCE3	 	other	 	 	 	9.51E-04	MYC	 
+voxtalisib	 	chemical drug	 	 	 	9.51E-04	BCL2	 
+CAVIN1	 	transcription regulator	 	 	 	9.51E-04	MYC	 
+RBMS1	 	other	 	 	 	9.51E-04	MYC	 
+NAPA	 	transporter	 	 	 	9.51E-04	BCL2	 
+CDC45	 	other	 	 	 	9.51E-04	MYC	 
+mir-363	 	microRNA	 	 	 	9.51E-04	MYC	 
+DYNLT3	 	other	 	 	 	9.51E-04	BCL2	 
+CNOT9	 	other	 	 	 	9.51E-04	MYC	 
+HUNK	 	kinase	 	 	 	9.51E-04	MYC	 
+STXBP3	 	transporter	 	 	 	9.51E-04	HSPA5	 
+KDELR1	 	transporter	 	 	 	9.51E-04	HSPA5	 
+Sin3b	 	transcription regulator	 	 	 	9.51E-04	MYC	 
+RIT1	 	enzyme	 	 	 	9.51E-04	BCL2	 
+PRDM2	 	transcription regulator	 	 	 	9.51E-04	MYC	 
+PPP2R3A	 	phosphatase	 	 	 	9.51E-04	MYC	 
+TPD52	 	other	 	 	 	9.51E-04	BCL2	 
+ZBTB14	 	transcription regulator	 	 	 	9.51E-04	MYC	 
+RPS20	 	other	 	 	 	9.51E-04	MYC	 
+COL10A1	 	other	 	 	 	9.51E-04	HSPA5	 
+PTPRCAP	 	other	 	 	 	9.51E-04	PTPRC	 
+oligomycin A	 	chemical - endogenous non-mammalian	 	 	 	9.51E-04	TXNIP	 
+NMS-873	 	chemical reagent	 	 	 	9.51E-04	MYC	 
+RPL21	 	other	 	 	 	9.51E-04	MYC	 
+TLR4-IN-C34	 	chemical reagent	 	 	 	9.51E-04	HSPA5	 
+typhoid vaccine Ty21a	 	biologic drug	 	 	 	9.51E-04	PTPRC	 
+SU6657	 	chemical - kinase inhibitor	 	 	 	9.51E-04	MYC	 
+melarsoprol	 	chemical drug	 	 	 	9.51E-04	BCL2	 
+GS-626510	 	chemical reagent	 	 	 	9.51E-04	MYC	 
+pubchem compound 353999	 	chemical reagent	 	 	 	9.51E-04	MYC	 
+ACS-1	 	chemical reagent	 	 	 	9.51E-04	MYC	 
+2-nitrophenyl EGTA	 	chemical reagent	 	 	 	9.51E-04	AHNAK	 
+FUS-ERG	 	fusion gene/product	 	 	 	9.51E-04	PIM1	 
+BRD4-NUTM1	 	fusion gene/product	 	 	 	9.51E-04	MYC	 
+EWSR1-ERG	 	fusion gene/product	 	 	 	9.51E-04	PIM1	 
+AuNP@PEG@e14a2	 	chemical reagent	 	 	 	9.51E-04	BCL2	 
+SU11333	 	chemical - kinase inhibitor	 	 	 	9.51E-04	MYC	 
+3-methoxyapigenin	 	chemical - endogenous non-mammalian	 	 	 	9.51E-04	MYC	 
+3'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	9.51E-04	TXNIP	 
+P2y Receptor	 	group	 	 	 	9.51E-04	SLC2A3	 
+allose	 	chemical - endogenous mammalian	 	 	 	9.51E-04	TXNIP	 
+6alpha-fluorotestosterone	 	chemical toxicant	 	 	 	9.51E-04	BCL2	 
+AGT	 	growth factor	 	1.936	 	9.62E-04	BCL2,MYC,SOCS3,TXNIP	11 (17)
+IL12 (complex)	 	complex	 	 	 	9.67E-04	MYC,PIM1,SOCS3	12 (14)
+CD44	 	other	 	 	 	9.67E-04	BCL2,HSP90AB1,MYC	6 (3)
+NFATC2	 	transcription regulator	 	 	 	9.67E-04	MYC,NFKBIZ,SOCS3	8 (5)
+APLN	 	other	 	 	 	9.86E-04	BCL2,MYC	2 (3)
+IL24	 	cytokine	 	 	 	9.86E-04	BCL2,HSPA5	 
+BAPTA-AM	 	chemical reagent	 	 	 	9.86E-04	HSPA5,SOCS3	 
+FN1	 	enzyme	 	 	 	1.02E-03	BCL2,MYC,SOCS3	11 (18)
+CHUK	 	kinase	 	 	 	1.04E-03	HSP90AA1,MYC,SOCS3	 
+tunicamycin	 	chemical - endogenous non-mammalian	 	 	 	1.04E-03	HSPA5,MYC,TXNIP	 
+ID2	 	transcription regulator	 	 	 	1.05E-03	BCL2,MYC,SOCS3	9 (7)
+simvastatin	 	chemical drug	 	 	 	1.05E-03	BCL2,MYC,SOCS3	12 (19)
+PRMT1	 	enzyme	 	 	 	1.07E-03	BCL2,HSP90AA1	 
+HSPA5	0.265	enzyme	 	 	 	1.07E-03	BCL2,HSPA5	 
+BRD2	 	kinase	 	 	 	1.07E-03	BCL2,MYC	 
+Jnk	 	group	 	 	 	1.08E-03	HSPA5,MYC,SOCS3	10 (12)
+BCL6	 	transcription regulator	 	 	 	1.09E-03	BCL2,MYC,SOCS3	10 (12)
+PPARG	 	ligand-dependent nuclear receptor	 	 	 	1.10E-03	BCL2,MBNL1,SOCS3,TSC22D3	 
+HSF1	 	transcription regulator	 	 	 	1.11E-03	BCL2,HSP90AA1,HSP90AB1	 
+IGFBP2	 	other	 	 	 	1.11E-03	MALAT1,MYC	 
+brefeldin A	 	chemical - endogenous non-mammalian	 	 	 	1.11E-03	BCL2,HSPA5	 
+nitroprusside	 	chemical drug	 	 	 	1.11E-03	BCL2,MYC	2 (7)
+HGF	 	growth factor	 	 	 	1.15E-03	BCL2,MYC,PIM1,SOCS3	10 (12)
+GHR	 	transmembrane receptor	 	 	 	1.15E-03	MYC,SOCS3	 
+CD5	 	transmembrane receptor	 	 	 	1.15E-03	BCL2,PIM1	 
+CEBPE	 	transcription regulator	 	 	 	1.20E-03	BCL2,MYC	 
+MMP1	 	peptidase	 	 	 	1.20E-03	BCL2,MYC	 
+DETA-NONOate	 	chemical reagent	 	 	 	1.20E-03	MYC,TXNIP	 
+mir-204	 	microRNA	 	 	 	1.24E-03	BCL2,MYC	 
+FGF10	 	growth factor	 	 	 	1.24E-03	AHNAK,TMEM123	 
+IL2RG	 	transmembrane receptor	 	 	 	1.24E-03	BCL2,MYC	 
+3-nitropropionic acid	 	chemical toxicant	 	 	 	1.24E-03	BCL2,MYC	 
+anisomycin	 	chemical - endogenous non-mammalian	 	 	 	1.24E-03	BCL2,HSPA5	 
+PTPN6	 	phosphatase	 	 	 	1.29E-03	BCL2,MYC	2 (6)
+EBI3	 	cytokine	 	 	 	1.29E-03	MYC,PIM1	 
+EPAS1	 	transcription regulator	 	 	 	1.31E-03	BCL2,HSPA5,SLC2A3	 
+XBP1	 	transcription regulator	 	 	 	1.31E-03	BCL2,HSPA5,MYC	11 (15)
+streptozocin	 	chemical drug	 	 	 	1.32E-03	BCL2,SLC2A3,TXNIP	 
+S-nitroso-N-acetyl-DL-penicillamine	 	chemical reagent	 	 	 	1.33E-03	BCL2,MYC	2 (5)
+NCOR2	 	transcription regulator	 	 	 	1.33E-03	BCL2,MYC	2 (2)
+SERPINF1	 	other	 	 	 	1.33E-03	BCL2,MYC	2 (7)
+MAP2K7	 	kinase	 	 	 	1.33E-03	HSPA5,MYC	 
+luteolin	 	chemical drug	 	 	 	1.33E-03	BCL2,MYC	2 (7)
+glucosamine	 	chemical - endogenous mammalian	 	 	 	1.33E-03	BCL2,TXNIP	 
+WT1	 	transcription regulator	 	 	 	1.37E-03	BCL2,MYC,SLC2A3	 
+GPER1	 	G-protein coupled receptor	 	 	 	1.38E-03	HSPA5,MYC	 
+miR-145-5p (and other miRNAs w/seed UCCAGUU)	 	mature microRNA	 	 	 	1.38E-03	AHNAK,MYC	 
+N-methyl-D-aspartate	 	chemical drug	 	 	 	1.38E-03	HSPA5,MYC	 
+cholesterol	 	chemical - endogenous mammalian	 	 	 	1.39E-03	HSPA5,SOCS3,TMEM123	 
+ADCYAP1	 	other	 	 	 	1.41E-03	BCL2,MYC,SOCS3	14 (20)
+IL11	 	cytokine	 	 	 	1.43E-03	BCL2,SOCS3	 
+ZAP70	 	kinase	 	 	 	1.43E-03	HSP90AA1,TSC22D3	 
+emodin	 	chemical drug	 	 	 	1.43E-03	BCL2,HSPA5	 
+sodium arsenite	 	chemical drug	 	 	 	1.43E-03	BCL2,SOCS3	 
+actinomycin D	 	biologic drug	 	 	 	1.46E-03	BCL2,MYC,SOCS3	11 (15)
+mir-181	 	microRNA	 	 	 	1.48E-03	BCL2,CYLD	 
+STAT2	 	transcription regulator	 	 	 	1.48E-03	BCL2,SOCS3	 
+CXCR4	 	G-protein coupled receptor	 	 	 	1.48E-03	BCL2,MYC	2 (3)
+GPS2	 	transcription regulator	 	 	 	1.48E-03	MBNL1,MYC	 
+chloroquine	 	chemical drug	 	 	 	1.48E-03	BCL2,SOCS3	 
+ursolic acid	 	chemical drug	 	 	 	1.48E-03	BCL2,MYC	2 (5)
+thioctic acid	 	chemical drug	 	 	 	1.48E-03	BCL2,MYC	 
+IL1A	 	cytokine	 	 	 	1.50E-03	BCL2,MYC,NFKBIZ	6 (5)
+TP53	 	transcription regulator	Inhibited	-2.437	 	1.51E-03	BCL2,HSP90AA1,HSP90AB1,HSPA5,MYC,PIM1,TSC22D3	9 (7)
+TNFRSF8	 	transmembrane receptor	 	 	 	1.52E-03	AHNAK,MYC	 
+SCD	 	enzyme	 	 	 	1.52E-03	BCL2,HSPA5	 
+azoxymethane	 	chemical toxicant	 	 	 	1.52E-03	BCL2,MYC	2 (4)
+EGF	 	growth factor	 	 	 	1.53E-03	BCL2,MYC,SOCS3,ZFP36L2	9 (11)
+gentamicin	 	chemical drug	 	 	 	1.55E-03	HSP90AA1,HSPA5,MYC	 
+ERK	 	group	 	 	 	1.57E-03	BCL2,MYC,NFKBIZ	6 (5)
+miR-17-5p (and other miRNAs w/seed AAAGUGC)	 	mature microRNA	 	 	 	1.57E-03	BCL2,TXNIP	 
+miR-204-5p (and other miRNAs w/seed UCCCUUU)	 	mature microRNA	 	 	 	1.57E-03	BCL2,MYC	 
+seocalcitol	 	chemical drug	 	 	 	1.57E-03	BCL2,MYC	 
+3-deazaneplanocin	 	chemical drug	 	 	 	1.68E-03	MYC,TSC22D3	 
+Sn50 peptide	 	chemical toxicant	 	 	 	1.68E-03	BCL2,MYC	 
+BCL2L1	 	other	 	 	 	1.73E-03	BCL2,PTPRC	 
+birabresib	 	chemical drug	 	 	 	1.73E-03	HSPA5,MYC	 
+gemcitabine	 	chemical drug	 	 	 	1.73E-03	BCL2,MYC	2 (5)
+cigarette smoke	 	chemical toxicant	 	 	 	1.76E-03	BCL2,HSP90AA1,HSPA5	 
+FOS	 	transcription regulator	 	 	 	1.76E-03	HSPA5,MALAT1,MYC,SOCS3	 
+SMAD3	 	transcription regulator	 	 	 	1.78E-03	BCL2,HSPA5,MYC	8 (10)
+LEF1	 	transcription regulator	 	 	 	1.78E-03	BCL2,MYC	2 (3)
+TSH	 	complex	 	 	 	1.78E-03	MYC,SOCS3	 
+CIP2A	 	other	 	 	 	1.84E-03	BCL2,MYC	 
+TBP	 	transcription regulator	 	 	 	1.84E-03	BCL2,MYC	2 (4)
+glutathione	 	chemical - endogenous mammalian	 	 	 	1.84E-03	BCL2,MYC	2 (3)
+Pro-inflammatory Cytokine	 	group	 	 	 	1.89E-03	HSPA5,SOCS3	 
+mir-15	 	microRNA	 	 	 	1.89E-03	BCL2,PIM1	 
+TNFSF13B	 	cytokine	 	 	 	1.89E-03	BCL2,MYC	2 (3)
+CREB1	 	transcription regulator	 	1.931	 	1.89E-03	BCL2,HSPA5,MYC,SLC2A3	 
+amikacin	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+MICU1	 	other	 	 	 	1.90E-03	BCL2	 
+lonaprisan	 	chemical drug	 	 	 	1.90E-03	MYC	 
+Cofilin	 	group	 	 	 	1.90E-03	MYC	 
+Tap	 	complex	 	 	 	1.90E-03	HLA-E	 
+AEOL-10150	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+Rbp	 	group	 	 	 	1.90E-03	SOCS3	 
+thymol	 	chemical reagent	 	 	 	1.90E-03	BCL2	 
+SFTPA2	 	other	 	 	 	1.90E-03	HSPA5	 
+RBMS3	 	other	 	 	 	1.90E-03	MYC	 
+PCDH9	 	other	 	 	 	1.90E-03	BCL2	 
+RPRD1B	 	other	 	 	 	1.90E-03	MYC	 
+SGF29	 	other	 	 	 	1.90E-03	HSPA5	 
+CCDC88C	 	other	 	 	 	1.90E-03	MYC	 
+TRIM71	 	enzyme	 	 	 	1.90E-03	MYC	 
+BCAS3	 	other	 	 	 	1.90E-03	MYC	 
+USP36	 	peptidase	 	 	 	1.90E-03	MYC	 
+MLXIP	 	transcription regulator	 	 	 	1.90E-03	TXNIP	 
+NCEH1	 	enzyme	 	 	 	1.90E-03	HSPA5	 
+ZNF366	 	transcription regulator	 	 	 	1.90E-03	TSC22D3	 
+PACS2	 	other	 	 	 	1.90E-03	HSPA5	 
+CTNNβ-LEF1	 	complex	 	 	 	1.90E-03	MYC	 
+Gm-Csf Receptor	 	complex	 	 	 	1.90E-03	MYC	 
+STAT3/5	 	group	 	 	 	1.90E-03	PIM1	 
+ECD	 	transcription regulator	 	 	 	1.90E-03	HSPA5	 
+EIF4F	 	complex	 	 	 	1.90E-03	MYC	 
+BCL6 peptide inhibitor	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+OMG	 	G-protein coupled receptor	 	 	 	1.90E-03	MYC	 
+bucillamine	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+CACYBP	 	other	 	 	 	1.90E-03	BCL2	 
+safflor yellow B	 	chemical - endogenous non-mammalian	 	 	 	1.90E-03	BCL2	 
+dibromoacetic acid	 	chemical toxicant	 	 	 	1.90E-03	MYC	 
+SRI	 	transporter	 	 	 	1.90E-03	HSPA5	 
+CSDE1	 	enzyme	 	 	 	1.90E-03	MYC	 
+SYCP3	 	other	 	 	 	1.90E-03	BCL2	 
+PTPA	 	phosphatase	 	 	 	1.90E-03	MYC	 
+AMD1	 	enzyme	 	 	 	1.90E-03	MYC	 
+STAM	 	other	 	 	 	1.90E-03	MYC	 
+miR-185-3p (and other miRNAs w/seed GGGGCUG)	 	mature microRNA	 	 	 	1.90E-03	MYC	 
+miR-411-5p (and other miRNAs w/seed AGUAGAC)	 	mature microRNA	 	 	 	1.90E-03	TXNIP	 
+mir-153	 	microRNA	 	 	 	1.90E-03	BCL2	 
+mir-331	 	microRNA	 	 	 	1.90E-03	MYC	 
+mir-105	 	microRNA	 	 	 	1.90E-03	MYC	 
+CENPX	 	other	 	 	 	1.90E-03	MYC	 
+HIF1A-AS1	 	other	 	 	 	1.90E-03	BCL2	 
+PIM	 	group	 	 	 	1.90E-03	BCL2	 
+RPL15	 	other	 	 	 	1.90E-03	MYC	 
+REG3A	 	enzyme	 	 	 	1.90E-03	SOCS3	 
+PLIN3	 	other	 	 	 	1.90E-03	BCL2	 
+DST	 	other	 	 	 	1.90E-03	HSPA5	 
+cyclo(iso-Asp-GR)-LLIIKLAKLAKKLAKLAK	 	chemical reagent	 	 	 	1.90E-03	BCL2	 
+HNRNPL	 	other	 	 	 	1.90E-03	PTPRC	 
+WASHC1	 	other	 	 	 	1.90E-03	MYC	 
+PTPRT	 	phosphatase	 	 	 	1.90E-03	SOCS3	 
+NTSR2	 	G-protein coupled receptor	 	 	 	1.90E-03	BCL2	 
+RPA2	 	other	 	 	 	1.90E-03	MYC	 
+RPS25	 	other	 	 	 	1.90E-03	MYC	 
+STAMBP	 	enzyme	 	 	 	1.90E-03	MYC	 
+PDIA6	 	enzyme	 	 	 	1.90E-03	HSPA5	 
+NEU2	 	enzyme	 	 	 	1.90E-03	BCL2	 
+UBE2V1	 	transcription regulator	 	 	 	1.90E-03	BCL2	 
+PPP2R5A	 	phosphatase	 	 	 	1.90E-03	MYC	 
+Gm4836 (includes others)	 	other	 	 	 	1.90E-03	BCL2	 
+RAMAC	 	other	 	 	 	1.90E-03	MYC	 
+STYX	 	phosphatase	 	 	 	1.90E-03	MYC	 
+VNN1	 	enzyme	 	 	 	1.90E-03	BCL2	 
+3830403N18Rik/Xlr	 	other	 	 	 	1.90E-03	BCL2	 
+S7	 	chemical - kinase inhibitor	 	 	 	1.90E-03	BCL2	 
+SI163	 	chemical - kinase inhibitor	 	 	 	1.90E-03	BCL2	 
+S29	 	chemical - kinase inhibitor	 	 	 	1.90E-03	BCL2	 
+Mia2	 	other	 	 	 	1.90E-03	HSPA5	 
+econazole	 	chemical drug	 	 	 	1.90E-03	HSPA5	 
+3-iodobenzylguanidine	 	chemical drug	 	 	 	1.90E-03	MYC	 
+daphnoretin	 	chemical - endogenous non-mammalian	 	 	 	1.90E-03	BCL2	 
+phenoxyacetic acid	 	chemical reagent	 	 	 	1.90E-03	MYC	 
+XK469	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+talipexole	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+butyrine	 	chemical - endogenous mammalian	 	 	 	1.90E-03	MYC	 
+AN-207	 	chemical toxicant	 	 	 	1.90E-03	BCL2	 
+SSR180575	 	chemical drug	 	 	 	1.90E-03	BCL2	 
+gliclazide	 	chemical drug	 	 	 	1.90E-03	SLC2A3	 
+butylbenzyl phthalate	 	chemical toxicant	 	 	 	1.90E-03	MYC	 
+dehydrocostus lactone	 	chemical - endogenous non-mammalian	 	 	 	1.90E-03	MYC	 
+isoalantolactone	 	chemical - endogenous non-mammalian	 	 	 	1.90E-03	BCL2	 
+swainsonine	 	chemical - endogenous non-mammalian	 	 	 	1.90E-03	BCL2	 
+5-oxo-6-8-11-14-(e,z,z,z)-eicosatetraenoic acid	 	chemical - endogenous mammalian	 	 	 	1.90E-03	MYC	 
+3-O-methylglucose	 	chemical reagent	 	 	 	1.90E-03	TXNIP	 
+calcitriol	 	chemical drug	 	-1.958	 	1.90E-03	BCL2,MYC,SOCS3,TXNIP	10 (16)
+SMARCA2	 	transcription regulator	 	 	 	1.95E-03	BCL2,CYLD	 
+LDL	 	complex	 	 	 	1.98E-03	BCL2,HSPA5,SOCS3	10 (15)
+NOTCH1	 	transcription regulator	 	 	 	1.98E-03	BCL2,HSP90AB1,MYC	5 (3)
+fenofibrate	 	chemical drug	 	 	 	1.98E-03	HSPA5,PTPRC,TXNIP	 
+JAK1	 	kinase	 	 	 	2.00E-03	HLA-F,SOCS3	 
+F2	 	peptidase	 	 	 	2.02E-03	HSP90AA1,MYC,SLC2A3	 
+DDX58	 	enzyme	 	 	 	2.06E-03	AHNAK,SOCS3	 
+GLI3	 	transcription regulator	 	 	 	2.06E-03	BCL2,NFKBIZ	 
+ATM	 	kinase	 	 	 	2.06E-03	HSP90AA1,HSP90AB1	 
+gemfibrozil	 	chemical drug	 	 	 	2.06E-03	MYC,SOCS3	 
+IL4	 	cytokine	 	1.905	 	2.12E-03	AHNAK,BCL2,MYC,PIM1,SOCS3	12 (15)
+RNA polymerase II	 	complex	 	 	 	2.13E-03	BCL2,MYC,SOCS3	 
+dihydrotestosterone	 	chemical - endogenous mammalian	 	 	 	2.14E-03	BCL2,HSP90AA1,MYC,SLC2A3	7 (2)
+E. coli lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	2.17E-03	BCL2,SOCS3	 
+mir-34	 	microRNA	 	 	 	2.17E-03	BCL2,MYC	 
+AGER	 	transmembrane receptor	 	 	 	2.17E-03	BCL2,TXNIP	 
+ATG7	 	enzyme	 	 	 	2.17E-03	MYC,SOCS3	 
+E2F2	 	transcription regulator	 	 	 	2.17E-03	BCL2,MYC	 
+fulvestrant	 	chemical drug	 	 	 	2.18E-03	BCL2,MYC,TSC22D3	7 (3)
+methamphetamine	 	chemical drug	 	 	 	2.23E-03	BCL2,MYC	2 (3)
+PTTG1	 	transcription regulator	 	 	 	2.29E-03	BCL2,MYC	 
+RELB	 	transcription regulator	 	 	 	2.29E-03	BCL2,MYC	2 (2)
+cyclophosphamide	 	chemical drug	 	 	 	2.29E-03	BCL2,MYC	 
+cadmium	 	chemical toxicant	 	 	 	2.29E-03	HSPA5,MYC	 
+Bay 11-7082	 	chemical - kinase inhibitor	 	 	 	2.35E-03	HSPA5,PIM1	 
+YY1	 	transcription regulator	 	 	 	2.38E-03	HSPA5,MYC,NFKBIZ	 
+GNA12	 	enzyme	 	 	 	2.48E-03	BCL2,MYC	2 (5)
+1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine	 	chemical toxicant	 	 	 	2.48E-03	BCL2,PTPRC	 
+IKBKB	 	kinase	 	 	 	2.48E-03	BCL2,MYC,SOCS3	11 (17)
+estrogen	 	chemical drug	 	 	 	2.48E-03	BCL2,MYC,PIM1	11 (13)
+Akt	 	group	 	 	 	2.53E-03	BCL2,MYC,SOCS3	11 (15)
+MAP2K1/2	 	group	 	 	 	2.54E-03	HSPA5,MYC	 
+PTPN11	 	phosphatase	 	 	 	2.54E-03	PIM1,SOCS3	 
+NFKB2	 	transcription regulator	 	 	 	2.54E-03	BCL2,MYC	2 (2)
+fenretinide	 	chemical drug	 	 	 	2.54E-03	BCL2,MYC	2 (6)
+WNT3A	 	cytokine	 	 	 	2.55E-03	BCL2,MYC,TXNIP	7 (6)
+Tgf beta	 	group	 	 	 	2.58E-03	BCL2,MYC,SOCS3	11 (17)
+GATA1	 	transcription regulator	 	 	 	2.60E-03	BCL2,MYC,PIM1	6 (4)
+RETNLB	 	other	 	 	 	2.60E-03	MYC,STK17B	 
+Gsk3	 	group	 	 	 	2.60E-03	BCL2,MYC	2 (6)
+mir-17	 	microRNA	 	 	 	2.60E-03	CYLD,TXNIP	 
+PIN1	 	enzyme	 	 	 	2.60E-03	HSPA5,MYC	 
+fluoxetine	 	chemical drug	 	 	 	2.67E-03	MYC,SLC2A3	 
+MTPN	 	transcription regulator	 	 	 	2.73E-03	BCL2,MYC	 
+cobalt chloride	 	chemical reagent	 	 	 	2.80E-03	BCL2,HSP90AB1	 
+VEGFA	 	growth factor	 	 	 	2.83E-03	BCL2,HSPA5,PIM1	7 (4)
+thioguanine	 	chemical drug	 	 	 	2.85E-03	MYC	 
+trapidil	 	chemical drug	 	 	 	2.85E-03	PIM1	 
+L-tyrosine	 	chemical - endogenous mammalian	 	 	 	2.85E-03	BCL2	 
+PLC gamma	 	group	 	 	 	2.85E-03	MYC	 
+LZTS2	 	other	 	 	 	2.85E-03	MYC	 
+NIBAN2	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+IL10R	 	group	 	 	 	2.85E-03	SOCS3	 
+H1-3	 	other	 	 	 	2.85E-03	MYC	 
+EDEM1	 	enzyme	 	 	 	2.85E-03	HSPA5	 
+CNOT1	 	other	 	 	 	2.85E-03	MYC	 
+hyperoside	 	chemical - endogenous non-mammalian	 	 	 	2.85E-03	BCL2	 
+ZNF300	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+LAPTM4B	 	other	 	 	 	2.85E-03	BCL2	 
+Integrin alpha 4 beta 1	 	complex	 	 	 	2.85E-03	BCL2	 
+PVT1	 	other	 	 	 	2.85E-03	MYC	 
+CKLF	 	cytokine	 	 	 	2.85E-03	BCL2	 
+KLHL21	 	other	 	 	 	2.85E-03	NFKBIZ	 
+SDF4	 	other	 	 	 	2.85E-03	HSPA5	 
+xenon	 	chemical drug	 	 	 	2.85E-03	BCL2	 
+Eif2	 	complex	 	 	 	2.85E-03	HSPA5	 
+GEM231	 	chemical drug	 	 	 	2.85E-03	BCL2	 
+cerebrolysin	 	chemical drug	 	 	 	2.85E-03	BCL2	 
+ADI PEG20	 	biologic drug	 	 	 	2.85E-03	MYC	 
+GFRA1	 	transmembrane receptor	 	 	 	2.85E-03	PTPRC	 
+SRGAP1	 	other	 	 	 	2.85E-03	MYC	 
+Pdi	 	group	 	 	 	2.85E-03	HSPA5	 
+GPC3	 	other	 	 	 	2.85E-03	MYC	 
+ELL	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+PURB	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+BPTF	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+HAO1	 	enzyme	 	 	 	2.85E-03	HSPA5	 
+miR-136-5p (miRNAs w/seed CUCCAUU)	 	mature microRNA	 	 	 	2.85E-03	BCL2	 
+miR-2682-5p (and other miRNAs w/seed AGGCAGU)	 	mature microRNA	 	 	 	2.85E-03	MYC	 
+mir-483	 	microRNA	 	 	 	2.85E-03	SOCS3	 
+miR-153-3p (miRNAs w/seed UGCAUAG)	 	mature microRNA	 	 	 	2.85E-03	BCL2	 
+mir-383	 	microRNA	 	 	 	2.85E-03	MYC	 
+RPS14	 	translation regulator	 	 	 	2.85E-03	MYC	 
+ASS1	 	enzyme	 	 	 	2.85E-03	MYC	 
+SGI 1776	 	chemical drug	 	 	 	2.85E-03	MYC	 
+FOXO6	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+NCOA5	 	other	 	 	 	2.85E-03	MYC	 
+DOK2	 	other	 	 	 	2.85E-03	MYC	 
+NRP2	 	kinase	 	 	 	2.85E-03	BCL2	 
+AHNAK	-0.277	other	 	 	 	2.85E-03	MYC	 
+PPP1R1A	 	phosphatase	 	 	 	2.85E-03	HSPA5	 
+MED26	 	transcription regulator	 	 	 	2.85E-03	MYC	 
+STRAP	 	other	 	 	 	2.85E-03	MYC	 
+TOR2A	 	other	 	 	 	2.85E-03	MYC	 
+TRAF7	 	enzyme	 	 	 	2.85E-03	MYC	 
+ANKRD1	 	transcription regulator	 	 	 	2.85E-03	BCL2	 
+RGS3	 	enzyme	 	 	 	2.85E-03	MYC	 
+CCNL2	 	other	 	 	 	2.85E-03	BCL2	 
+MAP1S	 	enzyme	 	 	 	2.85E-03	BCL2	 
+AP2A2	 	transporter	 	 	 	2.85E-03	BCL2	 
+STAM2	 	other	 	 	 	2.85E-03	MYC	 
+glycosylated somatostatin derivative smsDX	 	chemical reagent	 	 	 	2.85E-03	HSPA5	 
+EEF1A1	 	translation regulator	 	 	 	2.85E-03	MYC	 
+MT3	 	other	 	 	 	2.85E-03	BCL2	 
+RPL23A	 	other	 	 	 	2.85E-03	MYC	 
+ATAD2	 	enzyme	 	 	 	2.85E-03	MYC	 
+BCKDHA	 	enzyme	 	 	 	2.85E-03	MYC	 
+umbralisib	 	chemical drug	 	 	 	2.85E-03	MYC	 
+AZ-960	 	chemical reagent	 	 	 	2.85E-03	PIM1	 
+(E)-1-(2-nitrovinyl)naphthalene	 	chemical reagent	 	 	 	2.85E-03	MYC	 
+(E)-9-(2-nitrovinyl)anthracene	 	chemical reagent	 	 	 	2.85E-03	MYC	 
+2,2-dimethylbutyric acid	 	chemical drug	 	 	 	2.85E-03	MYC	 
+chlordecone	 	chemical toxicant	 	 	 	2.85E-03	HSPA5	 
+protein phosphatase	 	complex	 	 	 	2.85E-03	PIM1	 
+pramipexole	 	chemical drug	 	 	 	2.85E-03	BCL2	 
+taprostene	 	chemical reagent	 	 	 	2.85E-03	TSC22D3	 
+phloretin	 	chemical - endogenous non-mammalian	 	 	 	2.85E-03	TXNIP	 
+lead nitrate	 	chemical toxicant	 	 	 	2.85E-03	BCL2	 
+imisopasem manganese	 	chemical drug	 	 	 	2.85E-03	BCL2	 
+10-hydroxycamptothecin	 	chemical - endogenous mammalian	 	 	 	2.85E-03	BCL2	 
+(6S)-hydroxyhyoscyamine	 	chemical drug	 	 	 	2.85E-03	HSPA5	 
+AVI-4126	 	biologic drug	 	 	 	2.85E-03	MYC	 
+CFTR	 	ion channel	 	 	 	2.87E-03	NFKBIZ,SOCS3	 
+HNF4A	 	transcription regulator	 	 	 	2.90E-03	AHNAK,CYLD,HLA-F,HSPA5,MYC,TMEM123,TXNIP	 
+5-O-mycolyl-beta-araf-(1->2)-5-O-mycolyl-alpha-araf-(1->1')-glycerol	 	chemical - endogenous non-mammalian	 	 	 	2.93E-03	NFKBIZ,SOCS3	 
+SMO	 	G-protein coupled receptor	 	 	 	2.93E-03	BCL2,MYC	2 (5)
+PRDM5	 	transcription regulator	 	 	 	3.07E-03	MYC,SOCS3	 
+IL7R	 	transmembrane receptor	 	 	 	3.07E-03	BCL2,PIM1	 
+ERBB4	 	kinase	 	 	 	3.07E-03	MYC,SOCS3	 
+MYOC	 	other	 	 	 	3.14E-03	HSPA5,SLC2A3	 
+SBDS	 	other	 	 	 	3.14E-03	HSP90AB1,HSPA5	 
+COL18A1	 	other	 	 	 	3.21E-03	BCL2,MYC	 
+FADD	 	other	 	 	 	3.21E-03	MYC,PIM1	 
+niacinamide	 	chemical - endogenous mammalian	 	 	 	3.21E-03	BCL2,MYC	2 (3)
+4-phenylbutyric acid	 	chemical - endogenous mammalian	 	 	 	3.21E-03	BCL2,HSPA5	 
+HRAS	 	enzyme	 	0.440	 	3.23E-03	BCL2,HSP90AA1,MYC,SOCS3	9 (11)
+D-glucose	 	chemical - endogenous mammalian	 	-0.033	 	3.23E-03	BCL2,HSPA5,MYC,TXNIP	9 (10)
+RASSF1	 	other	 	 	 	3.28E-03	BCL2,MYC	2 (6)
+SAMSN1	 	other	 	 	 	3.35E-03	NFKBIZ,SOCS3	 
+R5020	 	chemical reagent	 	 	 	3.35E-03	MYC,TXNIP	 
+TCF	 	group	 	 	 	3.35E-03	BCL2,MYC	 
+GW9662	 	chemical reagent	 	 	 	3.43E-03	BCL2,HSPA5	 
+mifepristone	 	chemical drug	 	 	 	3.45E-03	BCL2,HSPA5,MYC	10 (14)
+PDLIM2	 	other	 	 	 	3.57E-03	BCL2,TXNIP	 
+SOCS3	0.361	phosphatase	 	 	 	3.57E-03	BCL2,SOCS3	2 (2)
+KMT2A	 	transcription regulator	 	 	 	3.57E-03	BCL2,MYC	 
+TCF7L2	 	transcription regulator	 	 	 	3.60E-03	MYC,STK17B,TMEM123	 
+TEAD4	 	transcription regulator	 	 	 	3.65E-03	NFKBIZ,SLC2A3	 
+okadaic acid	 	chemical toxicant	 	 	 	3.65E-03	MYC,PIM1	2 (2)
+Ige	 	complex	 	 	 	3.67E-03	BCL2,MYC,SOCS3	11 (17)
+daidzein	 	chemical drug	 	 	 	3.72E-03	BCL2,MYC	2 (3)
+cloprostenol	 	chemical drug	 	 	 	3.80E-03	SOCS3	 
+PD 180970	 	chemical - kinase inhibitor	 	 	 	3.80E-03	MYC	 
+Esr1-Esr1-estrogen-estrogen	 	complex	 	 	 	3.80E-03	MYC	 
+OSGIN1	 	growth factor	 	 	 	3.80E-03	BCL2	 
+NPSR1	 	G-protein coupled receptor	 	 	 	3.80E-03	MYC	 
+FICD	 	enzyme	 	 	 	3.80E-03	HSP90AA1	 
+GPR65	 	G-protein coupled receptor	 	 	 	3.80E-03	MYC	 
+ATF6B	 	transcription regulator	 	 	 	3.80E-03	HSPA5	 
+USE1	 	other	 	 	 	3.80E-03	HSPA5	 
+enecadin	 	chemical drug	 	 	 	3.80E-03	BCL2	 
+C1GALT1	 	enzyme	 	 	 	3.80E-03	BCL2	 
+CUEDC2	 	other	 	 	 	3.80E-03	SLC2A3	 
+XRN2	 	enzyme	 	 	 	3.80E-03	MYC	 
+DACT3	 	other	 	 	 	3.80E-03	MYC	 
+MITF-p300/CBP	 	complex	 	 	 	3.80E-03	BCL2	 
+dinaciclib	 	chemical drug	 	 	 	3.80E-03	HSPA5	 
+Nc2	 	complex	 	 	 	3.80E-03	MYC	 
+EIF3I	 	translation regulator	 	 	 	3.80E-03	MYC	 
+CDC25B	 	phosphatase	 	 	 	3.80E-03	MYC	 
+ARTN	 	growth factor	 	 	 	3.80E-03	BCL2	 
+MS4A2	 	transmembrane receptor	 	 	 	3.80E-03	BCL2	 
+G0S2	 	other	 	 	 	3.80E-03	MYC	 
+IFNGR	 	complex	 	 	 	3.80E-03	SOCS3	 
+crocin	 	chemical drug	 	 	 	3.80E-03	HSPA5	 
+LIMK1	 	kinase	 	 	 	3.80E-03	MYC	 
+TCF20	 	transcription regulator	 	 	 	3.80E-03	MYC	 
+HSPB6	 	other	 	 	 	3.80E-03	BCL2	 
+TRHR	 	G-protein coupled receptor	 	 	 	3.80E-03	SOCS3	 
+RAPSN	 	other	 	 	 	3.80E-03	SOCS3	 
+CANX	 	other	 	 	 	3.80E-03	BCL2	 
+NME2	 	kinase	 	 	 	3.80E-03	MYC	 
+SIGMAR1	 	transmembrane receptor	 	 	 	3.80E-03	BCL2	 
+CELF2	 	other	 	 	 	3.80E-03	BCL2	 
+ATP2A1	 	transporter	 	 	 	3.80E-03	HSPA5	 
+SNRK	 	kinase	 	 	 	3.80E-03	MYC	 
+A-Fos	 	chemical reagent	 	 	 	3.80E-03	MYC	 
+LGALS2	 	other	 	 	 	3.80E-03	BCL2	 
+TSN	 	other	 	 	 	3.80E-03	BCL2	 
+SLC9A3R2	 	transporter	 	 	 	3.80E-03	MYC	 
+CTH	 	enzyme	 	 	 	3.80E-03	HSPA5	 
+HSPH1	 	other	 	 	 	3.80E-03	MYC	 
+ACP1	 	phosphatase	 	 	 	3.80E-03	MYC	 
+TOP2A	 	enzyme	 	 	 	3.80E-03	MYC	 
+RPL5	 	other	 	 	 	3.80E-03	MYC	 
+GSK-2606414	 	chemical reagent	 	 	 	3.80E-03	HSPA5	 
+MAD1L1	 	other	 	 	 	3.80E-03	MYC	 
+WTAP	 	other	 	 	 	3.80E-03	BCL2	 
+OSU-CG12	 	chemical reagent	 	 	 	3.80E-03	HSPA5	 
+5,6,7,8-tetrahydrobiopterin	 	chemical - endogenous mammalian	 	 	 	3.80E-03	MYC	 
+TAS-103	 	chemical drug	 	 	 	3.80E-03	BCL2	 
+pyridoxal phosphate	 	chemical - endogenous mammalian	 	 	 	3.80E-03	BCL2	 
+bilobalide	 	chemical - endogenous non-mammalian	 	 	 	3.80E-03	MYC	 
+alpha-methylhydrocinnamic acid	 	chemical - endogenous mammalian	 	 	 	3.80E-03	MYC	 
+H-8	 	chemical toxicant	 	 	 	3.80E-03	MYC	 
+chlorophyll a	 	chemical - endogenous non-mammalian	 	 	 	3.80E-03	BCL2	 
+MM218	 	chemical reagent	 	 	 	3.80E-03	HSPA5	 
+MS645	 	chemical reagent	 	 	 	3.80E-03	MYC	 
+microcystin-LR	 	chemical toxicant	 	 	 	3.80E-03	MYC	 
+galanthamine	 	chemical drug	 	 	 	3.80E-03	BCL2	 
+allopurinol	 	chemical drug	 	 	 	3.80E-03	MYC,TXNIP	 
+PC-SPES	 	chemical drug	 	 	 	3.80E-03	HSP90AA1,HSPA5	 
+Ifn gamma	 	complex	 	 	 	3.95E-03	MYC,SOCS3	 
+Pdgf (complex)	 	complex	 	 	 	4.03E-03	BCL2,MYC	2 (9)
+TNFSF10	 	cytokine	 	 	 	4.03E-03	BCL2,HLA-F	 
+MKNK1	 	kinase	 	 	 	4.11E-03	MYC,TXNIP	 
+RBL2	 	other	 	 	 	4.11E-03	MYC,PIM1	 
+SRF	 	transcription regulator	 	 	 	4.18E-03	BCL2,CYLD,MALAT1	 
+PSEN2	 	peptidase	 	 	 	4.19E-03	BCL2,HLA-E	 
+SOD2	 	enzyme	 	 	 	4.27E-03	BCL2,MYC	2 (3)
+ATF3	 	transcription regulator	 	 	 	4.35E-03	HSPA5,NFKBIZ	 
+puromycin aminonucleoside	 	chemical reagent	 	 	 	4.35E-03	HSPA5,MYC	 
+bucladesine	 	chemical toxicant	 	 	 	4.42E-03	BCL2,MYC,SOCS3	11 (16)
+glutamine	 	chemical - endogenous mammalian	 	 	 	4.44E-03	HSPA5,MYC	 
+INHA	 	growth factor	 	 	 	4.44E-03	BCL2,MYC	 
+NFATC1	 	transcription regulator	 	 	 	4.44E-03	BCL2,MYC	 
+CD28	 	transmembrane receptor	 	 	 	4.46E-03	BCL2,MYC,SOCS3	9 (13)
+CCN2	 	growth factor	 	 	 	4.52E-03	BCL2,MYC	 
+5-N-ethylcarboxamido adenosine	 	chemical reagent	 	 	 	4.60E-03	SOCS3,TXNIP	 
+GLI2	 	transcription regulator	 	 	 	4.60E-03	BCL2,MYC	 
+phenethyl isothiocyanate	 	chemical drug	 	 	 	4.60E-03	BCL2,HSP90AA1	 
+Mapk	 	group	 	 	 	4.69E-03	BCL2,MYC	2 (5)
+fatty acid	 	chemical - endogenous mammalian	 	 	 	4.69E-03	BCL2,HSPA5	 
+ILX-23-7553	 	chemical drug	 	 	 	4.75E-03	BCL2	 
+MNK1/2	 	group	 	 	 	4.75E-03	MYC	 
+Alp	 	group	 	 	 	4.75E-03	BCL2	 
+Cpla2	 	group	 	 	 	4.75E-03	MYC	 
+(-)-gossypol	 	chemical drug	 	 	 	4.75E-03	BCL2	 
+acyline	 	biologic drug	 	 	 	4.75E-03	BCL2	 
+SSBP2	 	transcription regulator	 	 	 	4.75E-03	MYC	 
+BUD23	 	enzyme	 	 	 	4.75E-03	TSC22D3	 
+ZMIZ2	 	transcription regulator	 	 	 	4.75E-03	MYC	 
+SNHG3	 	other	 	 	 	4.75E-03	MYC	 
+RSF1	 	transcription regulator	 	 	 	4.75E-03	BCL2	 
+Vla-4	 	complex	 	 	 	4.75E-03	BCL2	 
+carvacrol	 	chemical - endogenous non-mammalian	 	 	 	4.75E-03	BCL2	 
+MAP4K1	 	kinase	 	 	 	4.75E-03	BCL2	 
+GRAP2	 	other	 	 	 	4.75E-03	MYC	 
+ERN2	 	kinase	 	 	 	4.75E-03	HSPA5	 
+PUF60	 	other	 	 	 	4.75E-03	MYC	 
+IL31RA	 	transmembrane receptor	 	 	 	4.75E-03	SOCS3	 
+LUCAT1	 	other	 	 	 	4.75E-03	BCL2	 
+FZD7	 	G-protein coupled receptor	 	 	 	4.75E-03	MYC	 
+TYMS	 	enzyme	 	 	 	4.75E-03	MYC	 
+RNF34	 	enzyme	 	 	 	4.75E-03	BCL2	 
+TLN1	 	other	 	 	 	4.75E-03	BCL2	 
+MIR4269	 	microRNA	 	 	 	4.75E-03	MYC	 
+miR-873-5p (and other miRNAs w/seed CAGGAAC)	 	mature microRNA	 	 	 	4.75E-03	MYC	 
+SFRP2	 	transmembrane receptor	 	 	 	4.75E-03	MYC	 
+TIMP4	 	other	 	 	 	4.75E-03	BCL2	 
+rigosertib	 	chemical drug	 	 	 	4.75E-03	MYC	 
+RBM14	 	transcription regulator	 	 	 	4.75E-03	MYC	 
+WFS1	 	enzyme	 	 	 	4.75E-03	HSPA5	 
+ARG2	 	enzyme	 	 	 	4.75E-03	BCL2	 
+RAP1GDS1	 	other	 	 	 	4.75E-03	MYC	 
+CD59	 	other	 	 	 	4.75E-03	BCL2	 
+ASH2L	 	transcription regulator	 	 	 	4.75E-03	HSPA5	 
+SH2B2	 	other	 	 	 	4.75E-03	MYC	 
+GTF3A	 	transcription regulator	 	 	 	4.75E-03	PIM1	 
+SLC37A4	 	transporter	 	 	 	4.75E-03	HSPA5	 
+HIVEP2	 	transcription regulator	 	 	 	4.75E-03	MYC	 
+GNL2	 	enzyme	 	 	 	4.75E-03	MYC	 
+H1f4	 	other	 	 	 	4.75E-03	MYC	 
+STK17B	0.375	kinase	 	 	 	4.75E-03	BCL2	 
+LGH447	 	chemical drug	 	 	 	4.75E-03	MYC	 
+temsirolimus	 	chemical drug	 	 	 	4.75E-03	MYC	 
+lindane	 	chemical drug	 	 	 	4.75E-03	BCL2	 
+atrasentan	 	chemical drug	 	 	 	4.75E-03	BCL2	 
+sodium azide	 	chemical toxicant	 	 	 	4.75E-03	TXNIP	 
+CB-PIC	 	chemical reagent	 	 	 	4.75E-03	BCL2	 
+azelaic acid	 	chemical - endogenous mammalian	 	 	 	4.75E-03	BCL2	 
+phloroglucinol	 	chemical drug	 	 	 	4.75E-03	BCL2	 
+5-hydroxytryptophan	 	chemical - endogenous mammalian	 	 	 	4.75E-03	BCL2	 
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	 	4.77E-03	BCL2,MYC	 
+RRP1B	 	transcription regulator	 	 	 	4.86E-03	HSP90AA1,HSP90AB1	 
+FOXO4	 	transcription regulator	 	 	 	4.86E-03	PTPRC,TXNIP	 
+NR5A2	 	ligand-dependent nuclear receptor	 	 	 	4.86E-03	BCL2,MYC	 
+2,4,5,2',4',5'-hexachlorobiphenyl	 	chemical toxicant	 	 	 	4.94E-03	BCL2,MYC	 
+IL10	 	cytokine	 	 	 	5.11E-03	BCL2,SOCS3,TSC22D3	 
+ATP	 	chemical - endogenous mammalian	 	 	 	5.12E-03	MYC,TXNIP	 
+black raspberry extract	 	chemical drug	 	 	 	5.12E-03	AHNAK,HSP90AA1	 
+GNA15	 	enzyme	 	 	 	5.12E-03	HLA-E,MYC	 
+FAS	 	transmembrane receptor	 	 	 	5.19E-03	BCL2,HLA-F,STK17B	 
+Rxr	 	group	 	 	 	5.21E-03	BCL2,MYC	 
+RET	 	kinase	 	 	 	5.21E-03	BCL2,HSP90AA1	 
+BTK	 	kinase	 	 	 	5.38E-03	PIM1,SLC2A3	 
+calcimycin	 	chemical reagent	 	 	 	5.38E-03	HSPA5,MYC	 
+losartan potassium	 	chemical drug	 	 	 	5.38E-03	HSPA5,SOCS3	 
+tetrachlorodibenzodioxin	 	chemical toxicant	 	 	 	5.46E-03	BCL2,MYC,SLC2A3	 
+GH1	 	growth factor	 	 	 	5.48E-03	BCL2,SOCS3	2 (3)
+RAC1	 	enzyme	 	 	 	5.48E-03	CYLD,MYC	 
+CBX5	 	transcription regulator	 	 	 	5.57E-03	SLC2A3,TXNIP	 
+MAPK1	 	kinase	 	 	 	5.62E-03	BCL2,HLA-E,MYC	 
+troglitazone	 	chemical drug	 	 	 	5.62E-03	BCL2,HSPA5,MYC	8 (13)
+mir-155	 	microRNA	 	 	 	5.66E-03	BCL2,SOCS3	2 (3)
+Iberiotoxin	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+SERCA	 	group	 	 	 	5.69E-03	MYC	 
+P110	 	group	 	 	 	5.69E-03	BCL2	 
+vanillyl-N-nonylamide	 	chemical drug	 	 	 	5.69E-03	HSPA5	 
+givinostat	 	chemical drug	 	 	 	5.69E-03	BCL2	 
+ZMIZ1	 	other	 	 	 	5.69E-03	MYC	 
+RASSF3	 	other	 	 	 	5.69E-03	BCL2	 
+Crnde	 	other	 	 	 	5.69E-03	MYC	 
+AQP11	 	transporter	 	 	 	5.69E-03	MYC	 
+Ap2 alpha	 	group	 	 	 	5.69E-03	BCL2	 
+necrostatin-1	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+PRKACB	 	kinase	 	 	 	5.69E-03	MYC	 
+H6PD	 	enzyme	 	 	 	5.69E-03	HSPA5	 
+CSRP3	 	other	 	 	 	5.69E-03	TXNIP	 
+PLSCR1	 	enzyme	 	 	 	5.69E-03	MYC	 
+BAD	 	other	 	 	 	5.69E-03	BCL2	 
+BCL11A	 	transcription regulator	 	 	 	5.69E-03	BCL2	 
+CNGB3	 	ion channel	 	 	 	5.69E-03	HSPA5	 
+RBBP4	 	enzyme	 	 	 	5.69E-03	MYC	 
+PROK2	 	other	 	 	 	5.69E-03	BCL2	 
+(-)-arctigenin	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+SOX18	 	transcription regulator	 	 	 	5.69E-03	BCL2	 
+WIF1	 	other	 	 	 	5.69E-03	MALAT1	 
+ETV3	 	transcription regulator	 	 	 	5.69E-03	MYC	 
+LRIG1	 	other	 	 	 	5.69E-03	BCL2	 
+DNAJA3	 	other	 	 	 	5.69E-03	BCL2	 
+ADCY5	 	enzyme	 	 	 	5.69E-03	BCL2	 
+TRIM33	 	transcription regulator	 	 	 	5.69E-03	MYC	 
+TDG	 	enzyme	 	 	 	5.69E-03	MYC	 
+STX2	 	transporter	 	 	 	5.69E-03	MYC	 
+SFTPC	 	other	 	 	 	5.69E-03	HSPA5	 
+G6PC	 	phosphatase	 	 	 	5.69E-03	HSPA5	 
+equol	 	chemical - endogenous non-mammalian	 	 	 	5.69E-03	MYC	 
+BCL2A1	 	other	 	 	 	5.69E-03	BCL2	 
+CB-5083	 	chemical drug	 	 	 	5.69E-03	HSPA5	 
+MIA-459	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+MIA-313	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+CIMO	 	chemical reagent	 	 	 	5.69E-03	BCL2	 
+acetazolamide	 	chemical drug	 	 	 	5.69E-03	HSPA5	 
+saquinavir	 	chemical drug	 	 	 	5.69E-03	MYC	 
+EPZ005687	 	chemical - protease inhibitor	 	 	 	5.69E-03	MYC	 
+aurintricarboxylic acid	 	chemical drug	 	 	 	5.69E-03	PIM1	 
+UDP-D-glucose	 	chemical - endogenous mammalian	 	 	 	5.69E-03	HSPA5	 
+sparfosic acid	 	chemical drug	 	 	 	5.69E-03	BCL2	 
+penicillamine	 	chemical drug	 	 	 	5.69E-03	HSPA5	 
+salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	 	 	 	5.84E-03	NFKBIZ,SOCS3	 
+lithium chloride	 	chemical drug	 	 	 	5.94E-03	BCL2,MYC	2 (5)
+EZH2	 	transcription regulator	 	 	 	5.99E-03	BCL2,MYC,SOCS3	6 (4)
+PARP1	 	enzyme	 	 	 	6.13E-03	BCL2,MYC	2 (2)
+C5	 	cytokine	 	 	 	6.22E-03	BCL2,HSPA5	 
+TCF4	 	transcription regulator	 	 	 	6.25E-03	MYC,SOCS3,TXNIP	5 (2)
+celecoxib	 	chemical drug	 	 	 	6.32E-03	BCL2,HSPA5	 
+SIRT1	 	transcription regulator	 	 	 	6.51E-03	BCL2,MYC,SOCS3	14 (17)
+KLF11	 	transcription regulator	 	 	 	6.62E-03	BCL2,MYC	 
+TMPRSS2-ERG	 	fusion gene/product	 	 	 	6.62E-03	MYC,PIM1	 
+taurodeoxycholic acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	HSPA5	 
+(+)-catechin	 	chemical drug	 	 	 	6.64E-03	HSPA5	 
+Stat1 dimer	 	complex	 	 	 	6.64E-03	PIM1	 
+MRE11	 	enzyme	 	 	 	6.64E-03	MYC	 
+EIF2A	 	translation regulator	 	 	 	6.64E-03	HSPA5	 
+AKIRIN2	 	other	 	 	 	6.64E-03	MYC	 
+SLC5A8	 	transporter	 	 	 	6.64E-03	BCL2	 
+KMT5B	 	enzyme	 	 	 	6.64E-03	TSC22D3	 
+sphingomyelinase	 	group	 	 	 	6.64E-03	MYC	 
+TH2 Cytokine	 	group	 	 	 	6.64E-03	SOCS3	 
+IER3	 	other	 	 	 	6.64E-03	BCL2	 
+DVL1	 	other	 	 	 	6.64E-03	MYC	 
+SERPINA4	 	other	 	 	 	6.64E-03	MYC	 
+STRA6	 	transporter	 	 	 	6.64E-03	SOCS3	 
+ENO1	 	enzyme	 	 	 	6.64E-03	MYC	 
+RBX1	 	enzyme	 	 	 	6.64E-03	BCL2	 
+CUL1	 	enzyme	 	 	 	6.64E-03	MYC	 
+CHGA	 	other	 	 	 	6.64E-03	HSPA5	 
+MLLT3	 	transcription regulator	 	 	 	6.64E-03	MYC	 
+TNKS	 	enzyme	 	 	 	6.64E-03	MYC	 
+MED13L	 	other	 	 	 	6.64E-03	MYC	 
+casticin	 	chemical - endogenous non-mammalian	 	 	 	6.64E-03	BCL2	 
+GSK 650394	 	chemical reagent	 	 	 	6.64E-03	HSPA5	 
+MS4A1	 	other	 	 	 	6.64E-03	MYC	 
+TSPO	 	transmembrane receptor	 	 	 	6.64E-03	BCL2	 
+FUBP1	 	transcription regulator	 	 	 	6.64E-03	MYC	 
+teasaponin	 	chemical - endogenous non-mammalian	 	 	 	6.64E-03	SOCS3	 
+15-E2-isoketal modified phosphatidylethanolamine	 	chemical reagent	 	 	 	6.64E-03	HSPA5	 
+Immunoglobulin Lambda Light Chain	 	group	 	 	 	6.64E-03	HSPA5	 
+N-methyl mesoporphyrin IX	 	chemical reagent	 	 	 	6.64E-03	MYC	 
+nicorandil	 	chemical drug	 	 	 	6.64E-03	BCL2	 
+selegiline	 	chemical drug	 	 	 	6.64E-03	BCL2	 
+4-coumaric acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	MYC	 
+2-mercaptoethanol	 	chemical - endogenous mammalian	 	 	 	6.64E-03	HSPA5	 
+gliotoxin	 	chemical toxicant	 	 	 	6.64E-03	BCL2	 
+diacerein	 	chemical drug	 	 	 	6.64E-03	BCL2	 
+TRKC-miR2	 	microRNA	 	 	 	6.64E-03	MYC	 
+miR-124 mimic	 	chemical reagent	 	 	 	6.64E-03	BCL2	 
+rutin	 	chemical toxicant	 	 	 	6.64E-03	BCL2	 
+citric acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	BCL2	 
+phosphatidic acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	MYC	 
+12-hydroxyeicosatetraenoic acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	PTPRC	 
+dimethyl sulfoxide	 	chemical drug	 	 	 	6.72E-03	HSP90AB1,MYC	 
+FGFR2	 	kinase	 	 	 	6.92E-03	BCL2,MYC	2 (6)
+Sb202190	 	chemical - kinase inhibitor	 	 	 	6.92E-03	BCL2,HSPA5	 
+docetaxel	 	chemical drug	 	 	 	6.92E-03	BCL2,PIM1	 
+miR-34a-5p (and other miRNAs w/seed GGCAGUG)	 	mature microRNA	 	 	 	7.02E-03	BCL2,MYC	 
+OGA	 	enzyme	 	 	 	7.09E-03	BCL2,HSP90AB1,SOCS3	 
+RAS	 	group	 	 	 	7.12E-03	BCL2,MYC	2 (9)
+FGF2	 	growth factor	 	 	 	7.19E-03	BCL2,MYC,SOCS3	9 (12)
+NR3C2	 	ligand-dependent nuclear receptor	 	 	 	7.43E-03	BCL2,TSC22D3	 
+n-nitrosomethylbenzylamine	 	chemical toxicant	 	 	 	7.43E-03	AHNAK,HSP90AA1	 
+rhodamine 6G	 	chemical toxicant	 	 	 	7.59E-03	BCL2	 
+2-amino-5-azotoluene	 	chemical toxicant	 	 	 	7.59E-03	MYC	 
+Cyclin A	 	group	 	 	 	7.59E-03	MYC	 
+CYTOR	 	other	 	 	 	7.59E-03	MYC	 
+CLCF1	 	cytokine	 	 	 	7.59E-03	SOCS3	 
+PNPLA8	 	enzyme	 	 	 	7.59E-03	HSPA5	 
+ZNF382	 	transcription regulator	 	 	 	7.59E-03	MYC	 
+LTBP4	 	growth factor	 	 	 	7.59E-03	MYC	 
+PDS5B	 	other	 	 	 	7.59E-03	MYC	 
+STAG1	 	transcription regulator	 	 	 	7.59E-03	MYC	 
+ABCC1	 	transporter	 	 	 	7.59E-03	BCL2	 
+immune complex	 	complex	 	 	 	7.59E-03	SOCS3	 
+HDAC10	 	transcription regulator	 	 	 	7.59E-03	TXNIP	 
+HINT1	 	enzyme	 	 	 	7.59E-03	BCL2	 
+HNRNPC	 	other	 	 	 	7.59E-03	MYC	 
+GRK5	 	kinase	 	 	 	7.59E-03	BCL2	 
+IL22RA2	 	transmembrane receptor	 	 	 	7.59E-03	SOCS3	 
+CXCR1	 	G-protein coupled receptor	 	 	 	7.59E-03	BCL2	 
+SMARCA1	 	transcription regulator	 	 	 	7.59E-03	MYC	 
+RGS19	 	enzyme	 	 	 	7.59E-03	MYC	 
+DKK2	 	other	 	 	 	7.59E-03	BCL2	 
+CYSLTR1	 	G-protein coupled receptor	 	 	 	7.59E-03	BCL2	 
+GSN	 	other	 	 	 	7.59E-03	BCL2	 
+SCNN1A	 	ion channel	 	 	 	7.59E-03	HSPA5	 
+KSR1	 	kinase	 	 	 	7.59E-03	MYC	 
+MAOA	 	enzyme	 	 	 	7.59E-03	BCL2	 
+WNT7B	 	other	 	 	 	7.59E-03	MYC	 
+MAD2L1	 	other	 	 	 	7.59E-03	BCL2	 
+TAPBP	 	transporter	 	 	 	7.59E-03	HLA-E	 
+NEU3	 	enzyme	 	 	 	7.59E-03	BCL2	 
+AQP7	 	transporter	 	 	 	7.59E-03	MYC	 
+PROKR1	 	G-protein coupled receptor	 	 	 	7.59E-03	MYC	 
+RBCK1	 	transcription regulator	 	 	 	7.59E-03	MYC	 
+PCBP1	 	translation regulator	 	 	 	7.59E-03	MYC	 
+proteasome inhibitor	 	chemical drug	 	 	 	7.59E-03	MYC	 
+R59949	 	chemical - kinase inhibitor	 	 	 	7.59E-03	MYC	 
+coumestrol	 	chemical toxicant	 	 	 	7.59E-03	HSP90AB1	 
+methoxychlor	 	chemical toxicant	 	 	 	7.59E-03	HSP90AB1	 
+pranlukast	 	chemical drug	 	 	 	7.59E-03	BCL2	 
+myxothiazol	 	chemical toxicant	 	 	 	7.59E-03	TXNIP	 
+PCM1-JAK2	 	fusion gene/product	 	 	 	7.59E-03	SOCS3	 
+epoxyeicosatrienoic acid analog B	 	chemical reagent	 	 	 	7.59E-03	HSPA5	 
+epoxyeicosatrienoic acid analog A	 	chemical reagent	 	 	 	7.59E-03	HSPA5	 
+cinnamon powder	 	chemical reagent	 	 	 	7.59E-03	SLC2A3	 
+alpha-tocopherol succinate	 	chemical drug	 	 	 	7.59E-03	BCL2	 
+cordycepin	 	chemical drug	 	 	 	7.59E-03	MYC	 
+N,N-dimethylarginine	 	chemical - endogenous mammalian	 	 	 	7.59E-03	BCL2	 
+methapyrilene	 	chemical drug	 	 	 	7.64E-03	HSPA5,MYC	 
+ITGB1	 	transmembrane receptor	 	 	 	7.64E-03	BCL2,MYC	2 (6)
+SOCS1	 	other	 	 	 	7.96E-03	BCL2,SOCS3	2 (2)
+ritonavir	 	chemical drug	 	 	 	7.96E-03	MYC,TSC22D3	 
+TICAM1	 	other	 	 	 	8.18E-03	NFKBIZ,SOCS3	 
+butyric acid	 	chemical - endogenous mammalian	 	 	 	8.26E-03	BCL2,MYC,SOCS3	12 (18)
+IFN Beta	 	group	 	 	 	8.29E-03	BCL2,MYC	2 (3)
+lovastatin	 	chemical drug	 	 	 	8.51E-03	BCL2,MYC	2 (11)
+L-cysteine	 	chemical - endogenous mammalian	 	 	 	8.53E-03	MYC	 
+tannic acid	 	chemical toxicant	 	 	 	8.53E-03	BCL2	 
+phosphatidylcholine	 	chemical - endogenous mammalian	 	 	 	8.53E-03	BCL2	 
+4-nonylphenol	 	chemical toxicant	 	 	 	8.53E-03	MYC	 
+voltage-gated calcium channel	 	complex	 	 	 	8.53E-03	PTPRC	 
+TGFBR	 	group	 	 	 	8.53E-03	SOCS3	 
+Ck2	 	complex	 	 	 	8.53E-03	MYC	 
+Bcl9-Cbp/p300-Ctnnb1-Lef/Tcf	 	complex	 	 	 	8.53E-03	MYC	 
+cytidylyl-3'-5'-guanosine	 	chemical reagent	 	 	 	8.53E-03	BCL2	 
+propargylamine	 	chemical reagent	 	 	 	8.53E-03	BCL2	 
+NAALADL2	 	other	 	 	 	8.53E-03	HSPA5	 
+AFF4	 	transcription regulator	 	 	 	8.53E-03	MYC	 
+MEMO1	 	other	 	 	 	8.53E-03	MYC	 
+CTDSP1	 	phosphatase	 	 	 	8.53E-03	MYC	 
+HUWE1	 	transcription regulator	 	 	 	8.53E-03	MYC	 
+bicyclol	 	chemical drug	 	 	 	8.53E-03	MYC	 
+IL10RB	 	transmembrane receptor	 	 	 	8.53E-03	SOCS3	 
+SERPINB2	 	other	 	 	 	8.53E-03	BCL2	 
+TNFRSF17	 	transmembrane receptor	 	 	 	8.53E-03	BCL2	 
+MIRLET7	 	group	 	 	 	8.53E-03	MYC	 
+PTGES3	 	enzyme	 	 	 	8.53E-03	MYC	 
+CDKN2B	 	transcription regulator	 	 	 	8.53E-03	BCL2	 
+ING4	 	transcription regulator	 	 	 	8.53E-03	MYC	 
+RPS6KB2	 	kinase	 	 	 	8.53E-03	BCL2	 
+RPL11	 	other	 	 	 	8.53E-03	MYC	 
+NACC1	 	transcription regulator	 	 	 	8.53E-03	BCL2	 
+PANDAR	 	other	 	 	 	8.53E-03	BCL2	 
+EFNB1	 	other	 	 	 	8.53E-03	BCL2	 
+USP37	 	peptidase	 	 	 	8.53E-03	MYC	 
+ST6GAL1	 	enzyme	 	 	 	8.53E-03	SLC2A3	 
+UACA	 	other	 	 	 	8.53E-03	HSPA5	 
+YBX3	 	transcription regulator	 	 	 	8.53E-03	MYC	 
+di-spiropyrrolizidino oxindole andrographolide derivative CY2	 	chemical reagent	 	 	 	8.53E-03	BCL2	 
+CD99	 	other	 	 	 	8.53E-03	PTPRC	 
+MPL	 	transmembrane receptor	 	 	 	8.53E-03	MYC	 
+EXT1	 	enzyme	 	 	 	8.53E-03	MYC	 
+USP17L2 (includes others)	 	peptidase	 	 	 	8.53E-03	MYC	 
+1,1-bis(3'-indolyl)-1-(4-hydroxyphenyl)methane	 	chemical reagent	 	 	 	8.53E-03	BCL2	 
+HA900	 	chemical reagent	 	 	 	8.53E-03	SOCS3	 
+UCA1	 	other	 	 	 	8.53E-03	BCL2	 
+benazepril	 	chemical drug	 	 	 	8.53E-03	BCL2	 
+6-aminonicotinamide	 	chemical reagent	 	 	 	8.53E-03	HSPA5	 
+ammonium trichloro(dioxoethylene-O,O'-)tellurate	 	chemical drug	 	 	 	8.53E-03	BCL2	 
+brimonidine	 	chemical drug	 	 	 	8.53E-03	BCL2	 
+PD 168393	 	chemical - kinase inhibitor	 	 	 	8.53E-03	BCL2	 
+rhodioloside	 	chemical - endogenous non-mammalian	 	 	 	8.53E-03	BCL2	 
+SR1078	 	chemical reagent	 	 	 	8.53E-03	HSPA5	 
+miR-182 inhibitor	 	chemical reagent	 	 	 	8.53E-03	BCL2	 
+iodine	 	chemical - endogenous mammalian	 	 	 	8.53E-03	BCL2	 
+tyrphostin AG 127	 	chemical - kinase inhibitor	 	 	 	8.53E-03	BCL2	 
+NCOA1	 	transcription regulator	 	 	 	8.62E-03	MYC,NFKBIZ	 
+CDX2	 	transcription regulator	 	 	 	8.62E-03	BCL2,MYC	 
+GFI1	 	transcription regulator	 	 	 	8.74E-03	HSP90AB1,MYC	 
+JAK2	 	kinase	 	 	 	8.96E-03	MYC,SOCS3	 
+IFNAR1	 	transmembrane receptor	 	 	 	9.08E-03	MYC,SOCS3	 
+H89	 	chemical - kinase inhibitor	 	 	 	9.08E-03	BCL2,MYC	2 (4)
+PPARA	 	ligand-dependent nuclear receptor	 	 	 	9.15E-03	BCL2,HLA-E,MYC	 
+Nr1h	 	group	 	 	 	9.31E-03	BCL2,NFKBIZ	 
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	 	9.42E-03	CYLD,NFKBIZ	 
+L-threonine	 	chemical - endogenous mammalian	 	 	 	9.47E-03	MYC	 
+EPHB2	 	kinase	 	 	 	9.47E-03	BCL2	 
+niclosamide	 	chemical drug	 	 	 	9.47E-03	BCL2	 
+anacardic acid	 	chemical - endogenous non-mammalian	 	 	 	9.47E-03	HSPA5	 
+CAMK2N2	 	other	 	 	 	9.47E-03	BCL2	 
+ANKRD17	 	other	 	 	 	9.47E-03	SOCS3	 
+PARP14	 	enzyme	 	 	 	9.47E-03	PIM1	 
+NQO2	 	enzyme	 	 	 	9.47E-03	BCL2	 
+TRAF3IP3	 	other	 	 	 	9.47E-03	MYC	 
+RSPO1	 	other	 	 	 	9.47E-03	MYC	 
+BMS-754807	 	chemical drug	 	 	 	9.47E-03	BCL2	 
+PF-3084014	 	chemical drug	 	 	 	9.47E-03	BCL2	 
+cercosporin	 	chemical - endogenous non-mammalian	 	 	 	9.47E-03	MYC	 
+ANG	 	enzyme	 	 	 	9.47E-03	BCL2	 
+KCNN4	 	ion channel	 	 	 	9.47E-03	TSC22D3	 
+CNGA3	 	ion channel	 	 	 	9.47E-03	HSPA5	 
+DCLK1	 	kinase	 	 	 	9.47E-03	MYC	 
+KRT19	 	other	 	 	 	9.47E-03	HSPA5	 
+HSD11B2	 	enzyme	 	 	 	9.47E-03	TSC22D3	 
+CNBP	 	transcription regulator	 	 	 	9.47E-03	MYC	 
+DAB2IP	 	other	 	 	 	9.47E-03	MYC	 
+mir-503	 	microRNA	 	 	 	9.47E-03	BCL2	 
+HBP1	 	transcription regulator	 	 	 	9.47E-03	PIM1	 
+NCK1	 	kinase	 	 	 	9.47E-03	HSPA5	 
+SETD7	 	enzyme	 	 	 	9.47E-03	MYC	 
+AFF1	 	transcription regulator	 	 	 	9.47E-03	MYC	 
+PIM3	 	kinase	 	 	 	9.47E-03	MYC	 
+Igkv1-117	 	other	 	 	 	9.47E-03	MYC	 
+SH2B1	 	other	 	 	 	9.47E-03	MYC	 
+SLC6A1	 	transporter	 	 	 	9.47E-03	BCL2	 
+CXCL13	 	cytokine	 	 	 	9.47E-03	MYC	 
+PCBP2	 	other	 	 	 	9.47E-03	MYC	 
+ATF5	 	transcription regulator	 	 	 	9.47E-03	TXNIP	 
+levamisole	 	chemical drug	 	 	 	9.47E-03	BCL2	 
+clomipramine	 	chemical drug	 	 	 	9.47E-03	SLC2A3	 
+tiron	 	chemical reagent	 	 	 	9.47E-03	HSPA5	 
+aldosterone	 	chemical - endogenous mammalian	 	 	 	9.66E-03	HSPA5,TSC22D3	 
+medroxyprogesterone acetate	 	chemical drug	 	 	 	9.78E-03	BCL2,MYC	 
+Histone h3	 	group	 	 	 	9.81E-03	BCL2,HSPA5,SOCS3	 
+rosiglitazone	 	chemical drug	 	 	 	9.81E-03	BCL2,HSPA5,SOCS3	8 (13)
+MED1	 	transcription regulator	 	 	 	9.89E-03	MYC,PIM1	 
+CD38	 	enzyme	 	 	 	1.01E-02	PIM1,SOCS3	 
+JUN	 	transcription regulator	 	 	 	1.02E-02	MYC,NFKBIZ,SOCS3	 
+valproic acid	 	chemical drug	 	 	 	1.02E-02	BCL2,HSPA5,TSC22D3	 
+TNFRSF1A	 	transmembrane receptor	 	 	 	1.03E-02	PIM1,SOCS3	 
+RB1	 	transcription regulator	 	 	 	1.03E-02	BCL2,MYC,PIM1	 
+4-hydroxyestradiol-17beta	 	chemical - endogenous mammalian	 	 	 	1.04E-02	HSPA5	 
+AKT inhibitor VIII	 	chemical reagent	 	 	 	1.04E-02	MYC	 
+naringin	 	chemical - endogenous non-mammalian	 	 	 	1.04E-02	BCL2	 
+Adaptor protein 1	 	complex	 	 	 	1.04E-02	MYC	 
+SNHG20	 	other	 	 	 	1.04E-02	MYC	 
+OIP5-AS1	 	other	 	 	 	1.04E-02	MYC	 
+vismodegib	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+CSNK2B	 	kinase	 	 	 	1.04E-02	MYC	 
+Mcpt4	 	peptidase	 	 	 	1.04E-02	BCL2	 
+MCL1	 	transporter	 	 	 	1.04E-02	BCL2	 
+PDE3B	 	enzyme	 	 	 	1.04E-02	SOCS3	 
+LINC-ROR	 	other	 	 	 	1.04E-02	BCL2	 
+PTCSC3	 	other	 	 	 	1.04E-02	MYC	 
+IL17RB	 	transmembrane receptor	 	 	 	1.04E-02	BCL2	 
+LNX2	 	other	 	 	 	1.04E-02	BCL2	 
+LB-205	 	chemical reagent	 	 	 	1.04E-02	BCL2	 
+VEGFC	 	growth factor	 	 	 	1.04E-02	BCL2	 
+CHRNA3	 	transmembrane receptor	 	 	 	1.04E-02	BCL2	 
+RFX2	 	transcription regulator	 	 	 	1.04E-02	MYC	 
+GPR37	 	G-protein coupled receptor	 	 	 	1.04E-02	HSPA5	 
+NCOA6	 	transcription regulator	 	 	 	1.04E-02	HSPA5	 
+MAP3K11	 	kinase	 	 	 	1.04E-02	MYC	 
+I-BET-151	 	chemical reagent	 	 	 	1.04E-02	HSPA5	 
+oligomycin	 	chemical - endogenous non-mammalian	 	 	 	1.04E-02	BCL2	 
+sevoflurane	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+ferric ammonium citrate	 	chemical drug	 	 	 	1.04E-02	MYC	 
+clonidine	 	chemical drug	 	 	 	1.04E-02	MYC	 
+carbamazepine	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+orlistat	 	chemical drug	 	 	 	1.04E-02	HSPA5	 
+lidocaine	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+kukoamine A	 	chemical - endogenous non-mammalian	 	 	 	1.04E-02	BCL2	 
+7-(4-fluorobenzylamino)-1,3,4,8-tetrahydropyrrolo[4,3,2-de]quinolin-8(1H)-one	 	chemical reagent	 	 	 	1.04E-02	BCL2	 
+pterostilbene	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+SS18-SSX2	 	fusion gene/product	 	 	 	1.04E-02	BCL2	 
+CA074-methyl ester	 	chemical reagent	 	 	 	1.04E-02	BCL2	 
+delphinidin	 	chemical - endogenous non-mammalian	 	 	 	1.04E-02	BCL2	 
+hesperetin	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+puerarin	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+trestolone	 	chemical drug	 	 	 	1.04E-02	BCL2	 
+MAPK9	 	kinase	 	 	 	1.05E-02	BCL2,MYC	 
+PRKAG3	 	other	 	 	 	1.07E-02	HSPA5,SLC2A3	 
+nitrofurantoin	 	chemical drug	 	 	 	1.07E-02	HSPA5,MYC	 
+S100A9	 	other	 	 	 	1.12E-02	SOCS3,TXNIP	 
+DNMT3A	 	enzyme	 	 	 	1.12E-02	PTPRC,SOCS3	 
+ulipristal acetate	 	chemical drug	 	 	 	1.14E-02	BCL2	 
+PP2A	 	complex	 	 	 	1.14E-02	PIM1	 
+chlorcyclizine	 	chemical drug	 	 	 	1.14E-02	SLC2A3	 
+highly active antiretroviral therapy	 	chemical drug	 	 	 	1.14E-02	BCL2	 
+Il8r	 	group	 	 	 	1.14E-02	BCL2	 
+METTL3	 	enzyme	 	 	 	1.14E-02	SOCS3	 
+UCN2	 	other	 	 	 	1.14E-02	BCL2	 
+STAT1/3/5 dimer	 	complex	 	 	 	1.14E-02	SOCS3	 
+MFN2	 	enzyme	 	 	 	1.14E-02	BCL2	 
+AFAP1-AS1	 	other	 	 	 	1.14E-02	BCL2	 
+PAK4	 	kinase	 	 	 	1.14E-02	BCL2	 
+CCAT1	 	other	 	 	 	1.14E-02	MYC	 
+SH3KBP1	 	other	 	 	 	1.14E-02	MYC	 
+miR-451a (and other miRNAs w/seed AACCGUU)	 	mature microRNA	 	 	 	1.14E-02	BCL2	 
+mir-379	 	microRNA	 	 	 	1.14E-02	TXNIP	 
+miR-375-3p (miRNAs w/seed UUGUUCG)	 	mature microRNA	 	 	 	1.14E-02	MYC	 
+PRAME	 	other	 	 	 	1.14E-02	BCL2	 
+RB1CC1	 	other	 	 	 	1.14E-02	MYC	 
+BAP1	 	peptidase	 	 	 	1.14E-02	HSPA5	 
+NUMBL	 	other	 	 	 	1.14E-02	MYC	 
+CCNT1	 	transcription regulator	 	 	 	1.14E-02	MYC	 
+PAWR	 	transcription regulator	 	 	 	1.14E-02	BCL2	 
+PAX4	 	transcription regulator	 	 	 	1.14E-02	MYC	 
+CDH5	 	other	 	 	 	1.14E-02	BCL2	 
+BAG3	 	other	 	 	 	1.14E-02	BCL2	 
+BEX2	 	other	 	 	 	1.14E-02	BCL2	 
+CXCL1	 	cytokine	 	 	 	1.14E-02	SOCS3	 
+LY-2510924	 	biologic drug	 	 	 	1.14E-02	BCL2	 
+azetidyl-2-carboxylic acid	 	chemical reagent	 	 	 	1.14E-02	HSPA5	 
+cantharidin	 	chemical drug	 	 	 	1.14E-02	BCL2	 
+edaravone	 	chemical drug	 	 	 	1.14E-02	HSPA5	 
+quinacrine	 	chemical drug	 	 	 	1.14E-02	BCL2	 
+D-sphingosine	 	chemical - endogenous mammalian	 	 	 	1.14E-02	BCL2	 
+nordihydroguaiaretic acid	 	chemical drug	 	 	 	1.14E-02	BCL2	 
+zinostatin	 	biologic drug	 	 	 	1.14E-02	BCL2	 
+NAD+	 	chemical - endogenous mammalian	 	 	 	1.14E-02	TXNIP	 
+zalcitabine	 	chemical drug	 	 	 	1.14E-02	SLC2A3	 
+androstenediol	 	chemical - endogenous mammalian	 	 	 	1.14E-02	BCL2	 
+pioglitazone	 	chemical drug	 	 	 	1.14E-02	BCL2,HSPA5	 
+E2F1	 	transcription regulator	 	 	 	1.15E-02	BCL2,MYC,STK17B	 
+fluticasone propionate	 	chemical drug	 	 	 	1.16E-02	HLA-F,TSC22D3	 
+Vegf	 	group	 	 	 	1.18E-02	BCL2,MYC,SOCS3	 
+E2F3	 	transcription regulator	 	 	 	1.23E-02	MALAT1,MYC	 
+gefitinib	 	chemical drug	 	 	 	1.23E-02	BCL2,SLC2A3	 
+D-alpha-tocopheryl succinate	 	chemical reagent	 	 	 	1.23E-02	BCL2	 
+D-galactose	 	chemical - endogenous mammalian	 	 	 	1.23E-02	BCL2	 
+ladostigil	 	chemical drug	 	 	 	1.23E-02	BCL2	 
+perhexiline	 	chemical drug	 	 	 	1.23E-02	SLC2A3	 
+WP1066	 	chemical drug	 	 	 	1.23E-02	BCL2	 
+CREB3L2	 	transcription regulator	 	 	 	1.23E-02	HSPA5	 
+CRBN	 	enzyme	 	 	 	1.23E-02	HSPA5	 
+harmine	 	chemical - endogenous non-mammalian	 	 	 	1.23E-02	BCL2	 
+IgG2a	 	complex	 	 	 	1.23E-02	BCL2	 
+MK2206	 	chemical drug	 	 	 	1.23E-02	BCL2	 
+RBBP7	 	transcription regulator	 	 	 	1.23E-02	MYC	 
+UBA1	 	enzyme	 	 	 	1.23E-02	HSPA5	 
+ALCAM	 	other	 	 	 	1.23E-02	BCL2	 
+PEMT	 	enzyme	 	 	 	1.23E-02	HSPA5	 
+CDC37	 	other	 	 	 	1.23E-02	MYC	 
+VEGFD	 	growth factor	 	 	 	1.23E-02	BCL2	 
+RPL22	 	translation regulator	 	 	 	1.23E-02	HSPA5	 
+PPP5C	 	phosphatase	 	 	 	1.23E-02	MYC	 
+DUSP14	 	phosphatase	 	 	 	1.23E-02	NFKBIZ	 
+vatalanib	 	chemical drug	 	 	 	1.23E-02	BCL2	 
+phencyclidine	 	chemical drug	 	 	 	1.23E-02	BCL2	 
+aristolochic acid I	 	chemical toxicant	 	 	 	1.23E-02	BCL2	 
+1,2-dimethylhydrazine	 	chemical toxicant	 	 	 	1.23E-02	MYC	 
+astressin 2B	 	biologic drug	 	 	 	1.23E-02	SLC2A3	 
+BRCA1	 	transcription regulator	 	 	 	1.25E-02	BCL2,MYC	 
+ESR2	 	ligand-dependent nuclear receptor	 	 	 	1.26E-02	BCL2,MYC,SOCS3	 
+AR	 	ligand-dependent nuclear receptor	 	 	 	1.27E-02	HSPA5,MYC,SLC2A3	 
+2-(4-amino-1-isopropyl-1H-pyrazolo[3,4-d]pyrimidin-3-yl)-1H-indol-5-ol	 	chemical reagent	 	 	 	1.28E-02	PIM1,TXNIP	 
+HOXA10	 	transcription regulator	 	 	 	1.29E-02	HSP90AA1,STK17B	 
+4-hydroxytamoxifen	 	chemical drug	 	 	 	1.29E-02	BCL2,MYC	 
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	1.31E-02	HSPA5,SOCS3	 
+SPP1	 	cytokine	 	 	 	1.31E-02	BCL2,MYC	 
+thyroid hormone	 	chemical - endogenous mammalian	 	 	 	1.32E-02	HSP90AB1,MYC	 
+dihydroartemisinin	 	chemical drug	 	 	 	1.32E-02	MYC	 
+carfilzomib	 	biologic drug	 	 	 	1.32E-02	MYC	 
+Ptprd	 	phosphatase	 	 	 	1.32E-02	MYC	 
+TCF/LEF	 	group	 	 	 	1.32E-02	MYC	 
+PECAM1	 	other	 	 	 	1.32E-02	BCL2	 
+trametinib	 	chemical drug	 	 	 	1.32E-02	MYC	 
+NDUFA13	 	enzyme	 	 	 	1.32E-02	BCL2	 
+PTBP1	 	enzyme	 	 	 	1.32E-02	MYC	 
+mir-322	 	microRNA	 	 	 	1.32E-02	BCL2	 
+SRSF3	 	other	 	 	 	1.32E-02	BCL2	 
+FCER2	 	transmembrane receptor	 	 	 	1.32E-02	BCL2	 
+TRAF4	 	other	 	 	 	1.32E-02	MYC	 
+GADD45B	 	other	 	 	 	1.32E-02	BCL2	 
+cetrorelix	 	biologic drug	 	 	 	1.32E-02	BCL2	 
+prazosin	 	chemical drug	 	 	 	1.32E-02	MYC	 
+selenite	 	chemical toxicant	 	 	 	1.32E-02	HLA-E	 
+metoprolol	 	chemical drug	 	 	 	1.32E-02	MYC	 
+salmeterol	 	chemical drug	 	 	 	1.32E-02	SOCS3	 
+meclizine	 	chemical drug	 	 	 	1.32E-02	MYC	 
+noscapine	 	chemical drug	 	 	 	1.32E-02	BCL2	 
+cyproterone acetate	 	chemical drug	 	 	 	1.32E-02	MYC	 
+Cd2+	 	chemical toxicant	 	 	 	1.32E-02	MYC	 
+manganese	 	chemical - endogenous mammalian	 	 	 	1.32E-02	HSPA5	 
+IRF1	 	transcription regulator	 	 	 	1.33E-02	BCL2,MYC	 
+PTGS2	 	enzyme	 	 	 	1.33E-02	BCL2,MYC	 
+methylprednisolone	 	chemical drug	 	 	 	1.36E-02	MYC,PTPRC,SLC2A3	 
+topotecan	 	chemical drug	 	 	 	1.38E-02	HLA-E,MYC	 
+PRKCD	 	kinase	 	 	 	1.39E-02	BCL2,MYC	 
+TLR2	 	transmembrane receptor	 	 	 	1.40E-02	CYLD,SOCS3	 
+MAPK14	 	kinase	 	 	 	1.40E-02	BCL2,SOCS3	 
+mir-8	 	microRNA	 	 	 	1.42E-02	BCL2,MYC	 
+cyclic GMP	 	chemical - endogenous mammalian	 	 	 	1.42E-02	BCL2	 
+fluoride	 	chemical - endogenous mammalian	 	 	 	1.42E-02	HSPA5	 
+lonafarnib	 	chemical drug	 	 	 	1.42E-02	BCL2	 
+cetuximab	 	biologic drug	 	 	 	1.42E-02	BCL2	 
+salubrinal	 	chemical reagent	 	 	 	1.42E-02	HSPA5	 
+THRAP3	 	transcription regulator	 	 	 	1.42E-02	TXNIP	 
+TIFA	 	other	 	 	 	1.42E-02	BCL2	 
+SELENOS	 	other	 	 	 	1.42E-02	HSPA5	 
+IGFBP7	 	transporter	 	 	 	1.42E-02	MYC	 
+Betacatenin/TCF	 	complex	 	 	 	1.42E-02	MYC	 
+ZBTB33	 	transcription regulator	 	 	 	1.42E-02	MYC	 
+SPTLC2	 	enzyme	 	 	 	1.42E-02	HSPA5	 
+SMC3	 	other	 	 	 	1.42E-02	MYC	 
+PNN	 	other	 	 	 	1.42E-02	MYC	 
+APBB1	 	transcription regulator	 	 	 	1.42E-02	MYC	 
+mir-196	 	microRNA	 	 	 	1.42E-02	BCL2	 
+miR-128-3p (and other miRNAs w/seed CACAGUG)	 	mature microRNA	 	 	 	1.42E-02	TXNIP	 
+miR-143-3p (and other miRNAs w/seed GAGAUGA)	 	mature microRNA	 	 	 	1.42E-02	BCL2	 
+mir-199	 	microRNA	 	 	 	1.42E-02	BCL2	 
+CD74	 	transmembrane receptor	 	 	 	1.42E-02	BCL2	 
+CPEB1	 	translation regulator	 	 	 	1.42E-02	MYC	 
+HOXB4	 	transcription regulator	 	 	 	1.42E-02	MYC	 
+NRP1	 	transmembrane receptor	 	 	 	1.42E-02	BCL2	 
+IL18R1	 	transmembrane receptor	 	 	 	1.42E-02	SOCS3	 
+CNOT3	 	other	 	 	 	1.42E-02	MYC	 
+TGFBR3	 	kinase	 	 	 	1.42E-02	BCL2	 
+TOPBP1	 	other	 	 	 	1.42E-02	MYC	 
+MYH9	 	enzyme	 	 	 	1.42E-02	MYC	 
+mir-290	 	microRNA	 	 	 	1.42E-02	MYC	 
+monorden	 	chemical - endogenous non-mammalian	 	 	 	1.42E-02	HSPA5	 
+hydroxyflutamide	 	chemical drug	 	 	 	1.42E-02	BCL2	 
+N-ethyl-N-nitrosourea	 	chemical toxicant	 	 	 	1.42E-02	HSP90AA1	 
+Mn(III)-tetrakis-(4-benzoic acid) porphyrin	 	chemical reagent	 	 	 	1.42E-02	BCL2	 
+asiatic acid	 	chemical reagent	 	 	 	1.42E-02	BCL2	 
+24-hydroxycholesterol	 	chemical - endogenous mammalian	 	 	 	1.42E-02	HSPA5	 
+RORA	 	ligand-dependent nuclear receptor	 	 	 	1.45E-02	SLC2A3,SOCS3	 
+thapsigargin	 	chemical toxicant	 	 	 	1.49E-02	HSPA5,MYC	 
+misoprostol	 	chemical drug	 	 	 	1.51E-02	SOCS3	 
+GC-GCR dimer	 	complex	 	 	 	1.51E-02	TSC22D3	 
+PURA	 	transcription regulator	 	 	 	1.51E-02	MYC	 
+CBX4	 	transcription regulator	 	 	 	1.51E-02	MYC	 
+H1-2	 	other	 	 	 	1.51E-02	MYC	 
+MIR101	 	group	 	 	 	1.51E-02	BCL2	 
+SFRP4	 	transmembrane receptor	 	 	 	1.51E-02	MYC	 
+EPHX2	 	enzyme	 	 	 	1.51E-02	HSPA5	 
+IGFBP1	 	other	 	 	 	1.51E-02	BCL2	 
+IFT57	 	other	 	 	 	1.51E-02	BCL2	 
+CR2	 	transmembrane receptor	 	 	 	1.51E-02	BCL2	 
+PIM2	 	kinase	 	 	 	1.51E-02	MYC	 
+OSBPL8	 	transporter	 	 	 	1.51E-02	HSPA5	 
+IL2RB	 	transmembrane receptor	 	 	 	1.51E-02	MYC	 
+GFAP	 	other	 	 	 	1.51E-02	HSPA5	 
+CAMK2D	 	kinase	 	 	 	1.51E-02	BCL2	 
+NDN	 	transcription regulator	 	 	 	1.51E-02	MYC	 
+STMN1	 	other	 	 	 	1.51E-02	BCL2	 
+cyclopiazonic acid	 	chemical - endogenous non-mammalian	 	 	 	1.51E-02	BCL2	 
+cystamine	 	chemical drug	 	 	 	1.51E-02	BCL2	 
+2-acetylaminofluorene	 	chemical toxicant	 	 	 	1.51E-02	BCL2	 
+caffeic acid	 	chemical drug	 	 	 	1.51E-02	BCL2	 
+mannose	 	chemical - endogenous mammalian	 	 	 	1.51E-02	HSPA5	 
+lactacystin	 	chemical - protease inhibitor	 	 	 	1.52E-02	HSPA5,ZFP36L2	 
+NRAS	 	enzyme	 	 	 	1.53E-02	BCL2,PTPRC	 
+IRF3	 	transcription regulator	 	 	 	1.55E-02	AHNAK,HLA-F	 
+CD 437	 	chemical drug	 	 	 	1.60E-02	HSP90AA1,MYC	 
+cryptotanshinone	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+PLC	 	group	 	 	 	1.61E-02	MYC	 
+PI-103	 	chemical - kinase inhibitor	 	 	 	1.61E-02	BCL2	 
+DDX25	 	enzyme	 	 	 	1.61E-02	BCL2	 
+p85 (pik3r)	 	group	 	 	 	1.61E-02	BCL2	 
+GIP	 	other	 	 	 	1.61E-02	BCL2	 
+PHB2	 	transcription regulator	 	 	 	1.61E-02	SOCS3	 
+mir-7	 	microRNA	 	 	 	1.61E-02	SLC2A3	 
+mir-451	 	microRNA	 	 	 	1.61E-02	MYC	 
+MXI1	 	transcription regulator	 	 	 	1.61E-02	MYC	 
+PPP2R5C	 	other	 	 	 	1.61E-02	BCL2	 
+PDGFRA	 	kinase	 	 	 	1.61E-02	MYC	 
+GAL	 	other	 	 	 	1.61E-02	BCL2	 
+MAZ	 	transcription regulator	 	 	 	1.61E-02	MYC	 
+NCAM1	 	other	 	 	 	1.61E-02	MALAT1	 
+DDX17	 	enzyme	 	 	 	1.61E-02	MYC	 
+DROSHA	 	enzyme	 	 	 	1.61E-02	MYC	 
+FABP5	 	transporter	 	 	 	1.61E-02	SOCS3	 
+TOR1A	 	enzyme	 	 	 	1.61E-02	HSPA5	 
+HNRNPU	 	transporter	 	 	 	1.61E-02	MYC	 
+TARBP2	 	other	 	 	 	1.61E-02	MYC	 
+PLD2	 	enzyme	 	 	 	1.61E-02	BCL2	 
+CBFA2T3	 	transcription regulator	 	 	 	1.61E-02	PTPRC	 
+DAXX	 	transcription regulator	 	 	 	1.61E-02	BCL2	 
+C5	 	other	 	 	 	1.61E-02	SOCS3	 
+ethyl pyruvate	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+coenzyme Q10	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+decursin	 	chemical - endogenous non-mammalian	 	 	 	1.61E-02	MYC	 
+actinonin	 	chemical reagent	 	 	 	1.61E-02	BCL2	 
+isoliquiritigenin	 	chemical - endogenous non-mammalian	 	 	 	1.61E-02	BCL2	 
+nimodipine	 	chemical drug	 	 	 	1.61E-02	MYC	 
+zearalenone	 	chemical toxicant	 	 	 	1.61E-02	MYC	 
+clenbuterol	 	chemical drug	 	 	 	1.61E-02	SOCS3	 
+bombesin	 	chemical - endogenous mammalian	 	 	 	1.61E-02	MYC	 
+oxysterol	 	chemical - endogenous mammalian	 	 	 	1.61E-02	MYC	 
+ethidium	 	chemical drug	 	 	 	1.61E-02	BCL2	 
+ARNT2	 	transcription regulator	 	 	 	1.63E-02	SLC2A3,TSC22D3	 
+ERG	 	transcription regulator	 	 	 	1.65E-02	PIM1,TSC22D3	 
+1,2-dithiol-3-thione	 	chemical reagent	 	 	 	1.65E-02	HSP90AA1,HSP90AB1	 
+BMP2	 	growth factor	 	 	 	1.66E-02	BCL2,MYC	 
+GLI1	 	transcription regulator	 	 	 	1.69E-02	BCL2,PIM1	 
+N(6)-(3-iodobenzyl)-5'-N-methylcarboxamidoadenosine	 	chemical drug	 	 	 	1.70E-02	MYC	 
+Fgfr	 	group	 	 	 	1.70E-02	HSPA5	 
+RNF20	 	enzyme	 	 	 	1.70E-02	MYC	 
+OPA1	 	enzyme	 	 	 	1.70E-02	HSPA5	 
+Endothelin	 	group	 	 	 	1.70E-02	MYC	 
+AURKA	 	kinase	 	 	 	1.70E-02	MYC	 
+S100B	 	other	 	 	 	1.70E-02	MYC	 
+MED12	 	transcription regulator	 	 	 	1.70E-02	MYC	 
+PLCG2	 	enzyme	 	 	 	1.70E-02	BCL2	 
+SEL1L	 	other	 	 	 	1.70E-02	HSPA5	 
+CRHR1	 	G-protein coupled receptor	 	 	 	1.70E-02	SLC2A3	 
+PLA2G4A	 	enzyme	 	 	 	1.70E-02	MYC	 
+AKR1B1	 	enzyme	 	 	 	1.70E-02	BCL2	 
+CD22	 	transmembrane receptor	 	 	 	1.70E-02	MYC	 
+ITGA6	 	transmembrane receptor	 	 	 	1.70E-02	BCL2	 
+CREB3	 	transcription regulator	 	 	 	1.70E-02	HSPA5	 
+RPS6KA3	 	kinase	 	 	 	1.70E-02	MYC	 
+PARP9	 	enzyme	 	 	 	1.70E-02	HLA-E	 
+CREB3L1	 	transcription regulator	 	 	 	1.70E-02	HSPA5	 
+YY2	 	transcription regulator	 	 	 	1.70E-02	MYC	 
+ellagic acid	 	chemical - endogenous non-mammalian	 	 	 	1.70E-02	BCL2	 
+sertraline	 	chemical drug	 	 	 	1.70E-02	BCL2	 
+magnolol	 	chemical - endogenous non-mammalian	 	 	 	1.70E-02	BCL2	 
+acyclic retinoid	 	chemical drug	 	 	 	1.70E-02	MYC	 
+glycyrrhetinic acid	 	chemical drug	 	 	 	1.70E-02	BCL2	 
+piperine	 	chemical drug	 	 	 	1.70E-02	BCL2	 
+neuroprotectin D1	 	chemical - endogenous mammalian	 	 	 	1.70E-02	BCL2	 
+BMP4	 	growth factor	 	 	 	1.71E-02	BCL2,MYC	 
+LDLR	 	transporter	 	 	 	1.77E-02	HSPA5,MYC	 
+SP3	 	transcription regulator	 	 	 	1.77E-02	HSPA5,SLC2A3	 
+Immunoglobulin	 	complex	 	 	 	1.77E-02	BCL2,MYC,SOCS3	 
+prostaglandin E1	 	chemical - endogenous mammalian	 	 	 	1.79E-02	MYC	 
+Rp-cAMPS	 	chemical - kinase inhibitor	 	 	 	1.79E-02	BCL2	 
+rituximab	 	biologic drug	 	 	 	1.79E-02	BCL2	 
+trastuzumab	 	biologic drug	 	 	 	1.79E-02	MYC	 
+SULF2	 	enzyme	 	 	 	1.79E-02	BCL2	 
+CREBZF	 	transcription regulator	 	 	 	1.79E-02	HSPA5	 
+artesunic acid	 	chemical drug	 	 	 	1.79E-02	BCL2	 
+IL31	 	other	 	 	 	1.79E-02	SOCS3	 
+CCK	 	other	 	 	 	1.79E-02	HSPA5	 
+CFB	 	peptidase	 	 	 	1.79E-02	HSPA5	 
+NOD1	 	other	 	 	 	1.79E-02	CYLD	 
+CHEK1	 	kinase	 	 	 	1.79E-02	MYC	 
+mir-143	 	microRNA	 	 	 	1.79E-02	BCL2	 
+AICDA	 	enzyme	 	 	 	1.79E-02	SOCS3	 
+MNT	 	transcription regulator	 	 	 	1.79E-02	TXNIP	 
+PDCD4	 	other	 	 	 	1.79E-02	MYC	 
+IL21R	 	transmembrane receptor	 	 	 	1.79E-02	SOCS3	 
+TMBIM6	 	other	 	 	 	1.79E-02	HSPA5	 
+EPHA2	 	kinase	 	 	 	1.79E-02	BCL2	 
+ERF	 	transcription regulator	 	 	 	1.79E-02	MYC	 
+MST1R	 	kinase	 	 	 	1.79E-02	MYC	 
+cuprizone	 	chemical toxicant	 	 	 	1.79E-02	SOCS3	 
+PS-1145	 	chemical - kinase inhibitor	 	 	 	1.79E-02	HSPA5	 
+thioridazine	 	chemical drug	 	 	 	1.79E-02	SLC2A3	 
+leuprolide	 	biologic drug	 	 	 	1.79E-02	BCL2	 
+idarubicin	 	chemical drug	 	 	 	1.79E-02	BCL2	 
+lycopene	 	chemical drug	 	 	 	1.79E-02	BCL2	 
+dichlororibofuranosylbenzimidazole	 	chemical toxicant	 	 	 	1.79E-02	MYC	 
+Pkc(s)	 	group	 	 	 	1.85E-02	BCL2,HSPA5	 
+carbon tetrachloride	 	chemical toxicant	 	 	 	1.85E-02	HSP90AA1,MYC	 
+puromycin	 	chemical - endogenous non-mammalian	 	 	 	1.89E-02	HSPA5	 
+dacinostat	 	chemical drug	 	 	 	1.89E-02	BCL2	 
+ssRNA40	 	chemical reagent	 	 	 	1.89E-02	SOCS3	 
+CYB5R4	 	enzyme	 	 	 	1.89E-02	HSPA5	 
+ERVW-1	 	other	 	 	 	1.89E-02	HSPA5	 
+STAP2	 	other	 	 	 	1.89E-02	MYC	 
+MPZ	 	other	 	 	 	1.89E-02	HSPA5	 
+miR-296-5p (miRNAs w/seed GGGCCCC)	 	mature microRNA	 	 	 	1.89E-02	BCL2	 
+MLX	 	transcription regulator	 	 	 	1.89E-02	TXNIP	 
+KLF10	 	transcription regulator	 	 	 	1.89E-02	BCL2	 
+IAPP	 	other	 	 	 	1.89E-02	MYC	 
+RFX1	 	transcription regulator	 	 	 	1.89E-02	MYC	 
+WWOX	 	enzyme	 	 	 	1.89E-02	BCL2	 
+PHB	 	transcription regulator	 	 	 	1.89E-02	BCL2	 
+RFX3	 	transcription regulator	 	 	 	1.89E-02	MYC	 
+ADRB1	 	G-protein coupled receptor	 	 	 	1.89E-02	HSPA5	 
+RND3	 	enzyme	 	 	 	1.89E-02	BCL2	 
+Usp17la (includes others)	 	peptidase	 	 	 	1.89E-02	MYC	 
+HNRNPA1	 	enzyme	 	 	 	1.89E-02	MYC	 
+PPP1R15A	 	other	 	 	 	1.89E-02	HSPA5	 
+HULC	 	other	 	 	 	1.89E-02	BCL2	 
+NCD-38	 	chemical reagent	 	 	 	1.89E-02	HSPA5	 
+(1S,2R)-NCL-1	 	chemical reagent	 	 	 	1.89E-02	HSPA5	 
+farnesol	 	chemical reagent	 	 	 	1.89E-02	HSPA5	 
+naloxone	 	chemical drug	 	 	 	1.89E-02	BCL2	 
+betaine	 	chemical - endogenous mammalian	 	 	 	1.89E-02	HSPA5	 
+7-ketocholesterol	 	chemical - endogenous mammalian	 	 	 	1.89E-02	HSPA5	 
+finasteride	 	chemical drug	 	 	 	1.89E-02	BCL2	 
+PAX3-FOXO1	 	fusion gene/product	 	 	 	1.91E-02	HSP90AA1,ZFP36L2	 
+AGN194204	 	chemical drug	 	 	 	1.93E-02	MYC,PIM1	 
+E2F4	 	transcription regulator	 	 	 	1.94E-02	BCL2,MYC	 
+TGM2	 	enzyme	 	 	 	1.98E-02	MYC,PIM1	 
+Pkg	 	group	 	 	 	1.98E-02	BCL2	 
+Ras homolog	 	group	 	 	 	1.98E-02	MYC	 
+Aldose Reductase	 	group	 	 	 	1.98E-02	MYC	 
+Hmgb1	 	transcription regulator	 	 	 	1.98E-02	BCL2	 
+Collagen type IV	 	complex	 	 	 	1.98E-02	MYC	 
+SRA1	 	transcription regulator	 	 	 	1.98E-02	SLC2A3	 
+COL2A1	 	other	 	 	 	1.98E-02	HSPA5	 
+DLX2	 	transcription regulator	 	 	 	1.98E-02	MYC	 
+CDK8	 	kinase	 	 	 	1.98E-02	MYC	 
+LIPG	 	enzyme	 	 	 	1.98E-02	BCL2	 
+DDX5	 	enzyme	 	 	 	1.98E-02	MYC	 
+CYP2J2	 	enzyme	 	 	 	1.98E-02	BCL2	 
+CBX3	 	transcription regulator	 	 	 	1.98E-02	MYC	 
+TNFRSF13B	 	transmembrane receptor	 	 	 	1.98E-02	BCL2	 
+PCDH11Y	 	other	 	 	 	1.98E-02	MYC	 
+TRIM21	 	enzyme	 	 	 	1.98E-02	MYC	 
+THZ1	 	chemical - kinase inhibitor	 	 	 	1.98E-02	STK17B	 
+acteoside	 	chemical - endogenous non-mammalian	 	 	 	1.98E-02	BCL2	 
+tranilast	 	chemical drug	 	 	 	1.98E-02	TXNIP	 
+PD 153035	 	chemical drug	 	 	 	1.98E-02	HSPA5	 
+mangiferin	 	chemical - endogenous non-mammalian	 	 	 	1.98E-02	BCL2	 
+dichloroacetic acid	 	chemical drug	 	 	 	1.98E-02	SLC2A3	 
+alendronic acid	 	chemical drug	 	 	 	1.98E-02	BCL2	 
+acetaldehyde	 	chemical - endogenous mammalian	 	 	 	1.98E-02	MYC	 
+butaprost	 	chemical drug	 	 	 	1.98E-02	SOCS3	 
+NGF	 	growth factor	 	 	 	2.01E-02	BCL2,MYC	 
+epigallocatechin-gallate	 	chemical drug	 	 	 	2.01E-02	BCL2,MYC	 
+prostaglandin A1	 	chemical - endogenous non-mammalian	 	 	 	2.07E-02	BCL2	 
+IPMK	 	kinase	 	 	 	2.07E-02	HSP90AB1	 
+WDR5	 	transcription regulator	 	 	 	2.07E-02	MYC	 
+IgG1	 	complex	 	 	 	2.07E-02	BCL2	 
+SLC2A4	 	transporter	 	 	 	2.07E-02	SLC2A3	 
+IL2RA	 	transmembrane receptor	 	 	 	2.07E-02	MYC	 
+LINC00963	 	other	 	 	 	2.07E-02	BCL2	 
+STK4	 	kinase	 	 	 	2.07E-02	BCL2	 
+IGFBP5	 	other	 	 	 	2.07E-02	BCL2	 
+HFE	 	transmembrane receptor	 	 	 	2.07E-02	HSPA5	 
+PTAFR	 	G-protein coupled receptor	 	 	 	2.07E-02	MYC	 
+CXCR3	 	G-protein coupled receptor	 	 	 	2.07E-02	BCL2	 
+GADD45A	 	other	 	 	 	2.07E-02	BCL2	 
+ADIPOR1	 	transmembrane receptor	 	 	 	2.07E-02	BCL2	 
+RPS6KA5	 	kinase	 	 	 	2.07E-02	MYC	 
+EPCAM	 	other	 	 	 	2.07E-02	MYC	 
+GRN	 	growth factor	 	 	 	2.07E-02	BCL2	 
+CISH	 	other	 	 	 	2.07E-02	MYC	 
+PTPN3	 	phosphatase	 	 	 	2.07E-02	MYC	 
+RAPGEF3	 	other	 	 	 	2.07E-02	SOCS3	 
+PDGFC	 	growth factor	 	 	 	2.07E-02	MYC	 
+HSP90AB1	0.453	enzyme	 	 	 	2.07E-02	MYC	 
+LILRB1	 	transmembrane receptor	 	 	 	2.07E-02	BCL2	 
+bilirubin	 	chemical - endogenous mammalian	 	 	 	2.07E-02	HSPA5	 
+probucol	 	chemical drug	 	 	 	2.07E-02	BCL2	 
+GLP-1-(7-34)-amide	 	biologic drug	 	 	 	2.07E-02	BCL2	 
+wogonin	 	chemical - endogenous non-mammalian	 	 	 	2.07E-02	BCL2	 
+L-buthionine (SR)-sulfoximine	 	chemical drug	 	 	 	2.07E-02	BCL2	 
+REL	 	transcription regulator	 	 	 	2.11E-02	BCL2,MYC	 
+progesterone	 	chemical - endogenous mammalian	 	 	 	2.12E-02	BCL2,MYC,SLC2A3	 
+MITF	 	transcription regulator	 	 	 	2.12E-02	BCL2,TXNIP	 
+zidovudine	 	chemical drug	 	 	 	2.17E-02	MYC	 
+alvespimycin	 	chemical drug	 	 	 	2.17E-02	BCL2	 
+NfkB-RelA	 	complex	 	 	 	2.17E-02	BCL2	 
+CTR9	 	other	 	 	 	2.17E-02	MYC	 
+HTATIP2	 	transcription regulator	 	 	 	2.17E-02	MYC	 
+KIF3A	 	enzyme	 	 	 	2.17E-02	MYC	 
+HSPA9	 	other	 	 	 	2.17E-02	MYC	 
+EYA1	 	phosphatase	 	 	 	2.17E-02	MYC	 
+CETP	 	enzyme	 	 	 	2.17E-02	HSPA5	 
+desipramine	 	chemical drug	 	 	 	2.17E-02	BCL2	 
+diallyl trisulfide	 	chemical - endogenous non-mammalian	 	 	 	2.17E-02	BCL2	 
+DL-fructose	 	chemical - endogenous mammalian	 	 	 	2.17E-02	TXNIP	 
+cannabidiol	 	chemical drug	 	 	 	2.17E-02	SOCS3	 
+SMAD4	 	transcription regulator	 	 	 	2.17E-02	MYC,PTPRC	 
+indomethacin	 	chemical drug	 	 	 	2.19E-02	MYC,PIM1	 
+methotrexate	 	chemical drug	 	 	 	2.22E-02	MYC,SOCS3	 
+GATA3	 	transcription regulator	 	 	 	2.24E-02	BCL2,MYC	 
+IL33	 	cytokine	 	 	 	2.26E-02	NFKBIZ,SOCS3	 
+risperidone	 	chemical drug	 	 	 	2.26E-02	BCL2	 
+IL36B	 	cytokine	 	 	 	2.26E-02	NFKBIZ	 
+vasoactive intestinal peptide	 	biologic drug	 	 	 	2.26E-02	BCL2	 
+MAP3K3	 	kinase	 	 	 	2.26E-02	BCL2	 
+miR-181a-5p (and other miRNAs w/seed ACAUUCA)	 	mature microRNA	 	 	 	2.26E-02	BCL2	 
+mir-26	 	microRNA	 	 	 	2.26E-02	BCL2	 
+SAFB2	 	other	 	 	 	2.26E-02	HLA-E	 
+RACK1	 	enzyme	 	 	 	2.26E-02	MYC	 
+DRAP1	 	transcription regulator	 	 	 	2.26E-02	MYC	 
+NTRK1	 	kinase	 	 	 	2.26E-02	BCL2	 
+Mt2	 	other	 	 	 	2.26E-02	MYC	 
+carvedilol	 	chemical drug	 	 	 	2.26E-02	MYC	 
+bisindolylmaleimide iv	 	chemical - kinase inhibitor	 	 	 	2.26E-02	MYC	 
+chelerythrine	 	chemical drug	 	 	 	2.26E-02	PIM1	 
+diosgenin	 	chemical - endogenous non-mammalian	 	 	 	2.26E-02	BCL2	 
+tacrolimus	 	chemical drug	 	 	 	2.33E-02	BCL2,MYC	 
+dibutyl phthalate	 	chemical toxicant	 	 	 	2.35E-02	MYC	 
+plumbagin	 	chemical toxicant	 	 	 	2.35E-02	BCL2	 
+calpain	 	complex	 	 	 	2.35E-02	HSPA5	 
+Smad	 	complex	 	 	 	2.35E-02	MYC	 
+TNFRSF4	 	transmembrane receptor	 	 	 	2.35E-02	BCL2	 
+E2F5	 	transcription regulator	 	 	 	2.35E-02	MYC	 
+BCL2L11	 	other	 	 	 	2.35E-02	BCL2	 
+mir-124	 	microRNA	 	 	 	2.35E-02	BCL2	 
+HDAC9	 	transcription regulator	 	 	 	2.35E-02	BCL2	 
+SENP1	 	peptidase	 	 	 	2.35E-02	MYC	 
+TRPV4	 	ion channel	 	 	 	2.35E-02	SOCS3	 
+SSTR2	 	G-protein coupled receptor	 	 	 	2.35E-02	BCL2	 
+ochratoxin A	 	chemical toxicant	 	 	 	2.35E-02	BCL2	 
+amitriptyline	 	chemical drug	 	 	 	2.35E-02	SLC2A3	 
+alpha-tocopherol	 	chemical drug	 	 	 	2.35E-02	BCL2	 
+ceruletide	 	biologic drug	 	 	 	2.35E-02	HSPA5	 
+kaempferol	 	chemical toxicant	 	 	 	2.35E-02	BCL2	 
+UCN-01	 	chemical drug	 	 	 	2.35E-02	BCL2	 
+SREBF1	 	transcription regulator	 	 	 	2.38E-02	BCL2,HSPA5	 
+NfkB1-RelA	 	complex	 	 	 	2.45E-02	MYC	 
+thyroid hormone receptor	 	group	 	 	 	2.45E-02	MYC	 
+CDC73	 	other	 	 	 	2.45E-02	MYC	 
+mir-148	 	microRNA	 	 	 	2.45E-02	BCL2	 
+miR-203a-3p (and other miRNAs w/seed UGAAAUG)	 	mature microRNA	 	 	 	2.45E-02	SOCS3	 
+miR-24-3p (and other miRNAs w/seed GGCUCAG)	 	mature microRNA	 	 	 	2.45E-02	MYC	 
+LTBP1	 	other	 	 	 	2.45E-02	PIM1	 
+MTA3	 	transcription regulator	 	 	 	2.45E-02	MYC	 
+MTA2	 	transcription regulator	 	 	 	2.45E-02	MYC	 
+CD9	 	other	 	 	 	2.45E-02	MYC	 
+HSPD1	 	enzyme	 	 	 	2.45E-02	SOCS3	 
+KAT2A	 	enzyme	 	 	 	2.45E-02	HSPA5	 
+BAG1	 	other	 	 	 	2.45E-02	BCL2	 
+acetylcholine	 	chemical - endogenous mammalian	 	 	 	2.45E-02	SOCS3	 
+amino acids	 	chemical - endogenous mammalian	 	 	 	2.45E-02	MYC	 
+arsenic	 	chemical toxicant	 	 	 	2.45E-02	HSP90AA1	 
+methyl-beta-cyclodextrin	 	chemical drug	 	 	 	2.45E-02	MYC	 
+lithocholic acid	 	chemical - endogenous mammalian	 	 	 	2.54E-02	BCL2	 
+IL17C	 	cytokine	 	 	 	2.54E-02	BCL2	 
+MAC	 	complex	 	 	 	2.54E-02	BCL2	 
+PROCR	 	other	 	 	 	2.54E-02	MYC	 
+GAS6	 	growth factor	 	 	 	2.54E-02	SOCS3	 
+NCL	 	other	 	 	 	2.54E-02	MYC	 
+BCAP31	 	transporter	 	 	 	2.54E-02	HSPA5	 
+MAP2K2	 	kinase	 	 	 	2.54E-02	MYC	 
+CTSB	 	peptidase	 	 	 	2.54E-02	MYC	 
+ECSIT	 	transcription regulator	 	 	 	2.54E-02	PIM1	 
+ESRRB	 	ligand-dependent nuclear receptor	 	 	 	2.54E-02	BCL2	 
+Mt1	 	other	 	 	 	2.54E-02	MYC	 
+AZGP1	 	transporter	 	 	 	2.54E-02	MYC	 
+rimonabant	 	chemical drug	 	 	 	2.54E-02	HSPA5	 
+isoflurane	 	chemical drug	 	 	 	2.54E-02	BCL2	 
+WR 1065	 	chemical drug	 	 	 	2.54E-02	MYC	 
+rifaximin	 	chemical drug	 	 	 	2.54E-02	HSP90AA1	 
+progestin	 	chemical drug	 	 	 	2.54E-02	BCL2	 
+TLR3	 	transmembrane receptor	 	 	 	2.56E-02	NFKBIZ,SOCS3	 
+YAP1	 	transcription regulator	 	 	 	2.61E-02	MYC,SLC2A3	 
+SPI1	 	transcription regulator	 	 	 	2.63E-02	MYC,PTPRC	 
+HDAC1	 	transcription regulator	 	 	 	2.63E-02	MYC,TSC22D3	 
+Ca2+	 	chemical - endogenous mammalian	 	 	 	2.63E-02	BCL2,HSPA5	 
+LIN28B	 	other	 	 	 	2.63E-02	MYC	 
+Mir122a,b	 	group	 	 	 	2.63E-02	BCL2	 
+ATG5	 	other	 	 	 	2.63E-02	HSPA5	 
+CLDN6	 	other	 	 	 	2.63E-02	HSPA5	 
+FABP4	 	transporter	 	 	 	2.63E-02	SOCS3	 
+CD69	 	transmembrane receptor	 	 	 	2.63E-02	SOCS3	 
+CD47	 	transmembrane receptor	 	 	 	2.63E-02	MYC	 
+JAK inhibitor I	 	chemical - kinase inhibitor	 	 	 	2.63E-02	SOCS3	 
+imipramine	 	chemical drug	 	 	 	2.63E-02	SLC2A3	 
+MALP-2s	 	chemical reagent	 	 	 	2.63E-02	CYLD	 
+apomorphine	 	chemical drug	 	 	 	2.63E-02	BCL2	 
+phorbol 12,13-didecanoate	 	chemical toxicant	 	 	 	2.63E-02	MYC	 
+L-arginine	 	chemical - endogenous mammalian	 	 	 	2.72E-02	BCL2	 
+SMTNL1	 	other	 	 	 	2.72E-02	HSP90AB1	 
+CA4	 	enzyme	 	 	 	2.72E-02	HSPA5	 
+GRP	 	growth factor	 	 	 	2.72E-02	MYC	 
+ACTL6A	 	other	 	 	 	2.72E-02	MYC	 
+miR-133a-3p (and other miRNAs w/seed UUGGUCC)	 	mature microRNA	 	 	 	2.72E-02	MALAT1	 
+miR-26a-5p (and other miRNAs w/seed UCAAGUA)	 	mature microRNA	 	 	 	2.72E-02	MYC	 
+HOXB13	 	transcription regulator	 	 	 	2.72E-02	MYC	 
+B2M	 	transmembrane receptor	 	 	 	2.72E-02	HLA-E	 
+SP4	 	transcription regulator	 	 	 	2.72E-02	HSPA5	 
+NF1	 	other	 	 	 	2.72E-02	MYC	 
+chrysotile asbestos	 	chemical toxicant	 	 	 	2.72E-02	HSPA5	 
+epoxomicin	 	chemical - protease inhibitor	 	 	 	2.72E-02	HSPA5	 
+deoxynivalenol	 	chemical toxicant	 	 	 	2.72E-02	HSPA5	 
+stearic acid	 	chemical - endogenous mammalian	 	 	 	2.72E-02	BCL2	 
+dextran sulfate	 	chemical drug	 	 	 	2.78E-02	MYC,SOCS3	 
+NFKB1	 	transcription regulator	 	 	 	2.80E-02	BCL2,MYC	 
+anakinra	 	biologic drug	 	 	 	2.82E-02	PIM1	 
+Focal adhesion kinase	 	group	 	 	 	2.82E-02	BCL2	 
+FCGR2B	 	transmembrane receptor	 	 	 	2.82E-02	SOCS3	 
+CASP3	 	peptidase	 	 	 	2.82E-02	BCL2	 
+AGTR2	 	G-protein coupled receptor	 	 	 	2.82E-02	BCL2	 
+VAV3	 	cytokine	 	 	 	2.82E-02	BCL2	 
+USP18	 	peptidase	 	 	 	2.82E-02	SOCS3	 
+NF2	 	other	 	 	 	2.82E-02	MYC	 
+ferulic acid	 	chemical - endogenous non-mammalian	 	 	 	2.82E-02	BCL2	 
+urethane	 	chemical toxicant	 	 	 	2.82E-02	MYC	 
+R-WIN 55,212	 	chemical reagent	 	 	 	2.82E-02	BCL2	 
+fucoidin	 	chemical reagent	 	 	 	2.82E-02	BCL2	 
+caspase	 	group	 	 	 	2.91E-02	BCL2	 
+NR2E1	 	ligand-dependent nuclear receptor	 	 	 	2.91E-02	MYC	 
+HISTONE	 	group	 	 	 	2.91E-02	BCL2	 
+MAPK11	 	kinase	 	 	 	2.91E-02	BCL2	 
+VAV1	 	transcription regulator	 	 	 	2.91E-02	BCL2	 
+PRKAR1A	 	kinase	 	 	 	2.91E-02	BCL2	 
+IFRD1	 	other	 	 	 	2.91E-02	MYC	 
+ACKR3	 	G-protein coupled receptor	 	 	 	2.91E-02	BCL2	 
+THBS4	 	other	 	 	 	2.91E-02	HSPA5	 
+VAV2	 	transcription regulator	 	 	 	2.91E-02	BCL2	 
+4-(2-aminoethyl)benzenesulfonylfluoride	 	chemical - protease inhibitor	 	 	 	2.91E-02	HSPA5	 
+crocidolite asbestos	 	chemical toxicant	 	 	 	2.91E-02	MYC	 
+4-tert-octylphenol	 	chemical toxicant	 	 	 	2.91E-02	MYC	 
+proteasome inhibitor PSI	 	chemical - protease inhibitor	 	 	 	2.91E-02	HSPA5	 
+HTT	 	transcription regulator	 	 	 	2.91E-02	BCL2,HSP90AB1,HSPA5	 
+PGR	 	ligand-dependent nuclear receptor	 	 	 	2.93E-02	MYC,TSC22D3	 
+mir-21	 	microRNA	 	 	 	2.97E-02	BCL2,MYC	 
+grape seed extract	 	chemical drug	 	 	 	3.00E-02	MYC	 
+Fc gamma receptor	 	group	 	 	 	3.00E-02	SOCS3	 
+KDM4C	 	enzyme	 	 	 	3.00E-02	MYC	 
+PRKG1	 	kinase	 	 	 	3.00E-02	BCL2	 
+NOSTRIN	 	transcription regulator	 	 	 	3.00E-02	BCL2	 
+TRB	 	transmembrane receptor	 	 	 	3.00E-02	BCL2	 
+BECN1	 	other	 	 	 	3.00E-02	BCL2	 
+VTN	 	other	 	 	 	3.00E-02	BCL2	 
+linsidomine	 	chemical drug	 	 	 	3.00E-02	MYC	 
+hymecromone	 	chemical drug	 	 	 	3.00E-02	BCL2	 
+betulinic acid	 	chemical drug	 	 	 	3.00E-02	BCL2	 
+selenium	 	chemical drug	 	 	 	3.00E-02	HSPA5	 
+forskolin	 	chemical toxicant	 	 	 	3.02E-02	BCL2,MYC,TXNIP	 
+STK11	 	kinase	 	 	 	3.04E-02	MYC,STK17B	 
+BMS-690514	 	chemical drug	 	 	 	3.09E-02	HSP90AA1	 
+HLX	 	transcription regulator	 	 	 	3.09E-02	MYC	 
+ITGAV	 	transmembrane receptor	 	 	 	3.09E-02	BCL2	 
+IGF2BP1	 	translation regulator	 	 	 	3.09E-02	MYC	 
+ALOX15	 	enzyme	 	 	 	3.09E-02	BCL2	 
+MARK2	 	kinase	 	 	 	3.09E-02	NFKBIZ	 
+RAD21	 	transcription regulator	 	 	 	3.09E-02	MYC	 
+IFNB1	 	cytokine	 	 	 	3.14E-02	BCL2,MYC	 
+CDKN2A	 	transcription regulator	 	 	 	3.18E-02	BCL2,MYC	 
+PD 0325901	 	chemical drug	 	 	 	3.19E-02	MYC	 
+Rar	 	group	 	 	 	3.19E-02	BCL2	 
+oleanolic acid	 	chemical - endogenous non-mammalian	 	 	 	3.19E-02	SOCS3	 
+Secretase gamma	 	complex	 	 	 	3.19E-02	MYC	 
+OSCAR	 	other	 	 	 	3.19E-02	BCL2	 
+GAB2	 	other	 	 	 	3.19E-02	BCL2	 
+EIF4EBP1	 	translation regulator	 	 	 	3.19E-02	MYC	 
+mir-126	 	microRNA	 	 	 	3.19E-02	PTPRC	 
+ANXA2	 	other	 	 	 	3.19E-02	MYC	 
+MTTP	 	transporter	 	 	 	3.19E-02	HSPA5	 
+PLAT	 	peptidase	 	 	 	3.19E-02	MYC	 
+TYK2	 	kinase	 	 	 	3.19E-02	SOCS3	 
+EWSR1	 	other	 	 	 	3.19E-02	BCL2	 
+bryostatin 1	 	chemical drug	 	 	 	3.19E-02	MYC	 
+KIN001-043	 	chemical - kinase inhibitor	 	 	 	3.19E-02	MYC	 
+daunorubicin	 	chemical drug	 	 	 	3.19E-02	MYC	 
+AKT1	 	kinase	 	 	 	3.20E-02	BCL2,MYC	 
+DICER1	 	enzyme	 	 	 	3.22E-02	MYC,SOCS3	 
+tazemetostat	 	chemical drug	 	 	 	3.24E-02	HSPA5,MYC	 
+SP600125	 	chemical - kinase inhibitor	 	 	 	3.24E-02	BCL2,SOCS3	 
+USP22	 	peptidase	 	 	 	3.28E-02	PTPRC	 
+PAX8	 	transcription regulator	 	 	 	3.28E-02	BCL2	 
+MIR124	 	group	 	 	 	3.28E-02	PTPRC	 
+PLK1	 	kinase	 	 	 	3.28E-02	MYC	 
+IL36A	 	cytokine	 	 	 	3.28E-02	NFKBIZ	 
+PIK3CD	 	kinase	 	 	 	3.28E-02	BCL2	 
+sildenafil	 	chemical drug	 	 	 	3.28E-02	BCL2	 
+diclofenac	 	chemical drug	 	 	 	3.28E-02	MYC	 
+FUS-DDIT3	 	fusion gene/product	 	 	 	3.28E-02	TSC22D3	 
+exenatide	 	biologic drug	 	 	 	3.28E-02	TXNIP	 
+alvocidib	 	chemical drug	 	 	 	3.28E-02	BCL2	 
+indole-3-carbinol	 	chemical drug	 	 	 	3.28E-02	BCL2	 
+naringenin	 	chemical - endogenous non-mammalian	 	 	 	3.28E-02	HSPA5	 
+SN-38	 	chemical drug	 	 	 	3.28E-02	MYC	 
+phytohemagglutinin	 	chemical drug	 	 	 	3.34E-02	HSP90AA1,PTPRC	 
+asoprisnil	 	chemical drug	 	 	 	3.37E-02	BCL2	 
+PLP1	 	other	 	 	 	3.37E-02	HSPA5	 
+TFDP1	 	transcription regulator	 	 	 	3.37E-02	MYC	 
+SS18	 	transcription regulator	 	 	 	3.37E-02	SOCS3	 
+IGFBP3	 	other	 	 	 	3.37E-02	BCL2	 
+ACVRL1	 	kinase	 	 	 	3.37E-02	MYC	 
+MMP2	 	peptidase	 	 	 	3.37E-02	MYC	 
+GAPDH	 	enzyme	 	 	 	3.37E-02	TXNIP	 
+PRKN	 	enzyme	 	 	 	3.37E-02	MYC	 
+amiodarone	 	chemical drug	 	 	 	3.37E-02	SLC2A3	 
+mercuric chloride	 	chemical toxicant	 	 	 	3.37E-02	HSP90AA1	 
+Ap2	 	group	 	 	 	3.46E-02	BCL2	 
+STAT	 	group	 	 	 	3.46E-02	SOCS3	 
+KDM3A	 	transcription regulator	 	 	 	3.46E-02	MYC	 
+MTDH	 	transcription regulator	 	 	 	3.46E-02	BCL2	 
+xanthohumol	 	chemical drug	 	 	 	3.46E-02	MYC	 
+CTF1	 	cytokine	 	 	 	3.46E-02	SOCS3	 
+TANK	 	other	 	 	 	3.46E-02	NFKBIZ	 
+IKZF2	 	transcription regulator	 	 	 	3.46E-02	HLA-E	 
+CAMK4	 	kinase	 	 	 	3.46E-02	BCL2	 
+CD4	 	transmembrane receptor	 	 	 	3.46E-02	BCL2	 
+GNB2	 	enzyme	 	 	 	3.46E-02	TSC22D3	 
+CD80	 	transmembrane receptor	 	 	 	3.46E-02	TSC22D3	 
+KEAP1	 	transcription regulator	 	 	 	3.46E-02	BCL2	 
+NDRG1	 	kinase	 	 	 	3.46E-02	BCL2	 
+ELANE	 	peptidase	 	 	 	3.46E-02	HSPA5	 
+IL27RA	 	transmembrane receptor	 	 	 	3.46E-02	SOCS3	 
+nafenopin	 	chemical drug	 	 	 	3.46E-02	HSP90AB1	 
+diethylstilbestrol	 	chemical drug	 	 	 	3.48E-02	HSP90AB1,PIM1	 
+SP2509	 	chemical reagent	 	 	 	3.48E-02	HSPA5,MYC	 
+Ins1	 	other	 	 	 	3.50E-02	MYC,SOCS3	 
+IL10RA	 	transmembrane receptor	 	 	 	3.50E-02	BCL2,SOCS3	 
+CP-55940	 	chemical reagent	 	 	 	3.55E-02	MYC	 
+rasagiline	 	chemical drug	 	 	 	3.55E-02	BCL2	 
+NSD2	 	enzyme	 	 	 	3.55E-02	BCL2	 
+TSLP	 	cytokine	 	 	 	3.55E-02	MYC	 
+KRT14	 	other	 	 	 	3.55E-02	HSPA5	 
+NQO1	 	enzyme	 	 	 	3.55E-02	BCL2	 
+APR-246	 	chemical drug	 	 	 	3.55E-02	BCL2	 
+SAA1	 	transporter	 	 	 	3.55E-02	BCL2	 
+IGHM	 	transmembrane receptor	 	 	 	3.55E-02	MYC	 
+ADORA2B	 	G-protein coupled receptor	 	 	 	3.55E-02	BCL2	 
+POU4F2	 	transcription regulator	 	 	 	3.55E-02	BCL2	 
+cilostazol	 	chemical drug	 	 	 	3.55E-02	BCL2	 
+thalidomide	 	chemical drug	 	 	 	3.55E-02	PIM1	 
+steroid	 	chemical - endogenous mammalian	 	 	 	3.55E-02	MYC	 
+parthenolide	 	chemical drug	 	 	 	3.55E-02	BCL2	 
+miR-182-5p (and other miRNAs w/seed UUGGCAA)	 	mature microRNA	 	 	 	3.65E-02	MALAT1	 
+GNB1	 	enzyme	 	 	 	3.65E-02	TSC22D3	 
+4-methylnitrosoamino-1-(3-pyridinyl)-1-butanone	 	chemical toxicant	 	 	 	3.65E-02	BCL2	 
+paricalcitol	 	chemical drug	 	 	 	3.65E-02	BCL2	 
+fluvastatin	 	chemical drug	 	 	 	3.65E-02	BCL2	 
+bromocriptine	 	chemical drug	 	 	 	3.65E-02	BCL2	 
+ethionine	 	chemical toxicant	 	 	 	3.65E-02	MYC	 
+1,25-dihydroxyvitamin D	 	chemical drug	 	 	 	3.74E-02	PTPRC	 
+ENG	 	transmembrane receptor	 	 	 	3.74E-02	MYC	 
+ABL1	 	kinase	 	 	 	3.74E-02	MYC	 
+Tcf7	 	transcription regulator	 	 	 	3.74E-02	BCL2	 
+pimagedine	 	chemical drug	 	 	 	3.74E-02	BCL2	 
+propranolol	 	chemical drug	 	 	 	3.74E-02	MYC	 
+histone deacetylase	 	complex	 	 	 	3.74E-02	BCL2	 
+propofol	 	chemical drug	 	 	 	3.74E-02	BCL2	 
+anandamide	 	chemical - endogenous mammalian	 	 	 	3.74E-02	HSPA5	 
+SNCA	 	enzyme	 	 	 	3.77E-02	HSPA5,SLC2A3	 
+Creb	 	group	 	 	 	3.80E-02	BCL2,MALAT1	 
+PP1	 	chemical - kinase inhibitor	 	 	 	3.83E-02	MYC	 
+conjugated linoleic acid	 	chemical drug	 	 	 	3.83E-02	SOCS3	 
+PGF	 	growth factor	 	 	 	3.83E-02	BCL2	 
+PLAUR	 	transmembrane receptor	 	 	 	3.83E-02	MYC	 
+F7	 	peptidase	 	 	 	3.83E-02	MYC	 
+AGTR1	 	G-protein coupled receptor	 	 	 	3.83E-02	TXNIP	 
+ANXA1	 	enzyme	 	 	 	3.83E-02	TSC22D3	 
+nonylphenol	 	chemical toxicant	 	 	 	3.83E-02	STK17B	 
+zoledronic acid	 	chemical drug	 	 	 	3.83E-02	BCL2	 
+everolimus	 	chemical drug	 	 	 	3.83E-02	MYC	 
+SUMO2	 	enzyme	 	 	 	3.92E-02	TSC22D3	 
+IRS2	 	enzyme	 	 	 	3.92E-02	MYC	 
+ATF1	 	transcription regulator	 	 	 	3.92E-02	BCL2	 
+CSF1R	 	kinase	 	 	 	3.92E-02	MYC	 
+NKX2-5	 	transcription regulator	 	 	 	3.92E-02	BCL2	 
+HOXC6	 	transcription regulator	 	 	 	3.92E-02	BCL2	 
+FASLG	 	cytokine	 	 	 	3.92E-02	BCL2	 
+ibuprofen	 	chemical drug	 	 	 	3.92E-02	PTPRC	 
+fasudil	 	chemical drug	 	 	 	3.92E-02	BCL2	 
+phenacetin	 	chemical drug	 	 	 	3.92E-02	MYC	 
+cyclopamine	 	chemical reagent	 	 	 	3.92E-02	BCL2	 
+GnRH analog	 	biologic drug	 	 	 	3.92E-02	HSP90AB1,SLC2A3	 
+KLF3	 	transcription regulator	 	 	 	3.94E-02	AHNAK,BCL2	 
+TCF3	 	transcription regulator	 	 	 	4.01E-02	MYC,SOCS3	 
+JAK	 	group	 	 	 	4.01E-02	SOCS3	 
+EED	 	transcription regulator	 	 	 	4.01E-02	MYC	 
+RPS6KB1	 	kinase	 	 	 	4.01E-02	BCL2	 
+ARHGAP21	 	other	 	 	 	4.01E-02	NFKBIZ	 
+CDK2AP1	 	other	 	 	 	4.01E-02	MYC	 
+verapamil	 	chemical drug	 	 	 	4.01E-02	TXNIP	 
+retinoid	 	chemical drug	 	 	 	4.01E-02	MYC	 
+ouabain	 	chemical drug	 	 	 	4.01E-02	HSPA5	 
+POU5F1	 	transcription regulator	 	 	 	4.07E-02	BCL2,MYC	 
+Wnt	 	group	 	 	 	4.10E-02	MYC	 
+PRMT5	 	enzyme	 	 	 	4.10E-02	MYC	 
+ALB	 	transporter	 	 	 	4.10E-02	HSPA5	 
+ANGPT1	 	growth factor	 	 	 	4.10E-02	BCL2	 
+RAC2	 	enzyme	 	 	 	4.10E-02	BCL2	 
+HBEGF	 	growth factor	 	 	 	4.10E-02	BCL2	 
+ILK	 	kinase	 	 	 	4.10E-02	BCL2	 
+CDK2	 	kinase	 	 	 	4.10E-02	MYC	 
+TXN	 	enzyme	 	 	 	4.10E-02	BCL2	 
+NME1	 	kinase	 	 	 	4.10E-02	BCL2	 
+advanced glycation end-products	 	chemical - endogenous mammalian	 	 	 	4.10E-02	BCL2	 
+temozolomide	 	chemical drug	 	 	 	4.10E-02	BCL2	 
+U73122	 	chemical reagent	 	 	 	4.10E-02	HSPA5	 
+lipid A	 	chemical toxicant	 	 	 	4.20E-02	PTPRC	 
+thymoquinone	 	chemical drug	 	 	 	4.20E-02	BCL2	 
+ZMPSTE24	 	peptidase	 	 	 	4.20E-02	SOCS3	 
+SMAD1	 	transcription regulator	 	 	 	4.20E-02	MYC	 
+PPP2CA	 	phosphatase	 	 	 	4.20E-02	MYC	 
+miR-483-3p (miRNAs w/seed CACUCCU)	 	mature microRNA	 	 	 	4.20E-02	SOCS3	 
+mir-146	 	microRNA	 	 	 	4.20E-02	MYC	 
+CALR	 	transcription regulator	 	 	 	4.20E-02	HSPA5	 
+GPX1	 	enzyme	 	 	 	4.20E-02	BCL2	 
+PCGF2	 	transcription regulator	 	 	 	4.20E-02	MYC	 
+Ro31-8220	 	chemical - kinase inhibitor	 	 	 	4.20E-02	BCL2	 
+HOTAIR	 	other	 	 	 	4.29E-02	MYC	 
+PRKAA	 	group	 	 	 	4.29E-02	BCL2	 
+SERPINA1	 	other	 	 	 	4.29E-02	HSPA5	 
+mir-145	 	microRNA	 	 	 	4.29E-02	MYC	 
+MED13	 	transcription regulator	 	 	 	4.29E-02	MYC	 
+ABCA1	 	transporter	 	 	 	4.29E-02	HSPA5	 
+IFNLR1	 	transmembrane receptor	 	 	 	4.29E-02	MYC	 
+hexamethylene bisacetamide	 	chemical reagent	 	 	 	4.29E-02	BCL2	 
+SB 216763	 	chemical toxicant	 	 	 	4.29E-02	MYC	 
+N-acetylsphingosine	 	chemical reagent	 	 	 	4.29E-02	BCL2	 
+roscovitine	 	chemical drug	 	 	 	4.38E-02	MYC	 
+Hsp27	 	group	 	 	 	4.38E-02	BCL2	 
+C3AR1	 	G-protein coupled receptor	 	 	 	4.38E-02	HSPA5	 
+FYN	 	kinase	 	 	 	4.38E-02	SOCS3	 
+SPHK1	 	kinase	 	 	 	4.38E-02	SOCS3	 
+MTA1	 	transcription regulator	 	 	 	4.38E-02	MYC	 
+NOTCH2	 	transcription regulator	 	 	 	4.38E-02	BCL2	 
+KDR	 	kinase	 	 	 	4.38E-02	PIM1	 
+C11orf95-RELA	 	fusion gene/product	 	 	 	4.38E-02	BCL2	 
+baicalein	 	chemical drug	 	 	 	4.38E-02	BCL2	 
+ICAM1	 	transmembrane receptor	 	 	 	4.47E-02	MYC	 
+TEAD3	 	transcription regulator	 	 	 	4.47E-02	NFKBIZ	 
+PPRC1	 	transcription regulator	 	 	 	4.47E-02	NFKBIZ	 
+AVP	 	other	 	 	 	4.47E-02	HSPA5	 
+KAT2B	 	transcription regulator	 	 	 	4.47E-02	HSPA5	 
+HNRNPK	 	transcription regulator	 	 	 	4.47E-02	MYC	 
+herbimycin	 	chemical - kinase inhibitor	 	 	 	4.47E-02	BCL2	 
+monocrotaline	 	chemical toxicant	 	 	 	4.47E-02	HSP90AB1	 
+n-3 fatty acids	 	chemical drug	 	 	 	4.47E-02	HSPA5	 
+nilotinib	 	chemical drug	 	 	 	4.56E-02	MYC	 
+Hsp70	 	group	 	 	 	4.56E-02	BCL2	 
+PAF1	 	other	 	 	 	4.56E-02	NFKBIZ	 
+baicalin	 	chemical - endogenous non-mammalian	 	 	 	4.56E-02	BCL2	 
+ITGA5	 	transmembrane receptor	 	 	 	4.56E-02	BCL2	 
+2-bromoethylamine	 	chemical reagent	 	 	 	4.56E-02	MYC	 
+LRP1	 	transmembrane receptor	 	 	 	4.56E-02	SLC2A3	 
+IRF9	 	transcription regulator	 	 	 	4.56E-02	SOCS3	 
+JAG1	 	growth factor	 	 	 	4.56E-02	MYC	 
+EHMT2	 	transcription regulator	 	 	 	4.56E-02	MYC	 
+fluocinolone acetonide	 	chemical drug	 	 	 	4.65E-02	SOCS3	 
+Hedgehog	 	group	 	 	 	4.65E-02	MYC	 
+RETN	 	other	 	 	 	4.65E-02	SOCS3	 
+PNPT1	 	enzyme	 	 	 	4.65E-02	MYC	 
+testosterone	 	chemical - endogenous mammalian	 	 	 	4.66E-02	BCL2,HSP90AB1	 
+deoxycholate	 	chemical - endogenous mammalian	 	 	 	4.74E-02	HSPA5	 
+DGCR8	 	enzyme	 	 	 	4.74E-02	MYC	 
+PNPLA2	 	enzyme	 	 	 	4.74E-02	HSPA5	 
+IFN type 1	 	group	 	 	 	4.74E-02	BCL2	 
+TSC22D3	-0.274	transcription regulator	 	 	 	4.74E-02	BCL2	 
+mir-182	 	microRNA	 	 	 	4.74E-02	MALAT1	 
+EPHB4	 	kinase	 	 	 	4.74E-02	MYC	 
+TEAD2	 	transcription regulator	 	 	 	4.74E-02	NFKBIZ	 
+ZBTB20	 	transcription regulator	 	 	 	4.83E-02	SOCS3	 
+panobinostat	 	chemical drug	 	 	 	4.83E-02	MYC	 
+CDX1	 	transcription regulator	 	 	 	4.83E-02	BCL2	 
+Rock	 	group	 	 	 	4.92E-02	MYC	 
+MTORC1	 	complex	 	 	 	4.92E-02	MYC	 
+SFRP1	 	transmembrane receptor	 	 	 	4.92E-02	MYC	 
+BAX	 	transporter	 	 	 	4.92E-02	BCL2	 
+NOG	 	growth factor	 	 	 	4.92E-02	MYC	 
+PTPRJ	 	phosphatase	 	 	 	4.92E-02	NFKBIZ	 
+ADM	 	other	 	 	 	4.92E-02	BCL2	 
+cycloheximide	 	chemical reagent	 	 	 	4.96E-02	MYC,SOCS3	 

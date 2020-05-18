@@ -1,0 +1,195 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Flags	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+alefacept	 	biologic drug	 	1.067	bias	2.00E-07	CD3D,FCGR3A/FCGR3B,GNLY,IL2RB	 
+TBX21	 	transcription regulator	 	-0.313	 	5.02E-07	CX3CR1,IL2RB,KLRG1,RUNX3	 
+IL2	 	cytokine	 	1.044	bias	1.29E-06	CD3D,CD3G,CX3CR1,FCGR3A/FCGR3B,IL2RB,JAK1,KLRG1	 
+IL15	 	cytokine	 	-0.733	bias	2.65E-06	CX3CR1,FCGR3A/FCGR3B,GNLY,IL2RB,IL32,KLRG1	 
+Interferon alpha	 	group	 	-0.492	bias	3.13E-06	EIF1,HLA-C,IFITM2,IL32,JAK1,KLRG1	 
+FLT3LG	 	cytokine	 	 	 	2.71E-05	CD3D,CD3G,IL2RB	 
+ETS1	 	transcription regulator	 	 	 	5.21E-05	IL2RB,JAK1,KLRG1,RUNX3	 
+decitabine	 	chemical drug	 	-1.268	 	7.93E-05	CX3CR1,HLA-C,PABPC1,RBM39,RUNX3,SYK	 
+Tgf beta	 	group	 	 	 	1.52E-04	CX3CR1,IL32,JAK1,RUNX3	 
+interferon beta-1a	 	biologic drug	 	 	 	2.04E-04	CD3D,GNLY,IL2RB	 
+ZBTB16	 	transcription regulator	 	 	 	3.25E-04	CD3D,CD3G,RUNX3	 
+IL7	 	cytokine	 	 	 	3.52E-04	CD3D,CD3G,KLRG1	 
+BAK1	 	other	 	 	 	3.69E-04	IFITM2,JAK1	 
+GAPDH	 	enzyme	 	 	 	5.32E-04	HLA-C,IFITM2	 
+IKZF2	 	transcription regulator	 	 	 	5.63E-04	KLRG1,RUNX3	 
+IL18	 	cytokine	 	 	 	6.57E-04	FCGR3A/FCGR3B,IL32,KLRG1	 
+bexarotene	 	chemical drug	 	 	 	7.79E-04	EIF1,IL2RB,MALAT1	 
+aldesleukin	 	biologic drug	 	 	 	9.47E-04	FCGR3A/FCGR3B,HLA-C	 
+CHMP3	 	other	 	 	 	9.51E-04	IGF2R	 
+miR-657 (miRNAs w/seed GCAGGUU)	 	mature microRNA	 	 	 	9.51E-04	IGF2R	 
+RAB9A	 	enzyme	 	 	 	9.51E-04	IGF2R	 
+BAX	 	transporter	 	 	 	1.15E-03	IFITM2,JAK1	 
+ZEB2	 	transcription regulator	 	 	 	1.20E-03	CX3CR1,KLRG1	 
+BNIP3L	 	other	 	 	 	1.48E-03	IL2RB,SYK	 
+IFNA2	 	cytokine	 	 	 	1.51E-03	HLA-C,IFITM2,IL2RB	 
+GATA3	 	transcription regulator	 	 	 	1.55E-03	CD3D,IL2RB,RUNX3	 
+PDCD1	 	phosphatase	 	 	 	1.73E-03	CD3D,GNLY	 
+KITLG	 	growth factor	 	 	 	1.76E-03	CD3D,CD3G,SYK	 
+CD3E	 	transmembrane receptor	 	 	 	1.78E-03	CD3D,CD3G	 
+IFNG	 	cytokine	 	-1.189	 	1.81E-03	CX3CR1,FCGR3A/FCGR3B,HLA-C,IFITM2,IL32,RUNX3	 
+PACS2	 	other	 	 	 	1.90E-03	HLA-C	 
+PACS1	 	other	 	 	 	1.90E-03	IGF2R	 
+miR-532-5p (and other miRNAs w/seed AUGCCUU)	 	mature microRNA	 	 	 	1.90E-03	RUNX3	 
+RILP	 	other	 	 	 	1.90E-03	IGF2R	 
+2,5-di-tert-butylhydroquinone	 	chemical toxicant	 	 	 	1.90E-03	EIF1	 
+ZBTB7B	 	transcription regulator	 	 	 	1.95E-03	IL2RB,RUNX3	 
+IL4	 	cytokine	 	-1.038	 	2.12E-03	FCGR3A/FCGR3B,IGF2R,IL2RB,JAK1,SYK	5 (2)
+STAT5A	 	transcription regulator	 	 	 	2.50E-03	IFITM2,IL2RB,KLRG1	 
+CBFB	 	transcription regulator	 	 	 	2.54E-03	IL2RB,RUNX3	 
+N-Ac-Leu-Leu-norleucinal	 	chemical - protease inhibitor	 	 	 	2.60E-03	HLA-C,SYK	 
+miR-27a-5p (miRNAs w/seed GGGCUUA)	 	mature microRNA	 	 	 	2.85E-03	CX3CR1	 
+ITK	 	kinase	 	 	 	2.93E-03	CX3CR1,IL2RB	 
+IFNL1	 	cytokine	 	 	 	3.00E-03	HLA-C,IFITM2	 
+dexamethasone	 	chemical drug	 	-0.870	 	3.25E-03	CD3D,CX3CR1,IL2RB,IL32,PABPC1,SPON2,SYK	 
+PPIF	 	enzyme	 	 	 	3.65E-03	CX3CR1,SPON2	 
+LARP1	 	translation regulator	 	 	 	3.80E-03	PABPC1	 
+PDIA3	 	peptidase	 	 	 	3.80E-03	FCGR3A/FCGR3B	 
+AMFR	 	transmembrane receptor	 	 	 	3.80E-03	CD3D	 
+unsaturated guluronate oligosaccharide	 	chemical reagent	 	 	 	3.80E-03	FCGR3A/FCGR3B	 
+TNFSF10	 	cytokine	 	 	 	4.03E-03	HLA-C,IFITM2	 
+NFATC1	 	transcription regulator	 	 	 	4.44E-03	CD3G,CX3CR1	 
+PIK3CG	 	kinase	 	 	 	4.52E-03	FCGR3A/FCGR3B,IL2RB	 
+linseed oil	 	chemical reagent	 	 	 	4.75E-03	SYK	 
+PU-H71	 	chemical drug	 	 	 	4.75E-03	SYK	 
+FGR	 	kinase	 	 	 	4.75E-03	IL32	 
+PLAA	 	other	 	 	 	4.75E-03	IL32	 
+RAB7B	 	peptidase	 	 	 	5.69E-03	IGF2R	 
+DNMT3L	 	transcription regulator	 	 	 	5.69E-03	IGF2R	 
+WIF1	 	other	 	 	 	5.69E-03	MALAT1	 
+TGFB1	 	growth factor	 	-0.505	 	6.17E-03	CX3CR1,FCGR3A/FCGR3B,IL2RB,IL32,MALAT1,RUNX3	 
+INSR	 	kinase	 	 	 	6.20E-03	IFITM2,IGF2R,MYOM2	 
+LAMP2	 	enzyme	 	 	 	6.64E-03	IGF2R	 
+IL18RAP	 	transmembrane receptor	 	 	 	6.64E-03	IL32	 
+delta-aminolevulinic acid	 	chemical - endogenous mammalian	 	 	 	6.64E-03	JAK1	 
+Boc-D-FMK	 	chemical reagent	 	 	 	6.64E-03	SYK	 
+MEF2C	 	transcription regulator	 	 	 	7.02E-03	MYOM2,SYK	 
+BCR (complex)	 	complex	 	 	 	7.22E-03	IL2RB,JAK1	 
+STAT6	 	transcription regulator	 	 	 	7.33E-03	FCGR3A/FCGR3B,IGF2R,SYK	 
+halofuginone	 	chemical drug	 	 	 	7.43E-03	IFITM2,KLRG1	 
+CpG ODN 1585	 	chemical reagent	 	 	 	7.59E-03	SPON2	 
+ATXN2	 	other	 	 	 	7.59E-03	PABPC1	 
+PLP2	 	transporter	 	 	 	7.59E-03	HLA-C	 
+SYVN1	 	transporter	 	 	 	7.96E-03	HLA-C,IFITM2	 
+filgrastim	 	biologic drug	 	 	 	8.11E-03	IL2RB,IL32,SPON2	 
+butyric acid	 	chemical - endogenous mammalian	 	 	 	8.26E-03	IFITM2,IL32,SYK	 
+PROP1	 	transcription regulator	 	 	 	8.53E-03	KLRG1	 
+NAALADL2	 	other	 	 	 	8.53E-03	SPON2	 
+CDKN3	 	phosphatase	 	 	 	8.53E-03	IGF2R	 
+sapanisertib	 	chemical drug	 	 	 	8.53E-03	PABPC1	 
+BCO2	 	enzyme	 	 	 	9.47E-03	SPON2	 
+CNBP	 	transcription regulator	 	 	 	9.47E-03	PABPC1	 
+TDGF1	 	growth factor	 	 	 	9.47E-03	JAK1	 
+alitretinoin	 	chemical drug	 	 	 	9.66E-03	IL2RB,RUNX3	 
+ZFP57	 	transcription regulator	 	 	 	1.04E-02	IGF2R	 
+TXK	 	kinase	 	 	 	1.04E-02	IL2RB	 
+DUSP4	 	phosphatase	 	 	 	1.04E-02	KLRG1	 
+CHRNA3	 	transmembrane receptor	 	 	 	1.04E-02	JAK1	 
+zeaxanthin	 	chemical drug	 	 	 	1.04E-02	SPON2	 
+IGF2	 	growth factor	 	 	 	1.12E-02	IFITM2,IGF2R	 
+CLEC1B	 	transmembrane receptor	 	 	 	1.14E-02	SYK	 
+CSF3	 	cytokine	 	 	 	1.20E-02	CX3CR1,GNLY	 
+IL21	 	cytokine	 	 	 	1.21E-02	IL2RB,KLRG1	 
+BCO1	 	enzyme	 	 	 	1.23E-02	SPON2	 
+HLA-A	 	other	 	 	 	1.32E-02	KLRG1	 
+GTF2I	 	transcription regulator	 	 	 	1.32E-02	CD3D	 
+poly rI:rC-RNA	 	biologic drug	 	 	 	1.39E-02	HLA-C,IL32,SYK	 
+isopentenyl diphosphate	 	chemical - endogenous mammalian	 	 	 	1.42E-02	FCGR3A/FCGR3B	 
+PAX3	 	transcription regulator	 	 	 	1.49E-02	IFITM2,RUNX3	 
+mir-205	 	microRNA	 	 	 	1.51E-02	IL32	 
+lactacystin	 	chemical - protease inhibitor	 	 	 	1.52E-02	HLA-C,SYK	 
+CXCL12	 	cytokine	 	 	 	1.55E-02	CD3G,RUNX3	 
+CD 437	 	chemical drug	 	 	 	1.60E-02	HLA-C,PABPC1	 
+Cyp2c23	 	enzyme	 	 	 	1.61E-02	CX3CR1	 
+NCAM1	 	other	 	 	 	1.61E-02	MALAT1	 
+TCF3-PBX1	 	fusion gene/product	 	 	 	1.61E-02	SYK	 
+IL12 (complex)	 	complex	 	 	 	1.65E-02	IL32,KLRG1	 
+CD44	 	other	 	 	 	1.65E-02	CX3CR1,IFITM2	 
+NFATC2	 	transcription regulator	 	 	 	1.65E-02	CD3G,CX3CR1	 
+miR-9-5p (and other miRNAs w/seed CUUUGGU)	 	mature microRNA	 	 	 	1.70E-02	JAK1	 
+Immunoglobulin	 	complex	 	 	 	1.77E-02	FCGR3A/FCGR3B,IL2RB,IL32	 
+BCL6	 	transcription regulator	 	 	 	1.79E-02	IL2RB,SYK	 
+RAE1	 	other	 	 	 	1.79E-02	RSRP1	 
+ATR	 	kinase	 	 	 	1.79E-02	RBM39	 
+TREM2	 	transmembrane receptor	 	 	 	1.79E-02	CX3CR1	 
+pirfenidone	 	chemical drug	 	 	 	1.79E-02	CX3CR1	 
+LGALS9	 	other	 	 	 	1.89E-02	FCGR3A/FCGR3B	 
+HRG	 	other	 	 	 	1.89E-02	FCGR3A/FCGR3B	 
+TAL1	 	transcription regulator	 	 	 	1.90E-02	HLA-C,SYK	 
+camptothecin	 	chemical drug	 	 	 	1.93E-02	HLA-C,RSRP1,SYK	 
+Fibrinogen	 	complex	 	 	 	1.98E-02	FCGR3A/FCGR3B	 
+DOT1L	 	phosphatase	 	 	 	1.98E-02	PABPC1	 
+GLIS3	 	transcription regulator	 	 	 	1.98E-02	KLRG1	 
+NLRC5	 	transcription regulator	 	 	 	1.98E-02	HLA-C	 
+chrysin	 	chemical - endogenous non-mammalian	 	 	 	1.98E-02	JAK1	 
+PARPBP	 	other	 	 	 	2.07E-02	SPON2	 
+WDR5	 	transcription regulator	 	 	 	2.07E-02	IGF2R	 
+miR-218-5p (and other miRNAs w/seed UGUGCUU)	 	mature microRNA	 	 	 	2.07E-02	FCGR3A/FCGR3B	 
+SMARCA4	 	transcription regulator	 	 	 	2.12E-02	HLA-C,IFITM2,SYK	 
+CD3	 	complex	 	 	 	2.18E-02	IL2RB,IL32,JAK1	 
+SAFB2	 	other	 	 	 	2.26E-02	HLA-C	 
+BCL2L11	 	other	 	 	 	2.35E-02	KLRG1	 
+mir-9	 	microRNA	 	 	 	2.35E-02	JAK1	 
+PCYT1A	 	enzyme	 	 	 	2.35E-02	RUNX3	 
+kaempferol	 	chemical toxicant	 	 	 	2.35E-02	IL32	 
+IKZF1	 	transcription regulator	 	 	 	2.36E-02	CD3D,IL2RB	 
+thioacetamide	 	chemical toxicant	 	 	 	2.38E-02	IFITM2,KLRG1	 
+cigarette smoke	 	chemical toxicant	 	 	 	2.43E-02	JAK1,RUNX3	 
+mir-148	 	microRNA	 	 	 	2.45E-02	RUNX3	 
+MTA3	 	transcription regulator	 	 	 	2.45E-02	SYK	 
+arotinoid acid	 	chemical toxicant	 	 	 	2.45E-02	RUNX3	 
+curdlan	 	chemical - endogenous non-mammalian	 	 	 	2.45E-02	IL2RB	 
+E. coli B5 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	2.52E-02	CX3CR1,IL32	 
+TRIB3	 	kinase	 	 	 	2.54E-02	JAK1	 
+SMTNL1	 	other	 	 	 	2.72E-02	MYOM2	 
+miR-133a-3p (and other miRNAs w/seed UUGGUCC)	 	mature microRNA	 	 	 	2.72E-02	MALAT1	 
+B2M	 	transmembrane receptor	 	 	 	2.72E-02	KLRG1	 
+SP4	 	transcription regulator	 	 	 	2.72E-02	IL2RB	 
+FCGR2A	 	transmembrane receptor	 	 	 	2.72E-02	FCGR3A/FCGR3B	 
+PTX3	 	other	 	 	 	2.82E-02	CX3CR1	 
+TNFSF15	 	cytokine	 	 	 	2.91E-02	IL2RB	 
+proteasome inhibitor PSI	 	chemical - protease inhibitor	 	 	 	2.91E-02	SYK	 
+IGF1R	 	transmembrane receptor	 	 	 	2.91E-02	IGF2R,MYOM2	 
+Akt	 	group	 	 	 	3.08E-02	IL2RB,IL32	 
+ZBTB7A	 	transcription regulator	 	 	 	3.09E-02	RUNX3	 
+OSCAR	 	other	 	 	 	3.19E-02	CX3CR1	 
+resveratrol	 	chemical drug	 	 	 	3.20E-02	CX3CR1,MALAT1	 
+DICER1	 	enzyme	 	 	 	3.22E-02	IGF2R,KLRG1	 
+IL17F	 	cytokine	 	 	 	3.28E-02	IL32	 
+asoprisnil	 	chemical drug	 	 	 	3.37E-02	IL2RB	 
+NLRP12	 	other	 	 	 	3.37E-02	HLA-C	 
+NORAD	 	other	 	 	 	3.46E-02	IL32	 
+lipopolysaccharide	 	chemical drug	 	 	 	3.48E-02	CX3CR1,IFITM2,IL2RB,IL32,RUNX3	 
+monobutyl phthalate	 	chemical toxicant	 	 	 	3.55E-02	RBM39	 
+miR-182-5p (and other miRNAs w/seed UUGGCAA)	 	mature microRNA	 	 	 	3.65E-02	MALAT1	 
+CEACAM1	 	transporter	 	 	 	3.74E-02	IL2RB	 
+conjugated linoleic acid	 	chemical drug	 	 	 	3.83E-02	JAK1	 
+eflornithine	 	chemical drug	 	 	 	3.83E-02	IL32	 
+DMP1	 	other	 	 	 	3.92E-02	CX3CR1	 
+PAX5-ELN	 	fusion gene/product	 	 	 	3.92E-02	IL2RB	 
+GnRH analog	 	biologic drug	 	 	 	3.92E-02	IL32,PABPC1	 
+Collagen type II	 	complex	 	 	 	4.10E-02	CX3CR1	 
+NME1	 	kinase	 	 	 	4.10E-02	PABPC1	 
+methyl methanesulfonate	 	chemical toxicant	 	 	 	4.10E-02	EIF1	 
+IL3	 	cytokine	 	 	 	4.14E-02	CD3D,CD3G	 
+lipid A	 	chemical toxicant	 	 	 	4.20E-02	SYK	 
+RBM5	 	other	 	 	 	4.20E-02	IL32	 
+TXNIP	 	other	 	 	 	4.20E-02	IL2RB	 
+Hbb-b2	 	other	 	 	 	4.29E-02	IL2RB	 
+ICOS	 	transmembrane receptor	 	 	 	4.29E-02	IL2RB	 
+TCF7	 	transcription regulator	 	 	 	4.38E-02	CD3G	 
+omeprazole	 	chemical drug	 	 	 	4.47E-02	SYK	 
+beta-estradiol	 	chemical - endogenous mammalian	 	-1.982	 	4.54E-02	IGF2R,JAK1,KLRG1,RBM39,SYK	 
+AIP	 	transcription regulator	 	 	 	4.56E-02	CX3CR1	 
+RETN	 	other	 	 	 	4.65E-02	CX3CR1	 
+STAT1	 	transcription regulator	 	 	 	4.68E-02	CX3CR1,IFITM2	 
+mir-182	 	microRNA	 	 	 	4.74E-02	MALAT1	 
+TIMP3	 	other	 	 	 	4.74E-02	JAK1	 
+IGFBP2	 	other	 	 	 	4.83E-02	MALAT1	 
+brefeldin A	 	chemical - endogenous non-mammalian	 	 	 	4.83E-02	HLA-C	 
+IL10	 	cytokine	 	 	 	4.86E-02	CX3CR1,FCGR3A/FCGR3B	 
+CD5	 	transmembrane receptor	 	 	 	4.92E-02	RUNX3	 
+chromium	 	chemical drug	 	 	 	4.92E-02	RSRP1	 

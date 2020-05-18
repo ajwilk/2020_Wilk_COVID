@@ -1,0 +1,158 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Antigen Presentation Pathway	8.46E00	1.54E-01	NaN	CD74,HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+B Cell Development	5.2E00	1.11E-01	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Allograft Rejection Signaling	4.98E00	5.81E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Crosstalk between Dendritic Cells and Natural Killer Cells	4.91E00	5.62E-02	2.000	CD69,CD83,HLA-DRA,HLA-DRB1,HLA-DRB5	
+OX40 Signaling Pathway	4.89E00	5.56E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Communication between Innate and Adaptive Immune Cells	4.75E00	5.21E-02	NaN	CD83,CXCL8,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Graft-versus-Host Disease Signaling	4.69E00	8.33E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Autoimmune Thyroid Disease Signaling	4.66E00	8.16E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+PD-1, PD-L1 cancer immunotherapy pathway	4.54E00	4.72E-02	-2.000	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Role of NFAT in Regulation of the Immune Response	4.49E00	3.31E-02	2.449	FYN,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5,MEF2C	
+iCOS-iCOSL Signaling in T Helper Cells	4.45E00	4.5E-02	2.236	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5,TRAT1	
+Nur77 Signaling in T Lymphocytes	4.34E00	6.78E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+CD28 Signaling in T Helper Cells	4.28E00	4.17E-02	NaN	FYN,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Th1 Pathway	4.27E00	4.13E-02	2.000	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Calcium-induced T Lymphocyte Apoptosis	4.15E00	6.06E-02	2.000	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Th2 Pathway	4.03E00	3.68E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+T Helper Cell Differentiation	3.97E00	5.48E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+PKCθ Signaling in T Lymphocytes	3.76E00	3.23E-02	2.236	FYN,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+IL-4 Signaling	3.72E00	4.71E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	3.62E00	4.44E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Cdc42 Signaling	3.61E00	2.99E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Th1 and Th2 Activation Pathway	3.56E00	2.92E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Salvage Pathways of Pyrimidine Deoxyribonucleotides	3.52E00	2.5E-01	NaN	APOBEC3A,TYMP	
+T Cell Exhaustion Signaling Pathway	3.52E00	2.86E-02	NaN	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Dendritic Cell Maturation	3.43E00	2.73E-02	2.236	CD83,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Neuroinflammation Signaling Pathway	3.29E00	2E-02	2.449	CXCL8,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5,SOD2	
+Type I Diabetes Mellitus Signaling	3.28E00	3.6E-02	NaN	HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Role of Tissue Factor in Cancer	3.19E00	3.42E-02	NaN	BLK,CXCL8,FYN,ITGA6	
+Phagosome Maturation	2.78E00	2.65E-02	NaN	CTSS,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Caveolar-mediated Endocytosis Signaling	2.72E00	4.11E-02	NaN	FYN,ITGA6,ITGAX	
+TREM1 Signaling	2.69E00	4E-02	NaN	CD83,CXCL8,ITGAX	
+Polyamine Regulation in Colon Cancer	2.61E00	9.09E-02	NaN	MXD1,SAT1	
+Granulocyte Adhesion and Diapedesis	2.5E00	2.22E-02	NaN	CSF3R,CXCL8,FPR1,ITGA6	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	2.28E00	1.5E-02	2.236	HLA-DPB1,HLA-DQA1,HLA-DRA,HLA-DRB1,HLA-DRB5	
+Inhibition of Angiogenesis by TSP1	2.24E00	5.88E-02	NaN	CD36,FYN	
+Atherosclerosis Signaling	2.06E00	2.38E-02	NaN	CCR2,CD36,CXCL8	
+Reelin Signaling in Neurons	2.03E00	2.33E-02	NaN	BLK,FYN,ITGA6	
+Spermine and Spermidine Degradation I	1.88E00	2.5E-01	NaN	SAT1	
+Retinoic acid Mediated Apoptosis Signaling	1.76E00	3.33E-02	NaN	PARP15,PARP8	
+NAD Biosynthesis III	1.7E00	1.67E-01	NaN	NAMPT	
+Airway Pathology in Chronic Obstructive Pulmonary Disease	1.58E00	1.25E-01	NaN	CXCL8	
+Superoxide Radicals Degradation	1.58E00	1.25E-01	NaN	SOD2	
+Osteoarthritis Pathway	1.47E00	1.42E-02	NaN	CXCL8,MEF2C,NAMPT	
+Integrin Signaling	1.46E00	1.41E-02	NaN	FYN,ITGA6,ITGAX	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	1.44E00	2.25E-02	NaN	FYN,TRAT1	
+γ-glutamyl Cycle	1.44E00	9.09E-02	NaN	ANPEP	
+Death Receptor Signaling	1.43E00	2.2E-02	NaN	PARP15,PARP8	
+Glycogen Degradation II	1.4E00	8.33E-02	NaN	TYMP	
+Role of IL-17A in Psoriasis	1.37E00	7.69E-02	NaN	CXCL8	
+UVA-Induced MAPK Signaling	1.37E00	2.04E-02	NaN	PARP15,PARP8	
+Glycogen Degradation III	1.34E00	7.14E-02	NaN	TYMP	
+Virus Entry via Endocytic Pathways	1.3E00	1.87E-02	NaN	FYN,ITGA6	
+Paxillin Signaling	1.29E00	1.85E-02	NaN	ITGA6,ITGAX	
+IL-15 Production	1.21E00	1.65E-02	NaN	BLK,FYN	
+Cardiomyocyte Differentiation via BMP Receptors	1.19E00	5E-02	NaN	MEF2C	
+Putrescine Degradation III	1.17E00	4.76E-02	NaN	SAT1	
+Sirtuin Signaling Pathway	1.13E00	1.03E-02	NaN	CXCL8,NAMPT,SOD2	
+Tumoricidal Function of Hepatic Natural Killer Cells	1.11E00	4.17E-02	NaN	SRGN	
+PI3K Signaling in B Lymphocytes	1.11E00	1.45E-02	NaN	BLK,FYN	
+IL-17A Signaling in Gastric Cells	1.09E00	4E-02	NaN	CXCL8	
+TNFR2 Signaling	1.02E00	3.33E-02	NaN	TNFAIP3	
+Glutathione-mediated Detoxification	9.91E-01	3.12E-02	NaN	ANPEP	
+Tec Kinase Signaling	9.79E-01	1.22E-02	NaN	BLK,FYN	
+MIF-mediated Glucocorticoid Regulation	9.67E-01	2.94E-02	NaN	CD74	
+Mitochondrial Dysfunction	9.51E-01	1.17E-02	NaN	LRRK2,SOD2	
+Complement System	9.32E-01	2.7E-02	NaN	ITGAX	
+tRNA Charging	9.1E-01	2.56E-02	NaN	WARS1	
+MIF Regulation of Innate Immunity	8.83E-01	2.38E-02	NaN	CD74	
+Role of IL-17F in Allergic Inflammatory Airway Diseases	8.83E-01	2.38E-02	NaN	CXCL8	
+PPARα/RXRα Activation	8.76E-01	1.05E-02	NaN	CD36,MEF2C	
+Role of Hypercytokinemia/hyperchemokinemia in the Pathogenesis of Influenza	8.73E-01	2.33E-02	NaN	CXCL8	
+Agranulocyte Adhesion and Diapedesis	8.63E-01	1.04E-02	NaN	CXCL8,ITGA6	
+IL-8 Signaling	8.39E-01	1E-02	NaN	CXCL8,ITGAX	
+Ephrin A Signaling	8.36E-01	2.13E-02	NaN	FYN	
+Hematopoiesis from Pluripotent Stem Cells	8.18E-01	2.04E-02	NaN	CXCL8	
+TNFR1 Signaling	8.12E-01	2E-02	NaN	TNFAIP3	
+Role of Cytokines in Mediating Communication between Immune Cells	7.8E-01	1.85E-02	NaN	CXCL8	
+Role of IL-17A in Arthritis	7.72E-01	1.82E-02	NaN	CXCL8	
+Sperm Motility	7.67E-01	8.97E-03	NaN	BLK,FYN	
+MSP-RON Signaling Pathway	7.52E-01	1.72E-02	NaN	CCR2	
+Semaphorin Signaling in Neurons	7.4E-01	1.67E-02	NaN	FYN	
+Autophagy	7.33E-01	1.64E-02	NaN	CTSS	
+CD40 Signaling	7.08E-01	1.54E-02	NaN	TNFAIP3	
+Opioid Signaling Pathway	6.99E-01	8.1E-03	NaN	BLK,FYN	
+Phospholipase C Signaling	6.72E-01	7.78E-03	NaN	FYN,MEF2C	
+ERK5 Signaling	6.68E-01	1.39E-02	NaN	MEF2C	
+IL-15 Signaling	6.52E-01	1.33E-02	NaN	CXCL8	
+Toll-like Receptor Signaling	6.48E-01	1.32E-02	NaN	TNFAIP3	
+VDR/RXR Activation	6.38E-01	1.28E-02	NaN	MXD1	
+IL-7 Signaling Pathway	6.38E-01	1.28E-02	NaN	FYN	
+G-Protein Coupled Receptor Signaling	6.36E-01	7.35E-03	NaN	FPR1,FYN	
+Agrin Interactions at Neuromuscular Junction	6.33E-01	1.27E-02	NaN	ITGA6	
+Thyroid Cancer Signaling	6.33E-01	1.27E-02	NaN	CXCL8	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	6.29E-01	7.27E-03	NaN	CXCL8,FYN	
+Senescence Pathway	6.29E-01	7.27E-03	NaN	CXCL8,SOD2	
+IL-17 Signaling	6.27E-01	1.25E-02	NaN	CXCL8	
+Prolactin Signaling	6.23E-01	1.23E-02	NaN	FYN	
+NF-κB Activation by Viruses	6.18E-01	1.22E-02	NaN	ITGA6	
+PEDF Signaling	6.18E-01	1.22E-02	NaN	SOD2	
+Acute Myeloid Leukemia Signaling	5.88E-01	1.12E-02	NaN	CSF3R	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	5.88E-01	1.12E-02	NaN	FYN	
+Th17 Activation Pathway	5.8E-01	1.1E-02	NaN	AHR	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	5.67E-01	1.06E-02	NaN	FYN	
+FAK Signaling	5.64E-01	1.05E-02	NaN	FYN	
+Bladder Cancer Signaling	5.56E-01	1.03E-02	NaN	CXCL8	
+Salvage Pathways of Pyrimidine Ribonucleotides	5.56E-01	1.03E-02	NaN	APOBEC3A	
+T Cell Receptor Signaling	5.27E-01	9.52E-03	NaN	FYN	
+CDK5 Signaling	5.17E-01	9.26E-03	NaN	ITGA6	
+Glucocorticoid Receptor Signaling	5.09E-01	5.95E-03	NaN	CD163,CXCL8	
+Breast Cancer Regulation by Stathmin1	4.99E-01	5.08E-03	NaN	CCR2,FPR1,NMUR1	
+Apelin Endothelial Signaling Pathway	4.93E-01	8.7E-03	NaN	MEF2C	
+fMLP Signaling in Neutrophils	4.91E-01	8.62E-03	NaN	FPR1	
+Fc Epsilon RI Signaling	4.88E-01	8.55E-03	NaN	FYN	
+p38 MAPK Signaling	4.85E-01	8.47E-03	NaN	MEF2C	
+Cholecystokinin/Gastrin-mediated Signaling	4.81E-01	8.4E-03	NaN	MEF2C	
+GP6 Signaling Pathway	4.81E-01	8.4E-03	NaN	FYN	
+LXR/RXR Activation	4.76E-01	8.26E-03	NaN	CD36	
+Gαi Signaling	4.65E-01	8E-03	NaN	FPR1	
+IL-6 Signaling	4.65E-01	8E-03	NaN	CXCL8	
+Phagosome Formation	4.65E-01	8E-03	NaN	ITGAX	
+Hepatic Fibrosis Signaling Pathway	4.56E-01	5.43E-03	NaN	CXCL8,SOD2	
+Gα12/13 Signaling	4.51E-01	7.69E-03	NaN	MEF2C	
+Iron homeostasis signaling pathway	4.33E-01	7.3E-03	NaN	CD163	
+Insulin Receptor Signaling	4.26E-01	7.14E-03	NaN	FYN	
+Type II Diabetes Mellitus Signaling	4.2E-01	7.04E-03	NaN	CD36	
+Aryl Hydrocarbon Receptor Signaling	4.18E-01	6.99E-03	NaN	AHR	
+Xenobiotic Metabolism General Signaling Pathway	4.18E-01	6.99E-03	NaN	AHR	
+Corticotropin Releasing Hormone Signaling	4.13E-01	6.9E-03	NaN	MEF2C	
+Factors Promoting Cardiogenesis in Vertebrates	4.02E-01	6.67E-03	NaN	MEF2C	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	3.94E-01	6.49E-03	NaN	CXCL8	
+HMGB1 Signaling	3.71E-01	6.06E-03	NaN	CXCL8	
+Germ Cell-Sertoli Cell Junction Signaling	3.59E-01	5.85E-03	NaN	ITGA6	
+Acute Phase Response Signaling	3.44E-01	5.59E-03	NaN	SOD2	
+NF-κB Signaling	3.44E-01	5.59E-03	NaN	TNFAIP3	
+Ephrin Receptor Signaling	3.43E-01	5.56E-03	NaN	FYN	
+Hepatic Cholestasis	3.33E-01	5.41E-03	NaN	CXCL8	
+B Cell Receptor Signaling	3.33E-01	5.41E-03	NaN	MEF2C	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	3.33E-01	5.38E-03	NaN	CXCL8	
+NRF2-mediated Oxidative Stress Response	3.27E-01	5.29E-03	NaN	SOD2	
+ERK/MAPK Signaling	3.21E-01	5.18E-03	NaN	FYN	
+RAR Activation	3.19E-01	5.15E-03	NaN	PRMT2	
+Natural Killer Cell Signaling	3.14E-01	5.08E-03	NaN	FYN	
+Leukocyte Extravasation Signaling	3.14E-01	5.08E-03	NaN	ITGA6	
+Cardiac Hypertrophy Signaling (Enhanced)	3.12E-01	4.11E-03	NaN	CXCL8,MEF2C	
+Calcium Signaling	3.01E-01	4.85E-03	NaN	MEF2C	
+Role of NFAT in Cardiac Hypertrophy	2.89E-01	4.67E-03	NaN	MEF2C	
+EIF2 Signaling	2.76E-01	4.46E-03	NaN	WARS1	
+cAMP-mediated signaling	2.71E-01	4.39E-03	NaN	FPR1	
+Cardiac Hypertrophy Signaling	2.56E-01	4.17E-03	NaN	MEF2C	
+Xenobiotic Metabolism Signaling	2.08E-01	3.48E-03	NaN	AHR	
+Axonal Guidance Signaling	-0E00	2.07E-03	NaN	FYN	
+Molecular Mechanisms of Cancer	-0E00	2.56E-03	NaN	FYN	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	-0E00	3.21E-03	NaN	CXCL8	
+Estrogen Receptor Signaling	-0E00	3.05E-03	NaN	SOD2	
+Synaptogenesis Signaling Pathway	-0E00	3.21E-03	NaN	FYN	

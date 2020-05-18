@@ -1,0 +1,176 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Interferon Signaling	9.87E00	1.67E-01	1.633	IFI6,IFIT3,ISG15,JAK1,MX1,STAT1	
+Th1 and Th2 Activation Pathway	5.75E00	3.51E-02	NaN	CD3D,CD3G,CXCR4,IL2RB,JAK1,STAT1	
+Type I Diabetes Mellitus Signaling	5.39E00	4.5E-02	1.342	CD3D,CD3G,GZMB,JAK1,STAT1	
+Th2 Pathway	4.96E00	3.68E-02	0.447	CD3D,CD3G,CXCR4,IL2RB,JAK1	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	4.27E00	8.82E-02	NaN	CD3D,CD3G,GZMB	
+Role of PKR in Interferon Induction and Antiviral Response	3.92E00	3.42E-02	1.000	EIF2AK2,HSPA8,JAK1,STAT1	
+Th1 Pathway	3.87E00	3.31E-02	1.000	CD3D,CD3G,JAK1,STAT1	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	3.47E00	4.76E-02	NaN	ADAR,ISG15,STAT1	
+Role of IL-17A in Psoriasis	3.46E00	1.54E-01	NaN	S100A8,S100A9	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	3.35E00	4.35E-02	NaN	IL2RB,JAK1,STAT1	
+GM-CSF Signaling	3.33E00	4.29E-02	NaN	ETS1,RACK1,STAT1	
+IL-15 Signaling	3.24E00	4E-02	NaN	GZMB,IL2RB,JAK1	
+Glucocorticoid Receptor Signaling	3.11E00	1.49E-02	NaN	CD3D,CD3G,HSPA8,JAK1,STAT1	
+PDGF Signaling	3.07E00	3.49E-02	NaN	EIF2AK2,JAK1,STAT1	
+IL-22 Signaling	2.91E00	8.33E-02	NaN	JAK1,STAT1	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	2.91E00	8.33E-02	NaN	JAK1,STAT1	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	2.88E00	8E-02	NaN	JAK1,STAT1	
+iCOS-iCOSL Signaling in T Helper Cells	2.75E00	2.7E-02	NaN	CD3D,CD3G,IL2RB	
+IL-15 Production	2.64E00	2.48E-02	NaN	JAK1,MATK,STAT1	
+IL-9 Signaling	2.64E00	6.06E-02	NaN	JAK1,STAT1	
+Role of JAK2 in Hormone-like Cytokine Signaling	2.61E00	5.88E-02	NaN	JAK1,STAT1	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	2.54E00	1.45E-02	1.000	IFIT3,ISG15,JAK1,STAT1	
+Antiproliferative Role of TOB in T Cell Signaling	2.49E00	5.13E-02	NaN	CD3D,CD3G	
+Oncostatin M Signaling	2.41E00	4.65E-02	NaN	JAK1,STAT1	
+iNOS Signaling	2.37E00	4.44E-02	NaN	JAK1,STAT1	
+FAT10 Cancer Signaling Pathway	2.35E00	4.35E-02	NaN	CXCR4,EEF1A1	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	2.35E00	1.95E-02	NaN	EIF2AK2,OAS2,OAS3	
+Necroptosis Signaling Pathway	2.33E00	1.91E-02	NaN	EIF2AK2,JAK1,STAT1	
+Hematopoiesis from Pluripotent Stem Cells	2.3E00	4.08E-02	NaN	CD3D,CD3G	
+Tec Kinase Signaling	2.27E00	1.83E-02	NaN	ACTG1,JAK1,STAT1	
+EGF Signaling	2.2E00	3.64E-02	NaN	JAK1,STAT1	
+T Cell Exhaustion Signaling Pathway	2.19E00	1.71E-02	NaN	GZMB,JAK1,STAT1	
+Diphthamide Biosynthesis	2.19E00	3.33E-01	NaN	EEF2	
+CNTF Signaling	2.17E00	3.51E-02	NaN	JAK1,STAT1	
+NF-κB Signaling	2.17E00	1.68E-02	NaN	EIF2AK2,IGF2R,TNFAIP3	
+Role of NFAT in Regulation of the Immune Response	2.15E00	1.66E-02	NaN	CD3D,CD3G,FCGR3A/FCGR3B	
+Nur77 Signaling in T Lymphocytes	2.14E00	3.39E-02	NaN	CD3D,CD3G	
+Dendritic Cell Maturation	2.14E00	1.64E-02	NaN	FCGR3A/FCGR3B,IL32,STAT1	
+IL-2 Signaling	2.11E00	3.28E-02	NaN	IL2RB,JAK1	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	2.11E00	1.6E-02	NaN	JAK1,S100A8,STAT1	
+Clathrin-mediated Endocytosis Signaling	2.08E00	1.55E-02	NaN	ACTG1,HSPA8,S100A8	
+Natural Killer Cell Signaling	2.05E00	1.52E-02	NaN	FCGR3A/FCGR3B,HSPA8,IL2RB	
+Calcium-induced T Lymphocyte Apoptosis	2.05E00	3.03E-02	NaN	CD3D,CD3G	
+Toll-like Receptor Signaling	1.93E00	2.63E-02	NaN	EIF2AK2,TNFAIP3	
+IL-7 Signaling Pathway	1.91E00	2.56E-02	NaN	JAK1,STAT1	
+IL-3 Signaling	1.9E00	2.53E-02	NaN	JAK1,STAT1	
+JAK/Stat Signaling	1.89E00	2.5E-02	NaN	JAK1,STAT1	
+Systemic Lupus Erythematosus Signaling	1.88E00	1.31E-02	NaN	CD3D,CD3G,FCGR3A/FCGR3B	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	1.8E00	2.25E-02	NaN	CD3D,CD3G	
+Crosstalk between Dendritic Cells and Natural Killer Cells	1.8E00	2.25E-02	NaN	ACTG1,IL2RB	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	1.8E00	2.25E-02	NaN	CD3D,CD3G	
+OX40 Signaling Pathway	1.79E00	2.22E-02	NaN	CD3D,CD3G	
+Death Receptor Signaling	1.78E00	2.2E-02	NaN	ACTG1,PARP9	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	1.75E00	2.13E-02	NaN	ACTG1,FCGR3A/FCGR3B	
+CCR5 Signaling in Macrophages	1.75E00	2.13E-02	NaN	CD3D,CD3G	
+UVA-Induced MAPK Signaling	1.72E00	2.04E-02	NaN	PARP9,STAT1	
+Sumoylation Pathway	1.68E00	1.94E-02	NaN	ETS1,SP100	
+T Cell Receptor Signaling	1.67E00	1.9E-02	NaN	CD3D,CD3G	
+PD-1, PD-L1 cancer immunotherapy pathway	1.66E00	1.89E-02	NaN	IL2RB,JAK1	
+Telomerase Signaling	1.65E00	1.87E-02	NaN	ETS1,IL2RB	
+Pancreatic Adenocarcinoma Signaling	1.63E00	1.83E-02	NaN	JAK1,STAT1	
+CD28 Signaling in T Helper Cells	1.56E00	1.67E-02	NaN	CD3D,CD3G	
+Atherosclerosis Signaling	1.52E00	1.59E-02	NaN	CXCR4,S100A8	
+p70S6K Signaling	1.5E00	1.55E-02	NaN	EEF2,JAK1	
+IL-12 Signaling and Production in Macrophages	1.48E00	1.52E-02	NaN	S100A8,STAT1	
+Granzyme B Signaling	1.47E00	6.25E-02	NaN	GZMB	
+STAT3 Pathway	1.46E00	1.48E-02	NaN	IGF2R,IL2RB	
+Granzyme A Signaling	1.4E00	5.26E-02	NaN	H1-4	
+PKCθ Signaling in T Lymphocytes	1.35E00	1.29E-02	NaN	CD3D,CD3G	
+Cdc42 Signaling	1.3E00	1.2E-02	NaN	CD3D,CD3G	
+Tumoricidal Function of Hepatic Natural Killer Cells	1.3E00	4.17E-02	NaN	GZMB	
+PI3K/AKT Signaling	1.26E00	1.14E-02	NaN	IL2RB,JAK1	
+TNFR2 Signaling	1.2E00	3.33E-02	NaN	TNFAIP3	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	1.19E00	1.04E-02	NaN	ETS1,JAK1	
+Agranulocyte Adhesion and Diapedesis	1.19E00	1.04E-02	NaN	ACTG1,CXCR4	
+ERK/MAPK Signaling	1.19E00	1.04E-02	NaN	ETS1,STAT1	
+Leukocyte Extravasation Signaling	1.17E00	1.02E-02	NaN	ACTG1,CXCR4	
+Osteoarthritis Pathway	1.12E00	9.48E-03	NaN	S100A8,S100A9	
+Actin Cytoskeleton Signaling	1.09E00	9.17E-03	NaN	ACTG1,MATK	
+Sperm Motility	1.08E00	8.97E-03	NaN	JAK1,MATK	
+Mechanisms of Viral Exit from Host Cells	1.07E00	2.44E-02	NaN	ACTG1	
+BAG2 Signaling Pathway	1.05E00	2.33E-02	NaN	HSPA8	
+Graft-versus-Host Disease Signaling	1.01E00	2.08E-02	NaN	GZMB	
+Autoimmune Thyroid Disease Signaling	9.96E-01	2.04E-02	NaN	GZMB	
+Primary Immunodeficiency Signaling	9.91E-01	2E-02	NaN	CD3D	
+TNFR1 Signaling	9.91E-01	2E-02	NaN	TNFAIP3	
+Colorectal Cancer Metastasis Signaling	9.87E-01	7.91E-03	NaN	JAK1,STAT1	
+Phospholipase C Signaling	9.75E-01	7.78E-03	NaN	CD3D,CD3G	
+Role of Cytokines in Mediating Communication between Immune Cells	9.59E-01	1.85E-02	NaN	IL32	
+Unfolded protein response	9.43E-01	1.79E-02	NaN	HSPA8	
+MSP-RON Signaling Pathway	9.28E-01	1.72E-02	NaN	ACTG1	
+Retinoic acid Mediated Apoptosis Signaling	9.14E-01	1.67E-02	NaN	PARP9	
+Induction of Apoptosis by HIV1	9.07E-01	1.64E-02	NaN	CXCR4	
+Thrombopoietin Signaling	8.96E-01	1.59E-02	NaN	STAT1	
+CD40 Signaling	8.83E-01	1.54E-02	NaN	TNFAIP3	
+IL-17A Signaling in Airway Cells	8.83E-01	1.54E-02	NaN	JAK1	
+Pyridoxal 5'-phosphate Salvage Pathway	8.83E-01	1.54E-02	NaN	EIF2AK2	
+Remodeling of Epithelial Adherens Junctions	8.63E-01	1.47E-02	NaN	ACTG1	
+Neuroinflammation Signaling Pathway	8.63E-01	6.67E-03	NaN	JAK1,STAT1	
+IL-10 Signaling	8.57E-01	1.45E-02	NaN	JAK1	
+SPINK1 General Cancer Pathway	8.57E-01	1.45E-02	NaN	JAK1	
+Growth Hormone Signaling	8.48E-01	1.41E-02	NaN	STAT1	
+Ephrin B Signaling	8.42E-01	1.39E-02	NaN	CXCR4	
+Caveolar-mediated Endocytosis Signaling	8.36E-01	1.37E-02	NaN	ACTG1	
+T Helper Cell Differentiation	8.36E-01	1.37E-02	NaN	STAT1	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	8.36E-01	6.41E-03	NaN	FCGR3A/FCGR3B,IL32	
+Agrin Interactions at Neuromuscular Junction	8.04E-01	1.27E-02	NaN	ACTG1	
+Thyroid Cancer Signaling	8.04E-01	1.27E-02	NaN	CXCR4	
+Estrogen Receptor Signaling	8.01E-01	6.1E-03	NaN	IGF2R,JAK1	
+Role of BRCA1 in DNA Damage Response	7.99E-01	1.25E-02	NaN	STAT1	
+IL-17 Signaling	7.99E-01	1.25E-02	NaN	JAK1	
+FLT3 Signaling in Hematopoietic Progenitor Cells	7.99E-01	1.25E-02	NaN	STAT1	
+Renal Cell Carcinoma Signaling	7.99E-01	1.25E-02	NaN	ETS1	
+Chemokine Signaling	7.99E-01	1.25E-02	NaN	CXCR4	
+Prolactin Signaling	7.93E-01	1.23E-02	NaN	STAT1	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	7.93E-01	6.01E-03	NaN	CD3D,CD3G	
+NF-κB Activation by Viruses	7.88E-01	1.22E-02	NaN	EIF2AK2	
+IL-4 Signaling	7.75E-01	1.18E-02	NaN	JAK1	
+Allograft Rejection Signaling	7.7E-01	1.16E-02	NaN	GZMB	
+Th17 Activation Pathway	7.47E-01	1.1E-02	NaN	JAK1	
+FAK Signaling	7.3E-01	1.05E-02	NaN	ACTG1	
+Neuregulin Signaling	7.26E-01	1.04E-02	NaN	MATK	
+Salvage Pathways of Pyrimidine Ribonucleotides	7.24E-01	1.03E-02	NaN	EIF2AK2	
+VEGF Signaling	7.14E-01	1.01E-02	NaN	ACTG1	
+Mouse Embryonic Stem Cell Pluripotency	6.99E-01	9.71E-03	NaN	JAK1	
+IGF-1 Signaling	6.95E-01	9.62E-03	NaN	JAK1	
+Virus Entry via Endocytic Pathways	6.84E-01	9.35E-03	NaN	ACTG1	
+Paxillin Signaling	6.8E-01	9.26E-03	NaN	ACTG1	
+Glioma Signaling	6.74E-01	9.09E-03	NaN	IGF2R	
+HGF Signaling	6.7E-01	9.01E-03	NaN	ETS1	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	6.5E-01	8.55E-03	NaN	GZMB	
+Renin-Angiotensin Signaling	6.46E-01	8.47E-03	NaN	STAT1	
+p38 MAPK Signaling	6.46E-01	8.47E-03	NaN	STAT1	
+Role of NANOG in Mammalian Embryonic Stem Cell Pluripotency	6.44E-01	8.4E-03	NaN	JAK1	
+LXR/RXR Activation	6.36E-01	8.26E-03	NaN	S100A8	
+RhoA Signaling	6.31E-01	8.13E-03	NaN	ACTG1	
+Phagosome Formation	6.25E-01	8E-03	NaN	FCGR3A/FCGR3B	
+PTEN Signaling	6.22E-01	7.94E-03	NaN	IGF2R	
+Cellular Effects of Sildenafil (Viagra)	6.07E-01	7.63E-03	NaN	ACTG1	
+Adipogenesis pathway	5.99E-01	7.46E-03	NaN	TXNIP	
+Iron homeostasis signaling pathway	5.9E-01	7.3E-03	NaN	JAK1	
+Insulin Receptor Signaling	5.82E-01	7.14E-03	NaN	JAK1	
+Epithelial Adherens Junction Signaling	5.51E-01	6.58E-03	NaN	ACTG1	
+Aldosterone Signaling in Epithelial Cells	5.38E-01	6.33E-03	NaN	HSPA8	
+eNOS Signaling	5.35E-01	6.29E-03	NaN	HSPA8	
+CXCR4 Signaling	5.17E-01	5.99E-03	NaN	CXCR4	
+Tight Junction Signaling	5.16E-01	5.95E-03	NaN	ACTG1	
+Germ Cell-Sertoli Cell Junction Signaling	5.09E-01	5.85E-03	NaN	ACTG1	
+RhoGDI Signaling	4.91E-01	5.56E-03	NaN	ACTG1	
+Granulocyte Adhesion and Diapedesis	4.91E-01	5.56E-03	NaN	CXCR4	
+Ephrin Receptor Signaling	4.91E-01	5.56E-03	NaN	CXCR4	
+Sertoli Cell-Sertoli Cell Junction Signaling	4.8E-01	5.41E-03	NaN	ACTG1	
+B Cell Receptor Signaling	4.8E-01	5.41E-03	NaN	ETS1	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.79E-01	5.38E-03	NaN	STAT1	
+NRF2-mediated Oxidative Stress Response	4.74E-01	5.29E-03	NaN	ACTG1	
+Xenobiotic Metabolism CAR Signaling Pathway	4.74E-01	5.29E-03	NaN	RACK1	
+ILK Signaling	4.71E-01	5.26E-03	NaN	ACTG1	
+Adrenomedullin signaling pathway	4.58E-01	5.08E-03	NaN	MATK	
+Gap Junction Signaling	4.57E-01	5.05E-03	NaN	ACTG1	
+Integrin Signaling	4.32E-01	4.69E-03	NaN	ACTG1	
+AMPK Signaling	4.29E-01	4.67E-03	NaN	EEF2	
+EIF2 Signaling	4.15E-01	4.46E-03	NaN	EIF2AK2	
+Huntington's Disease Signaling	3.96E-01	4.22E-03	NaN	HSPA8	
+Signaling by Rho Family GTPases	3.86E-01	4.1E-03	NaN	ACTG1	
+Protein Ubiquitination Pathway	3.5E-01	3.66E-03	NaN	HSPA8	
+Senescence Pathway	3.47E-01	3.64E-03	NaN	ETS1	
+Sirtuin Signaling Pathway	3.29E-01	3.44E-03	NaN	H1-4	
+Synaptogenesis Signaling Pathway	3.07E-01	3.21E-03	NaN	HSPA8	
+Hepatic Fibrosis Signaling Pathway	2.59E-01	2.72E-03	NaN	JAK1	
+Molecular Mechanisms of Cancer	2.42E-01	2.56E-03	NaN	JAK1	
+Protein Kinase A Signaling	2.37E-01	2.51E-03	NaN	H1-4	
+Axonal Guidance Signaling	-0E00	2.07E-03	NaN	CXCR4	
+Cardiac Hypertrophy Signaling (Enhanced)	-0E00	2.05E-03	NaN	IL2RB	

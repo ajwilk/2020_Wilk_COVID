@@ -1,0 +1,970 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	Flags	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+XBP1	0.548	transcription regulator	Activated	3.078	 	4.99E-16	CALR,HLA-DRA,HSP90B1,HSPA5,LMAN1,MAN1A1,PDIA4,PDIA6,RPN2,SEC11C,SPCS3,SSR3,TRAM1,XBP1	14 (2)
+CD40	 	transmembrane receptor	Activated	2.178	 	9.75E-15	CALR,CCND2,CD69,HLA-DQB1,HSP90B1,HSPA5,IGHG1,IGHG2,IGHG3,IGHG4,JCHAIN,NFKBIA,XBP1	31 (11)
+lipopolysaccharide	 	chemical drug	Activated	3.322	 	2.03E-12	CALR,CCND2,CD69,CD74,ELL2,HDLBP,HLA-DQB1,HSP90B1,HSPA5,HSPA8,IGHG1,IGHM,IGKC,ITM2C,JCHAIN,KLF6,LMAN1,MKI67,NFKBIA,PDIA4,PDIA6,TMSB10/TMSB4X,TXNIP,UBE2J1,XBP1	31 (11)
+tunicamycin	 	chemical - endogenous non-mammalian	Activated	2.601	 	5.30E-12	CALR,CANX,HDLBP,HSP90B1,HSPA5,LMAN1,NFKBIA,PDIA6,SSR3,TXNIP,XBP1	19 (6)
+SAFB	 	other	Activated	2.646	 	7.40E-11	CD74,HLA-C,HLA-DPA1,HLA-DPB1,HLA-DRA,HLA-E,LTB	 
+IL5	 	cytokine	Activated	2.603	bias	1.47E-10	CCND2,CD69,ELL2,HSP90B1,HSPA5,IGHG1,IGHM,JCHAIN,LTB,PDIA6,XBP1	13 (3)
+IL4	 	cytokine	 	1.112	 	2.40E-10	ACTG1,AHNAK,CCND2,CD69,CD74,CD79B,IGHG1,IGHG2,IGHG3,IGHG4,JCHAIN,KLF6,LTB,MKI67,MS4A1,NFKBIA,XBP1	26 (11)
+UDP-D-glucose	 	chemical - endogenous mammalian	Inhibited	-2.000	bias	5.55E-10	CALR,HSP90B1,HSPA5,PDIA4	 
+POU2F2	 	transcription regulator	 	 	 	3.15E-09	CD69,CD79B,ELL2,HLA-DRA,IGKC,MS4A1,XBP1	 
+IL27	 	cytokine	 	-1.044	 	3.28E-09	CCND2,CD69,CD74,HLA-C,HLA-DPA1,HLA-DQB1,HLA-DRA,HLA-E	18 (4)
+dexamethasone	 	chemical drug	Activated	2.073	 	6.63E-09	ACTG1,CALR,CANX,CCND2,CD69,CD74,EEF1A1,HLA-DPA1,HLA-DPB1,HLA-DQB1,HLA-DRA,HSP90B1,HSPA5,HSPA8,IGHM,IGKC,KLF6,LTB,MS4A1,NFKBIA,TXNIP,XBP1	36 (16)
+ELL2	0.343	transcription regulator	Activated	2.449	bias	7.39E-09	HDLBP,IGHM,ITM2C,LMAN1,UBE2J1,XBP1	 
+HSP90B1	1.186	other	 	0.000	bias	8.21E-09	CALR,CANX,HSP90B1,HSPA5,SSR3,XBP1	9 (4)
+TCF3	 	transcription regulator	 	1.414	 	1.12E-08	CCND2,CD79B,HSP90B1,IGHM,MKI67,MZB1,PDIA4,PDIA6,SEC11C,XBP1	 
+ATF6	 	transcription regulator	 	1.947	 	1.35E-08	CALR,HSP90B1,HSPA5,LMAN1,PDIA4,XBP1	 
+beta-estradiol	 	chemical - endogenous mammalian	 	1.564	 	1.99E-08	CALR,CCND2,CD69,CD74,HDLBP,HLA-E,HSP90B1,HSPA5,HSPA8,KLF6,LTB,MKI67,NFKBIA,PDIA4,RACK1,RPN2,SSR3,TP53INP1,TRAM1,TXNIP,XBP1	33 (11)
+Immunoglobulin	 	complex	 	-0.074	 	2.31E-08	CALR,CCND2,CD69,CD74,HLA-DQB1,JCHAIN,MKI67,MZB1,NFKBIA,PDIA6,RRBP1,XBP1	26 (15)
+BCR (complex)	 	complex	Activated	2.578	 	4.94E-08	CALR,CCND2,CD69,HSP90B1,HSPA5,IGHG1,XBP1	22 (10)
+ERN1	 	kinase	Activated	2.376	 	6.35E-08	HDLBP,HSP90B1,HSPA5,PDIA6,SSR3,UBE2J1,XBP1	16 (3)
+mibolerone	 	chemical drug	Activated	2.630	 	6.66E-08	AHNAK,CALR,CD74,HDLBP,HLA-E,HSP90B1,HSPA5	 
+NFYA	 	transcription regulator	 	 	 	8.72E-08	CALR,HLA-DQB1,HLA-DRA,HSPA5,LMAN1,TXNIP	 
+aldesleukin	 	biologic drug	 	0.447	bias	1.38E-07	CALR,CANX,HLA-C,HLA-DRA,IGKC	 
+farnesol	 	chemical reagent	 	1.953	 	1.74E-07	HSP90B1,HSPA5,PDIA4,XBP1	 
+bortezomib	 	chemical drug	 	0.449	 	2.02E-07	CALR,CCND2,HSP90B1,HSPA5,IGHM,IGKC,MS4A1,XBP1	15 (5)
+ESR1	 	ligand-dependent nuclear receptor	 	1.387	 	2.46E-07	AHNAK,CD69,CD74,H4C3,HLA-C,HLA-E,HSP90B1,LTB,MAN1A1,MKI67,NFKBIA,RRBP1,SSR3,TRAM1,TXNIP,XBP1	29 (6)
+potassium chloride	 	chemical drug	 	 	 	2.84E-07	CALR,HSP90B1,HSPA5,PDIA4,TXNIP,XBP1	9 (3)
+BIRC5	 	other	 	 	 	3.03E-07	CD74,HLA-DQB1,IGHG1,IGHM,JCHAIN	 
+ATP2B2	 	transporter	 	 	 	3.08E-07	CALR,HSPA5,XBP1	4 (3)
+IL21	 	cytokine	Activated	2.587	 	3.15E-07	CCND2,CD69,IGHG1,IGHG2,IGHG3,MKI67,XBP1	20 (7)
+POU2AF1	 	transcription regulator	 	-0.618	bias	3.62E-07	CD69,CD79B,HLA-DRA,IGHG1,IGHM	 
+vorinostat	 	chemical drug	 	-0.216	 	4.08E-07	CCND2,CD69,CD74,CD79B,HLA-DQB1,HSPA5,MKI67,NFKBIA	23 (9)
+PDX1	 	transcription regulator	 	0.728	 	4.91E-07	ACTG1,HSPA5,KLF6,MAN1A1,PDIA4,PDIA6,TXNIP	 
+TAF4B	 	transcription regulator	 	 	 	5.32E-07	CCND2,IGHM,JCHAIN,NFKBIA	 
+YY1	 	transcription regulator	 	 	 	5.81E-07	CALR,H4C3,HLA-DRA,HSPA5,JCHAIN,LMAN1,MKI67,TP53INP1	 
+thapsigargin	 	chemical toxicant	 	1.971	 	6.49E-07	CALR,HSP90B1,HSPA5,LMAN1,NFKBIA,UBE2J1,XBP1	21 (9)
+chrysotile asbestos	 	chemical toxicant	 	 	 	8.41E-07	HSP90B1,HSPA5,JCHAIN,PDIA4	 
+poly rI:rC-RNA	 	biologic drug	 	0.395	 	9.14E-07	CCND2,CD69,CD74,HLA-C,HLA-E,HSPA5,KLF6,LTB,MKI67,NFKBIA	30 (16)
+filgrastim	 	biologic drug	 	1.539	 	1.57E-06	CD69,CD74,HLA-DPA1,HLA-DPB1,HLA-DQB1,HLA-DRA,IGKC,KLF6,XBP1	 
+imatinib	 	chemical drug	 	-0.293	 	1.70E-06	CALR,CCND2,HSP90B1,HSPA5,HSPA8,IGKC,PDIA4,PDIA6	20 (6)
+arsenic trioxide	 	chemical drug	Activated	2.200	 	1.78E-06	CALR,HSP90B1,HSPA5,HSPA8,NFKBIA,PDIA4,PDIA6,XBP1	25 (10)
+IFNG	 	cytokine	 	-1.448	 	2.07E-06	CCND2,CD74,EEF1A1,HLA-C,HLA-DQB1,HLA-DRA,HLA-E,HSPA5,HSPA8,IGHG1,KLF6,LTB,NFKBIA,RACK1,TXNIP	25 (7)
+IL3	 	cytokine	 	1.962	 	2.27E-06	CALR,CCND2,CD69,EEF1A1,HSP90B1,HSPA5,JCHAIN,XBP1	12 (4)
+PIK3R1	 	kinase	 	1.949	 	2.61E-06	CCND2,HSP90B1,HSPA5,MKI67,TXNIP	 
+INPP5D	 	phosphatase	 	-1.964	 	2.86E-06	CCND2,CD69,IGHG1,IGHM	12 (6)
+CIITA	 	transcription regulator	 	-1.982	 	3.17E-06	CD74,HLA-DPA1,HLA-DQB1,HLA-DRA	 
+CD38	 	enzyme	Activated	2.391	bias	3.29E-06	CCND2,ELL2,IGHG1,JCHAIN,PDIA6,XBP1	 
+azetidyl-2-carboxylic acid	 	chemical reagent	 	 	 	3.35E-06	HSP90B1,HSPA5,HSPA8	 
+IL2	 	cytokine	Activated	2.181	 	3.90E-06	CCND2,CD69,CD74,HSP90B1,HSPA5,KLF6,LTB,MKI67,TP53INP1,XBP1	27 (15)
+5-azacytidine	 	chemical drug	Activated	2.433	 	4.50E-06	CALR,CANX,HSP90B1,HSPA5,HSPA8,KLF6	 
+NFKB1	 	transcription regulator	 	1.702	 	6.08E-06	CCND2,IGHG1,IGHM,IGKC,LTB,NFKBIA,RACK1	12 (5)
+SFTPA2	 	other	 	 	 	6.32E-06	HSPA5,XBP1	 
+PACS2	 	other	 	 	 	6.32E-06	HLA-C,HSPA5	 
+PDIA6	0.345	enzyme	 	 	 	6.32E-06	HSP90B1,HSPA5	 
+CGA	 	other	 	-1.342	 	6.65E-06	HSP90B1,HSPA5,PDIA4,PDIA6,TP53INP1	 
+TCF4	 	transcription regulator	 	1.633	 	7.46E-06	HSP90B1,MKI67,MZB1,PDIA4,PDIA6,SEC11C,TXNIP,XBP1	 
+HSPA5	0.721	enzyme	 	-1.165	 	8.49E-06	HSP90B1,HSPA5,HSPA8,XBP1	21 (7)
+sirolimus	 	chemical drug	 	-1.768	 	9.66E-06	CCND2,EEF1A1,HSP90B1,HSPA5,MKI67,RACK1,RPN2,TP53INP1,XBP1	20 (7)
+NCAM1	 	other	 	 	 	1.03E-05	CALR,MALAT1,NFKBIA	 
+L-methionine	 	chemical - endogenous mammalian	 	-0.283	 	1.07E-05	EEF1A1,EEF1D,HSPA5,NFKBIA	 
+lactacystin	 	chemical - protease inhibitor	 	1.664	 	1.11E-05	CCND2,CD69,HLA-C,HSP90B1,HSPA5,NFKBIA	26 (9)
+STAT6	 	transcription regulator	 	0.728	 	1.14E-05	AHNAK,CCND2,CD69,CD79B,IGHG1,LTB,NFKBIA,XBP1	20 (7)
+CREB3	 	transcription regulator	 	 	 	1.23E-05	CANX,HSPA5,XBP1	 
+PARP9	 	enzyme	 	 	 	1.23E-05	CD74,HLA-DQB1,HLA-E	 
+EBI3	 	cytokine	 	-0.651	 	1.24E-05	CCND2,HLA-C,HLA-DPA1,HLA-DRA	 
+trichostatin A	 	chemical drug	 	-0.741	 	1.29E-05	CCND2,CD79B,HLA-DQB1,HLA-DRA,HSPA5,JCHAIN,MS4A1,NFKBIA,TMSB10/TMSB4X,TXNIP,XBP1	14 (4)
+salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	 	0.087	bias	1.39E-05	HLA-DPA1,HLA-DPB1,HLA-DRA,MKI67,NFKBIA	 
+1,2-dithiol-3-thione	 	chemical reagent	 	0.849	 	1.43E-05	ACTG1,HSP90B1,PDIA4,PDIA6,RACK1,XBP1	6 (2)
+rituximab	 	biologic drug	 	 	 	1.46E-05	IGHG1,IGHM,MS4A1	 
+MNT	 	transcription regulator	 	 	 	1.46E-05	CCND2,KLF6,TXNIP	 
+IL15	 	cytokine	 	1.103	 	1.51E-05	CCND2,CD69,CD74,HSPA8,MKI67,NFKBIA,PDIA4,XBP1	29 (12)
+IgG	 	complex	 	0.447	 	1.81E-05	CALR,CCND2,CD69,HLA-E,HSPA5,MS4A1	27 (9)
+SIN3A	 	transcription regulator	 	 	 	1.86E-05	CCND2,HLA-DRA,KLF6,TXNIP	 
+EDEM1	 	enzyme	 	 	 	1.89E-05	HSPA5,XBP1	 
+SDF4	 	other	 	 	 	1.89E-05	HSPA5,XBP1	 
+BCL3	 	transcription regulator	 	-0.927	 	1.98E-05	CD69,HLA-DQB1,IGHM,NFKBIA	13 (6)
+YWHAZ	 	enzyme	 	 	 	1.99E-05	HSP90B1,HSPA5,XBP1	 
+Pkc(s)	 	group	 	 	 	2.01E-05	HSP90B1,HSPA5,KLF6,MS4A1,PDIA4,XBP1	8 (2)
+MUC1	 	other	 	 	 	2.24E-05	CCND2,HLA-DRA,MKI67,NFKBIA	20 (5)
+PRDM1	 	transcription regulator	Activated	2.395	 	2.52E-05	CD74,HLA-DRA,IGHG1,IGHM,JCHAIN,XBP1	 
+valproic acid	 	chemical drug	Activated	2.596	 	2.72E-05	CALR,CCND2,HSPA5,ITM2C,MS4A1,PDIA6,SEL1L3,XBP1	 
+IGF1	 	growth factor	 	0.954	 	2.88E-05	CCND2,CD74,HSPA5,KLF6,MKI67,NFKBIA,TXNIP,XBP1	31 (13)
+SAFB2	 	other	 	 	 	3.01E-05	HLA-C,HLA-DPB1,HLA-E	 
+CD3	 	complex	 	1.919	 	3.03E-05	CCND2,CD69,CD74,HLA-DQB1,HSP90B1,HSPA5,HSPA8,NFKBIA,PDIA4	29 (13)
+CSF2	 	cytokine	 	0.958	bias	3.10E-05	CCND2,CD69,CD74,HLA-DQB1,LTB,MKI67,NFKBIA,XBP1	26 (12)
+decitabine	 	chemical drug	 	-1.237	 	3.12E-05	CCND2,CD79B,EEF1A1,HLA-C,HLA-E,HSPA5,KLF6,MKI67,NFKBIA,TMSB10/TMSB4X	20 (8)
+ceruletide	 	biologic drug	 	 	 	3.42E-05	ACTG1,HSPA5,XBP1	 
+IL7	 	cytokine	 	1.387	 	3.55E-05	CCND2,CD69,IGHM,LTB,XBP1	15 (5)
+gentamicin	 	chemical drug	Activated	2.449	 	3.59E-05	CALR,EEF1A1,HSP90B1,HSPA5,KLF6,PDIA4	 
+ATF6B	 	transcription regulator	 	 	 	3.78E-05	HSPA5,XBP1	7 (3)
+USE1	 	other	 	 	 	3.78E-05	HSPA5,XBP1	3 (2)
+dinaciclib	 	chemical drug	 	 	 	3.78E-05	HSPA5,XBP1	 
+crocin	 	chemical drug	 	 	 	3.78E-05	HSPA5,XBP1	 
+TAF12	 	transcription regulator	 	 	 	3.78E-05	HLA-DRA,JCHAIN	 
+ATP2A1	 	transporter	 	 	 	3.78E-05	CALR,HSPA5	7 (3)
+GSK-2606414	 	chemical reagent	 	 	 	3.78E-05	HSPA5,PDIA4	 
+OSU-CG12	 	chemical reagent	 	 	 	3.78E-05	HSPA5,KLF6	 
+SGPP2	 	phosphatase	 	 	 	3.86E-05	HSPA5,HSPA8,XBP1	 
+TGFB1	 	growth factor	 	0.800	 	3.94E-05	AHNAK,CCND2,CD69,EEF1A1,HLA-DQB1,HSPA5,IGHM,MALAT1,MKI67,NFKBIA,RACK1,RPN2,TXNIP,UBE2J1,XBP1	22 (7)
+RELB	 	transcription regulator	 	 	 	3.95E-05	IGHG1,IGHM,LTB,NFKBIA	12 (5)
+HRAS	 	enzyme	 	1.000	 	4.08E-05	ACTG1,CCND2,CD69,HSPA8,IGKC,KLF6,NFKBIA,SSR3,TMSB10/TMSB4X	20 (6)
+D-glucose	 	chemical - endogenous mammalian	 	-0.461	 	4.08E-05	CALR,CANX,CCND2,HSPA5,PDIA4,PDIA6,SSR3,TXNIP,XBP1	9 (2)
+TNF	 	cytokine	 	-0.431	 	4.58E-05	CALR,CCND2,CD69,HLA-DRA,HLA-E,HSP90B1,HSPA5,HSPA8,IGKC,KLF6,LTB,NFKBIA,PDIA4,TP53INP1,TXNIP	36 (11)
+PRNP	 	other	 	 	 	4.61E-05	HSP90B1,HSPA5,HSPA8,NFKBIA	10 (6)
+IRF4	 	transcription regulator	 	 	 	5.01E-05	CANX,ELL2,HSPA8,MS4A1,XBP1	 
+dithiothreitol	 	chemical reagent	 	 	 	5.98E-05	HSP90B1,HSPA5,LMAN1	6 (2)
+F2	 	peptidase	Activated	2.425	bias	6.03E-05	CALR,CCND2,ELL2,KLF6,NFKBIA,PDIA4	31 (9)
+FBXO32	 	enzyme	 	1.980	 	6.16E-05	CALR,CCND2,HSPA5,XBP1	 
+Cathepsin	 	group	 	 	 	6.29E-05	CCND2,MKI67	 
+ERN2	 	kinase	 	 	 	6.29E-05	HSPA5,XBP1	 
+WFS1	 	enzyme	 	 	 	6.29E-05	HSPA5,XBP1	 
+NPC1	 	transporter	 	 	 	6.75E-05	CD74,CD79B,HLA-DQB1,XBP1	 
+homocysteine	 	chemical - endogenous mammalian	 	0.130	 	6.75E-05	EEF1A1,EEF1D,HSPA5,XBP1	 
+4-phenylbutyric acid	 	chemical - endogenous mammalian	 	-1.937	 	7.72E-05	CALR,HSP90B1,HSPA5,XBP1	6 (2)
+SLC13A1	 	transporter	 	0.000	 	8.79E-05	ACTG1,HSPA5,HSPA8,XBP1	 
+resveratrol	 	chemical drug	 	-0.803	 	1.04E-04	CCND2,CD69,HSPA5,MALAT1,NFKBIA,XBP1	19 (10)
+glucocorticoid	 	chemical drug	 	1.471	 	1.08E-04	CD69,CD74,CD79B,IGHM,NFKBIA,TXNIP	11 (3)
+RELA	 	transcription regulator	 	 	 	1.17E-04	CD69,HSP90B1,IGHG1,IGHM,IGKC,LTB,NFKBIA	12 (5)
+APP	 	other	 	-0.106	 	1.20E-04	ACTG1,CALR,CANX,CCND2,CD69,CD74,HLA-E,HSPA5,HSPA8,TP53INP1	27 (8)
+ERBB2	 	kinase	 	 	 	1.23E-04	AHNAK,CCND2,ELL2,H4C3,JCHAIN,MAN1A1,MKI67,PDIA4,XBP1	 
+Immunoglobulin Lambda Light Chain	 	group	 	 	 	1.32E-04	HSPA5,XBP1	 
+TNFSF13	 	cytokine	 	 	 	1.32E-04	CCND2,IGHG1,XBP1	 
+sorafenib	 	chemical drug	 	 	 	1.32E-04	CCND2,CD69,HSPA5	 
+5-N-ethylcarboxamido adenosine	 	chemical reagent	 	0.152	 	1.58E-04	HLA-DQB1,HLA-DRA,KLF6,TXNIP	 
+uranyl nitrate	 	chemical toxicant	 	0.000	 	1.69E-04	CANX,CD74,HSPA8,RACK1	 
+ELAVL1	 	other	 	 	 	1.71E-04	JCHAIN,NFKBIA,RACK1,RPN2,TP53INP1	 
+PNPLA8	 	enzyme	 	 	 	1.75E-04	HSP90B1,HSPA5	 
+APOE	 	transporter	 	 	 	1.81E-04	CALR,CCND2,HSP90B1,HSPA5,TXNIP,XBP1	28 (15)
+ALB	 	transporter	 	 	 	1.90E-04	HSPA5,IGHG1,XBP1	 
+TXN	 	enzyme	 	 	 	1.90E-04	CCND2,MS4A1,NFKBIA	 
+U73122	 	chemical reagent	 	 	 	1.90E-04	CCND2,HSPA5,XBP1	 
+NFkB (complex)	 	complex	 	0.772	bias	2.10E-04	CCND2,CD69,CD74,ELL2,IGHG3,IGKC,LTB,NFKBIA	15 (7)
+Z-LLL-CHO	 	chemical - protease inhibitor	 	1.283	 	2.10E-04	CCND2,HSP90B1,HSPA5,HSPA8,LMAN1,NFKBIA	25 (7)
+SERPINA1	 	other	 	 	 	2.17E-04	HSP90B1,HSPA5,XBP1	16 (6)
+BCL6	 	transcription regulator	 	-1.997	 	2.23E-04	CCND2,CD69,CD79B,KLF6,XBP1	20 (6)
+RUNX1T1	 	transcription regulator	 	 	 	2.25E-04	CCND2,CD69	 
+MSH2	 	enzyme	 	 	 	2.25E-04	IGHG1,IGKC	 
+ETS1	 	transcription regulator	 	 	 	2.47E-04	CD69,CD79B,EEF1D,HSPA8,LTB	 
+interferon beta-1a	 	biologic drug	 	 	 	2.61E-04	HLA-DPB1,IGHM,LTB,NFKBIA	 
+IL24	 	cytokine	 	 	 	2.62E-04	HSP90B1,HSPA5,XBP1	 
+CD86	 	transmembrane receptor	 	 	 	2.62E-04	CD69,NFKBIA,XBP1	8 (2)
+AGN194204	 	chemical drug	Activated	2.000	 	2.69E-04	IGHM,KLF6,MAN1A1,MKI67,XBP1	 
+SEMA4D	 	transmembrane receptor	 	 	 	2.81E-04	HLA-DQB1,IGHG1	 
+NCK1	 	kinase	 	 	 	2.81E-04	CD69,HSPA5	 
+palmitic acid	 	chemical - endogenous mammalian	 	-0.075	 	2.97E-04	EEF1A1,HSPA5,NFKBIA,TXNIP,XBP1	15 (11)
+hydrogen peroxide	 	chemical - endogenous mammalian	 	1.709	 	3.04E-04	EEF1A1,HLA-DRA,HSPA5,PDIA4,TP53INP1,TXNIP,XBP1	7 (2)
+TCR	 	complex	 	1.946	 	3.61E-04	CD69,ELL2,HSP90B1,HSPA5,NFKBIA,PDIA4	27 (10)
+LY294002	 	chemical - kinase inhibitor	 	-1.937	 	3.62E-04	CCND2,CD69,CD74,H4C3,HSPA5,IGHM,NFKBIA	26 (13)
+CDK9	 	kinase	 	 	 	3.69E-04	CCND2,HLA-DRA,NFKBIA	 
+SH3KBP1	 	other	 	 	 	4.10E-04	CCND2,XBP1	10 (5)
+BAP1	 	peptidase	 	 	 	4.10E-04	HSPA5,XBP1	 
+SYVN1	 	transporter	 	0.000	bias	4.65E-04	HLA-C,IGHM,IGKC,RPN2	 
+adenosine	 	chemical - endogenous mammalian	 	 	 	4.77E-04	CD69,HSPA5,TXNIP	4 (2)
+BNIP3L	 	other	 	 	 	4.77E-04	CD79B,LTB,NFKBIA	 
+CRBN	 	enzyme	 	 	 	4.84E-04	HSPA5,XBP1	 
+RPL22	 	translation regulator	 	 	 	4.84E-04	HSPA5,XBP1	3 (3)
+PSEN1	 	peptidase	 	 	 	4.88E-04	ACTG1,CANX,CD74,HLA-E,HSPA5,HSPA8	12 (4)
+CD40LG	 	cytokine	 	0.601	bias	5.15E-04	CD69,HLA-DQB1,IGHG1,IGHG3,LTB,NFKBIA	23 (11)
+GON4L	 	transcription regulator	 	 	 	5.64E-04	CCND2,MKI67	 
+CBS/CBSL	 	enzyme	 	 	 	5.64E-04	EEF1A1,EEF1D	 
+GTF2I	 	transcription regulator	 	 	 	5.64E-04	HSPA5,PDIA4	 
+manganese	 	chemical - endogenous mammalian	 	 	 	5.64E-04	HSP90B1,HSPA5	 
+PD98059	 	chemical - kinase inhibitor	 	-1.276	 	5.65E-04	CCND2,CD69,CD74,EEF1A1,HSPA5,MKI67,TXNIP	15 (4)
+SIRT1	 	transcription regulator	 	-0.128	 	5.71E-04	CCND2,CD74,CD79B,HLA-DQB1,IGHM,JCHAIN	 
+SPI1	 	transcription regulator	 	 	 	5.75E-04	CCND2,CD79B,HSPA8,MS4A1,RACK1	 
+JAK2	 	kinase	 	 	 	5.86E-04	CCND2,JCHAIN,TP53INP1,TRAM1	 
+tretinoin	 	chemical - endogenous mammalian	 	-1.270	 	6.21E-04	AHNAK,CALR,CCND2,CD74,EEF1A1,EEF1D,HLA-C,IGHM,JCHAIN,MS4A1,TMSB10/TMSB4X,XBP1	 
+fluoride	 	chemical - endogenous mammalian	 	 	 	6.50E-04	HSPA5,XBP1	 
+salubrinal	 	chemical reagent	 	 	 	6.50E-04	HSPA5,XBP1	 
+SELENOS	 	other	 	 	 	6.50E-04	HSPA5,XBP1	 
+SPTLC2	 	enzyme	 	 	 	6.50E-04	HSPA5,XBP1	 
+SMC3	 	other	 	 	 	6.50E-04	HLA-DQB1,HLA-DRA	 
+RFX5	 	transcription regulator	 	 	 	6.50E-04	CD74,HLA-DRA	 
+monorden	 	chemical - endogenous non-mammalian	 	 	 	6.50E-04	HSP90B1,HSPA5	 
+cytarabine	 	chemical drug	 	 	 	6.60E-04	CD69,LTB,TP53INP1	 
+Igm	 	complex	 	 	 	6.89E-04	CCND2,CD69,XBP1	12 (5)
+calphostin C	 	chemical - kinase inhibitor	 	 	 	6.89E-04	HSP90B1,HSPA5,PDIA4	8 (3)
+MED1	 	transcription regulator	 	 	 	7.11E-04	CCND2,CD79B,NFKBIA,XBP1	 
+EPHX2	 	enzyme	 	 	 	7.41E-04	HSPA5,XBP1	3 (3)
+hydrogen sulfide	 	chemical - endogenous mammalian	 	 	 	7.41E-04	CD69,HSPA5	 
+mannose	 	chemical - endogenous mammalian	 	 	 	7.41E-04	HSP90B1,HSPA5	 
+2-deoxyglucose	 	chemical drug	 	 	 	7.50E-04	HSP90B1,HSPA5,TXNIP	 
+tetradecanoylphorbol acetate	 	chemical drug	 	0.395	 	7.69E-04	CCND2,CD69,EEF1D,H4C3,HLA-DRA,HSPA5,KLF6,LTB,NFKBIA,RACK1	31 (11)
+mir-21	 	microRNA	 	0.447	 	7.72E-04	CANX,IGHG1,IGHM,LTB,MKI67	 
+MYCN	 	transcription regulator	 	-1.000	 	7.72E-04	ACTG1,CCND2,EEF1A1,EEF1D,PDIA4	 
+ATF4	 	transcription regulator	 	1.969	bias	7.80E-04	CALR,CANX,HSP90B1,HSPA5	 
+JAK1/2	 	group	 	 	 	7.82E-04	CD69,CD74,HLA-DRA	 
+IL6	 	cytokine	 	1.958	 	7.99E-04	AHNAK,CD74,HSPA5,IGHM,JCHAIN,MKI67,NFKBIA,XBP1	29 (9)
+linoleic acid	 	chemical - endogenous mammalian	 	 	 	8.14E-04	HSP90B1,HSPA5,NFKBIA	8 (3)
+LGALS1	 	other	 	 	 	8.14E-04	CCND2,CD69,IGHM	 
+miR-155-5p (miRNAs w/seed UAAUGCU)	 	mature microRNA	 	-1.941	bias	8.16E-04	CD69,TP53INP1,TRAM1,UBE2J1	 
+NFE2L2	 	transcription regulator	 	0.816	 	8.18E-04	ACTG1,HSP90B1,PDIA4,PDIA6,RACK1,XBP1	 
+nitrofurantoin	 	chemical drug	 	0.000	 	8.35E-04	ACTG1,EEF1A1,HSPA5,NFKBIA	 
+CD70	 	cytokine	 	 	 	8.39E-04	CCND2,CD69	15 (5)
+camptothecin	 	chemical drug	 	0.000	 	8.52E-04	EEF1A1,HLA-C,HLA-DQB1,HLA-E,HSPA5,NFKBIA,TP53INP1	 
+butyric acid	 	chemical - endogenous mammalian	 	-1.387	 	8.98E-04	CCND2,CD79B,HLA-DRA,JCHAIN,MKI67,NFKBIA	 
+TP53	 	transcription regulator	 	0.569	 	8.98E-04	CCND2,EEF1A1,HDLBP,HSPA5,HSPA8,KLF6,MKI67,NFKBIA,PDIA6,RPN2,TMSB10/TMSB4X,TP53INP1,XBP1	21 (10)
+OPA1	 	enzyme	 	 	 	9.42E-04	HSPA5,XBP1	 
+SEL1L	 	other	 	 	 	9.42E-04	HSPA5,XBP1	 
+CREB3L1	 	transcription regulator	 	 	 	9.42E-04	HSP90B1,HSPA5	 
+PI3K (complex)	 	complex	 	 	 	9.57E-04	CCND2,CD79B,NFKBIA,TXNIP,XBP1	21 (9)
+fluticasone propionate	 	chemical drug	 	1.987	 	9.74E-04	CD74,HLA-DPA1,HLA-DPB1,HLA-DRA	 
+CSF3	 	cytokine	 	1.000	 	1.04E-03	CCND2,HLA-DPA1,HLA-DRA,LTB	 
+CREBZF	 	transcription regulator	 	 	 	1.05E-03	HSPA5,XBP1	 
+TMBIM6	 	other	 	 	 	1.05E-03	HSPA5,XBP1	 
+DPP-23	 	chemical reagent	 	 	 	1.05E-03	HSPA5,XBP1	 
+PS-1145	 	chemical - kinase inhibitor	 	 	 	1.05E-03	HSPA5,NFKBIA	14 (3)
+SMARCA4	 	transcription regulator	 	-1.000	bias	1.06E-03	AHNAK,CD74,HLA-C,HLA-DRA,HLA-E,IGHG1,SEL1L3	 
+metformin	 	chemical drug	 	-1.199	 	1.06E-03	CCND2,HSPA5,NFKBIA,XBP1	20 (10)
+MAP3K14	 	kinase	 	 	 	1.07E-03	LTB,NFKBIA,XBP1	 
+DYSF	 	other	 	 	 	1.07E-03	ACTG1,CD74,HLA-DQB1	 
+CXCL8	 	cytokine	 	 	 	1.15E-03	CD69,CD74,NFKBIA	12 (4)
+CYB5R4	 	enzyme	 	 	 	1.17E-03	HSPA5,XBP1	 
+ERVW-1	 	other	 	 	 	1.17E-03	HSPA5,XBP1	 
+LY6E	 	other	 	 	 	1.17E-03	HLA-DRA,NFKBIA	 
+PPP1R15A	 	other	 	 	 	1.17E-03	HSPA5,XBP1	 
+ETV6-RUNX1	 	fusion gene/product	 	0.577	 	1.24E-03	H4C3,ITM2C,KLF6,LTB,MS4A1	 
+BCOR	 	transcription regulator	 	 	 	1.29E-03	CD74,MS4A1	 
+COL2A1	 	other	 	 	 	1.29E-03	HSPA5,XBP1	 
+SIN3B	 	transcription regulator	 	 	 	1.29E-03	KLF6,TXNIP	 
+NLRC5	 	transcription regulator	 	 	 	1.29E-03	HLA-C,HLA-E	 
+EPOR	 	transmembrane receptor	 	 	 	1.29E-03	CCND2,IGHG1	8 (3)
+TNFRSF13B	 	transmembrane receptor	 	 	 	1.29E-03	IGHM,XBP1	 
+PD 153035	 	chemical drug	 	 	 	1.29E-03	HSPA5,XBP1	 
+SOX4	 	transcription regulator	 	0.000	 	1.30E-03	CD74,HLA-DQB1,IGKC,SEL1L3	 
+ionomycin	 	chemical reagent	 	0.634	 	1.30E-03	AHNAK,CCND2,CD69,HSPA5	17 (7)
+BDNF	 	growth factor	 	-1.000	 	1.33E-03	CCND2,EEF1D,HSPA5,MALAT1,TXNIP	 
+mifepristone	 	chemical drug	 	0.243	 	1.39E-03	CD74,HLA-DQB1,HSPA5,NFKBIA,XBP1	25 (6)
+Insulin	 	group	 	1.671	 	1.41E-03	CANX,HSP90B1,HSPA5,HSPA8,NFKBIA,XBP1	19 (8)
+HFE	 	transmembrane receptor	 	 	 	1.41E-03	HSP90B1,HSPA5	 
+mezerein	 	chemical - endogenous non-mammalian	 	 	 	1.41E-03	CD74,EEF1A1	 
+KRAS	 	enzyme	 	0.391	 	1.48E-03	AHNAK,CD74,EEF1A1,HSPA5,KLF6,NFKBIA,SEC11C	 
+MAX	 	transcription regulator	 	 	 	1.50E-03	CCND2,KLF6,TXNIP	 
+GnRH analog	 	biologic drug	Inhibited	-2.236	 	1.52E-03	CALR,HLA-DPB1,IGHM,MKI67,NFKBIA	 
+CETP	 	enzyme	 	 	 	1.55E-03	HSPA5,PDIA4	 
+RASSF1	 	other	 	 	 	1.55E-03	CCND2,HLA-DPA1,TP53INP1	 
+5-fluorouracil	 	chemical drug	 	0.156	 	1.58E-03	CANX,CCND2,HSPA8,TMSB10/TMSB4X,TXNIP	 
+TRAF3	 	enzyme	 	 	 	1.60E-03	HSPA5,NFKBIA,XBP1	8 (4)
+6-hydroxydopamine	 	chemical toxicant	 	 	 	1.60E-03	CALR,HSPA5,HSPA8	 
+E2F1	 	transcription regulator	 	 	 	1.66E-03	CALR,CCND2,HSP90B1,HSPA8,NFKBIA,TP53INP1	 
+FOXO3	 	transcription regulator	 	-0.085	 	1.67E-03	CCND2,MKI67,NFKBIA,TP53INP1,TXNIP	19 (7)
+CD 437	 	chemical drug	 	0.762	bias	1.82E-03	HLA-C,HSPA8,NFKBIA,TMSB10/TMSB4X	 
+calpain	 	complex	 	 	 	1.83E-03	HSPA5,NFKBIA	14 (3)
+allopurinol	 	chemical drug	 	 	 	1.93E-03	CD69,TMSB10/TMSB4X,TXNIP	 
+PC-SPES	 	chemical drug	 	 	 	1.93E-03	HLA-C,HSPA5,TMSB10/TMSB4X	 
+MTA3	 	transcription regulator	 	 	 	1.98E-03	CD79B,XBP1	 
+KAT2A	 	enzyme	 	 	 	1.98E-03	CCND2,HSPA5	8 (4)
+NFAT5	 	transcription regulator	 	 	 	2.04E-03	CD74,HLA-DQB1,NFKBIA	 
+CD28	 	transmembrane receptor	 	0.680	 	2.06E-03	CCND2,CD69,HLA-DQB1,HSPA8,NFKBIA	20 (8)
+TNFSF10	 	cytokine	 	 	 	2.10E-03	CD69,HLA-C,NFKBIA	9 (3)
+HTT	 	transcription regulator	 	 	 	2.12E-03	CANX,CD74,EEF1A1,HSPA5,HSPA8,MAN1A1,XBP1	11 (3)
+ANGPT2	 	growth factor	 	1.067	 	2.13E-03	CALR,HSPA5,PDIA6,TXNIP	 
+ID2	 	transcription regulator	 	 	 	2.13E-03	CCND2,EEF1D,KLF6,LTB	 
+BCAP31	 	transporter	 	 	 	2.13E-03	HSPA5,XBP1	 
+NTF3	 	growth factor	 	 	 	2.13E-03	CCND2,XBP1	 
+CSF1	 	cytokine	 	1.979	 	2.27E-03	CCND2,HSP90B1,HSPA5,XBP1	12 (4)
+forskolin	 	chemical toxicant	 	1.709	 	2.29E-03	CALR,CCND2,ELL2,HLA-DQB1,HLA-DRA,NFKBIA,TXNIP	11 (3)
+ATF3	 	transcription regulator	 	 	 	2.35E-03	CD69,HSPA5,XBP1	8 (4)
+puromycin aminonucleoside	 	chemical reagent	 	 	 	2.35E-03	ACTG1,HSPA5,TMSB10/TMSB4X	 
+glutamine	 	chemical - endogenous mammalian	 	 	 	2.41E-03	HSPA5,NFKBIA,XBP1	19 (9)
+ACTL6A	 	other	 	 	 	2.46E-03	CCND2,TP53INP1	 
+B2M	 	transmembrane receptor	 	 	 	2.46E-03	HLA-DQB1,HLA-E	 
+vitamin K3	 	chemical drug	 	 	 	2.46E-03	HSPA5,KLF6	 
+deoxynivalenol	 	chemical toxicant	 	 	 	2.46E-03	HSPA5,XBP1	7 (4)
+caffeic acid phenethyl ester	 	chemical drug	 	 	 	2.48E-03	KLF6,MKI67,NFKBIA	 
+2'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	2.54E-03	TXNIP	 
+Hdac1/2	 	group	 	 	 	2.54E-03	MKI67	 
+davunetide	 	biologic drug	 	 	 	2.54E-03	CD69	 
+toyocamycin	 	chemical - endogenous non-mammalian	 	 	 	2.54E-03	XBP1	 
+SRP54	 	other	 	 	 	2.54E-03	XBP1	 
+LMF1	 	other	 	 	 	2.54E-03	CANX	 
+MACROD1	 	enzyme	 	 	 	2.54E-03	NFKBIA	 
+5-fluorouracil/irinotecan/leucovorin	 	chemical drug	 	 	 	2.54E-03	XBP1	 
+CCR8	 	G-protein coupled receptor	 	 	 	2.54E-03	CD69	 
+mir-1301	 	microRNA	 	 	 	2.54E-03	KLF6	 
+EPSTI1	 	other	 	 	 	2.54E-03	NFKBIA	 
+PPM1L	 	phosphatase	 	 	 	2.54E-03	XBP1	 
+PSMC4	 	peptidase	 	 	 	2.54E-03	CCND2	 
+STXBP3	 	transporter	 	 	 	2.54E-03	HSPA5	 
+PSMA2	 	peptidase	 	 	 	2.54E-03	CCND2	 
+KDELR1	 	transporter	 	 	 	2.54E-03	HSPA5	 
+PTPRH	 	phosphatase	 	 	 	2.54E-03	CD69	 
+COL10A1	 	other	 	 	 	2.54E-03	HSPA5	 
+PSMD6	 	enzyme	 	 	 	2.54E-03	CCND2	 
+oligomycin A	 	chemical - endogenous non-mammalian	 	 	 	2.54E-03	TXNIP	 
+TLR4-IN-C34	 	chemical reagent	 	 	 	2.54E-03	HSPA5	 
+PRN694	 	chemical - kinase inhibitor	 	 	 	2.54E-03	CD69	 
+MKC-3946	 	chemical reagent	 	 	 	2.54E-03	XBP1	 
+astragalus saponin	 	chemical reagent	 	 	 	2.54E-03	XBP1	 
+1,2,3,6,7,8-hexachlorodibenzodioxin	 	chemical toxicant	 	 	 	2.54E-03	IGHM	 
+2-nitrophenyl EGTA	 	chemical reagent	 	 	 	2.54E-03	AHNAK	 
+3'-adenylic acid	 	chemical - endogenous mammalian	 	 	 	2.54E-03	TXNIP	 
+allose	 	chemical - endogenous mammalian	 	 	 	2.54E-03	TXNIP	 
+VIP	 	other	 	 	 	2.61E-03	IGHG1,NFKBIA,TP53INP1	 
+BAK1	 	other	 	 	 	2.63E-03	PDIA6,XBP1	 
+EIF2AK3	 	kinase	 	 	 	2.68E-03	HSPA5,TXNIP,XBP1	3 (2)
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	 	2.68E-03	HLA-DRA,NFKBIA,RACK1	 
+Ubiquitin	 	group	 	 	 	2.80E-03	HSP90B1,HSPA5	 
+VAV1	 	transcription regulator	 	 	 	2.80E-03	CCND2,CD69	14 (3)
+CLU	 	other	 	 	 	2.80E-03	HSPA5,NFKBIA	 
+THBS4	 	other	 	 	 	2.80E-03	CALR,HSPA5	7 (3)
+bisindolylmaleimide I	 	chemical - kinase inhibitor	 	 	 	2.90E-03	CCND2,HSPA5,NFKBIA	7 (3)
+troglitazone	 	chemical drug	 	0.299	 	2.96E-03	CCND2,HLA-DRA,HSPA5,MKI67,NFKBIA	18 (5)
+mir-1	 	microRNA	 	 	 	2.97E-03	CCND2,HSP90B1,RRBP1	 
+WT1	 	transcription regulator	 	 	 	2.98E-03	HDLBP,HSP90B1,LMAN1,PDIA4	 
+grape seed extract	 	chemical drug	 	 	 	2.99E-03	HSPA8,MKI67	 
+REL	 	transcription regulator	 	 	 	3.07E-03	CCND2,IGHG1,IGHM,NFKBIA	12 (5)
+N-acetyl-L-cysteine	 	chemical drug	 	-0.169	 	3.17E-03	CCND2,HLA-DRA,HSPA5,TXNIP	21 (8)
+RAD21	 	transcription regulator	 	 	 	3.17E-03	HLA-DQB1,HLA-DRA	 
+bafilomycin A1	 	chemical drug	 	 	 	3.17E-03	MS4A1,NFKBIA	 
+SP1	 	transcription regulator	 	 	 	3.19E-03	CCND2,CD79B,HSPA5,KLF6,LTB,NFKBIA	 
+calcimycin	 	chemical reagent	 	 	 	3.20E-03	CALR,HSP90B1,HSPA5	 
+MYC	 	transcription regulator	 	1.670	 	3.23E-03	CANX,CCND2,CD69,HLA-E,KLF6,MKI67,NFKBIA,TMSB10/TMSB4X,TXNIP	9 (3)
+DDIT3	 	transcription regulator	 	 	 	3.28E-03	HSPA5,TXNIP,XBP1	 
+ethanol	 	chemical - endogenous mammalian	 	1.455	 	3.34E-03	HSP90B1,HSPA5,IGHM,KLF6,TP53INP1	17 (6)
+IFNA2	 	cytokine	 	 	 	3.36E-03	CD69,HLA-C,HLA-E,XBP1	 
+arginine	 	chemical - endogenous mammalian	 	 	 	3.37E-03	HSPA5,XBP1	11 (6)
+MTTP	 	transporter	 	 	 	3.37E-03	HSPA5,XBP1	 
+lenalidomide	 	chemical drug	 	-0.343	 	3.51E-03	ACTG1,HLA-DPB1,HSPA5,XBP1	 
+POU2F1	 	transcription regulator	 	 	 	3.60E-03	CD79B,HLA-DRA,IGKC	 
+GTF2B	 	transcription regulator	 	 	 	3.77E-03	CCND2,NFKBIA	 
+NLRP12	 	other	 	 	 	3.77E-03	HLA-C,HLA-E	 
+GAPDH	 	enzyme	 	 	 	3.77E-03	HLA-C,TXNIP	 
+IKZF2	 	transcription regulator	 	 	 	3.98E-03	CD69,HLA-E	 
+IL27RA	 	transmembrane receptor	 	 	 	3.98E-03	CD69,LTB	 
+reactive oxygen species	 	chemical toxicant	 	 	 	4.04E-03	HSPA5,KLF6,XBP1	8 (3)
+tanespimycin	 	chemical drug	 	 	 	4.04E-03	HSP90B1,HSPA5,HSPA8	 
+KITLG	 	growth factor	 	 	 	4.04E-03	EEF1A1,IGHM,NFKBIA,TXNIP	 
+cigarette smoke	 	chemical toxicant	 	1.958	 	4.04E-03	HLA-DRA,HSPA5,NFKBIA,XBP1	18 (6)
+3-methyladenine	 	chemical toxicant	 	 	 	4.19E-03	HSP90B1,HSPA5	 
+SUMO3	 	other	 	 	 	4.19E-03	CCND2,HSPA8	 
+memantine	 	chemical drug	 	 	 	4.41E-03	HSPA5,NFKBIA	7 (3)
+LDL	 	complex	 	1.941	 	4.69E-03	HSP90B1,HSPA5,MKI67,XBP1	21 (6)
+fenofibrate	 	chemical drug	 	0.450	 	4.69E-03	HSPA5,MAN1A1,TP53INP1,TXNIP	 
+Ca2+	 	chemical - endogenous mammalian	 	0.728	 	4.69E-03	CALR,CCND2,HSPA5,NFKBIA	20 (8)
+miR-34a-5p (and other miRNAs w/seed GGCAGUG)	 	mature microRNA	 	 	 	4.69E-03	CD69,MZB1,TP53INP1	 
+EBF1	 	transcription regulator	 	 	 	4.79E-03	CD79B,IGHM,IGKC	 
+NFYB	 	transcription regulator	 	 	 	4.94E-03	HLA-DQB1,HLA-DRA,ITM2C,PDIA4	 
+Tap	 	complex	 	 	 	5.07E-03	HLA-E	 
+Rps15a-ps4	 	other	 	 	 	5.07E-03	NFKBIA	 
+FAM168A	 	other	 	 	 	5.07E-03	NFKBIA	 
+ADRM1	 	other	 	 	 	5.07E-03	NFKBIA	 
+SGF29	 	other	 	 	 	5.07E-03	HSPA5	 
+carbimazole	 	chemical drug	 	 	 	5.07E-03	CD69	 
+MLXIP	 	transcription regulator	 	 	 	5.07E-03	TXNIP	 
+NCEH1	 	enzyme	 	 	 	5.07E-03	HSPA5	 
+ECD	 	transcription regulator	 	 	 	5.07E-03	HSPA5	 
+soy isoflavones	 	chemical drug	 	 	 	5.07E-03	MKI67	 
+SRI	 	transporter	 	 	 	5.07E-03	HSPA5	 
+KLHL40	 	other	 	 	 	5.07E-03	TP53INP1	 
+miR-411-5p (and other miRNAs w/seed AGUAGAC)	 	mature microRNA	 	 	 	5.07E-03	TXNIP	 
+KIR2DS2 (includes others)	 	transmembrane receptor	 	 	 	5.07E-03	CD69	 
+DST	 	other	 	 	 	5.07E-03	HSPA5	 
+Hnrpfl	 	other	 	 	 	5.07E-03	ELL2	 
+RFX4	 	transcription regulator	 	 	 	5.07E-03	HLA-DRA	 
+RPS19	 	other	 	 	 	5.07E-03	CD74	 
+E-c-HDMAPP	 	chemical reagent	 	 	 	5.07E-03	CCND2	 
+Mia2	 	other	 	 	 	5.07E-03	HSPA5	 
+econazole	 	chemical drug	 	 	 	5.07E-03	HSPA5	 
+buformin	 	chemical drug	 	 	 	5.07E-03	XBP1	 
+LFM-A13	 	chemical - kinase inhibitor	 	 	 	5.07E-03	CCND2	 
+yoda1	 	chemical reagent	 	 	 	5.07E-03	CD69	 
+3-O-methylglucose	 	chemical reagent	 	 	 	5.07E-03	TXNIP	 
+MYD88	 	other	 	1.946	bias	5.07E-03	HSPA5,IGHG1,MKI67,NFKBIA	 
+HRH3	 	G-protein coupled receptor	 	 	 	5.10E-03	IGHG1,IGHM	 
+SUMO2	 	enzyme	 	 	 	5.10E-03	CCND2,HSPA8	 
+PTPRC	 	phosphatase	 	 	 	5.10E-03	CCND2,IGHM	 
+cinnamaldehyde	 	chemical toxicant	 	 	 	5.10E-03	MKI67,TXNIP	 
+progesterone	 	chemical - endogenous mammalian	 	-0.156	 	5.18E-03	ELL2,HLA-DQB1,HSPA8,MKI67,NFKBIA,RACK1	 
+NFKBIA	0.315	transcription regulator	 	0.068	 	5.20E-03	CCND2,CD69,HSPA5,HSPA8,NFKBIA	24 (7)
+methapyrilene	 	chemical drug	 	 	 	5.31E-03	ACTG1,EEF1A1,HSPA5	 
+S-nitrosoglutathione	 	chemical toxicant	 	 	 	5.34E-03	HLA-DRA,NFKBIA	 
+ouabain	 	chemical drug	 	 	 	5.34E-03	HSPA5,HSPA8	 
+IRF8	 	transcription regulator	 	 	 	5.52E-03	CD74,KLF6,MS4A1	 
+TERT	 	enzyme	 	 	 	5.52E-03	NFKBIA,SSR3,XBP1	 
+A2M	 	transporter	 	 	 	5.83E-03	HSPA5,XBP1	7 (4)
+2-amino-1-methyl-6-phenylimidazo-4-5-b-pyridine	 	chemical toxicant	 	 	 	5.83E-03	HSPA5,HSPA8	 
+IFN Beta	 	group	 	 	 	5.97E-03	CD69,CD74,EEF1A1	 
+ACOX1	 	enzyme	 	 	 	5.97E-03	HSPA5,KLF6,XBP1	 
+STAT5B	 	transcription regulator	 	 	 	5.97E-03	AHNAK,CCND2,LTB,MZB1	 
+geldanamycin	 	chemical - endogenous non-mammalian	 	1.964	 	6.05E-03	EEF1A1,HLA-DRA,HSP90B1,HSPA5	 
+IFNA4	 	cytokine	 	 	 	6.09E-03	CD69,HLA-E	 
+Hbb-b2	 	other	 	 	 	6.09E-03	CD74,LTB	 
+hexamethylene bisacetamide	 	chemical reagent	 	 	 	6.09E-03	HSPA8,RACK1	 
+WNT3A	 	cytokine	 	0.152	 	6.42E-03	CALR,CCND2,TXNIP,XBP1	11 (5)
+lysophosphatidylinositol	 	chemical - endogenous mammalian	 	 	 	6.61E-03	CD74,LTB	 
+EPO	 	cytokine	 	 	 	6.65E-03	CCND2,EEF1A1,NFKBIA,TXNIP	21 (8)
+CDKN2A	 	transcription regulator	 	 	 	6.73E-03	EEF1A1,MKI67,MS4A1,TP53INP1	 
+Histone h3	 	group	 	 	 	6.94E-03	CCND2,CD69,HSPA5,NFKBIA,XBP1	8 (3)
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	 	7.17E-03	CD69,LTB,NFKBIA	14 (9)
+VEGFA	 	growth factor	 	 	 	7.30E-03	HLA-DQB1,HSPA5,MKI67,TMSB10/TMSB4X	 
+phytohemagglutinin	 	chemical drug	 	1.964	bias	7.38E-03	CCND2,CD69,LMAN1,XBP1	 
+cyanovirin-N	 	biologic drug	 	 	 	7.59E-03	CD69	 
+FAM49B	 	other	 	 	 	7.59E-03	CD69	 
+PIEZO1	 	ion channel	 	 	 	7.59E-03	CD69	 
+PRR7	 	other	 	 	 	7.59E-03	CD69	 
+DERL1	 	other	 	 	 	7.59E-03	XBP1	 
+KLHL21	 	other	 	 	 	7.59E-03	NFKBIA	 
+Eif2	 	complex	 	 	 	7.59E-03	HSPA5	 
+Pdi	 	group	 	 	 	7.59E-03	HSPA5	 
+SIT1	 	other	 	 	 	7.59E-03	CD69	 
+PSMC5	 	transcription regulator	 	 	 	7.59E-03	CCND2	 
+YARS1	 	enzyme	 	 	 	7.59E-03	NFKBIA	 
+HAO1	 	enzyme	 	 	 	7.59E-03	HSPA5	 
+PHIP	 	other	 	 	 	7.59E-03	CCND2	 
+P4HB	 	enzyme	 	 	 	7.59E-03	PDIA4	 
+IPH 2101	 	biologic drug	 	 	 	7.59E-03	CD69	 
+AHNAK	-0.349	other	 	 	 	7.59E-03	CCND2	 
+PPP1R1A	 	phosphatase	 	 	 	7.59E-03	HSPA5	 
+FDPS	 	enzyme	 	 	 	7.59E-03	CD69	 
+STAG2	 	transcription regulator	 	 	 	7.59E-03	CD69	 
+Ly6a (includes others)	 	other	 	 	 	7.59E-03	IGHM	 
+SEC23B	 	transporter	 	 	 	7.59E-03	HSP90B1	 
+ERC1	 	other	 	 	 	7.59E-03	NFKBIA	 
+glycosylated somatostatin derivative smsDX	 	chemical reagent	 	 	 	7.59E-03	HSPA5	 
+GIMAP1-GIMAP5	 	other	 	 	 	7.59E-03	HSP90B1	 
+mir-297	 	microRNA	 	 	 	7.59E-03	CCND2	 
+lirilumab	 	biologic drug	 	 	 	7.59E-03	CD69	 
+nordihydrocapsiate	 	chemical reagent	 	 	 	7.59E-03	CD69	 
+polyhydroxyethyl methacrylate	 	chemical reagent	 	 	 	7.59E-03	CALR	 
+chlordecone	 	chemical toxicant	 	 	 	7.59E-03	HSPA5	 
+3,4-dihydroxybenzaldehyde	 	chemical - endogenous non-mammalian	 	 	 	7.59E-03	CCND2	 
+salsalate	 	chemical drug	 	 	 	7.59E-03	NFKBIA	 
+GKT137831	 	chemical drug	 	 	 	7.59E-03	XBP1	 
+phloretin	 	chemical - endogenous non-mammalian	 	 	 	7.59E-03	TXNIP	 
+5-phenylvaleric acid	 	chemical reagent	 	 	 	7.59E-03	XBP1	 
+(6S)-hydroxyhyoscyamine	 	chemical drug	 	 	 	7.59E-03	HSPA5	 
+paclitaxel	 	chemical drug	 	 	 	7.64E-03	IGHM,MKI67,NFKBIA,TP53INP1	20 (6)
+INS	 	other	 	 	 	7.69E-03	HSPA5,IGKC,XBP1	 
+brefeldin A	 	chemical - endogenous non-mammalian	 	 	 	7.73E-03	HLA-C,HSPA5	 
+diethylstilbestrol	 	chemical drug	 	1.980	 	7.98E-03	HSP90B1,JCHAIN,MKI67,RPN2	 
+BAX	 	transporter	 	 	 	8.02E-03	PDIA6,XBP1	 
+platelet activating factor	 	chemical - endogenous mammalian	 	 	 	8.31E-03	CD69,NFKBIA	19 (5)
+NFKBIB	 	transcription regulator	 	 	 	8.31E-03	NFKBIA,TP53INP1	 
+CAT	 	enzyme	 	 	 	8.61E-03	CD69,HLA-DRA	 
+IL2RG	 	transmembrane receptor	 	 	 	8.61E-03	IGHM,LTB	9 (3)
+Hdac	 	group	 	 	 	8.79E-03	HLA-DRA,KLF6,TXNIP	4 (2)
+SATB1	 	transcription regulator	 	 	 	8.79E-03	ACTG1,CD69,HSPA8	 
+PAX5	 	transcription regulator	 	 	 	9.22E-03	JCHAIN,TXNIP	 
+MAPKAPK2	 	kinase	 	 	 	9.22E-03	HSPA5,NFKBIA	 
+Pln	 	other	 	 	 	9.22E-03	HSP90B1,RACK1	 
+glucosamine	 	chemical - endogenous mammalian	 	 	 	9.22E-03	HSP90B1,TXNIP	 
+SNCA	 	enzyme	 	 	 	9.29E-03	CD74,HLA-DRA,HSP90B1,HSPA5	 
+GPER1	 	G-protein coupled receptor	 	 	 	9.54E-03	HSPA5,NFKBIA	7 (3)
+CpG ODN 1668	 	chemical reagent	 	 	 	9.54E-03	CD69,XBP1	8 (4)
+emodin	 	chemical drug	 	 	 	9.86E-03	HSPA5,MKI67	17 (5)
+IL1B	 	cytokine	 	0.439	 	9.93E-03	CD69,CD74,HLA-DRA,HLA-E,HSPA5,NFKBIA,TXNIP	31 (14)
+PDGF BB	 	complex	 	 	 	1.01E-02	HLA-E,KLF6,RACK1,RPN2	 
+PD 180970	 	chemical - kinase inhibitor	 	 	 	1.01E-02	CCND2	 
+TEC/BTK/ITK/TXK/BMX	 	group	 	 	 	1.01E-02	CD69	 
+ZXDC	 	transcription regulator	 	 	 	1.01E-02	HLA-DRA	 
+UTP3	 	other	 	 	 	1.01E-02	CCND2	 
+ZNF24	 	transcription regulator	 	 	 	1.01E-02	CCND2	 
+Tcrb-V3	 	group	 	 	 	1.01E-02	CD69	 
+TTR	 	transporter	 	 	 	1.01E-02	XBP1	 
+ADRA2B	 	G-protein coupled receptor	 	 	 	1.01E-02	MKI67	 
+SLA2	 	other	 	 	 	1.01E-02	CD69	 
+miR-127-3p (miRNAs w/seed CGGAUCC)	 	mature microRNA	 	 	 	1.01E-02	XBP1	 
+EGFL7	 	other	 	 	 	1.01E-02	NFKBIA	 
+SNX17	 	transporter	 	 	 	1.01E-02	CD69	 
+SSTR5	 	G-protein coupled receptor	 	 	 	1.01E-02	MKI67	 
+CD151	 	other	 	 	 	1.01E-02	CD69	 
+IK	 	cytokine	 	 	 	1.01E-02	HLA-DRA	 
+SOS1	 	other	 	 	 	1.01E-02	CD69	 
+CRLF1	 	other	 	 	 	1.01E-02	CD69	 
+CTH	 	enzyme	 	 	 	1.01E-02	HSPA5	 
+DGKA	 	kinase	 	 	 	1.01E-02	CD69	 
+PAK2	 	kinase	 	 	 	1.01E-02	CD69	 
+ZKSCAN3	 	transcription regulator	 	 	 	1.01E-02	CCND2	 
+RRM2B	 	enzyme	 	 	 	1.01E-02	TP53INP1	 
+apicularen A	 	chemical reagent	 	 	 	1.01E-02	NFKBIA	 
+phenformin	 	chemical drug	 	 	 	1.01E-02	XBP1	 
+1,1-diethyl-2-hydroxy-2-nitrosohydrazine	 	chemical toxicant	 	 	 	1.01E-02	NFKBIA	 
+MM218	 	chemical reagent	 	 	 	1.01E-02	HSPA5	 
+perillic acid	 	chemical - endogenous non-mammalian	 	 	 	1.01E-02	CD69	 
+mir-181	 	microRNA	 	 	 	1.02E-02	CD69,KLF6	 
+cadmium chloride	 	chemical toxicant	 	 	 	1.02E-02	EEF1D,HSPA5	 
+ursolic acid	 	chemical drug	 	 	 	1.02E-02	CD69,MKI67	 
+CCND1	 	transcription regulator	 	 	 	1.02E-02	AHNAK,CCND2,HSPA8,TP53INP1	 
+MYB	 	transcription regulator	 	 	 	1.03E-02	HSPA5,HSPA8,MZB1	 
+gefitinib	 	chemical drug	 	 	 	1.04E-02	HSP90B1,MKI67,TP53INP1	 
+sunitinib	 	chemical drug	 	 	 	1.05E-02	CCND2,CD69	 
+FLI1	 	transcription regulator	 	 	 	1.05E-02	HSPA8,RACK1	 
+SCD	 	enzyme	 	 	 	1.05E-02	HSPA5,XBP1	 
+vitamin D	 	chemical drug	 	 	 	1.05E-02	MKI67,NFKBIA	 
+mitomycin C	 	chemical drug	 	 	 	1.05E-02	MALAT1,TP53INP1	 
+miR-17-5p (and other miRNAs w/seed AAAGUGC)	 	mature microRNA	 	 	 	1.08E-02	CCND2,TXNIP	 
+POR	 	enzyme	 	 	 	1.09E-02	ACTG1,CD74,HLA-DQB1	 
+S100A8	 	other	 	 	 	1.09E-02	CD69,NFKBIA,TXNIP	 
+U0126	 	chemical - kinase inhibitor	 	-1.206	 	1.14E-02	CCND2,CD69,EEF1A1,HSPA5,IGHM	 
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	1.14E-02	HSPA5,NFKBIA,RACK1	 
+PLN	 	transporter	 	 	 	1.15E-02	HSP90B1,RACK1	 
+15-deoxy-delta-12,14 -PGJ 2	 	chemical - endogenous mammalian	 	 	 	1.18E-02	CCND2,HLA-DRA,NFKBIA	 
+25-hydroxycholesterol	 	chemical reagent	 	 	 	1.19E-02	HSPA5,NFKBIA	 
+infliximab	 	biologic drug	 	 	 	1.22E-02	CCND2,NFKBIA	 
+CD3E	 	transmembrane receptor	 	 	 	1.22E-02	CD69,NFKBIA	 
+PRKCD	 	kinase	 	 	 	1.25E-02	JCHAIN,KLF6,NFKBIA	 
+NOS2	 	enzyme	 	 	 	1.25E-02	IGHG1,KLF6,NFKBIA	 
+chondroitin sulfate E	 	chemical - endogenous mammalian	 	 	 	1.26E-02	CALR	 
+MARCHF3	 	other	 	 	 	1.26E-02	NFKBIA	 
+PHLDA2	 	other	 	 	 	1.26E-02	MKI67	 
+HLA-DR	 	complex	 	 	 	1.26E-02	IGHM	 
+SNHG3	 	other	 	 	 	1.26E-02	CCND2	 
+TAF9	 	transcription regulator	 	 	 	1.26E-02	HLA-DRA	 
+GRAP2	 	other	 	 	 	1.26E-02	CD69	 
+miR-873-5p (and other miRNAs w/seed CAGGAAC)	 	mature microRNA	 	 	 	1.26E-02	MKI67	 
+APAF1	 	other	 	 	 	1.26E-02	HSPA5	 
+ICAM5	 	other	 	 	 	1.26E-02	CD69	 
+KCTD11	 	other	 	 	 	1.26E-02	CCND2	 
+KIDINS220	 	transcription regulator	 	 	 	1.26E-02	CD69	 
+CD59	 	other	 	 	 	1.26E-02	CD69	 
+ASH2L	 	transcription regulator	 	 	 	1.26E-02	HSPA5	 
+RPS3	 	enzyme	 	 	 	1.26E-02	NFKBIA	 
+GTF2H4	 	transcription regulator	 	 	 	1.26E-02	CCND2	 
+KIR2DL4	 	transmembrane receptor	 	 	 	1.26E-02	CD69	 
+SLC37A4	 	transporter	 	 	 	1.26E-02	HSPA5	 
+SSBP1	 	other	 	 	 	1.26E-02	HLA-DRA	 
+RFXANK	 	transcription regulator	 	 	 	1.26E-02	HLA-DRA	 
+PD 150606	 	chemical - protease inhibitor	 	 	 	1.26E-02	CD69	 
+sodium azide	 	chemical toxicant	 	 	 	1.26E-02	TXNIP	 
+IMTPPE	 	chemical reagent	 	 	 	1.26E-02	ELL2	 
+ampelopsin	 	chemical drug	 	 	 	1.26E-02	HSPA5	 
+acetyl-11-keto-beta-boswellic acid	 	chemical reagent	 	 	 	1.26E-02	MKI67	 
+mir-15	 	microRNA	 	 	 	1.29E-02	CCND2,CD69	 
+TNFSF13B	 	cytokine	 	 	 	1.29E-02	CCND2,CD74	 
+KCNE3	 	ion channel	 	 	 	1.29E-02	IGHM,JCHAIN	 
+3,3'-diindolylmethane	 	chemical drug	 	 	 	1.29E-02	HLA-C,NFKBIA	 
+RARA	 	ligand-dependent nuclear receptor	 	1.067	 	1.32E-02	ELL2,H4C3,HLA-C,XBP1	 
+curcumin	 	chemical drug	 	-1.941	 	1.32E-02	CCND2,HSP90B1,HSPA8,NFKBIA	 
+mir-133	 	microRNA	 	 	 	1.33E-02	CCND2,MALAT1	 
+CTLA4	 	transmembrane receptor	 	 	 	1.33E-02	CD69,MKI67	 
+FOS	 	transcription regulator	Activated	2.000	 	1.38E-02	ACTG1,HSP90B1,HSPA5,KLF6,MALAT1	 
+GLI3	 	transcription regulator	 	 	 	1.40E-02	CCND2,CD69	 
+ID3	 	transcription regulator	 	 	 	1.41E-02	CCND2,KLF6,LTB	 
+NRAS	 	enzyme	 	 	 	1.43E-02	IGHM,JCHAIN,MKI67	 
+EDN1	 	cytokine	 	 	 	1.43E-02	HSPA5,HSPA8,PDIA6	 
+pervanadate	 	chemical reagent	 	 	 	1.51E-02	NFKBIA	 
+(R)-limonene	 	chemical toxicant	 	 	 	1.51E-02	CD69	 
+VAV	 	group	 	 	 	1.51E-02	CD69	 
+vanillyl-N-nonylamide	 	chemical drug	 	 	 	1.51E-02	HSPA5	 
+LRRC26	 	ion channel	 	 	 	1.51E-02	LTB	 
+USP48	 	peptidase	 	 	 	1.51E-02	CCND2	 
+IGLL1/IGLL5	 	other	 	 	 	1.51E-02	IGHM	 
+H6PD	 	enzyme	 	 	 	1.51E-02	HSPA5	 
+CSRP3	 	other	 	 	 	1.51E-02	TXNIP	 
+CD79B	-0.260	transmembrane receptor	 	 	 	1.51E-02	IGHM	 
+AP2M1	 	other	 	 	 	1.51E-02	CD74	 
+CNGB3	 	ion channel	 	 	 	1.51E-02	HSPA5	 
+WIF1	 	other	 	 	 	1.51E-02	MALAT1	 
+TAF10	 	transcription regulator	 	 	 	1.51E-02	HLA-DRA	 
+UTRN	 	transmembrane receptor	 	 	 	1.51E-02	ACTG1	 
+TRAT1	 	kinase	 	 	 	1.51E-02	CD69	 
+COL4A1	 	other	 	 	 	1.51E-02	HSPA5	 
+GJA8	 	transporter	 	 	 	1.51E-02	CALR	 
+PSMD4	 	other	 	 	 	1.51E-02	CD69	 
+TFF2	 	other	 	 	 	1.51E-02	CCND2	 
+SFTPC	 	other	 	 	 	1.51E-02	HSPA5	 
+CD226	 	other	 	 	 	1.51E-02	CD69	 
+G6PC	 	phosphatase	 	 	 	1.51E-02	HSPA5	 
+HLA-B	 	transmembrane receptor	 	 	 	1.51E-02	XBP1	 
+BCL2A1	 	other	 	 	 	1.51E-02	CD69	 
+CB-5083	 	chemical drug	 	 	 	1.51E-02	HSPA5	 
+gelam honey	 	chemical reagent	 	 	 	1.51E-02	NFKBIA	 
+acetazolamide	 	chemical drug	 	 	 	1.51E-02	HSPA5	 
+risedronic acid	 	chemical drug	 	 	 	1.51E-02	HSPA8	 
+PK11007	 	chemical reagent	 	 	 	1.51E-02	XBP1	 
+saquinavir	 	chemical drug	 	 	 	1.51E-02	NFKBIA	 
+FC-99	 	chemical reagent	 	 	 	1.51E-02	CD69	 
+Z-VEID-FMK	 	chemical reagent	 	 	 	1.51E-02	CCND2	 
+penicillamine	 	chemical drug	 	 	 	1.51E-02	HSPA5	 
+cycloheximide	 	chemical reagent	 	0.581	 	1.54E-02	CALR,EEF1A1,EEF1D,NFKBIA	 
+BTNL2	 	transmembrane receptor	 	 	 	1.56E-02	CD74,IGHM	 
+cadmium	 	chemical toxicant	 	 	 	1.56E-02	HLA-DQB1,HSPA5	 
+CD44	 	other	 	 	 	1.58E-02	CALR,CCND2,CD69	 
+triamcinolone acetonide	 	chemical drug	 	 	 	1.60E-02	CD79B,NFKBIA,TXNIP	 
+MAPT	 	other	 	 	 	1.61E-02	ACTG1,CANX,HSPA5,HSPA8	 
+dinoprost	 	chemical - endogenous mammalian	 	 	 	1.64E-02	CCND2,PDIA4	 
+MAPK1	 	kinase	 	 	 	1.67E-02	CD69,HLA-C,HLA-E,MKI67	 
+TLR4	 	transmembrane receptor	 	 	 	1.70E-02	CCND2,HSPA5,NFKBIA,XBP1	 
+simvastatin	 	chemical drug	 	 	 	1.71E-02	CCND2,MKI67,NFKBIA	 
+PD173074	 	chemical reagent	 	 	 	1.72E-02	CCND2,LTB	 
+MAP2K1/2	 	group	 	 	 	1.72E-02	CCND2,HSPA5	 
+KLF6	0.260	transcription regulator	 	 	 	1.72E-02	MKI67,NFKBIA	 
+(+)-MK-801	 	chemical drug	 	 	 	1.72E-02	HSPA5,NFKBIA	 
+fenretinide	 	chemical drug	 	 	 	1.72E-02	MKI67,NFKBIA	 
+Jnk	 	group	 	 	 	1.75E-02	CD69,HSPA5,KLF6	 
+HDAC5	 	transcription regulator	 	 	 	1.76E-02	HLA-DRA,KLF6	 
+mir-17	 	microRNA	 	 	 	1.76E-02	TP53INP1,TXNIP	 
+PIN1	 	enzyme	 	 	 	1.76E-02	HSPA5,XBP1	 
+ciglitazone	 	chemical drug	 	 	 	1.76E-02	HLA-DRA,NFKBIA	 
+fingolimod	 	chemical drug	 	 	 	1.76E-02	CD69,HLA-DQB1	 
+N-Ac-Leu-Leu-norleucinal	 	chemical - protease inhibitor	 	 	 	1.76E-02	HLA-C,NFKBIA	 
+taurodeoxycholic acid	 	chemical - endogenous mammalian	 	 	 	1.76E-02	HSPA5	 
+(+)-catechin	 	chemical drug	 	 	 	1.76E-02	HSPA5	 
+EIF2A	 	translation regulator	 	 	 	1.76E-02	HSPA5	 
+AKIRIN2	 	other	 	 	 	1.76E-02	CCND2	 
+B-cell receptor	 	complex	 	 	 	1.76E-02	CCND2	 
+PCM1	 	other	 	 	 	1.76E-02	MKI67	 
+catumaxomab	 	biologic drug	 	 	 	1.76E-02	CD69	 
+HNRNPR	 	other	 	 	 	1.76E-02	CANX	 
+STIM2	 	transporter	 	 	 	1.76E-02	MKI67	 
+MYCBP	 	transcription regulator	 	 	 	1.76E-02	CCND2	 
+CASQ2	 	other	 	 	 	1.76E-02	CALR	 
+PIK3C3	 	kinase	 	 	 	1.76E-02	HLA-DQB1	 
+CUL1	 	enzyme	 	 	 	1.76E-02	CCND2	 
+ZNF423	 	transcription regulator	 	 	 	1.76E-02	CD79B	 
+CHGA	 	other	 	 	 	1.76E-02	HSPA5	 
+PLA2G2A	 	enzyme	 	 	 	1.76E-02	CD69	 
+THOC1	 	transcription regulator	 	 	 	1.76E-02	CALR	 
+GSK 650394	 	chemical reagent	 	 	 	1.76E-02	HSPA5	 
+CAPNS1	 	peptidase	 	 	 	1.76E-02	CCND2	 
+MS4A1	-0.662	other	 	 	 	1.76E-02	CD69	 
+teasaponin	 	chemical - endogenous non-mammalian	 	 	 	1.76E-02	NFKBIA	 
+CD79A	 	transmembrane receptor	 	 	 	1.76E-02	IGHM	 
+15-E2-isoketal modified phosphatidylethanolamine	 	chemical reagent	 	 	 	1.76E-02	HSPA5	 
+Gm26313	 	other	 	 	 	1.76E-02	CANX	 
+hydroxychloroquine	 	chemical drug	 	 	 	1.76E-02	CD69	 
+2-mercaptoethanol	 	chemical - endogenous mammalian	 	 	 	1.76E-02	HSPA5	 
+N-Ac-leucyl-leucyl-methioninal	 	chemical - protease inhibitor	 	 	 	1.76E-02	HSP90B1	 
+DMD	 	other	 	 	 	1.77E-02	ACTG1,EEF1A1,HSPA8	 
+RAF1	 	kinase	 	 	 	1.77E-02	CD74,MKI67,TXNIP	 
+USF1	 	transcription regulator	 	 	 	1.80E-02	MS4A1,TXNIP	 
+CpG ODN 1826	 	chemical reagent	 	 	 	1.80E-02	CD69,HLA-DQB1	 
+dehydroisoandrosterone	 	chemical - endogenous mammalian	 	 	 	1.80E-02	NFKBIA,RACK1	 
+MACROH2A1	 	other	 	 	 	1.84E-02	CCND2,LTB	 
+MTPN	 	transcription regulator	 	 	 	1.84E-02	CCND2,LTB	 
+HNF4A	 	transcription regulator	 	-0.156	 	1.86E-02	AHNAK,HLA-C,HSP90B1,HSPA5,HSPA8,NOP53,SEC11C,SPCS3,SSR3,TXNIP,XBP1	 
+TAL1	 	transcription regulator	 	 	 	1.93E-02	CD69,HLA-C,HLA-E	 
+SPIB	 	transcription regulator	 	 	 	1.93E-02	KLF6,XBP1	 
+ALKBH5	 	enzyme	 	 	 	1.97E-02	EEF1D,HSPA8	 
+mycophenolic acid	 	chemical drug	 	 	 	1.97E-02	CCND2,HSPA5	 
+E2F4	 	transcription regulator	 	 	 	1.99E-02	HSP90B1,MKI67,TP53INP1	 
+GCS-100	 	chemical drug	 	 	 	2.01E-02	CCND2	 
+TFIIA	 	complex	 	 	 	2.01E-02	CCND2	 
+IL-2R	 	complex	 	 	 	2.01E-02	CCND2	 
+HDAC10	 	transcription regulator	 	 	 	2.01E-02	TXNIP	 
+evofosfamide	 	chemical drug	 	 	 	2.01E-02	CCND2	 
+CD8A	 	other	 	 	 	2.01E-02	IGHM	 
+S100a7a	 	other	 	 	 	2.01E-02	MKI67	 
+DKK2	 	other	 	 	 	2.01E-02	CD69	 
+MTBP	 	other	 	 	 	2.01E-02	CCND2	 
+SCNN1A	 	ion channel	 	 	 	2.01E-02	HSPA5	 
+FYB1	 	other	 	 	 	2.01E-02	CD69	 
+DGKZ	 	kinase	 	 	 	2.01E-02	CD69	 
+PLP2	 	transporter	 	 	 	2.01E-02	HLA-C	 
+CLTC	 	other	 	 	 	2.01E-02	CD74	 
+BMP5	 	growth factor	 	 	 	2.01E-02	CCND2	 
+TAPBP	 	transporter	 	 	 	2.01E-02	HLA-E	 
+farnesyl transferase	 	complex	 	 	 	2.01E-02	KLF6	 
+DIABLO	 	other	 	 	 	2.01E-02	MKI67	 
+EDA	 	cytokine	 	 	 	2.01E-02	MKI67	 
+Rfx5	 	other	 	 	 	2.01E-02	HLA-DRA	 
+ULBP1	 	transmembrane receptor	 	 	 	2.01E-02	CD69	 
+MM-401	 	chemical reagent	 	 	 	2.01E-02	KLF6	 
+coumestrol	 	chemical toxicant	 	 	 	2.01E-02	HSP90B1	 
+methoxychlor	 	chemical toxicant	 	 	 	2.01E-02	HSP90B1	 
+myxothiazol	 	chemical toxicant	 	 	 	2.01E-02	TXNIP	 
+magnesium sulfate	 	chemical drug	 	 	 	2.01E-02	NFKBIA	 
+GSKJ4	 	chemical reagent	 	 	 	2.01E-02	CD69	 
+epoxyeicosatrienoic acid analog B	 	chemical reagent	 	 	 	2.01E-02	HSPA5	 
+epoxyeicosatrienoic acid analog A	 	chemical reagent	 	 	 	2.01E-02	HSPA5	 
+dihematoporphyrin ether	 	chemical drug	 	 	 	2.01E-02	HSP90B1	 
+uridine	 	chemical - endogenous mammalian	 	 	 	2.01E-02	EEF1A1	 
+tosyllysine chloromethyl ketone	 	chemical - protease inhibitor	 	 	 	2.01E-02	NFKBIA	 
+lacto-N-fucopentaose III	 	chemical - endogenous mammalian	 	 	 	2.01E-02	IGHG1	 
+maslinic acid	 	chemical - endogenous non-mammalian	 	 	 	2.02E-02	CCND2,IGHM	 
+3,4,5,3',4'-pentachlorobiphenyl	 	chemical toxicant	 	 	 	2.02E-02	CCND2,TMSB10/TMSB4X	 
+SSB	 	enzyme	 	 	 	2.06E-02	CD74,HLA-DQB1	 
+TFRC	 	transporter	 	 	 	2.06E-02	HSPA5,XBP1	 
+MAPK3	 	kinase	 	 	 	2.06E-02	CD69,HLA-DQB1	 
+NGF	 	growth factor	 	 	 	2.09E-02	EEF1A1,RACK1,XBP1	 
+epigallocatechin-gallate	 	chemical drug	 	 	 	2.09E-02	MKI67,NFKBIA,PDIA4	 
+EGFR	 	kinase	 	0.985	 	2.10E-02	HSP90B1,HSPA5,NFKBIA,TXNIP	 
+Hsp90	 	group	 	 	 	2.10E-02	CCND2,CD69	 
+Growth hormone	 	group	 	 	 	2.13E-02	CCND2,NFKBIA,TXNIP	 
+NCOA3	 	transcription regulator	 	 	 	2.15E-02	NFKBIA,XBP1	 
+FADD	 	other	 	 	 	2.15E-02	CCND2,KLF6	 
+tert-butyl-hydroquinone	 	chemical reagent	 	 	 	2.15E-02	HSPA5,HSPA8	 
+cholesterol	 	chemical - endogenous mammalian	 	 	 	2.21E-02	HSP90B1,HSPA5,XBP1	 
+ADCYAP1	 	other	 	 	 	2.23E-02	MAN1A1,NFKBIA,TMSB10/TMSB4X	 
+SAMSN1	 	other	 	 	 	2.24E-02	CCND2,XBP1	 
+R5020	 	chemical reagent	 	 	 	2.24E-02	NFKBIA,TXNIP	 
+R 59022	 	chemical - kinase inhibitor	 	 	 	2.26E-02	CD69	 
+novobiocin	 	chemical drug	 	 	 	2.26E-02	MKI67	 
+bazedoxifene	 	chemical drug	 	 	 	2.26E-02	MKI67	 
+voltage-gated calcium channel	 	complex	 	 	 	2.26E-02	CCND2	 
+NAALADL2	 	other	 	 	 	2.26E-02	HSPA5	 
+(±)-2-hydroxyoleic acid	 	chemical drug	 	 	 	2.26E-02	XBP1	 
+HUWE1	 	transcription regulator	 	 	 	2.26E-02	CCND2	 
+CD80/CD86	 	group	 	 	 	2.26E-02	MKI67	 
+Ferritin	 	complex	 	 	 	2.26E-02	NFKBIA	 
+TRG	 	other	 	 	 	2.26E-02	HLA-DQB1	 
+PSMB9	 	peptidase	 	 	 	2.26E-02	NFKBIA	 
+HINFP	 	transcription regulator	 	 	 	2.26E-02	H4C3	 
+PDGF (family)	 	group	 	 	 	2.26E-02	CALR	 
+PI3	 	other	 	 	 	2.26E-02	NFKBIA	 
+ATG16L1	 	enzyme	 	 	 	2.26E-02	NFKBIA	 
+RFXAP	 	transcription regulator	 	 	 	2.26E-02	HLA-DRA	 
+ING4	 	transcription regulator	 	 	 	2.26E-02	NFKBIA	 
+NPAT	 	transcription regulator	 	 	 	2.26E-02	H4C3	 
+SPN	 	transmembrane receptor	 	 	 	2.26E-02	CD69	 
+ST6GAL1	 	enzyme	 	 	 	2.26E-02	CCND2	 
+UACA	 	other	 	 	 	2.26E-02	HSPA5	 
+YBX3	 	transcription regulator	 	 	 	2.26E-02	HLA-DQB1	 
+DEK	 	transcription regulator	 	 	 	2.26E-02	NFKBIA	 
+dantrolene	 	chemical drug	 	 	 	2.26E-02	HSPA5	 
+raltitrexed	 	chemical drug	 	 	 	2.26E-02	TMSB10/TMSB4X	 
+6-aminonicotinamide	 	chemical reagent	 	 	 	2.26E-02	HSPA5	 
+ammonium trichloro(dioxoethylene-O,O'-)tellurate	 	chemical drug	 	 	 	2.26E-02	HLA-DQB1	 
+prodigiosin	 	chemical toxicant	 	 	 	2.26E-02	HSPA5	 
+ketorolac	 	chemical drug	 	 	 	2.26E-02	NFKBIA	 
+NPM1-ALK	 	fusion gene/product	 	 	 	2.26E-02	CCND2	 
+SR1078	 	chemical reagent	 	 	 	2.26E-02	HSPA5	 
+miR-182 inhibitor	 	chemical reagent	 	 	 	2.26E-02	NFKBIA	 
+arachidic acid	 	chemical - endogenous mammalian	 	 	 	2.26E-02	XBP1	 
+FGF8	 	growth factor	 	 	 	2.29E-02	ELL2,MKI67	 
+GW9662	 	chemical reagent	 	 	 	2.29E-02	HLA-DRA,HSPA5	 
+CEBPB	 	transcription regulator	 	 	 	2.32E-02	CCND2,HSPA8,IGKC,XBP1	 
+estrogen receptor	 	group	 	 	 	2.33E-02	CCND2,MAN1A1,XBP1	 
+Hbb-b1	 	transporter	 	 	 	2.33E-02	CD74,LTB	 
+desmopressin	 	biologic drug	 	 	 	2.33E-02	AHNAK,HSPA8	 
+Ifnar	 	group	 	 	 	2.38E-02	CD74,HLA-E	 
+CALCA	 	other	 	 	 	2.38E-02	AHNAK,MKI67	 
+YBX1	 	transcription regulator	 	 	 	2.43E-02	HLA-DQB1,HLA-DRA	 
+FGFR1	 	kinase	 	 	 	2.43E-02	CCND2,EEF1A1	 
+prednisolone	 	chemical drug	 	 	 	2.43E-02	HSPA8,IGHG1,TXNIP	 
+CD36	 	transmembrane receptor	 	 	 	2.47E-02	HSPA5,XBP1	 
+EP300	 	transcription regulator	 	 	 	2.50E-02	MKI67,NFKBIA,TXNIP,XBP1	 
+O6-benzylguanine	 	chemical drug	 	 	 	2.51E-02	MKI67	 
+anacardic acid	 	chemical - endogenous non-mammalian	 	 	 	2.51E-02	HSPA5	 
+palbociclib	 	chemical drug	 	 	 	2.51E-02	MKI67	 
+Shc	 	group	 	 	 	2.51E-02	CCND2	 
+TRAF3IP3	 	other	 	 	 	2.51E-02	MKI67	 
+BMS-754807	 	chemical drug	 	 	 	2.51E-02	MKI67	 
+CNGA3	 	ion channel	 	 	 	2.51E-02	HSPA5	 
+KRT19	 	other	 	 	 	2.51E-02	HSPA5	 
+Pvr	 	other	 	 	 	2.51E-02	CCND2	 
+RYBP	 	transcription regulator	 	 	 	2.51E-02	CCND2	 
+NCR1	 	transmembrane receptor	 	 	 	2.51E-02	CD69	 
+Igkv1-117	 	other	 	 	 	2.51E-02	CCND2	 
+COPS8	 	other	 	 	 	2.51E-02	CCND2	 
+ATF5	 	transcription regulator	 	 	 	2.51E-02	TXNIP	 
+2-hydroxy-1-naphthylaldehyde isonicotinoyl hydrazone	 	chemical reagent	 	 	 	2.51E-02	CCND2	 
+tiron	 	chemical reagent	 	 	 	2.51E-02	HSPA5	 
+perilla alcohol	 	chemical drug	 	 	 	2.51E-02	NFKBIA	 
+CDK19	 	kinase	 	 	 	2.52E-02	CCND2,TXNIP	 
+tacrolimus	 	chemical drug	 	 	 	2.56E-02	CD74,ELL2,NFKBIA	 
+bee venom	 	chemical - endogenous non-mammalian	 	 	 	2.57E-02	MKI67,NFKBIA	 
+miR-146a-5p (and other miRNAs w/seed GAGAACU)	 	mature microRNA	 	 	 	2.57E-02	LTB,NFKBIA	 
+IKZF1	 	transcription regulator	 	 	 	2.61E-02	CCND2,CD79B,TXNIP	 
+methylselenic acid	 	chemical reagent	 	 	 	2.61E-02	HSP90B1,MKI67,PDIA4	 
+MKNK1	 	kinase	 	 	 	2.72E-02	EEF1D,TXNIP	 
+cyclosporin A	 	biologic drug	 	-0.762	 	2.72E-02	ELL2,HSPA5,NFKBIA,TMSB10/TMSB4X	 
+SMAD3	 	transcription regulator	 	 	 	2.75E-02	CCND2,HSP90B1,HSPA5	 
+azathioprine	 	chemical drug	 	 	 	2.76E-02	CALR	 
+4-hydroxyestradiol-17beta	 	chemical - endogenous mammalian	 	 	 	2.76E-02	HSPA5	 
+1-hydroxy-2-methyl-2-butenyl 4-diphosphate	 	chemical - endogenous non-mammalian	 	 	 	2.76E-02	CD69	 
+G2535	 	chemical reagent	 	 	 	2.76E-02	NFKBIA	 
+vismodegib	 	chemical drug	 	 	 	2.76E-02	MKI67	 
+MXD1	 	transcription regulator	 	 	 	2.76E-02	CCND2	 
+Igha	 	other	 	 	 	2.76E-02	IGHM	 
+RUVBL2	 	transcription regulator	 	 	 	2.76E-02	CCND2	 
+AIMP2	 	other	 	 	 	2.76E-02	MKI67	 
+TNFSF8	 	cytokine	 	 	 	2.76E-02	IGHG3	 
+RFX2	 	transcription regulator	 	 	 	2.76E-02	HLA-DRA	 
+GPR37	 	G-protein coupled receptor	 	 	 	2.76E-02	HSPA5	 
+NCOA6	 	transcription regulator	 	 	 	2.76E-02	HSPA5	 
+RASGRP1	 	other	 	 	 	2.76E-02	CD69	 
+I-BET-151	 	chemical reagent	 	 	 	2.76E-02	HSPA5	 
+oligomycin	 	chemical - endogenous non-mammalian	 	 	 	2.76E-02	CCND2	 
+orlistat	 	chemical drug	 	 	 	2.76E-02	HSPA5	 
+enterolactone	 	chemical - endogenous mammalian	 	 	 	2.76E-02	MKI67	 
+terbutaline	 	chemical drug	 	 	 	2.76E-02	IGHG1	 
+mimosine	 	chemical drug	 	 	 	2.76E-02	HLA-DQB1	 
+PSEN2	 	peptidase	 	 	 	2.77E-02	CD74,HLA-E	 
+Nfat (family)	 	group	 	 	 	2.82E-02	ELL2,KLF6	 
+Interferon alpha	 	group	 	0.777	 	2.84E-02	CCND2,CD69,HLA-C,NFKBIA	 
+E. coli B5 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	 	2.86E-02	CD69,EEF1A1,NFKBIA	 
+INHA	 	growth factor	 	 	 	2.92E-02	CCND2,TP53INP1	 
+arachidonic acid	 	chemical - endogenous mammalian	 	 	 	2.92E-02	KLF6,NFKBIA	 
+dovitinib	 	chemical drug	 	 	 	3.00E-02	LTB	 
+WWC1	 	transcription regulator	 	 	 	3.00E-02	MKI67	 
+MFN2	 	enzyme	 	 	 	3.00E-02	XBP1	 
+CST3	 	other	 	 	 	3.00E-02	NFKBIA	 
+mir-379	 	microRNA	 	 	 	3.00E-02	TXNIP	 
+DDB2	 	other	 	 	 	3.00E-02	NFKBIA	 
+PIK3R2	 	kinase	 	 	 	3.00E-02	MKI67	 
+ZBTB32	 	transcription regulator	 	 	 	3.00E-02	HLA-DQB1	 
+DOK1	 	kinase	 	 	 	3.00E-02	CD69	 
+MAPKAPK3	 	kinase	 	 	 	3.00E-02	HSPA5	 
+edaravone	 	chemical drug	 	 	 	3.00E-02	HSPA5	 
+SR 144528	 	chemical reagent	 	 	 	3.00E-02	NFKBIA	 
+NAD+	 	chemical - endogenous mammalian	 	 	 	3.00E-02	TXNIP	 
+Mt	 	group	 	 	 	3.00E-02	HSPA5	 
+fatty acid	 	chemical - endogenous mammalian	 	 	 	3.08E-02	HSPA5,NFKBIA	 
+CDKN1A	 	kinase	 	 	 	3.09E-02	HSPA5,MKI67,NFKBIA	 
+FOXO4	 	transcription regulator	 	 	 	3.18E-02	CCND2,TXNIP	 
+peptidoglycan	 	chemical - endogenous non-mammalian	 	 	 	3.23E-02	CD69,TMSB10/TMSB4X	 
+PRKAA2	 	kinase	 	 	 	3.23E-02	HSPA5,NFKBIA	 
+SYK/ZAP	 	group	 	 	 	3.25E-02	CD69	 
+POLR3G	 	enzyme	 	 	 	3.25E-02	KLF6	 
+CREB3L2	 	transcription regulator	 	 	 	3.25E-02	HSPA5	 
+CMKLR1	 	G-protein coupled receptor	 	 	 	3.25E-02	CCND2	 
+SAMHD1	 	enzyme	 	 	 	3.25E-02	NFKBIA	 
+iron dextran	 	chemical drug	 	 	 	3.25E-02	NFKBIA	 
+TRPV1	 	ion channel	 	 	 	3.25E-02	HLA-DQB1	 
+UBA1	 	enzyme	 	 	 	3.25E-02	HSPA5	 
+CSF2RA	 	transmembrane receptor	 	 	 	3.25E-02	CCND2	 
+JARID2	 	transcription regulator	 	 	 	3.25E-02	CCND2	 
+WIPF1	 	other	 	 	 	3.25E-02	CD69	 
+TRRAP	 	transcription regulator	 	 	 	3.25E-02	CCND2	 
+PEMT	 	enzyme	 	 	 	3.25E-02	HSPA5	 
+HSPA1A/HSPA1B	 	enzyme	 	 	 	3.25E-02	XBP1	 
+KT5720	 	chemical - kinase inhibitor	 	 	 	3.25E-02	NFKBIA	 
+TP63	 	transcription regulator	 	0.000	 	3.25E-02	CCND2,HSPA8,KLF6,MKI67	 
+AGT	 	growth factor	 	 	 	3.27E-02	CALR,CCND2,NFKBIA,TXNIP	 
+PI3K (family)	 	group	 	 	 	3.29E-02	HSPA5,TXNIP	 
+SYK	 	kinase	 	 	 	3.29E-02	CD69,TP53INP1	 
+CST5	 	other	 	 	 	3.33E-02	AHNAK,EEF1D,NOP53	 
+NR4A1	 	ligand-dependent nuclear receptor	 	 	 	3.33E-02	CCND2,CD69,NFKBIA	 
+GNA15	 	enzyme	 	 	 	3.34E-02	CD69,HLA-E	 
+TGFB3	 	growth factor	 	 	 	3.40E-02	EEF1D,MS4A1	 
+xanthine	 	chemical - endogenous mammalian	 	 	 	3.49E-02	CD69	 
+carfilzomib	 	biologic drug	 	 	 	3.49E-02	HSP90B1	 
+STOX1	 	other	 	 	 	3.49E-02	ACTG1	 
+PSMB10	 	peptidase	 	 	 	3.49E-02	NFKBIA	 
+TAC4	 	other	 	 	 	3.49E-02	XBP1	 
+CBX2	 	transcription regulator	 	 	 	3.49E-02	CCND2	 
+VCP	 	enzyme	 	 	 	3.49E-02	HSPA5	 
+ILF3	 	transcription regulator	 	 	 	3.49E-02	HLA-DRA	 
+picryl chloride	 	chemical toxicant	 	 	 	3.49E-02	IGHG1	 
+selenite	 	chemical toxicant	 	 	 	3.49E-02	HLA-E	 
+muromonab-CD3	 	biologic drug	 	 	 	3.49E-02	CD69	 
+SU5402	 	chemical - kinase inhibitor	 	 	 	3.49E-02	LTB	 
+gamma-tocotrienol	 	chemical drug	 	 	 	3.49E-02	NFKBIA	 
+pyrimidin-2-one beta-ribofuranoside	 	chemical reagent	 	 	 	3.49E-02	HSPA5	 
+E64d	 	chemical - protease inhibitor	 	 	 	3.49E-02	CD74	 
+BTK	 	kinase	 	 	 	3.51E-02	CCND2,CD69	 
+losartan potassium	 	chemical drug	 	 	 	3.51E-02	HSPA5,XBP1	 
+resiquimod	 	chemical drug	 	 	 	3.57E-02	HSPA5,NFKBIA,XBP1	 
+CBX5	 	transcription regulator	 	 	 	3.62E-02	LTB,TXNIP	 
+oleic acid	 	chemical - endogenous mammalian	 	 	 	3.62E-02	HSPA5,NFKBIA	 
+mir-155	 	microRNA	 	 	 	3.67E-02	CD69,TP53INP1	 
+JQ1	 	chemical reagent	 	 	 	3.73E-02	HSPA5,MKI67	 
+STAT5A	 	transcription regulator	 	 	 	3.73E-02	CCND2,LTB,TXNIP	 
+cetuximab	 	biologic drug	 	 	 	3.74E-02	XBP1	 
+PPARα-RXRα	 	complex	 	 	 	3.74E-02	NFKBIA	 
+THRAP3	 	transcription regulator	 	 	 	3.74E-02	TXNIP	 
+TIFA	 	other	 	 	 	3.74E-02	NFKBIA	 
+CLCN5	 	ion channel	 	 	 	3.74E-02	MKI67	 
+NSD1	 	transcription regulator	 	 	 	3.74E-02	KLF6	 
+FOXG1	 	transcription regulator	 	 	 	3.74E-02	CCND2	 
+48s	 	complex	 	 	 	3.74E-02	HSPA5	 
+CHRNA1	 	transmembrane receptor	 	 	 	3.74E-02	CD69	 
+miR-128-3p (and other miRNAs w/seed CACAGUG)	 	mature microRNA	 	 	 	3.74E-02	TXNIP	 
+miR-129-5p (and other miRNAs w/seed UUUUUGC)	 	mature microRNA	 	 	 	3.74E-02	TP53INP1	 
+ALK	 	kinase	 	 	 	3.74E-02	CCND2	 
+HOXB4	 	transcription regulator	 	 	 	3.74E-02	CCND2	 
+NRP1	 	transmembrane receptor	 	 	 	3.74E-02	HLA-DQB1	 
+formoterol	 	chemical drug	 	 	 	3.74E-02	CALR	 
+galactose	 	chemical - endogenous mammalian	 	 	 	3.74E-02	XBP1	 
+U18666A	 	chemical reagent	 	 	 	3.74E-02	XBP1	 
+24-hydroxycholesterol	 	chemical - endogenous mammalian	 	 	 	3.74E-02	HSPA5	 
+Akt	 	group	 	 	 	3.76E-02	CCND2,NFKBIA,XBP1	 
+ARNT	 	transcription regulator	 	 	 	3.84E-02	CCND2,IGHM	 
+GATA1	 	transcription regulator	 	 	 	3.86E-02	CALR,CCND2,MS4A1	 
+NUPR1	 	transcription regulator	 	1.000	 	3.91E-02	ELL2,KLF6,MKI67,XBP1	 
+3M-002	 	chemical reagent	 	 	 	3.96E-02	CD69,TXNIP	 
+AKT1	 	kinase	 	 	 	3.96E-02	CCND2,CD69,CD74	 
+epothilone B	 	chemical drug	 	 	 	3.98E-02	MKI67	 
+CSF2RB	 	transmembrane receptor	 	 	 	3.98E-02	CCND2	 
+picropodophyllin	 	chemical drug	 	 	 	3.98E-02	CCND2	 
+GC-GCR dimer	 	complex	 	 	 	3.98E-02	NFKBIA	 
+DPH5	 	enzyme	 	 	 	3.98E-02	NFKBIA	 
+GAS2L3	 	other	 	 	 	3.98E-02	CCND2	 
+BMP10	 	growth factor	 	 	 	3.98E-02	NFKBIA	 
+UBD	 	other	 	 	 	3.98E-02	EEF1A1	 
+H1-2	 	other	 	 	 	3.98E-02	LTB	 
+BLNK	 	other	 	 	 	3.98E-02	CCND2	 
+CR2	 	transmembrane receptor	 	 	 	3.98E-02	IGHG1	 
+OSBPL8	 	transporter	 	 	 	3.98E-02	HSPA5	 
+GFAP	 	other	 	 	 	3.98E-02	HSPA5	 
+Cux1	 	transcription regulator	 	 	 	3.98E-02	H4C3	 
+concanamycin A	 	chemical drug	 	 	 	3.98E-02	NFKBIA	 
+tauroursodeoxycholic acid	 	chemical - endogenous mammalian	 	 	 	3.98E-02	HSPA5	 
+C5	 	cytokine	 	 	 	4.02E-02	HSPA5,NFKBIA	 
+corticosterone	 	chemical - endogenous mammalian	 	 	 	4.07E-02	HSPA5,XBP1	 
+STAT5a/b	 	group	 	 	 	4.07E-02	CCND2,CD69	 
+FGF1	 	growth factor	 	 	 	4.07E-02	LTB,MKI67	 
+celecoxib	 	chemical drug	 	 	 	4.07E-02	HSPA5,MKI67	 
+IRF2	 	transcription regulator	 	 	 	4.19E-02	H4C3,RRBP1	 
+MECP2	 	transcription regulator	 	 	 	4.19E-02	HSPA5,IGHM	 
+doxifluridine	 	chemical drug	 	 	 	4.23E-02	TP53INP1	 
+Sod	 	group	 	 	 	4.23E-02	HLA-DRA	 
+DDX25	 	enzyme	 	 	 	4.23E-02	NFKBIA	 
+PSMB8	 	peptidase	 	 	 	4.23E-02	NFKBIA	 
+mir-451	 	microRNA	 	 	 	4.23E-02	CD69	 
+LAT	 	other	 	 	 	4.23E-02	CD69	 
+MXI1	 	transcription regulator	 	 	 	4.23E-02	MKI67	 
+PPP2R5C	 	other	 	 	 	4.23E-02	CD69	 
+TOR1A	 	enzyme	 	 	 	4.23E-02	HSPA5	 
+7-nitroindazole	 	chemical reagent	 	 	 	4.23E-02	NFKBIA	 
+ERK1/2	 	group	 	 	 	4.30E-02	CALR,CCND2,HSPA5	 
+IL1RN	 	cytokine	 	 	 	4.31E-02	HLA-DQB1,KLF6	 
+dimethyl sulfoxide	 	chemical drug	 	 	 	4.31E-02	CALR,CCND2	 
+TSC2	 	other	 	 	 	4.37E-02	CCND2,HSPA5	 
+WNT1	 	cytokine	 	 	 	4.43E-02	CCND2,EEF1A1	 
+Sb202190	 	chemical - kinase inhibitor	 	 	 	4.43E-02	CCND2,HSPA5	 
+SP2509	 	chemical reagent	 	 	 	4.44E-02	CCND2,HSPA5,MKI67	 
+Fgfr	 	group	 	 	 	4.47E-02	HSPA5	 
+Gli	 	group	 	 	 	4.47E-02	CCND2	 
+KLK4	 	peptidase	 	 	 	4.47E-02	MKI67	 
+PADI2	 	enzyme	 	 	 	4.47E-02	MKI67	 
+Endothelin	 	group	 	 	 	4.47E-02	CD74	 
+AKR1B1	 	enzyme	 	 	 	4.47E-02	MKI67	 
+ITGA6	 	transmembrane receptor	 	 	 	4.47E-02	CCND2	 
+CD46	 	transmembrane receptor	 	 	 	4.47E-02	CD69	 
+ITGAL	 	transmembrane receptor	 	 	 	4.47E-02	CD69	 
+KLRC4-KLRK1/KLRK1	 	transmembrane receptor	 	 	 	4.47E-02	CD69	 
+antimycin A	 	chemical - endogenous non-mammalian	 	 	 	4.47E-02	TXNIP	 
+helenalin	 	chemical - endogenous non-mammalian	 	 	 	4.47E-02	NFKBIA	 
+prostaglandin E2	 	chemical - endogenous mammalian	 	 	 	4.58E-02	CD69,IGHG1,NFKBIA	 
+RHOJ	 	enzyme	 	 	 	4.71E-02	ACTG1	 
+CCK	 	other	 	 	 	4.71E-02	HSPA5	 
+CFB	 	peptidase	 	 	 	4.71E-02	HSPA5	 
+ZBP1	 	other	 	 	 	4.71E-02	NFKBIA	 
+SLC29A1	 	transporter	 	 	 	4.71E-02	TP53INP1	 
+NT5E	 	phosphatase	 	 	 	4.71E-02	MKI67	 
+AICDA	 	enzyme	 	 	 	4.71E-02	CD74	 
+NOX1	 	enzyme	 	 	 	4.71E-02	NFKBIA	 
+IL21R	 	transmembrane receptor	 	 	 	4.71E-02	IGHG1	 
+PTK2B	 	kinase	 	 	 	4.71E-02	IGHM	 
+ACTB	 	other	 	 	 	4.71E-02	ACTG1	 
+RARRES2	 	transmembrane receptor	 	 	 	4.71E-02	CCND2	 
+TREM2	 	transmembrane receptor	 	 	 	4.71E-02	NFKBIA	 
+triflusal	 	chemical drug	 	 	 	4.71E-02	CD74	 
+diethylmaleate	 	chemical toxicant	 	 	 	4.71E-02	NFKBIA	 
+idarubicin	 	chemical drug	 	 	 	4.71E-02	TP53INP1	 
+lycopene	 	chemical drug	 	 	 	4.71E-02	CD69	 
+CASR	 	G-protein coupled receptor	 	 	 	4.74E-02	CCND2,TXNIP	 
+tamoxifen	 	chemical drug	 	 	 	4.80E-02	AHNAK,HSP90B1,MKI67	 
+FOXM1	 	transcription regulator	 	 	 	4.86E-02	CCND2,MKI67	 
+SOX11	 	transcription regulator	 	 	 	4.92E-02	MS4A1,TP53INP1	 
+cisplatin	 	chemical drug	 	1.243	 	4.95E-02	HSPA5,NFKBIA,TMSB10/TMSB4X,TP53INP1,TXNIP	 
+11,12-epoxyeicosatrienoic acid	 	chemical - endogenous mammalian	 	 	 	4.95E-02	NFKBIA	 
+puromycin	 	chemical - endogenous non-mammalian	 	 	 	4.95E-02	HSPA5	 
+BIRC3	 	enzyme	 	 	 	4.95E-02	NFKBIA	 
+ZNF202	 	transcription regulator	 	 	 	4.95E-02	CALR	 
+TIMP2	 	other	 	 	 	4.95E-02	NFKBIA	 
+MPZ	 	other	 	 	 	4.95E-02	HSPA5	 
+MLX	 	transcription regulator	 	 	 	4.95E-02	TXNIP	 
+PPP1R13L	 	transcription regulator	 	 	 	4.95E-02	CCND2	 
+LCP2	 	other	 	 	 	4.95E-02	CD69	 
+RFX1	 	transcription regulator	 	 	 	4.95E-02	HLA-DRA	 
+CCND3	 	kinase	 	 	 	4.95E-02	CCND2	 
+RFX3	 	transcription regulator	 	 	 	4.95E-02	HLA-DRA	 
+ADRB1	 	G-protein coupled receptor	 	 	 	4.95E-02	HSPA5	 
+HRG	 	other	 	 	 	4.95E-02	CD74	 
+TP53COR1	 	other	 	 	 	4.95E-02	TP53INP1	 
+sulfasalazine	 	chemical drug	 	 	 	4.95E-02	NFKBIA	 
+fumonisin B1	 	chemical toxicant	 	 	 	4.95E-02	LTB	 
+NCD-38	 	chemical reagent	 	 	 	4.95E-02	HSPA5	 
+(1S,2R)-NCL-1	 	chemical reagent	 	 	 	4.95E-02	HSPA5	 
+betaine	 	chemical - endogenous mammalian	 	 	 	4.95E-02	HSPA5	 
+7-ketocholesterol	 	chemical - endogenous mammalian	 	 	 	4.95E-02	HSPA5	 
+hydrocortisone	 	chemical - endogenous mammalian	 	 	 	4.99E-02	CCND2,NFKBIA	 
+SP110	 	transcription regulator	 	 	 	4.99E-02	CD74,TXNIP	 
+quercetin	 	chemical drug	 	 	 	4.99E-02	HSPA5,MKI67	 

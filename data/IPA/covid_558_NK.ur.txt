@@ -1,0 +1,903 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Upstream Regulator	Expr Log Ratio	Molecule Type	Predicted Activation State	Activation z-score	p-value of overlap	Target Molecules in Dataset	Mechanistic Network
+lipopolysaccharide	 	chemical drug	Activated	2.585	1.74E-20	ADAR,AKAP13,ARL4C,BTG1,CALR,CCL5,COX4I1,CX3CR1,CYBA,EEF2,GZMB,IFI44,IFI44L,IFIT3,IGHG1,IGHM,ISG15,MSN,MX1,OAS1,OAS2,OAS3,PLEK,RSAD2,RUNX3,S100A9,STAT1,TAP1,TMSB10/TMSB4X,TPT1,TRIM22,TSC22D3,TXNIP,XAF1,ZFP36L2	44 (12)
+IRF7	 	transcription regulator	Activated	3.312	2.91E-20	ADAR,CCL5,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,PLAC8,RSAD2,STAT1,TAP1,TRIM22,XAF1	25 (13)
+RNY3	 	other	Activated	3.162	1.63E-19	IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,XAF1	 
+IFNL1	 	cytokine	Activated	3.106	2.06E-19	HLA-B,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,TRIM22,XAF1	24 (7)
+IFNG	 	cytokine	 	1.247	4.31E-19	ACTB,B2M,BTG1,CCL5,CX3CR1,CYBA,FCGR3A/FCGR3B,GZMB,HLA-B,IFI44,IFI44L,IFIT3,IGHG1,ISG15,MX1,NEAT1,OAS1,OAS2,OAS3,PLEK,RACK1,RSAD2,RUNX3,S100A9,STAT1,TAP1,TRIM22,TSC22D3,TXNIP,XAF1	39 (14)
+IRF1	 	transcription regulator	Activated	2.527	4.80E-18	B2M,CCL5,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,TAP1,TRIM22,XAF1	35 (12)
+IFNA2	 	cytokine	Activated	2.740	8.63E-18	B2M,CCL5,HLA-B,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,TAP1,TRIM22,XAF1	33 (15)
+Interferon alpha	 	group	Activated	2.458	2.47E-17	ADAR,B2M,CCL5,GZMB,HLA-B,IFI44,IFI44L,IFIT3,ISG15,LAIR2,MX1,OAS1,OAS2,OAS3,RSAD2,S100A9,STAT1,TAP1,TRIM22	28 (11)
+ACKR2	 	G-protein coupled receptor	Inhibited	-2.530	3.57E-17	ADAR,CCL5,IFI44,IFIT3,ISG15,OAS1,OAS2,OAS3,RSAD2,STAT1	 
+STAT1	0.326	transcription regulator	 	1.625	2.53E-16	B2M,BTG1,CCL5,CX3CR1,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,TAP1,TRIM22,XAF1	34 (10)
+IRF3	 	transcription regulator	Activated	2.271	5.47E-16	ADAR,AHNAK,B2M,CCL5,IFI44,IFIT3,ISG15,OAS1,OAS2,OAS3,PLAC8,RSAD2,STAT1,TAP1	28 (13)
+PRL	 	cytokine	Activated	2.868	2.60E-15	ACTB,ADAR,B2M,COX4I1,IFI44,IFI44L,IFIT3,ISG15,MSN,OAS1,OAS2,OAS3,RSAD2,STAT1,XAF1	29 (10)
+IFN Beta	 	group	Activated	2.639	9.95E-15	CCL5,HLA-B,IFI44,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,XAF1	27 (11)
+IFNAR1	 	transmembrane receptor	 	1.444	1.76E-14	B2M,CCL5,IFI44,IFIT3,ISG15,OAS1,OAS2,OAS3,RSAD2,STAT1,TRIM22,XAF1	28 (12)
+CNOT7	 	transcription regulator	 	 	2.37E-14	B2M,IFI44L,ISG15,OAS1,OAS2,OAS3,STAT1,TAP1	24 (7)
+dexamethasone	 	chemical drug	Inhibited	-2.578	4.43E-14	ACTB,AKAP13,ARL4C,B2M,BCLAF1,BTG1,CALR,CCL5,COX4I1,CX3CR1,GZMB,IFI44,IFIT3,IGHM,ISG15,MBP,MX1,OAS3,PABPC1,PLEK,RSAD2,S100A9,SPON2,SRSF11,STAT1,TPT1,TSC22D3,TXNIP,XAF1,ZFP36L2	41 (7)
+tretinoin	 	chemical - endogenous mammalian	 	1.324	9.89E-14	ADAR,AHNAK,BTG1,CALR,CX3CR1,ETS1,HLA-B,IFI44,IFI44L,IFIT3,IGHM,ISG15,OAS1,OAS2,OAS3,PLEK,PNRC1,RUNX3,S100A9,STAT1,TAP1,TMSB10/TMSB4X,TPT1,TRIM22,TSC22D3,XAF1	41 (16)
+Ifnar	 	group	 	1.961	1.50E-13	B2M,CCL5,IFIT3,ISG15,OAS1,OAS2,RSAD2,STAT1,TAP1,XAF1	36 (16)
+oblimersen	 	biologic drug	Activated	2.828	3.47E-12	IFI44,IFIT3,ISG15,MX1,OAS1,OAS2,RSAD2,STAT1	 
+IL1RN	 	cytokine	Inhibited	-3.162	4.08E-12	IFI44,IFI44L,IFIT3,MX1,OAS1,OAS2,OAS3,RSAD2,S100A9,TRIM22	32 (9)
+CD40LG	 	cytokine	 	0.537	6.89E-12	AKAP13,B2M,BTG1,CCL5,GZMB,IFI44,IFIT3,IGHG1,ISG15,MX1,PLEK,RUNX3,STAT1,TAP1	38 (15)
+CpG ODN 2006	 	chemical reagent	Activated	2.985	7.06E-12	CCL5,GZMB,IFI44,IFI44L,IFIT3,MX1,OAS1,RSAD2,STAT1	28 (11)
+STAT2	 	transcription regulator	 	0.947	7.20E-12	CCL5,IFIT3,ISG15,MX1,OAS1,OAS2,RSAD2,STAT1	30 (12)
+MAVS	 	other	 	1.841	2.60E-11	ADAR,CCL5,IFIT3,ISG15,OAS1,OAS2,RSAD2,STAT1	28 (14)
+DDX58	 	enzyme	 	1.675	2.92E-11	AHNAK,CCL5,IFI44,IFIT3,ISG15,OAS1,RSAD2,STAT1	28 (14)
+resiquimod	 	chemical drug	 	 	3.07E-11	ADAR,CCL5,IFI44L,IFIT3,ISG15,MSN,MX1,OAS1,OAS2,OAS3,STAT1,TRIM22	29 (12)
+RNASEH2B	 	enzyme	 	 	4.35E-11	CCL5,IFI44,IFIT3,ISG15,OAS1	17 (3)
+IFNL4	 	cytokine	Activated	2.209	4.35E-11	ISG15,MX1,OAS1,OAS2,STAT1	24 (7)
+CGAS	 	enzyme	 	1.761	4.53E-11	CCL5,IFI44,IFIT3,ISG15,OAS1,RSAD2	27 (11)
+PML	 	transcription regulator	Activated	3.132	4.70E-11	IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,STAT1,TAP1	34 (10)
+TGM2	 	enzyme	Activated	2.111	5.40E-11	CX3CR1,HLA-B,IFIT3,OAS1,OAS2,OAS3,PNRC1,STAT1,TAP1,TRIM22,XAF1	25 (4)
+Ifn	 	group	Activated	2.429	7.06E-11	B2M,ISG15,MX1,OAS2,OAS3,RSAD2,STAT1,TAP1,TRIM22	33 (15)
+MAPK1	 	kinase	Inhibited	-2.354	7.07E-11	ADAR,CCL5,HLA-B,IFI44,IFIT3,ISG15,MBP,OAS1,OAS2,OAS3,STAT1,TAP1,TRIM22	29 (11)
+aldesleukin	 	biologic drug	 	0.000	8.23E-11	B2M,CALR,FCGR3A/FCGR3B,HLA-B,MX1,STAT1,TAP1	 
+PAF1	 	other	 	1.890	9.58E-11	CCL5,IFI44,IFI44L,IFIT3,ISG15,OAS2,OAS3	 
+PNPT1	 	enzyme	Inhibited	-2.449	1.11E-10	CCL5,IFI44,IFIT3,ISG15,OAS1,STAT1,XAF1	22 (6)
+STAT3	 	transcription regulator	 	-0.614	1.34E-10	CCL5,GZMB,IFI44,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,S100A9,STAT1,TAP1,TRIM22,XAF1	37 (16)
+SIRT1	 	transcription regulator	Inhibited	-2.060	1.36E-10	ACTB,ADAR,BCLAF1,CCL5,COX4I1,IFI44,IFIT3,IGHM,OAS1,OAS2,RSAD2,STAT1,TAP1	29 (8)
+IRF5	 	transcription regulator	Activated	2.057	1.70E-10	CCL5,IFI44,IFIT3,ISG15,OAS1,OAS2,RSAD2,STAT1	24 (12)
+SPI1	 	transcription regulator	 	1.117	2.78E-10	ACTB,IFI44,IFI44L,IFIT3,ISG15,MBP,MX1,RACK1,RSAD2,RUNX3,TRIM22	 
+SOCS1	 	other	Inhibited	-2.938	2.98E-10	IFI44,IFIT3,ISG15,MX1,OAS1,OAS2,RSAD2,STAT1,TRIM22	27 (10)
+TBK1	 	kinase	 	-1.895	3.44E-10	CCL5,IFI44,IFIT3,ISG15,OAS1,OAS2,OAS3,RSAD2	28 (12)
+poly rI:rC-RNA	 	biologic drug	Activated	2.202	3.62E-10	ADAR,B2M,CCL5,HLA-B,IFI44,IFIT3,ISG15,MX1,OAS1,OAS2,OAS3,RSAD2,STAT1,TAP1	30 (13)
+TLR7	 	transmembrane receptor	Activated	2.339	6.52E-10	CCL5,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS2,OAS3,RSAD2,STAT1	28 (10)
+NGLY1	 	enzyme	Inhibited	-2.388	7.09E-10	IFI44,IFI44L,IFIT3,OAS1,OAS3,RSAD2	 
+TNF	 	cytokine	 	1.035	9.49E-10	ACTB,B2M,BTG1,CALR,CCL5,CX3CR1,CYBA,ETS1,HLA-B,IFIT3,ISG15,MBP,MX1,NEAT1,OAS1,OAS2,OAS3,S100A9,STAT1,TAP1,TPT1,TSC22D3,TXNIP	37 (14)
+VCAN	 	other	Activated	2.967	1.02E-09	CYBA,IFI44,IFI44L,MX1,OAS2,OAS3,STAT1,TRIM22,XAF1	 
+TRIM24	 	transcription regulator	Inhibited	-2.770	1.03E-09	CCL5,IFI44,IFIT3,ISG15,OAS1,PLAC8,STAT1,TAP1	25 (8)
+PARP9	 	enzyme	Activated	2.219	1.45E-09	IFI44,IFIT3,ISG15,OAS2,STAT1	24 (7)
+BTK	 	kinase	 	-1.808	1.58E-09	ETS1,IFI44L,IFIT3,ISG15,MX1,OAS2,OAS3,STAT1	34 (13)
+RNASEH2A	 	enzyme	 	 	1.94E-09	ADAR,IFI44,IFIT3,ISG15,OAS1,RSAD2	 
+ribavirin	 	chemical drug	Activated	2.433	2.26E-09	IFI44L,IFIT3,ISG15,MX1,RSAD2,STAT1	32 (10)
+IFNAR2	 	transmembrane receptor	 	 	3.99E-09	IFI44,ISG15,OAS1,OAS2,TRIM22,XAF1	32 (10)
+IFIH1	 	enzyme	 	1.462	3.99E-09	CCL5,IFI44L,ISG15,OAS1,OAS2,RSAD2	25 (14)
+IFNLR1	 	transmembrane receptor	 	 	3.99E-09	CCL5,IFI44,IFIT3,ISG15,MX1,RSAD2	24 (8)
+stallimycin	 	biologic drug	Activated	2.401	3.99E-09	IFI44,IFIT3,ISG15,MX1,OAS1,STAT1	24 (7)
+TGFB1	 	growth factor	Inhibited	-3.003	4.52E-09	AHNAK,B2M,BTG1,CAP1,CCL5,CX3CR1,CYBA,ETS1,FCGR3A/FCGR3B,GZMB,IFIT3,IGHM,MALAT1,MSN,RACK1,RSAD2,RUNX3,SRSF5,STAT1,TSC22D3,TXNIP,ZFP36L2	 
+filgrastim	 	biologic drug	 	-1.960	4.58E-09	B2M,CCL5,GZMB,IFI44,IFIT3,ISG15,MX1,OAS3,RSAD2,SPON2,STAT1,XAF1	 
+decitabine	 	chemical drug	 	0.160	7.33E-09	B2M,BTG1,CCL5,CX3CR1,EIF4B,HLA-B,ISG15,MSN,MX1,OAS1,PABPC1,RBM39,RUNX3,STAT1,TMSB10/TMSB4X	29 (5)
+TCR	 	complex	 	 	9.49E-09	CCL5,GZMB,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,RSAD2,STAT1,TSC22D3	34 (13)
+bromodeoxyuridine	 	chemical drug	Activated	2.401	9.63E-09	IFI44,IFIT3,ISG15,MX1,OAS1,STAT1	24 (7)
+IL27	 	cytokine	 	0.917	9.77E-09	B2M,CCL5,GZMB,HLA-B,MX1,OAS1,STAT1,TAP1	36 (12)
+alefacept	 	biologic drug	 	1.368	1.21E-08	CCL5,CYBA,FCGR3A/FCGR3B,GNLY,GZMB,STAT1	 
+POU2AF1	 	transcription regulator	Activated	2.407	1.68E-08	IFI44,IFI44L,IFIT3,IGHG1,IGHM,MX1	 
+IFNA1/IFNA13	 	cytokine	Activated	2.412	1.68E-08	ISG15,MX1,OAS1,OAS2,RSAD2,STAT1	27 (10)
+emactuzumab	 	biologic drug	Activated	2.000	2.09E-08	IFIT3,ISG15,STAT1,XAF1	 
+TMEM173	 	other	 	1.524	2.29E-08	CCL5,IFI44,IFIT3,ISG15,OAS1,RSAD2	28 (14)
+ETV6-RUNX1	 	fusion gene/product	 	-0.854	2.47E-08	CCL5,CYBA,GZMB,IFIT3,ISG15,OAS1,OAS2,RSAD2,STAT1,TSC22D3	25 (5)
+TLR9	 	transmembrane receptor	Activated	2.548	3.45E-08	CCL5,IFI44L,IFIT3,ISG15,MX1,OAS2,OAS3,RSAD2,STAT1	28 (14)
+STAT6	 	transcription regulator	 	-1.004	3.60E-08	ACTB,AHNAK,AKAP13,CCL5,FCGR3A/FCGR3B,IFI44,IFI44L,IFIT3,IGHG1,ISG15,OAS3	22 (5)
+IL21	 	cytokine	Activated	2.544	4.40E-08	CCL5,GZMB,IFIT3,IGHG1,ISG15,OAS2,RSAD2,TAP1	35 (15)
+DNASE2	 	enzyme	 	 	4.55E-08	IFIT3,ISG15,OAS1,OAS3,RSAD2	 
+PRDM16	 	transcription regulator	 	-1.432	6.14E-08	CCL5,IFI44,OAS2,OAS3,STAT1	26 (9)
+GAPDH	 	enzyme	 	-1.400	6.14E-08	OAS1,OAS2,OAS3,STAT1,TXNIP	23 (6)
+IL1B	 	cytokine	 	1.284	6.45E-08	B2M,CCL5,CX3CR1,CYBA,IFIT3,ISG15,MX1,NEAT1,OAS2,RSAD2,S100A9,STAT1,TPT1,TSC22D3,TXNIP	36 (15)
+TLR3	 	transmembrane receptor	 	1.309	6.55E-08	CCL5,IFI44,IFI44L,IFIT3,ISG15,MX1,OAS1,RSAD2,STAT1	27 (13)
+rosiglitazone	 	chemical drug	 	0.667	1.06E-07	CCL5,COX4I1,ETS1,IFIT3,OAS1,OAS2,OAS3,S100A9,SPON2,STAT1,TRIM22	34 (13)
+NRAS	 	enzyme	 	-1.387	1.13E-07	B2M,CCL5,CX3CR1,ETS1,IGHM,ISG15,STAT1,TAP1	30 (9)
+FZD9	 	G-protein coupled receptor	 	0.849	1.49E-07	CCL5,IFI44,ISG15,STAT1	 
+IFNB1	 	cytokine	Activated	2.103	1.69E-07	CCL5,IFIT3,ISG15,MX1,OAS1,OAS2,RSAD2,STAT1,XAF1	27 (11)
+IRF8	 	transcription regulator	 	-1.534	1.71E-07	B2M,CCL5,IFI44L,IFIT3,ISG15,OAS1,STAT1	31 (14)
+SP110	 	transcription regulator	 	-1.134	1.71E-07	ETS1,IFIT3,MX1,OAS1,OAS3,STAT1,TXNIP	 
+IRF9	 	transcription regulator	 	 	3.02E-07	IFIT3,ISG15,MX1,OAS2,STAT1	31 (11)
+imiquimod	 	chemical drug	Activated	2.426	3.76E-07	ISG15,MX1,OAS1,RSAD2,S100A9,STAT1	32 (15)
+OSM	 	cytokine	 	1.754	5.11E-07	ARL4C,B2M,CCL5,HLA-B,MX1,OAS1,S100A9,STAT1,SYNE1,TAP1,TRIM22	28 (8)
+EBI3	 	cytokine	 	0.714	5.95E-07	B2M,HLA-B,MX1,STAT1,TAP1	22 (6)
+poly dA-dT	 	chemical reagent	 	1.225	6.53E-07	CCL5,ISG15,RSAD2,STAT1	32 (15)
+fluticasone propionate	 	chemical drug	 	-1.412	6.85E-07	CCL5,MX1,OAS2,PLAC8,STAT1,TAP1,TSC22D3	 
+poly(dG-dC)	 	chemical reagent	 	 	8.07E-07	ISG15,RSAD2,STAT1	22 (5)
+CLEC12A	 	other	 	 	8.07E-07	IFIT3,ISG15,RSAD2	22 (7)
+interferon beta-1a	 	biologic drug	 	 	1.45E-06	GNLY,GZMB,IGHM,MX1,S100A9,STAT1	 
+RPSA	 	translation regulator	 	-1.000	1.66E-06	CCL5,ISG15,STAT1,TAP1	13 (6)
+USP18	 	peptidase	 	-1.067	1.66E-06	CCL5,ISG15,MX1,OAS1	24 (7)
+ELAVL1	 	other	 	0.816	2.13E-06	B2M,IFI44,OAS1,OAS2,RACK1,STAT1,TSC22D3	 
+MAP3K7	 	kinase	 	0.557	3.34E-06	CCL5,IFI44,IFIT3,OAS2,XAF1	29 (10)
+NKX2-3	 	transcription regulator	 	-1.890	3.40E-06	BTG1,EIF4B,HLA-B,STAT1,TAP1,TRIM22,XAF1	 
+IL4	 	cytokine	 	-1.306	4.94E-06	ACTB,AHNAK,AKAP13,CCL5,FCGR3A/FCGR3B,IFI44,IFI44L,IFIT3,IGHG1,ISG15,OAS3,S100A9,STAT1	34 (12)
+IL15	 	cytokine	 	-0.794	5.04E-06	BTG1,CCL5,CX3CR1,ETS1,FCGR3A/FCGR3B,GNLY,GZMB,MX1,PLEK	 
+IKBKE	 	kinase	 	0.094	5.68E-06	ADAR,CCL5,IFIT3,RSAD2,STAT1	25 (13)
+CEBPA	 	transcription regulator	 	0.308	5.93E-06	ARL4C,BTG1,COX4I1,HLA-B,ISG15,OAS2,RUNX3,S100A9,TSC22D3	 
+prednisolone	 	chemical drug	Inhibited	-2.449	6.90E-06	BTG1,IGHG1,SPON2,STAT1,TSC22D3,TXNIP,ZFP36L2	 
+JAK	 	group	Activated	2.000	7.28E-06	IFIT3,ISG15,RSAD2,STAT1	24 (7)
+ST1926	 	chemical drug	 	1.664	7.50E-06	ACTB,EEF2,EIF4B,PABPC1,TMSB10/TMSB4X,TPT1	 
+MYC	 	transcription regulator	 	-1.886	7.58E-06	ACTB,EEF2,HLA-B,IFI44,IFI44L,IFIT3,MBP,MSN,MX1,OAS1,RSAD2,STAT1,TMSB10/TMSB4X,TXNIP	 
+PDLIM2	 	other	 	1.342	7.86E-06	IFI44,IFIT3,OAS3,STAT1,TXNIP	29 (9)
+2'3'-cyclic guanosine monophosphate-adenosine monophosphate	 	chemical - endogenous mammalian	 	 	8.27E-06	CCL5,ISG15,RSAD2	24 (9)
+MTOR	 	kinase	 	-0.776	8.69E-06	AKAP13,ARL4C,COX4I1,GZMB,MBP,OAS1,STAT1,TXNIP	 
+Irgm1	 	other	 	-0.555	8.75E-06	CCL5,IFIT3,OAS2,RSAD2	24 (6)
+KITLG	 	growth factor	 	 	9.19E-06	ACTB,B2M,BTG1,IGHM,TPT1,TSC22D3,TXNIP	 
+Ifn gamma	 	complex	 	1.969	1.01E-05	ADAR,CCL5,IFI44L,STAT1,XAF1	26 (8)
+CSF3	 	cytokine	 	1.633	1.20E-05	CCL5,CX3CR1,ETS1,FGFBP2,GNLY,GZMB	 
+IL10	 	cytokine	 	-0.053	1.22E-05	CCL5,CX3CR1,FCGR3A/FCGR3B,GZMB,PLEK,STAT1,TAP1,TSC22D3	33 (11)
+BRCA1	 	transcription regulator	 	1.886	1.37E-05	ACTB,CCL5,IFIT3,MX1,STAT1,TAP1	25 (10)
+PIK3CG	 	kinase	 	-0.447	1.41E-05	B2M,FCGR3A/FCGR3B,OAS2,STAT1,TAP1	 
+IL6	 	cytokine	 	1.755	1.49E-05	AHNAK,ARL4C,CCL5,COX4I1,CX3CR1,GZMB,IGHM,PLEK,S100A9,STAT1,TAP1	25 (3)
+NFKB1	 	transcription regulator	 	0.900	1.50E-05	B2M,CCL5,IGHG1,IGHM,ISG15,RACK1,STAT1	13 (5)
+fontolizumab	 	biologic drug	 	 	1.53E-05	ISG15,MX1,RSAD2	 
+TLR4	 	transmembrane receptor	 	0.995	1.62E-05	CCL5,COX4I1,IFIT3,ISG15,MX1,PLEK,RSAD2,STAT1	29 (15)
+KRAS	 	enzyme	 	-0.816	2.17E-05	ADAR,AHNAK,B2M,ISG15,MSN,MX1,OAS1,PABPC1,STAT1,TAP1	 
+MSC	 	transcription regulator	 	1.000	2.26E-05	IFI44,IFI44L,SYNE2,XAF1	 
+miR-27a-5p (miRNAs w/seed GGGCUUA)	 	mature microRNA	 	 	2.48E-05	CX3CR1,GZMB	 
+IL12B	 	cytokine	 	0.911	2.59E-05	CCL5,GZMB,S100A9,STAT1	26 (7)
+PRKCA	 	kinase	 	0.739	2.90E-05	ARL4C,ETS1,IFIT3,RSAD2,S100A9	 
+NLRC5	 	transcription regulator	 	 	2.98E-05	B2M,HLA-B,TAP1	 
+NFATC2	 	transcription regulator	 	1.109	3.10E-05	CCL5,CX3CR1,IFIT3,ISG15,RSAD2,STAT1	32 (7)
+ORMDL3	 	other	 	 	3.44E-05	OAS1,OAS2,OAS3	 
+mezerein	 	chemical - endogenous non-mammalian	 	 	3.44E-05	HLA-B,MX1,OAS2	 
+IRF2	 	transcription regulator	 	 	3.51E-05	B2M,HLA-B,ISG15,OAS1,TAP1	26 (10)
+ANGPT2	 	growth factor	 	-0.059	3.63E-05	ARL4C,CALR,CCL5,CYBA,ETS1,TXNIP	11 (3)
+PDCD1	 	phosphatase	 	0.655	3.81E-05	FGFBP2,GNLY,GZMB,STAT1	 
+RELA	 	transcription regulator	 	-0.312	3.83E-05	B2M,CCL5,HLA-B,IGHG1,IGHM,ISG15,OAS2,TAP1	22 (8)
+IL12 (family)	 	group	 	0.019	3.92E-05	CCL5,FCGR3A/FCGR3B,GZMB,LAIR2,STAT1	 
+SGPL1	 	enzyme	 	 	3.95E-05	ISG15,MX1,OAS1	 
+IFNK	 	cytokine	 	 	3.95E-05	MX1,OAS1,STAT1	 
+mir-15	 	microRNA	 	1.000	4.55E-05	CCL5,ISG15,MX1,OAS1	 
+Map3k7	 	kinase	 	-0.106	4.55E-05	CCL5,ISG15,RSAD2,S100A9	24 (8)
+DOCK8	 	other	Activated	2.000	4.82E-05	IFIT3,ISG15,RSAD2,STAT1	 
+PLAU	 	peptidase	 	 	4.82E-05	CCL5,OAS1,OAS3,S100A9	24 (4)
+Immunoglobulin	 	complex	 	-0.518	4.93E-05	CALR,CCL5,FCGR3A/FCGR3B,GZMB,IFIT3,OAS2,PLEK,RSAD2,S100A9	33 (8)
+miR-499a-5p inhibitor	 	chemical reagent	 	 	4.95E-05	MX1,OAS1	 
+miR-208b inhibitor	 	chemical reagent	 	 	4.95E-05	MX1,OAS1	 
+JAK1/2	 	group	Activated	2.000	5.39E-05	ISG15,MX1,PLAC8,RSAD2	 
+SASH1	 	other	Activated	2.000	5.39E-05	IFIT3,ISG15,RSAD2,STAT1	 
+PRDM1	 	transcription regulator	 	0.896	5.42E-05	GNLY,IGHG1,IGHM,PLAC8,RSAD2,S100A9	 
+TERT	 	enzyme	 	 	5.57E-05	B2M,ETS1,HLA-B,ISG15,MX1	 
+RUNX1	 	transcription regulator	 	 	6.11E-05	ISG15,OAS3,PLEK,RSAD2,S100A9,STAT1	 
+SLC9A3	 	ion channel	 	 	6.47E-05	B2M,CCL5,STAT1	 
+SRF	 	transcription regulator	 	 	6.54E-05	ACTB,CAP1,CCL5,ETS1,IGHM,MALAT1,S100A9	9 (3)
+isotretinoin	 	biologic drug	 	1.000	6.69E-05	IFIT3,OAS1,RUNX3,S100A9	 
+IGF1	 	growth factor	 	-0.832	7.71E-05	CCL5,CYBA,EIF4B,MBP,PLEK,TAP1,TXNIP,ZFP36L2	 
+IFNL3	 	cytokine	 	 	8.04E-05	MX1,RSAD2,STAT1	19 (5)
+EGOT	 	other	 	 	8.23E-05	ISG15,MBP	 
+GPR17	 	G-protein coupled receptor	 	 	8.23E-05	MBP,XAF1	 
+IFN alpha/beta	 	group	 	1.067	9.04E-05	CCL5,IFIT3,RSAD2,STAT1	27 (10)
+IRF4	 	transcription regulator	 	-1.980	9.56E-05	B2M,CX3CR1,ISG15,OAS1,STAT1	30 (7)
+cigarette smoke	 	chemical toxicant	 	1.149	9.79E-05	MX1,OAS1,OAS2,OAS3,RUNX3,STAT1	28 (9)
+MAPT	 	other	 	 	1.19E-04	ACTB,CAP1,COX4I1,EEF2,MBP,SYNE1,TPT1	 
+3M-011	 	chemical reagent	 	 	1.19E-04	ISG15,MX1,STAT1	20 (10)
+PPP4C	 	phosphatase	 	 	1.23E-04	CCL5,ISG15	 
+CREBBP	 	transcription regulator	 	 	1.42E-04	B2M,CCL5,HLA-B,ISG15,OAS3,RSAD2,ZFP36L2	39 (16)
+SAMSN1	 	other	Activated	2.000	1.42E-04	IFIT3,ISG15,RSAD2,STAT1	 
+U0126	 	chemical - kinase inhibitor	 	0.000	1.52E-04	CCL5,EEF2,ETS1,IGHM,PABPC1,S100A9,STAT1,TSC22D3	9 (2)
+desmopressin	 	biologic drug	 	 	1.55E-04	ACTB,AHNAK,CYBA,EIF4B	 
+CALCA	 	other	 	1.000	1.61E-04	AHNAK,AKAP13,CYBA,EIF4B	 
+ESR1	 	ligand-dependent nuclear receptor	 	-0.745	1.66E-04	AHNAK,AKAP13,BCLAF1,HLA-B,IFI44,IFI44L,MX1,PPP2R5C,RSAD2,S100A9,STAT1,TSC22D3,TXNIP	30 (4)
+3M-001	 	chemical drug	 	 	1.68E-04	ISG15,MX1,STAT1	20 (7)
+tofacitinib	 	chemical drug	 	 	1.72E-04	IFIT3,ISG15	19 (5)
+ISG15	0.280	other	 	 	1.72E-04	MX1,OAS1	 
+E. coli B4 lipopolysaccharide	 	chemical toxicant	 	1.455	1.72E-04	CCL5,IFIT3,PLEK,RSAD2,TAP1,TXNIP	35 (11)
+mir-21	 	microRNA	 	-0.600	1.76E-04	IGHG1,IGHM,OAS2,OAS3,STAT1,TAP1	 
+MRTFA	 	transcription regulator	 	 	1.85E-04	ACTB,CCL5,CYBA,S100A9,STAT1	9 (3)
+EIF2AK2	 	kinase	 	1.961	1.89E-04	ISG15,OAS1,OAS3,STAT1	28 (12)
+IKBKB	 	kinase	 	1.057	1.89E-04	CCL5,CYBA,ETS1,ISG15,MBP,MX1	33 (11)
+sirolimus	 	chemical drug	 	0.053	1.90E-04	ACTB,B2M,EEF2,HLA-B,ISG15,MBP,RACK1,STAT1	22 (6)
+EGFR	 	kinase	 	-0.342	1.95E-04	ACTB,BTG1,CCL5,GZMB,MBP,PABPC1,TXNIP	 
+uric acid	 	chemical - endogenous mammalian	 	 	2.04E-04	CCL5,IFIT3,ISG15,RSAD2	31 (13)
+GATA1	 	transcription regulator	 	-1.103	2.08E-04	CALR,CCL5,ETS1,MBP,PLEK,RUNX3	 
+EPO	 	cytokine	 	 	2.12E-04	ACTB,B2M,BTG1,TPT1,TSC22D3,TXNIP	30 (7)
+FCER1G	 	transmembrane receptor	 	 	2.13E-04	CCL5,MX1,RSAD2	 
+PSEN2	 	peptidase	 	 	2.21E-04	ACTB,CAP1,COX4I1,MBP	 
+glucocorticoid	 	chemical drug	 	-1.539	2.28E-04	CCL5,GZMB,IGHM,OAS1,TSC22D3,TXNIP	 
+TAPBP	 	transporter	 	 	2.29E-04	HLA-B,TAP1	 
+ETV6-NTRK3	 	fusion gene/product	 	 	2.29E-04	IFIT3,STAT1	 
+HRH3	 	G-protein coupled receptor	 	 	2.46E-04	IGHG1,IGHM,S100A9	 
+EP300	 	transcription regulator	 	 	2.70E-04	B2M,BCLAF1,HLA-B,OAS3,RSAD2,TXNIP,ZFP36L2	31 (6)
+ALB	 	transporter	 	 	2.83E-04	CCL5,CYBA,IGHG1	 
+uranyl nitrate	 	chemical toxicant	 	-0.218	2.84E-04	EEF2,IFIT3,RACK1,TPT1	 
+IRF3 dimer	 	complex	 	 	2.94E-04	CCL5,ISG15	 
+FBXO42	 	other	 	 	2.94E-04	CCL5,STAT1	 
+RFXAP	 	transcription regulator	 	 	2.94E-04	B2M,HLA-B	3 (3)
+UBA7	 	enzyme	 	 	2.94E-04	ISG15,OAS1	 
+SYK	 	kinase	 	-0.021	3.15E-04	CCL5,OAS1,OAS2,TSC22D3	 
+cyclosporin A	 	biologic drug	 	-0.816	3.18E-04	CCL5,CX3CR1,CYBA,GZMB,S100A9,TMSB10/TMSB4X,XAF1	18 (3)
+CD 437	 	chemical drug	Activated	2.236	3.21E-04	CCL5,EEF2,EIF4B,PABPC1,TMSB10/TMSB4X	 
+IFNA4	 	cytokine	 	 	3.23E-04	ISG15,MX1,RSAD2	3 (2)
+HNF4A	 	transcription regulator	 	-1.982	3.49E-04	AHNAK,AKAP13,ARL4C,BCLAF1,BTG1,CAP1,HLA-B,MSN,NOP53,OAS3,RBM39,RSAD2,S100A9,SRSF11,STAT1,TXNIP	 
+DUSP1	 	phosphatase	 	1.067	3.61E-04	IFIT3,MX1,PNRC1,S100A9	 
+KAT2B	 	transcription regulator	 	 	3.66E-04	B2M,HLA-B,ISG15	27 (12)
+PARP14	 	enzyme	 	 	3.67E-04	CCL5,ISG15	 
+KCNN4	 	ion channel	 	 	3.67E-04	CCL5,TSC22D3	 
+ARF6	 	transporter	 	 	3.67E-04	CCL5,ISG15	 
+imatinib	 	chemical drug	 	-0.398	3.79E-04	CALR,EIF4B,IFIT3,PPP2R5C,SRSF5,STAT1	 
+mir-155	 	microRNA	 	-0.975	3.97E-04	CCL5,IFIT3,MX1,STAT1	23 (10)
+SB203580	 	chemical - kinase inhibitor	 	-1.761	4.03E-04	CCL5,CX3CR1,GZMB,IFIT3,ISG15,MX1,STAT1	28 (12)
+Histone h3	 	group	 	 	4.35E-04	B2M,CCL5,MX1,RBM39,RSAD2,S100A9,SYNE2	 
+IFN type 1	 	group	 	 	4.38E-04	CCL5,ISG15,STAT1	22 (10)
+HSPA5	 	enzyme	 	 	4.38E-04	CCL5,ISG15,MBP	 
+ISGF3	 	complex	 	 	4.47E-04	ISG15,RSAD2	 
+IL2	 	cytokine	 	1.682	4.80E-04	CCL5,CX3CR1,ETS1,FCGR3A/FCGR3B,GZMB,MX1,NEAT1,PLAC8	 
+CD5	 	transmembrane receptor	 	 	4.91E-04	GZMB,RUNX3,STAT1	 
+CD3	 	complex	 	1.098	5.00E-04	BTG1,CCL5,CYBA,ETS1,GZMB,PLEK,STAT1,XAF1	 
+SAFB	 	other	 	 	5.19E-04	B2M,CCL5,EIF4B	 
+IL22	 	cytokine	 	-0.132	5.23E-04	CCL5,CYBA,HLA-B,S100A9	 
+diaminopimelic acid	 	chemical - endogenous non-mammalian	 	 	5.36E-04	CCL5,ISG15	 
+glucagon	 	biologic drug	 	 	5.77E-04	AHNAK,CYBA,EIF4B	 
+tetradecanoylphorbol acetate	 	chemical drug	 	0.661	5.98E-04	ACTB,CCL5,CYBA,ETS1,GZMB,ISG15,OAS1,RACK1,S100A9,STAT1,TSC22D3	36 (13)
+RARA	 	ligand-dependent nuclear receptor	 	0.000	6.19E-04	HLA-B,IFI44,IFI44L,OAS1,RSAD2,STAT1	28 (8)
+PLA2G2E	 	enzyme	 	 	6.32E-04	CCL5,S100A9	 
+N-acetyl-L-cysteine	 	chemical drug	 	1.172	6.46E-04	CCL5,CYBA,GZMB,TXNIP,XAF1	17 (3)
+ZAP70	 	kinase	 	 	6.73E-04	CYBA,TSC22D3,XAF1	 
+adenosine	 	chemical - endogenous mammalian	 	 	7.07E-04	CCL5,CX3CR1,TXNIP	 
+IFNA10	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+IFNA21	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+IFNA5	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+trametinib	 	chemical drug	 	 	7.36E-04	ISG15,MX1	 
+IFNA7	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+IFNA14	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+IFNA6	 	cytokine	 	 	7.36E-04	ISG15,MX1	 
+bortezomib	 	chemical drug	 	-0.555	7.63E-04	CALR,CCL5,IGHM,MX1,RSAD2	 
+Lh	 	complex	 	 	8.06E-04	ACTB,ARL4C,GNLY,PPP2R5C,STAT1	 
+TICAM1	 	other	 	1.232	8.14E-04	CCL5,IFIT3,ISG15,RSAD2	29 (18)
+TAP1	0.262	transporter	 	 	8.48E-04	MX1,OAS1	 
+IFNA8	 	cytokine	 	 	8.48E-04	ISG15,MX1	 
+TREX1	 	enzyme	 	 	8.48E-04	IFI44,ISG15	 
+DDX3X	 	enzyme	 	 	8.48E-04	CCL5,STAT1	 
+IFNA16	 	cytokine	 	 	8.48E-04	ISG15,MX1	 
+RFX5	 	transcription regulator	 	 	8.48E-04	B2M,HLA-B	 
+beta-estradiol	 	chemical - endogenous mammalian	 	0.429	9.09E-04	ACTB,BTG1,CALR,CCL5,ETS1,ISG15,MBP,MX1,OAS1,RACK1,RBM39,SYNE1,TSC22D3,TXNIP,ZFP36L2	34 (7)
+DPH5	 	enzyme	 	 	9.67E-04	EEF2,STAT1	 
+JAK2	 	kinase	 	 	9.72E-04	ACTB,CCL5,STAT1,TAP1	26 (8)
+TRIM28	 	transcription regulator	 	 	9.75E-04	CCL5,ETS1,S100A9	 
+3,3'-diindolylmethane	 	chemical drug	 	 	1.02E-03	HLA-B,OAS2,TAP1	13 (6)
+ethanol	 	chemical - endogenous mammalian	Inhibited	-2.179	1.03E-03	CCL5,GZMB,IGHM,MBP,STAT1,TSC22D3	19 (5)
+FANCC	 	other	 	 	1.06E-03	IFI44L,MX1,OAS1	 
+TBX21	 	transcription regulator	 	 	1.06E-03	CX3CR1,GZMB,RUNX3	 
+trichostatin A	 	chemical drug	 	-1.108	1.07E-03	ACTB,B2M,BTG1,EIF4B,MSN,RBM39,RUNX3,TMSB10/TMSB4X,TXNIP	22 (3)
+TP53	 	transcription regulator	 	0.372	1.08E-03	ACTB,BTG1,CAP1,CCL5,HLA-B,ISG15,MX1,OAS1,STAT1,TAP1,TMSB10/TMSB4X,TRIM22,TSC22D3,XAF1	33 (14)
+NCAM1	 	other	 	 	1.09E-03	CALR,MALAT1	 
+JAK1	 	kinase	 	 	1.11E-03	MX1,STAT1,TAP1	14 (3)
+FSH	 	complex	 	 	1.11E-03	ACTB,ARL4C,GNLY,GZMB,PPP2R5C,STAT1	 
+forskolin	 	chemical toxicant	 	0.651	1.14E-03	ACTB,AKAP13,ARL4C,CALR,CCL5,GNLY,STAT1,TXNIP	 
+TP73	 	transcription regulator	 	-0.055	1.20E-03	B2M,COX4I1,PNRC1,SYNE2,TAP1,TRIM22	 
+E. coli lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	1.25E-03	CCL5,MX1,S100A9	17 (5)
+miR-199a-5p (and other miRNAs w/seed CCAGUGU)	 	mature microRNA	 	 	1.30E-03	ETS1,ISG15,RSAD2	 
+MRTFB	 	transcription regulator	 	 	1.32E-03	ACTB,CCL5,CYBA,S100A9	 
+calcitriol	 	chemical drug	 	-0.442	1.33E-03	IFI44L,ISG15,MX1,RSAD2,S100A9,TAP1,TXNIP	20 (8)
+RELB	 	transcription regulator	 	 	1.35E-03	B2M,IGHG1,IGHM	13 (5)
+rituximab	 	biologic drug	 	 	1.37E-03	IGHG1,IGHM	 
+IL17R	 	complex	 	 	1.37E-03	CCL5,S100A9	 
+ZBP1	 	other	 	 	1.37E-03	ISG15,OAS1	 
+cuprizone	 	chemical toxicant	 	 	1.37E-03	CCL5,MBP	 
+IFI16	 	transcription regulator	 	 	1.40E-03	CCL5,ISG15,OAS1	28 (13)
+SATB1	 	transcription regulator	 	0.000	1.41E-03	ETS1,TRIM22,TSC22D3,XAF1	 
+androgen	 	chemical drug	 	 	1.47E-03	CALR,CX3CR1,ETS1,TPT1	 
+S100A9	0.286	other	 	 	1.50E-03	GZMB,ISG15,S100A9,TXNIP	 
+MSR1	 	transmembrane receptor	 	 	1.52E-03	CCL5,ISG15	 
+DHX9	 	enzyme	 	 	1.52E-03	CCL5,XAF1	 
+PLX5622	 	chemical drug	 	 	1.57E-03	ACTB,B2M,CCL5	 
+SMARCB1	 	transcription regulator	 	 	1.57E-03	BTG1,MX1,OAS1,OAS3	 
+APP	 	other	 	0.492	1.58E-03	ACTB,CALR,CAP1,CCL5,COX4I1,MBP,RSAD2,TPT1,XAF1	 
+resveratrol	 	chemical drug	 	-1.131	1.70E-03	CCL5,COX4I1,CX3CR1,ISG15,MALAT1	 
+SLC9A3R1	 	other	 	 	1.84E-03	CCL5,MSN	 
+phytohemagglutinin	 	chemical drug	 	-0.600	1.88E-03	BTG1,CCL5,GZMB,MBP,STAT1	 
+IL18	 	cytokine	 	0.218	1.93E-03	CCL5,FCGR3A/FCGR3B,GZMB,LAIR2	 
+ERK1/2	 	group	 	-1.231	1.96E-03	B2M,CALR,CCL5,ETS1,TAP1	32 (8)
+maslinic acid	 	chemical - endogenous non-mammalian	 	 	2.00E-03	ETS1,IGHM,MSN	 
+E. coli serotype 0127B8 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	-0.152	2.01E-03	CCL5,RACK1,RSAD2,STAT1	11 (5)
+2-aminopurine	 	chemical reagent	 	 	2.01E-03	ISG15,OAS1	22 (6)
+SAFB2	 	other	 	 	2.19E-03	B2M,EIF4B	 
+RACK1	-0.273	enzyme	 	 	2.19E-03	CCL5,ISG15	 
+prostaglandin E2	 	chemical - endogenous mammalian	 	 	2.20E-03	BTG1,CCL5,ETS1,IGHG1,TSC22D3	 
+NOS2	 	enzyme	 	1.000	2.26E-03	COX4I1,IFIT3,IGHG1,ISG15	 
+miR-1-3p (and other miRNAs w/seed GGAAUGU)	 	mature microRNA	 	-0.422	2.34E-03	ADAR,CAP1,SYNE1,TMSB10/TMSB4X	 
+R5020	 	chemical reagent	 	 	2.35E-03	IFIT3,STAT1,TXNIP	 
+Saa3	 	other	 	 	2.38E-03	CCL5,S100A9	 
+bexarotene	 	chemical drug	 	-1.000	2.39E-03	MALAT1,PNRC1,S100A9,TSC22D3	 
+BDNF	 	growth factor	 	-0.391	2.41E-03	EEF2,MALAT1,MBP,S100A9,TXNIP	 
+AGT	 	growth factor	 	-1.040	2.56E-03	CALR,CCL5,COX4I1,CYBA,ETS1,TXNIP	15 (6)
+AKT3	 	kinase	 	 	2.57E-03	COX4I1,ETS1	 
+SOCS3	 	phosphatase	 	 	2.58E-03	MX1,OAS1,OAS2	19 (5)
+APOE	 	transporter	 	 	2.65E-03	ACTB,CALR,CCL5,S100A9,TXNIP	30 (7)
+PPIF	 	enzyme	 	 	2.66E-03	CCL5,CX3CR1,SPON2	 
+EDN1	 	cytokine	 	 	2.72E-03	ACTB,MBP,MSN,TPT1	 
+tetrodotoxin	 	chemical drug	 	 	2.77E-03	B2M,TAP1	8 (3)
+TICAM2	 	other	 	 	2.77E-03	CCL5,IGHG1	 
+ASAH1	 	enzyme	 	 	2.77E-03	CCL5,ETS1	 
+PC-SPES	 	chemical drug	 	 	2.82E-03	B2M,HLA-B,TMSB10/TMSB4X	 
+2'-adenylic acid	 	chemical - endogenous mammalian	 	 	2.90E-03	TXNIP	 
+ANO1	 	ion channel	 	 	2.90E-03	CYBA	 
+DNAJC24	 	other	 	 	2.90E-03	EEF2	 
+DPH2	 	enzyme	 	 	2.90E-03	EEF2	 
+PRPF4	 	other	 	 	2.90E-03	CCL5	 
+EIF2B2	 	other	 	 	2.90E-03	ACTB	 
+SCO2	 	enzyme	 	 	2.90E-03	COX4I1	 
+TONSL	 	transcription regulator	 	 	2.90E-03	CCL5	 
+BANF1	 	other	 	 	2.90E-03	S100A9	 
+ZNF184	 	transcription regulator	 	 	2.90E-03	S100A9	 
+ETS1-AS1	 	other	 	 	2.90E-03	ETS1	 
+oligomycin A	 	chemical - endogenous non-mammalian	 	 	2.90E-03	TXNIP	 
+1,2,3,6,7,8-hexachlorodibenzodioxin	 	chemical toxicant	 	 	2.90E-03	IGHM	 
+anthraquinone	 	chemical toxicant	 	 	2.90E-03	CCL5	 
+2-nitrophenyl EGTA	 	chemical reagent	 	 	2.90E-03	AHNAK	 
+3'-adenylic acid	 	chemical - endogenous mammalian	 	 	2.90E-03	TXNIP	 
+allose	 	chemical - endogenous mammalian	 	 	2.90E-03	TXNIP	 
+CD69	 	transmembrane receptor	 	 	2.98E-03	CCL5,S100A9	 
+RC3H1	 	enzyme	 	 	2.98E-03	ACTB,CCL5	 
+HRAS	 	enzyme	 	 	3.03E-03	ACTB,B2M,CCL5,ETS1,HLA-B,TAP1,TMSB10/TMSB4X	32 (13)
+IL12 (complex)	 	complex	 	 	3.13E-03	CCL5,GZMB,ISG15,PLAC8	23 (5)
+CD44	 	other	 	 	3.13E-03	ACTB,CALR,CCL5,CX3CR1	 
+MKNK1	 	kinase	 	 	3.16E-03	ETS1,ISG15,TXNIP	 
+triamcinolone acetonide	 	chemical drug	 	-1.067	3.18E-03	AKAP13,ARL4C,TSC22D3,TXNIP	 
+POLG	 	enzyme	 	 	3.19E-03	RACK1,TPT1	 
+FCGR2A	 	transmembrane receptor	 	 	3.19E-03	CCL5,FCGR3A/FCGR3B	 
+NPC2	 	transporter	 	 	3.19E-03	COX4I1,STAT1	 
+HGF	 	growth factor	 	 	3.24E-03	AKAP13,CCL5,ETS1,ISG15,PNRC1,S100A9	20 (5)
+FCGR2B	 	transmembrane receptor	 	 	3.42E-03	CCL5,MX1	 
+PTX3	 	other	 	 	3.42E-03	CCL5,CX3CR1	 
+fucoidin	 	chemical reagent	 	 	3.42E-03	CCL5,ISG15	 
+puromycin aminonucleoside	 	chemical reagent	 	 	3.44E-03	ACTB,CYBA,TMSB10/TMSB4X	 
+potassium chloride	 	chemical drug	 	 	3.62E-03	CALR,NEAT1,TXNIP	 
+IgG	 	complex	 	-1.119	3.64E-03	B2M,CALR,CCL5,ISG15	 
+TAB1	 	enzyme	 	 	3.64E-03	CCL5,XAF1	19 (5)
+fluvoxamine	 	chemical drug	 	 	3.64E-03	ACTB,RACK1	 
+hydrogen peroxide	 	chemical - endogenous mammalian	 	-0.218	3.67E-03	ETS1,GZMB,RUNX3,TAP1,TXNIP,XAF1	 
+CSF1	 	cytokine	 	-1.154	3.70E-03	CCL5,FCGR3A/FCGR3B,STAT1,TPT1	 
+etanercept	 	biologic drug	 	 	3.88E-03	GZMB,STAT1	 
+SOX10	 	transcription regulator	 	 	3.88E-03	GZMB,MBP	 
+pyrrolidine dithiocarbamate	 	chemical reagent	 	 	3.92E-03	CCL5,GZMB,RACK1	 
+ETS1	-0.255	transcription regulator	 	 	3.95E-03	ARL4C,CCL5,ETS1,RUNX3	 
+CD40	 	transmembrane receptor	 	0.758	3.95E-03	CALR,CCL5,IGHG1,TAP1	18 (8)
+Cdk	 	group	 	 	4.12E-03	CCL5,TXNIP	 
+UBE2I	 	enzyme	 	 	4.12E-03	STAT1,TAP1	24 (6)
+peptidoglycan	 	chemical - endogenous non-mammalian	 	 	4.12E-03	CCL5,S100A9,TMSB10/TMSB4X	7 (3)
+NCOA2	 	transcription regulator	 	 	4.12E-03	CCL5,ISG15,TSC22D3	 
+NR1H3	 	ligand-dependent nuclear receptor	 	 	4.14E-03	ARL4C,CCL5,CX3CR1,TAP1	 
+STAT4	 	transcription regulator	 	0.762	4.14E-03	AHNAK,ISG15,PLAC8,STAT1	22 (6)
+PTEN	 	phosphatase	 	-0.277	4.15E-03	BTG1,CCL5,CX3CR1,ETS1,ISG15,MBP,TSC22D3	30 (7)
+AGN194204	 	chemical drug	 	1.000	4.20E-03	ARL4C,IGHM,PLAC8,TAP1	 
+CYBB	 	enzyme	 	 	4.37E-03	CCL5,CYBA	18 (4)
+epigallocatechin-gallate	 	chemical drug	 	-0.819	4.54E-03	CCL5,ISG15,STAT1,TAP1	29 (11)
+PLAAT4	 	enzyme	 	 	4.63E-03	CCL5,ISG15	10 (4)
+TERC	 	other	 	 	4.63E-03	CCL5,S100A9	 
+ING1	 	transcription regulator	 	 	4.63E-03	CCL5,TPT1	 
+DDIT3	 	transcription regulator	 	 	4.78E-03	RUNX3,TSC22D3,TXNIP	 
+cycloheximide	 	chemical reagent	 	-0.651	4.78E-03	ACTB,B2M,CALR,EIF4B,RSAD2	 
+IGFBP3	 	other	 	 	4.89E-03	CCL5,STAT1	 
+ACVRL1	 	kinase	 	 	4.89E-03	ACTB,STAT1	 
+REL	 	transcription regulator	 	 	4.97E-03	B2M,IGHG1,IGHM,RSAD2	11 (4)
+VDR	 	transcription regulator	 	0.000	5.05E-03	IFI44L,ISG15,S100A9,TXNIP	 
+JQ1	 	chemical reagent	 	 	5.13E-03	ISG15,MX1,RUNX3	 
+salmonella minnesota R595 lipopolysaccharides	 	chemical - endogenous non-mammalian	 	 	5.25E-03	CCL5,ISG15,RSAD2	22 (7)
+NSD2	 	enzyme	 	 	5.44E-03	OAS1,STAT1	 
+SUMO3	 	other	 	 	5.44E-03	ISG15,TAP1	 
+SPRY2	 	other	 	 	5.44E-03	ETS1,ISG15	 
+SAA1	 	transporter	 	 	5.44E-03	CCL5,S100A9	16 (3)
+CLDN7	 	other	 	 	5.49E-03	HLA-B,IFI44,MX1	 
+GATA3	 	transcription regulator	 	 	5.59E-03	CCL5,ETS1,RUNX3,S100A9	 
+3M-002	 	chemical reagent	 	 	5.62E-03	CCL5,IFI44,TXNIP	 
+PRC2	 	complex	 	 	5.72E-03	MX1,OAS1	 
+INPP5D	 	phosphatase	 	 	5.72E-03	IGHG1,IGHM	 
+sorafenib	 	chemical drug	 	 	5.72E-03	CCL5,OAS1	 
+pristane	 	chemical toxicant	 	 	5.72E-03	CCL5,ISG15	 
+tributyltin	 	chemical reagent	 	 	5.74E-03	COX4I1,IFIT3,STAT1	 
+EIF4B	-0.349	translation regulator	 	 	5.79E-03	ISG15	 
+ARL16	 	other	 	 	5.79E-03	CCL5	 
+SETX	 	enzyme	 	 	5.79E-03	ACTB	 
+MLXIP	 	transcription regulator	 	 	5.79E-03	TXNIP	 
+ZNF366	 	transcription regulator	 	 	5.79E-03	TSC22D3	 
+miR-411-5p (and other miRNAs w/seed AGUAGAC)	 	mature microRNA	 	 	5.79E-03	TXNIP	 
+miR-532-5p (and other miRNAs w/seed AUGCCUU)	 	mature microRNA	 	 	5.79E-03	RUNX3	 
+POLDIP3	 	other	 	 	5.79E-03	ISG15	 
+ATG12	 	other	 	 	5.79E-03	MBP	 
+DCTN4	 	other	 	 	5.79E-03	CCL5	 
+poly-L-glutamic acid-peptoid 1 conjugate QM56	 	chemical reagent	 	 	5.79E-03	CCL5	 
+TRPC6	 	ion channel	 	 	5.79E-03	MX1	 
+USP13	 	peptidase	 	 	5.79E-03	STAT1	 
+KHDRBS2	 	other	 	 	5.79E-03	STAT1	 
+GAB3	 	other	 	 	5.79E-03	OAS1	 
+DPH1	 	other	 	 	5.79E-03	EEF2	 
+ERCC6	 	transcription regulator	 	 	5.79E-03	MBP	 
+3-O-methylglucose	 	chemical reagent	 	 	5.79E-03	TXNIP	 
+PSEN1	 	peptidase	 	 	5.80E-03	ACTB,CAP1,CCL5,MBP,TPT1	 
+corticosterone	 	chemical - endogenous mammalian	 	 	5.87E-03	CYBA,GZMB,TSC22D3	 
+reactive oxygen species	 	chemical toxicant	 	 	5.87E-03	CCL5,ETS1,GZMB	 
+CIITA	 	transcription regulator	 	 	6.01E-03	B2M,HLA-B	12 (5)
+RUVBL1	 	transcription regulator	 	 	6.01E-03	ETS1,PLAC8	 
+mitoxantrone	 	chemical drug	 	 	6.01E-03	OAS2,RSAD2	 
+PD98059	 	chemical - kinase inhibitor	 	1.640	6.04E-03	CCL5,ETS1,PABPC1,TSC22D3,TXNIP,ZFP36L2	 
+MECP2	 	transcription regulator	 	 	6.13E-03	ACTB,IGHM,MBP	 
+AGTR1	 	G-protein coupled receptor	 	 	6.31E-03	CYBA,TXNIP	 
+TNIP1	 	other	 	 	6.31E-03	HLA-B,S100A9	 
+laminaran	 	chemical drug	 	 	6.31E-03	IFI44L,RSAD2	 
+SUMO2	 	enzyme	 	 	6.61E-03	ISG15,TSC22D3	 
+S100A4	 	other	 	 	6.61E-03	CCL5,S100A9	16 (4)
+PTPRC	 	phosphatase	 	 	6.61E-03	CCL5,IGHM	 
+IRAK1	 	kinase	 	 	6.61E-03	CCL5,STAT1	19 (6)
+FLT3	 	kinase	 	 	6.61E-03	CYBA,IFIT3	 
+IL17A	 	cytokine	 	1.033	6.69E-03	ACTB,CCL5,ISG15,S100A9	23 (9)
+IFNE	 	cytokine	 	 	6.92E-03	ISG15,STAT1	21 (6)
+EBF1	 	transcription regulator	 	 	6.96E-03	CCL5,IGHM,STAT1	 
+BCR (complex)	 	complex	 	 	7.10E-03	CALR,GZMB,IGHG1	10 (3)
+methyl methanesulfonate	 	chemical toxicant	 	 	7.24E-03	BTG1,TRIM22	 
+CASR	 	G-protein coupled receptor	 	 	7.39E-03	ISG15,S100A9,TXNIP	 
+mir-146	 	microRNA	 	 	7.56E-03	MBP,STAT1	 
+TET2	 	enzyme	 	 	7.69E-03	AHNAK,IFIT3,RSAD2	 
+cisplatin	 	chemical drug	 	-0.507	7.74E-03	ACTB,CCL5,MX1,TAP1,TMSB10/TMSB4X,TRIM22,TXNIP	26 (7)
+TNFSF11	 	cytokine	 	 	7.83E-03	AKAP13,CCL5,ETS1,STAT1	 
+HOTAIR	 	other	 	 	7.89E-03	MX1,OAS1	2 (2)
+IL12A	 	cytokine	 	 	7.89E-03	CCL5,STAT1	14 (3)
+hexamethylene bisacetamide	 	chemical reagent	 	 	7.89E-03	IFIT3,RACK1	 
+mibolerone	 	chemical drug	 	 	8.00E-03	AHNAK,CALR,SARAF	 
+MYD88	 	other	 	1.491	8.13E-03	CCL5,IGHG1,ISG15,RSAD2	28 (17)
+SATB2	 	transcription regulator	 	 	8.22E-03	IFI44,IGHM	 
+RNA polymerase II	 	complex	 	 	8.23E-03	ACTB,B2M,CCL5,TAP1	 
+dextran sulfate	 	chemical drug	 	0.152	8.34E-03	CCL5,ISG15,S100A9,SPON2	18 (4)
+camptothecin	 	chemical drug	 	0.218	8.39E-03	HLA-B,PLAC8,RSAD2,RSRP1,SYNE1,TAP1	 
+phosphatidylethanolamine	 	chemical - endogenous mammalian	 	 	8.67E-03	STAT1	 
+CpG 10101	 	chemical drug	 	 	8.67E-03	STAT1	 
+GNLY	-0.658	other	 	 	8.67E-03	CCL5	 
+miR-515-3p (and other miRNAs w/seed AGUGCCU)	 	mature microRNA	 	 	8.67E-03	BTG1	 
+miR-376a-5p (miRNAs w/seed UAGAUUC)	 	mature microRNA	 	 	8.67E-03	SRSF11	 
+MKNK2	 	kinase	 	 	8.67E-03	ISG15	 
+MLST8	 	other	 	 	8.67E-03	ISG15	 
+SIGLEC10	 	other	 	 	8.67E-03	ETS1	 
+Ly6a (includes others)	 	other	 	 	8.67E-03	IGHM	 
+HERC5	 	enzyme	 	 	8.67E-03	CCL5	 
+umbralisib	 	chemical drug	 	 	8.67E-03	EIF4B	 
+polyhydroxyethyl methacrylate	 	chemical reagent	 	 	8.67E-03	CALR	 
+fomepizole	 	chemical drug	 	 	8.67E-03	CCL5	 
+(S)-duloxetine	 	chemical drug	 	 	8.67E-03	ACTB	 
+ropivacaine	 	chemical drug	 	 	8.67E-03	MBP	 
+taprostene	 	chemical reagent	 	 	8.67E-03	TSC22D3	 
+phloretin	 	chemical - endogenous non-mammalian	 	 	8.67E-03	TXNIP	 
+glyphosate	 	chemical toxicant	 	 	8.67E-03	S100A9	 
+NFKBIA	 	transcription regulator	 	0.025	9.11E-03	CCL5,CYBA,GZMB,ISG15,S100A9	28 (6)
+PGR	 	ligand-dependent nuclear receptor	 	-1.000	9.20E-03	AKAP13,BTG1,STAT1,TSC22D3	 
+NLRX1	 	other	 	 	9.27E-03	OAS1,STAT1	 
+GFI1	 	transcription regulator	 	 	9.29E-03	ETS1,RUNX3,STAT1	5 (2)
+26s Proteasome	 	complex	 	 	9.81E-03	RUNX3,STAT1,TXNIP	 
+SMARCA4	 	transcription regulator	 	 	9.96E-03	AHNAK,ARL4C,HLA-B,IGHG1,MBP,TAP1	 
+RTN4	 	other	 	 	9.99E-03	MBP,STAT1	 
+Nr1h	 	group	 	 	1.02E-02	CCL5,RUNX3,TAP1	 
+Pam3-Cys-Ser-Lys4	 	chemical reagent	 	 	1.03E-02	AKAP13,CCL5,STAT1	 
+Tgf beta	 	group	 	0.000	1.04E-02	CCL5,CX3CR1,GZMB,RUNX3	 
+alitretinoin	 	chemical drug	 	 	1.07E-02	COX4I1,ISG15,RUNX3	 
+CASP8	 	peptidase	 	 	1.07E-02	ISG15,S100A9	 
+NKX3-1	 	transcription regulator	 	 	1.07E-02	CX3CR1,ETS1	 
+HDL	 	complex	 	 	1.11E-02	CCL5,CX3CR1	 
+IL2RG	 	transmembrane receptor	 	 	1.11E-02	ETS1,IGHM	 
+Ccl2	 	cytokine	 	 	1.11E-02	CCL5,ETS1	 
+cardiotoxin	 	chemical - other	 	 	1.15E-02	B2M,CCL5,S100A9	 
+BIRC5	 	other	 	 	1.15E-02	IGHG1,IGHM	 
+PTPN6	 	phosphatase	 	 	1.15E-02	ETS1,IGHM	 
+chitinase	 	group	 	 	1.15E-02	CCL5	 
+CACTIN	 	other	 	 	1.15E-02	CCL5	 
+IRF3-IRF7	 	complex	 	 	1.15E-02	CCL5	 
+DNAJB4	 	other	 	 	1.15E-02	STAT1	 
+GJB6	 	transporter	 	 	1.15E-02	MBP	 
+NLN	 	peptidase	 	 	1.15E-02	COX4I1	 
+MAF1	 	other	 	 	1.15E-02	ACTB	 
+TRIL	 	other	 	 	1.15E-02	CCL5	 
+GATAD2A	 	transcription regulator	 	 	1.15E-02	S100A9	 
+XRN2	 	enzyme	 	 	1.15E-02	ACTB	 
+LARP1	 	translation regulator	 	 	1.15E-02	PABPC1	 
+CTSD	 	peptidase	 	 	1.15E-02	EEF2	 
+UFD1	 	peptidase	 	 	1.15E-02	CCL5	 
+miR-330-5p (and other miRNAs w/seed CUCUGGG)	 	mature microRNA	 	 	1.15E-02	ETS1	 
+NPLOC4	 	other	 	 	1.15E-02	CCL5	 
+KPNA1	 	transporter	 	 	1.15E-02	STAT1	 
+ARSA	 	enzyme	 	 	1.15E-02	MBP	 
+PDIA3	 	peptidase	 	 	1.15E-02	FCGR3A/FCGR3B	 
+DCC	 	transmembrane receptor	 	 	1.15E-02	MBP	 
+ATP2A1	 	transporter	 	 	1.15E-02	CALR	 
+BICD2	 	other	 	 	1.15E-02	STAT1	 
+Pou3f1	 	transcription regulator	 	 	1.15E-02	MBP	 
+TXN2	 	enzyme	 	 	1.15E-02	CYBA	 
+unsaturated guluronate oligosaccharide	 	chemical reagent	 	 	1.15E-02	FCGR3A/FCGR3B	 
+CC-122	 	chemical drug	 	 	1.15E-02	IFIT3	 
+pegintron	 	biologic drug	 	 	1.15E-02	ISG15	 
+sodium alum	 	chemical drug	 	 	1.15E-02	TPT1	 
+sertindole	 	chemical drug	 	 	1.15E-02	ACTB	 
+D-Pen-2,5-enkephalin	 	chemical reagent	 	 	1.15E-02	GZMB	 
+succinylacetone	 	chemical - endogenous mammalian	 	 	1.15E-02	CYBA	 
+PAX5	 	transcription regulator	 	 	1.19E-02	MSN,TXNIP	 
+Pln	 	other	 	 	1.19E-02	ACTB,RACK1	 
+Ap1	 	complex	 	 	1.22E-02	CCL5,ETS1,GZMB	 
+CpG ODN 1668	 	chemical reagent	 	 	1.23E-02	ISG15,STAT1	 
+SP2509	 	chemical reagent	 	-0.218	1.27E-02	CCL5,EIF4B,MSN,RBM39	 
+JUN	 	transcription regulator	 	 	1.27E-02	BTG1,EEF2,HLA-B,MBP,STAT1	 
+IL10RA	 	transmembrane receptor	 	-1.000	1.28E-02	CCL5,RSAD2,STAT1,TAP1	 
+Salmonella enterica serotype abortus equi lipopolysaccharide	 	chemical toxicant	 	 	1.31E-02	CCL5,ISG15,PLAC8	 
+AIRE	 	transcription regulator	 	 	1.31E-02	CCL5,S100A9	 
+5-azacytidine	 	chemical drug	 	 	1.33E-02	CALR,PNRC1,RUNX3	 
+PTH	 	other	 	 	1.35E-02	AHNAK,CYBA,EIF4B	 
+TNFRSF8	 	transmembrane receptor	 	 	1.36E-02	AHNAK,GZMB	 
+FLI1	 	transcription regulator	 	 	1.36E-02	CCL5,RACK1	 
+CUX1	 	transcription regulator	 	 	1.36E-02	CCL5,HLA-B	 
+mitomycin C	 	chemical drug	 	 	1.36E-02	MALAT1,SRSF5	 
+MAPK8	 	kinase	 	 	1.37E-02	CCL5,ETS1,TSC22D3	 
+SIN3A	 	transcription regulator	 	 	1.40E-02	S100A9,TXNIP	 
+teniposide	 	chemical drug	 	 	1.44E-02	CCL5	 
+chondroitin sulfate E	 	chemical - endogenous mammalian	 	 	1.44E-02	CALR	 
+IFN alpha receptor	 	complex	 	 	1.44E-02	MX1	 
+olmesartan	 	chemical drug	 	 	1.44E-02	CYBA	 
+propolis	 	biologic drug	 	 	1.44E-02	CCL5	 
+SPINDOC	 	other	 	 	1.44E-02	IFI44L	 
+CC2D1A	 	transcription regulator	 	 	1.44E-02	CCL5	 
+BUD23	 	enzyme	 	 	1.44E-02	TSC22D3	 
+HLA-DR	 	complex	 	 	1.44E-02	IGHM	 
+G6PC3	 	phosphatase	 	 	1.44E-02	CYBA	 
+MCOLN2	 	ion channel	 	 	1.44E-02	CCL5	 
+RAP1B	 	enzyme	 	 	1.44E-02	CCL5	 
+miR-292b-5p (and other miRNAs w/seed CUCAAAA)	 	mature microRNA	 	 	1.44E-02	BTG1	 
+ADAM8	 	peptidase	 	 	1.44E-02	CCL5	 
+AQP3	 	transporter	 	 	1.44E-02	CCL5	 
+SPIN1	 	other	 	 	1.44E-02	IFI44L	 
+SPRY4	 	other	 	 	1.44E-02	ISG15	 
+talazoparib	 	chemical drug	 	 	1.44E-02	CCL5	 
+RFXANK	 	transcription regulator	 	 	1.44E-02	HLA-B	 
+fluticasone	 	chemical drug	 	 	1.44E-02	CCL5	 
+atenolol	 	chemical drug	 	 	1.44E-02	B2M	 
+sodium azide	 	chemical toxicant	 	 	1.44E-02	TXNIP	 
+BCL3	 	transcription regulator	 	 	1.44E-02	CCL5,IGHM	 
+DNMT3B	 	enzyme	 	 	1.45E-02	ACTB,CCL5,STAT1	 
+SNCA	 	enzyme	Activated	2.000	1.47E-02	ISG15,MX1,PLAC8,RSAD2	 
+CD247	 	transmembrane receptor	 	 	1.49E-02	CYBA,XAF1	 
+PLN	 	transporter	 	 	1.49E-02	ACTB,RACK1	 
+napabucasin	 	chemical drug	 	 	1.49E-02	ACTB,B2M	 
+Sn50 peptide	 	chemical toxicant	 	 	1.49E-02	GZMB,RACK1	 
+HOXA9	 	transcription regulator	 	 	1.50E-02	AKAP13,SRSF11,TSC22D3	 
+LEPR	 	transmembrane receptor	 	 	1.50E-02	BTG1,MBP,TSC22D3	 
+MUC1	 	other	 	 	1.53E-02	IFIT3,STAT1	 
+birabresib	 	chemical drug	 	 	1.53E-02	IFI44,IFI44L	 
+oxaliplatin	 	chemical drug	 	 	1.53E-02	STAT1,TMSB10/TMSB4X	 
+Go 6976	 	chemical - kinase inhibitor	 	 	1.53E-02	CCL5,ETS1	 
+S100A8	 	other	 	 	1.57E-02	GZMB,ISG15,TXNIP	 
+trans-hydroxytamoxifen	 	chemical drug	 	 	1.57E-02	BTG1,CYBA,STAT1	 
+infliximab	 	biologic drug	 	 	1.58E-02	GNLY,GZMB	 
+MBD2	 	transcription regulator	 	 	1.58E-02	ACTB,IGHM	 
+NR3C1	 	ligand-dependent nuclear receptor	 	 	1.58E-02	ACTB,B2M,BTG1,CCL5,ISG15,TSC22D3	 
+2-(4-amino-1-isopropyl-1H-pyrazolo[3,4-d]pyrimidin-3-yl)-1H-indol-5-ol	 	chemical reagent	 	 	1.59E-02	AKAP13,BTG1,TXNIP	 
+KLF2	 	transcription regulator	 	 	1.59E-02	CCL5,CX3CR1,STAT1	 
+cytarabine	 	chemical drug	 	 	1.62E-02	CCL5,GZMB	 
+thyroid hormone	 	chemical - endogenous mammalian	 	 	1.66E-02	IGHM,MBP,STAT1	 
+Z-LLL-CHO	 	chemical - protease inhibitor	 	1.000	1.67E-02	ACTB,CCL5,ETS1,STAT1	 
+ionomycin	 	chemical reagent	 	 	1.71E-02	AHNAK,ETS1,GZMB	 
+mir-133	 	microRNA	 	 	1.71E-02	MALAT1,MSN	 
+CTLA4	 	transmembrane receptor	 	 	1.71E-02	FGFBP2,GZMB	 
+C3	 	peptidase	 	 	1.71E-02	CCL5,IGHG1	 
+pervanadate	 	chemical reagent	 	 	1.73E-02	MX1	 
+MALSU1	 	other	 	 	1.73E-02	COX4I1	 
+Fcgr2	 	group	 	 	1.73E-02	CCL5	 
+5R-hydroxytriptolide	 	chemical drug	 	 	1.73E-02	STAT1	 
+ZNF395	 	other	 	 	1.73E-02	IFI44	 
+IGLL1/IGLL5	 	other	 	 	1.73E-02	IGHM	 
+CSRP3	 	other	 	 	1.73E-02	TXNIP	 
+CD79B	 	transmembrane receptor	 	 	1.73E-02	IGHM	 
+XPC	 	other	 	 	1.73E-02	MBP	 
+OPRD1	 	G-protein coupled receptor	 	 	1.73E-02	GZMB	 
+WIF1	 	other	 	 	1.73E-02	MALAT1	 
+ATP2B2	 	transporter	 	 	1.73E-02	CALR	 
+GJA8	 	transporter	 	 	1.73E-02	CALR	 
+IL12RB1	 	transmembrane receptor	 	 	1.73E-02	OAS2	 
+CD226	 	other	 	 	1.73E-02	GZMB	 
+HLA-B	-0.355	transmembrane receptor	 	 	1.73E-02	OAS2	 
+Ifna4	 	other	 	 	1.73E-02	ISG15	 
+VTX-2337	 	chemical drug	 	 	1.73E-02	GZMB	 
+UDP-D-glucose	 	chemical - endogenous mammalian	 	 	1.73E-02	CALR	 
+poly(U)RNA	 	chemical reagent	 	 	1.73E-02	MX1	 
+PDX1	 	transcription regulator	 	 	1.76E-02	ACTB,RSAD2,TXNIP	 
+2-deoxyglucose	 	chemical drug	 	 	1.76E-02	CCL5,TXNIP	 
+lysophosphatidylcholine	 	chemical - other	 	 	1.81E-02	CCL5,MBP	 
+CDK4/6	 	group	 	 	1.81E-02	AHNAK,BCLAF1	 
+GDNF	 	growth factor	 	 	1.81E-02	ACTB,EEF2	 
+MAP2K3	 	kinase	 	 	1.81E-02	ISG15,STAT1	 
+GNA14	 	enzyme	 	 	1.86E-02	FCGR3A/FCGR3B,STAT1	 
+RORA	 	ligand-dependent nuclear receptor	 	 	1.88E-02	ACTB,CCL5,S100A9	 
+AGER	 	transmembrane receptor	 	 	1.91E-02	S100A9,TXNIP	 
+TRAF3IP2	 	other	 	 	1.91E-02	CCL5,ISG15	 
+methylprednisolone	 	chemical drug	 	0.000	1.94E-02	B2M,BTG1,PNRC1,STAT1,TMSB10/TMSB4X	 
+TREM1	 	transmembrane receptor	 	 	1.98E-02	CCL5,ISG15,PLAC8	 
+cocaine	 	chemical drug	 	 	2.01E-02	MX1,OAS1,STAT1	 
+lactacystin	 	chemical - protease inhibitor	 	 	2.01E-02	ACTB,HLA-B,ZFP36L2	 
+ST6GALNAC1	 	enzyme	 	 	2.01E-02	B2M	 
+ATE1	 	enzyme	 	 	2.01E-02	ACTB	 
+ZNF746	 	transcription regulator	 	 	2.01E-02	COX4I1	 
+MRPL14	 	other	 	 	2.01E-02	COX4I1	 
+KMT5B	 	enzyme	 	 	2.01E-02	TSC22D3	 
+ST8SIA4	 	enzyme	 	 	2.01E-02	MBP	 
+LDHB	 	enzyme	 	 	2.01E-02	COX4I1	 
+CASQ2	 	other	 	 	2.01E-02	CALR	 
+TRIM8	 	other	 	 	2.01E-02	CCL5	 
+CLIC4	 	ion channel	 	 	2.01E-02	CCL5	 
+THOC1	 	transcription regulator	 	 	2.01E-02	CALR	 
+USP21	 	peptidase	 	 	2.01E-02	ISG15	 
+Ptgs2os2	 	other	 	 	2.01E-02	CCL5	 
+MRC1	 	transmembrane receptor	 	 	2.01E-02	CCL5	 
+KLRB1	 	transmembrane receptor	 	 	2.01E-02	CCL5	 
+Klrk1	 	transmembrane receptor	 	 	2.01E-02	CCL5	 
+CLEC2A	 	other	 	 	2.01E-02	CCL5	 
+CD79A	 	transmembrane receptor	 	 	2.01E-02	IGHM	 
+dacarbazine	 	chemical drug	 	 	2.01E-02	CCL5	 
+dBET6	 	chemical reagent	 	 	2.01E-02	ARL4C	 
+vinorelbine	 	chemical drug	 	 	2.01E-02	CCL5	 
+MAP2K6	 	kinase	 	 	2.05E-02	ISG15,STAT1	 
+CXCL12	 	cytokine	 	 	2.06E-02	CCL5,HLA-B,RUNX3	 
+curcumin	 	chemical drug	 	 	2.07E-02	CCL5,ETS1,TPT1,TSC22D3	 
+cerivastatin	 	chemical drug	 	 	2.11E-02	S100A9,TMSB10/TMSB4X	 
+CG	 	complex	 	-0.996	2.15E-02	ACTB,B2M,BTG1,IFIT3	 
+CCL5	-0.302	cytokine	 	 	2.16E-02	CCL5,STAT1	 
+budesonide	 	chemical drug	 	 	2.21E-02	CCL5,TSC22D3	 
+enterotoxin B	 	biologic drug	 	 	2.21E-02	CCL5,RSAD2	 
+CBFB	 	transcription regulator	 	 	2.21E-02	ARL4C,RUNX3	 
+DYSF	 	other	 	 	2.21E-02	B2M,CYBA	 
+fenretinide	 	chemical drug	 	 	2.21E-02	GZMB,STAT1	 
+ERG	 	transcription regulator	 	 	2.26E-02	ETS1,PLEK,TSC22D3	 
+RETNLB	 	other	 	 	2.26E-02	CCL5,MSN	 
+tocilizumab	 	biologic drug	 	 	2.30E-02	CCL5	 
+CpG ODN 1585	 	chemical reagent	 	 	2.30E-02	SPON2	 
+CYTOR	 	other	 	 	2.30E-02	STAT1	 
+cyanidin 3-O-glucoside	 	chemical - endogenous non-mammalian	 	 	2.30E-02	CCL5	 
+HDAC11	 	transcription regulator	 	 	2.30E-02	ISG15	 
+DEPTOR	 	other	 	 	2.30E-02	CCL5	 
+Lefty	 	group	 	 	2.30E-02	ETS1	 
+ATXN2	 	other	 	 	2.30E-02	PABPC1	 
+ABCC1	 	transporter	 	 	2.30E-02	CYBA	 
+LITAF	 	transcription regulator	 	 	2.30E-02	CCL5	 
+HDAC10	 	transcription regulator	 	 	2.30E-02	TXNIP	 
+CD8A	 	other	 	 	2.30E-02	IGHM	 
+U1 snRNP	 	complex	 	 	2.30E-02	CCL5	 
+CD5L	 	transmembrane receptor	 	 	2.30E-02	CCL5	 
+IL22RA2	 	transmembrane receptor	 	 	2.30E-02	HLA-B	 
+mir-326	 	microRNA	 	 	2.30E-02	ETS1	 
+GAL3ST1	 	enzyme	 	 	2.30E-02	MBP	 
+BACE1	 	peptidase	 	 	2.30E-02	MBP	 
+CCDC80	 	other	 	 	2.30E-02	BCLAF1	 
+filgotinib	 	chemical drug	 	 	2.30E-02	MX1	 
+NCR3	 	transmembrane receptor	 	 	2.30E-02	CCL5	 
+vadimezan	 	chemical drug	 	 	2.30E-02	CCL5	 
+myxothiazol	 	chemical toxicant	 	 	2.30E-02	TXNIP	 
+lacto-N-fucopentaose III	 	chemical - endogenous mammalian	 	 	2.30E-02	IGHG1	 
+USF1	 	transcription regulator	 	 	2.31E-02	B2M,TXNIP	 
+CpG ODN 1826	 	chemical reagent	 	 	2.31E-02	CCL5,CYBA	 
+dehydroisoandrosterone	 	chemical - endogenous mammalian	 	 	2.31E-02	B2M,RACK1	 
+FOS	 	transcription regulator	 	-1.067	2.34E-02	CCL5,HLA-B,MALAT1,S100A9,XAF1	 
+ERBB2	 	kinase	 	-1.969	2.35E-02	ACTB,AHNAK,CCL5,PLAC8,TAP1,ZFP36L2	 
+FLT1	 	kinase	 	 	2.37E-02	EIF4B,HLA-B	 
+sodium chloride	 	chemical - endogenous mammalian	 	 	2.37E-02	CCL5,CYBA	 
+FN1	 	enzyme	 	 	2.37E-02	CCL5,EIF4B,HLA-B	 
+CHUK	 	kinase	 	 	2.40E-02	CCL5,CYBA,ISG15	 
+tunicamycin	 	chemical - endogenous non-mammalian	 	 	2.40E-02	CALR,ETS1,TXNIP	 
+CNTF	 	cytokine	 	 	2.48E-02	ACTB,STAT1	 
+CFTR	 	ion channel	 	 	2.48E-02	CCL5,STAT1	 
+Jnk	 	group	 	 	2.49E-02	BTG1,CCL5,ETS1	 
+LDLR	 	transporter	 	 	2.49E-02	CCL5,CX3CR1,TAP1	 
+tetrachlorodibenzodioxin	 	chemical toxicant	 	 	2.51E-02	BTG1,CCL5,IGHM,S100A9	 
+isobutylmethylxanthine	 	chemical toxicant	 	 	2.52E-02	COX4I1,IFIT3,STAT1	 
+RAF1	 	kinase	 	 	2.52E-02	BTG1,TXNIP,ZFP36L2	 
+ALKBH5	 	enzyme	 	 	2.53E-02	AKAP13,MBP	 
+5-O-mycolyl-beta-araf-(1->2)-5-O-mycolyl-alpha-araf-(1->1')-glycerol	 	chemical - endogenous non-mammalian	 	 	2.53E-02	CX3CR1,IFIT3	 
+ITK	 	kinase	 	 	2.53E-02	CCL5,CX3CR1	 
+S6K1	 	group	 	 	2.58E-02	BTG1	 
+NAALADL2	 	other	 	 	2.58E-02	SPON2	 
+salmonella typhimurium lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	2.58E-02	CCL5	 
+NEK7	 	kinase	 	 	2.58E-02	ISG15	 
+Ferritin	 	complex	 	 	2.58E-02	CCL5	 
+BCKDK	 	kinase	 	 	2.58E-02	MBP	 
+AZD8055	 	chemical drug	 	 	2.58E-02	CCL5	 
+CD244	 	transmembrane receptor	 	 	2.58E-02	CCL5	 
+PSMB9	 	peptidase	 	 	2.58E-02	TAP1	 
+PDGF (family)	 	group	 	 	2.58E-02	CALR	 
+SOX8	 	transcription regulator	 	 	2.58E-02	MBP	 
+RPS6KB2	 	kinase	 	 	2.58E-02	ISG15	 
+MSH2	 	enzyme	 	 	2.58E-02	IGHG1	 
+EIF3A	 	other	 	 	2.58E-02	ISG15	 
+GLIS1	 	transcription regulator	 	 	2.58E-02	S100A9	 
+DDB1	 	other	 	 	2.58E-02	STAT1	 
+ACTG1	 	other	 	 	2.58E-02	ACTB	 
+sapanisertib	 	chemical drug	 	 	2.58E-02	PABPC1	 
+HA900	 	chemical reagent	 	 	2.58E-02	CCL5	 
+raltitrexed	 	chemical drug	 	 	2.58E-02	TMSB10/TMSB4X	 
+PD 168393	 	chemical - kinase inhibitor	 	 	2.58E-02	CCL5	 
+RP 73401	 	chemical toxicant	 	 	2.58E-02	STAT1	 
+NPC1	 	transporter	 	 	2.59E-02	S100A9,STAT1	 
+PIK3R1	 	kinase	 	 	2.59E-02	ISG15,TXNIP	 
+MAFB	 	transcription regulator	 	 	2.59E-02	ACTB,CAP1	 
+LYN	 	kinase	 	 	2.59E-02	CCL5,ETS1	 
+NFYA	 	transcription regulator	 	 	2.64E-02	CALR,TXNIP	 
+LCN2	 	transporter	 	 	2.70E-02	CCL5,MSN	 
+NEDD9	 	other	 	 	2.70E-02	PLAC8,TXNIP	 
+COL18A1	 	other	 	 	2.76E-02	ETS1,STAT1	 
+4-phenylbutyric acid	 	chemical - endogenous mammalian	 	 	2.76E-02	CALR,CCL5	 
+ZFP36	 	transcription regulator	 	 	2.81E-02	PNRC1,S100A9	 
+Stat1-Stat2	 	complex	 	 	2.86E-02	OAS1	 
+IRF	 	group	 	 	2.86E-02	ISG15	 
+NEIL2	 	enzyme	 	 	2.86E-02	ACTB	 
+IFNL2	 	other	 	 	2.86E-02	MX1	 
+B4GALT6	 	enzyme	 	 	2.86E-02	CCL5	 
+BCO2	 	enzyme	 	 	2.86E-02	SPON2	 
+SARM1	 	transmembrane receptor	 	 	2.86E-02	CCL5	 
+TAF5	 	transcription regulator	 	 	2.86E-02	ACTB	 
+EEF1A2	 	translation regulator	 	 	2.86E-02	CYBA	 
+LAIR1	 	transmembrane receptor	 	 	2.86E-02	MX1	 
+ANG	 	enzyme	 	 	2.86E-02	CCL5	 
+LGALS8	 	other	 	 	2.86E-02	CCL5	 
+SEMA4D	 	transmembrane receptor	 	 	2.86E-02	IGHG1	 
+HSD11B2	 	enzyme	 	 	2.86E-02	TSC22D3	 
+CNBP	 	transcription regulator	 	 	2.86E-02	PABPC1	 
+PDE4B	 	enzyme	 	 	2.86E-02	CCL5	 
+NCR1	 	transmembrane receptor	 	 	2.86E-02	CCL5	 
+N4BP1	 	other	 	 	2.86E-02	HLA-B	 
+SLC6A1	 	transporter	 	 	2.86E-02	STAT1	 
+PCBP2	 	other	 	 	2.86E-02	STAT1	 
+ATF5	 	transcription regulator	 	 	2.86E-02	TXNIP	 
+S100P	 	other	 	 	2.86E-02	ACTB	 
+candesartan cilexetil	 	chemical drug	 	 	2.86E-02	CYBA	 
+NF 449	 	chemical reagent	 	 	2.86E-02	GZMB	 
+IC87114	 	chemical - kinase inhibitor	 	 	2.86E-02	CCL5	 
+SU1498	 	chemical - kinase inhibitor	 	 	2.86E-02	ETS1	 
+CCL2	 	cytokine	 	 	2.87E-02	CCL5,STAT1	 
+TRAF3	 	enzyme	 	 	2.87E-02	CCL5,ISG15	 
+6-hydroxydopamine	 	chemical toxicant	 	 	2.87E-02	CALR,CCL5	 
+sphingosine-1-phosphate	 	chemical - endogenous mammalian	 	 	2.93E-02	CCL5,ETS1	 
+XBP1	 	transcription regulator	 	 	2.95E-02	CALR,CCL5,ETS1	 
+palmitic acid	 	chemical - endogenous mammalian	 	 	2.95E-02	CCL5,CYBA,TXNIP	 
+AG490	 	chemical - kinase inhibitor	 	 	2.99E-02	CCL5,STAT1	 
+trinitrobenzenesulfonic acid	 	chemical reagent	 	 	3.05E-02	CCL5,S100A9	 
+TAF4	 	transcription regulator	 	 	3.11E-02	ETS1,OAS1	 
+azathioprine	 	chemical drug	 	 	3.14E-02	CALR	 
+C9orf72	 	other	 	 	3.14E-02	NEAT1	 
+CERS2	 	transcription regulator	 	 	3.14E-02	MBP	 
+ZFP57	 	transcription regulator	 	 	3.14E-02	MBP	 
+Traj18	 	other	 	 	3.14E-02	CCL5	 
+Gcn5l	 	group	 	 	3.14E-02	B2M	 
+MCL1	 	transporter	 	 	3.14E-02	TPT1	 
+MED14	 	transcription regulator	 	 	3.14E-02	ISG15	 
+VASP	 	other	 	 	3.14E-02	STAT1	 
+miR-196a-5p (and other miRNAs w/seed AGGUAGU)	 	mature microRNA	 	 	3.14E-02	S100A9	 
+miR-208a-3p (and other miRNAs w/seed UAAGACG)	 	mature microRNA	 	 	3.14E-02	ETS1	 
+miR-193a-3p (and other miRNAs w/seed ACUGGCC)	 	mature microRNA	 	 	3.14E-02	ETS1	 
+miR-142-3p (and other miRNAs w/seed GUAGUGU)	 	mature microRNA	 	 	3.14E-02	BCLAF1	 
+Igha	 	other	 	 	3.14E-02	IGHM	 
+WWP2	 	enzyme	 	 	3.14E-02	CCL5	 
+TNNI3	 	transporter	 	 	3.14E-02	CCL5	 
+RNF216	 	enzyme	 	 	3.14E-02	ISG15	 
+CHRNA3	 	transmembrane receptor	 	 	3.14E-02	STAT1	 
+I-BET-151	 	chemical reagent	 	 	3.14E-02	NEAT1	 
+zileuton	 	chemical drug	 	 	3.14E-02	CCL5	 
+terbutaline	 	chemical drug	 	 	3.14E-02	IGHG1	 
+phospholipid	 	chemical - endogenous mammalian	 	 	3.14E-02	CCL5	 
+zeaxanthin	 	chemical drug	 	 	3.14E-02	SPON2	 
+MITF	 	transcription regulator	 	 	3.19E-02	GZMB,MBP,TXNIP	 
+allopurinol	 	chemical drug	 	 	3.23E-02	TMSB10/TMSB4X,TXNIP	 
+actinomycin D	 	biologic drug	 	 	3.25E-02	ACTB,ETS1,TAP1	 
+estrogen receptor	 	group	 	 	3.29E-02	ETS1,MSN,TSC22D3	 
+bee venom	 	chemical - endogenous non-mammalian	 	 	3.29E-02	CCL5,MSN	 
+miR-146a-5p (and other miRNAs w/seed GAGAACU)	 	mature microRNA	 	 	3.29E-02	MBP,STAT1	 
+ETV5	 	transcription regulator	 	 	3.29E-02	AHNAK,MSN	 
+TNFSF10	 	cytokine	 	 	3.41E-02	ISG15,STAT1	 
+PTGDR2	 	G-protein coupled receptor	 	 	3.42E-02	CCL5	 
+MTORC2	 	complex	 	 	3.42E-02	ISG15	 
+PELI1	 	enzyme	 	 	3.42E-02	CCL5	 
+STAR	 	transporter	 	 	3.42E-02	CCL5	 
+mir-379	 	microRNA	 	 	3.42E-02	TXNIP	 
+RB1CC1	 	other	 	 	3.42E-02	CCL5	 
+PIK3R2	 	kinase	 	 	3.42E-02	ISG15	 
+CACNA1A	 	ion channel	 	 	3.42E-02	BTG1	 
+4-octyl itaconate	 	chemical reagent	 	 	3.42E-02	ISG15	 
+NAD+	 	chemical - endogenous mammalian	 	 	3.42E-02	TXNIP	 
+buthionine sulfoximine	 	chemical drug	 	 	3.42E-02	EEF2	 
+NS-398	 	chemical reagent	 	 	3.48E-02	CCL5,S100A9	 
+INSIG1	 	other	 	 	3.60E-02	CCL5,S100A9	 
+ATF3	 	transcription regulator	 	 	3.67E-02	CCL5,RSAD2	 
+IKZF1	 	transcription regulator	 	 	3.68E-02	B2M,IFIT3,TXNIP	 
+desoxycorticosterone	 	chemical - endogenous mammalian	 	 	3.70E-02	CYBA	 
+TRIM38	 	other	 	 	3.70E-02	CCL5	 
+CREB3L2	 	transcription regulator	 	 	3.70E-02	MX1	 
+SAMHD1	 	enzyme	 	 	3.70E-02	MX1	 
+BCO1	 	enzyme	 	 	3.70E-02	SPON2	 
+PLA2G2D	 	enzyme	 	 	3.70E-02	S100A9	 
+ATXN3	 	peptidase	 	 	3.70E-02	ISG15	 
+LAMA2	 	other	 	 	3.70E-02	MBP	 
+CXCL3	 	cytokine	 	 	3.70E-02	CCL5	 
+OPRM1	 	G-protein coupled receptor	 	 	3.70E-02	GZMB	 
+ANGPTL4	 	other	 	 	3.70E-02	STAT1	 
+POU3F1	 	transcription regulator	 	 	3.70E-02	MBP	 
+CCL3L3	 	cytokine	 	 	3.70E-02	CCL5	 
+SIRPA	 	phosphatase	 	 	3.70E-02	CCL5	 
+6-aminopyrazolopyrimidine derivative compound II	 	chemical - kinase inhibitor	 	 	3.70E-02	ISG15	 
+[D-Ala2,N-Me-Phe4,Gly5-ol]-Enkephalin	 	chemical reagent	 	 	3.70E-02	CCL5	 
+TNFSF12	 	cytokine	 	 	3.73E-02	CCL5,S100A9	 
+MMP3	 	peptidase	 	 	3.80E-02	ADAR,RBM39	 
+doxorubicin	 	chemical drug	 	0.762	3.80E-02	BTG1,RBM39,STAT1,TAP1	 
+5-N-ethylcarboxamido adenosine	 	chemical reagent	 	 	3.86E-02	IFIT3,TXNIP	 
+phenethyl isothiocyanate	 	chemical drug	 	 	3.86E-02	EEF2,IFIT3	 
+NFkB (complex)	 	complex	 	-0.213	3.90E-02	CCL5,ETS1,ISG15,RSAD2,TAP1	 
+Mapk	 	group	 	 	3.93E-02	GZMB,STAT1	 
+VIP	 	other	 	 	3.93E-02	CCL5,IGHG1	 
+CD24	 	other	 	 	3.93E-02	BCLAF1,SYNE2	 
+metribolone	 	chemical reagent	 	-1.000	3.96E-02	B2M,COX4I1,SPON2,TXNIP	 
+Ginkgo biloba	 	chemical drug	 	 	3.98E-02	CCL5	 
+carfilzomib	 	biologic drug	 	 	3.98E-02	EIF4B	 
+IFNA17	 	cytokine	 	 	3.98E-02	MX1	 
+SURF1	 	enzyme	 	 	3.98E-02	COX4I1	 
+N(2)-(gamma-D-glutamyl)-meso-2,2'-diaminopimelic acid	 	chemical reagent	 	 	3.98E-02	CCL5	 
+SCAVENGER receptor CLASS A	 	group	 	 	3.98E-02	CCL5	 
+RMRP	 	other	 	 	3.98E-02	RSAD2	 
+SPHK2	 	kinase	 	 	3.98E-02	CCL5	 
+TRAF4	 	other	 	 	3.98E-02	CCL5	 
+LAMC1	 	other	 	 	3.98E-02	MBP	 
+VCP	 	enzyme	 	 	3.98E-02	CCL5	 
+ADAM15	 	peptidase	 	 	3.98E-02	CCL5	 
+DMH1	 	chemical reagent	 	 	3.98E-02	CCL5	 
+picryl chloride	 	chemical toxicant	 	 	3.98E-02	IGHG1	 
+muromonab-CD3	 	biologic drug	 	 	3.98E-02	GZMB	 
+albuterol	 	chemical drug	 	 	3.98E-02	CCL5	 
+E. coli B5 lipopolysaccharide	 	chemical - endogenous non-mammalian	 	 	4.02E-02	B2M,CCL5,CX3CR1	 
+PI3K (family)	 	group	 	 	4.19E-02	ISG15,TXNIP	 
+LDL	 	complex	 	 	4.25E-02	CCL5,CX3CR1,MX1	 
+HDAC1	 	transcription regulator	 	 	4.25E-02	CCL5,S100A9,TSC22D3	 
+L-glutamic acid	 	chemical - endogenous mammalian	 	 	4.26E-02	B2M,TAP1	 
+ATP	 	chemical - endogenous mammalian	 	 	4.26E-02	MBP,TXNIP	 
+black raspberry extract	 	chemical drug	 	 	4.26E-02	AHNAK,MSN	 
+mir-1	 	microRNA	 	 	4.26E-02	ADAR,CAP1	 
+KIT	 	transmembrane receptor	 	 	4.26E-02	IFIT3,STAT1	 
+salubrinal	 	chemical reagent	 	 	4.26E-02	CCL5	 
+THRAP3	 	transcription regulator	 	 	4.26E-02	TXNIP	 
+TIFA	 	other	 	 	4.26E-02	CCL5	 
+CLCN5	 	ion channel	 	 	4.26E-02	B2M	 
+AIMP1	 	cytokine	 	 	4.26E-02	CCL5	 
+mir-196	 	microRNA	 	 	4.26E-02	S100A9	 
+miR-128-3p (and other miRNAs w/seed CACAGUG)	 	mature microRNA	 	 	4.26E-02	TXNIP	 
+PTN	 	growth factor	 	 	4.26E-02	MBP	 
+MAPKAP1	 	other	 	 	4.26E-02	OAS2	 
+CAPN3	 	peptidase	 	 	4.26E-02	CCL5	 
+KIF1B	 	transporter	 	 	4.26E-02	XAF1	 
+IL18R1	 	transmembrane receptor	 	 	4.26E-02	STAT1	 
+PDE5A	 	enzyme	 	 	4.26E-02	S100A9	 
+L-685,458	 	chemical - protease inhibitor	 	 	4.26E-02	GZMB	 
+isopentenyl diphosphate	 	chemical - endogenous mammalian	 	 	4.26E-02	FCGR3A/FCGR3B	 
+hydroxyflutamide	 	chemical drug	 	 	4.26E-02	MSN	 
+formoterol	 	chemical drug	 	 	4.26E-02	CALR	 
+D-glucose	 	chemical - endogenous mammalian	 	-0.642	4.32E-02	ACTB,CALR,CAP1,CYBA,TXNIP	 
+CDKN1A	 	kinase	 	 	4.33E-02	ACTB,CAP1,MSN	 
+RICTOR	 	other	 	 	4.45E-02	COX4I1,ISG15,OAS2	 
+L-triiodothyronine	 	chemical - endogenous mammalian	 	-0.900	4.47E-02	ACTB,COX4I1,IGHM,MBP	 
+Tlr	 	group	 	 	4.54E-02	CCL5,STAT1	 
+GC-GCR dimer	 	complex	 	 	4.54E-02	TSC22D3	 
+OMA1	 	peptidase	 	 	4.54E-02	COX4I1	 
+SHARPIN	 	other	 	 	4.54E-02	ISG15	 
+PURA	 	transcription regulator	 	 	4.54E-02	MBP	 
+ZNF148	 	transcription regulator	 	 	4.54E-02	STAT1	 
+H1-2	 	other	 	 	4.54E-02	ACTB	 
+LY96	 	transmembrane receptor	 	 	4.54E-02	CCL5	 
+IGHE	 	other	 	 	4.54E-02	CCL5	 
+TNFRSF12A	 	transmembrane receptor	 	 	4.54E-02	CCL5	 
+CR2	 	transmembrane receptor	 	 	4.54E-02	IGHG1	 
+IL2RB	 	transmembrane receptor	 	 	4.54E-02	ETS1	 
+VIPR1	 	G-protein coupled receptor	 	 	4.54E-02	CCL5	 
+BCL10	 	transcription regulator	 	 	4.54E-02	CCL5	 
+S1PR3	 	G-protein coupled receptor	 	 	4.54E-02	ETS1	 
+Cux1	 	transcription regulator	 	 	4.54E-02	CCL5	 
+tranylcypromine	 	chemical drug	 	 	4.54E-02	CCL5	 
+phenytoin	 	chemical drug	 	 	4.54E-02	CCL5	 
+levodopa	 	chemical - endogenous mammalian	 	-1.342	4.59E-02	ADAR,CAP1,MBP,PLEK,SYNE1	 
+CBX5	 	transcription regulator	 	 	4.61E-02	OAS1,TXNIP	 
+CDKN1B	 	kinase	 	 	4.61E-02	B2M,S100A9	 
+cholecalciferol	 	chemical - endogenous mammalian	 	 	4.61E-02	CCL5,RUNX3	 
+CST5	 	other	 	 	4.65E-02	AHNAK,MSN,NOP53	 
+PTP4A1	 	phosphatase	 	 	4.68E-02	CCL5,EEF2	 
+shikonin	 	chemical drug	 	 	4.82E-02	CCL5	 
+Cyp2c23	 	enzyme	 	 	4.82E-02	CX3CR1	 
+MDK	 	growth factor	 	 	4.82E-02	GZMB	 
+IL-17f dimer	 	complex	 	 	4.82E-02	CCL5	 
+LAMA5	 	other	 	 	4.82E-02	STAT1	 
+TNK1	 	kinase	 	 	4.82E-02	OAS2	 
+FABP5	 	transporter	 	 	4.82E-02	IFIT3	 
+THY1	 	other	 	 	4.82E-02	ETS1	 
+HNRNPU	 	transporter	 	 	4.82E-02	ACTB	 
+KLK5	 	peptidase	 	 	4.82E-02	S100A9	 
+aphidicolin	 	chemical toxicant	 	 	4.82E-02	STAT1	 
+cerulenin	 	chemical drug	 	 	4.82E-02	CCL5	 
+TCF3-PBX1	 	fusion gene/product	 	 	4.82E-02	ARL4C	 
+bombesin	 	chemical - endogenous mammalian	 	 	4.82E-02	SRSF5	 
+iloprost	 	chemical drug	 	 	4.82E-02	CCL5	 
+GW3965	 	chemical reagent	 	 	4.82E-02	CCL5,CX3CR1	 
+IGF1R	 	transmembrane receptor	 	 	4.86E-02	CCL5,COX4I1,ZFP36L2	 
+MIF	 	cytokine	 	 	4.96E-02	GZMB,TRIM22	 
+MYCN	 	transcription regulator	 	 	4.99E-02	ACTB,B2M,EEF2	 
+valproic acid	 	chemical drug	 	1.982	5.09E-02	CALR,GZMB,RUNX3,TSC22D3	 

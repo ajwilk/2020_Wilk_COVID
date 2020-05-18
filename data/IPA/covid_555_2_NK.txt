@@ -1,0 +1,111 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	7.39E00	5.62E-02	NaN	CD3D,CD3G,HLA-C,SYK,TRGV9	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	7.29E00	1.18E-01	NaN	CD3D,CD3G,HLA-C,TRGV9	
+Antiproliferative Role of TOB in T Cell Signaling	7.04E00	1.03E-01	NaN	CD3D,CD3G,PABPC1,TRGV9	
+Type I Diabetes Mellitus Signaling	6.9E00	4.5E-02	1.000	CD3D,CD3G,HLA-C,JAK1,TRGV9	
+Th2 Pathway	6.46E00	3.68E-02	0.447	CD3D,CD3G,IL2RB,JAK1,RUNX3	
+Th1 and Th2 Activation Pathway	5.97E00	2.92E-02	NaN	CD3D,CD3G,IL2RB,JAK1,RUNX3	
+Role of NFAT in Regulation of the Immune Response	5.85E00	2.76E-02	0.447	CD3D,CD3G,FCGR3A/FCGR3B,SYK,TRGV9	
+OX40 Signaling Pathway	5.56E00	4.44E-02	NaN	CD3D,CD3G,HLA-C,TRGV9	
+Systemic Lupus Erythematosus Signaling	5.35E00	2.18E-02	NaN	CD3D,CD3G,FCGR3A/FCGR3B,HLA-C,TRGV9	
+iCOS-iCOSL Signaling in T Helper Cells	5.2E00	3.6E-02	NaN	CD3D,CD3G,IL2RB,TRGV9	
+CD28 Signaling in T Helper Cells	5.06E00	3.33E-02	NaN	CD3D,CD3G,SYK,TRGV9	
+Th1 Pathway	5.05E00	3.31E-02	0.000	CD3D,CD3G,JAK1,RUNX3	
+Hematopoiesis from Pluripotent Stem Cells	4.68E00	6.12E-02	NaN	CD3D,CD3G,TRGV9	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	4.56E00	1.5E-02	NaN	CD3D,CD3G,HLA-C,SYK,TRGV9	
+Cdc42 Signaling	4.5E00	2.4E-02	NaN	CD3D,CD3G,HLA-C,TRGV9	
+Nur77 Signaling in T Lymphocytes	4.43E00	5.08E-02	NaN	CD3D,CD3G,TRGV9	
+IL-2 Signaling	4.39E00	4.92E-02	NaN	IL2RB,JAK1,SYK	
+Dendritic Cell Maturation	4.34E00	2.19E-02	NaN	FCGR3A/FCGR3B,HLA-C,IL32,TRGV9	
+Calcium-induced T Lymphocyte Apoptosis	4.29E00	4.55E-02	NaN	CD3D,CD3G,TRGV9	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	4.23E00	4.35E-02	NaN	IL2RB,JAK1,SYK	
+Natural Killer Cell Signaling	4.22E00	2.03E-02	-1.000	FCGR3A/FCGR3B,HLA-C,IL2RB,SYK	
+IL-15 Signaling	4.12E00	4E-02	NaN	IL2RB,JAK1,SYK	
+CCR5 Signaling in Macrophages	3.83E00	3.19E-02	NaN	CD3D,CD3G,TRGV9	
+Phospholipase C Signaling	3.77E00	1.56E-02	NaN	CD3D,CD3G,SYK,TRGV9	
+PD-1, PD-L1 cancer immunotherapy pathway	3.68E00	2.83E-02	NaN	HLA-C,IL2RB,JAK1	
+Neuroinflammation Signaling Pathway	3.52E00	1.33E-02	-1.000	CX3CR1,HLA-C,JAK1,SYK	
+PKCθ Signaling in T Lymphocytes	3.19E00	1.94E-02	NaN	CD3D,CD3G,TRGV9	
+Interferon Signaling	3.15E00	5.56E-02	NaN	IFITM2,JAK1	
+T Cell Exhaustion Signaling Pathway	3.04E00	1.71E-02	NaN	HLA-C,JAK1,TRGV9	
+Graft-versus-Host Disease Signaling	2.9E00	4.17E-02	NaN	HLA-C,TRGV9	
+Autoimmune Thyroid Disease Signaling	2.88E00	4.08E-02	NaN	HLA-C,TRGV9	
+Allograft Rejection Signaling	2.4E00	2.33E-02	NaN	HLA-C,TRGV9	
+Crosstalk between Dendritic Cells and Natural Killer Cells	2.37E00	2.25E-02	NaN	HLA-C,IL2RB	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	2.37E00	2.25E-02	NaN	CD3D,CD3G	
+Th17 Activation Pathway	2.35E00	2.2E-02	NaN	JAK1,TRGV9	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	2.32E00	2.13E-02	NaN	FCGR3A/FCGR3B,SYK	
+Communication between Innate and Adaptive Immune Cells	2.3E00	2.08E-02	NaN	HLA-C,TRGV9	
+Glucocorticoid Receptor Signaling	2.24E00	8.93E-03	NaN	CD3D,CD3G,JAK1	
+T Cell Receptor Signaling	2.23E00	1.9E-02	NaN	CD3D,CD3G	
+IL-15 Production	2.11E00	1.65E-02	NaN	JAK1,SYK	
+Phagosome Formation	2.08E00	1.6E-02	NaN	FCGR3A/FCGR3B,SYK	
+p70S6K Signaling	2.05E00	1.55E-02	NaN	JAK1,SYK	
+STAT3 Pathway	2.02E00	1.48E-02	NaN	IGF2R,IL2RB	
+Regulation of eIF4 and p70S6K Signaling	1.89E00	1.27E-02	NaN	EIF1,PABPC1	
+Tec Kinase Signaling	1.86E00	1.22E-02	NaN	JAK1,TRGV9	
+PI3K/AKT Signaling	1.8E00	1.14E-02	NaN	IL2RB,JAK1	
+NF-κB Signaling	1.78E00	1.12E-02	NaN	IGF2R,TRGV9	
+Sperm Motility	1.61E00	8.97E-03	NaN	JAK1,SYK	
+EIF2 Signaling	1.6E00	8.93E-03	NaN	EIF1,PABPC1	
+IL-22 Signaling	1.58E00	4.17E-02	NaN	JAK1	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	1.58E00	4.17E-02	NaN	JAK1	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	1.57E00	4E-02	NaN	JAK1	
+Lipid Antigen Presentation by CD1	1.55E00	3.85E-02	NaN	TRGV9	
+IL-9 Signaling	1.45E00	3.03E-02	NaN	JAK1	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	1.44E00	7.27E-03	NaN	JAK1,SYK	
+Role of JAK2 in Hormone-like Cytokine Signaling	1.43E00	2.94E-02	NaN	JAK1	
+Antigen Presentation Pathway	1.38E00	2.56E-02	NaN	HLA-C	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	1.34E00	6.41E-03	NaN	FCGR3A/FCGR3B,IL32	
+Oncostatin M Signaling	1.33E00	2.33E-02	NaN	JAK1	
+iNOS Signaling	1.32E00	2.22E-02	NaN	JAK1	
+Estrogen Receptor Signaling	1.3E00	6.1E-03	NaN	IGF2R,JAK1	
+Primary Immunodeficiency Signaling	1.27E00	2E-02	NaN	CD3D	
+Role of Cytokines in Mediating Communication between Immune Cells	1.24E00	1.85E-02	NaN	IL32	
+EGF Signaling	1.23E00	1.82E-02	NaN	JAK1	
+CNTF Signaling	1.22E00	1.75E-02	NaN	JAK1	
+IL-17A Signaling in Airway Cells	1.16E00	1.54E-02	NaN	JAK1	
+IL-10 Signaling	1.13E00	1.45E-02	NaN	JAK1	
+SPINK1 General Cancer Pathway	1.13E00	1.45E-02	NaN	JAK1	
+Caveolar-mediated Endocytosis Signaling	1.11E00	1.37E-02	NaN	HLA-C	
+T Helper Cell Differentiation	1.11E00	1.37E-02	NaN	TRGV9	
+FcγRIIB Signaling in B Lymphocytes	1.1E00	1.33E-02	NaN	SYK	
+IL-7 Signaling Pathway	1.08E00	1.28E-02	NaN	JAK1	
+IL-3 Signaling	1.08E00	1.27E-02	NaN	JAK1	
+IL-17 Signaling	1.07E00	1.25E-02	NaN	JAK1	
+JAK/Stat Signaling	1.07E00	1.25E-02	NaN	JAK1	
+IL-4 Signaling	1.05E00	1.18E-02	NaN	JAK1	
+PDGF Signaling	1.04E00	1.16E-02	NaN	JAK1	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	1.02E00	1.11E-02	NaN	TRGV9	
+TGF-β Signaling	9.96E-01	1.04E-02	NaN	RUNX3	
+VEGF Signaling	9.83E-01	1.01E-02	NaN	EIF1	
+SAPK/JNK Signaling	9.75E-01	9.8E-03	NaN	TRGV9	
+Mouse Embryonic Stem Cell Pluripotency	9.71E-01	9.71E-03	NaN	JAK1	
+IGF-1 Signaling	9.67E-01	9.62E-03	NaN	JAK1	
+Virus Entry via Endocytic Pathways	9.55E-01	9.35E-03	NaN	HLA-C	
+Telomerase Signaling	9.55E-01	9.35E-03	NaN	IL2RB	
+Pancreatic Adenocarcinoma Signaling	9.47E-01	9.17E-03	NaN	JAK1	
+Glioma Signaling	9.43E-01	9.09E-03	NaN	IGF2R	
+Fc Epsilon RI Signaling	9.17E-01	8.55E-03	NaN	SYK	
+Role of PKR in Interferon Induction and Antiviral Response	9.17E-01	8.55E-03	NaN	JAK1	
+Neuroprotective Role of THOP1 in Alzheimer's Disease	9.17E-01	8.55E-03	NaN	HLA-C	
+Role of NANOG in Mammalian Embryonic Stem Cell Pluripotency	9.1E-01	8.4E-03	NaN	JAK1	
+GP6 Signaling Pathway	9.1E-01	8.4E-03	NaN	SYK	
+PTEN Signaling	8.86E-01	7.94E-03	NaN	IGF2R	
+Iron homeostasis signaling pathway	8.54E-01	7.3E-03	NaN	JAK1	
+PI3K Signaling in B Lymphocytes	8.51E-01	7.25E-03	NaN	SYK	
+Insulin Receptor Signaling	8.45E-01	7.14E-03	NaN	JAK1	
+Phagosome Maturation	8.12E-01	6.62E-03	NaN	HLA-C	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	8.04E-01	6.49E-03	NaN	SYK	
+Necroptosis Signaling Pathway	7.99E-01	6.37E-03	NaN	JAK1	
+B Cell Receptor Signaling	7.33E-01	5.41E-03	NaN	SYK	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	7.26E-01	5.32E-03	NaN	JAK1	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	7.19E-01	5.21E-03	NaN	JAK1	
+Colorectal Cancer Metastasis Signaling	6.13E-01	3.95E-03	NaN	JAK1	
+Protein Ubiquitination Pathway	5.83E-01	3.66E-03	NaN	HLA-C	
+Hepatic Fibrosis Signaling Pathway	4.75E-01	2.72E-03	NaN	JAK1	
+Molecular Mechanisms of Cancer	4.53E-01	2.56E-03	NaN	JAK1	
+Cardiac Hypertrophy Signaling (Enhanced)	3.78E-01	2.05E-03	NaN	IL2RB	
+Breast Cancer Regulation by Stathmin1	3.16E-01	1.69E-03	NaN	CX3CR1	

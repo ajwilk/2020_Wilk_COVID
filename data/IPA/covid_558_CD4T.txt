@@ -1,0 +1,156 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Primary Immunodeficiency Signaling	5.22E00	8E-02	NaN	IGHG1,IGHG4,IGHM,IL7R	
+Communication between Innate and Adaptive Immune Cells	4.09E00	4.17E-02	NaN	B2M,IGHG1,IGHG4,IGHM	
+Hematopoiesis from Pluripotent Stem Cells	3.66E00	6.12E-02	NaN	IGHG1,IGHG4,IGHM	
+STAT3 Pathway	3.52E00	2.96E-02	NaN	FGFR1,IL7R,PIM1,SOCS3	
+Role of IL-17A in Psoriasis	3.37E00	1.54E-01	NaN	S100A8,S100A9	
+IL-7 Signaling Pathway	3.07E00	3.85E-02	NaN	IGHG1,IGHM,IL7R	
+Allograft Rejection Signaling	2.95E00	3.49E-02	NaN	B2M,IGHG1,IGHG4	
+Clathrin-mediated Endocytosis Signaling	2.94E00	2.07E-02	NaN	ACTB,LYZ,S100A8,UBA52	
+Osteoarthritis Pathway	2.8E00	1.9E-02	NaN	FGFR1,S100A8,S100A9,TCF7	
+Lipid Antigen Presentation by CD1	2.76E00	7.69E-02	NaN	B2M,CALR	
+B Cell Development	2.48E00	5.56E-02	NaN	IGHM,IL7R	
+Antigen Presentation Pathway	2.41E00	5.13E-02	NaN	B2M,CALR	
+Adipogenesis pathway	2.4E00	2.24E-02	NaN	FGFR1,TCF7,TXNIP	
+Epithelial Adherens Junction Signaling	2.25E00	1.97E-02	NaN	ACTB,FGFR1,TCF7	
+Autoimmune Thyroid Disease Signaling	2.22E00	4.08E-02	NaN	IGHG1,IGHG4	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	2.19E00	1.28E-02	NaN	IGHG1,IGHG4,SOCS3,TCF7	
+Diphthamide Biosynthesis	2.15E00	3.33E-01	NaN	EEF2	
+Dendritic Cell Maturation	2.02E00	1.64E-02	NaN	B2M,IGHG1,IGHG4	
+B Cell Receptor Signaling	2.01E00	1.62E-02	NaN	IGHG1,IGHG4,IGHM	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.93E00	2.9E-02	NaN	IL7R,SOCS3	
+GM-CSF Signaling	1.92E00	2.86E-02	NaN	PIM1,RACK1	
+Caveolar-mediated Endocytosis Signaling	1.88E00	2.74E-02	NaN	ACTB,B2M	
+Prolactin Signaling	1.8E00	2.47E-02	NaN	SOCS3,TCF7	
+EIF2 Signaling	1.79E00	1.34E-02	NaN	ACTB,PABPC1,UBA52	
+Systemic Lupus Erythematosus Signaling	1.76E00	1.31E-02	NaN	IGHG1,IGHG4,IGHM	
+Acute Myeloid Leukemia Signaling	1.72E00	2.25E-02	NaN	PIM1,TCF7	
+Virus Entry via Endocytic Pathways	1.57E00	1.87E-02	NaN	ACTB,B2M	
+LXR/RXR Activation	1.47E00	1.65E-02	NaN	LYZ,S100A8	
+RhoA Signaling	1.46E00	1.63E-02	NaN	ACTB,TTN	
+Phagosome Formation	1.45E00	1.6E-02	NaN	IGHG1,IGHG4	
+Atherosclerosis Signaling	1.44E00	1.59E-02	NaN	LYZ,S100A8	
+IL-12 Signaling and Production in Macrophages	1.4E00	1.52E-02	NaN	LYZ,S100A8	
+Human Embryonic Stem Cell Pluripotency	1.39E00	1.48E-02	NaN	FGFR1,TCF7	
+Hereditary Breast Cancer Signaling	1.36E00	1.43E-02	NaN	ACTB,UBA52	
+Endoplasmic Reticulum Stress Pathway	1.31E00	4.76E-02	NaN	CALR	
+Phagosome Maturation	1.3E00	1.32E-02	NaN	B2M,CALR	
+IL-22 Signaling	1.25E00	4.17E-02	NaN	SOCS3	
+Hepatic Fibrosis Signaling Pathway	1.24E00	8.15E-03	NaN	FGFR1,TCF7,TTN	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	1.24E00	4E-02	NaN	SOCS3	
+Wnt/β-catenin Signaling	1.2E00	1.16E-02	NaN	TCF7,UBA52	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	1.13E00	1.06E-02	NaN	LYZ,S100A8	
+IL-9 Signaling	1.12E00	3.03E-02	NaN	SOCS3	
+Regulation of the Epithelial-Mesenchymal Transition Pathway	1.12E00	1.04E-02	NaN	FGFR1,TCF7	
+Agranulocyte Adhesion and Diapedesis	1.11E00	1.04E-02	NaN	ACTB,SELL	
+Cytotoxic T Lymphocyte-mediated Apoptosis of Target Cells	1.11E00	2.94E-02	NaN	B2M	
+Role of JAK2 in Hormone-like Cytokine Signaling	1.11E00	2.94E-02	NaN	SOCS3	
+Interferon Signaling	1.09E00	2.78E-02	NaN	MX1	
+Cell Cycle Regulation by BTG Family Proteins	1.07E00	2.7E-02	NaN	BTG1	
+Antiproliferative Role of TOB in T Cell Signaling	1.05E00	2.56E-02	NaN	PABPC1	
+Integrin Signaling	1.04E00	9.39E-03	NaN	ACTB,TTN	
+AMPK Signaling	1.04E00	9.35E-03	NaN	ACTB,EEF2	
+Mechanisms of Viral Exit from Host Cells	1.03E00	2.44E-02	NaN	ACTB	
+Actin Cytoskeleton Signaling	1.02E00	9.17E-03	NaN	ACTB,TTN	
+IL-23 Signaling Pathway	1E00	2.27E-02	NaN	SOCS3	
+FAT10 Cancer Signaling Pathway	9.83E-01	2.17E-02	NaN	EEF1A1	
+Phospholipase C Signaling	9.03E-01	7.78E-03	NaN	IGHG1,IGHG4	
+Unfolded protein response	9.03E-01	1.79E-02	NaN	CALR	
+MSP-RON Signaling Pathway	8.89E-01	1.72E-02	NaN	ACTB	
+Protein Ubiquitination Pathway	8.63E-01	7.33E-03	NaN	B2M,UBA52	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	8.57E-01	1.59E-02	NaN	ADAR	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	8.57E-01	7.27E-03	NaN	IGHG1,IGHM	
+Pyridoxal 5'-phosphate Salvage Pathway	8.42E-01	1.54E-02	NaN	PIM1	
+Remodeling of Epithelial Adherens Junctions	8.24E-01	1.47E-02	NaN	ACTB	
+IL-10 Signaling	8.18E-01	1.45E-02	NaN	SOCS3	
+Growth Hormone Signaling	8.07E-01	1.41E-02	NaN	SOCS3	
+Basal Cell Carcinoma Signaling	8.01E-01	1.39E-02	NaN	TCF7	
+Leptin Signaling in Obesity	7.9E-01	1.35E-02	NaN	SOCS3	
+Erythropoietin Signaling	7.8E-01	1.32E-02	NaN	SOCS3	
+Toll-like Receptor Signaling	7.8E-01	1.32E-02	NaN	UBA52	
+Role of Wnt/GSK-3β Signaling in the Pathogenesis of Influenza	7.7E-01	1.28E-02	NaN	TCF7	
+Agrin Interactions at Neuromuscular Junction	7.64E-01	1.27E-02	NaN	ACTB	
+Thyroid Cancer Signaling	7.64E-01	1.27E-02	NaN	TCF7	
+BEX2 Signaling Pathway	7.64E-01	1.27E-02	NaN	TCF7	
+Role of BRCA1 in DNA Damage Response	7.59E-01	1.25E-02	NaN	ACTB	
+Renal Cell Carcinoma Signaling	7.59E-01	1.25E-02	NaN	UBA52	
+JAK/Stat Signaling	7.59E-01	1.25E-02	NaN	SOCS3	
+PEDF Signaling	7.5E-01	1.22E-02	NaN	TCF7	
+FGF Signaling	7.4E-01	1.19E-02	NaN	FGFR1	
+Glucocorticoid Receptor Signaling	7.21E-01	5.95E-03	NaN	ACTB,TSC22D3	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	7.19E-01	1.12E-02	NaN	B2M	
+Crosstalk between Dendritic Cells and Natural Killer Cells	7.19E-01	1.12E-02	NaN	ACTB	
+OX40 Signaling Pathway	7.14E-01	1.11E-02	NaN	B2M	
+Death Receptor Signaling	7.1E-01	1.1E-02	NaN	ACTB	
+Th17 Activation Pathway	7.1E-01	1.1E-02	NaN	SOCS3	
+Regulation of Actin-based Motility by Rho	6.97E-01	1.06E-02	NaN	ACTB	
+Fcγ Receptor-mediated Phagocytosis in Macrophages and Monocytes	6.97E-01	1.06E-02	NaN	ACTB	
+FAK Signaling	6.93E-01	1.05E-02	NaN	ACTB	
+GABA Receptor Signaling	6.93E-01	1.05E-02	NaN	UBA52	
+Salvage Pathways of Pyrimidine Ribonucleotides	6.84E-01	1.03E-02	NaN	PIM1	
+VEGF Signaling	6.78E-01	1.01E-02	NaN	ACTB	
+Mouse Embryonic Stem Cell Pluripotency	6.62E-01	9.71E-03	NaN	TCF7	
+IGF-1 Signaling	6.58E-01	9.62E-03	NaN	SOCS3	
+PD-1, PD-L1 cancer immunotherapy pathway	6.52E-01	9.43E-03	NaN	B2M	
+Paxillin Signaling	6.44E-01	9.26E-03	NaN	ACTB	
+Type I Diabetes Mellitus Signaling	6.33E-01	9.01E-03	NaN	SOCS3	
+Protein Kinase A Signaling	6.13E-01	5.03E-03	NaN	TCF7,TTN	
+IL-15 Production	6E-01	8.26E-03	NaN	FGFR1	
+Th1 Pathway	6E-01	8.26E-03	NaN	SOCS3	
+Inhibition of ARE-Mediated mRNA Degradation Pathway	5.97E-01	8.2E-03	NaN	ZFP36L2	
+IL-6 Signaling	5.88E-01	8E-03	NaN	SOCS3	
+PTEN Signaling	5.85E-01	7.94E-03	NaN	FGFR1	
+p70S6K Signaling	5.77E-01	7.75E-03	NaN	EEF2	
+White Adipose Tissue Browning Pathway	5.77E-01	7.75E-03	NaN	FGFR1	
+Cellular Effects of Sildenafil (Viagra)	5.7E-01	7.63E-03	NaN	ACTB	
+Androgen Signaling	5.58E-01	7.35E-03	NaN	CALR	
+Th2 Pathway	5.58E-01	7.35E-03	NaN	SOCS3	
+Ovarian Cancer Signaling	5.5E-01	7.19E-03	NaN	TCF7	
+Insulin Receptor Signaling	5.47E-01	7.14E-03	NaN	SOCS3	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	5.44E-01	7.09E-03	NaN	SOCS3	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	5.44E-01	7.09E-03	NaN	SOCS3	
+Type II Diabetes Mellitus Signaling	5.41E-01	7.04E-03	NaN	SOCS3	
+Endocannabinoid Cancer Inhibition Pathway	5.39E-01	6.99E-03	NaN	TCF7	
+Factors Promoting Cardiogenesis in Vertebrates	5.21E-01	6.67E-03	NaN	TCF7	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	5.11E-01	6.49E-03	NaN	OAS2	
+3-phosphoinositide Degradation	5.1E-01	6.45E-03	NaN	SOCS3	
+D-myo-inositol-5-phosphate Metabolism	5.07E-01	6.41E-03	NaN	SOCS3	
+Regulation of eIF4 and p70S6K Signaling	5.04E-01	6.37E-03	NaN	PABPC1	
+Necroptosis Signaling Pathway	5.04E-01	6.37E-03	NaN	TOMM7	
+HOTAIR Regulatory Pathway	4.98E-01	6.25E-03	NaN	TCF7	
+Cardiac Hypertrophy Signaling (Enhanced)	4.91E-01	4.11E-03	NaN	FGFR1,IL7R	
+Tec Kinase Signaling	4.89E-01	6.1E-03	NaN	ACTB	
+3-phosphoinositide Biosynthesis	4.87E-01	6.06E-03	NaN	SOCS3	
+Cdc42 Signaling	4.83E-01	5.99E-03	NaN	B2M	
+Tight Junction Signaling	4.8E-01	5.95E-03	NaN	ACTB	
+Germ Cell-Sertoli Cell Junction Signaling	4.75E-01	5.85E-03	NaN	ACTB	
+Th1 and Th2 Activation Pathway	4.75E-01	5.85E-03	NaN	SOCS3	
+PI3K/AKT Signaling	4.66E-01	5.71E-03	NaN	IL7R	
+T Cell Exhaustion Signaling Pathway	4.66E-01	5.71E-03	NaN	TCF7	
+Acute Phase Response Signaling	4.58E-01	5.59E-03	NaN	SOCS3	
+NF-κB Signaling	4.58E-01	5.59E-03	NaN	FGFR1	
+RhoGDI Signaling	4.56E-01	5.56E-03	NaN	ACTB	
+Granulocyte Adhesion and Diapedesis	4.56E-01	5.56E-03	NaN	SELL	
+Sertoli Cell-Sertoli Cell Junction Signaling	4.47E-01	5.41E-03	NaN	ACTB	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.45E-01	5.38E-03	NaN	FGFR1	
+NRF2-mediated Oxidative Stress Response	4.39E-01	5.29E-03	NaN	ACTB	
+Xenobiotic Metabolism CAR Signaling Pathway	4.39E-01	5.29E-03	NaN	RACK1	
+ILK Signaling	4.38E-01	5.26E-03	NaN	ACTB	
+RAR Activation	4.31E-01	5.15E-03	NaN	ACTB	
+Natural Killer Cell Signaling	4.25E-01	5.08E-03	NaN	B2M	
+Leukocyte Extravasation Signaling	4.25E-01	5.08E-03	NaN	ACTB	
+Adrenomedullin signaling pathway	4.25E-01	5.08E-03	NaN	TTN	
+Gap Junction Signaling	4.24E-01	5.05E-03	NaN	ACTB	
+Superpathway of Inositol Phosphate Compounds	4.24E-01	5.05E-03	NaN	SOCS3	
+Calcium Signaling	4.1E-01	4.85E-03	NaN	CALR	
+mTOR Signaling	4.03E-01	4.76E-03	NaN	EIF4B	
+Role of Osteoblasts, Osteoclasts and Chondrocytes in Rheumatoid Arthritis	3.88E-01	4.55E-03	NaN	TCF7	
+Sperm Motility	3.84E-01	4.48E-03	NaN	FGFR1	
+Huntington's Disease Signaling	3.64E-01	4.22E-03	NaN	UBA52	
+Signaling by Rho Family GTPases	3.55E-01	4.1E-03	NaN	ACTB	
+Colorectal Cancer Metastasis Signaling	3.43E-01	3.95E-03	NaN	TCF7	
+Sirtuin Signaling Pathway	2.99E-01	3.44E-03	NaN	TOMM7	
+Neuroinflammation Signaling Pathway	2.9E-01	3.33E-03	NaN	B2M	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	2.6E-01	3E-03	NaN	B2M	

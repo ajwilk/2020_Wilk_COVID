@@ -1,0 +1,178 @@
+© 2000-2020 QIAGEN. All rights reserved.
+
+Ingenuity Canonical Pathways	 -log(p-value)	Ratio	z-score	Molecules	
+Interferon Signaling	5.9E00	1.11E-01	2.000	IFIT3,ISG15,MX1,STAT1	
+Activation of IRF by Cytosolic Pattern Recognition Receptors	3.41E00	4.76E-02	NaN	ADAR,ISG15,STAT1	
+GM-CSF Signaling	3.28E00	4.29E-02	NaN	PIM1,RACK1,STAT1	
+Th1 and Th2 Activation Pathway	3.23E00	2.34E-02	NaN	CD28,CXCR4,SOCS3,STAT1	
+IL-22 Signaling	2.88E00	8.33E-02	NaN	SOCS3,STAT1	
+UVA-Induced MAPK Signaling	2.85E00	3.06E-02	NaN	PARP14,PARP9,STAT1	
+Role of JAK family kinases in IL-6-type Cytokine Signaling	2.84E00	8E-02	NaN	SOCS3,STAT1	
+Type I Diabetes Mellitus Signaling	2.7E00	2.7E-02	NaN	CD28,SOCS3,STAT1	
+IL-9 Signaling	2.6E00	6.06E-02	NaN	SOCS3,STAT1	
+Th1 Pathway	2.59E00	2.48E-02	NaN	CD28,SOCS3,STAT1	
+Role of JAK2 in Hormone-like Cytokine Signaling	2.58E00	5.88E-02	NaN	SOCS3,STAT1	
+Th2 Pathway	2.45E00	2.21E-02	NaN	CD28,CXCR4,SOCS3	
+FAT10 Cancer Signaling Pathway	2.32E00	4.35E-02	NaN	CXCR4,EEF1A1	
+Diphthamide Biosynthesis	2.17E00	3.33E-01	NaN	EEF2	
+Retinoic acid Mediated Apoptosis Signaling	2.09E00	3.33E-02	NaN	PARP14,PARP9	
+Pyridoxal 5'-phosphate Salvage Pathway	2.03E00	3.08E-02	NaN	EIF2AK2,PIM1	
+Role of JAK1 and JAK3 in γc Cytokine Signaling	1.98E00	2.9E-02	NaN	SOCS3,STAT1	
+Growth Hormone Signaling	1.95E00	2.82E-02	NaN	SOCS3,STAT1	
+T Helper Cell Differentiation	1.93E00	2.74E-02	NaN	CD28,STAT1	
+Toll-like Receptor Signaling	1.9E00	2.63E-02	NaN	EIF2AK2,UBA52	
+EIF2 Signaling	1.86E00	1.34E-02	NaN	ATF4,EIF2AK2,UBA52	
+FLT3 Signaling in Hematopoietic Progenitor Cells	1.85E00	2.5E-02	NaN	ATF4,STAT1	
+JAK/Stat Signaling	1.85E00	2.5E-02	NaN	SOCS3,STAT1	
+Prolactin Signaling	1.84E00	2.47E-02	NaN	SOCS3,STAT1	
+NF-κB Activation by Viruses	1.84E00	2.44E-02	NaN	EIF2AK2,ITGA6	
+PDGF Signaling	1.8E00	2.33E-02	NaN	EIF2AK2,STAT1	
+CTLA4 Signaling in Cytotoxic T Lymphocytes	1.77E00	2.25E-02	NaN	CD28,TRAT1	
+Death Receptor Signaling	1.75E00	2.2E-02	NaN	PARP14,PARP9	
+Salvage Pathways of Pyrimidine Ribonucleotides	1.7E00	2.06E-02	NaN	EIF2AK2,PIM1	
+Systemic Lupus Erythematosus In B Cell Signaling Pathway	1.62E00	1.09E-02	NaN	IFIT3,ISG15,STAT1	
+iCOS-iCOSL Signaling in T Helper Cells	1.59E00	1.8E-02	NaN	CD28,TRAT1	
+Role of PKR in Interferon Induction and Antiviral Response	1.55E00	1.71E-02	NaN	EIF2AK2,STAT1	
+p38 MAPK Signaling	1.54E00	1.69E-02	NaN	ATF4,STAT1	
+STAT3 Pathway	1.43E00	1.48E-02	NaN	PIM1,SOCS3	
+Granzyme A Signaling	1.38E00	5.26E-02	NaN	H1-3	
+Endoplasmic Reticulum Stress Pathway	1.34E00	4.76E-02	NaN	ATF4	
+Role of Pattern Recognition Receptors in Recognition of Bacteria and Viruses	1.33E00	1.3E-02	NaN	EIF2AK2,OAS2	
+Necroptosis Signaling Pathway	1.31E00	1.27E-02	NaN	EIF2AK2,STAT1	
+Role of JAK1, JAK2 and TYK2 in Interferon Signaling	1.28E00	4.17E-02	NaN	STAT1	
+T Cell Exhaustion Signaling Pathway	1.23E00	1.14E-02	NaN	CD28,STAT1	
+Granulocyte Adhesion and Diapedesis	1.21E00	1.11E-02	NaN	CXCR4,ITGA6	
+Ephrin Receptor Signaling	1.21E00	1.11E-02	NaN	ATF4,CXCR4	
+Dendritic Cell Maturation	1.2E00	1.09E-02	NaN	ATF4,STAT1	
+ILK Signaling	1.17E00	1.05E-02	NaN	ATF4,TMSB10/TMSB4X	
+Agranulocyte Adhesion and Diapedesis	1.16E00	1.04E-02	NaN	CXCR4,ITGA6	
+ERK/MAPK Signaling	1.16E00	1.04E-02	NaN	ATF4,STAT1	
+Circadian Rhythm Signaling	1.15E00	3.03E-02	NaN	ATF4	
+Leukocyte Extravasation Signaling	1.14E00	1.02E-02	NaN	CXCR4,ITGA6	
+AMPK Signaling	1.08E00	9.35E-03	NaN	ATF4,EEF2	
+Antiproliferative Role of TOB in T Cell Signaling	1.08E00	2.56E-02	NaN	CD28	
+Role of IL-17F in Allergic Inflammatory Airway Diseases	1.04E00	2.38E-02	NaN	ATF4	
+Oncostatin M Signaling	1.04E00	2.33E-02	NaN	STAT1	
+IL-23 Signaling Pathway	1.03E00	2.27E-02	NaN	SOCS3	
+iNOS Signaling	1.02E00	2.22E-02	NaN	STAT1	
+PFKFB4 Signaling Pathway	1.01E00	2.17E-02	NaN	ATF4	
+Huntington's Disease Signaling	1E00	8.44E-03	NaN	ATF4,UBA52	
+Graft-versus-Host Disease Signaling	9.91E-01	2.08E-02	NaN	CD28	
+Autoimmune Thyroid Disease Signaling	9.83E-01	2.04E-02	NaN	CD28	
+Phospholipase C Signaling	9.47E-01	7.78E-03	NaN	AHNAK,ATF4	
+EGF Signaling	9.36E-01	1.82E-02	NaN	STAT1	
+Unfolded protein response	9.28E-01	1.79E-02	NaN	ATF4	
+CNTF Signaling	9.21E-01	1.75E-02	NaN	STAT1	
+Nur77 Signaling in T Lymphocytes	9.07E-01	1.69E-02	NaN	CD28	
+Induction of Apoptosis by HIV1	8.93E-01	1.64E-02	NaN	CXCR4	
+Wnt/Ca+ pathway	8.86E-01	1.61E-02	NaN	ATF4	
+Thrombopoietin Signaling	8.79E-01	1.59E-02	NaN	STAT1	
+IL-10 Signaling	8.42E-01	1.45E-02	NaN	SOCS3	
+Neuroinflammation Signaling Pathway	8.36E-01	6.67E-03	NaN	ATF4,STAT1	
+ERK5 Signaling	8.24E-01	1.39E-02	NaN	ATF4	
+Ephrin B Signaling	8.24E-01	1.39E-02	NaN	CXCR4	
+Caveolar-mediated Endocytosis Signaling	8.18E-01	1.37E-02	NaN	ITGA6	
+Estrogen-Dependent Breast Cancer Signaling	8.15E-01	1.35E-02	NaN	ATF4	
+Leptin Signaling in Obesity	8.15E-01	1.35E-02	NaN	SOCS3	
+Hypoxia Signaling in the Cardiovascular System	8.15E-01	1.35E-02	NaN	ATF4	
+Role of Macrophages, Fibroblasts and Endothelial Cells in Rheumatoid Arthritis	8.1E-01	6.41E-03	NaN	ATF4,SOCS3	
+Erythropoietin Signaling	8.04E-01	1.32E-02	NaN	SOCS3	
+Neurotrophin/TRK Signaling	8.04E-01	1.32E-02	NaN	ATF4	
+IL-7 Signaling Pathway	7.93E-01	1.28E-02	NaN	STAT1	
+IL-3 Signaling	7.88E-01	1.27E-02	NaN	STAT1	
+Agrin Interactions at Neuromuscular Junction	7.88E-01	1.27E-02	NaN	ITGA6	
+Thyroid Cancer Signaling	7.88E-01	1.27E-02	NaN	CXCR4	
+Role of BRCA1 in DNA Damage Response	7.83E-01	1.25E-02	NaN	STAT1	
+Renal Cell Carcinoma Signaling	7.83E-01	1.25E-02	NaN	UBA52	
+Chemokine Signaling	7.83E-01	1.25E-02	NaN	CXCR4	
+FGF Signaling	7.64E-01	1.19E-02	NaN	ATF4	
+Systemic Lupus Erythematosus In T Cell Signaling Pathway	7.64E-01	6.01E-03	NaN	ATF4,CD28	
+Allograft Rejection Signaling	7.54E-01	1.16E-02	NaN	CD28	
+Acute Myeloid Leukemia Signaling	7.4E-01	1.12E-02	NaN	PIM1	
+Crosstalk between Dendritic Cells and Natural Killer Cells	7.4E-01	1.12E-02	NaN	CD28	
+Regulation of IL-2 Expression in Activated and Anergic T Lymphocytes	7.4E-01	1.12E-02	NaN	CD28	
+Altered T Cell and B Cell Signaling in Rheumatoid Arthritis	7.35E-01	1.11E-02	NaN	CD28	
+Prostate Cancer Signaling	7.33E-01	1.1E-02	NaN	ATF4	
+Th17 Activation Pathway	7.33E-01	1.1E-02	NaN	SOCS3	
+Melanocyte Development and Pigmentation Signaling	7.19E-01	1.06E-02	NaN	ATF4	
+GABA Receptor Signaling	7.14E-01	1.05E-02	NaN	UBA52	
+Communication between Innate and Adaptive Immune Cells	7.1E-01	1.04E-02	NaN	CD28	
+ATM Signaling	7.08E-01	1.03E-02	NaN	ATF4	
+Sumoylation Pathway	6.84E-01	9.71E-03	NaN	SP100	
+IGF-1 Signaling	6.8E-01	9.62E-03	NaN	SOCS3	
+T Cell Receptor Signaling	6.76E-01	9.52E-03	NaN	CD28	
+PD-1, PD-L1 cancer immunotherapy pathway	6.74E-01	9.43E-03	NaN	CD28	
+Virus Entry via Endocytic Pathways	6.7E-01	9.35E-03	NaN	ITGA6	
+Gαs Signaling	6.7E-01	9.35E-03	NaN	ATF4	
+CDK5 Signaling	6.66E-01	9.26E-03	NaN	ITGA6	
+Paxillin Signaling	6.66E-01	9.26E-03	NaN	ITGA6	
+Pancreatic Adenocarcinoma Signaling	6.62E-01	9.17E-03	NaN	STAT1	
+Protein Kinase A Signaling	6.48E-01	5.03E-03	NaN	ATF4,H1-3	
+NGF Signaling	6.44E-01	8.77E-03	NaN	ATF4	
+Endocannabinoid Developing Neuron Pathway	6.42E-01	8.7E-03	NaN	ATF4	
+Role of Tissue Factor in Cancer	6.35E-01	8.55E-03	NaN	ITGA6	
+Renin-Angiotensin Signaling	6.31E-01	8.47E-03	NaN	STAT1	
+CD28 Signaling in T Helper Cells	6.25E-01	8.33E-03	NaN	CD28	
+IL-15 Production	6.22E-01	8.26E-03	NaN	STAT1	
+RhoA Signaling	6.16E-01	8.13E-03	NaN	LPAR6	
+IL-6 Signaling	6.09E-01	8E-03	NaN	SOCS3	
+Atherosclerosis Signaling	6.07E-01	7.94E-03	NaN	CXCR4	
+P2Y Purigenic Receptor Signaling Pathway	6.04E-01	7.87E-03	NaN	ATF4	
+Synaptic Long Term Potentiation	5.99E-01	7.75E-03	NaN	ATF4	
+Reelin Signaling in Neurons	5.99E-01	7.75E-03	NaN	ITGA6	
+p70S6K Signaling	5.99E-01	7.75E-03	NaN	EEF2	
+White Adipose Tissue Browning Pathway	5.99E-01	7.75E-03	NaN	ATF4	
+Gα12/13 Signaling	5.95E-01	7.69E-03	NaN	LPAR6	
+IL-12 Signaling and Production in Macrophages	5.9E-01	7.58E-03	NaN	STAT1	
+Adipogenesis pathway	5.83E-01	7.46E-03	NaN	TXNIP	
+Iron homeostasis signaling pathway	5.75E-01	7.3E-03	NaN	HBB	
+PI3K Signaling in B Lymphocytes	5.73E-01	7.25E-03	NaN	ATF4	
+Hereditary Breast Cancer Signaling	5.67E-01	7.14E-03	NaN	UBA52	
+Insulin Receptor Signaling	5.67E-01	7.14E-03	NaN	SOCS3	
+D-myo-inositol (1,4,5,6)-Tetrakisphosphate Biosynthesis	5.65E-01	7.09E-03	NaN	SOCS3	
+D-myo-inositol (3,4,5,6)-tetrakisphosphate Biosynthesis	5.65E-01	7.09E-03	NaN	SOCS3	
+Type II Diabetes Mellitus Signaling	5.62E-01	7.04E-03	NaN	SOCS3	
+Endocannabinoid Cancer Inhibition Pathway	5.59E-01	6.99E-03	NaN	ATF4	
+Corticotropin Releasing Hormone Signaling	5.54E-01	6.9E-03	NaN	ATF4	
+Factors Promoting Cardiogenesis in Vertebrates	5.42E-01	6.67E-03	NaN	ATF4	
+Gustation Pathway	5.33E-01	6.49E-03	NaN	LPAR6	
+PKCθ Signaling in T Lymphocytes	5.3E-01	6.45E-03	NaN	CD28	
+3-phosphoinositide Degradation	5.3E-01	6.45E-03	NaN	SOCS3	
+D-myo-inositol-5-phosphate Metabolism	5.27E-01	6.41E-03	NaN	SOCS3	
+eNOS Signaling	5.21E-01	6.29E-03	NaN	LPAR6	
+Dopamine-DARPP32 Feedback in cAMP Signaling	5.11E-01	6.13E-03	NaN	ATF4	
+Tec Kinase Signaling	5.1E-01	6.1E-03	NaN	STAT1	
+3-phosphoinositide Biosynthesis	5.07E-01	6.06E-03	NaN	SOCS3	
+CXCR4 Signaling	5.03E-01	5.99E-03	NaN	CXCR4	
+Germ Cell-Sertoli Cell Junction Signaling	4.95E-01	5.85E-03	NaN	ITGA6	
+GNRH Signaling	4.91E-01	5.78E-03	NaN	ATF4	
+Wnt/β-catenin Signaling	4.91E-01	5.78E-03	NaN	UBA52	
+Acute Phase Response Signaling	4.79E-01	5.59E-03	NaN	SOCS3	
+NF-κB Signaling	4.79E-01	5.59E-03	NaN	EIF2AK2	
+Role of NFAT in Regulation of the Immune Response	4.75E-01	5.52E-03	NaN	CD28	
+B Cell Receptor Signaling	4.67E-01	5.41E-03	NaN	ATF4	
+Hepatic Fibrosis / Hepatic Stellate Cell Activation	4.65E-01	5.38E-03	NaN	STAT1	
+Production of Nitric Oxide and Reactive Oxygen Species in Macrophages	4.61E-01	5.32E-03	NaN	STAT1	
+NRF2-mediated Oxidative Stress Response	4.6E-01	5.29E-03	NaN	ATF4	
+Xenobiotic Metabolism CAR Signaling Pathway	4.6E-01	5.29E-03	NaN	RACK1	
+Clathrin-mediated Endocytosis Signaling	4.52E-01	5.18E-03	NaN	UBA52	
+Superpathway of Inositol Phosphate Compounds	4.42E-01	5.05E-03	NaN	SOCS3	
+Calcium Signaling	4.29E-01	4.85E-03	NaN	ATF4	
+CREB Signaling in Neurons	4.28E-01	4.83E-03	NaN	ATF4	
+mTOR Signaling	4.23E-01	4.76E-03	NaN	EIF4B	
+Osteoarthritis Pathway	4.21E-01	4.74E-03	NaN	ATF4	
+Integrin Signaling	4.18E-01	4.69E-03	NaN	ITGA6	
+Breast Cancer Regulation by Stathmin1	4.16E-01	3.38E-03	NaN	ATF4,LPAR6	
+Actin Cytoskeleton Signaling	4.1E-01	4.59E-03	NaN	TMSB10/TMSB4X	
+cAMP-mediated signaling	3.95E-01	4.39E-03	NaN	ATF4	
+Systemic Lupus Erythematosus Signaling	3.94E-01	4.37E-03	NaN	CD28	
+Opioid Signaling Pathway	3.69E-01	4.05E-03	NaN	ATF4	
+Colorectal Cancer Metastasis Signaling	3.61E-01	3.95E-03	NaN	STAT1	
+G-Protein Coupled Receptor Signaling	3.38E-01	3.68E-03	NaN	ATF4	
+Protein Ubiquitination Pathway	3.36E-01	3.66E-03	NaN	UBA52	
+Sirtuin Signaling Pathway	3.17E-01	3.44E-03	NaN	H1-3	
+Synaptogenesis Signaling Pathway	2.95E-01	3.21E-03	NaN	ATF4	
+Estrogen Receptor Signaling	2.81E-01	3.05E-03	NaN	ATF4	
+Glucocorticoid Receptor Signaling	2.73E-01	2.98E-03	NaN	STAT1	
+Hepatic Fibrosis Signaling Pathway	2.47E-01	2.72E-03	NaN	ATF4	
+Axonal Guidance Signaling	-0E00	2.07E-03	NaN	CXCR4	

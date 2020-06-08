@@ -1,0 +1,311 @@
+---
+title: "R Notebook"
+output: html_notebook
+author: Aaron J. Wilk
+---
+
+Integrative analysis of peripheral immune dynamics in SARS-CoV-2 infection
+Please see our pre-print at: https://www.medrxiv.org/content/10.1101/2020.04.17.20069930v1
+
+This notebook will enable generation of the Seurat object used for post-processing from count matrices deposited on GEO. For code on downstream analysis and figure reproduction, please see the notebook "covid_analysis_markdown.Rmd"
+
+Load libraries
+  # NOTE: Please be sure to run the script "additionalFunctions_repo.R" to read homemade functions into the global environment
+
+```{r}
+library(Matrix)
+library(Matrix.utils)
+library(plyr)
+library(dplyr)
+library(Seurat)
+library(sctransform)
+library(igraph)
+library(factoextra)
+library(ComplexHeatmap)
+library(circlize)
+require(Hmisc)
+require(dplyr)
+require(openxlsx)
+require(ggplot2)
+library(ggpubr)
+require(cowplot)
+library(data.table)
+library(RColorBrewer)
+library(rowr)
+library(SingleR)
+library(scater)
+library(pheatmap)
+library(nichenetr)
+library(tidyverse)
+```
+
+# LOADING DATA #
+We sequenced non-cryopreserved PBMCs from 14 donors. 8 from the ICU or floor with confirmed COVID-19 and 6 healthy age-matched controls. 
+
+Download built count matrices from GEO (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150728) and save them in the same directory. 
+
+```{r load data}
+path = "path_to_count_matrices_from_GEO"
+cm.list = paste0(path, list.files(pattern = "*.matrices.rds", path = path))
+cm.files <- lapply(cm.list, readRDS)
+names(cm.files) <- sub(path,"",
+                       sub("\\_cell.counts.matrices.rds", "", cm.list))
+```
+
+pre-processing
+
+```{r pre-process}
+cm.pp <- mapply(EpicPreHS, cm.files, orig.ident = names(cm.files), SIMPLIFY = F)
+```
+
+Merge
+```{r merge}
+covid_combined.emat <- mergeCM(cm.pp, type = "emat")
+covid_combined.nmat <- mergeCM(cm.pp, type = "nmat")
+```
+
+Make Seurat object
+```{r create object}
+covid_combined <- CreateSeuratObject(counts = covid_combined.emat, min.cells = 10, names.field = 1, names.delim = "\\.")
+covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^MT-", col.name = "percent.mt")
+covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPS", col.name = "percent.rps")
+covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPL", col.name = "percent.rpl")
+covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RNA\\d8S5", col.name = "percent.rrna")
+covid_combined <- SCTransform(covid_combined, vars.to.regress = c("percent.mt", "percent.rps", "percent.rpl", "percent.rrna", "nCount_RNA", "nFeature_RNA"), verbose = FALSE, return.only.var.genes = TRUE)
+
+covid_combined <- RunPCA(covid_combined, verbose = FALSE)
+covid_combined <- RunUMAP(covid_combined, dims = 1:50, verbose = FALSE)
+covid_combined <- FindNeighbors(covid_combined, dims = 1:50, verbose = FALSE)
+covid_combined <- FindClusters(covid_combined, resolution = 1, verbose = FALSE)
+DimPlot(covid_combined, label = TRUE) + NoLegend()
+```
+
+Add metadata
+
+```{r add metadata}
+covid_metadata <- read_csv("https://raw.githubusercontent.com/ajwilk/2020_Wilk_COVID/master/code/COVID-19_metadata_repo.csv")
+seurat_metadata <- covid_combined.nc@meta.data
+seurat_metadata <- seurat_metadata[,!(colnames(seurat_metadata)) %in% 
+                                     setdiff(colnames(covid_metadata), "orig.ident")]
+metadata_combined <- merge(seurat_metadata, covid_metadata, by = "orig.ident")
+rownames(metadata_combined) <- rownames(covid_combined.nc@meta.data)
+
+covid_combined@meta.data <- metadata_combined
+```
+
+
+```{r}
+sars.names <- c("MN994467.1", "MN994468.1", "MT027062.1", "MT027063.1", "MT027064.1", "MT044258.1", "MT106052.1", "MT106053.1", "MT118835.1", "MT192765.1")
+covid.pos <- covid_combined.emat[grep(paste(sars.names,collapse="|"), rownames(covid_combined.emat)),]
+covid.pos.cells <- names(covid.pos[covid.pos !=0])
+length(covid.pos.cells) #no SARS-CoV-2 reads detected in dataset
+```
+
+
+
+```{r}
+covid_combined.markers <- FindAllMarkers(covid_combined, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+covid_combined.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
+```
+Cluster 3 is a low quality cluster. Are there any genes other than poor quality genes that are upregulated in it?
+```{r}
+crap.markers <- FindMarkers(covid_combined, ident.1 = "3")
+crap.markers[order(-crap.markers$avg_logFC),]
+```
+
+Will remove. Same with cluster 12
+```{r}
+crap2.markers <- FindMarkers(covid_combined, ident.1 = "12")
+crap2.markers[order(-crap2.markers$avg_logFC),]
+```
+Will also remove cluster 12
+
+SingleR annotation
+```{r}
+ref <- HumanPrimaryCellAtlasData()
+common <- intersect(rownames(ref), rownames(covid_combined.emat))
+combined.emat.singler <- covid_combined.emat[common,]
+ref <- ref[common,]
+combined.emat.singler.sce <- SingleCellExperiment(assays = list(counts = combined.emat.singler))
+combined.emat.singler.sce <- logNormCounts(combined.emat.singler.sce)
+```
+```{r}
+singler.pred <- SingleR(test = combined.emat.singler.sce@assays@data@listData$logcounts, ref = ref, labels = ref$label.main)
+table(singler.pred$labels)
+```
+
+```{r}
+plotScoreHeatmap(singler.pred, clusters = covid_combined@meta.data$orig.ident)
+plotScoreHeatmap(singler.pred, clusters = covid_combined@meta.data$seurat_clusters)
+```
+
+```{r}
+singler.results <- merge(data.frame(cell = rownames(singler.pred), singler = singler.pred$labels), 
+                         data.frame(cell = rownames(covid_combined@meta.data), 
+                                    cluster = covid_combined@meta.data$seurat_clusters), 
+                         by = "cell", 
+                         all.y = FALSE)
+singler.results$cell <- NULL
+singler.results$count <- 1
+singler.results <- aggregate(count ~ ., singler.results, FUN = sum)
+singler.final <- singler.results %>% group_by(cluster) %>% top_n(n = 1, wt = count)
+singler.final
+covid_combined$singler <- singler.pred$labels
+DimPlot(covid_combined, group.by = "singler", label = T) + NoLegend()
+```
+
+
+Removing crap clusters, re-embedding and re-clustering
+```{r}
+covid_combined.nc <- subset(covid_combined, idents = setdiff(unique(covid_combined$seurat_clusters), c("3", "12")))
+covid_combined.nc <- RunPCA(covid_combined.nc, verbose = FALSE)
+covid_combined.nc <- RunUMAP(covid_combined.nc, dims = 1:50, verbose = FALSE)
+covid_combined.nc <- FindNeighbors(covid_combined.nc, dims = 1:50, verbose = FALSE)
+covid_combined.nc <- FindClusters(covid_combined.nc, resolution = 1, verbose = FALSE)
+DimPlot(covid_combined.nc, label = TRUE) + NoLegend()
+```
+
+
+```{r}
+singler.results <- merge(data.frame(cell = rownames(singler.pred), singler = singler.pred$labels), 
+                         data.frame(cell = rownames(covid_combined.nc@meta.data), 
+                                    cluster = covid_combined.nc@meta.data$seurat_clusters), 
+                         by = "cell", 
+                         all.y = FALSE)
+singler.results$cell <- NULL
+singler.results$count <- 1
+singler.results <- aggregate(count ~ ., singler.results, FUN = sum)
+singler.final <- singler.results %>% group_by(cluster) %>% top_n(n = 1, wt = count)
+singler.final
+```
+
+Coarse annotations: 
+0: NK cell
+1: T cell
+2: T cell
+3: Monocyte
+4: T cell
+5: B cell
+6: Monocyte
+7: Monocyte
+8: Monocyte
+9: B cell
+10: Monocyte
+11: NK cell
+12: RBC
+13: T cell
+14: RBC
+15: T cell
+16: B cell
+17: Platelet
+18: B cell
+19: T cell
+20: Monocyte
+21: B cell
+22: T cell
+23: B cell
+24: CMP
+25: Neutrophil
+26: Monocyte
+27: Myelocyte
+28: Monocyte
+29: B cell
+
+
+```{r}
+covid_combined.nc.markers <- FindAllMarkers(covid_combined.nc, only.pos = T)
+covid_combined.nc.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
+```
+
+```{r}
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
+                                                      as.character))), 
+        features = c("CD4", "PRF1", "GZMB", "GZMA", "CD8A", "RORC", "EOMES", "TBX21"))
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
+                                                      as.character))), 
+        features = c("PTK7", "PECAM1", "ITGAE", "CD44", "CR2", "IL2RA", "FAS", "IL2RB"))
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
+                                                      as.character))), 
+        features = c("SELL", "CCR7", "CD44", "CD28", "CD27", "IL7R", "CXCR3", "ITGAL", "CD58"))
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
+                                                      as.character))), 
+        features = c("TRDC", "TRGC1", "TRGC2", "KLRB1", "KLRK1"))
+```
+```{r}
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="Monocyte","cluster"],
+                                                      as.character))), 
+        features = c("CD14", "LYZ", "FCGR3A", "IL1B", "IDO1", "FCER1A", "FLT3", "IL3RA", "NRP1"))
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
+                               idents = unlist(lapply(singler.final[singler.final$singler=="B_cell","cluster"],
+                                                      as.character))), 
+        features = c("MME", "CD22", "FCER2", "CD38", "CD44", "CD27", "SDC1"))
+```
+
+```{r fig.width=6, fig.height=3}
+DotPlot(Seurat:::subset.Seurat(covid_combined.nc, idents = c(covid_myeloid.idents)), features = unique(c("CD14", "LYZ", "FCGR3B", "FCGR3A", "CLC", "ELANE", "LTF", "MPO", "CTSG", "IDO1", "FCER1A", "FLT3", "IL3RA", "NRP1", "MME", "CD22", "FCER2", "CD44", "CD27", "SDC1", "CD4", "CD8A", "ITGAL", "SELL", "GZMB", "CD3E", "CD3G", "CD3D")), group.by = "cell.type.fine") + ggpubr::rotate_x_text()
+ggsave("p.pdf", path = "~/Downloads/", height = 5, width = 10)
+```
+
+
+Fine cluster annotations: 
+0: NK cell
+1: Memory CD8 T cell
+2: Memory CD4 T cell
+3: CD14 Monocyte
+4: Naive CD4 T cell
+5: B cell
+6: CD14 Monocyte
+7: CD14 Monocyte
+8: CD14 Monocyte
+9: Class-switched B cell
+10: CD16 Monocyte
+11: NK cell
+12: RBC
+13: Effector CD8 T cell
+14: RBC
+15: Memory CD8 T cell
+16: IgG Plasmablast
+17: Platelet
+18: IgG Plasmablast
+19: CD4 T cell
+20: DC
+21: IgA Plasmablast
+22: gd T cell
+23: IgA Plasmablast
+24: CMP/Eosinophil
+25: Neutrophil
+26: pDC
+27: Myelocyte/Neutrophil
+28: CD16 Monocyte
+29: IgA Plasmablast
+
+Myeloid compartment clusters: 3, 6, 7, 8, 10, 20, 24, 25, 26, 27
+B cell clusters: 5, 9, 16, 18, 21, 24, 27, 29
+T cell clusters: 1, 2, 4, 13, 15, 19, 22
+NK cell clusters: 0, 11
+
+```{r}
+covid_myeloid.idents <- c("3", "6", "7", "8", "10", "20", "24", "25", "26", "27", "28")
+covid_B.idents <- c("5", "9", "16", "18", "21", "24", "27", "29")
+covid_T.idents <- c("1", "2", "4", "13", "15", "19", "22")
+covid_NK.idents <- c("0", "11")
+
+covid_CD4T.idents <- c("2", "4", "19")
+covid_CD8T.idents <- c("1", "13", "15")
+covid_gdT.idents <- c("22")
+covid_CD14mono.idents <- c("3", "6", "7", "8")
+covid_CD16mono.idents <- c("10", "28")
+covid_DC.idents <- c("20", "26")
+
+covid_fine.idents <- c("NK", "CD8m T", "CD4m T", "CD14 Monocyte", "CD4n T", "B", "CD14 Monocyte", "CD14 Monocyte", "CD14 Monocyte", "IgM PB", "CD16 Monocyte", "NK", "RBC", "CD8eff T", "RBC", "CD8m T", "IgG PB", "Platelet", "IgG PB", "CD4 T", "DC", "IgA PB", "gd T", "IgA PB", "SC & Eosinophil", "Neutrophil", "pDC", "Developing Neutrophil", "CD16 Monocyte", "IgA PB")
+
+covid_coarse.idents <- c("NK", "CD8 T", "CD4 T", "CD14 Monocyte", "CD4 T", "B", "CD14 Monocyte", "CD14 Monocyte", "CD14 Monocyte", "B", "CD16 Monocyte", "NK", "RBC", "CD8 T", "RBC", "CD8 T", "PB", "Platelet", "PB", "CD4 T", "DC", "PB", "gd T", "PB", "Granulocyte", "Granulocyte", "pDC", "Granulocyte", "CD16 Monocyte", "PB")
+```
+
+
+This Seurat object can now be used for post-processing analysis using the "covid_analysis_markdown.Rmd" notebook.

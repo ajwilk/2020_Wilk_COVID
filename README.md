@@ -1,5 +1,5 @@
 # 2020_Wilk_COVID
-Reproducibility repository accompanying Wilk, Rustagi, Zhao, et al. "A single-cell atlas of the peripheral immune response to severe COVID-19" medRxiv (2020)
+Reproducibility repository accompanying Wilk, Rustagi, Zhao, et al. "A single-cell atlas of the peripheral immune response in patients with severe COVID-19" Nature Medicine (2020).
 
 You will find R and python scripts to download data and reproduce the analyses in the "code" folder.
 

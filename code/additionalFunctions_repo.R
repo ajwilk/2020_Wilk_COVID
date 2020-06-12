@@ -171,7 +171,7 @@ mergeCM <- function(cm_list = NULL, type = "emat") {
 }
 
 
-EpicPreHS <- function(cm_name, min.counts = 1e3, max.counts = 15e3, max.doublet.ratio = 0.75, max.percent.mito = 0.2, max.percent.rRNA = 0.2, orig.ident = NULL){
+EpicPreHS <- function(cm_name, min.counts = 500, max.counts = 15e3, max.doublet.ratio = 0.75, max.percent.mito = 0.2, max.percent.rRNA = 0.2, orig.ident = NULL){
   if (any(grep(".cm$", deparse(substitute(cm_name))))==FALSE){
     warning("The resulting cell names will be strange if the input object name does not end with '.cm'")
   }
@@ -990,8 +990,31 @@ processNewSeurat <- function(parent.object, idents = NULL, cells = NULL) {
 
 
 
-myFeaturePlot <- function(object = NULL, features = features, ncol = NULL, save = T, height = 7, width = 7, cols = c("lightgrey", "blue")) {
+myFeaturePlot <- function(object = NULL, features = features, ncol = NULL, save = T, save.as = "png", height = 7, width = 7, cols = c("lightgrey", "blue")) {
   plots <- lapply(features, function(x) {FeaturePlot(object,features = x, cols = cols) +  labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())})
+  CombinePlots(plots = plots, ncol = ncol)
+  if(save) {
+    if(save.as=="pdf"){
+      ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
+    }
+    if(save.as=="png"){
+      ggsave("p.png", path = "~/Downloads/", height = height, width = width)
+    }
+  }
+}
+
+myHighlightCells <- function(object = NULL, idents = NULL, group_by = "seurat_clusters", ncol = NULL, save = T, height = 7, width = 7, col = "black") {
+  cells.highlight=list()
+  for(i in 1:length(idents)){
+    cells = colnames(object)[grep(idents[i], object@meta.data[,group_by])]
+    cells.highlight[[i]]=cells
+  }
+  
+  plots <- lapply(cells.highlight, function(x) {
+    DimPlot(object,cells.highlight = x, cols.highlight = col) + 
+      NoLegend() + labs(x = "UMAP1", y = "UMAP2") + 
+      theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())
+  })
   CombinePlots(plots = plots, ncol = ncol)
   if(save) {
     ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
@@ -999,8 +1022,24 @@ myFeaturePlot <- function(object = NULL, features = features, ncol = NULL, save 
 }
 
 
-
-
+constructConsensus <- function(markers.matrix, donors.use = 1:8, save = T, height = 5, width = 7) {
+  markers.matrix.m <- markers.matrix %>% rownames_to_column(var = "gene")
+  markers.matrix.m <- reshape2::melt(markers.matrix.m)
+  order.markers <- rownames(markers.matrix[order(rowSums(-markers.matrix)),])
+  markers.sum <- as.data.frame(ifelse(markers.matrix != 0, 1, 0))
+  markers.sum$total <- rowSums(markers.sum)
+  keep <- rownames(markers.sum[markers.sum$total>3,])
+  markers.matrix.m <- markers.matrix.m[markers.matrix.m$gene %in% keep,]
+  ggplot(markers.matrix.m, aes(x = factor(gene, level = order.markers), 
+                               y = value, fill = variable)) +
+    geom_bar(stat="identity", color = "black", size = 0.25) + theme_minimal() + 
+    labs(x = "", y = "Cumulative average log(fold-change)", fill = "Sample") +
+    scale_fill_manual(values = custom_fill_colors[donors.use]) + 
+    ggpubr::rotate_x_text()
+  if(save){
+    ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
+  }
+}
 
 
 

@@ -5,7 +5,7 @@ author: Aaron J. Wilk
 ---
 
 Integrative analysis of peripheral immune dynamics in SARS-CoV-2 infection
-Please see our pre-print at: https://www.medrxiv.org/content/10.1101/2020.04.17.20069930v1
+Please see our publication at: https://www.nature.com/articles/s41591-020-0944-y
 
 This notebook will enable generation of the Seurat object used for post-processing from count matrices deposited on GEO. For code on downstream analysis and figure reproduction, please see the notebook "covid_analysis_markdown.Rmd"
 
@@ -43,6 +43,8 @@ library(tidyverse)
 We sequenced non-cryopreserved PBMCs from 14 donors. 8 from the ICU or floor with confirmed COVID-19 and 6 healthy age-matched controls. 
 
 Download built count matrices from GEO (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150728) and save them in the same directory. 
+
+Additionally, download the count matrix for patient 560 (AKA C6) from the github repository (https://github.com/ajwilk/2020_Wilk_COVID/blob/master/data/count_matrices/560_cell.counts.matrices.rds?raw=true). This patient did not consent to the sharing of sequence-level data and thus we are only able to share processed data and there is no GEO entry. 
 
 ```{r load data}
 path = "path_to_count_matrices_from_GEO"
@@ -84,11 +86,11 @@ Add metadata
 
 ```{r add metadata}
 covid_metadata <- read_csv("https://raw.githubusercontent.com/ajwilk/2020_Wilk_COVID/master/code/COVID-19_metadata_repo.csv")
-seurat_metadata <- covid_combined.nc@meta.data
+seurat_metadata <- covid_combined@meta.data
 seurat_metadata <- seurat_metadata[,!(colnames(seurat_metadata)) %in% 
                                      setdiff(colnames(covid_metadata), "orig.ident")]
 metadata_combined <- merge(seurat_metadata, covid_metadata, by = "orig.ident")
-rownames(metadata_combined) <- rownames(covid_combined.nc@meta.data)
+rownames(metadata_combined) <- rownames(covid_combined@meta.data)
 
 covid_combined@meta.data <- metadata_combined
 ```

@@ -5,7 +5,7 @@ author: Aaron J. Wilk
 ---
 
 Integrative analysis of peripheral immune dynamics in SARS-CoV-2 infection
-Please see our pre-print at: https://www.medrxiv.org/content/10.1101/2020.04.17.20069930v1
+Please see our publication at: https://www.nature.com/articles/s41591-020-0944-y
 
 This notebook walks through the post-processing and reproduction of figures using the pre-processed Seurat object that is available for download from the COVID-19 cell atlas. To learn how this object was constructed and how cell type labels were assigned, please see "generating_Seurat_object.Rmd"
 

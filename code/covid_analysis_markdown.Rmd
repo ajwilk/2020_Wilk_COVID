@@ -5,7 +5,9 @@ author: Aaron J. Wilk
 ---
 
 Integrative analysis of peripheral immune dynamics in SARS-CoV-2 infection
+Please see our pre-print at: https://www.medrxiv.org/content/10.1101/2020.04.17.20069930v1
 
+This notebook walks through the post-processing and reproduction of figures using the pre-processed Seurat object that is available for download from the COVID-19 cell atlas. To learn how this object was constructed and how cell type labels were assigned, please see "generating_Seurat_object.Rmd"
 
 Load libraries
   # NOTE: Please be sure to run the script "additionalFunctions_repo.R" to read homemade functions into the global environment
@@ -19,7 +21,6 @@ library(Seurat)
 library(sctransform)
 library(igraph)
 library(factoextra)
-library(EpicTools)
 library(ComplexHeatmap)
 library(circlize)
 require(Hmisc)
@@ -36,263 +37,28 @@ library(scater)
 library(pheatmap)
 library(nichenetr)
 library(tidyverse)
+library(FlexDotPlot)
 ```
 
 # LOADING DATA #
 We sequenced non-cryopreserved PBMCs from 14 donors. 8 from the ICU or floor with confirmed COVID-19 and 6 healthy age-matched controls. 
 
-We present two options for loading data: 
-1. Download built count matrices from GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150728
-2. Download a processed Seurat object from the COVID-19 cell atlas: https://www.covid19cellatlas.org/#wilk20 
-    # NOTE: If you wish to perform RNA velocity analysis, you will need to use option 1 as the Seurat object does not contain unspliced count matrices
-
-
+In this analysis we will download the pre-processed Seurat object that is available from the COVID-19 cell atlas. 
 
 ```{r load data}
-path = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/matrices/"
-cm.list = paste0(path, list.files(pattern = "*.matrices.rds", path = path))
-cm.files <- lapply(cm.list, readRDS)
-names(cm.files) <- sub(path,"",
-                       sub("\\_cell.counts.matrices.rds", "", cm.list))
+covid_combined.nc <- readRDS(url("https://hosted-matrices-prod.s3-us-west-2.amazonaws.com/Single_cell_atlas_of_peripheral_immune_response_to_SARS_CoV_2_infection-25/blish_covid.seu.rds"))
+
+#Several cell types were renamed since the submission to the COVID-19 cell atlas
+covid_combined.nc$cell.type.fine[grep("Class-switched B", covid_combined.nc$cell.type.fine)] <- "IgM PB"
+covid_combined.nc$cell.type.fine[grep("^CD4 T$", covid_combined.nc$cell.type.fine)] <- "IFN-stim CD4 T"
+covid_combined.nc$cell.type.fine[grep("CD8eff T", covid_combined.nc$cell.type.fine)] <- "Proliferative Lymphocytes"
+covid_combined.nc$cell.type.fine[grep("Activated Granulocyte", covid_combined.nc$cell.type.fine)] <- "Developing Neutrophil"
+covid_combined.nc$cell.type <- covid_combined.nc$cell.type.fine
+
+covid_combined.nc$Ventilated[grep("^Vent", covid_combined.nc$Ventilated)] <- "ARDS"
 ```
 
-pre-processing
-
-```{r pre-process}
-cm.pp <- mapply(EpicPreHS, cm.files, orig.ident = names(cm.files), SIMPLIFY = F)
-```
-
-Merge
-```{r merge}
-covid_combined.emat <- mergeCM(cm.pp, type = "emat")
-covid_combined.nmat <- mergeCM(cm.pp, type = "nmat")
-```
-
-Make Seurat object
-```{r create object}
-covid_combined <- CreateSeuratObject(counts = covid_combined.emat, min.cells = 10, names.field = 1, names.delim = "\\.")
-covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^MT-", col.name = "percent.mt")
-covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPS", col.name = "percent.rps")
-covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPL", col.name = "percent.rpl")
-covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RNA\\d8S5", col.name = "percent.rrna")
-covid_combined <- SCTransform(covid_combined, vars.to.regress = c("percent.mt", "percent.rps", "percent.rpl", "percent.rrna", "nCount_RNA", "nFeature_RNA"), verbose = FALSE, return.only.var.genes = TRUE)
-
-covid_combined <- RunPCA(covid_combined, verbose = FALSE)
-covid_combined <- RunUMAP(covid_combined, dims = 1:50, verbose = FALSE)
-covid_combined <- FindNeighbors(covid_combined, dims = 1:50, verbose = FALSE)
-covid_combined <- FindClusters(covid_combined, resolution = 1, verbose = FALSE)
-DimPlot(covid_combined, label = TRUE) + NoLegend()
-```
-
-Add metadata
-
-```{r add metadata}
-covid_metadata <- read_csv("https://raw.githubusercontent.com/ajwilk/2020_Wilk_COVID/master/code/COVID-19_metadata_repo.csv")
-seurat_metadata <- covid_combined.nc@meta.data
-seurat_metadata <- seurat_metadata[,!(colnames(seurat_metadata)) %in% 
-                                     setdiff(colnames(covid_metadata), "orig.ident")]
-metadata_combined <- merge(seurat_metadata, covid_metadata, by = "orig.ident")
-rownames(metadata_combined) <- rownames(covid_combined.nc@meta.data)
-
-covid_combined@meta.data <- metadata_combined
-```
-
-
-```{r}
-sars.names <- c("MN994467.1", "MN994468.1", "MT027062.1", "MT027063.1", "MT027064.1", "MT044258.1", "MT106052.1", "MT106053.1", "MT118835.1", "MT192765.1")
-covid.pos <- covid_combined.emat[grep(paste(sars.names,collapse="|"), rownames(covid_combined.emat)),]
-covid.pos.cells <- names(covid.pos[covid.pos !=0])
-length(covid.pos.cells) #no SARS-CoV-2 reads detected in dataset
-```
-
-
-
-```{r}
-covid_combined.markers <- FindAllMarkers(covid_combined, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
-covid_combined.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
-```
-Cluster 3 is a low quality cluster. Are there any genes other than poor quality genes that are upregulated in it?
-```{r}
-crap.markers <- FindMarkers(covid_combined, ident.1 = "3")
-crap.markers[order(-crap.markers$avg_logFC),]
-```
-
-Will remove. Same with cluster 12
-```{r}
-crap2.markers <- FindMarkers(covid_combined, ident.1 = "12")
-crap2.markers[order(-crap2.markers$avg_logFC),]
-```
-Will also remove cluster 12
-
-SingleR annotation
-```{r}
-ref <- HumanPrimaryCellAtlasData()
-common <- intersect(rownames(ref), rownames(covid_combined.emat))
-combined.emat.singler <- covid_combined.emat[common,]
-ref <- ref[common,]
-combined.emat.singler.sce <- SingleCellExperiment(assays = list(counts = combined.emat.singler))
-combined.emat.singler.sce <- logNormCounts(combined.emat.singler.sce)
-```
-```{r}
-singler.pred <- SingleR(test = combined.emat.singler.sce@assays@data@listData$logcounts, ref = ref, labels = ref$label.main)
-table(singler.pred$labels)
-```
-
-```{r}
-plotScoreHeatmap(singler.pred, clusters = covid_combined@meta.data$orig.ident)
-plotScoreHeatmap(singler.pred, clusters = covid_combined@meta.data$seurat_clusters)
-```
-
-```{r}
-singler.results <- merge(data.frame(cell = rownames(singler.pred), singler = singler.pred$labels), 
-                         data.frame(cell = rownames(covid_combined@meta.data), 
-                                    cluster = covid_combined@meta.data$seurat_clusters), 
-                         by = "cell", 
-                         all.y = FALSE)
-singler.results$cell <- NULL
-singler.results$count <- 1
-singler.results <- aggregate(count ~ ., singler.results, FUN = sum)
-singler.final <- singler.results %>% group_by(cluster) %>% top_n(n = 1, wt = count)
-singler.final
-covid_combined$singler <- singler.pred$labels
-DimPlot(covid_combined, group.by = "singler", label = T) + NoLegend()
-```
-
-
-Removing crap clusters, re-embedding and re-clustering
-```{r}
-covid_combined.nc <- subset(covid_combined, idents = setdiff(unique(covid_combined$seurat_clusters), c("3", "12")))
-covid_combined.nc <- RunPCA(covid_combined.nc, verbose = FALSE)
-covid_combined.nc <- RunUMAP(covid_combined.nc, dims = 1:50, verbose = FALSE)
-covid_combined.nc <- FindNeighbors(covid_combined.nc, dims = 1:50, verbose = FALSE)
-covid_combined.nc <- FindClusters(covid_combined.nc, resolution = 1, verbose = FALSE)
-DimPlot(covid_combined.nc, label = TRUE) + NoLegend()
-```
-
-
-```{r}
-singler.results <- merge(data.frame(cell = rownames(singler.pred), singler = singler.pred$labels), 
-                         data.frame(cell = rownames(covid_combined.nc@meta.data), 
-                                    cluster = covid_combined.nc@meta.data$seurat_clusters), 
-                         by = "cell", 
-                         all.y = FALSE)
-singler.results$cell <- NULL
-singler.results$count <- 1
-singler.results <- aggregate(count ~ ., singler.results, FUN = sum)
-singler.final <- singler.results %>% group_by(cluster) %>% top_n(n = 1, wt = count)
-singler.final
-```
-
-Coarse annotations: 
-0: NK cell
-1: T cell
-2: T cell
-3: Monocyte
-4: T cell
-5: B cell
-6: Monocyte
-7: Monocyte
-8: Monocyte
-9: B cell
-10: Monocyte
-11: NK cell
-12: RBC
-13: T cell
-14: RBC
-15: T cell
-16: B cell
-17: Platelet
-18: B cell
-19: T cell
-20: Monocyte
-21: B cell
-22: T cell
-23: B cell
-24: CMP
-25: Neutrophil
-26: Monocyte
-27: Myelocyte
-28: Monocyte
-29: B cell
-
-
-```{r}
-covid_combined.nc.markers <- FindAllMarkers(covid_combined.nc, only.pos = T)
-covid_combined.nc.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
-```
-
-```{r}
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
-                                                      as.character))), 
-        features = c("CD4", "PRF1", "GZMB", "GZMA", "CD8A", "RORC", "EOMES", "TBX21"))
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
-                                                      as.character))), 
-        features = c("PTK7", "PECAM1", "ITGAE", "CD44", "CR2", "IL2RA", "FAS", "IL2RB"))
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
-                                                      as.character))), 
-        features = c("SELL", "CCR7", "CD44", "CD28", "CD27", "IL7R", "CXCR3", "ITGAL", "CD58"))
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="T_cells","cluster"],
-                                                      as.character))), 
-        features = c("TRDC", "TRGC1", "TRGC2", "KLRB1", "KLRK1"))
-```
-```{r}
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="Monocyte","cluster"],
-                                                      as.character))), 
-        features = c("CD14", "LYZ", "FCGR3A", "IL1B", "IDO1", "FCER1A", "FLT3", "IL3RA", "NRP1"))
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, 
-                               idents = unlist(lapply(singler.final[singler.final$singler=="B_cell","cluster"],
-                                                      as.character))), 
-        features = c("MME", "CD22", "FCER2", "CD38", "CD44", "CD27", "SDC1"))
-```
-
-```{r fig.width=6, fig.height=3}
-DotPlot(Seurat:::subset.Seurat(covid_combined.nc, idents = c(covid_myeloid.idents)), features = unique(c("CD14", "LYZ", "FCGR3B", "FCGR3A", "CLC", "ELANE", "LTF", "MPO", "CTSG", "IDO1", "FCER1A", "FLT3", "IL3RA", "NRP1", "MME", "CD22", "FCER2", "CD44", "CD27", "SDC1", "CD4", "CD8A", "ITGAL", "SELL", "GZMB", "CD3E", "CD3G", "CD3D")), group.by = "cell.type.fine") + ggpubr::rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/", height = 5, width = 10)
-```
-
-
-Fine cluster annotations: 
-0: NK cell
-1: Memory CD8 T cell
-2: Memory CD4 T cell
-3: CD14 Monocyte
-4: Naive CD4 T cell
-5: B cell
-6: CD14 Monocyte
-7: CD14 Monocyte
-8: CD14 Monocyte
-9: Class-switched B cell
-10: CD16 Monocyte
-11: NK cell
-12: RBC
-13: Effector CD8 T cell
-14: RBC
-15: Memory CD8 T cell
-16: IgG Plasmablast
-17: Platelet
-18: IgG Plasmablast
-19: CD4 T cell
-20: DC
-21: IgA Plasmablast
-22: gd T cell
-23: IgA Plasmablast
-24: CMP/Eosinophil
-25: Neutrophil
-26: pDC
-27: Myelocyte/Neutrophil
-28: CD16 Monocyte
-29: IgA Plasmablast
-
-Myeloid compartment clusters: 3, 6, 7, 8, 10, 20, 24, 25, 26, 27
-B cell clusters: 5, 9, 16, 18, 21, 24, 27, 29
-T cell clusters: 1, 2, 4, 13, 15, 19, 22
-NK cell clusters: 0, 11
-
+Here are the cell fine annotations, both fine and coarse, that were defined in the "generating_Seurat_object.Rmd" notebook. These will be used to subset the object later.
 ```{r}
 covid_myeloid.idents <- c("3", "6", "7", "8", "10", "20", "24", "25", "26", "27", "28")
 covid_B.idents <- c("5", "9", "16", "18", "21", "24", "27", "29")
@@ -311,60 +77,33 @@ covid_fine.idents <- c("NK", "CD8m T", "CD4m T", "CD14 Monocyte", "CD4n T", "B",
 covid_coarse.idents <- c("NK", "CD8 T", "CD4 T", "CD14 Monocyte", "CD4 T", "B", "CD14 Monocyte", "CD14 Monocyte", "CD14 Monocyte", "B", "CD16 Monocyte", "NK", "RBC", "CD8 T", "RBC", "CD8 T", "PB", "Platelet", "PB", "CD4 T", "DC", "PB", "gd T", "PB", "Granulocyte", "Granulocyte", "pDC", "Granulocyte", "CD16 Monocyte", "PB")
 ```
 
-Cluster 25 was annotated neutrophil but cluster 27 was annotated myelocyte but LOOKS like neutrophils. What's the difference?
+
+
+# Generate Figure 1 #
+Panels B and C
 ```{r}
-neutrophil.markers <- FindMarkers(covid_combined.nc, ident.1 = "25", ident.2 = "27")
-```
-
-To help me better figure out which compartment the cluster 27 cells belong to, I want to see if there's any differentiation bridge with the Plasmablast group. 
-```{r}
-writeAnnData(emat = covid_combined.emat, 
-             nmat = covid_combined.nmat,
-             seu = covid_combined.nc,
-             name = "combined",
-             dir = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/covid/analyses/adata_export/combined/")
-```
-
-
-```{r}
-names(covid_fine.idents) <- unique(covid_combined.nc@meta.data$seurat_clusters)
-covid_combined.nc <- AddMetaData(covid_combined.nc, metadata = covid_combined.nc@meta.data$seurat_clusters, col.name = "cell.type.fine")
-covid_combined.nc@meta.data$cell.type.fine <- covid_fine.idents[covid_combined.nc@meta.data$cell.type.fine]
-
-names(covid_coarse.idents) <- unique(covid_combined.nc@meta.data$seurat_clusters)
-covid_combined.nc <- AddMetaData(covid_combined.nc, metadata = covid_combined.nc@meta.data$seurat_clusters, col.name = "cell.type.coarse")
-covid_combined.nc@meta.data$cell.type.coarse <- covid_coarse.idents[covid_combined.nc@meta.data$cell.type.coarse]
+custom_fill_colors = c(RColorBrewer::brewer.pal(9, "Oranges")[2], 
+                       RColorBrewer::brewer.pal(9, "Reds")[6], 
+                       RColorBrewer::brewer.pal(9, "Oranges")[3], 
+                       RColorBrewer::brewer.pal(9, "Reds")[7],
+                       RColorBrewer::brewer.pal(9, "Reds")[8],
+                       RColorBrewer::brewer.pal(9, "Oranges")[4],
+                       RColorBrewer::brewer.pal(9, "Reds")[9],
+                       RColorBrewer::brewer.pal(9, "Oranges")[5],
+                       RColorBrewer::brewer.pal(9, "Blues")[4:9])
 
 DimPlot(covid_combined.nc, group.by = "Donor.full", pt.size = 0, cols = custom_fill_colors) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
-DimPlot(covid_combined.nc, group.by = "singler", pt.size = 0, label = TRUE, repel = T) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
 ggsave("p.pdf", path = "~/Downloads/")
-DimPlot(covid_combined.nc, group.by = "cell.type.fine", label = TRUE, repel = TRUE) + NoLegend() + xlim(-15, 15)
+
+DimPlot(covid_combined.nc, group.by = "cell.type.fine", label = TRUE, repel = TRUE) + NoLegend() + xlim(-15, 15) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
+ggsave("p.pdf", path = "~/Downloads/")
 ```
 
 
-
-
 ```{r}
-     
-
-my_comparisons
-my_newcomparisons <- list(c("No", "Yes"))
-
-fever <- subset(test.seu, cells = colnames(covid_combined.nc)[covid_combined.nc$DTF != 0])
-
-#Ext Data Fig. 2a or b
-covid.seuAbundances(fever, by = "cell.type", group_by = "DTF", meta.include = c("Status", "Donor.full", "orig.ident", "Ventilated", "DPS", "DTF"), color_by = "Donor.full" , custom_fill_colors = custom_fill_colors, group_by.point = "Donor", correct = F, comparisons = my_comparisons4, label.x = 1, pt.size = 3) + scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + labs(color = "Donor", x = "Days from first reported or measured fever")
-
-
-covid_combined.nc$cell.type.fine[grep("Class-switched B", covid_combined.nc$cell.type.fine)] <- "IgM PB"
-covid_combined.nc$cell.type.fine[grep("^CD4 T$", covid_combined.nc$cell.type.fine)] <- "IFN-stim CD4 T"
-covid_combined.nc$cell.type.fine[grep("CD8eff T", covid_combined.nc$cell.type.fine)] <- "Proliferative Lymphocytes"
-covid_combined.nc$cell.type <- covid_combined.nc$cell.type.fine
-
-
-##Figure 1D
+#Done so that the cell type labels can fit on the faceted graphs
 test.seu <- covid_combined.nc
-test.seu$cell.type[grep("Activated Granulocyte", test.seu$cell.type)] <- "Activated\nGranulocyte"
+test.seu$cell.type[grep("Developing Neutrophil", test.seu$cell.type)] <- "Developing\nNeutrophil"
 test.seu$cell.type[grep("CD14 Monocyte", test.seu$cell.type)] <- "CD14\nMonocyte"
 test.seu$cell.type[grep("CD16 Monocyte", test.seu$cell.type)] <- "CD16\nMonocyte"
 test.seu$cell.type[grep("SC & Eosinophil", test.seu$cell.type)] <- "SC &\nEosinophil"
@@ -372,7 +111,7 @@ test.seu$cell.type[grep("IFN-stim CD4 T", test.seu$cell.type)] <- "IFN-stim\nCD4
 test.seu$cell.type[grep("Proliferative Lymphocytes", test.seu$cell.type)] <- "Proliferative\nLymphocytes"
 
 
-test.seu$cell.type <- factor(test.seu$cell.type, levels = c("Activated\nGranulocyte",
+test.seu$cell.type <- factor(test.seu$cell.type, levels = c("Developing\nNeutrophil",
                                                             "Neutrophil",
                                                             "SC &\nEosinophil",
                                                             "Platelet",
@@ -393,10 +132,11 @@ test.seu$cell.type <- factor(test.seu$cell.type, levels = c("Activated\nGranuloc
                                                             "IFN-stim\nCD4 T",
                                                             "RBC"))
 
-test.seu$Ventilated <- mapvalues(test.seu$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
 test.seu$Ventilated <- factor(test.seu$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
+my_comparisons4 <- list(c("Healthy", "NonVent"), c("NonVent", "ARDS"), c("Healthy", "ARDS"))
 
+#Figure 1D
 covid.seuAbundances(test.seu, by = "cell.type", group_by = "Ventilated", 
                     meta.include = c("Status", "Donor.full", "orig.ident", 
                                      "Ventilated", "DPS", "DTF"), 
@@ -407,46 +147,37 @@ covid.seuAbundances(test.seu, by = "cell.type", group_by = "Ventilated",
   labs(color = "Donor", x = "Ventilation/ARDS Status") + 
   theme(text = element_text(size = 20))
 
-my_comparisons3 <- list(c("Healthy", "No Ventilator"), c("No Ventilator", "Ventilator"), c("Healthy", "Ventilator"))
-my_comparisons4 <- list(c("Healthy", "NonVent"), c("NonVent", "ARDS"), c("Healthy", "ARDS"))
+ggsave("~/Downloads/p.pdf", height = 13, width = 9)
+```
+
+
+```{r}
+#Ext Data 2a and b
+covid.seuAbundances.num(subset(test.seu, 
+                               cells = colnames(covid_combined.nc)[covid_combined.nc$DPS != 0]), 
+                        by = "cell.type", group_by = "DPS", 
+                        meta.include = c("Status", "Donor.full", "orig.ident", "Ventilated", "DPS", "DTF"), 
+                        color_by = "Donor.full", 
+                        custom_fill_colors = custom_fill_colors, 
+                        group_by.point = "Donor", correct = F, 
+                        comparisons = my_comparisons4, label.x = 1, pt.size = 3) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + 
+  labs(color = "Donor", x = "Days post-symptom onset")
 
 ggsave("~/Downloads/p.pdf", height = 13, width = 9)
 
-custom_fill_colors = c(RColorBrewer::brewer.pal(9, "Oranges")[2], 
-                       RColorBrewer::brewer.pal(9, "Reds")[6], 
-                       RColorBrewer::brewer.pal(9, "Oranges")[3], 
-                       RColorBrewer::brewer.pal(9, "Reds")[7],
-                       RColorBrewer::brewer.pal(9, "Reds")[8],
-                       RColorBrewer::brewer.pal(9, "Oranges")[4],
-                       RColorBrewer::brewer.pal(9, "Reds")[9],
-                       RColorBrewer::brewer.pal(9, "Oranges")[5],
-                       RColorBrewer::brewer.pal(9, "Blues")[4:9])
-```
-Make Figure 1B
-```{r}
-DimPlot(test.seu, group.by = "cell.type", label = T, pt.size = 0, repel = T) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
-ggsave("p.pdf", path = "~/Downloads/")
-```
+covid.seuAbundances.num(subset(test.seu, 
+                               cells = colnames(covid_combined.nc)[covid_combined.nc$DTF != 0]), 
+                        by = "cell.type", group_by = "DPS", 
+                        meta.include = c("Status", "Donor.full", "orig.ident", "Ventilated", "DPS", "DTF"), 
+                        color_by = "Donor.full", 
+                        custom_fill_colors = custom_fill_colors, 
+                        group_by.point = "Donor", correct = F, 
+                        comparisons = my_comparisons4, label.x = 1, pt.size = 3) + 
+  scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + 
+  labs(color = "Donor", x = "Days from first reported or measured fever")
 
-
-Make Figure 1C
-```{r fig.width=8, fig.height=4}
-#Idents(covid_combined.nc) <- "cell.type.fine"
-#covid_combined.celltype.markers <- FindAllMarkers(covid_combined.nc, only.pos = T)
-
-covid_combined.celltype.markers <- readRDS("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/200406--covid_celltype_markers.rds")
-covid_combined.celltype.markers$cluster <- as.character(covid_combined.celltype.markers$cluster)
-covid_combined.celltype.markers$cluster[grep("Class-switched B", covid_combined.celltype.markers$cluster)] <- "IgM PB"
-covid_combined.celltype.markers$cluster[grep("^CD4 T$", covid_combined.celltype.markers$cluster)] <- "IFN-stim CD4 T"
-covid_combined.celltype.markers$cluster[grep("CD8eff T", covid_combined.celltype.markers$cluster)] <- "Proliferative Lymphocytes"
-covid_combined.celltype.markers$cluster[grep("Myelocyte", covid_combined.celltype.markers$cluster)] <- "Activated Granulocyte"
-covid_combined.celltype.markers$cluster[grep("CMP & Eosinophil", covid_combined.celltype.markers$cluster)] <- "SC & Eosinophil"
-
-top_markers <- covid_combined.celltype.markers %>% group_by(cluster) %>% top_n(n = 3, wt = avg_logFC)
-top_markers$cluster <- top_markers$cluster %>% as.character()
-top_markers <- top_markers %>% arrange(cluster)
-DotPlot(covid_combined.nc, features = unique(top_markers$gene), group.by = "cell.type.fine", cols = "RdYlBu", dot.scale = 5) + ggpubr::rotate_x_text()
-ggsave("p.pdf", width = 13, height = 7, path = "~/Downloads/")
+ggsave("~/Downloads/p.pdf", height = 13, width = 9)
 ```
 
 
@@ -463,12 +194,18 @@ covid_combined.mono <- subset(covid_combined.nc, idents = c(covid_CD14mono.ident
 covid_combined.DC <- subset(covid_combined.nc, idents = covid_DC.idents)
 ```
 
-# Heatmap of genes/pathways/regulators different between healthy vs. COVID in each compartment # 
+# Heatmaps of genes/pathways/regulators different between healthy vs. COVID in each compartment # 
 
+This code takes cells from each cellular compartment (coarse cell types) and then identifies DE genes between each COVID-19 sample and all healthy controls. These DE gene lists are used as the input to IPA for pathway analysis. 
+
+The results from IPA are available here: https://github.com/ajwilk/2020_Wilk_COVID/tree/master/data/IPA
+
+#### It is thus not necessary to run this chunk ####
 ```{r}
 covid_compartments <- list(covid_CD4T.idents, covid_CD8T.idents, covid_gdT.idents, covid_NK.idents, covid_B.idents, covid_CD14mono.idents, covid_CD16mono.idents, covid_DC.idents)
 covid_compartments.names <- c("CD4 T", "CD8 T", "gd T", "NK", "B", "CD14mono", "CD16mono", "DC")
 donors <- grep("^C", unique(covid_combined.nc$Donor), value = T)
+path_save = "path_to_save_DE_gene_lists/"
 
 for (i in 1:length(covid_compartments)) {
   sub <- subset(covid_combined.nc, idents = covid_compartments[[i]])
@@ -482,7 +219,7 @@ for (i in 1:length(covid_compartments)) {
                           grep("^MT-", markers$gene),
                           grep("^MTR", markers$gene),
                           grep("^RNA1\\dS5", markers$gene)),]
-      write.csv(markers, file = paste0("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/",donors.2[k],"_",covid_compartments.names[i],"_markers.csv"), row.names = F)
+      write.csv(markers, file = paste0(path_save,donors.2[k],"_",covid_compartments.names[i],"_markers.csv"), row.names = F)
     })
     message(paste0("Finished Donor ",k))
   }
@@ -500,291 +237,22 @@ for (k in 1:length(donors.2)) {
                           grep("^RPL", markers$gene), 
                           grep("^MT-", markers$gene),
                           grep("^RNA1\\dS5", markers$gene)),]
-      write.csv(markers, file = paste0("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/",donors.2[k],"_",covid_compartments.names[6],"_markers.csv"), row.names = F)
+      write.csv(markers, file = paste0(path_save,donors.2[k],"_",covid_compartments.names[6],"_markers.csv"), row.names = F)
     })
 }
-
-
-markers <- subset(covid_combined.CD14mono, cells = c(grep(donors.2[1], covid_combined.CD14mono$orig.ident), grep("Healthy", covid_combined.CD14mono$Status))) %>%
-        FindMarkers(ident.1 = "COVID", group.by = "Status")
-
-grep(donors.2[1], covid_combined.CD14mono$orig.ident)
-
 ```
 
+# Generate heatmaps of DE genes, canonical pathways, and upstream regulators #
 
-Let's do this with just genes instead of pathways
+In order to do this, you may either resubmit the gene lists created above to IPA, or download the output from IPA here: https://github.com/ajwilk/2020_Wilk_COVID/tree/master/data/IPA
 
-```{r}
-ID.covid.markers <- function(seu = covid_combined.nc, idents = NULL, p.cutoff = 0.05){
-  markers.list <- list()
-  sub <- subset(covid_combined.nc, idents = idents)
-  donors.2 <- unique(covid_combined.nc$Donor.full)[-grep("^H",
-                                                         unique(covid_combined.nc$Donor.full))]
-  for (k in 1:length(donors.2)) {
-      try({
-        markers <- subset(sub, cells = c(grep(donors.2[k],
-                                                                  sub$Donor.full),
-                                                             grep("Healthy",
-                                                                  sub$Status))) %>%
-          FindMarkers(ident.1 = "COVID", group.by = "Status") %>% rownames_to_column(var = "gene") %>%
-          add_column(Donor = donors.2[k])
-        markers.list[[k]] <- markers[-c(grep("^RPS", markers$gene), 
-                            grep("^RPL", markers$gene), 
-                            grep("^MT-", markers$gene),
-                            grep("^MTR", markers$gene),
-                            grep("MALAT1", markers$gene),
-                            grep("^RNA18S5", markers$gene),
-                            grep("^RNA28S5", markers$gene)),]
-      })
-  }
-  markers.list <- ldply(markers.list, data.frame)
-  
-  markers.list.mat <- markers.list[markers.list$p_val_adj<p.cutoff,]
-  markers.list.mat <- markers.list.mat[,c("gene", "avg_logFC", "Donor")]
-  
-  markers.list.mat <- reshape2::dcast(markers.list.mat, formula = gene~Donor, value.var = "avg_logFC")
-  markers.list.mat[is.na(markers.list.mat)] = 0
-  markers.list.mat <- markers.list.mat %>% column_to_rownames(var = "gene")
-  colnames(markers.list.mat) <- gsub("covid_", "", colnames(markers.list.mat))
-  return(markers.list.mat)
-}
-
-
-covid.markers.heatmap <- function(markers.matrix = NULL, color = c("blue", "white", "red"), 
-                                  paletteLength = 100, fontsize_row = 10, color.rows = T,
-                                  title = "log(FC)", add.flag = T, de.cutoff = 4, top.n = NULL, 
-                                  repel.degree = 0, legend = T, annotation_legend = T,
-                                  cellwidth = NA, cellheight = NA,
-                                  save = F, width = 7, height = 11, file = "~/Downloads/p.pdf") {
-
-  paletteLength = 100
-  if(sum(markers.matrix>=0)==dim(markers.matrix)[1]*dim(markers.matrix)[2]) {
-    color = color[2:3]
-  }
-  myColor = colorRampPalette(color)(paletteLength)
-  myBreaks <- unique(c(seq(min(markers.matrix), 0, length.out=ceiling(paletteLength/2) + 1), 
-              seq(max(markers.matrix)/paletteLength, max(markers.matrix),
-                  length.out=floor(paletteLength/2))))
-  annotation_colors = list(
-    Ventilated = c(Yes="red3", No=RColorBrewer::brewer.pal(9, "Oranges")[4]))
-  p <- pheatmap(markers.matrix, color = myColor, breaks = myBreaks, 
-                heatmap_legend_param = list(title = title), angle_col = "90", 
-                annotation_col = row_annotation, annotation_colors = annotation_colors, legend = legend,
-                annotation_legend = annotation_legend, fontsize_row = fontsize_row,
-                cellwidth = cellwidth, cellheight = cellheight)
-  if(color.rows){
-    markers.matrix <- markers.matrix[match(p$gtable$grobs[[5]]$label,rownames(markers.matrix)),]
-     p$gtable$grobs[[5]]$gp=gpar(col=ifelse((rowSums(markers.matrix))>0, "red", "blue"), fontsize = fontsize_row)
-  }
-   
-  if(add.flag){
-    if(save){
-      pdf(file = file, width = width, height = height)
-    }
-    if(!is.null(top.n)) {
-      kept.labels <- names((abs(rowSums(markers.matrix)) %>% sort(decreasing = T))[1:top.n])
-    }
-    else {
-      kept.labels = names(rowSums(markers.matrix !=0)[rowSums(markers.matrix !=0)>=de.cutoff])
-    }
-    add.flag(p, kept.labels = kept.labels,
-             repel.degree = repel.degree)
-    if(save){
-      dev.off()
-    }
-  }
-  else{
-    p
-  }
-}
-
-
-
-build.cp.matrix <- function(compartment = NULL, by = "z", p.cutoff = 0.05, z.cutoff = T, top.n = 100) {
-  files <- list.files("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/results/")
-  files_import <- grep(paste0(compartment,".txt"),files,value = T)
-  donor_names <- gsub(paste0("_",compartment,".txt"),"",files_import)
-  donor_names <- gsub("covid_","",donor_names)
-  datalist = lapply(files_import, function(x)read_delim(paste0("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/results/",x), "\t", escape_double = FALSE, trim_ws = TRUE, skip = 1))
-  datalist <- mapply(cbind, datalist, "Donor"=donor_names,SIMPLIFY = F)
-  datalist.df <- ldply(datalist,data.frame)
-  datalist.df$X6 <- NULL
-  colnames(datalist.df) <- mapvalues(colnames(datalist.df), from = c("Ingenuity.Canonical.Pathways",
-                                                                     "X.log.p.value.",
-                                                                     "Ratio",
-                                                                     "z.score",
-                                                                     "Molecules",
-                                                                     "Donor"),
-                                                            to = c("Pathway",
-                                                                   "p",
-                                                                   "Ratio",
-                                                                   "z",
-                                                                   "Molecules",
-                                                                   "Donor"))
-  datalist.final <- datalist.df
-  if(!is.null(p.cutoff)){
-    p.converted = -log(0.05,10)
-    datalist.final <- datalist.final[datalist.final$p>p.converted,]
-  }
-  if(z.cutoff){
-    datalist.final <- datalist.final[!is.na(datalist.final$z),]
-    datalist.final <- datalist.final[!datalist.final$z==0,]
-  }
-  datalist.final[is.na(datalist.final$z),"z"] <- 0
-  datalist.mat <- reshape2::dcast(data = datalist.final, formula = Pathway~Donor,fun.aggregate = sum, value.var = by) %>% column_to_rownames(var = "Pathway")
-  if(by=="p" && z.cutoff){
-    datalist.z <- as.matrix(reshape2::dcast(data = datalist.final, formula = Pathway~Donor,fun.aggregate = sum, value.var = "z") %>% column_to_rownames(var = "Pathway"))
-    datalist.mat <- as.matrix(datalist.mat)
-    datalist.mat[datalist.z<0] <- -datalist.mat
-    datalist.mat <- as.data.frame(datalist.mat)
-  }
-  
-  if(!is.null(top.n)) {
-    top <- names((abs(rowSums(datalist.mat)) %>% sort(decreasing = T))[1:top.n])
-    datalist.mat <- datalist.mat[rownames(datalist.mat) %in% top,]
-  }
-  colnames(datalist.mat) <- mapvalues(colnames(datalist.mat), from = c("555_1",
-                                                                       "555_2",
-                                                                       "556",
-                                                                       "557",
-                                                                       "558",
-                                                                       "559",
-                                                                       "560",
-                                                                       "561"),
-                                                              to = c("C1 A",
-                                                                     "C1 B",
-                                                                     "C2",
-                                                                     "C3",
-                                                                     "C4",
-                                                                     "C5",
-                                                                     "C6",
-                                                                     "C7"))
-  return(datalist.mat)
-}
-
-test.p <- as.matrix(build.cp.matrix("CD8T", by = "p"))
-test.z <- as.matrix(build.cp.matrix("CD8T", by = "z"))
-
-test.p[(test.z)<0] <- -test.p
-test.p <- as.data.frame(test.p)
-
-build.ur.matrix <- function(compartment = NULL, by = "z", p.cutoff = 0.05, z.cutoff = T, top.n = 100) {
-  files <- list.files("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/results/")
-  files_import <- grep(paste0(compartment,".ur.txt"),files,value = T)
-  donor_names <- gsub(paste0("_",compartment,".ur.txt"),"",files_import)
-  donor_names <- gsub("covid_","",donor_names)
-  datalist = lapply(files_import, function(x)read_delim(paste0("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/results/",x), "\t", escape_double = FALSE, trim_ws = TRUE, skip = 1))
-  datalist <- mapply(cbind, datalist, "Donor"=donor_names,SIMPLIFY = F)
-  datalist.df <- ldply(datalist,data.frame)
-  colnames(datalist.df) <- mapvalues(colnames(datalist.df), from = c("Upstream.Regulator",
-                                                                     "Expr.Log.Ratio",
-                                                                     "Molecule.Type",
-                                                                     "Predicted.Activation.State",
-                                                                     "Activation.z.score",
-                                                                     "p.value.of.overlap",
-                                                                     "Target.Molecules.in.Dataset",
-                                                                     "Mechanistic.Network",
-                                                                     "Donor",
-                                                                     "Flags"),
-                                                            to = c("Regulator",
-                                                                   "Expr",
-                                                                   "Type",
-                                                                   "State",
-                                                                   "z",
-                                                                   "p",
-                                                                   "Molecules",
-                                                                   "Network",
-                                                                   "Donor",
-                                                                   "Flags"))
-  datalist.final <- datalist.df
-  if(!is.null(p.cutoff)){
-    datalist.final <- datalist.final[datalist.final$p<p.cutoff,]
-  }
-  if(z.cutoff){
-    datalist.final <- datalist.final[!is.na(datalist.final$z),]
-    datalist.final <- datalist.final[!datalist.final$z==0,]
-  }
-  datalist.final[is.na(datalist.final$z),"z"] <- 0
-  datalist.mat <- reshape2::dcast(data = datalist.final, formula = Regulator~Donor,fun.aggregate = sum, value.var = by) %>% column_to_rownames(var = "Regulator")
-  if(by=="p") {
-    datalist.mat <- -log(datalist.mat,10)
-  }
-  if(!is.null(top.n)) {
-    top <- names((abs(rowSums(datalist.mat)) %>% sort(decreasing = T))[1:top.n])
-    datalist.mat <- datalist.mat[rownames(datalist.mat) %in% top,]
-  }
-  colnames(datalist.mat) <- mapvalues(colnames(datalist.mat), from = c("555_1",
-                                                                       "555_2",
-                                                                       "556",
-                                                                       "557",
-                                                                       "558",
-                                                                       "559",
-                                                                       "560",
-                                                                       "561"),
-                                                              to = c("C1 A",
-                                                                     "C1 B",
-                                                                     "C2",
-                                                                     "C3",
-                                                                     "C4",
-                                                                     "C5",
-                                                                     "C6",
-                                                                     "C7"))
-  return(datalist.mat)
-}
-
-new.markers.heatmap <- function(markers.matrix = NULL, fontsize_row = 10, color.rows = T,
-                                  title = "log(FC)", add.flag = T, de.cutoff = 4, 
-                                top.n = NULL, 
-                                  repel.degree = 0, legend = T, annotation_legend = T,
-                                  cellwidth = NA, cellheight = NA,
-                                  save = T, width = 7, height = 11, 
-                                file = "~/Downloads/p.pdf") {
-
-  ta = columnAnnotation(Age = row_annotation$Age, 
-                        DPS = row_annotation$DPS,
-                        DTF = row_annotation$DTF,
-                        Admission = row_annotation$Admission,
-                        ARDS = row_annotation$Ventilated,
-                        col = list(ARDS = c("No" = "orange", "Yes" = "red"),
-                                   Admission = c("Floor" = "blue", "ICU" = "magenta")))
-  if(add.flag){
-    if(!is.null(top.n)) {
-      top.labels <- names((abs(rowSums(markers.matrix)) %>% sort(decreasing = T))[1:top.n])
-      kept.labels <- rownames(markers.matrix)[rownames(markers.matrix) %in% top.labels]
-    }
-    else {
-      kept.labels = names(rowSums(markers.matrix !=0)[rowSums(markers.matrix !=0)>=de.cutoff])
-    }
-    t = 1:nrow(markers.matrix)
-    
-    ha = rowAnnotation(foo = anno_mark(at = t[rownames(markers.matrix) %in% kept.labels], 
-                                     labels = kept.labels,
-                                     labels_gp = gpar(col =
-                                                        ifelse((rowSums(markers.matrix[rownames(markers.matrix) %in% kept.labels,]))>0,
-                                                               "red", "blue"))))
-  }
-
-  
-  p <- Heatmap(markers.matrix, right_annotation = ha, 
-          top_annotation = ta, row_names_gp = gpar(fontsize = 0))
-  if(save){
-    pdf(file = file, width = width, height = height)
-    p
-    #dev.off()
-  }
-  else {
-    p
-  }
-}
-
-new.markers.heatmap(NK.markers, width = 5)
-
-```
-
+for build.cp.matrix and build.ur.matrix, be sure to specify the path where these IPA analysis files are located.
 
 ```{r}
-row_annotation <- covid_metadata[1:8,c(3,6,9:12)]
+path_results = "path_where_IPA_results_are_stored/"
+
+covid_metadata <- read.csv(url("https://raw.githubusercontent.com/ajwilk/2020_Wilk_COVID/master/code/COVID-19_metadata_repo.csv"))
+row_annotation <- covid_metadata[1:8,c(3,6:9)]
 row_annotation[row_annotation$DTF==0,"DTF"] <- NA
 rownames(row_annotation) <- NULL
 row_annotation <- row_annotation %>% column_to_rownames(var = "Donor.full")
@@ -793,8 +261,10 @@ row_annotation <- row_annotation %>% column_to_rownames(var = "Donor.full")
 
 ```{r}
 NK.markers <- ID.covid.markers(idents = covid_NK.idents)
-NK.cp <- build.cp.matrix("NK", by = "z")
-NK.ur <- build.ur.matrix("NK", by = "z")
+NK.cp <- build.cp.matrix("NK", by = "z", path = path_results)
+NK.ur <- build.ur.matrix("NK", by = "z", path = path_results)
+
+#Figure 3f
 covid.markers.heatmap(NK.markers, save = T, de.cutoff = 4, width = 4, height = 20, annotation_legend = F)
 
 rownames(NK.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(NK.cp))
@@ -810,25 +280,16 @@ rownames(NK.cp) <- gsub("Nitric Oxide", "NO", rownames(NK.cp))
 pdf(file = "~/Downloads/p.pdf", height = 5, width = 6)
 covid.markers.heatmap(NK.cp, top.n = 25, save = T, height = 7, width = 7, annotation_legend = T, fontsize_row = 8)
 dev.off()
-covid.markers.heatmap(NK.ur, save = T, height = 14, width = 7, top.n = 50)
 
-ha = rowAnnotation(foo = anno_mark(at = c(1:4, 20, 60, 97:100), labels = rownames(NK.markers)[c(1:4, 20, 60, 97:100)], labels_gp = gpar(col = c(rep("black", 5), rep("blue", 5)))))
-ta = columnAnnotation(Age = row_annotation$Age, 
-                      DPS = row_annotation$DPS,
-                      DTF = row_annotation$DTF,
-                      Admission = row_annotation$Admission,
-                      ARDS = row_annotation$Ventilated,
-                      col = list(ARDS = c("No" = "orange", "Yes" = "red"),
-                                 Admission = c("Floor" = "blue", "ICU" = "magenta")))
-Heatmap(NK.markers, right_annotation = ha, top_annotation = ta, row_names_gp = gpar(fontsize = 0, color = "blue"))
-p <- Heatmap(NK.markers, right_annotation = ha, top_annotation = ta, row_names_gp = gpar(fontsize = 10, col = "blue"))
+#Figure 3g
+covid.markers.heatmap(NK.ur, save = T, height = 14, width = 7, top.n = 50)
 ```
 
 
 ```{r fig.height=10, fig.width=3}
 CD4T.markers <- ID.covid.markers(idents = covid_CD4T.idents)
-CD4T.cp <- build.cp.matrix("CD4T", by = "z")
-CD4T.ur <- build.ur.matrix("CD4T", by = "z")
+CD4T.cp <- build.cp.matrix("CD4T", by = "z", path = path_results)
+CD4T.ur <- build.ur.matrix("CD4T", by = "z", path = path_results)
 covid.markers.heatmap(CD4T.markers, save = T, top.n = 50, annotation_legend = F, width = 4)
 
 rownames(CD4T.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(CD4T.cp))
@@ -851,8 +312,9 @@ covid.markers.heatmap(CD4T.ur, save = T, height = 13, top.n = 50)
 
 ```{r fig.height=10, fig.width=3}
 CD8T.markers <- ID.covid.markers(idents = covid_CD8T.idents)
-CD8T.cp <- build.cp.matrix("CD8T", by = "z")
-CD8T.ur <- build.ur.matrix("CD8T", by = "z")
+CD8T.cp <- build.cp.matrix("CD8T", by = "z", path = path_results)
+CD8T.ur <- build.ur.matrix("CD8T", by = "z", path = path_results)
+#Extended Data 6a
 covid.markers.heatmap(CD8T.markers, save = T, width = 4, top.n = 50, annotation_legend = F)
 
 rownames(CD8T.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(CD8T.cp))
@@ -867,18 +329,18 @@ rownames(CD8T.cp) <- gsub("Natural Killer", "NK", rownames(CD8T.cp))
 rownames(CD8T.cp) <- gsub("Nitric Oxide", "NO", rownames(CD8T.cp))
 rownames(CD8T.cp) <- gsub("Systemic Lupus Erythematosus", "SLE", rownames(CD8T.cp))
 
-
+#Extended Data 6b
 covid.markers.heatmap(CD8T.cp, top.n = 25, save = T, height = 10, width = 7, annotation_legend = F, fontsize_row = 7.5)
-#rownames(CD8T.ur) <- gsub("Reactive Oxygen Species", "ROS", rownames(CD8T.ur))
-#rownames(CD8T.ur) <- gsub("lipopolysaccharide", "LPS", rownames(CD8T.ur))
+
+#Extended Data 6c
 covid.markers.heatmap(CD8T.ur, save = T, height = 13, top.n = 50)
 ```
 
 
 ```{r fig.height=10, fig.width=3}
 gdT.markers <- ID.covid.markers(idents = covid_gdT.idents)
-gdT.cp <- build.cp.matrix("gdT", by = "z")
-gdT.ur <- build.ur.matrix("gdT", by = "z")
+gdT.cp <- build.cp.matrix("gdT", by = "z", path = path_results)
+gdT.ur <- build.ur.matrix("gdT", by = "z", path = path_results)
 covid.markers.heatmap(gdT.markers, save = T, width = 6, top.n = 50)
 
 rownames(gdT.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(gdT.cp))
@@ -901,8 +363,10 @@ covid.markers.heatmap(gdT.ur, save = T, height = 13, width = 8)
 
 ```{r fig.height=10, fig.width=3}
 CD14mono.markers <- ID.covid.markers(idents = covid_CD14mono.idents)
-CD14mono.cp <- build.cp.matrix("CD14mono", by = "z")
-CD14mono.ur <- build.ur.matrix("CD14mono", by = "z")
+CD14mono.cp <- build.cp.matrix("CD14mono", by = "z", path = path_results)
+CD14mono.ur <- build.ur.matrix("CD14mono", by = "z", path = path_results)
+
+#Figure 2d
 covid.markers.heatmap(CD14mono.markers, save = T, width = 3.5, annotation_legend = F, fontsize_row = 8, top.n = 50)
 
 rownames(CD14mono.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(CD14mono.cp))
@@ -915,16 +379,18 @@ rownames(CD14mono.cp) <- gsub("Systemic Lupus Erythematosus", "SLE", rownames(CD
 rownames(CD14mono.cp) <- gsub("-Mediated", "", rownames(CD14mono.cp))
 
 
-
+#Figure 2g
 covid.markers.heatmap(CD14mono.cp, top.n = 25, save = T, height = 10, width = 6.5, annotation_legend = F, fontsize_row = 10)
+
+#Figure 2h
 rownames(CD14mono.ur) <- gsub("lipopolysaccharide", "LPS", rownames(CD14mono.ur))
 covid.markers.heatmap(CD14mono.ur, save = T, top.n = 50, height = 15, width = 6)
 ```
 
 ```{r fig.height=10, fig.width=3}
 B.markers <- ID.covid.markers(idents = covid_B.idents)
-B.cp <- build.cp.matrix("B", by = "z")
-B.ur <- build.ur.matrix("B", by = "z")
+B.cp <- build.cp.matrix("B", by = "z", path = path_results)
+B.ur <- build.ur.matrix("B", by = "z", path = path_results)
 covid.markers.heatmap(B.markers, save = T, width = 4, top.n = 50, height = 12, annotation_legend = F)
 
 rownames(B.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(B.cp))
@@ -944,8 +410,8 @@ covid.markers.heatmap(B.ur, save = T, height = 14, top.n = 50)
 
 ```{r fig.height=10, fig.width=3}
 CD16mono.markers <- ID.covid.markers(idents = covid_CD16mono.idents, p.cutoff = 1)
-CD16mono.cp <- build.cp.matrix("CD16mono", by = "z")
-CD16mono.ur <- build.ur.matrix("CD16mono", by = "z")
+CD16mono.cp <- build.cp.matrix("CD16mono", by = "z", path = path_results)
+CD16mono.ur <- build.ur.matrix("CD16mono", by = "z", path = path_results)
 covid.markers.heatmap(CD16mono.markers, de.cutoff = 4, save = T, width = 6)
 
 rownames(CD16mono.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(CD16mono.cp))
@@ -965,8 +431,8 @@ covid.markers.heatmap(CD16mono.ur, save = T, height = 14, add.flag = F)
 
 ```{r fig.height=10, fig.width=3}
 DC.markers <- ID.covid.markers(idents = covid_DC.idents)
-DC.cp <- build.cp.matrix("DC", by = "z")
-DC.ur <- build.ur.matrix("DC", by = "z")
+DC.cp <- build.cp.matrix("DC", by = "z", path = path_results)
+DC.ur <- build.ur.matrix("DC", by = "z", path = path_results)
 covid.markers.heatmap(DC.markers, save = T, width = 4, top.n = 50, annotation_legend = F)
 
 rownames(DC.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(DC.cp))
@@ -985,94 +451,74 @@ covid.markers.heatmap(DC.ur, save = T, height = 14.5, top.n = 50)
 ```
 
 
-## Attempt at making a cumulative z score out of all the compartment upstream regulstor analyses ##
-```{r}
-#Find missing samples (columns)
-objects = list(NK.ur, CD8T.ur, CD4T.ur, CD16mono.ur, B.ur)
-names(objects) = c("NK", "CD8T", "CD4T", "CD16mono", "B")
-names(lapply(objects, ncol)[lapply(objects, ncol)<8])
-objects[names(lapply(objects, ncol)[lapply(objects, ncol)<8])]
-
-CD16mono.ur[,setdiff(colnames(NK.ur),colnames(CD16mono.ur))] = 0
-CD16mono.ur <- CD16mono.ur[,names(NK.ur)]
-
-cumulative.ur <- bind_rows(NK.ur %>% rownames_to_column(),
-                   CD8T.ur %>% rownames_to_column(),
-                   CD4T.ur %>% rownames_to_column(),
-                   CD16mono.ur %>% rownames_to_column(),
-                   B.ur %>% rownames_to_column()) %>%
-  group_by(rowname) %>%
-  summarise_all(sum) %>% column_to_rownames(var = "rowname")
-
-covid.markers.heatmap(cumulative.ur, save = T, height = 14, top.n = 50, repel.degree = 0.5)
-
-names((abs(rowSums(cumulative.ur)) %>% sort(decreasing = T))[1:25])
-grep("IFNA", rownames(covid_combined.nc), value = T)
-
-
-
-DotPlot(covid_combined.nc, features = c("IFNA1", "IRF7", "PRL", "IFNL1", "TLR9", "IL21", "IRF1", "IFNG", "IRF3", "IFNB1", "RNY3", "TGM2", "IL1RN", "STAT1", "IL1B", "PML"), group.by = "cell.type") + ggpubr::rotate_x_text()
-
-DotPlot(covid_combined.nc, features = c("IFNA1", "IRF7", "PRL", "IFNL1", "TLR9", "IL21", "IFNG", "IRF3", "IFNB1", "RNY3", "TGM2", "IL1RN", "IL1B", "PML"), group.by = "Donor.full") + ggpubr::rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/")
-
-DotPlot(subset(covid_combined.nc, idents = "26"), features = c("IFNA1", "IRF7", "PRL", "IFNL1", "TLR9", "IL21", "IRF1", "IFNG", "IRF3", "IFNB1", "RNY3", "TGM2", "IL1RN", "STAT1", "IL1B", "PML"), group.by = "Donor.full") + ggpubr::rotate_x_text()
-
-DotPlot(covid_combined.nc, features = c("IFNA1", "PRL", "IL6"), group.by = "Donor.full") + ggpubr::rotate_x_text()
-
-```
-```{r}
-load_metadata <- function() {
-  covid_metadata <- read.xlsx("~/Documents/Stanford/Blish/COVID-19_metadata.xlsx")
-  return(covid_metadata)
-  }
-covid_metadata <- load_metadata()
-```
-
+## Analysis of ISG signature ##
+The heatmaps above suggest a very heterogeneous ISG response between cell types AND between donors. Let's start analyzing this by first scoring cells by expression of ISGs.
 
 Scoring all cells by interferon response
 ```{r}
-ISG.list <- read.csv("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/ifna.genes.csv")
-covid_combined.nc <- AddModuleScore(covid_combined.nc, features = list(as.character(ISG.list$gene)), name = "IFN")
+#download list of ISGs. This is the hallmark interferon stimulated geneset from GSEA
+ISG.list <- read.csv(url("https://github.com/ajwilk/2020_Wilk_COVID/raw/master/code/isg.list.csv"))
+
+covid_combined.nc <- AddModuleScore(covid_combined.nc, features = list(as.character(ISG.list$gene)), name = "IFN") #NB: control features are randomly selected, so results may vary slightly
 ISG.scores <- aggregate(covid_combined.nc$IFN1, by = list(covid_combined.nc$Donor.full), FUN = mean)
 covid_metadata$ISG <- ISG.scores$x
 covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
+```
 
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
+
+```{r}
+#Extended Data 4a
+## To ensure complete deidentification of patient information for HIPAA compliance, we are unable to share exact ages for the COVID-19 patient samples
+#ggscatter(covid_metadata.c, x = "Age", y = "ISG",
+          #add = "reg.line",                         # Add regression line
+          #conf.int = TRUE,
+          #label = "Donor.full"
+          #) + stat_cor(label.x = 35, label.y = 0.25) + labs(y = "Mean ISG module score")
+#ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+
 ggscatter(covid_metadata.c[!covid_metadata.c$DTF==0,], x = "DTF", y = "ISG",
           add = "reg.line",                         # Add regression line
           conf.int = TRUE,
           label = "Donor.full"
           ) + stat_cor(label.x = 4, label.y = -0.05) + labs(y = "Mean ISG module score", x = "Days from fever onset")
 ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+
 ggscatter(covid_metadata.c, x = "DPS", y = "ISG",
           add = "reg.line",                         # Add regression line
           conf.int = TRUE, 
           label = "Donor.full"
           ) + stat_cor(label.x = 8, label.y = 0.2) + labs(y = "Mean ISG module score", x = "Days post-symptom onset")
 ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "Age", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 35, label.y = 0.25) + labs(y = "Mean ISG module score")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+
+```
+
+We also noticed downregulation of HLA class II in several of the above heatmaps. Here, let's score each cell by expression of all detected class II-encoding genes. 
+
+```{r}
+covid_combined.nc <- AddModuleScore(covid_combined.nc, features = list(grep("^HLA-D", rownames(covid_combined.nc), value = T)), name = "HLA") #NB: control features are randomly selected, so results may vary slightly
+HLA.scores <- aggregate(covid_combined.nc$HLA1, by = list(covid_combined.nc$Donor.full), FUN = mean)
+covid_metadata$HLA <- HLA.scores$x
+covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
 ```
 
 
 ```{r}
-covid_combined.nc <- AddModuleScore(covid_combined.nc, features = list(grep("^HLA-D", rownames(covid_combined.nc), value = T)), name = "HLA")
-HLA.scores <- aggregate(covid_combined.nc$HLA1, by = list(covid_combined.nc$Donor.full), FUN = mean)
-covid_metadata$HLA <- HLA.scores$x
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
+#Extended Data 4b
+## To ensure complete deidentification of patient information for HIPAA compliance, we are unable to share exact ages for the COVID-19 patient samples
+#ggscatter(covid_metadata.c, x = "Age", y = "HLA",
+          #add = "reg.line",                         # Add regression line
+          #conf.int = TRUE,
+          #label = "Donor.full"
+          #) + stat_cor(label.x = 50, label.y = 0.2) + labs(y = "Mean HLA Class II score")
+#ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
 
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
 ggscatter(covid_metadata.c[!covid_metadata.c$DTF==0,], x = "DTF", y = "HLA",
           add = "reg.line",                         # Add regression line
           conf.int = TRUE,
           label = "Donor.full"
           ) + stat_cor(label.x = 6, label.y = 0.05) + labs(y = "Mean HLA Class II score", x = "Days from fever onset") 
 ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+
 ggscatter(covid_metadata.c, x = "DPS", y = "HLA",
           add = "reg.line",                         # Add regression line
           conf.int = TRUE, 
@@ -1080,246 +526,65 @@ ggscatter(covid_metadata.c, x = "DPS", y = "HLA",
           ) + stat_cor(label.x = 3, label.y = 0.25) + labs(y = "Mean HLA Class II score", x = "Days post-symptom onset")
 ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
 
-ggscatter(covid_metadata.c, x = "Age", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 50, label.y = 0.2) + labs(y = "Mean HLA Class II score")
-ggscatter(covid_metadata.c, x = "ISG", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.y = 0.2, label.x = 0.08) + labs(y = "Mean HLA Class II score", x = "Mean IFNA score") + scale_x_continuous(limits = c(0.035, 0.17))
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
 ```
 
 
-Correlations with diff??
-```{r}
-fq <- prop.table(table(covid_combined.nc@meta.data$cell.type, covid_combined.nc@meta.data[,"orig.ident"]), 2) *100
-fq <- reshape2::melt(fq, value.name = "freq", varnames = c("cell.type", "orig.ident"))
-fq <- t(reshape2::dcast(data = fq, formula = cell.type~orig.ident, value.var = "freq") %>% column_to_rownames(var = "cell.type"))
-fq <- fq[!rownames(fq)=="covid_559",]
-tobind <- sapply(covid_metadata.c[!covid_metadata.c$orig.ident=="covid_559",c(14:34,38,39)], as.numeric)
-fq <- as.matrix(cbind(fq[grep("covid", rownames(fq)),],tobind))
-colnames(fq)[grep("ISG", colnames(fq))] <- "Mean IFNA score"
-colnames(fq)[grep("HLA", colnames(fq))] <- "Mean Class II HLA score"
-
-
-markers.matrix <- cor(fq[,c(1:20,42,43)],fq[,21:43])
-
-myBreaks <- unique(c(seq(min(markers.matrix), 0, length.out=ceiling(paletteLength/2) + 1), 
-              seq(max(markers.matrix)/paletteLength, max(markers.matrix),
-                  length.out=floor(paletteLength/2))))
-
-pdf("~/Downloads/p.pdf",width = 7, height = 7)
-pheatmap(markers.matrix, breaks = myBreaks)
-dev.off()
-
-```
+# Granulocyte and PB Analysis #
+We see a phenotypic continuum between plasmablasts and this peculiar activated granulocyte population of immature/developing neutrophils. Let's take a closer look and embed only these cell types. 
 
 ```{r}
-dummy.metadata <- covid_metadata.c[,c(6,9,10,12,38,39)]
-dummy.metadata$Ventilated <- ifelse(dummy.metadata$Ventilated=="Yes", 1, 0)
-cor.dummy <- rcorr(as.matrix(dummy.metadata,type = "pearson"))
-cor.dummy.mat.r <- reshape2::melt(cor.dummy$r)
-cor.dummy.mat.p <- reshape2::melt(cor.dummy$P)
-cor.dummy.mat <- cbind(cor.dummy.mat.r, p = cor.dummy.mat.p$value)
-cor.dummy.mat$p <- -log10(cor.dummy.mat$p)
-cor.dummy.mat$Var1 <- as.character(cor.dummy.mat$Var1)
-cor.dummy.mat$Var2 <- as.character(cor.dummy.mat$Var2)
+covid_pb <- processNewSeurat(covid_combined.nc, idents = c("9", "16", "18", "21", "27", "29"))
 
-cor.dummy.mat[cor.dummy.mat$Var1=="ISG","Var1"] <- "ISG Score"
-cor.dummy.mat[cor.dummy.mat$Var1=="HLA","Var1"] <- "HLA Score"
-cor.dummy.mat[cor.dummy.mat$Var2=="ISG","Var2"] <- "ISG Score"
-cor.dummy.mat[cor.dummy.mat$Var2=="HLA","Var2"] <- "HLA Score"
-
-cor.dummy.mat$Var1 <- as.factor(cor.dummy.mat$Var1)
-cor.dummy.mat$Var2 <- as.factor(cor.dummy.mat$Var2)
-
-cor.dummy.mat <- cor.dummy.mat[!cor.dummy.mat$value==1,]
-pdf("~/Downloads/p.pdf", height = 7, width = 7)
-dot_plot(cor.dummy.mat, size_var = "p", col_var = "value", display_max_sizes = F, dend_x_var = "value", dend_y_var = "value", cols.use = c("blue", "white", "red"), color.breaks.values = c(-0.5,0,0.5), size_legend = "-log(p value)", col_legend = "Pearson r", size.breaks.values = c(0,.5,1), x.lab.pos = "top")
-dev.off()
-```
-
-
-
-
-
-Let's take a look at the one donor from whom we have longitudinal data
-```{r}
-covid_555 <- subset(covid_combined.nc, cells = grep("555", covid_combined.nc$Donor.orig))
-covid_555 <- RunPCA(covid_555, verbose = FALSE)
-covid_555 <- RunUMAP(covid_555, dims = 1:50, verbose = FALSE)
-covid_555 <- FindNeighbors(covid_555, dims = 1:50, verbose = FALSE)
-covid_555 <- FindClusters(covid_555, resolution = 1, verbose = FALSE)
-DimPlot(covid_555, label = TRUE) + NoLegend()
-DimPlot(covid_555, group.by = "Days")
-ggsave("p.pdf", path = "~/Downloads/")
-DimPlot(covid_555, group.by = "cell.type.fine", label = TRUE) + NoLegend()
-```
-What's different between clusters 1&5 vs. 2&7&8
-```{r}
-covid_555_mono.markers <- FindMarkers(covid_555, ident.1 = c("1", "5"), ident.2 = c("2", "7", "8")) %>% rownames_to_column(var = "gene") %>% arrange(desc(avg_logFC))
-#seems like it's moving from more of an early IFN response to later inflammatory/resolution phenotype?
-```
-
-```{r fig.width=10, fig.height=2}
-DotPlot(subset(covid_555, idents = c("1", "2", "5", "7", "8")), features = covid_555_mono.markers$gene, group.by = "Days") + ggpubr::rotate_x_text()
-```
-
-```{r}
-writeAnnData(emat = covid_combined.emat,
-             nmat = covid_combined.nmat,
-             seu = covid_555,
-             name = "covid_555",
-             dir = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/adata_export/covid_555/")
-```
-
-### Grabbing velocity genes and scores differentiating the two time points ###
-```{r}
-velocity_genes <- read.csv("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/velocity.csv")
-velocity_scores <- read.csv("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/velocity2.csv")
-velocity_1 <- data.frame(gene = velocity_genes$covid_555_1, score = velocity_scores$covid_555_1)
-velocity_2 <- data.frame(gene = velocity_genes$covid_555_2, score = velocity_scores$covid_555_2)
-velocity_1 <- velocity_1[velocity_1$score>0,]
-velocity_2 <- velocity_2[velocity_2$score>0,]
-write.csv(velocity_1, "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/velocity_555_1.csv")
-write.csv(velocity_2, "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/velocity_555_2.csv")
-```
-
-```{r}
-velocity.cp <- build.cp.matrix("velocity", by = "z")
-velocity.ur <- build.ur.matrix("velocity", by = "z")
-
-rownames(velocity.cp) <- gsub("Reactive Oxygen Species", "ROS", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("Pattern Recognition Receptors", "PRRs", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("Rheumatoid Arthritis", "RA", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("Cytotoxic T Lymphocyte", "CTL", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("and", "&", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("Interferon", "IFN", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub("Systemic Lupus Erythematosus", "SLE", rownames(velocity.cp))
-rownames(velocity.cp) <- gsub(" in Macrophages & Monocytes", "", rownames(velocity.cp))
-covid.markers.heatmap(velocity.cp, add.flag = F, save = T, height = 10, width = 8)
-
-rownames(velocity.ur) <- gsub("minnesota R595 lipopolysaccharides", "LPS", rownames(velocity.ur))
-rownames(velocity.ur) <- gsub("lipopolysaccharide", "LPS", rownames(velocity.ur))
-covid.markers.heatmap(velocity.ur, save = T, height = 14, add.flag = F)
-```
-
-
-
-
-
-# Myeloblast and PB Analysis #
-```{r}
-covid_pb <- subset(covid_combined.nc, idents = setdiff(covid_B.idents, c("5", "24")))
-covid_pb <- RunPCA(covid_pb, verbose = FALSE)
-covid_pb <- RunUMAP(covid_pb, dims = 1:50, verbose = FALSE)
-covid_pb <- FindNeighbors(covid_pb, dims = 1:50, verbose = FALSE)
-covid_pb <- FindClusters(covid_pb, resolution = 1, verbose = FALSE)
 DimPlot(covid_pb, label = TRUE) + NoLegend()
-DimPlot(covid_pb, group.by = "Days")
 DimPlot(covid_pb, group.by = "cell.type.fine", label = TRUE) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank()) + scale_color_manual(values = c("steelblue", "orange2", "green3", "red2"))
 ggsave("p.pdf", path = "~/Downloads/")
 
-subset(covid_pb, cells = grep("^covid_", rownames(covid_pb@meta.data)))
-#FOR REVISION
+
+#Extended Data 10a
 DimPlot(subset(covid_pb, cells = grep("^covid_", rownames(covid_pb@meta.data))), group.by = "cell.type.fine", label = F, split.by = "Donor.full", ncol = 4) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.line = element_blank()) + scale_color_manual(values = c("steelblue", "red2", "orange2", "green3"))
 ggsave("p.pdf", path = "~/Downloads/", width = 7, height = 5)
-
-
-```
-
-```{r}
-FeaturePlot(covid_pb, features = grep("^CEBP", rownames(covid_pb), value = T))
 ```
 
 
+Let's rename the clusters to letters so as to avoid confusion with our discussion of numbered clusters in the whole dataset.
 ```{r}
 covid_pb$seurat_clusters <- mapvalues(covid_pb$seurat_clusters, from = 0:(length(unique(covid_pb$seurat_clusters))-1), to = LETTERS[1:length(unique(covid_pb$seurat_clusters))])
 Idents(covid_pb) <- "seurat_clusters"
+
+#Figure 4e is plotted using scanpy, but this is equivalent to that figure.
 DimPlot(covid_pb, label = T) + NoLegend()
 ```
 
+What genes are differentially expressed in clusters J and K?
 ```{r}
 pb.markers <- FindAllMarkers(covid_pb, only.pos = T)
 ```
 
-```{r}
-covid_pb$Complexity <- covid_pb$nFeature_RNA/covid_pb$nCount_RNA
-myFeaturePlot(covid_pb, features = c("nFeature_RNA", "nCount_RNA", "nFeature_SCT", "nCount_SCT"))
-myFeaturePlot(covid_pb, features = c("Complexity"))
-
-VlnPlot(covid_pb, features = c("nFeature_RNA", "nCount_RNA", "nFeature_SCT", "nCount_SCT", "Complexity"), group.by = "cell.type", pt.size = 0.2)
-
-ggsave("p.pdf", path = "~/Downloads/", height = 7, width = 7)
-```
+Let's ensure that this transitional cell population doesn't represent doublets. Generally speaking, all PBMC cell types should be expected to express approximately the same total number of genes, so we can use cellular complexity to estimate this. We expect that RBCs and RBC doublets should have the lowest complexity. 
 
 ```{r}
 covid_combined.nc$Complexity <- covid_combined.nc$nFeature_RNA/covid_combined.nc$nCount_RNA
-myFeaturePlot(covid_combined.nc, features = c("nFeature_RNA", "nCount_RNA", "nFeature_SCT", "nCount_SCT"))
-myFeaturePlot(covid_combined.nc, features = c("Complexity"))
 
-VlnPlot(covid_combined.nc, features = c("nFeature_RNA", "nCount_RNA", "nFeature_SCT", "nCount_SCT", "Complexity"), group.by = "cell.type", pt.size = 0.2)
-
+#Extended Data Fig 9
 VlnPlot(covid_combined.nc, features = c("Complexity"), group.by = "cell.type", pt.size = 0.2) + rotate_x_text() + NoLegend()
 
 ggsave("p.pdf", path = "~/Downloads/", height = 7, width = 7)
 ```
 
+Let's visualize the transition from plasmablast phenotype to various stages of neutrophil development by plotting some of the DE genes identified two chunks above. 
 
 ```{r}
-FeaturePlot(covid_pb, features = c("ELANE", "MPO", "LTF", "CTSG", "CEACAM8", "DEFA3", "CAMP", "MMP8", "LCN2")) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
-ggsave("p.pdf", path = "~/Downloads/")
-
-
-features = c("CD27", "CD38", "SDC1", "TNFRSF17")
-plots <- lapply(features, function(x) {FeaturePlot(covid_pb,features = x) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())})
-CombinePlots(plots = plots)
-
-features = c("ELANE", "MPO", "LTF", "CTSG", "CEACAM8", "DEFA3", "CAMP", "MMP8", "LCN2")
-plots <- lapply(features, function(x) {FeaturePlot(covid_pb,features = x) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())})
-CombinePlots(plots = plots)
-ggsave("p.pdf", path = "~/Downloads/")
-
-features = c("CD27", "CD38", "TNFRSF17", "ELANE", "LTF", "CEACAM8", "DEFA3",  "MMP8", "LCN2")
+#Figure 4b
+features = c("CD27", "CD38", "TNFRSF17", "DEFA3", "ELANE", "MPO", "CHI3L1", "LCN2", "LTF", "MMP8", "MMP9", "CAMP")
 plots <- lapply(features, function(x) {FeaturePlot(covid_pb,features = x) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())})
-CombinePlots(plots = plots)
-ggsave("p.pdf", path = "~/Downloads/", height = 10, width = 10)
+CombinePlots(plots = plots, ncol = 3)
+ggsave("p.pdf", path = "~/Downloads/", height = 15, width = 10)
 ```
 
 Determine abundances of Ig gene usage by donor
-```{r fig.width=10,fig.height=2}
+```{r}
+#Extended Data Fig. 3a
 ig.genes <- pb.markers[grep("^IG", pb.markers$gene),]
-covid.seuAbundances(covid_pb, by = "seurat_clusters", meta.include = c("orig.ident", "Ventilated", "Days"), group_by = "Ventilated")
-
-
-
-covid.seuAbundances(covid_pb, by = "seurat_clusters", group_by = "Ventilated", meta.include = c("Status", "Donor", "orig.ident", "Ventilated"), color_by = "Donor", custom_fill_colors = c(RColorBrewer::brewer.pal(9, "Reds")[3:9], RColorBrewer::brewer.pal(9, "Blues")[4:9]), group_by.point = "Donor")
-
-
-DotPlot(covid_combined.nc, features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", dot.scale = 20) + ggpubr::rotate_x_text()
-
-DotPlot(subset(covid_combined.nc, cells = colnames(covid_combined.nc)[-grep("558", colnames(covid_combined.nc))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", dot.scale = 6) + ggpubr::rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/", width = 14, height = 5)
-DotPlot(subset(covid_combined.nc, cells = colnames(covid_combined.nc)[-grep("558", colnames(covid_combined.nc))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Ventilated", dot.scale = 6) + ggpubr::rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/", width = 14, height = 4.5)
-
-DotPlot(covid_combined.nc, features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", dot.scale = 6) + ggpubr::rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/", width = 14, height = 5)
-```
-FlexDotPlot test
-
-```{r fig.height = 2, fig.width = 7}
-new_dotplot(covid_combined.nc, features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Ventilated", size.breaks.values = c(0, 2, 4), shape.scale = 6)
-new_dotplot(covid_combined.nc, features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", size.breaks.values = c(0, 5, 10), shape.scale = 6, dend_y_var = NULL)
-
-new_dotplot(subset(covid_combined.nc, cells = colnames(covid_combined.nc)[-grep("558", colnames(covid_combined.nc))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Ventilated", size.breaks.values = c(0, 0.5, 1, 1.5), shape.scale = 6)
-new_dotplot(subset(covid_combined.nc, cells = colnames(covid_combined.nc)[-grep("558", colnames(covid_combined.nc))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", size.breaks.values = c(0, 5, 10), shape.scale = 6, dend_y_var = NULL)
-
-new_dotplot(subset(covid_pb, cells = colnames(covid_combined.nc)[-grep("558", colnames(covid_combined.nc))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", size.breaks.values = c(0, 5, 10), shape.scale = 6, dend_y_var = NULL)
 
 pdf("~/Downloads/p.pdf", height = 4, width = 12)
 new_dotplot(subset(covid_pb, cells = grep("^C", covid_pb$Donor.full)), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", size.breaks.values = c(0, 10, 20, 30, 40), color.breaks.values = c(-2, -1, 0, 1, 2), shape.scale = 5, dend_y_var = NULL)
@@ -1327,371 +592,29 @@ dev.off()
 ```
 
 
-```{r fig.width=10,fig.height=2}
-DotPlot(subset(covid_pb, cells = colnames(covid_pb)[-grep("558", colnames(covid_pb))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Donor.full", dot.scale = 10) + ggpubr::rotate_x_text()
-DotPlot(subset(covid_pb, cells = colnames(covid_pb)[-grep("558", colnames(covid_pb))]), features = unique(grep("V",ig.genes$gene,value = T)), group.by = "Ventilated", dot.scale = 10) + ggpubr::rotate_x_text()
-```
 
 ```{r}
-new_dotplot(covid_combined.nc, features = grep("^HLA-D", rownames(covid_combined.nc), value = T)[nchar(grep("^HLA", rownames(covid_combined.nc), value = T)) != 5], group.by = "cell.type", shape.scale = 6)
-
-new_dotplot(covid_combined.DC, features = grep("^HLA-D", rownames(covid_combined.nc), value = T)[nchar(grep("^HLA", rownames(covid_combined.nc), value = T)) != 5], group.by = "Donor.full", shape.scale = 6)
-
-pdf(file = "~/Downloads/p.pdf", height = 7, width = 12)
-new_dotplot(subset(covid_combined.nc, idents = setdiff(Idents(covid_combined.nc), covid_DC.idents)), features = grep("^HLA-", rownames(covid_combined.nc), value = T), group.by = "Donor.full", shape.scale = 6)
-dev.off()
-
-pdf("~/Downloads/p.pdf", height = 5, width = 8)
-new_dotplot(covid_combined.nc, features = grep("^HLA-", rownames(covid_combined.nc), value = T), group.by = "Donor.full", shape.scale = 6, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 25, 50, 75, 100))
-dev.off()
-```
-
-```{r}
+#Figure 4f
 features = grep("^CEBP", rownames(covid_pb), value = T)
 features = features[-grep("AS1", features)]
-DotPlot(covid_pb, features = features, group.by = "cell.type") + rotate_x_text()
-FeaturePlot(covid_pb, features = features)
-
-
-features = features
-plots <- lapply(features, function(x) {FeaturePlot(covid_pb,features = x) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())})
-CombinePlots(plots = plots)
-ggsave("p.pdf", path = "~/Downloads/", height = 7*(2/3))
 
 pdf("~/Downloads/p.pdf", height = 3, width = 8)
 new_dotplot(covid_pb, features = features, genes.on.x = FALSE, group.by = "seurat_clusters", shape.scale = 6, size.breaks.values = c(0, 20, 40), color.breaks.values = c(-2, -1, 0, 1, 2))
 dev.off()
 ```
 
+
+
+To perform RNA velocity analysis, we will use scVelo, written in Python. This package requires that the data be formatted as an AnnData object, and I have thus far been unable to write AnnData objects from R that contain multiple layers of count matrices (which is necessary for RNA velocity as this requires both spliced and unspliced count matrices). This code will export the object piecemeal in a way that can be read back together as an AnnData object.
 ```{r}
-ag.markers <- FindMarkers(covid_pb, ident.1 = "Activated Granulocyte", group.by = "cell.type") %>% rownames_to_column(var = "gene")
-ag.markers <- ag.markers[-c(grep("^RPS", ag.markers$gene), 
-                            grep("^RPL", ag.markers$gene), 
-                            grep("^MT-", ag.markers$gene),
-                            grep("^MTR", ag.markers$gene),
-                            grep("MALAT1", ag.markers$gene),
-                            grep("^RNA1\\dS5", ag.markers$gene)),]
-write.csv(ag.markers, file = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/IPA/ag.markers.csv")
-```
-
-
-```{r}
-seuratObj=covid_combined.nc
-receiver = "Activated Granulocyte"
-expressed_genes_receiver = get_expressed_genes(receiver, seuratObj, pct = 0.10)
-
-background_expressed_genes = expressed_genes_receiver %>% .[. %in% rownames(ligand_target_matrix)]
-sender_celltypes = setdiff(unique(seuratObj$cell.type), "Activated Granulocyte")
-
-list_expressed_genes_sender = sender_celltypes %>% unique() %>% lapply(get_expressed_genes, seuratObj, 0.10) # lapply to get the expressed genes of every sender cell type separately here
-expressed_genes_sender = list_expressed_genes_sender %>% unlist() %>% unique()
-seurat_obj_receiver= subset(seuratObj, idents = receiver)
-#seurat_obj_receiver = SetIdent(seurat_obj_receiver, value = seurat_obj_receiver[["aggregate"]])
-
-  
-DE_table_receiver = FindMarkers(object = seuratObj, ident.1 = receiver, min.pct = 0.10) %>% rownames_to_column("gene")
-
-
-geneset_oi = ag.markers %>% filter(p_val_adj <= 0.05 & abs(avg_logFC) >= 0.25) %>% pull(gene)
-geneset_oi = geneset_oi %>% .[. %in% rownames(ligand_target_matrix)]
-ligands = lr_network %>% pull(from) %>% unique()
-receptors = lr_network %>% pull(to) %>% unique()
-
-expressed_ligands = intersect(ligands,expressed_genes_sender)
-expressed_receptors = intersect(receptors,expressed_genes_receiver)
-
-potential_ligands = lr_network %>% filter(from %in% expressed_ligands & to %in% expressed_receptors) %>% pull(from) %>% unique()
-ligand_activities = predict_ligand_activities(geneset = geneset_oi, background_expressed_genes = background_expressed_genes, ligand_target_matrix = ligand_target_matrix, potential_ligands = potential_ligands)
-
-ligand_activities = ligand_activities %>% arrange(-pearson) %>% mutate(rank = rank(desc(pearson)))
-best_upstream_ligands = ligand_activities %>% top_n(20, pearson) %>% arrange(-pearson) %>% pull(test_ligand) %>% unique()
-DotPlot(seuratObj, features = best_upstream_ligands %>% rev(), cols = "RdYlBu") + RotatedAxis()
-```
-
-
-```{r}
-active_ligand_target_links_df = best_upstream_ligands %>% lapply(get_weighted_ligand_target_links,geneset = geneset_oi, ligand_target_matrix = ligand_target_matrix, n = 200) %>% bind_rows() %>% drop_na()
-
-active_ligand_target_links = prepare_ligand_target_visualization(ligand_target_df = active_ligand_target_links_df, ligand_target_matrix = ligand_target_matrix, cutoff = 0.33)
-
-order_ligands = intersect(best_upstream_ligands, colnames(active_ligand_target_links)) %>% rev() %>% make.names()
-order_targets = active_ligand_target_links_df$target %>% unique() %>% intersect(rownames(active_ligand_target_links)) %>% make.names()
-rownames(active_ligand_target_links) = rownames(active_ligand_target_links) %>% make.names() # make.names() for heatmap visualization of genes like H2-T23
-colnames(active_ligand_target_links) = colnames(active_ligand_target_links) %>% make.names() # make.names() for heatmap visualization of genes like H2-T23
-
-vis_ligand_target = active_ligand_target_links[order_targets,order_ligands] %>% t()
-
-p_ligand_target_network = vis_ligand_target %>% make_heatmap_ggplot("Prioritized ligands","Predicted target genes", color = "purple",legend_position = "top", x_axis_position = "top",legend_title = "Regulatory potential")  + theme(axis.text.x = element_text(face = "italic")) + scale_fill_gradient2(low = "whitesmoke",  high = "purple", breaks = c(0,0.006,0.012))
-p_ligand_target_network
-```
-
-
-
-```{r}
-lr_network_top = lr_network %>% filter(from %in% best_upstream_ligands & to %in% expressed_receptors) %>% distinct(from,to)
-best_upstream_receptors = lr_network_top %>% pull(to) %>% unique()
-
-weighted_networks_lr = weighted_networks$lr_sig %>% inner_join(lr_network %>% distinct(from,to), by = c("from","to"))
-lr_network_top_df_large = weighted_networks_lr %>% filter(from %in% best_upstream_ligands & to %in% best_upstream_receptors)
-
-lr_network_top_df = lr_network_top_df_large %>% spread("from","weight",fill = 0)
-lr_network_top_matrix = lr_network_top_df %>% dplyr::select(-to) %>% as.matrix() %>% magrittr::set_rownames(lr_network_top_df$to)
-
-dist_receptors = dist(lr_network_top_matrix, method = "binary")
-hclust_receptors = hclust(dist_receptors, method = "ward.D2")
-order_receptors = hclust_receptors$labels[hclust_receptors$order]
-    
-dist_ligands = dist(lr_network_top_matrix %>% t(), method = "binary")
-hclust_ligands = hclust(dist_ligands, method = "ward.D2")
-order_ligands_receptor = hclust_ligands$labels[hclust_ligands$order]
-
-order_receptors = order_receptors %>% intersect(rownames(lr_network_top_matrix))
-order_ligands_receptor = order_ligands_receptor %>% intersect(colnames(lr_network_top_matrix))
-
-vis_ligand_receptor_network = lr_network_top_matrix[order_receptors, order_ligands_receptor]
-rownames(vis_ligand_receptor_network) = order_receptors %>% make.names()
-colnames(vis_ligand_receptor_network) = order_ligands_receptor %>% make.names()
-p_ligand_receptor_network = vis_ligand_receptor_network %>% t() %>% make_heatmap_ggplot("Ligands","Receptors", color = "mediumvioletred", x_axis_position = "top",legend_title = "Prior interaction potential")
-pdf("~/Downloads/p.pdf", width = 8, height = 4.5)
-p_ligand_receptor_network
-dev.off()
-```
-
-```{r}
-ligand_pearson_matrix = ligand_activities %>% dplyr::select(pearson) %>% as.matrix() %>% magrittr::set_rownames(ligand_activities$test_ligand)
-
-rownames(ligand_pearson_matrix) = rownames(ligand_pearson_matrix) %>% make.names()
-colnames(ligand_pearson_matrix) = colnames(ligand_pearson_matrix) %>% make.names()
-
-vis_ligand_pearson = ligand_pearson_matrix[order_ligands, ] %>% as.matrix(ncol = 1) %>% magrittr::set_colnames("Pearson")
-p_ligand_pearson = vis_ligand_pearson %>% make_heatmap_ggplot("Prioritized ligands","Ligand activity", color = "darkorange",legend_position = "top", x_axis_position = "top", legend_title = "Pearson correlation coefficient\ntarget gene prediction ability)") + theme(legend.text = element_text(size = 9))
-
-figures_without_legend = cowplot::plot_grid(p_ligand_pearson + theme(legend.position = "none", axis.ticks = element_blank()) + theme(axis.title.x = element_text()),
-    p_ligand_target_network + theme(legend.position = "none", axis.ticks = element_blank()) + ylab(""),
-    align = "hv",
-    nrow = 1,
-    rel_widths = c(ncol(vis_ligand_pearson)+10, ncol(vis_ligand_target)))
-
-legends = cowplot::plot_grid(
-    ggpubr::as_ggplot(ggpubr::get_legend(p_ligand_pearson)),
-    ggpubr::as_ggplot(ggpubr::get_legend(p_ligand_target_network)),
-    nrow = 1,
-    align = "h")
-
-combined_plot = cowplot::plot_grid(figures_without_legend, legends, rel_heights = c(10,2), nrow = 2, align = "hv")
-pdf("~/Downloads/p.pdf", height = 4, width = 9)
-combined_plot
-dev.off()
-```
-
-
-```{r}
-pdf("~/Downloads/p.pdf", width = 7, height = 3)
-new_dotplot(seuratObj, features = best_upstream_ligands %>% rev(), group.by = "Ventilated", shape.scale = 6, size.breaks.values = c(0, 10, 20, 30), color.breaks.values = c(-1, 0, 1, 2))
-dev.off()
-
-pdf("~/Downloads/p.pdf", width = 7, height = 7)
-new_dotplot(seuratObj, features = c("CALR", "FGF23", "ALOX5AP", "MMP9", "LGALS3", "ADAM17", "PIK3CB", "NCAM1", "TGFB1"), group.by = "cell.type", shape.scale = 5, size.breaks.values = c(0, 25, 50, 75), color.breaks.values = c(-1, 0, 1, 2))
-dev.off()
-
-pdf("~/Downloads/p.pdf", width = 7, height = 7)
-new_dotplot(seuratObj, features = c("EGFR", "IL24"), group.by = "cell.type", shape.scale = 5, size.breaks.values = c(0, 25, 50, 75), color.breaks.values = c(-1, 0, 1, 2))
-dev.off()
-
-pdf("~/Downloads/p.pdf", width = 5, height = 7)
-new_dotplot(seuratObj, features = c("TFRC", "IGF2R", "M6PR", "NOTCH2"), group.by = "cell.type", shape.scale = 6, size.breaks.values = c(0, 20, 40, 60), color.breaks.values = c(-1, 0, 1, 2))
-dev.off()
-```
-
-```{r}
-writeAnnData(emat = covid_combined.emat,
-             nmat = covid_combined.nmat,
+writeAnnData(emat = covid_combined.emat, # created in generating_Seurat_object.Rmd
+             nmat = covid_combined.nmat, # created in generating_Seurat_object.Rmd
              seu = covid_pb,
-             name = "pb",
-             dir = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/COVID/analyses/adata_export/pb/")
-
+             name = "pb", # this is the prefix on the files that will be written
+             dir = "directory_for_export/")
 ```
 
 
-# NicheNet Analysis #
-Load references
-```{r}
-ligand_target_matrix = readRDS(url("https://zenodo.org/record/3260758/files/ligand_target_matrix.rds"))
-lr_network = readRDS(url("https://zenodo.org/record/3260758/files/lr_network.rds"))
-weighted_networks = readRDS(url("https://zenodo.org/record/3260758/files/weighted_networks.rds"))
-Idents(covid_combined.nc) <- "cell.type.coarse"
-```
-
-```{r}
-nichenet_CD14 = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "CD14 Monocyte", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all",
-  geneset = "up",
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_CD16 = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "CD16 Monocyte", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_CD4T = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "CD4 T", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_CD8T = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "CD8 T", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_gdT = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "gd T", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_NK = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "NK", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_PB = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "PB", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_B = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "B", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_myelocyte = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "Myelocyte", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-nichenet_DC = nichenet_seuratobj_aggregate(
-  seurat_obj = covid_combined.nc, 
-  receiver = "DC", 
-  condition_colname = "Status", condition_oi = "COVID", condition_reference = "Healthy", 
-  sender = "all", 
-  ligand_target_matrix = ligand_target_matrix, lr_network = lr_network, weighted_networks = weighted_networks, organism = "human")
-```
-
-```{r fig.width=9}
-nichenet_CD14$ligand_activity_target_heatmap
-nichenet_CD14$ligand_receptor_heatmap
-
-nichenet_CD4T$ligand_activity_target_heatmap
-nichenet_CD8T$ligand_activity_target_heatmap
-nichenet_gdT$ligand_activity_target_heatmap
-nichenet_NK$ligand_activity_target_heatmap
-nichenet_CD16$ligand_activity_target_heatmap
-nichenet_DC$ligand_activity_target_heatmap
-nichenet_B$ligand_activity_target_heatmap
-nichenet_gdT$ligand_activity_target_heatmap
-nichenet_PB$ligand_activity_target_heatmap
-nichenet_myelocyte$ligand_activities
-```
-
-```{r}
-test <- covid_combined.nc
-test$Status <- mapvalues(test$Status, from = c("Healthy", "COVID"), to = c("Control", "Case"))
-test$Ventilated <- mapvalues(test$Ventilated, from = c("N/A", "Yes", "No"), to = c("Control", "Case", "Case"))
-
-DotPlot(test, features = rev(c("TGFB1", "TGFBR2", "ITGB1", "FCN1", "TLR2", "CD14", "CYP1B1", "IFIT3", "S100A8", "S100A9", "SOCS3")), group.by = "cell.type", split.by = "Ventilated") + ggpubr::rotate_x_text()
-```
-
-
-Combine Nichenet drivers in all compartments, anything with a Pearson above 0.1
-```{r}
-B_ligands <- nichenet_B$ligand_activities %>% filter(pearson>0.01)
-B_ligands$cell.type.coarse <- "B"
-PB_ligands <- nichenet_PB$ligand_activities %>% filter(pearson>0.01)
-PB_ligands$cell.type.coarse <- "PB"
-Myelocyte_ligands <- nichenet_myelocyte$ligand_activities %>% filter(pearson>0.01)
-Myelocyte_ligands$cell.type.coarse <- "Myelocyte"
-CD14_ligands <- nichenet_CD14$ligand_activities %>% filter(pearson>0.01)
-CD14_ligands$cell.type.coarse <- "CD14 Monocyte"
-CD16_ligands <- nichenet_CD16$ligand_activities %>% filter(pearson>0.01)
-CD16_ligands$cell.type.coarse <- "CD16 Monocyte"
-CD4T_ligands <- nichenet_CD4T$ligand_activities %>% filter(pearson>0.01)
-CD4T_ligands$cell.type.coarse <- "CD4 T"
-CD8T_ligands <- nichenet_CD8T$ligand_activities %>% filter(pearson>0.01)
-CD8T_ligands$cell.type.coarse <- "CD8 T"
-gdT_ligands <- nichenet_gdT$ligand_activities %>% filter(pearson>0.01)
-gdT_ligands$cell.type.coarse <- "gd T"
-NK_ligands <- nichenet_NK$ligand_activities %>% filter(pearson>0.01)
-NK_ligands$cell.type.coarse <- "NK"
-DC_ligands <- nichenet_DC$ligand_activities %>% filter(pearson>0.01)
-DC_ligands$cell.type.coarse <- "DC"
-
-combined_ligands <- rbind(B_ligands, CD14_ligands, CD16_ligands, CD4T_ligands, CD8T_ligands, gdT_ligands, NK_ligands, DC_ligands)
-combined_ligands <- reshape2::dcast(data = combined_ligands, formula = test_ligand~cell.type.coarse, fun.aggregate = sum, value.var = "pearson")
-combined_ligands <- combined_ligands %>% column_to_rownames("test_ligand")
-```
-
-
-```{r fig.width=10,fig.height=2.5}
-Heatmap(as.matrix(t(combined_ligands)), heatmap_legend_param = list(title = "Pearson"), column_names_gp = gpar(fontsize = 11), row_names_gp = gpar(fontsize = 20), col = colorRamp2(breaks = c(0,max(combined_ligands)),colors = c("white", "red")))
-```
-
-```{r fig.width=15,fig.height = 8}
-DotPlot(covid_combined.nc, features = c(rownames(combined_ligands), "IFI27", "IFI44L"), group.by = "cell.type", dot.scale = 10, cols = "RdYlBu") + ggpubr::rotate_x_text()
-```
-
-```{r fig.width = 10, fig.height=2}
-DotPlot(covid_combined.nc, features = c(rownames(combined_ligands), "IFI27", "IFI44L"), group.by = "Ventilated", dot.scale = 10, cols = "RdYlBu") + ggpubr::rotate_x_text()
-```
-
-## Attempt to coembed preliminary Vaxart data ##
-
-```{r}
-flu_combined <- readRDS("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/Vaxart/Prelim/scrna-seq/analyses/200205--flu_combined.seu.rds")
-coembed <- merge(flu_combined, covid_combined.nc)
-coembed <- FindVariableFeatures(coembed)
-coembed <- RunPCA(coembed, verbose = FALSE)
-coembed <- RunUMAP(coembed, dims = 1:50, verbose = FALSE)
-coembed <- FindNeighbors(coembed, dims = 1:50, verbose = FALSE)
-coembed <- FindClusters(coembed, resolution = 1, verbose = FALSE)
-DimPlot(coembed, label = TRUE) + NoLegend()
-DimPlot(coembed, group.by = "orig.ident")
-DimPlot(coembed, group.by = "cell.type.fine", label = TRUE) + NoLegend()
-```
-
-```{r}
-test.markers <- FindMarkers(subset(coembed, cells = c(grep("0 dpi", coembed$orig.ident), grep("^H", coembed$orig.ident))), ident.1 = "0 dpi", group.by = "orig.ident")
-# I think this means the full regression needs to be completed again since most of the differences between the flu sample and the covid healthy controls are cell quality genes. 
-```
-
-```{r}
-coembed <- PercentageFeatureSet(coembed, pattern = "^MT-", col.name = "percent.mt")
-coembed <- PercentageFeatureSet(coembed, pattern = "^RPS", col.name = "percent.rps")
-coembed <- PercentageFeatureSet(coembed, pattern = "^RPL", col.name = "percent.rpl")
-coembed <- PercentageFeatureSet(coembed, pattern = "^RNA\\d8S5", col.name = "percent.rrna")
-coembed <- SCTransform(coembed, vars.to.regress = c("percent.mt", "percent.rps", "percent.rpl", "percent.rrna", "nCount_RNA", "nFeature_RNA"), verbose = FALSE, return.only.var.genes = TRUE)
-coembed <- RunPCA(coembed, verbose = FALSE)
-coembed <- RunUMAP(coembed, dims = 1:50, verbose = FALSE)
-coembed <- FindNeighbors(coembed, dims = 1:50, verbose = FALSE)
-coembed <- FindClusters(coembed, resolution = 1, verbose = FALSE)
-DimPlot(coembed, label = TRUE, pt.size = 0) + NoLegend()
-DimPlot(coembed, group.by = "orig.ident", pt.size = 0)
-```
-
-```{r}
-coembed$Status[grep("dpi",coembed$orig.ident)] <- "Influenza"
-DimPlot(coembed, group.by = "Status")
-DimPlot(subset(coembed, cells = c(grep("HIP", coembed$orig.ident), grep("^0 dpi", coembed$orig.ident))), group.by = "Status")
-cryo.markers <- FindMarkers(subset(coembed, cells = c(grep("HIP", coembed$orig.ident), grep("^0 dpi", coembed$orig.ident))), ident.1 = "0 dpi", group.by = "orig.ident")
-```
 
 # COMPARTMENT-SPECIFIC ANALYSES
 ### Monocytes
@@ -1704,50 +627,38 @@ covid_combined.mono <- FindClusters(covid_combined.mono, resolution = 1, verbose
 DimPlot(covid_combined.mono, label = TRUE) + NoLegend()
 DimPlot(covid_combined.mono, group.by = "Donor.full")
 DimPlot(covid_combined.mono, group.by = "cell.type", label = T) + NoLegend()
+
+#Figure 2a
 DimPlot(covid_combined.mono, group.by = "Donor.full", pt.size = 0.75, cols = custom_fill_colors) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
 ggsave("p.pdf", path = "~/Downloads/")
 
 
-myFeaturePlot <- function(object = NULL, features = features, ncol = NULL, save = T, height = 7, width = 7, cols = c("lightgrey", "blue")) {
-  plots <- lapply(features, function(x) {FeaturePlot(object,features = x, cols = cols) +  labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())})
-  CombinePlots(plots = plots, ncol = ncol)
-  if(save) {
-    ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
-  }
-}
-
-myFeaturePlot(covid_combined.mono, features = c("CD14", "FCGR3A", "HLA-DPB1", "HLA-DMA", "S100A9", "IFI27"), save = T, ncol = 2, height = 7*1.5)
+#Figure 2b
+myFeaturePlot(covid_combined.mono, features = c("CD14", "FCGR3A", "HLA-DPB1", "HLA-DMA", "S100A9", "IFI27"), save = T, ncol = 2, height = 7*1.5, save.as = "pdf")
 ```
 
 Is HLA downregulation a feature of more severe cases?
 ```{r}
-covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(grep("^HLA-D", rownames(covid_combined.mono), value = T)))
+covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(grep("^HLA-D", rownames(covid_combined.mono), value = T))) 
 
 data.plot <- covid_combined.mono@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
-new.data <- data.plot[,c("Donor.full", "Ventilated", "Cluster1")]
-new.data2 <- aggregate(new.data$Cluster1, by = list(new.data$Donor.full), FUN = mean)
-colnames(new.data2) <- c("Donor.full", "Cluster1")
+new.data <- data.plot[,c("Donor.full", "Ventilated", "HLA1")]
+new.data2 <- aggregate(new.data$HLA1, by = list(new.data$Donor.full), FUN = mean)
+colnames(new.data2) <- c("Donor.full", "HLA1")
 new.data2 <- merge(new.data2, unique(new.data[,c("Donor.full", "Ventilated")]))
 
 
-
-ggboxplot(new.data2, "Ventilated", "Cluster1",
+#Figure 2e
+ggboxplot(new.data2, "Ventilated", "HLA1",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
           palette = c("blue3", "tomato1", "red3"), 
           outlier.shape = NA, legend = "none",
           xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons4)
+  stat_compare_means(comparisons = my_comparisons4) #NB: control features are randomly selected, so results may vary slightly
 ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
 
-ggboxplot(covid_combined.mono@meta.data, "Donor.full", "Cluster1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("green3", "blue3", "red3"), 
-          xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons4, label = "p.signif")
-ggsave("p.pdf", path = "~/Downloads/")
-
+#Figure 2f
 pdf("~/Downloads/p.pdf", height = 5, width = 12)
 new_dotplot(covid_combined.mono, features = grep("^HLA-", rownames(covid_combined.nc), value = T), group.by = "Donor.full", shape.scale = 6, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 25, 50, 75, 100))
 dev.off()
@@ -1756,18 +667,15 @@ dev.off()
 ```{r}
 covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(as.character(ISG.list$gene)), name = "IFN")
 data.plot <- covid_combined.mono@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
 
-
-
+#Figure 2i
 ggboxplot(data.plot, "Donor.full", "IFN1",
           order = c("H1", "H2", "H3", "H4", "H5", "H6", "H7","C1 A", "C1 B", "C2", "C3", "C4", "C5", "C6", "C7"),
           color = "Ventilated", add = "jitter", 
           palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "ISG Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif") + rotate_x_text()
-
+          xlab = "Donor", ylab = "ISG Module Score") + rotate_x_text()
+#NB: control features are randomly selected, so results may vary slightly
 
 
 ggsave("p.pdf", path = "~/Downloads/", width = 4, height = 4)
@@ -1780,85 +688,30 @@ covid_metadata$ISG <- ISG.scores$x
 covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
 covid_metadata.h <- covid_metadata[grep("^H", covid_metadata$Donor.full),]
 
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
+#Figure 2j
 ggscatter(covid_metadata.c[!covid_metadata.c$DTF==0,], x = "DTF", y = "ISG",
           add = "reg.line",                         # Add regression line
           conf.int = TRUE,
           label = "Donor.full"
           ) + stat_cor(label.x = 4, label.y = -0.05) + labs(y = "Mean ISG module score", x = "Time from fever onset (days)")
 ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "DPS", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.2) + labs(y = "Mean ISG module score", x = "Days post-symptom onset")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.h, x = "Age", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 35, label.y = 0.25) + labs(y = "Mean ISG module score")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+#NB: control features are randomly selected, so results may vary slightly
+
+## See above, we cannot share exact Age for HIPAA and patient privacy reasons.
+#ggscatter(covid_metadata.h, x = "Age", y = "ISG",
+ #         add = "reg.line",                         # Add regression line
+  #        conf.int = TRUE,
+   #       label = "Donor.full"
+    #      ) + stat_cor(label.x = 35, label.y = 0.25) + labs(y = "Mean ISG module score")
+#ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
+#NB: control features are randomly selected, so results may vary slightly
 ```
 
 
 ```{r}
-HLA.scores <- aggregate(covid_combined.mono$Cluster1, by = list(covid_combined.mono$Donor.full), FUN = mean)
-covid_metadata$HLA <- HLA.scores$x
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
-
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
-ggscatter(covid_metadata.c[!covid_metadata.c$DPF==0,], x = "DPF", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.05) + labs(y = "Mean HLA Class II score", x = "Days post-fever onset") + scale_x_continuous(limits = c(7, 18))
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "DPS", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 3, label.y = 0.25) + labs(y = "Mean HLA Class II score", x = "Days post-symptom onset")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-
-ggscatter(covid_metadata.c, x = "Age", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 50, label.y = 0.2) + labs(y = "Mean HLA Class II score")
-ggscatter(covid_metadata.c, x = "ISG", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.y = 0.2, label.x = 0.08) + labs(y = "Mean HLA Class II score", x = "Mean IFNA score") + scale_x_continuous(limits = c(0.035, 0.17))
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-```
-
-```{r}
+#Figure 2c
 myFeaturePlot(covid_combined.mono, features = c("TNF", "IL6", "IL1B", "CCL3", "CCL4", "CXCL2"), ncol = 1, width = 3.5, height = 21)
 ```
-
-```{r}
-c3.c7.mono.markers <- FindMarkers(covid_combined.mono, ident.1 = "C3", ident.2 = "C7", group.by = "Donor.full")
-```
-
-
-```{r}
-writeAnnData(emat = covid_combined.emat, 
-             nmat = covid_combined.nmat,
-             seu = covid_combined.CD14mono,
-             name = "CD14mono",
-             dir = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/covid/analyses/adata_export/CD14mono/")
-```
-```{r}
-covid_combined.CD14mono.markers <- FindAllMarkers(covid_combined.CD14mono, min.pct = 0.05)
-covid_combined.CD14mono.markers %>% group_by(cluster) %>% top_n(n = 10, wt = avg_logFC)
-for (i in unique(covid_combined.CD14mono.markers$cluster)) {
-  tmp <- covid_combined.CD14mono.markers[covid_combined.CD14mono.markers$cluster==i,]
-  write.csv(tmp, file = paste0("/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Data/scRNA-seq/covid/analyses/IPA/CD14mono.cluster",i,".markers.csv"))
-}
-```
-
 
 
 ### NK and T cells
@@ -1871,25 +724,24 @@ covid_combined.lymph <- FindClusters(covid_combined.lymph, resolution = 1, verbo
 DimPlot(covid_combined.lymph, label = TRUE) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
 DimPlot(covid_combined.lymph, group.by = "Donor.full")
 DimPlot(covid_combined.lymph, group.by = "cell.type", label = T) + NoLegend()
+
+#Figure 3a
 DimPlot(covid_combined.lymph, group.by = "Donor.full", cols = custom_fill_colors) + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank())
 ggsave("p.pdf", path = "~/Downloads/")
 ```
-```{r}
-lymph.markers <- FindAllMarkers(covid_combined.lymph, only.pos = T)
-lymph.35v47.markers <- FindMarkers(covid_combined.lymph, ident.1 = c("3", "5"), ident.2 = c("4", "7"))
-lymph.1v2.markers <- FindMarkers(covid_combined.lymph, ident.1 = "1", ident.2 = "2")
-```
 
 
 ```{r}
+#Figure 3b
 myFeaturePlot(covid_combined.lymph, features = c("CD3D", "CD3G", "CD4", "CD8A", "FCGR3A", "NCAM1", "GZMB", "MKI67"), save = T, ncol = 2, height = 12)
-myFeaturePlot(covid_combined.lymph, features = c("IFNG", "TNF", "CCL3", "CCL4"), save = T, ncol = 2)
-```
 
-```{r}
-covid_combined.lymph$cell.type <- covid_combined.lymph$seurat_clusters
-covid.seuAbundances(covid_combined.lymph, by = "cell.type", group_by = "Ventilated", meta.include = c("Status", "Donor.full", "orig.ident", "Ventilated"), color_by = "Donor.full" , custom_fill_colors = custom_fill_colors, group_by.point = "Donor", correct = F, comparisons = my_comparisons) + scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + labs(color = "Donor")
-ggsave("~/Downloads/p.pdf", height = 11, width = 8)
+#Extended Data 8a
+myFeaturePlot(covid_combined.lymph, features = c("IFNG", "TNF", "CCL3", "CCL4"), save = T, ncol = 2)
+
+#Extended Data 8b
+pdf("~/Downloads/p.pdf", height = 8, width = 5)
+new_dotplot(subset(covid_combined.nc, idents = covid_CD8T.idents), features = c("IFNG", "TNF", "CCL3", "CCL4"), group.by = "Donor.full", dend_x_var = NULL, shape.scale = 8, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 5, 10, 15, 20))
+dev.off()
 ```
 
 ```{r}
@@ -1899,227 +751,36 @@ covid_combined.lymph$cell.type[grep("9", covid_combined.lymph$cell.type)] <- "Pr
 covid_combined.lymph$cell.type[grep("13", covid_combined.lymph$cell.type)] <- "CD56bright\nNKcells"
 covid_combined.lymph$cell.type[grep("0", covid_combined.lymph$cell.type)] <- "CD56dim\nNKcells"
 covid_combined.lymph$cell.type <- as.factor(covid_combined.lymph$cell.type)
+covid_combined.lymph$Ventilated <- factor(covid_combined.lymph$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
 
+#Figure 3c
 covid.seuAbundances(covid_combined.lymph, by = "cell.type", group_by = "Ventilated", 
                     meta.include = c("Status", "Donor.full", "orig.ident", "Ventilated"), 
                     color_by = "Donor.full" , custom_fill_colors = custom_fill_colors,
-                    group_by.point = "Donor", correct = F, comparisons = my_comparisons,
+                    group_by.point = "Donor", correct = F, comparisons = my_comparisons4,
                     select.idents = c("Proliferative\nlymphocytes", 
-                                      "CD56bright\nNKcells", "CD56dim\nNKcells"), ncol = 1) + scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + labs(color = "Donor")
+                                      "CD56bright\nNKcells", "CD56dim\nNKcells"), ncol = 1, label = "p.format") + scale_y_continuous(expand = expand_scale(mult = c(0.05, 0.2))) + labs(color = "Donor")
 ggsave("p.pdf", path = "~/Downloads/", width = 2.5, height = 2*3)
 ```
 
 ```{r}
-myHighlightCells <- function(object = NULL, idents = NULL, group_by = "seurat_clusters", ncol = NULL, save = T, height = 7, width = 7, col = "black") {
-  cells.highlight=list()
-  for(i in 1:length(idents)){
-    cells = colnames(object)[grep(idents[i], object@meta.data[,group_by])]
-    cells.highlight[[i]]=cells
-  }
-  
-  plots <- lapply(cells.highlight, function(x) {
-    DimPlot(object,cells.highlight = x, cols.highlight = col) + 
-      NoLegend() + labs(x = "UMAP1", y = "UMAP2") + 
-      theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title = element_blank(), axis.line = element_blank())
-    })
-  CombinePlots(plots = plots, ncol = ncol)
-  if(save) {
-    ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
-  }
-}
-
+#Figure 3c (continued)
 myHighlightCells(covid_combined.lymph, idents = c("^13", "^0", "^9"), ncol = 1, width = 2.5, height = 6)
 ```
 
 ```{r}
+#Extended Data Figure 7a
 pdf("~/Downloads/p.pdf", height = 4, width = 7)
 new_dotplot(subset(covid_combined.nc, idents = covid_CD8T.idents), features = c("PDCD1", "CTLA4", "LAG3", "CD244", "TIM3", "TIGIT", "HAVCR2", "BTLA", "CD160", "TOX"), group.by = "Donor.full", dend_y_var = NULL, shape.scale = 8, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 10, 20, 30))
 dev.off()
 
+#Extended Data Figure 7b
 pdf("~/Downloads/p.pdf", height = 4, width = 7)
 new_dotplot(subset(covid_combined.nc, idents = covid_CD4T.idents), features = c("PDCD1", "CTLA4", "LAG3", "CD244", "TIM3", "TIGIT", "HAVCR2", "BTLA", "CD160", "TOX"), group.by = "Donor.full", dend_y_var = NULL, shape.scale = 6, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 5, 10, 15, 20))
 dev.off()
-
-VlnPlot(subset(covid_combined.nc, idents = covid_CD8T.idents), features = c("PDCD1", "CTLA4", "LAG3", "CD244", "TIM3", "TIGIT", "HAVCR2", "BTLA", "CD160", "TOX"), group.by = "Ventilated")
-ggsave("p.pdf", path = "~/Downloads/", width = 7, height = 12)
-```
-
-```{r}
-pdf("~/Downloads/p.pdf", height = 7, width = 4)
-new_dotplot(subset(covid_combined.nc, idents = covid_NK.idents), features = c("PDCD1", "LAG3", "HAVCR2"), group.by = "Donor.full", dend_y_var = NULL, shape.scale = 10, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 5, 10, 15, 20), dend_x_var = NULL)
-dev.off()
-
-pdf("~/Downloads/p.pdf", height = 7, width = 4)
-new_dotplot(subset(covid_combined.nc, idents = covid_NK.idents), features = c("IFNG", "TNF", "CCL3", "CCL4"), group.by = "Donor.full", dend_y_var = NULL, shape.scale = 10, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 5, 10, 15, 20), dend_x_var = NULL)
-dev.off()
-```
-
-```{r}
-processNewSeurat <- function(parent.object, idents = NULL, cells = NULL) {
-  if (!is.null(idents)) {
-    seu <- subset(parent.object, idents = idents)
-  }
-  if (!is.null(cells)) {
-    seu <- subset(parent.object, cells = cells)
-  }
-  message("Running PCA")
-  seu <- RunPCA(seu, verbose = FALSE)
-  message("Running UMAP")
-  seu <- RunUMAP(seu, dims = 1:50, verbose = FALSE)
-  message("Clustering")
-  seu <- FindNeighbors(seu, dims = 1:50, verbose = FALSE)
-  seu <- FindClusters(seu, resolution = 1, verbose = FALSE)
-  return(seu)
-}
-
-DimPlot(covid_combined.NK, group.by = "Donor.full", cols = custom_fill_colors)
-covid_combined.NK <- processNewSeurat(covid_combined.nc, idents = covid_NK.idents)
-FeaturePlot(covid_combined.NK, features = c("IFNG", "TNF", "CCL3","CCL4"))
-
-pdf("~/Downloads/p.pdf", height = 6, width = 5.5)
-new_dotplot(covid_combined.NK, features = c("HSP90AA1", "LGALS1", "CCND2", "GNPTAB", "ADD3", "DNAJA1", "VIM", "HSP90AB1", "HSPH1", "S100A4", "HSPA5", "GZMA", "PRF1", "HSPA8", "IFIT3", "OAS3", "OAS2", "IFI44", "ISG15", "IFI44L", "MX1"), group.by = "Donor.full", shape.scale = 4.5, size.breaks.values = c(0, 30, 60, 90), genes.on.x = F)
-dev.off()
-```
-
-```{r}
-covid_combined.NK <- AddModuleScore(covid_combined.NK, features = list(c("LAG3", "PDCD1", "HAVCR2")), name = "Exhaustion", nbin = 10)
-
-ggboxplot(covid_combined.NK@meta.data, "Ventilated", "Exhaustion1",
-          color = "Ventilated", add = "jitter", order = c("N/A", "No", "Yes"), 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons)
-ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
 ```
 
 
-Is HLA downregulation a feature of more severe cases?
-```{r}
-covid_combined.lymph <- AddModuleScore(covid_combined.lymph, features = list(grep("^HLA-D", rownames(covid_combined.lymph), value = T)))
-
-ggboxplot(covid_combined.lymph@meta.data, "Ventilated", "Cluster1",
-          color = "Ventilated", add = "jitter", order = c("N/A", "No", "Yes"), 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-ggsave("p.pdf", path = "~/Downloads/")
-
-ggboxplot(covid_combined.lymph@meta.data, "Donor.full", "Cluster1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("green3", "blue3", "red3"), 
-          xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-ggsave("p.pdf", path = "~/Downloads/")
-
-pdf("~/Downloads/p.pdf", height = 5, width = 8)
-new_dotplot(covid_combined.lymph, features = grep("^HLA-", rownames(covid_combined.nc), value = T), group.by = "Donor.full", shape.scale = 6, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 25, 50, 75, 100))
-dev.off()
-```
-
-```{r}
-covid_combined.NK <- AddModuleScore(covid_combined.NK, features = list(as.character(ISG.list$gene)), name = "IFN", nbin=10)
-covid_combined.NK <- AddModuleScore(covid_combined.NK, features = list(c("LAG3", "PDCD1", "HAVCR2", "TIGIT")), name = "Exhaustion", nbin=10)
-ggboxplot(covid_combined.NK@meta.data, "Donor.full", "IFN1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "IFNA Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-
-ggboxplot(covid_combined.NK@meta.data, "Donor.full", "Exhaustion1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "IFNA Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-
-ggscatter(covid_combined.NK@meta.data, x = "IFN1", y = "Exhaustion1",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          ) + stat_cor() + labs(y = "Mean IFNA score", x = "Days post-symptom onset")
-
-ggboxplot(covid_combined.nc@meta.data, "Donor.full", "HLA1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("green3", "blue3", "red3"), 
-          xlab = "Donor", ylab = "IFNA Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-
-ggsave("p.pdf", path = "~/Downloads/", width = 10, height = 5)
-```
-
-```{r}
-DotPlot(subset(covid_combined.nc, idents = covid_CD4T.idents), features = c("CD38", "CD69", "IL2RA"), group.by = "Donor.full")
-```
-
-
-Scoring CD14 lymphcytes by interferon response
-```{r}
-ISG.scores <- aggregate(covid_combined.lymph$IFN1, by = list(covid_combined.lymph$Donor.full), FUN = mean)
-covid_metadata$ISG <- ISG.scores$x
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
-
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
-ggscatter(covid_metadata.c[!covid_metadata.c$DPF==0,], x = "DPF", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = -0.05) + labs(y = "Mean IFNA score", x = "Days post-fever onset")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "DPS", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.2) + labs(y = "Mean IFNA score", x = "Days post-symptom onset")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "Age", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 35, label.y = 0.2) + labs(y = "Mean IFNA score")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-```
-
-
-```{r}
-HLA.scores <- aggregate(covid_combined.lymph$Cluster1, by = list(covid_combined.lymph$Donor.full), FUN = mean)
-covid_metadata$HLA <- HLA.scores$x
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
-
-covid_metadata.c$Response <- c("Yes", "No", "No", "No", "Yes", "Yes", "Yes", "No")
-ggscatter(covid_metadata.c[!covid_metadata.c$DPF==0,], x = "DPF", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.05) + labs(y = "Mean HLA Class II score", x = "Days post-fever onset") + scale_x_continuous(limits = c(7, 18))
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(covid_metadata.c, x = "DPS", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 3, label.y = 0.25) + labs(y = "Mean HLA Class II score", x = "Days post-symptom onset")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-
-ggscatter(covid_metadata.c, x = "Age", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.x = 50, label.y = 0.2) + labs(y = "Mean HLA Class II score")
-ggscatter(covid_metadata.c, x = "ISG", y = "HLA",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.full"
-          ) + stat_cor(label.y = 0.2, label.x = 0.08) + labs(y = "Mean HLA Class II score", x = "Mean IFNA score") + scale_x_continuous(limits = c(0.035, 0.17))
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-```
-
-What genes are different between the two youngest patients in CD8 T and NK cells?
-```{r}
-c3c7.CD8T.markers <- FindMarkers(subset(covid_combined.nc, idents = covid_CD8T.idents), ident.1 = "C3", ident.2 = "C7", group.by = "Donor.full") %>% rownames_to_column(var = "gene") %>% filter_quality()
-
-c3c7.NK.markers <- FindMarkers(subset(covid_combined.nc, idents = covid_NK.idents), ident.1 = "C3", ident.2 = "C7", group.by = "Donor.full") %>% rownames_to_column(var = "gene") %>% filter_quality()
-
-covid_c3c7 <- processNewSeurat(covid_combined.nc, cells = c(grep("C3", covid_combined.nc$Donor.full), grep("C7", covid_combined.nc$Donor.full)))
-DimPlot(covid_c3c7, group.by = "orig.ident")
-DimPlot(covid_c3c7, group.by = "cell.type", label = T) + NoLegend()
-```
 
 
 ```{r}
@@ -2127,20 +788,13 @@ covid_combined.B <- subset(covid_combined.nc, idents = covid_B.idents)
 covid_combined.B <- AddModuleScore(covid_combined.B, features = list(grep("^HLA-D", rownames(covid_combined.B), value = T)), nbin = 10)
 
 data.plot <- covid_combined.B@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
-ggboxplot(data.plot, "Donor.full", "IFN1",
-          order = c("H1", "H2", "H3", "H4", "H5", "H6", "H7","C1 A", "C1 B", "C2", "C3", "C4", "C5", "C6", "C7"),
-          color = "Ventilated", add = "jitter", 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "ISG Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif") + rotate_x_text()
-
 new.data <- data.plot[,c("Donor.full", "Ventilated", "Cluster1")]
 new.data2 <- aggregate(new.data$Cluster1, by = list(new.data$Donor.full), FUN = mean)
 colnames(new.data2) <- c("Donor.full", "Cluster1")
 new.data2 <- merge(new.data2, unique(new.data[,c("Donor.full", "Ventilated")]))
 
+#Extended Data 3b
 ggboxplot(new.data2, "Ventilated", "Cluster1",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
           palette = c("blue3", "tomato1", "red3"), 
@@ -2149,237 +803,11 @@ ggboxplot(new.data2, "Ventilated", "Cluster1",
   stat_compare_means(comparisons = my_comparisons4)
 ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
 
-ggboxplot(covid_combined.B@meta.data, "Donor.full", "Cluster1",
-          color = "Ventilated", add = "jitter", 
-          palette = c("green3", "blue3", "red3"), 
-          xlab = "Ventilated/ARDS?", ylab = "HLA Class II Module Score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif")
-ggsave("p.pdf", path = "~/Downloads/")
-
+#Extended Data 3c
 pdf("~/Downloads/p.pdf", height = 5, width = 12)
 new_dotplot(covid_combined.B, features = grep("^HLA-", rownames(covid_combined.nc), value = T), group.by = "Donor.full", shape.scale = 6, color.breaks.values = c(-2, -1, 0, 1, 2), size.breaks.values = c(0, 25, 50, 75, 100))
 dev.off()
 ```
-
-```{r}
-pdf(file = "~/Downloads/p.pdf", width = 5, height = 7)
-new_dotplot(covid_combined.NK, features = c("IFNG", "TNF", "CCL3", "CCL4"), group.by = "Donor.full", shape.scale = 10, size.breaks.values = c(0, 10, 20, 30), dend_x_var = NULL)
-dev.off()
-
-pdf(file = "~/Downloads/p.pdf", width = 5, height = 7)
-new_dotplot(subset(covid_combined.nc, idents = covid_CD8T.idents), features = c("IFNG", "TNF", "CCL3", "CCL4"), group.by = "Donor.full", shape.scale = 10, size.breaks.values = c(0, 5, 10, 15, 20), dend_x_var = NULL)
-dev.off()
-```
-
-```{r}
-new_dotplot(covid_combined.mono, features = c("TNF", "IL6", "IL1B", "CCL3", "CCL4", "CXCL2"), group.by = "Donor.full")
-```
-
-
-```{r}
-czb.seu <- covid_combined.nc
-czb.seu$Race <- NULL
-colnames(czb.seu@meta.data)
-czb.seu@meta.data <- czb.seu@meta.data[,c(1:17,19:24,26:30)]
-czb.seu$Days <- NULL
-czb.seu$Ventilated <- mapvalues(czb.seu$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "Vent"))
-saveRDS(czb.seu, file = "/Volumes/GoogleDrive/My Drive/CZBiohub_COVID/blish_covid.seu.rds")
-```
-
-```{r}
-data.plot <- covid_combined.mono@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
-data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
-new.data <- data.plot[,c("Donor.full", "Ventilated", "IFN1")]
-new.data2 <- aggregate(new.data$IFN1, by = list(new.data$Donor.full), FUN = mean)
-colnames(new.data2) <- c("Donor.full", "IFN1")
-new.data2 <- merge(new.data2, unique(new.data[,c("Donor.full", "Ventilated")]))
-new.data2 <- new.data2[-grep("^H", new.data2$Donor.full),]
-new.data2$Rem <- c(1, 3, 3, 2, 0, NA, -1, NA)
-new.data2$DTF <- c(9, 11, 16, 9, 9, 1, NA, NA)
-
-ggscatter(new.data2, x = "Rem", y = "IFN1",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 0, label.y = 0.25) + labs(y = "Mean ISG score", x = "Days post-Remdesivir administration")
-
-ggscatter(new.data2, x = "Rem", y = "DTF",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 0, label.y = 0.25) + labs(y = "Days to fever onset", x = "Days post-Remdesivir administration")
-```
-
-## Scoring by IFNA vs. IFNL specific pathways
-
-
-IFNA: A4GALT, ACP2, ADA2, ADAM19, ADAR, AIM2, ANKRD10, APOBEC3A, APOBEC3F, APOBEC3G, APOL1, APOL2, APOL3, AQP3, ASCC2, ATF3, AUTS2, BAK1, BCL2, BCL2L1, BCL2L13, BCL6, BCR, BST2, BTG2, CABP7, CASP1, CASP3, CASP8, CCL22, CCL7, CCNA1, CCND3, CD1D, CD40, CD69, CD80, CD86, CD8A, CDC25A, CDKN1A, CELSR1, CGAS, CHMP5, CLTCL1, CMTR1, CSF2RB, CTH, CXCL10, CXCL11, CXCL9, CYP1A2, CYP2C9, CYP2E1, CYP3A4, Cxcl9, Cyclin E, Cyp2c12, DDIT4, DDX58, DEFB1, DHX58, DRAP1, DUSP6, DYNLT1, E2F1, E2F4, EFCAB6, EIF1, EIF2AK2, EMID1, ENPP2, EPSTI1, F, FBXO6, FOS, FOSL2, GART, GATA3, GBP1, GBP5, GIMAP4, GLS, GNA15, GPR180, GVINP1, GZMB, GZMH, HELZ2, HERC5, HERC6, HLA Class I, HLA-F, HLA-G, HN, HSPA1A/HSPA1B, Hla-abc, IDO1, IFI16, IFI27, IFI35, IFI44, IFI44L, IFI6, IFIH1, IFIT1, IFIT2, IFIT3, IFITM1, IFITM2, IFN Beta, IFNAR1, IFNAR2, IFNB1, IFNG, IFNL1, IFNL2, IFNLR1, IGFBP4, IGLL1/IGLL5, IKBKE, IL12RB2, IL17RA, IL18R1, IL18RAP, IL1R1, IL1RN, IL27, IL28, IL2RA, IRF1, IRF4, IRF7, IRF8, IRF9, ISG15, ISG20, ITPR1, Interferon alpha, LAIR2, LAMP3, LAP3, LAP3P2, LARGE1, LCK, LGALS9, LIF, M, MCL1, MHC Class I (complex), MHC Class II (complex), MIR29B, MOB3C, MORC2, MRPL17, MX1, MX2, MYC, MYD88, MYLIP, Mx1, NABP1, NCR1, NCR2, NCR3, NF2, NFE2L3, NFIL3, NFKBIA, NKG7, NP, NT5C3A, Np, OAS1, OAS2, OAS3, Oas, PARP10, PARP12, PARP14, PARP9, PARVG, PHF11, PI4K2B, PIM1, PLAAT4, PLSCR1, PML, PPM1K, PRAME, PRKACA, PSMB9, PTGES, RABGAP1L, RB1, RBCK1, RBX1, RIPK1, RNF103, RNF213, RPL23A, RSAD2, RSPH14, RTP4, SAMD9, SAMD9L, SAT1, SEC14L3, SEPTIN4, SERPINB1, SERPINB8, SERPINB9, SF3A1, SGSM3, SHFL, SLC1A5, SLC2A11, SLC2A3, SLC5A1, SLFN5, SMC1B, SOCS1, SOCS2, SP100, SP110, SPRY1, SPRY2, SPRY4, SREBF2, STAP1, STAT1, STAT4, TAP1, TAP2, TBC1D10A, TBX21, TDRD7, TENT4A, TFDP1, TGFB1, TGM1, TICAM1, TLR1, TLR2, TLR3, TLR4, TLR7, TLR8, TMEM140, TNF, TNFSF10, TNFSF13B, TNFSF15, TRANK1, TRIB2, TRIL, TRIM22, TRIOBP, TTC28, TYMP, UBA7, UBD, UBE2L6, UNC93B1, UNC93B4, USP18, USP6NL, V, V/P, WDFY1, ZBED2, ZNRF3, mir-21
-
-IFNL: APOL6, ATF3, BST2, CHAC1, CMPK2, CXCL10, CXCL11, CXCL9, DDX58, DDX60, DDX60L, EIF2AK2, GBP1, GBP5, GPATCH11, HERC5, HERC6, HLA-B, HLA-C, IFI27, IFI35, IFI44, IFI44L, IFI6, IFIH1, IFIT1, IFIT2, IFIT3, IFIT5, IFITM1, IFITM2, IFITM3, IFN Beta, IFNL1, IFNL2, IRF9, ISG15, ISG20, LAMP3, LGALS3BP, MLKL, MX1, NP, OAS1, OAS2, OAS3, OASL, Oas, PHF11, PLAAT4, PLSCR1, PML, PSMB9, RSAD2, RTP4, SAMD9, SHFL, SLC15A3, SP100, SP110, STAT1, STAT2, TDRD7, TMEM140, TRIM14, TRIM22, UBE2L6, USP18, XAF1, ZC3HAV1
-
-```{r}
-ifna <- colnames(read.csv("~/Downloads/ifnl.csv")) # taken from IPA database
-ifnl <- colnames(read.csv("~/Downloads/ifnl1.csv")) # taken from IPA database
-ifnl.specific <- ifnl[!ifnl %in% ifna]
-ifnl.specific <- ifnl.specific[-c(7, 8, 15)]
-ifna.specific <- ifna[!ifna %in% ifnl]
-covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(ifna.specific), name = "IFNA")
-covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(ifnl.specific), name = "IFNL")
-data.plot <- covid_combined.mono@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
-data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
-new.data <- data.plot[,c("Donor.full", "Ventilated", "IFNL1", "IFNA1")]
-
-
-
-
-ggboxplot(new.data, x = "Donor.full", y = "IFNL1", color = "Ventilated",
-          order = c("H1", "H2", "H3", "H4", "H5", "H6", "H7","C1 A", "C1 B", "C2", "C3", "C4", "C5", "C6", "C7"), add = "jitter", 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "IFNL-specific module score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif") + rotate_x_text()
-ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
-
-ggboxplot(new.data, x = "Donor.full", y = "IFNA1", color = "Ventilated",
-          order = c("H1", "H2", "H3", "H4", "H5", "H6", "H7","C1 A", "C1 B", "C2", "C3", "C4", "C5", "C6", "C7"), add = "jitter", 
-          palette = c("blue3", "tomato1", "red3"), 
-          xlab = "Donor", ylab = "IFNA-specific module score") + 
-  stat_compare_means(comparisons = my_comparisons, label = "p.signif") + rotate_x_text()
-```
-
-
-```{r}
-data.plot <- covid_combined.mono@meta.data
-data.plot$Ventilated <- mapvalues(data.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
-data.plot$Ventilated <- factor(data.plot$Ventilated, levels = c("Healthy", "NonVent", "ARDS"))
-new.data <- data.plot[,c("Donor.full", "Ventilated", "IFNL1", "IFNA1")]
-ifnl.agg <- aggregate(new.data$IFNL1, by = list(new.data$Donor.full), FUN = mean) %>%
-  set_colnames(c("orig.ident", "IFNL"))
-ifna.agg <- aggregate(new.data$IFNA1, by = list(new.data$Donor.full), FUN = mean) %>% 
-  set_colnames(c("orig.ident", "IFNA"))
-new.data <- merge(ifnl.agg, ifna.agg, by = "orig.ident")
-
-ggscatter(new.data, x = "IFNA", y = "IFNL",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "orig.ident"
-          ) + stat_cor(label.y = 0.2) + labs(y = "Mean IFNL-specific module score", x = "Mean IFNA-specific module score")
-ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
-
-ggscatter(new.data[grep("^C", new.data$orig.ident),], x = "IFNA", y = "IFNL",
-          add = "reg.line", 
-          label = "orig.ident",
-          conf.int = TRUE,
-          ) + stat_cor(label.y = 0.2) + labs(y = "Mean IFNL-specific module score", x = "Mean IFNA-specific module score")
-```
-Are IFNA and IFNL specific genes coregulated?
-```{r}
-assay.data <- GetAssayData(covid_combined.mono)
-assay.data <- assay.data[rownames(assay.data) %in% c(ifna.specific, ifnl.specific),]
-
-assay.data <- assay.data[-grep("A4GALT", rownames(assay.data)),]
-assay.cor <- cor(as.matrix((t(assay.data))))
-
-assay.cor <- assay.cor[!rowSums(!is.finite(assay.cor)),]
-assay.cor[!is.finite(assay.cor)] <- 0
-
-
-pdf("~/Downloads/p.pdf", width = 50, height = 50)
-pheatmap(assay.cor, na_col = "black", breaks = myBreaks)
-dev.off()
-```
-
-```{r}
-agvneut.markers <- FindMarkers(covid_combined.nc, ident.1 = "Activated Granulocyte", ident.2 = "Neutrophil", group.by = "cell.type")
-
-write.csv(agvneut.markers, file = "~/Downloads/agvneut.csv")
-```
-
-```{r}
-DotPlot(covid_combined.nc, features = c("KLF6", "KLF4", "KLF2"), group.by = "cell.type")
-ggsave("p.pdf", path = "~/Downloads/", height = 7, width = 7)
-DotPlot(covid_combined.nc, features = c("KLF6", "KLF4", "KLF2"), group.by = "Donor.full")
-FeaturePlot(covid_combined.nc, features = c("KLF6", "KLF4", "KLF2"))
-```
-
-DE genes
-```{r}
-degenes <- rbind(data.frame(gene = rownames(NK.markers), cells = "NK"),
-                 data.frame(gene = rownames(CD16mono.markers), cells = "CD16mono"),
-                 data.frame(gene = rownames(CD14mono.markers), cells = "CD14mono"),
-                 data.frame(gene = rownames(B.markers), cells = "B"),
-                 data.frame(gene = rownames(DC.markers), cells = "DC"),
-                 data.frame(gene = rownames(CD4T.markers), cells = "CD4T"),
-                 data.frame(gene = rownames(CD8T.markers), cells = "CD8T"),
-                 data.frame(gene = rownames(gdT.markers), cells = "gdT"))
-```
-
-Can we detect ANY Ig reads in the activated granulocytes??
-```{r}
-Ig.names <- c(grep("^IGH", rownames(covid_pb), value = T),
-              grep("^IGK", rownames(covid_pb), value = T),
-              grep("^IGL", rownames(covid_pb), value = T))
-Ig.pos <- covid_combined.emat[rownames(covid_combined.emat) %in% Ig.names,]
-Ig.pos.cells <- colnames(Ig.pos[,colSums(Ig.pos !=0) > 0])
-
-ag.cells <- rownames(covid_combined.nc@meta.data[covid_combined.nc$cell.type=="Activated Granulocyte",])
-
-coi <- intersect(ag.cells, Ig.pos.cells)
-moi <- as.data.frame(covid_combined.emat[Ig.names,coi])
-moi <- moi[rowSums(moi !=0) >0,]
-```
-
-How does IFN score correlate with antibody fucosylation?
-```{r}
-covid_combined.mono <- AddModuleScore(covid_combined.mono, features = list(nfat), name = "NFAT")
-ISG.scores <- aggregate(covid_combined.mono$IFN1, by = list(covid_combined.mono$Donor.full), FUN = mean)
-covid_metadata$ISG <- ISG.scores$x
-
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
-taia <- covid_metadata.c
-taia <- taia[c(2,3,5),]
-taia$afuc <- c(16.814193, 12.7525284, 13.4430947)
-
-ggscatter(taia, x = "afuc", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.orig"
-          ) + stat_cor(label.y = 1) + labs(y = "Mean ISG module score", x = "afucosylated anti-SARS-CoV2")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(taia, x = "DPS", y = "ISG",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.2) + labs(y = "Mean ISG module score", x = "Days post-symptom onset")
-
-FeaturePlot(covid_combined.nc, features = c("NFAT5", "NFATC1", "NFATC2", "NFATC3", "NFATC4"))
-```
-
-```{r}
-NFAT.scores <- aggregate(covid_combined.mono$NFAT1, by = list(covid_combined.mono$Donor.full), FUN = mean)
-covid_metadata$NFAT <- NFAT.scores$x
-
-covid_metadata.c <- covid_metadata[grep("^C", covid_metadata$Donor.full),]
-taia <- covid_metadata.c
-taia <- taia[c(2,3,5),]
-taia$afuc <- c(16.814193, 12.7525284, 13.4430947)
-
-ggscatter(taia, x = "afuc", y = "NFAT",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE,
-          label = "Donor.orig"
-          ) + stat_cor(label.y = .1) + labs(y = "Mean NFAT module score", x = "afucosylated anti-SARS-CoV2")
-ggsave("p.pdf", path = "~/Downloads/", width = 3, height = 3)
-ggscatter(taia, x = "DPS", y = "NFAT",
-          add = "reg.line",                         # Add regression line
-          conf.int = TRUE, 
-          label = "Donor.full"
-          ) + stat_cor(label.x = 8, label.y = 0.2) + labs(y = "Mean NFAT module score", x = "Days post-symptom onset")
-```
-
-
-# FOR REVISION #
 
 Consensus ISGs
 ```{r}
@@ -2415,6 +843,8 @@ ISG.markers <- data.frame(gene = ISG.markers$gene,
 ISG.markers.m <- reshape2::dcast(ISG.markers, formula = gene~subset, value.var = "donors") %>% column_to_rownames(var = "gene")
 ISG.markers.m[is.na(ISG.markers.m)] <- 0
 ISG.markers.m <- ISG.markers.m[!rowSums(ISG.markers.m)==0,]
+
+#Figure 3h
 pdf("~/Downloads/p.pdf", height = 10, width = 4)
 Heatmap((ISG.markers.m), name = "# of COVID-19\nsamples", border = T, col = c("white", "green4"))
 
@@ -2471,6 +901,8 @@ cytokine.markers <- data.frame(gene = cytokine.markers$gene,
 cytokine.markers.m <- reshape2::dcast(cytokine.markers, formula = gene~subset, value.var = "donors") %>% column_to_rownames(var = "gene")
 cytokine.markers.m[is.na(cytokine.markers.m)] <- 0
 cytokine.markers.m <- cytokine.markers.m[!rowSums(cytokine.markers.m)==0,]
+
+#Figure 3i
 pdf("~/Downloads/p.pdf", height = 4, width = 4)
 Heatmap((cytokine.markers.m), name = "# of COVID-19\nsamples", border = T, col = c("white", "green4"))
 ```
@@ -2485,11 +917,9 @@ covid_pb2 <- RunUMAP(covid_pb2, dims = 1:50, verbose = FALSE)
 covid_pb2 <- FindNeighbors(covid_pb2, dims = 1:50, verbose = FALSE)
 covid_pb2 <- FindClusters(covid_pb2, resolution = 1, verbose = FALSE)
 DimPlot(covid_pb2, label = TRUE) + NoLegend()
-DimPlot(covid_pb2, group.by = "Days")
-DimPlot(covid_pb2, group.by = "cell.type", label = TRUE) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank()) 
-#ggsave("p.pdf", path = "~/Downloads/")
 
-covid_pb2$cell.type[grep("Class-switched B", covid_pb2$cell.type)] <- "IgM PB"
+#this is equivalent to the embedding shown in Extended Data 10b-c
+DimPlot(covid_pb2, group.by = "cell.type", label = TRUE) + NoLegend() + labs(x = "UMAP1", y = "UMAP2") + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank()) 
 ```
 
 ```{r}
@@ -2501,37 +931,28 @@ writeAnnData(emat = covid_combined.emat,
 ```
 
 
-```{r}
-test3 <- list()
-for (i in unique(covid_combined.nc$seurat_clusters)) {
-  test <- covid_combined.emat[ig.names,colnames(covid_combined.emat) %in% rownames(covid_combined.nc@meta.data)[covid_combined.nc$seurat_clusters==i]]
-  test2 <- as.data.frame(test[rowSums(test)!=0,colSums(test)!=0])
-  test3[i] <- median(colSums(test2))
-  message(paste0("done with "),i)
-}
-test3 <- unlist(test3)
-```
 
 Confirming T cells not exhausted...
 ```{r}
-exh.markers <- read_csv("~/Downloads/exh.list.csv")
+exh.markers <- read_csv(url("https://github.com/ajwilk/2020_Wilk_COVID/raw/master/code/exh.list.csv"))
 exh.markers <- exh.markers$gene
-exh.markers <- convert_mouse_to_human_symbols(exh.markers)
+exh.markers <- nichenetr::convert_mouse_to_human_symbols(exh.markers)
 covid_T <- subset(covid_combined.nc, idents = covid_T.idents)
 covid_T <- AddModuleScore(covid_T, features = list(exh.markers), name = "exh")
+covid_metadata[grep("N/A", covid_metadata$Ventilated),"Ventilated"] <- "Healthy"
 
 #CD8
 exh.plot8 <- covid_metadata
 covid_CD8 <- subset(covid_T, cells = grep("CD8",covid_T$cell.type))
 exh.plot8$exh <- aggregate(covid_CD8$exh1, by = list(covid_CD8$Donor.full), FUN = mean)$x
-exh.plot8$Ventilated <- mapvalues(exh.plot8$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
+#Extended Data Fig 7c
 ggboxplot(exh.plot8, x = "Ventilated", y = "exh",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
           palette = c("blue3", "tomato1", "red3"), 
           label = "Donor.full", legend = "none",
           xlab = "Ventilated/ARDS?", ylab = "T cell exhaustion score", outlier.shape = NA) +
-  stat_compare_means(comparisons = my_comparisons4)
+  stat_compare_means(comparisons = my_comparisons4) #NB: control features are randomly selected, so results may vary slightly
 ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
 
 #CD4
@@ -2540,53 +961,39 @@ covid_CD4 <- subset(covid_T, cells = grep("CD4", covid_T$cell.type))
 exh.plot4$exh <- aggregate(covid_CD4$exh1, by = list(covid_CD4$Donor.full), FUN = mean)$x
 exh.plot4$Ventilated <- mapvalues(exh.plot4$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
+#Extended Data Fig 7d
 ggboxplot(exh.plot4, x = "Ventilated", y = "exh",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
           palette = c("blue3", "tomato1", "red3"), 
           label = "Donor.full", legend = "none",
           xlab = "Ventilated/ARDS?", ylab = "T cell exhaustion score", outlier.shape = NA) +
-  stat_compare_means(comparisons = my_comparisons4)
+  stat_compare_means(comparisons = my_comparisons4) #NB: control features are randomly selected, so results may vary slightly
 ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
 ```
-CD8T cytokine plot
-```{r}
-covid_CD8 <- AddModuleScore(covid_CD8, features = list(c("IFNG", "TNF", "CCL3", "CCL4")), name = "cytokine", nbin = 10)
-CD8.cytokine.plot <- covid_metadata
-CD8.cytokine.plot$cytokine <- aggregate(covid_CD8$cytokine1, by = list(covid_CD8$Donor.full), FUN = mean)$x
-CD8.cytokine.plot$Ventilated <- mapvalues(CD8.cytokine.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
-ggboxplot(CD8.cytokine.plot, x = "Ventilated", y = "cytokine",
-          color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
-          palette = c("blue3", "tomato1", "red3"), 
-          label = "Donor.full",
-          xlab = "Ventilated/ARDS?", ylab = "CD8 T cell cytokine expression score",
-          outlier.shape = NA, legend = "none") +
-  stat_compare_means(comparisons = my_comparisons4)
-ggsave("p.pdf", path = "~/Downloads/", height = 4, width = 4)
-```
 NK exhaustion plot
 ```{r}
 covid_NK <- subset(covid_combined.nc, idents = covid_NK.idents)
 covid_NK <- AddModuleScore(covid_NK, features = list(c("PDCD1", "LAG3", "HAVCR2")), name = "exh", nbin = 10)
 NK.exh.plot <- covid_metadata
 NK.exh.plot$exh <- aggregate(covid_NK$exh1, by = list(covid_NK$Donor.full), FUN = mean)$x
-NK.exh.plot$Ventilated <- mapvalues(NK.exh.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
+#Fig 3d
 ggboxplot(NK.exh.plot, x = "Ventilated", y = "exh",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
           palette = c("blue3", "tomato1", "red3"), 
           label = "Donor.full",
           xlab = "Ventilated/ARDS?", ylab = "NK cell exhaustion score", 
           outlier.shape = NA, legend = "none") +
-  stat_compare_means(comparisons = my_comparisons4)
+  stat_compare_means(comparisons = my_comparisons4) #NB: control features are randomly selected, so results may vary slightly
 ggsave("p.pdf", path = "~/Downloads/", height = 5, width = 3)
 ```
 
 ```{r}
+#Figure 3e
 covid_NK <- AddModuleScore(covid_NK, features = list(c("IFNG", "TNF", "CCL3", "CCL4")), name = "cytokine", nbin = 10)
 NK.cytokine.plot <- covid_metadata
 NK.cytokine.plot$cytokine <- aggregate(covid_NK$cytokine1, by = list(covid_NK$Donor.full), FUN = mean)$x
-NK.cytokine.plot$Ventilated <- mapvalues(NK.cytokine.plot$Ventilated, from = c("N/A", "No", "Yes"), to = c("Healthy", "NonVent", "ARDS"))
 
 ggboxplot(NK.cytokine.plot, x = "Ventilated", y = "cytokine",
           color = "Ventilated", add = "jitter", order = c("Healthy", "NonVent", "ARDS"), 
@@ -2594,30 +1001,14 @@ ggboxplot(NK.cytokine.plot, x = "Ventilated", y = "cytokine",
           label = "Donor.full",
           xlab = "Ventilated/ARDS?", ylab = "NK cell cytokine expression score",
           outlier.shape = NA, legend = "none") +
-  stat_compare_means(comparisons = my_comparisons4)
+  stat_compare_means(comparisons = my_comparisons4) #NB: control features are randomly selected, so results may vary slightly
 ggsave("p.pdf", path = "~/Downloads/", height = 5, width = 3)
 ```
 
-Test to build consensus stacked plot
+Build stacked plots of consensus genes for each compartment
+
 ```{r}
-constructConsensus <- function(markers.matrix, donors.use = 1:8, save = T, height = 5, width = 7) {
-  markers.matrix.m <- markers.matrix %>% rownames_to_column(var = "gene")
-  markers.matrix.m <- reshape2::melt(markers.matrix.m)
-  order.markers <- rownames(markers.matrix[order(rowSums(-markers.matrix)),])
-  markers.sum <- as.data.frame(ifelse(markers.matrix != 0, 1, 0))
-  markers.sum$total <- rowSums(markers.sum)
-  keep <- rownames(markers.sum[markers.sum$total>3,])
-  markers.matrix.m <- markers.matrix.m[markers.matrix.m$gene %in% keep,]
-  ggplot(markers.matrix.m, aes(x = factor(gene, level = order.markers), 
-                         y = value, fill = variable)) +
-  geom_bar(stat="identity", color = "black", size = 0.25) + theme_minimal() + 
-  labs(x = "", y = "Cumulative average log(fold-change)", fill = "Sample") +
-  scale_fill_manual(values = custom_fill_colors[donors.use]) + 
-  ggpubr::rotate_x_text()
-  if(save){
-    ggsave("p.pdf", path = "~/Downloads/", height = height, width = width)
-  }
-}
+#Extended Data Fig. 5
 constructConsensus(NK.markers)
 constructConsensus(CD4T.markers)
 constructConsensus(CD8T.markers)
@@ -2630,7 +1021,7 @@ constructConsensus(B.markers, width = 18)
 
 
 
-
+## Construction of Supplementary Tables 1-25 ##
 Write supplementary data tables
 ```{r}
 matrices <- list(CD14mono.markers,
@@ -2705,11 +1096,4 @@ module.tables <- cbind.fill(ISG = ISG.list$gene, Texh = exh.markers, HLA = grep(
 write_xlsx(module.tables, path = "/Volumes/GoogleDrive/My Drive/Blish Lab/00 - All Server Data and Folders/Aaron/Papers/SARS-CoV-2_scRNA-seq/Figures/raw tables/Supplementary Table 3.xlsx")
 ```
 
-How many IG reads are in plasmablasts?
-```{r}
-test <- as.data.frame(covid_combined.emat[rownames(covid_combined.emat) %in% c(grep("^IGK", rownames(covid_combined.emat), value = T), grep("^IGH", rownames(covid_combined.emat), value = T),grep("^IGL", rownames(covid_combined.emat), value = T)),rownames(covid_combined.nc@meta.data)[grep("PB$",covid_combined.nc$cell.type)]])
-median(colSums(test))
-test <- as.data.frame(covid_combined.emat[rownames(covid_combined.emat) %in% c(grep("^IGK", rownames(covid_combined.emat), value = T), grep("^IGH", rownames(covid_combined.emat), value = T),grep("^IGL", rownames(covid_combined.emat), value = T)),rownames(covid_combined.nc@meta.data)[grep("Granulocyte$",covid_combined.nc$cell.type)]])
-median(colSums(test))
-```
 

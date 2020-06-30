@@ -73,7 +73,7 @@ covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^MT-", col.nam
 covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPS", col.name = "percent.rps")
 covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RPL", col.name = "percent.rpl")
 covid_combined <- PercentageFeatureSet(covid_combined, pattern = "^RNA\\d8S5", col.name = "percent.rrna")
-covid_combined <- SCTransform(covid_combined, vars.to.regress = c("percent.mt", "percent.rps", "percent.rpl", "percent.rrna", "nCount_RNA", "nFeature_RNA"), verbose = FALSE, return.only.var.genes = TRUE)
+covid_combined <- SCTransform(covid_combined, vars.to.regress = c("percent.mt", "percent.rps", "percent.rpl", "percent.rrna", "nCount_RNA", "nFeature_RNA"), verbose = FALSE, return.only.var.genes = TRUE) #expect "iteration limit reached" warning unless suppressed per https://github.com/satijalab/seurat/issues/1426
 
 covid_combined <- RunPCA(covid_combined, verbose = FALSE)
 covid_combined <- RunUMAP(covid_combined, dims = 1:50, verbose = FALSE)

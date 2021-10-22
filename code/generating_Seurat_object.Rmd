@@ -87,6 +87,7 @@ Add metadata
 
 ```{r add metadata}
 covid_metadata <- read_csv("https://raw.githubusercontent.com/ajwilk/2020_Wilk_COVID/master/code/COVID-19_metadata_repo.csv")
+#NOTE: ensure that rownames of covid_metadata match orig.ident fields in object. This is impacted by the naming of the count matrices submitted to GEO
 seurat_metadata <- covid_combined@meta.data
 seurat_metadata <- seurat_metadata[,!(colnames(seurat_metadata)) %in% 
                                      setdiff(colnames(covid_metadata), "orig.ident")]
